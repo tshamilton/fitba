@@ -1,0 +1,589 @@
+<?php 
+
+function aasort (&$array, $key) {
+    $sorter=array();
+    $ret=array();
+    reset($array);
+    foreach ($array as $ii => $va) {
+        $sorter[$ii]=$va[$key];
+    }
+    asort($sorter);
+    foreach ($sorter as $ii => $va) {
+        $ret[$ii]=$array[$ii];
+    }
+    $array=$ret;
+}
+
+function pretty_var($myArray, $colour = 'ff0000', $s = "p") {
+	global $tGroup;
+
+	if ($s == "i") {
+		$tGroup .= "<div id='debug' style='background-color: #".$colour.";'>\n";
+		$tGroup .= str_replace(array("\n"," "),array("<br>","&nbsp;"), var_export($myArray,true))."<br>\n";
+		$tGroup .= "</div>\n";
+	}
+	elseif ($s == "p") {
+		print "<div id='debug' style='background-color: #".$colour.";'>\n";
+		print utf8_encode(str_replace(array("\n"," "),array("<br>","&nbsp;"), var_export($myArray,true))."<br>\n");
+		print "</div>\n";
+	}
+}
+
+function t($n = 1) {
+	$count = 1;
+	$tabs = "";
+	while ($count <= $n) {
+		$tabs .= "\t";
+		$count++;
+	}
+	return $tabs;
+}
+
+function missing($in) {
+	global $missing;
+	$missing[] = $in;
+}
+
+function makeScore($tN) {
+	global $Team;
+	
+	if (array_key_exists($tN, $Team)) {
+		return $Team[$tN]["mnS"];
+	}
+	else {
+		if ((preg_match("/w$/", $tN)) && (array_key_exists(substr($tN, 0, -1), $Team))) {
+			return $Team[substr($tN, 0, -1)]["mnS"];
+		}
+		elseif ((preg_match("/ii$/", $tN)) && (array_key_exists(substr($tN, 0, -2), $Team))) {
+			return $Team[substr($tN, 0, -2)]["mnS"];
+		}
+		else {
+			$hStyle = "slate";
+		}
+	}
+}
+
+function makeTeam($tN, $g, $ctx) {
+	global $Team;
+
+	$status = "start";
+	
+	if (array_key_exists($tN, $Team)) { $status = "known"; $baseName = $tN;}
+	else {
+		if (preg_match("/w$/", $tN)) {
+			if (array_key_exists(substr($tN, 0, -1), $Team)) {	$status = "women"; $baseName = substr($tN, 0, -1); }
+			else { $status = "unknown"; }
+		}
+		elseif (preg_match("/ii$/", $tN)) {
+			if (array_key_exists(substr($tN, 0, -2), $Team)) {	$status = "ii-side"; $baseName = substr($tN, 0, -2); }
+			else { $status = "unknown"; }
+		}
+		elseif (preg_match("/2$/", $tN)) {
+			if (array_key_exists(substr($tN, 0, -1), $Team)) {	$status = "2-side"; $baseName = substr($tN, 0, -1); }
+			else { $status = "unknown"; }
+		}
+		elseif	(preg_match("/b$/", $tN)) {
+			if (array_key_exists(substr($tN, 0, -1), $Team)) {	$status = "b-side"; $baseName = substr($tN, 0, -1); }
+			else { $status = "unknown"; }
+		}
+		elseif	(preg_match("/^jong/", $tN))	{ 
+			if (array_key_exists(substr($tN, 4), $Team)) {	$status = "jong"; $baseName = substr($tN, 4); }
+			else { $status = "unknown"; }
+		}
+		elseif (preg_match("/u17$/", $tN)) {
+			if (array_key_exists(substr($tN, 0, -3), $Team)) {	$status = "u17-side"; $baseName = substr($tN, 0, -3); }
+			else { $status = "unknown"; }
+		}
+		elseif (preg_match("/u21$/", $tN)) {
+			if (array_key_exists(substr($tN, 0, -3), $Team)) {	$status = "u21-side"; $baseName = substr($tN, 0, -3); }
+			else { $status = "unknown"; }
+		}
+		else {
+			$status = "unknown";
+			pretty_var($tN." has no match.", 'ffffcc');
+		}
+	}
+	
+	switch($status) {
+		case "known":
+			if (!(isset($Team[$baseName]['display']))) { pretty_var("Missing display name? ".$tN, 'ff00ff'); }
+			$dispName = $Team[$baseName]['display'];
+			if (preg_match("/x/", $Team[$baseName]['grf'])) { $style = $ctx."_team ".$Team[$baseName]['grf']; }
+			else { $style = $ctx."_team ".$Team[$baseName]['mjS']; }
+			if ($g == "INT") {
+				$flagEdge = substr($Team[$baseName]['mnS'], 0, 1);
+				$dispName = " <img alt=\"k\" class=\"".$flagEdge."\" src=\"flags\\".$Team[$baseName]['coo'].".png\"> ".$dispName;
+			}
+			break;
+		case "women":
+		case "u17-side":
+		case "u21-side":
+		case "ii-side":
+		case "b-side":
+		case "2-side":
+		case "jong":
+			if		($status == "women" )	{ $dispName = $Team[$baseName]['display']." <b>&#9792;</b>"; }
+			elseif	($status == "u17-side")	{ $dispName = $Team[$baseName]['display']." U-17"; }
+			elseif	($status == "u21-side")	{ $dispName = $Team[$baseName]['display']." U-21"; }
+			elseif	($status == "ii-side")	{ $dispName = $Team[$baseName]['display']." II"; }
+			elseif	($status == "b-side")	{ $dispName = $Team[$baseName]['display']." B"; }
+			elseif	($status == "2-side")	{ $dispName = $Team[$baseName]['display']." 2"; }
+			elseif	($status == "jong")		{ $dispName = "Jong ".$Team[$baseName]['display']; }
+			$style = $ctx."_team ".$Team[$baseName]['mjS'];
+			if ($g == "INT") {
+				$flagEdge = substr($Team[$baseName]['mnS'], 0, 1);
+				$dispName = " <img alt=\"u\" class=\"".$flagEdge."\" src=\"flags\\".$Team[$baseName]['coo'].".png\"> ".$dispName;
+			}
+			$Team[$tN]['mjS'] = $Team[$baseName]['mjS'];
+			$Team[$tN]['mnS'] = $Team[$baseName]['mnS'];
+			$Team[$tN]['grf'] = '';
+			$Team[$tN]['coo'] = $Team[$baseName]['coo'];
+			$Team[$tN]['display'] = $dispName;
+			break;
+		case "unknown":
+			missing("T,".$tN.",".$tN.",LdN,mnS,mjS,bd,".$g);
+			$baseName = $tN;
+			$dispName = $tN." <img src=\"image/alert.gif\">";
+			$style = $ctx."_team slate";
+			break;
+	}
+
+	return "<div class=\"".$style."\"><span>".$dispName."</span></div>";
+}
+
+function createDetails($m, $h, $a) {
+	$out = "";
+	$details = explode("#", $m);
+
+	foreach ($details as $d) {
+		if (strlen($d) > 4) {
+			$line = explode(':', $d);
+			if (count($line) == 1) { continue; }
+			switch($line[0]) {
+				case 1: $out .= t(5)."<tr>\n".t(6)."<td colspan=\"9\" class=\"home_det ".$h."\">".utf8_encode($line[2])." <img src=\"image/goal.gif\"></td>\n".t(6)."<td colspan=\"2\" class=\"home_time ".$h."\">".$line[1]."'</td>\n".t(6)."<td colspan=\"9\">&nbsp;</td>\n".t(5)."</tr>\n"; break;
+				case 2: $out .= t(5)."<tr>\n".t(6)."<td colspan=\"9\">&nbsp;</td>\n".t(6)."<td colspan=\"2\" class=\"away_time ".$a."\">".$line[1]."'</td>\n".t(6)."<td colspan=\"9\" class=\"away_det ".$a."\"><img src=\"image/goal.gif\"> ".utf8_encode($line[2])."</td>\n".t(5)."</tr>\n"; break;
+				case 3: $out .= t(5)."<tr>\n".t(6)."<td colspan=\"9\" class=\"home_det ".$h."\">".utf8_encode($line[2])." <img src=\"image/red.gif\"></td>\n".t(6)."<td colspan=\"2\" class=\"home_time ".$h."\">".$line[1]."'</td>\n".t(6)."<td colspan=\"9\">&nbsp;</td>\n".t(5)."</tr>\n"; break;
+				case 4: $out .= t(5)."<tr>\n".t(6)."<td colspan=\"9\">&nbsp;</td>\n".t(6)."<td colspan=\"2\" class=\"away_time ".$a."\">".$line[1]."'</td>\n".t(6)."<td colspan=\"9\" class=\"away_det ".$a."\"><img src=\"image/red.gif\"> ".utf8_encode($line[2])."</td>\n".t(5)."</tr>\n"; break;
+				case 5: $out .= t(5)."<tr>\n".t(6)."<td colspan=\"9\" class=\"home_det ".$h."\">".utf8_encode($line[2])." <img src=\"image/yellow.gif\"></td>\n".t(6)."<td colspan=\"2\" class=\"home_time ".$h."\">".$line[1]."'</td>\n".t(6)."<td colspan=\"9\">&nbsp;</td>\n".t(5)."</tr>\n"; break;
+				case 6: $out .= t(5)."<tr>\n".t(6)."<td colspan=\"9\">&nbsp;</td>\n".t(6)."<td colspan=\"2\" class=\"away_time ".$a."\">".$line[1]."'</td>\n".t(6)."<td colspan=\"9\" class=\"away_det ".$a."\"><img src=\"image/yellow.gif\"> ".utf8_encode($line[2])."</td>\n".t(5)."</tr>\n"; break;
+				case 9: $out .= t(5)."<tr>\n".t(6)."<td colspan=\"9\" class=\"home_det ".$h."\">".utf8_encode($line[2])." <img src=\"image/nogoal.gif\"></td>\n".t(6)."<td colspan=\"2\" class=\"home_time ".$h."\">".$line[1]."'</td>\n".t(6)."<td colspan=\"9\">&nbsp;</td>\n".t(5)."</tr>\n"; break;
+				case 10: $out .= t(5)."<tr>\n".t(6)."<td colspan=\"9\">&nbsp;</td>\n".t(6)."<td colspan=\"2\" class=\"away_time ".$a."\">".$line[1]."'</td>\n".t(6)."<td colspan=\"9\" class=\"away_det ".$a."\"><img src=\"image/nogoal.gif\"> ".utf8_encode($line[2])."</td>\n".t(5)."</tr>\n"; break;
+				case 34: break; /*home goal assist*/
+				case 35: break; /*away goal assist*/
+				default:
+					if ($line[0] % 2) {
+						$out .= t(5)."<tr>\n".t(6)."<td colspan=\"9\">".$line[2]." (".$line[0].")</td>\n".t(6)."<td colspan=\"2\">".$line[1]."'</td>\n".t(6)."<td colspan=\"9\">&nbsp;</td>\n".t(5)."</tr>\n"; break;
+					}
+					else {
+						$out .= t(5)."<tr>\n".t(6)."<td colspan=\"9\">&nbsp;</td>\n".t(6)."<td colspan=\"2\">".$line[1]."'</td>\n".t(6)."<td colspan=\"9\">(".$line[0].") ".$line[2]."</td>\n".t(5)."</tr>\n"; break;
+					}
+					break;
+			}
+		}
+	}
+	return $out;
+}
+
+function aggScore($h, $a, $sc, $r) {
+	global $Team;
+
+	if (array_key_exists($h, $Team)) {
+		$homeName = $Team[$h]['display'];
+		$homeStyle = $Team[$h]['mjS'];
+	}
+	else {
+		$homeName = $h;
+		$homeStyle = "slate";
+	}
+	if (array_key_exists($a, $Team)) {
+		$awayName = $Team[$a]['display'];
+		$awayStyle = $Team[$a]['mjS'];
+	}
+	else {
+		$awayName = $a;
+		$awayStyle = "slate";
+	}
+
+	$s = explode('-', $sc);
+
+	if ($r == "") {
+		if ($s[0] > $s[1]) {
+			return $Team[$h]['display']." lead ".$s[0]." - ".$s[1];
+		}
+		elseif ($s[1] > $s[0]) {
+			return $Team[$a]['display']." lead ".$s[0]." - ".$s[1];
+		}
+		else {
+			return "Aggregate score: ".$s[0]." - ".$s[1];
+		}
+	}
+	else {
+		if		($s[0] > $s[1])	{	return "<div class=\"agg_score ".$homeStyle."\"><span>".$homeName." win ".$s[0]." - ".$s[1]." on agg.</span></div>";	}
+		elseif	($s[1] > $s[0])	{	return "<div class=\"agg_score ".$awayStyle."\"><span>".$awayName." win ".$s[0]." - ".$s[1]." on agg.</span></div>";	}
+		else {
+			if ($r == "won") {	return "<div class=\"agg_score ".$homeStyle."\"><span>".$homeName." won ".$s[0]." - ".$s[1]." on away goals.</span></div>";	}
+			if ($r == "loss") {	return "<div class=\"agg_score ".$awayStyle."\"><span>".$awayName." won ".$s[0]." - ".$s[1]." on away goals.</span></div>";	}
+		}
+	}
+}
+
+function makeStatus($s) {
+	$st = explode("-", $s);
+	if 		($st[0] == "F") {
+		if 		($st[1] == 5)	{ return "Postponed"; }
+		elseif	($st[1] == 6)	{ return "Full Time"; $getDetails = 1; }
+		elseif	($st[1] == 11)	{ return "After Extra Time"; $getDetails = 1; }
+		elseif	($st[1] == 13)	{ return "After Penalties"; $getDetails = 1; }
+		elseif	($st[1] == 17)	{ return "Abandoned"; $getDetails = 1; }
+		elseif	($st[1] == 106)	{ return "Cancelled"; }
+		else					{ return "Status unknown (".$s.")"; $getDetails = 1; missing("Match Status: ".$s." ?"); }
+	}
+	elseif	($st[0] == "N") {
+		if 		($st[1] == 1) 	{ return "Not started"; }
+		else					{ return "Status unknown (".$s.")"; $getDetails = 1; missing("Match Status: ".$s." ?"); }
+	}
+	elseif	($st[0] == "P") {
+		if		($st[1] == 5)	{ return "Postponed"; }
+		else					{ return "Status unknown (".$s.")"; $getDetails = 1; missing("Match Status: ".$s." ?"); }
+	}
+	elseif	($st[0] == "S") {
+		if		($st[1] == 2)	{ return "First Half"; $getDetails = 1; }
+		elseif	($st[1] == 3)	{ return "Second Half"; $getDetails = 1; }
+		elseif	($st[1] == 8)	{ return "Extra Time Break"; $getDetails = 1; }
+		elseif	($st[1] == 9)	{ return "Extra Time"; $getDetails = 1; }
+		elseif	($st[1] == 10)	{ return "Half Time"; $getDetails = 1; }
+		elseif	($st[1] == 13)	{ return "After Penalties"; $getDetails = 1; }
+		elseif	($st[1] == 17)	{ return "Abandoned"; $getDetails = 1; }
+		elseif	($st[1] == 18)	{ return "Kick-Off"; $getDetails = 1; }
+		elseif	($st[1] == 106)	{ return "Cancelled"; }
+		elseif	($st[1] == 190)	{ return "Full Time"; $getDetails = 1; }
+		else					{ return "Status unknown ".$st[0]." - ".$st[1]; $getDetails = 1; missing("Match Status: ".$s." ?"); }
+	}
+}
+
+function makeLadder($c, $g) {
+	global $Team;
+	global $Comp;
+
+	//molde|12|3|1|35|12|39|UCLQ
+
+	$fileName = "news/ladder/".$c.".lad";
+	if (file_exists($fileName)) {
+		$in = file($fileName, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+		$ldr = "";
+		$ldr .= "\n<table class=\"lgladder\">\n";
+		$ldr .= "<tr><th>&nbsp;</th><th>Pl</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr>\n";
+		foreach ($in as $line) {
+			$x = explode("|", $line);
+			
+			if ($x[0] == "Group") {
+				$ldr .= "<tr><td style=\"font-weight: bold; text-align: center; line-height: 2.0em;\" colspan=\"10\"> ".$x[1]." </td></tr>\n";
+			}
+			else {
+				$status = "";
+				switch($x[7]) {
+					case "":		$x[7] = "&nbsp;";	break;
+					case "UCL":		$x[7] = "Ch Lg";	$status = " ucl";			break;
+					case "UCLQ":	$x[7] = "Ch Lg Q";	$status = " uclqual";		break;
+					case "UEL":		$x[7] = "Europa";	$status = " eurolg";		break;
+					case "UELQ":	$x[7] = "Europa Q";	$status = " eurolgqual";	break;
+					case "PR":		$x[7] = "&#8593;";	$status = " promoted";		break;
+					case "REL":		$x[7] = "&#8595;";	$status = " relegated";		break;
+					default:		missing("Ladder Status: ".$x[7]." for news/".$Comp[$g][$c]['ID'].".lad ?");
+				}
+				$style = "ladder_stat".$status;
+				$ldr .= "<tr><td>".makeTeam($x[0], $g, 'ldr')."</td><td class=\"".$style."\">".($x[1]+$x[2]+$x[3])."</td><td class=\"".$style."\">".$x[1]."</td><td class=\"".$style."\">".$x[2]."</td><td class=\"".$style."\">".$x[3]."</td><td class=\"".$style."\">".$x[4]."</td><td class=\"".$style."\">".$x[5]."</td><td class=\"".$style."\">".($x[4]-$x[5])."</td><td class=\"".$style." points\"><b>".$x[6]."</b></td><td class=\"".$style."\">".$x[7]."</td></tr>\n";
+			}
+		}
+		$ldr .= "</table>\n";
+	}
+	else {
+		$ldr = "<div><img src=\"image/alert.gif\"> NB: Ladder information not available!</div>\n";
+	}
+
+	return $ldr;
+}
+
+function doMatches($games, $cid, $coo) {
+	global $Team;
+	global $Comp;
+	
+	$cMatches = "";
+
+	if (array_key_exists("Type", $Comp[$coo][$cid])) {
+		if ($Comp[$coo][$cid]['Type'] == "L") {
+			$cMatches .= "<div class=\"col-md-6 col-sm-12 pull-right\">".makeLadder($cid, $coo)."</div>\n";
+		}
+	}
+
+	foreach ($games as $match) {
+		$m = explode("|", $match);
+		
+		$the_time = $m[1];	$homeTeam = $m[5];	$venue = $m[9];
+		$stage = $m[2];		$homeScore = $m[6];	$aggScore = $m[10];
+		$mID = $m[3];		$awayScore = $m[7];	$aggRes = $m[11];
+		$status = $m[4];	$awayTeam = $m[8];	$details = $m[12];
+		$this_stage = "";
+
+		$homeT = "<td colspan=\"8\">".makeTeam($homeTeam, $coo, 'home')."</td>";
+		$awayT = "<td colspan=\"8\">".makeTeam($awayTeam, $coo, 'away')."</td>";
+		$homeS = "<td colspan=\"2\"><div class=\"home_score ".makeScore($homeTeam)."\">".$homeScore."</div></td>";
+		$awayS = "<td colspan=\"2\"><div class=\"away_score ".makeScore($awayTeam)."\">".$awayScore."</div></td>";
+		
+		$kick_off = date("d M Y H:i",strtotime($the_time));
+
+		$status = makeStatus($status);
+		if ($status == "Not started" || $status == "Postponed" || $status == "Cancelled") { $homeScore = "-"; $awayScore = "-"; }
+
+		if (array_key_exists($homeTeam, $Team)) {
+			$hStyle = $Team[$homeTeam]["mnS"];
+		}
+		else {
+			$hStyle = "slate";
+		}
+
+		if (array_key_exists($awayTeam, $Team)) {
+			$aStyle = $Team[$awayTeam]["mnS"];
+		}
+		else {
+			$aStyle = "slate";
+		}
+
+		if (strlen($venue) < 5) {
+			$venue = "&nbsp;";
+		}
+		
+		if (array_key_exists('Type', $Comp[$coo][$cid])) {
+			if ($Comp[$coo][$cid]['Type'] == "L") {
+				$this_stage = "Matchday ".$stage;
+			}
+			elseif ($Comp[$coo][$cid]['Type'] == "C") {
+				if		($stage == "1/8")		{	$this_stage = "Round of 16";		}
+				elseif	($stage == "1/16")		{	$this_stage = "Round of 32";		}
+				elseif	($stage == "1/4")		{	$this_stage = "Quarter Finals";		}
+				elseif	($stage == "1/2")		{	$this_stage = "Semi Finals";		}
+				elseif	($stage == "bronze")	{	$this_stage = "3rd Place Match";	}
+				else 							{	$this_stage = "Round ".$stage;		}
+			}
+		}
+		else {
+			//pretty_var($cid);
+		}
+
+		if ($stage != "") {
+			$venue .= "<br />".$this_stage;
+		}
+		
+		$cMatches .= t(4)."<div class=\"col-md-6 col-sm-12\">\n";
+		$cMatches .= t(4)."<div class=\"match\">\n";
+		$cMatches .= t(5)."<table width=\"95%\" align=\"center\">\n";
+		$cMatches .= t(5)."<tr height=\"1\"><td width=\"5%\">&nbsp;</td><td width=\"5%\">&nbsp;</td><td width=\"5%\">&nbsp;</td><td width=\"5%\">&nbsp;</td><td width=\"5%\">&nbsp;</td><td width=\"5%\">&nbsp;</td><td width=\"5%\">&nbsp;</td><td width=\"5%\">&nbsp;</td><td width=\"5%\">&nbsp;</td><td width=\"5%\">&nbsp;</td><td width=\"5%\">&nbsp;</td><td width=\"5%\">&nbsp;</td><td width=\"5%\">&nbsp;</td><td width=\"5%\">&nbsp;</td><td width=\"5%\">&nbsp;</td><td width=\"5%\">&nbsp;</td><td width=\"5%\">&nbsp;</td><td width=\"5%\">&nbsp;</td><td width=\"5%\">&nbsp;</td><td width=\"5%\">&nbsp;</td></tr>\n";
+		$cMatches .= t(5)."<tr><td colspan=\"20\"><div class=\"status_line ".makeScore($homeTeam)."\"><span class=\"alignleft\">".$kick_off."</span><span class=\"aligncenter\">".$venue."</span><span class=\"alignright\">".$status."</span></div></td></tr>\n";
+		$cMatches .= t(5)."<tr>".$homeT.$homeS.$awayS.$awayT."</tr>\n";
+		if ($details != "")		{	$cMatches .= t(5).createDetails($details, makeScore($homeTeam), makeScore($awayTeam)); }
+		if ($aggScore != "")	{	$cMatches .= t(5)."<tr><td colspan=\"20\">".aggScore($homeTeam, $awayTeam, $aggScore, $aggRes)."</td></tr>\n"; }
+		$cMatches .= t(5)."<tr><td colspan=\"20\">&nbsp;</td></tr>\n";
+		$cMatches .= t(5)."</table>\n";
+		$cMatches .= t(4)."</div>\n";
+		$cMatches .= t(4)."</div>\n";
+	}
+
+	return $cMatches;
+}
+
+function doCompetitions($c, $n) {
+	global $Team;
+	global $Comp;
+
+	$cmp_order = Array();
+	foreach ($n as $cmp => $v) {
+		if (!(array_key_exists($cmp, $Comp[$c]))) {
+			missing ("From ".substr($cmp,0,3)." -> LC,".substr($cmp,3).",9999,".substr($cmp,3));
+			$Comp[$c][$cmp]['Rank'] = 9999;
+		}
+		$cmp_order[$cmp] = $Comp[$c][$cmp]['Rank'];
+	}
+	asort($cmp_order);
+
+	if (isset($Comp[$c])) {
+		if ($c == "INT") {
+			$style = "darkSlate";
+			$grpTitle = "International Competitions";
+		}
+		else {
+			if (!(array_key_exists($cmp, $Comp[$c]))) {
+				$Team[$Comp[$c]["id"]]["mjS"] = "slate";
+				$Team[$Comp[$c]["id"]]["display"] = $c;
+			}
+			$style = $Team[$Comp[$c]["id"]]["mjS"];
+			$grpTitle = $Team[$Comp[$c]["id"]]["display"];
+		}
+	}
+	else {
+		$style = "darkSlate";
+		$grpTitle .= $grp." <img src=\"image/alert.gif\">";
+		missing("X,".$grp.",1,".$grp.",");
+	}
+
+	$tGroup = "";
+
+	$tGroup .= t(2)."<div id=\"".$c."\" class=\"tab-pane fade\"><!-- Group shell A -->\n";
+	$tGroup .= t(2)."<div class=\"col-sm-12\"><!-- Group shell B -->\n";
+	$tGroup .= t(2)."<div class=\"comp_shell ".$style."\"><!-- Group shell C -->\n";
+	$tGroup .= t(3)."<h1>".$grpTitle."</h1>\n";
+	foreach ($cmp_order as $cmp => $v) {
+		if (!(array_key_exists("Name", $Comp[$c][$cmp]))) {
+			$compName = $cmp." <img src=\"image/alert.gif\">";
+		}
+		else {
+			$compName = $Comp[$c][$cmp]["Name"];
+		}
+		
+		$tGroup .= t(3)."<div class=\"col-md-12\"><!-- Comp shell A -->\n";
+		$tGroup .= t(4)."<h2>".$compName."</h2>\n";
+		$tGroup .= t(4)."<div class=\"comp_shell darkSlate\">\n";
+		$tGroup .= doMatches($n[$cmp]["news"], $cmp, $c);
+		$tGroup .= t(4)."</div>\n";
+		$tGroup .= t(3)."</div>\n";
+	}
+	$tGroup .= t(2)."</div><!-- Group shell C -->\n";
+	$tGroup .= t(2)."</div><!-- Group shell B -->\n";
+	$tGroup .= t(2)."</div><!-- Group shell A -->\n";
+
+	return $tGroup;
+}
+
+$DEBUG = 0;
+
+$missing = Array();
+$News = Array();
+$Comp = Array();
+$comp_file	= file("config/comps.csv", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+
+foreach ($comp_file as $c) {
+	$ca = explode (",", $c);
+
+	switch (true) {
+		case preg_match("/^N/", $c, $matches):
+			$Comp[$ca[1]]["Name"] = $ca[2];
+			$Comp[$ca[1]]["Rank"] = $ca[3];
+			$Comp[$ca[1]]["id"]   = $ca[4];
+			$current_c = $ca[1];
+			break;
+		case preg_match("/^C/", $c, $matches):
+		case preg_match("/^L/", $c, $matches):
+			$clist = explode("~", $ca[1]);
+			foreach ($clist as $co) {
+				$this_comp = $current_c.$co;
+				$Comp[$current_c][$this_comp]["Name"] = $ca[3];
+				$Comp[$current_c][$this_comp]["Rank"] = $ca[2];
+				$Comp[$current_c][$this_comp]["Type"] = $ca[0];
+			}
+			break;
+	}
+
+	/*
+		0  1    2     3  4
+		N,ENG,England,20,england
+		0   1               2   3
+		L,league1~leagueone,30,League One
+        0  1    2   3
+		C,facup,2,The FA Cup
+
+		ENG
+			Name: England
+			Rank: 20
+			
+		League One
+			Name(s): ENGleague1, ENGleagueone
+			Display: League One
+			Rank: 30
+			Type: L (League)
+		
+		The FA Cup
+			Name: ENGfacup
+			Display: The FA Cup
+			Rank: 2
+			Type: C (Cup)
+	*/
+}
+
+$Team = Array();
+$team_file	= file("config/teams.csv", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+foreach ($team_file as $t) {
+	$tt = explode(",", $t);
+	$alias = Array();
+	$count = 1;
+
+	if (preg_match("/~/", $tt[1])) {
+		$alias = explode("~", $tt[1]);
+	}
+	else {
+		$alias[0] = $tt[1];
+	}
+
+	foreach ($alias as $n) {
+		$Team[$n]["display"] = $tt[2];
+		$Team[$n]["ladderName"] = $tt[3];
+		$Team[$n]["mnS"] = $tt[4];
+		$Team[$n]["mjS"] = $tt[5];
+		$Team[$n]["grf"] = $tt[6];
+		$Team[$n]["coo"] = $tt[7];
+	}
+	/*
+		0   1               2      3   4   5    6  7
+		T,fcvaduz~vaduz,FC Vaduz,Vaduz,wr,x-r-w,,LIE
+
+		FC Vaduz
+			key: vaduz, fcvaduz
+			Display : FC Vaduz
+			Ladder: Vaduz
+			minorStyle: wr (text, background)
+			majorStyle: x-r-w (see css)
+			graphic: x000
+			country: AUS
+	*/
+}
+
+$world		= file("news/world.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+//$aus		= file("news/aus.txt",   FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+foreach ($world as $w) {
+	$thisg = explode("|", $w);
+
+	if (preg_match("/^C/", $w)) {
+		$curr_grp = substr($thisg[1], 0, 3);
+		$curr_cmp = $thisg[1];
+		$News[$curr_grp][$curr_cmp]["news"] = Array();
+	}
+	elseif (preg_match("/^M/", $w)) {
+		$News[$curr_grp][$curr_cmp]["news"][] = $w;
+	}
+	
+	/*
+		0  1                  2     3
+		C|MEXligamxclausura|847754|230
+
+		MEX
+			key: ligamxclausura
+			ladder: 847754
+			group ladder: 230
+
+		0    1             2    3     4    5    6 7 8            9                10 11 12
+		M|09.01.2017 01:00|1|2425395|F-6|puebla|2|3|monterrey|Estadio Cuahutehmoc|  |  |1:21:Alexis Pedro Canelo:Alexis Pedro Canelo:0:7:0:616400#2:23:Jesus Molina:Jesus Molina:0:7:0:112081#1:38:Alexis Pedro Canelo:Alexis Pedro Canelo:0:7:0:616400#2:56:Jesus Molina:Jesus Molina:0:7:0:112081#2:86:Edwin Cardona:Edwin Cardona:1:8:0:177507#
+
+		Match
+			date: 09.01.2017 01:00
+			stage: 1
+			id: 2425395
+			status: F-6
+			home: puebla
+			home score: 2
+			away score: 3
+			away: monterrey
+			venue: Estadio Cuahutehmoc
+			agg score: blank (10)
+			agg home status: blank (11)
+			match details: 1:21:Alexis....
+	*/
+}
+?>
