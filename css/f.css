@@ -114,3 +114,119 @@ h2 > img {
 	border-radius: 4px;
 	white-space: nowrap;
 }
+#debug {
+	color: #000000;
+	font-size: 90%;
+	font-style: italic;
+	text-align: left;
+	background-color: red;
+	padding: 0 5px;
+	margin-bottom: 15px;
+	border: 1px dashed black;
+}
+
+li {
+	margin-top: 2px;
+	margin-right: 10px;
+	border-radius: 10px;
+}
+
+li > a {
+	color: inherit;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+.nav {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.nav-tabs > li > a  {
+	color: inherit;
+	font-weight: bold;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.nav-link.active {
+	color: inherit !important;
+}
+
+body {
+	background-color: #000000;
+	background-image: url("../image/grass.png");
+	font-family: 'Metrophobic', 'Calibri', 'Verdana', 'Helvetica Neue', sans-serif;
+	font-size: 8px;
+	padding: 5px;
+}
+
+a,
+a:link,
+a:hover,
+a:active {
+	color: inherit !important;
+	text-decoration: none !important;
+}
+
+h1 {
+	font-size: 3.0em;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0.4em;
+}
+
+h1 > img {
+	padding: 1px;
+}
+
+h2 {
+	font-size: 2.75em;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0.4em;
+}
+
+h2 > img {
+	padding: 1px;
+}
+
+
+.tab-pane {
+	position: relative;
+	margin-top: 10px;
+}
+
+.theSection {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 25px;
+	padding-bottom: 10px;
+	border-radius: 15px;
+	position: relative;
+}
+
+.theContent {
+	padding: 10px 20px 10px 20px;
+	border-radius: 10px;
+	margin-bottom: 5px;
+}
+
+.flag {
+}
+
+.home_team {
+	width: 98%;
+	float: left;
+	position: relative;
+	text-align: center;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 3px;
+	border-radius: 4px;
+	white-space: nowrap;
+}
