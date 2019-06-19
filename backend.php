@@ -526,10 +526,11 @@ function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event,
 	$ev = explode("~", $e);
 	if ($s == "e"){
 		if ($ev[3] != "0" && ($ev[0] == 45 || $ev[0] == 90))	{	$ev[0] .= "(+".$ev[3]."')"; } # minutes into extra time
-		if ($ev[4] == "7") 		{	$bleh = 0; } #Normal goal - ignore
-		elseif ($ev[4] == "8")	{	$ev[1] .= " (P)"; } # Penalty
-		elseif ($ev[4] == "9")	{	$bleh = 0; } # 1st yellow card - ignore
-		elseif ($ev[4] == "14")	{	$bleh = 0; } # Penalty goal - ignore
+		if ($ev[4] == "7") 		{	$bleh = 0; } 			# Normal goal - ignore
+		elseif ($ev[4] == "8")	{	$ev[1] .= " (P)"; } 	# Penalty
+		elseif ($ev[4] == "9")	{	$bleh = 0; } 			# 1st yellow card - ignore
+		elseif ($ev[4] == "10")	{	$ev[1] .= " (OG)"; }	# Own goal
+		elseif ($ev[4] == "14")	{	$bleh = 0; } 			# Penalty goal - ignore
 		elseif ($ev[4] == "15") {	
 			if ($ev[2] == "awayred") { $ev[2] == "away2yellow"; }
 			elseif ($ev[2] == "homered") { $ev[2] == "home2yellow"; }
