@@ -34,18 +34,99 @@ def washText(the_text, out="n"):
 		if (value >= 32 and value < 128):				out_news = out_news + chr(value)
 		elif (value > 128):
 			if value == 195:
-				if (in_news[index+1] == 129):
+				if (in_news[index+1] == 128):
+					if out == "h":	out_news = out_news + "&Agrave;"
+					else:			out_news = out_news + "A"
+				elif (in_news[index+1] == 129):
 					if out == "h":	out_news = out_news + "&Aacute;"
+					else:			out_news = out_news + "A"
+				elif (in_news[index+1] == 130):
+					if out == "h":	out_news = out_news + "&Acirc;"
+					else:			out_news = out_news + "A"
+				elif (in_news[index+1] == 131):
+					if out == "h":	out_news = out_news + "&Atilde;"
+					else:			out_news = out_news + "A"
+				elif (in_news[index+1] == 132):
+					if out == "h":	out_news = out_news + "&Auml;"
 					else:			out_news = out_news + "A"
 				elif (in_news[index+1] == 133):
 					if out == "h":	out_news = out_news + "&Aring;"
 					else:			out_news = out_news + "A"
+				elif (in_news[index+1] == 134):
+					if out == "h":	out_news = out_news + "&AElig;"
+					else:			out_news = out_news + "Ae"
+				elif (in_news[index+1] == 135):
+					if out == "h":	out_news = out_news + "&Ccedil;"
+					else:			out_news = out_news + "C"
+				elif (in_news[index+1] == 136):
+					if out == "h":	out_news = out_news + "&Egrave;"
+					else:			out_news = out_news + "E"
+				elif (in_news[index+1] == 137):
+					if out == "h":	out_news = out_news + "&Eacute;"
+					else:			out_news = out_news + "E"
+				elif (in_news[index+1] == 138):
+					if out == "h":	out_news = out_news + "&Ecirc;"
+					else:			out_news = out_news + "E"
+				elif (in_news[index+1] == 139):
+					if out == "h":	out_news = out_news + "&Euml;"
+					else:			out_news = out_news + "E"
+				elif (in_news[index+1] == 140):
+					if out == "h":	out_news = out_news + "&Igrave;"
+					else:			out_news = out_news + "I"
+				elif (in_news[index+1] == 141):
+					if out == "h":	out_news = out_news + "&Iacute;"
+					else:			out_news = out_news + "I"
+				elif (in_news[index+1] == 142):
+					if out == "h":	out_news = out_news + "&Icirc;"
+					else:			out_news = out_news + "I"
+				elif (in_news[index+1] == 143):
+					if out == "h":	out_news = out_news + "&Iuml;"
+					else:			out_news = out_news + "I"
 				elif (in_news[index+1] == 144):
 					if out == "h":	out_news = out_news + "&ETH;"
 					else:			out_news = out_news + "D"
+				elif (in_news[index+1] == 145):
+					if out == "h":	out_news = out_news + "&Ntilde;"
+					else:			out_news = out_news + "N"
+				elif (in_news[index+1] == 146):
+					if out == "h":	out_news = out_news + "&Ograve;"
+					else:			out_news = out_news + "O"
+				elif (in_news[index+1] == 147):
+					if out == "h":	out_news = out_news + "&Oacute;"
+					else:			out_news = out_news + "O"
+				elif (in_news[index+1] == 148):
+					if out == "h":	out_news = out_news + "&Ocirc;"
+					else:			out_news = out_news + "O"
+				elif (in_news[index+1] == 149):
+					if out == "h":	out_news = out_news + "&Ocirc;"
+					else:			out_news = out_news + "O"
 				elif (in_news[index+1] == 150):
 					if out == "h":	out_news = out_news + "&Ouml;"
 					else:			out_news = out_news + "O"
+				elif (in_news[index+1] == 152):
+					if out == "h":	out_news = out_news + "&Oslash;"
+					else:			out_news = out_news + "O"
+				elif (in_news[index+1] == 153):
+					if out == "h":	out_news = out_news + "&Ugrave;"
+					else:			out_news = out_news + "U"
+				elif (in_news[index+1] == 154):
+					if out == "h":	out_news = out_news + "&Uacute;"
+					else:			out_news = out_news + "U"
+				elif (in_news[index+1] == 155):
+					if out == "h":	out_news = out_news + "&Ucirc;"
+					else:			out_news = out_news + "U"
+				elif (in_news[index+1] == 156):
+					if out == "h":	out_news = out_news + "&Uuml;"
+					else:			out_news = out_news + "U"
+				elif (in_news[index+1] == 157):
+					if out == "h":	out_news = out_news + "&Yacute;"
+					else:			out_news = out_news + "Y"
+				elif (in_news[index+1] == 158):
+					if out == "h":	out_news = out_news + "&THORN;"
+					else:			out_news = out_news + "Th"
+				elif (in_news[index+1] == 159):
+					if out == "h":	out_news = out_news + "&szlig;"
+					else:			out_news = out_news + "sz"
 				elif (in_news[index+1] == 160):
 					if out == "h":	out_news = out_news + "&agrave;"
 					else:			out_news = out_news + "a"
@@ -67,6 +148,9 @@ def washText(the_text, out="n"):
 				elif (in_news[index+1] == 166):
 					if out == "h":	out_news = out_news + "&aelig;"
 					else:			out_news = out_news + "ae"
+				elif (in_news[index+1] == 167):
+					if out == "h":	out_news = out_news + "&ccedil;"
+					else:			out_news = out_news + "c"
 				elif (in_news[index+1] == 168):
 					if out == "h":	out_news = out_news + "&egrave;"
 					else:			out_news = out_news + "e"
@@ -79,11 +163,35 @@ def washText(the_text, out="n"):
 				elif (in_news[index+1] == 171):
 					if out == "h":	out_news = out_news + "&euml;"
 					else:			out_news = out_news + "e"
+				elif (in_news[index+1] == 172):
+					if out == "h":	out_news = out_news + "&igrave;"
+					else:			out_news = out_news + "i"
 				elif (in_news[index+1] == 173):
 					if out == "h":	out_news = out_news + "&iacute;"
-					else:			out_news = out_news + "e"
+					else:			out_news = out_news + "i"
+				elif (in_news[index+1] == 174):
+					if out == "h":	out_news = out_news + "&icirc;"
+					else:			out_news = out_news + "i"
+				elif (in_news[index+1] == 175):
+					if out == "h":	out_news = out_news + "&iuml;"
+					else:			out_news = out_news + "i"
+				elif (in_news[index+1] == 176):
+					if out == "h":	out_news = out_news + "&eth;"
+					else:			out_news = out_news + "d"
+				elif (in_news[index+1] == 177):
+					if out == "h":	out_news = out_news + "&ntilde;"
+					else:			out_news = out_news + "n"
+				elif (in_news[index+1] == 178):
+					if out == "h":	out_news = out_news + "&ograve;"
+					else:			out_news = out_news + "o"
+				elif (in_news[index+1] == 179):
+					if out == "h":	out_news = out_news + "&oacute;"
+					else:			out_news = out_news + "o"
 				elif (in_news[index+1] == 180):
 					if out == "h":	out_news = out_news + "&ocirc;"
+					else:			out_news = out_news + "o"
+				elif (in_news[index+1] == 181):
+					if out == "h":	out_news = out_news + "&otilde;"
 					else:			out_news = out_news + "o"
 				elif (in_news[index+1] == 182):
 					if out == "h":	out_news = out_news + "&ouml;"
@@ -97,8 +205,20 @@ def washText(the_text, out="n"):
 				elif (in_news[index+1] == 186):
 					if out == "h":	out_news = out_news + "&uacute;"
 					else:			out_news = out_news + "u"
+				elif (in_news[index+1] == 187):
+					if out == "h":	out_news = out_news + "&ucirc;"
+					else:			out_news = out_news + "i"
 				elif (in_news[index+1] == 188):
 					if out == "h":	out_news = out_news + "&uuml;"
+					else:			out_news = out_news + "u"
+				elif (in_news[index+1] == 189):
+					if out == "h":	out_news = out_news + "&yacute;"
+					else:			out_news = out_news + "u"
+				elif (in_news[index+1] == 190):
+					if out == "h":	out_news = out_news + "&thorn;"
+					else:			out_news = out_news + "u"
+				elif (in_news[index+1] == 191):
+					if out == "h":	out_news = out_news + "&yuml;"
 					else:			out_news = out_news + "u"
 				else:
 					print("====")
@@ -384,7 +504,7 @@ def main():
 	asc_news = get_data(main_url)
 	o_news = washText(asc_news)
 
-	output = open(original_news, "w")
+	output = open(original_news, "w+")
 	output.write(o_news)
 	output.close
 
