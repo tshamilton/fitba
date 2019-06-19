@@ -31,6 +31,8 @@ def washText(the_text, out="n"):
 	in_news = list(the_text)
 
 	for index, value in enumerate(in_news):
+		if value = -1:
+			pass
 		if (value >= 32 and value < 128):				out_news = out_news + chr(value)
 		elif (value > 128):
 			if value == 195:
@@ -228,6 +230,16 @@ def washText(the_text, out="n"):
 						else:
 							print(str(in_news[y])+" => ??")
 					print("====")
+			elif value == 226:
+				if in_news[index+1] == 128 and in_news[index+2] == 153: # right quote
+					if out == "h":	out_news = out_news + "'"
+					else:			out_news = out_news + "'"
+					in_news[index+1] == -1
+					in_news[index+2] == -1
+				elif in_news[index+1] == 132 and in_news[index+2] == 162: # trade mark
+					in_news[index+1] == -1
+					in_news[index+2] == -1
+					pass
 			else:
 				if in_news[index-1] == 195:
 					pass
