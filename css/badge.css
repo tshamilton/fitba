@@ -2054,7 +2054,7 @@
 	text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;
 }
 .x295 {
-	background-image: url('../image/logos/sarpsborg08.png');
+	background-image: url('../image/logos/aeklarnaca.png');
 	background-color: #000000;
 	background-size: 100% 100%;
 	color: #009900;
@@ -2073,4 +2073,39 @@
 	background-size: 100% 100%;
 	color: #ffffff;
 	text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;
+}
+.x298 {
+	background-image: url('../image/logos/getafe.png');
+	background-color: #ffffff;
+	background-size: 100% 100%;
+	color: #0000ff;
+	text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;
+}
+.x299 {
+	background-image: url('../image/logos/rennes.png');
+	background-color: #ffffff;
+	background-size: 100% 100%;
+	color: #ff0000;
+	text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;
+}
+.x300 {
+	background-image: url('../image/logos/kvmechelen.png');
+	background-color: #ffffff;
+	background-size: 100% 100%;
+	color: #fff00c;
+	text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;
+}
+.x301 {
+	background-image: url('../image/logos/oleksandriya.png');
+	background-color: #ffffff;
+	background-size: 100% 100%;
+	color: #fff00c;
+	text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;
+}
+.x301 {
+	background-image: url('../image/logos/wolfsbergerac.png');
+	background-color: #ffffff;
+	background-size: 100% 100%;
+	color: #000000;
+	text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;
 }
