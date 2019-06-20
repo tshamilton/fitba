@@ -31,9 +31,8 @@ def washText(the_text, out="n"):
 	in_news = list(the_text)
 
 	for index, value in enumerate(in_news):
-		if value == -1:
-			pass
-		if (value >= 32 and value < 128):				out_news = out_news + chr(value)
+		if (value >= 32 and value < 128):
+			out_news = out_news + chr(value)
 		elif (value > 128):
 			if value == 195:
 				if (in_news[index+1] == 128):
@@ -231,18 +230,19 @@ def washText(the_text, out="n"):
 							print(str(in_news[y])+" => ??")
 					print("====")
 			elif value == 226:
-				if in_news[index+1] == 128 and in_news[index+2] == 153: # right quote
-					if out == "h":	out_news = out_news + "'"
-					else:			out_news = out_news + "'"
-					in_news[index+1] == -1
-					in_news[index+2] == -1
-				elif in_news[index+1] == 132 and in_news[index+2] == 162: # trade mark
-					in_news[index+1] == -1
-					in_news[index+2] == -1
-					pass
+				if in_news[index+1] == 128:
+					if in_news[index+2] == 153: # right quote
+						if out == "h":	out_news = out_news + "'"
+						else:			out_news = out_news + "'"
+				elif in_news[index+1] == 132:
+					in_news[index+2] == 162: # trade mark
+						pass
 			else:
 				if in_news[index-1] == 195:
 					pass
+				if in_news[index-1] == 226 or in_news[index-2] == 226:
+					pass
+					
 				else:
 					print("====")
 					for y in range(index-5, index+5):
@@ -277,7 +277,7 @@ def defineLeague(token, id, pl):
 			this_ladder = get_data("http://fotmobenetpulse.s3-external-3.amazonaws.com/tables.ext."+pl+".fot")
 
 		out_table = {}
-		this_ladder = washText(this_ladder)
+		this_ladder = washText(this_ladder, "")
 		this_ladder = re.sub(">", ">QQ", this_ladder)
 
 		the_ladder = this_ladder.split("QQ")
