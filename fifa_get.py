@@ -26,7 +26,7 @@ def cleanWords(text):
 	txt = re.sub("[\s|\'|\.|\-|\/|\°|\(|\)|\&]", "", text)
 	return txt
 
-def washText(the_text, out="n", context):
+def washText(the_text, context, out="n"):
 	out_news = ""
 	in_news = list(the_text)
 
@@ -278,7 +278,7 @@ def defineLeague(token, id, pl):
 			this_ladder = get_data("http://fotmobenetpulse.s3-external-3.amazonaws.com/tables.ext."+pl+".fot")
 
 		out_table = {}
-		this_ladder = washText(this_ladder, "", token)
+		this_ladder = washText(this_ladder, token)
 		this_ladder = re.sub(">", ">QQ", this_ladder)
 
 		the_ladder = this_ladder.split("QQ")
@@ -405,7 +405,7 @@ def defineMatch(the_match):
 
 	status = ms1+"-"+ms2
 
-	mdetails = washText(get_data("http://fotmobenetpulse.s3-external-3.amazonaws.com/matchfacts."+mid+".fot"), "h", mid+":"+mht+":"+mat)
+	mdetails = washText(get_data("http://fotmobenetpulse.s3-external-3.amazonaws.com/matchfacts."+mid+".fot"), mid+":"+mht+":"+mat, "h")
 
 	if "Access Denied" in mdetails:
 		debug("Access Denied for mid "+mid)
@@ -515,7 +515,7 @@ def main():
 
 	debug("Getting main data.")
 	asc_news = get_data(main_url)
-	o_news = washText(asc_news, "n", "main")
+	o_news = washText(asc_news, "main", "n")
 
 	output = open(original_news, "w+")
 	output.write(o_news)
