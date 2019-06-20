@@ -235,12 +235,12 @@ def washText(the_text, out="n", context):
 						if out == "h":	out_news = out_news + "'"
 						else:			out_news = out_news + "'"
 				elif in_news[index+1] == 132:
-					in_news[index+2] == 162:
+					if in_news[index+2] == 162:
 						pass
 			else:
 				if in_news[index-1] == 195:
 					pass
-				if in_news[index-1] == 226 or in_news[index-2] == 226:
+				elif in_news[index-1] == 226 or in_news[index-2] == 226:
 					pass
 					
 				else:
