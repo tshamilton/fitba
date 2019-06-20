@@ -231,11 +231,11 @@ def washText(the_text, out="n"):
 					print("====")
 			elif value == 226:
 				if in_news[index+1] == 128:
-					if in_news[index+2] == 153: # right quote
+					if in_news[index+2] == 153:
 						if out == "h":	out_news = out_news + "'"
 						else:			out_news = out_news + "'"
 				elif in_news[index+1] == 132:
-					in_news[index+2] == 162: # trade mark
+					in_news[index+2] == 162:
 						pass
 			else:
 				if in_news[index-1] == 195:
