@@ -4840,8 +4840,7 @@ sinttruiden~sttruiden,Sint Truidense VV,Sbyy,yb,e-bby,,50.8140196,5.1690234,Sint
 sion,FC Sion,Swrr,wr,e-wwr,x114,46.233315,7.3759673,Sion,SUI
 sionibolnisi,Sioni Bolnisi,Swbb,wb,x-wb,,41.4484578,44.5348509,Bolnisi,GEO
 siquinala,Siquinal&aacute;,Sgoo,go,x-go,,14.3063763,-90.9704772,Siquinal&aacute;,GUA
-,Siracusa,Swaa,wa,x-wa,,37.0743,15.2913,Siracusa,ITA
-siracusa,siracusacalcio,ASD Citt&agrave; di Siracusa,Swaa,wa,x-wa,,37.0743,15.2913,Siracusa,ITA
+siracusa~siracusacalcio,ASD Citt&agrave; di Siracusa,Swaa,wa,x-wa,,37.0743,15.2913,Siracusa,ITA
 sirafkangan,Siraf Kangan,Swbb,wb,x-wb,,33.821098,46.31034,Eyvan,IRN
 sirius,IK Sirius,Skak,ka,s-kka,,59.8495661,17.6452477,Uppsala,SWE
 sirokibrijeg,&Scaron;iroki Brijeg,Swbb,wb,x-wb,,43.3786748,17.5980427,&Scaron;iroki Brijeg,BIH
