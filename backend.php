@@ -645,8 +645,8 @@ function missing($in) {
 		next;
 	}
 	else {
-		$m = fopen("newfile.txt", "a") or die("Unable to open Missing file!");
-		fwrite($m, $in);
+		$m = fopen("./news/missing.txt", "a") or die("Unable to open Missing file!");
+		fwrite($m."\n", $in);
 		fclose($m);
 	}
 }

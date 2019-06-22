@@ -4511,7 +4511,7 @@ ruzomberok,MFK Ru&zcaron;omberok,Rkoo,ko,x-ko,,49.081645,19.2834091,Ru&zcaron;om
 rvvh,Ridderkerk VVH,Rwbw,wb,s-bbw,,51.8759334,4.5886358,Ridderkerk,NED
 rwahlen,Rot Weiss Ahlen,Awrw,wr,e-wwr,,51.753333,7.905,Ahlen,GER
 rwbadria,RWB Adria Chicago,Awbb,wb,x-wb,,41.7200338,-87.5530419,Chicago,USA
-rwdmbrusselsfc,RWD Molenbeek 47,Mkwr,kw,e-krw,,50.8551783,4.3106936,Molenbeek-Sint-Jean,BEL
+rwdmolenbeek~rwdmbrusselsfc,RWD Molenbeek 47,Mkwr,kw,e-krw,,50.8551783,4.3106936,Molenbeek-Sint-Jean,BEL
 rweeemsmond,RWE Eemsmond,Ebyy,by,x-by,,53.4475285,6.3599218,Eemsmond,NED
 rwoalzey,RWO Alzey,Awrr,wr,x-wr,,49.7375756,8.110439,Alzey,GER
 rynninge,Rynninge IK,Rbww,bw,x-bw,,59.2812896,15.2324467,&Ouml;rebro,SWE
@@ -6098,4 +6098,5 @@ zvezdaryazan,Zvezda Ryazan,Zwrr,wr,x-wr,,54.6080607,39.7725155,Ryazan,RUS
 zwaluwenvlaardingen,Zwaluwen Vlaardingen,Zwkw,wk,s-kkw,,51.930972,4.3594535,Vlaardingen,NED
 zwarteleeuw,Zwarte Leeuw,Zyky,ky,b-kky,,51.342415,4.7518377,Rijkevorsel,BEL
 zweigenkanazawa,Zweigen Kanazawa,Zkrr,kr,x-kr,,36.575833,136.605278,Kanazawa,JPN
-riteriai,Riteriai,Rnyy,x-ny,,54.6691898,25.294696,Vilnius,LTU
+riteriai,Riteriai,Rnyy,ny,x-ny,,54.6691898,25.294696,Vilnius,LTU
+klosterneuberg,Klosterneuberg,Kobb,ob,x-ob,,48.3079193,16.3310265,Klosterneuberg,AUT
