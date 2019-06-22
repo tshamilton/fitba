@@ -31,21 +31,21 @@ def tally_colours(mN, mJ):
 			Stats["Colours"]["bands"][mJ] += 1
 		else:
 			Stats["Colours"]["bands"][mJ] = 1
-			Stats["Colours"]["bands"]["sortedby"][mJ] = mJ[3:]+mJ[2]
+			Stats["Colours"]["bands"]["sortedby"][mJ] = mJ[4]+mJ[3]+mJ[2]
 
 	elif "h-" in mJ:
 		if mJ in Stats["Colours"]["hoops"]:
 			Stats["Colours"]["hoops"][mJ] += 1
 		else:
 			Stats["Colours"]["hoops"][mJ] = 1
-			Stats["Colours"]["hoops"]["sortedby"][mJ] = mJ[3:]+mJ[2]
+			Stats["Colours"]["hoops"]["sortedby"][mJ] = mJ[4]+mJ[3]+mJ[2]
 
 	elif "e-" in mJ:
 		if mJ in Stats["Colours"]["edges"]:
 			Stats["Colours"]["edges"][mJ] += 1
 		else:
 			Stats["Colours"]["edges"][mJ] = 1
-			Stats["Colours"]["edges"]["sortedby"][mJ] = mJ[3:]+mJ[2]
+			Stats["Colours"]["edges"]["sortedby"][mJ] = mJ[4]+mJ[3]+mJ[2]
 
 	elif "o-" in mJ:
 		if mJ in Stats["Colours"]["offsets"]:
@@ -140,6 +140,9 @@ with open(the_nations, 'r') as n:
 		Stats["Nations"]["total"] += 1
 		Stats["Nations"]["by_tri"][row[8]] = id[0]
 		Stats["Nations"]["by_name"][id[0]] = row[8]
+		Stats["Teams"][row[8]] = {}
+		Stats["Teams"][row[8]]["total"] = 0
+		Stats["Teams"][row[8]]["list"] = []
 		tally_colours(row[2], row[3])
 
 with open(the_teams, 'r') as t:
@@ -147,6 +150,8 @@ with open(the_teams, 'r') as t:
 	teams = csv.reader(t)
 	for row in teams:
 		Stats["Teams"]["total"] += 1
+		Stats["Teams"][row[9]]["total"] += 1
+		Stats["Teams"][row[9]]["list"].append(row[0])
 		tally_colours(row[3], row[4])
 
 with open(the_comps, 'r') as c:

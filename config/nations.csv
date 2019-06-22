@@ -43,7 +43,7 @@ china,China,yr,x-yr,,35.1053201,104.0968338,5,CHN
 colombia,Colombia,by,e-rby,x069,4.570868,-74.297333,6,COL
 comoros,Comoros,wg,x-wg,,-11.875001,43.872219,10,COM
 congo,Congo,wr,x-wr,,-4.038333,21.758664,6,CGO
-congodr~drcongo,Congo DR,rb,x-rb,,-0.228021,15.827659,7,COD
+congodr~drcongo,Congo DR,ra,e-ura,,-0.228021,15.827659,7,COD
 cookislands,Cook Islands,wg,x-wg,,-21.236736,-159.777671,8,COK
 costarica,Costa Rica,rb,x-br,x070,9.748917,-83.753428,8,CRC
 croatia,Croatia,rw,z-brw,x071,45.1,15.2,8,CRO
@@ -63,6 +63,7 @@ england,England,rw,x-rw,x003,52.9360456,-1.1769437,7,ENG
 equatorialguinea,Equitorial Guinea,wr,x-wr,,1.650801,10.267895,9,EQG
 eritrea,Eritrea,gr,x-gr,,15.179384,39.782334,7,ERI
 estonia,Estonia,wb,b-wkb,,58.595272,25.013607,8,EST
+eswatini~swaziland,eSwatini,yb,x-yb,,-26.522503,31.465866,9,SWZ
 ethiopia,Ethiopia,yg,e-yrg,,9.145,40.489673,6,ETH
 faroeislands,Faroe Islands,wb,x-wb,,61.892635,-6.911806,9,FRO
 fiji,Fiji,kw,x-kw,,-16.578193,179.414413,8,FIJ
@@ -184,7 +185,6 @@ srilanka,Sri Lanka,wq,x-wq,,7.873054,80.771797,8,SRI
 stkittsandnevis,St. Kitts &amp; Nevis,rg,s-wrg,,17.357822,-62.782998,8,SKN
 sudan,Sudan,wr,x-wr,,12.862807,30.217636,6,SDN
 suriname,Suriname,gw,x-gw,,3.919305,-56.027783,8,SUR
-eswatini~swaziland,eSwatini,yb,x-yb,,-26.522503,31.465866,9,SWZ
 sweden,Sweden,by,x-by,x130,60.128161,18.643501,5,SWE
 switzerland,Switzerland,wr,x-wr,x112,46.818188,8.227512,8,SUI
 syria,Syria,wr,x-wr,,34.802075,38.996815,7,SYR
@@ -201,7 +201,7 @@ tunisia,Tunisia,rw,x-rw,x249,33.886917,9.537499,7,TUN
 turkey,Turkey,wr,x-wr,x123,38.963745,35.243322,7,TUR
 turkmenistan,Turkmenistan,gw,x-gw,,38.969719,59.556278,7,TKM
 turksandcaicosislands,Turks &amp; Caicos Islands,wb,x-wb,,21.694025,-71.797928,8,TCA
-uganda,Uganda,ky,x-ky,,1.373333,32.290275,8,UGA
+uganda,Uganda,ky,o-krky,,1.373333,32.290275,8,UGA
 ukraine,Ukraine,ay,x-ay,x132,48.379433,31.16558,7,UKR
 unitedarabemirates~uae,United Arab Emirates,kw,x-kw,,23.424076,53.847818,8,UAE
 unitedstates~usa,United States,nw,x-nw,x005,37.09024,-95.712891,5,USA
