@@ -487,7 +487,11 @@ def defineMatch(the_match):
 		d_fu = re.findall("\"Fact\":\"(.+?)\"", d_facts)
 		d_facts = "~".join(d_fu), "h"
 
-	mt = mid+"|"+mht+"|"+mhs+"|"+mas+"|"+mat+"|"+mrd+"|"+mts+"|"+status+"|"+mag+"|"+mah+"|"+mph+"|"+mpa+"|"+d_coach+"|"+d_venue+"|"+dmd+"|"+d_subs+"|"+d_facts
+	try:
+		mt = mid+"|"+mht+"|"+mhs+"|"+mas+"|"+mat+"|"+mrd+"|"+mts+"|"+status+"|"+mag+"|"+mah+"|"+mph+"|"+mpa+"|"+d_coach+"|"+d_venue+"|"+dmd+"|"+d_subs+"|"+d_facts
+	except TypeError:
+		print("TypeError: "+mid+" : "+mht+" - "+mat)
+
 	debug(mt)
 	return mt
 

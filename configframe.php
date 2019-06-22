@@ -165,14 +165,14 @@ foreach ($the_nats as $in_t) {
 			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="colours" name="colours">
 				<div class="container-fluid">
 					<h1 class="text-center"> Colours </h1>
-					<h2 class="text-center"> Minors (<?php print sizeof($Stats["Colours"]["minor"]); ?>) </h2>
+					<h2 class="text-center"> Minors (<?php print $Stats["Colours"]["minor"]["total"]; ?>) </h2>
 					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 						<div class="container-fluid p-4">
 							<div class="row">
 								<div class="col-sm-1">
 <?php
 	$the_count = 1;
-	$cMn = $Stats["Colours"]["minor"];
+	$cMn = $Stats["Colours"]["minor"]["sortedby"];
 	ksort($cMn);
 	#=((Size+(nCol-mod))/nCol)
 	$size = sizeof($cMn)-1;
@@ -196,7 +196,7 @@ foreach ($the_nats as $in_t) {
 							</div>
 						</div>
 					</div>
-					<h2 class="text-center"> Plains (<?php print sizeof($Stats["Colours"]["plain"]); ?>) </h2>
+					<h2 class="text-center"> Plains (<?php print $Stats["Colours"]["plain"]["total"]; ?>) </h2>
 					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 						<div class="container-fluid p-4">
 							<div class="row">
@@ -227,7 +227,7 @@ foreach ($the_nats as $in_t) {
 							</div>
 						</div>
 					</div>
-					<h2 class="text-center"> Stripes (<?php print sizeof($Stats["Colours"]["stripes"]); ?>) </h2>
+					<h2 class="text-center"> Stripes (<?php print $Stats["Colours"]["stripes"]["total"]; ?>) </h2>
 					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 						<div class="container-fluid p-4">
 						<div class="row">
@@ -258,7 +258,7 @@ foreach ($the_nats as $in_t) {
 							</div>
 						</div>
 					</div>
-					<h2 class="text-center"> Edges (<?php print sizeof($Stats["Colours"]["stripes"]); ?>) </h2>
+					<h2 class="text-center"> Edges (<?php print $Stats["Colours"]["edges"]["total"]; ?>) </h2>
 					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 						<div class="container-fluid p-4">
 						<div class="row">
@@ -289,7 +289,7 @@ foreach ($the_nats as $in_t) {
 							</div>
 						</div>
 					</div>
-					<h2 class="text-center"> Bands (<?php print sizeof($Stats["Colours"]["bands"]); ?>) </h2>
+					<h2 class="text-center"> Bands (<?php print $Stats["Colours"]["bands"]["total"]; ?>) </h2>
 					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 						<div class="container-fluid p-4">
 						<div class="row">
@@ -320,7 +320,7 @@ foreach ($the_nats as $in_t) {
 							</div>
 						</div>
 					</div>
-					<h2 class="text-center"> Hoops (<?php print sizeof($Stats["Colours"]["hoops"]); ?>) </h2>
+					<h2 class="text-center"> Hoops (<?php print $Stats["Colours"]["hoops"]["total"]; ?>) </h2>
 					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 						<div class="container-fluid p-4">
 						<div class="row">
@@ -351,7 +351,7 @@ foreach ($the_nats as $in_t) {
 							</div>
 						</div>
 					</div>
-					<h2 class="text-center"> Halves (<?php print sizeof($Stats["Colours"]["halves"]); ?>) </h2>
+					<h2 class="text-center"> Halves (<?php print $Stats["Colours"]["halves"]["total"]; ?>) </h2>
 					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 						<div class="container-fluid p-4">
 						<div class="row">
@@ -382,7 +382,7 @@ foreach ($the_nats as $in_t) {
 							</div>
 						</div>
 					</div>
-					<h2 class="text-center"> Offsets (<?php print sizeof($Stats["Colours"]["offsets"]); ?>) </h2>
+					<h2 class="text-center"> Offsets (<?php print $Stats["Colours"]["offsets"]["total"]; ?>) </h2>
 					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 						<div class="container-fluid p-4">
 						<div class="row">
@@ -413,7 +413,7 @@ foreach ($the_nats as $in_t) {
 							</div>
 						</div>
 					</div>
-					<h2 class="text-center"> Others (<?php print sizeof($Stats["Colours"]["others"]); ?>) </h2>
+					<h2 class="text-center"> Others (<?php print $Stats["Colours"]["others"]["total"]; ?>) </h2>
 					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 						<div class="container-fluid p-4">
 						<div class="row">
