@@ -8,6 +8,10 @@
 .tab-content { padding: 20px; }
 .tab-pane { padding: 15px 0; }
 
+li { padding: 5px 10px 5px 10px; margin: 2px 3px 2px 3px; border-radius: 0.5rem; font-weight: bold; }
+li > a { text-decoration: none; color: inherit !important; }
+li > a:hover { text-decoration: none; color: inherit !important; }
+a, a:hover   { text-decoration: none; color: inherit !important; }
 
 body {
     background-color: #cccccc;
@@ -15,22 +19,16 @@ body {
     font-family: 'Montserrat', 'Segoe UI', 'Calibri', 'Verdana', 'Helvetica Neue', sans-serif;
 	font-size: 0.875rem !important;
 }
-
-
-li { padding: 5px 10px 5px 10px; margin: 2px 3px 2px 3px; border-radius: 0.5rem; font-weight: bold; }
-li > a { text-decoration: none; color: inherit !important; }
-li > a:hover { text-decoration: none; color: inherit !important; }
-a, a:hover   { text-decoration: none; color: inherit !important; }
-
 h1, h2, h3 {
     font-weight: bold;
     text-align: center;
 }
-
 ul {
+    margin-left: 10px;
+    margin-right: 10px;
     padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
 }
-
 .table td, .table th {
     padding: 0.1rem;
     text-align: right;
@@ -66,22 +64,18 @@ ul {
     border-bottom: 1px solid #dddddd;
     color: #dddddd;
 }
-
 .ucl {
 	background-color: #ffd017 !important;
 	border-bottom: #ff9900 solid 1px;
 }
-
 .uclqual {
 	background-color: #ffdb58 !important;
 	border-bottom: #ffcc00 solid 1px;
 }
-
 .eurolg {
 	background-color: #157dec !important;
 	border-bottom: #77aaff solid 1px;
 }
-
 .eurolgqual {
 	background-color: #79baec !important;
 	border-bottom: #00aaff solid 1px;
@@ -95,7 +89,6 @@ ul {
 .ldrTeam {
 	max-width: 305px;
 }
-
 .theTabBody {
     background-color: #bbbbbb;
 }
@@ -185,17 +178,14 @@ ul {
     color: #00aa00;
     text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;
 }
-
 .suboff {
     font-weight: bold;
     color: #cc0000;
     text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;
 }
-
 .lgFlag {
 	border: 1px solid;
 }
-
 .MSS > a {
     color: #333333;
 }

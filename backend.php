@@ -122,6 +122,7 @@ function doCompetitions($c, $n) { // Country trigram, News for Country
 			$Comp[$c]["Comps"][$cN]["Name"] = "<img src=\"image/alert.gif\"> ".$cN;
 			$ord = $Comp[$c]["Comps"][$cN]["Order"];
 			$oComp[$cN] = $ord;
+			missing("Comp: ".$cN.", ".$c);
 		}
 	}
 	asort ($oComp);
@@ -236,15 +237,19 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 				if (sizeof($p) == 8) { array_push($p, "X"); }
 				switch ($p[8]) {
 					case "X":			$fate = "";					$style = "ldrdata";				break;
+					case "UCL":			$fate = "Champs Lg.";		$style = "ucl ldrdata";			break;
+					case "COPALIB":		$fate = "Copa Lib.";		$style = "ucl ldrdata";			break;
 					case "UCLQ":		$fate = "UCL Qual.";		$style = "uclqual ldrdata";		break;
+					case "COPALIBQ":	$fate = "Copa Lib. Qual";	$style = "uclqual ldrdata";		break;
+					case "NEXTPOS":		$fate = "Playoffs";			$style = "uclqual ldrdata";		break;
+					case "COPASUD":		$fate = "Copa Sudam";		$style = "eurolg ldrdata";		break;
 					case "ELQ":			$fate = "UEL Qual.";		$style = "eurolgqual ldrdata";	break;
-					case "PROMOTED":	$fate = "&uarr; ";			$style = "promotion ldrdata";	break;
 					case "QUAL":		$fate = "Qualified";		$style = "promotion ldrdata";	break;
 					case "FINALS":		$fate = "Finals";			$style = "promotion ldrdata";	break;
-					case "NEXTPOS":		$fate = "Playoffs";			$style = "uclqual ldrdata";		break;
-					case "RELEGATED":	$fate = "&darr; ";			$style = "relegation ldrdata";	break;
+					case "PROMOTED":	$fate = "&uarr; ";			$style = "promotion ldrdata";	break;
 					case "PRPLAYOFF":	$fate = "Prom. Playoff";	$style = "promotion ldrdata";	break;
 					case "RLPLAYOFF":	$fate = "Rel. Playoff";		$style = "relegation ldrdata";	break;
+					case "RELEGATED":	$fate = "&darr; ";			$style = "relegation ldrdata";	break;
 					default:			$fate = $p[8];				$style = "unknown ldrdata";		break;
 				}
 				$team = "<td class=\"ldrTeam\">".doTeam($p[0], $c, 'l')."</td>";
@@ -486,6 +491,7 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		$tStyle = "";
 		$Flag = "";
 		$mnr = "darkSlate";
+		missing("Team: ".$t.", ".$c);
 	}
 
 	if ($c == "INT") {
@@ -560,7 +566,7 @@ function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event,
 		}
 		elseif ($ev[2] == "homeyellow") {
 			$hEv = "<div class=\"homeevent ".$h."\">".$ev[1]." ".$yellow."</div>";
-			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td>".$blank."</tr>";
+			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\"><div class=\"htimeevent ".$h."\">".$ev[0]."</div></td>".$blank."</tr>";
 		}
 		elseif ($ev[2] == "awayyellow") {
 			$aEv = "<div class=\"awayevent ".$a."\">".$yellow." ".$ev[1]."</div>";
@@ -568,7 +574,7 @@ function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event,
 		}
 		elseif ($ev[2] == "home2yellow") {
 			$hEv = "<div class=\"homeevent ".$h."\">".$ev[1]." ".$yellow2."</div>";
-			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td>".$blank."</tr>";
+			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\"><div class=\"htimeevent ".$h."\">".$ev[0]."</div></td>".$blank."</tr>";
 		}
 		elseif ($ev[2] == "away2yellow") {
 			$aEv = "<div class=\"awayevent ".$a."\">".$yellow2." ".$ev[1]."</div>";
@@ -576,7 +582,7 @@ function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event,
 		}
 		elseif ($ev[2] == "homered") {
 			$hEv = "<div class=\"homeevent ".$h."\">".$ev[1]." ".$red."</div>";
-			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td>".$blank."</tr>";
+			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\"><div class=\"htimeevent ".$h."\">".$ev[0]."</div></td>".$blank."</tr>";
 		}
 		elseif ($ev[2] == "awayred") {
 			$aEv = "<div class=\"awayevent ".$a."\">".$red." ".$ev[1]."</div>";
@@ -638,7 +644,11 @@ function missing($in) {
 	if (strlen($in) == 4) {
 		next;
 	}
-	$missing[] = $in;
+	else {
+		$m = fopen("newfile.txt", "a") or die("Unable to open Missing file!");
+		fwrite($m, $in);
+		fclose($m);
+	}
 }
 
 $the_world	= file("news/world.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
@@ -773,7 +783,7 @@ foreach ($the_world as $w) {
 }
 asort($tablist);
 
-if ($_SERVER["PHP_SELF"] == "/f2/backend.php") {
+if ($_SERVER["PHP_SELF"] == "/fitba/backend.php") {
 	print "<html>\n";
 	print "<head>\n";
 	print "\t<style>\n";

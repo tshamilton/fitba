@@ -119,6 +119,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .kq	{ color: #000000; background-color: #880000;}
 .kr	{ color: #000000; background-color: #ff0000;}
 .ks	{ color: #000000; background-color: #aaaaaa;}
+.kt { color: #000000; background-color: #d9ab4b;}
 .ku	{ color: #000000; background-color: #ffcc00;}
 .kw	{ color: #000000; background-color: #ffffff;}
 .ky	{ color: #000000; background-color: #fff00c;}
@@ -203,6 +204,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .wr	{ color: #ffffff; background-color: #ff0000;}
 .wu	{ color: #ffffff; background-color: #ffcc00;}
 .wv	{ color: #ffffff; background-color: #aa5533;}
+.wx { color: #ffffff; background-color: #660033;}
 .wz	{ color: #ffffff; background-color: #00ff00;}
 .xs	{ color: #660033; background-color: #aaaaaa;}
 .ya	{ color: #fff00c; background-color: #3366ff;}
@@ -637,7 +639,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .s-kwr	{ color: #000000; background: repeating-linear-gradient(to right, #ffffff, #ffffff 14%, #ff0000 14%, #ff0000 29%, #ffffff 29%, #ffffff 43%, #ff0000 43%, #ff0000 57%, #ffffff 57%, #ffffff 71%, #ff0000 71%, #ff0000 86%, #ffffff 86%, #ffffff );}
 .s-kyr	{ color: #000000; background: repeating-linear-gradient(to right, #fff00c, #fff00c 14%, #ff0000 14%, #ff0000 29%, #fff00c 29%, #fff00c 43%, #ff0000 43%, #ff0000 57%, #fff00c 57%, #fff00c 71%, #ff0000 71%, #ff0000 86%, #fff00c 86%, #fff00c );}
 .s-llw	{ color: #8866ee; background: repeating-linear-gradient(to right, #8866ee, #8866ee 14%, #ffffff 14%, #ffffff 29%, #8866ee 29%, #8866ee 43%, #ffffff 43%, #ffffff 57%, #8866ee 57%, #8866ee 71%, #ffffff 71%, #ffffff 86%, #8866ee 86%, #8866ee ); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
-.s-nhw	{ color: #000099; background: repeating-linear-gradient(to right, #00aaff, #00aaff 14%, #ffffff 14%, #ffffff 29%, #00aaff 29%, #00aaff 43%, #ffffff 43%, #ffffff 57%, #00aaff 57%, #00aaff 71%, #ffffff 71%, #ffffff 86%, #00aaff 86%, #00aaff );}
+.s-nhw	{ color: #000099; background: repeating-linear-gradient(to right, #00aaff, #00aaff 14%, #ffffff 14%, #ffffff 29%, #00aaff 29%, #00aaff 43%, #ffffff 43%, #ffffff 57%, #00aaff 57%, #00aaff 71%, #ffffff 71%, #ffffff 86%, #00aaff 86%, #00aaff ); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .s-nna	{ color: #000099; background: repeating-linear-gradient(to right, #000099, #000099 14%, #3366ff 14%, #3366ff 29%, #000099 29%, #000099 43%, #3366ff 43%, #3366ff 57%, #000099 57%, #000099 71%, #3366ff 71%, #3366ff 86%, #000099 86%, #000099 ); text-shadow: -1px -1px 0 #3366ff,1px -1px 0 #3366ff,-1px 1px 0 #3366ff,1px 1px 0 #3366ff;}
 .s-nnh	{ color: #000099; background: repeating-linear-gradient(to right, #000099, #000099 14%, #00aaff 14%, #00aaff 29%, #000099 29%, #000099 43%, #00aaff 43%, #00aaff 57%, #000099 57%, #000099 71%, #00aaff 71%, #00aaff 86%, #000099 86%, #000099 ); text-shadow: -1px -1px 0 #00aaff,1px -1px 0 #00aaff,-1px 1px 0 #00aaff,1px 1px 0 #00aaff;}
 .s-nnr	{ color: #000099; background: repeating-linear-gradient(to right, #000099, #000099 14%, #ff0000 14%, #ff0000 29%, #000099 29%, #000099 43%, #ff0000 43%, #ff0000 57%, #000099 57%, #000099 71%, #ff0000 71%, #ff0000 86%, #000099 86%, #000099 ); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}

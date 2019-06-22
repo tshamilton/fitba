@@ -24,6 +24,7 @@ def get_data(the_url):
 
 def cleanWords(text):
 	txt = re.sub("[\s|\'|\.|\-|\/|\°|\(|\)|\&]", "", text)
+	txt = re.sub("amp;", "", txt)
 	return txt
 
 def washText(the_text, context, out="n"):
