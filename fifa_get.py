@@ -1,6 +1,7 @@
 import re
 import os
 import time
+import pickle
 import requests
 
 def pluck(re_s, source):
@@ -388,7 +389,20 @@ def defineLeague(token, id, pl):
 def defineMatch(the_match):
 	"""Group match. <match id="2977566" hTeam="Brazil" aTeam="Bolivia" hScore="3" aScore="0" hId="8256" aId="5797" stage="1" time="15.06.2019 02:30"  Status="F" ijt="2,4" med="1" sId="6" gs="15.06.2019 02:30:32" shs="15.06.2019 03:32:35" extid="ls_81140310" />
 	Playoff match, first leg <match id="3052071" hTeam="Malaga" aTeam="Deportivo La Coruna" hScore="0" aScore="0" hId="9864" aId="9783" stage="1/2" time="15.06.2019 21:00" Status="N" agg="2-4" sId="1" extid="ls_0" />
-	2nd Leg then penalties! <match id="3046156" hTeam="Universidad de Concepcion" aTeam="Deportes Valdivia" hScore="4" aScore="6" hId="4054" aId="770322" stage="1/16" time="13.06.2019 01:00" Status="F" agg="4-6" aggh="lost" agga="won" pah="3" paa="5" sId="13" gs="13.06.2019 00:58:47" shs="13.06.2019 02:02:02" extid="ls_81129586" />
+	2nd Leg then penalties! 
+	<match 
+		id="3046156" hTeam="Universidad de Concepcion" aTeam="Deportes Valdivia"
+					 hScore="4" aScore="6" hId="4054" aId="770322" stage="1/16"
+					 time="13.06.2019 01:00" 
+					 Status="F" agg="4-6" aggh="lost" agga="won" pah="3" paa="5" sId="13"
+					 gs="13.06.2019 00:58:47" shs="13.06.2019 02:02:02" extid="ls_81129586" />
+    <match
+		id="2944400" hTeam="Norway (W)" aTeam="Australia (W)"
+					 hScore="5" aScore="2" hId="5813" aId="5981" stage="1/8"
+					 time="22.06.2019 21:00"
+					 Status="F" med="1" pah="4" paa="1" sId="13"
+					 gs="22.06.2019 21:00:11" shs="22.06.2019 22:04:15" fehs="22.06.2019 22:59:16" sehs="22.06.2019 23:21:09" extid="ls_81301030" />
+
 	Simple league match <match id="3035933" hTeam="Madura United" aTeam="PSS Sleman" hScore="0" aScore="0" hId="165199" aId="585847" stage="4" time="14.06.2019 10:30" Status="F" sId="5" extid="ls_0" />"""
 	mid = pluck(" id=\"(.+?)\"", the_match)
 	mht = cleanWords(pluck(" hTeam=\"(.+?)\"", the_match)).lower()
@@ -406,13 +420,22 @@ def defineMatch(the_match):
 
 	status = ms1+"-"+ms2
 
+	if status == "F-13":
+		hS = int(mhs)
+		aS = int(mas)
+		hP = int(mph)
+		aP = int(mpa)
+
+		mhs = str(hS-hP)+" ("+mph+")"
+		mas = "("+mpa+") "+str(aS-aP)
+
 	mdetails = washText(get_data("http://fotmobenetpulse.s3-external-3.amazonaws.com/matchfacts."+mid+".fot"), mid+":"+mht+":"+mat, "h")
 
 	if "Access Denied" in mdetails:
 		debug("Access Denied for mid "+mid)
-	#md = open("news/match/"+mid+"_"+mht+"_"+mhs+"-"+mas+"_"+mat+"-"+status+".mch", "w")
-	#md.write(mdetails)
-	#md.close
+	md = open("news/match/"+mid+"_"+mht+"_"+mhs+"-"+mas+"_"+mat+"-"+status+".mch", "wb")
+	pickle.dump(mdetails, md)
+	md.close
 
 	d_venue = pluck("<vn>(.+?)</vn>", mdetails)
 

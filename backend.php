@@ -70,7 +70,7 @@ function CheckName($n) {
 		return false;
 	}
 }
-function doAgg($score, $res, $hS, $aS, $hC, $aC, $hN, $aN) { //agg score, agg result for home team, score, colours, names
+function doAgg($score, $res, $hS, $aS, $hC, $aC, $hN, $aN) { // agg score, agg result for home team, score, colours, names
 	global $Team;
 
 	$S = explode("-", $score);
@@ -104,6 +104,22 @@ function doAgg($score, $res, $hS, $aS, $hC, $aC, $hN, $aN) { //agg score, agg re
 		else {
 			return "<div class=\"text-center matchAggregate ".$hC."\">Penalties. Discuss.</div>";
 		}
+	}
+}
+function doPenalties($hP, $aP, $hT, $aT, $hC, $aC) { // home pens, away pens, home team, away team
+	global $Team;
+
+	if (array_key_exists($hT, $Team)) { $hT = $Team[$hN]["Name"]; $hC = $Team[$hN]["Minor"]; }
+	if (array_key_exists($aT, $Team)) { $aT = $Team[$aN]["Name"]; $aC = $Team[$aN]["Minor"]; }
+
+	if ($hP > $aP) {
+		return "<div class=\"text-center matchAggregate ".$hC."\">".$hT." win ".$hP." - ".$aP." on penalties.</div>";
+	}
+	elseif ($hP < $aP) {
+		return "<div class=\"text-center matchAggregate ".$aC."\">".$aT." win ".$hP." - ".$aP." on penalties.</div>";
+	}
+	else {
+		return "<div class=\"text-center matchAggregate slate\">Penalties. But no-one won. Discuss.</div>";
 	}
 }
 function doCompetitions($c, $n) { // Country trigram, News for Country
@@ -301,12 +317,15 @@ function doMatch($match, $c, $t) { //Match, Country, Type
 		doDetails($m[14], $m[15], $hCol, $aCol);
 	}
 
-	# Row 6 -> Aggregate score
+	# Row 6 -> Aggregate score and penalties
 	if ($m[8] != "") {
 		print t(8)."<tr><td colspan=\"20\">".doAgg($m[8], $m[9], $m[2], $m[3], $hCol, $aCol, $m[1], $m[4])."</td></tr>\n";
 	}
+	if ($m[7] == "F-13" || $m[7] == "S-13") {
+		print t(8)."<tr><td colspan=\"20\">".doPenalties($m[10], $m[11], $m[1], $m[3], $hCol, $aCol)."</td></tr>\n";
+	}
 
-	// # Row 7 -> Coaches
+	# Row 7 -> Coaches
 	if ($m[12] != "") {
 		list($c1, $c2) = explode("~", $m[12]);
 		$mgr1 = explode(":", $c1);
@@ -542,11 +561,13 @@ function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event,
 			elseif ($ev[2] == "homered") { $ev[2] == "home2yellow"; }
 		}
 		elseif ($ev[4] == "16") { $bleh = 0; } # Straight Red
-
 		elseif ($ev[4] == "18")	{ 	$bleh = 0; } # Normal goal (AET?) - ignore
+		elseif ($ev[3] == "1" && $ev[4] == "12" && $ev[0] == 121) { 	$bleh = 0; } # Penalty scored in end-game shootout
+		elseif ($ev[3] == "0" && $ev[4] == "11" && $ev[0] == 121) { 	$bleh = 0; 	} # Penalty missed in end-game shootout
 		else {
-			$ev[1] .= "(".$ev[3]."~".$ev[4].")";
+			$ev[1] .= "(".$ev[3]."~".$ev[4].")"; # New event
 		}
+
 
 		if ($ev[2] == "homegoal") {
 			$hEv = "<div class=\"homeevent ".$h."\"><b>".$ev[1]." ".$goal."</b></div>";

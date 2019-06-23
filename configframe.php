@@ -24,6 +24,20 @@ function t($n = 1) {
 	return $tabs;
 }
 
+function aasort (&$array, $key) {
+    $sorter=array();
+    $ret=array();
+    reset($array);
+    foreach ($array as $ii => $va) {
+        $sorter[$ii]=$va[$key];
+    }
+    asort($sorter);
+    foreach ($sorter as $ii => $va) {
+        $ret[$ii]=$array[$ii];
+    }
+    $array=$ret;
+}
+
 $string = file_get_contents('./config/stats.json');
 $Stats = json_decode($string, true);
 $the_comps	= file("config/comps.csv", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
@@ -170,25 +184,25 @@ foreach ($the_nats as $in_t) {
 						<div class="container-fluid p-4">
 							<div class="row">
 								<div class="col-sm-1">
-<?php
-	$the_count = 1;
-	$cMn = $Stats["Colours"]["minor"]["sortedby"];
-	asort($cMn);
+								<?php
+									$the_count = 1;
+									$cMn = $Stats["Colours"]["minor"]["sortedby"];
+									asort($cMn);
 
-	#=((Size+(nCol-mod))/nCol)
-	$size = sizeof($cMn)-1;
-	$nCol = 12;
-	$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
-	foreach ($cMn as $N => $P) {
-		print t(9)."<div class=\"team mx-1 my-2 ".$N."\"><span> ".$N." (".$Stats["Colours"]["minor"][$N].") </span></div>\n";
-		if ($the_count == $colLength) {
-			print t(8)."</div>\n";
-			print t(8)."<div class=\"col-sm-1\">\n";
-			$the_count = 0;
-		}
-		$the_count += 1;
-	}
-?>
+									#=((Size+(nCol-mod))/nCol)
+									$size = sizeof($cMn)-1;
+									$nCol = 12;
+									$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
+									foreach ($cMn as $N => $P) {
+										print t(9)."<div class=\"team mx-1 my-2 ".$N."\"><span> ".$N." (".$Stats["Colours"]["minor"][$N].") </span></div>\n";
+										if ($the_count == $colLength) {
+											print t(8)."</div>\n";
+											print t(8)."<div class=\"col-sm-1\">\n";
+											$the_count = 0;
+										}
+										$the_count += 1;
+									}
+								?>
 								</div>
 							</div>
 						</div>
@@ -198,25 +212,25 @@ foreach ($the_nats as $in_t) {
 						<div class="container-fluid p-4">
 							<div class="row">
 								<div class="col-sm-1">
-	<?php
-		$the_count = 1;
-		$cMn = $Stats["Colours"]["plain"]["sortedby"];
-		asort($cMn);
+								<?php
+									$the_count = 1;
+									$cMn = $Stats["Colours"]["plain"]["sortedby"];
+									asort($cMn);
 
-		#=((Size+(nCol-mod))/nCol)
-		$size = sizeof($cMn)-1;
-		$nCol = 12;
-		$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
-		foreach ($cMn as $N => $P) {
-			print t(9)."<div class=\"team mx-1 my-2 ".$N."\"><span> ".$N." (".$Stats["Colours"]["plain"][$N].") </span></div>\n";
-			if ($the_count == $colLength) {
-				print t(8)."</div>\n";
-				print t(8)."<div class=\"col-sm-1\">\n";
-				$the_count = 0;
-			}
-			$the_count += 1;
-		}
-	?>
+									#=((Size+(nCol-mod))/nCol)
+									$size = sizeof($cMn)-1;
+									$nCol = 12;
+									$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
+									foreach ($cMn as $N => $P) {
+										print t(9)."<div class=\"team mx-1 my-2 ".$N."\"><span> ".$N." (".$Stats["Colours"]["plain"][$N].") </span></div>\n";
+										if ($the_count == $colLength) {
+											print t(8)."</div>\n";
+											print t(8)."<div class=\"col-sm-1\">\n";
+											$the_count = 0;
+										}
+										$the_count += 1;
+									}
+								?>
 								</div>
 							</div>
 						</div>
@@ -226,25 +240,25 @@ foreach ($the_nats as $in_t) {
 						<div class="container-fluid p-4">
 						<div class="row">
 								<div class="col-sm-1">
-<?php
-	$the_count = 1;
-	$cMn = $Stats["Colours"]["stripes"]["sortedby"];
-	asort($cMn);
+								<?php
+									$the_count = 1;
+									$cMn = $Stats["Colours"]["stripes"]["sortedby"];
+									asort($cMn);
 
-	#=((Size+(nCol-mod))/nCol)
-	$size = sizeof($cMn)-1;
-	$nCol = 12;
-	$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
-	foreach ($cMn as $N => $P) {
-		print t(9)."<div class=\"team mx-1 my-2 ".$N."\"><span> ".$N." (".$Stats["Colours"]["stripes"][$N].") </span></div>\n";
-		if ($the_count == $colLength) {
-			print t(8)."</div>\n";
-			print t(8)."<div class=\"col-sm-1\">\n";
-			$the_count = 0;
-		}
-		$the_count += 1;
-	}
-?>
+									#=((Size+(nCol-mod))/nCol)
+									$size = sizeof($cMn)-1;
+									$nCol = 12;
+									$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
+									foreach ($cMn as $N => $P) {
+										print t(9)."<div class=\"team mx-1 my-2 ".$N."\"><span> ".$N." (".$Stats["Colours"]["stripes"][$N].") </span></div>\n";
+										if ($the_count == $colLength) {
+											print t(8)."</div>\n";
+											print t(8)."<div class=\"col-sm-1\">\n";
+											$the_count = 0;
+										}
+										$the_count += 1;
+									}
+								?>
 								</div>
 							</div>
 						</div>
@@ -254,25 +268,25 @@ foreach ($the_nats as $in_t) {
 						<div class="container-fluid p-4">
 						<div class="row">
 								<div class="col-sm-1">
-<?php
-	$the_count = 1;
-	$cMn = $Stats["Colours"]["edges"]["sortedby"];
-	asort($cMn);
+								<?php
+									$the_count = 1;
+									$cMn = $Stats["Colours"]["edges"]["sortedby"];
+									asort($cMn);
 
-	#=((Size+(nCol-mod))/nCol)
-	$size = sizeof($cMn)-1;
-	$nCol = 12;
-	$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
-	foreach ($cMn as $N => $P) {
-		print t(9)."<div class=\"team mx-1 my-2 ".$N."\"><span> ".$N." (".$Stats["Colours"]["edges"][$N].") </span></div>\n";
-		if ($the_count == $colLength) {
-			print t(8)."</div>\n";
-			print t(8)."<div class=\"col-sm-1\">\n";
-			$the_count = 0;
-		}
-		$the_count += 1;
-	}
-?>
+									#=((Size+(nCol-mod))/nCol)
+									$size = sizeof($cMn)-1;
+									$nCol = 12;
+									$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
+									foreach ($cMn as $N => $P) {
+										print t(9)."<div class=\"team mx-1 my-2 ".$N."\"><span> ".$N." (".$Stats["Colours"]["edges"][$N].") </span></div>\n";
+										if ($the_count == $colLength) {
+											print t(8)."</div>\n";
+											print t(8)."<div class=\"col-sm-1\">\n";
+											$the_count = 0;
+										}
+										$the_count += 1;
+									}
+								?>
 								</div>
 							</div>
 						</div>
@@ -282,29 +296,29 @@ foreach ($the_nats as $in_t) {
 						<div class="container-fluid p-4">
 						<div class="row">
 								<div class="col-sm-1">
-<?php
-	$the_count = 1;
-	$cMn = $Stats["Colours"]["bands"]["sortedby"];
-	asort($cMn);
+								<?php
+									$the_count = 1;
+									$cMn = $Stats["Colours"]["bands"]["sortedby"];
+									asort($cMn);
 
-	#=((Size+(nCol-mod))/nCol)
-	$size = sizeof($cMn)-1;
-	$nCol = 12;
-	$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
-	foreach ($cMn as $N => $P) {
-		if ($N == "total") {
-		}
-		else {
-			print t(9)."<div class=\"team mx-1 my-2 ".$N."\"><span> ".$N." (".$Stats["Colours"]["bands"][$N].") </span></div>\n";
-			if ($the_count == $colLength) {
-				print t(8)."</div>\n";
-				print t(8)."<div class=\"col-sm-1\">\n";
-				$the_count = 0;
-			}
-			$the_count += 1;
-		}
-	}
-?>
+									#=((Size+(nCol-mod))/nCol)
+									$size = sizeof($cMn)-1;
+									$nCol = 12;
+									$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
+									foreach ($cMn as $N => $P) {
+										if ($N == "total") {
+										}
+										else {
+											print t(9)."<div class=\"team mx-1 my-2 ".$N."\"><span> ".$N." (".$Stats["Colours"]["bands"][$N].") </span></div>\n";
+											if ($the_count == $colLength) {
+												print t(8)."</div>\n";
+												print t(8)."<div class=\"col-sm-1\">\n";
+												$the_count = 0;
+											}
+											$the_count += 1;
+										}
+									}
+								?>
 								</div>
 							</div>
 						</div>
@@ -314,29 +328,29 @@ foreach ($the_nats as $in_t) {
 						<div class="container-fluid p-4">
 						<div class="row">
 								<div class="col-sm-1">
-<?php
-	$the_count = 1;
-	$cMn = $Stats["Colours"]["hoops"]["sortedby"];
-	asort($cMn);
-	
-	#=((Size+(nCol-mod))/nCol)
-	$size = sizeof($cMn)-1;
-	$nCol = 12;
-	$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
-	foreach ($cMn as $N => $P) {
-		if ($N == "total") {
-		}
-		else {
-			print t(9)."<div class=\"team mx-1 my-2 ".$N."\"><span> ".$N." (".$Stats["Colours"]["hoops"][$N].") </span></div>\n";
-			if ($the_count == $colLength) {
-				print t(8)."</div>\n";
-				print t(8)."<div class=\"col-sm-1\">\n";
-				$the_count = 0;
-			}
-			$the_count += 1;
-		}
-	}
-?>
+								<?php
+									$the_count = 1;
+									$cMn = $Stats["Colours"]["hoops"]["sortedby"];
+									asort($cMn);
+									
+									#=((Size+(nCol-mod))/nCol)
+									$size = sizeof($cMn)-1;
+									$nCol = 12;
+									$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
+									foreach ($cMn as $N => $P) {
+										if ($N == "total") {
+										}
+										else {
+											print t(9)."<div class=\"team mx-1 my-2 ".$N."\"><span> ".$N." (".$Stats["Colours"]["hoops"][$N].") </span></div>\n";
+											if ($the_count == $colLength) {
+												print t(8)."</div>\n";
+												print t(8)."<div class=\"col-sm-1\">\n";
+												$the_count = 0;
+											}
+											$the_count += 1;
+										}
+									}
+								?>
 								</div>
 							</div>
 						</div>
@@ -346,29 +360,29 @@ foreach ($the_nats as $in_t) {
 						<div class="container-fluid p-4">
 						<div class="row">
 								<div class="col-sm-1">
-<?php
-	$the_count = 1;
-	$cMn = $Stats["Colours"]["halves"]["sortedby"];
-	asort($cMn);
-	
-	#=((Size+(nCol-mod))/nCol)
-	$size = sizeof($cMn)-1;
-	$nCol = 12;
-	$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
-	foreach ($cMn as $N => $P) {
-		if ($N == "total") {
-		}
-		else {
-			print t(9)."<div class=\"team mx-1 my-2 ".$N."\"><span> ".$N." (".$Stats["Colours"]["halves"][$N].") </span></div>\n";
-			if ($the_count == $colLength) {
-				print t(8)."</div>\n";
-				print t(8)."<div class=\"col-sm-1\">\n";
-				$the_count = 0;
-			}
-			$the_count += 1;
-		}
-	}
-?>
+								<?php
+									$the_count = 1;
+									$cMn = $Stats["Colours"]["halves"]["sortedby"];
+									asort($cMn);
+									
+									#=((Size+(nCol-mod))/nCol)
+									$size = sizeof($cMn)-1;
+									$nCol = 12;
+									$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
+									foreach ($cMn as $N => $P) {
+										if ($N == "total") {
+										}
+										else {
+											print t(9)."<div class=\"team mx-1 my-2 ".$N."\"><span> ".$N." (".$Stats["Colours"]["halves"][$N].") </span></div>\n";
+											if ($the_count == $colLength) {
+												print t(8)."</div>\n";
+												print t(8)."<div class=\"col-sm-1\">\n";
+												$the_count = 0;
+											}
+											$the_count += 1;
+										}
+									}
+								?>
 								</div>
 							</div>
 						</div>
@@ -378,29 +392,29 @@ foreach ($the_nats as $in_t) {
 						<div class="container-fluid p-4">
 						<div class="row">
 								<div class="col-sm-1">
-<?php
-	$the_count = 1;
-	$cMn = $Stats["Colours"]["offsets"]["sortedby"];
-	asort($cMn);
+								<?php
+									$the_count = 1;
+									$cMn = $Stats["Colours"]["offsets"]["sortedby"];
+									asort($cMn);
 
-	#=((Size+(nCol-mod))/nCol)
-	$size = sizeof($cMn)-1;
-	$nCol = 12;
-	$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
-	foreach ($cMn as $N => $P) {
-		if ($N == "total") {
-		}
-		else {
-			print t(9)."<div class=\"team mx-1 my-2 ".$N."\"><span> ".$N." (".$Stats["Colours"]["offsets"][$N].") </span></div>\n";
-			if ($the_count == $colLength) {
-				print t(8)."</div>\n";
-				print t(8)."<div class=\"col-sm-1\">\n";
-				$the_count = 0;
-			}
-			$the_count += 1;
-		}
-	}
-?>
+									#=((Size+(nCol-mod))/nCol)
+									$size = sizeof($cMn)-1;
+									$nCol = 12;
+									$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
+									foreach ($cMn as $N => $P) {
+										if ($N == "total") {
+										}
+										else {
+											print t(9)."<div class=\"team mx-1 my-2 ".$N."\"><span> ".$N." (".$Stats["Colours"]["offsets"][$N].") </span></div>\n";
+											if ($the_count == $colLength) {
+												print t(8)."</div>\n";
+												print t(8)."<div class=\"col-sm-1\">\n";
+												$the_count = 0;
+											}
+											$the_count += 1;
+										}
+									}
+								?>
 								</div>
 							</div>
 						</div>
@@ -410,29 +424,29 @@ foreach ($the_nats as $in_t) {
 						<div class="container-fluid p-4">
 						<div class="row">
 								<div class="col-sm-1">
-<?php
-	$the_count = 1;
-	$cMn = $Stats["Colours"]["others"]["sortedby"];
-	asort($cMn);
+								<?php
+									$the_count = 1;
+									$cMn = $Stats["Colours"]["others"]["sortedby"];
+									asort($cMn);
 
-	#=((Size+(nCol-mod))/nCol)
-	$size = sizeof($cMn)-1;
-	$nCol = 12;
-	$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
-	foreach ($cMn as $N => $P) {
-		if ($N == "total") {
-		}
-		else {
-			print t(9)."<div class=\"team mx-1 my-2 ".$N."\"><span> ".$N." (".$Stats["Colours"]["others"][$N].") </span></div>\n";
-			if ($the_count == $colLength) {
-				print t(8)."</div>\n";
-				print t(8)."<div class=\"col-sm-1\">\n";
-				$the_count = 0;
-			}
-			$the_count += 1;
-		}
-	}
-?>
+									#=((Size+(nCol-mod))/nCol)
+									$size = sizeof($cMn)-1;
+									$nCol = 12;
+									$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
+									foreach ($cMn as $N => $P) {
+										if ($N == "total") {
+										}
+										else {
+											print t(9)."<div class=\"team mx-1 my-2 ".$N."\"><span> ".$N." (".$Stats["Colours"]["others"][$N].") </span></div>\n";
+											if ($the_count == $colLength) {
+												print t(8)."</div>\n";
+												print t(8)."<div class=\"col-sm-1\">\n";
+												$the_count = 0;
+											}
+											$the_count += 1;
+										}
+									}
+								?>
 								</div>
 							</div>
 						</div>
@@ -447,11 +461,12 @@ foreach ($the_nats as $in_t) {
 						<div class="container-fluid p-4">
 							<div class="theContent grass p-2">
 								<div class="row">
-									<div class="col-sm-2 showMeB">
+									<div class="col-sm-2">
 									<?php
 										$the_count = 1;
 										$NbP = $Stats["Nations"]["by_pref"];
 										asort($NbP);
+
 										#=((Size+(nCol-mod))/nCol)
 										$size = sizeof($NbP);
 										$nCol = 6;
@@ -472,7 +487,56 @@ foreach ($the_nats as $in_t) {
 											print t(10)."<div class=\"team mx-1 my-2 ".$TeamStyle."\"><span> ".$flag." ".$TeamName." (".$P.") </span></div>\n";
 											if ($the_count == $colLength) {
 												print t(9)."</div>\n";
-												print t(9)."<div class=\"col-sm-2 showMeB\">\n";
+												print t(9)."<div class=\"col-sm-2\">\n";
+												$the_count = 0;
+											}
+											$the_count += 1;
+										}
+									?>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h2 class="text-center"> Nations by team count </h2> <!-- Competition container -->
+					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+						<div class="container-fluid p-4">
+							<div class="theContent grass p-2">
+								<div class="row">
+									<div class="col-sm-2">
+									<?php
+										$the_count = 1;
+										$NbC = $Stats["Teams"];
+										$size = sizeof($NbC) - 1;
+										$nCol = 6;
+										$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
+										$cCount = Array();
+										foreach ($NbC as $N => $P) {
+											if ($N == "total") {
+												continue;
+											}
+											$cCount[$N] = $Stats["Teams"][$N]["total"];
+										}
+										arsort($cCount);
+										foreach ($cCount as $N => $P) {
+											if ($N == "total") {
+												continue;
+											}
+											$TeamName = $Team[$Stats["Nations"]["by_tri"][$N]]["Name"];
+											$TeamStyle = $Team[$Stats["Nations"]["by_tri"][$N]]["Mjr"];
+											$border = substr($Team[$Stats["Nations"]["by_tri"][$N]]["Mnr"], 0, 1);
+											$flag = "<img class=\"".$border."\" src=\"flags/".$N.".png\">";
+											$C = sizeof($Stats["Teams"][$N]["list"]);
+											if ($C == 0) {
+												$C = "";
+											}
+											else {
+												$C = "(".$C.") ";
+											}
+											print t(10)."<div class=\"team mx-1 my-2 ".$TeamStyle."\"><span> ".$flag." ".$TeamName." ".$C."</span></div>\n";
+											if ($the_count == $colLength) {
+												print t(9)."</div>\n";
+												print t(9)."<div class=\"col-sm-2\">\n";
 												$the_count = 0;
 											}
 											$the_count += 1;
@@ -488,16 +552,90 @@ foreach ($the_nats as $in_t) {
 			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="clubs" name="clubs">
 				<div class="container-fluid">
 					<h1 class="text-center"> Clubs </h1>
-					<h2 class="text-center"> Nation 1 </h2> <!-- Competition container -->
 					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 						<div class="container-fluid p-4">
+						<div class="row">
+							<div class="col-sm-2">
+							<?php
+								$the_count = 1;
+								$NbC = $Stats["Teams"];
+								$size = sizeof($NbC) - 1;
+								$nCol = 6;
+								$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
+								foreach ($NbC as $N => $P) {
+									if ($N == "total") {
+										continue;
+									}
+									$TeamName = $Team[$Stats["Nations"]["by_tri"][$N]]["Name"];
+									$TeamStyle = $Team[$Stats["Nations"]["by_tri"][$N]]["Mjr"];
+									$border = substr($Team[$Stats["Nations"]["by_tri"][$N]]["Mnr"], 0, 1);
+									$flag = "<img class=\"".$border."\" src=\"flags/".$N.".png\">";
+									$C = sizeof($Stats["Teams"][$N]["list"]);
+									if ($C == 0) {
+										$C = "";
+									}
+									else {
+										$C = "(".$C.") ";
+									}
+									print t(10)."<div class=\"team mx-1 my-2 ".$TeamStyle."\"><a href=\"#".$N."\"> ".$flag." ".$TeamName." ".$C."</a></div>\n";
+									if ($the_count == $colLength) {
+										print t(9)."</div>\n";
+										print t(9)."<div class=\"col-sm-2\">\n";
+										$the_count = 0;
+									}
+									$the_count += 1;
+								}
+							?>
+							</div>
+						</div>
 						</div>
 					</div>
-					<h2 class="text-center"> Nation 2 </h2> <!-- Competition container -->
-					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
-						<div class="container-fluid p-4">
+					<?php
+						foreach ($Stats["Teams"] as $N => $P) {
+							if ($N == "total") {
+								continue;
+							}
+							$NationName = $Team[$Stats["Nations"]["by_tri"][$N]]["Name"];
+							$TeamStyle = $Team[$Stats["Nations"]["by_tri"][$N]]["Mjr"];
+							$border = substr($Team[$Stats["Nations"]["by_tri"][$N]]["Mnr"], 0, 1);
+							$flag = "<img class=\"".$border."\" src=\"flags/large/".$N.".png\">";
+							$TeamList = $Stats["Teams"][$N]["list"];
+						
+					?>
+					<a name="<?php print $N; ?>"></a>
+					<div class="d-flex justify-content-center clearfix my-3 theCompBody">
+						<div class="container-fluid p-4 <?php print $TeamStyle; ?>">
+							<h2 class="text-center"> <?php print $flag." ".$NationName; ?> </h2> <!-- Competition container -->
+							<div class="theContent grass p-2">
+								<div class="row">
+									<div class="col-sm-2">
+									<?php
+										$the_count = 1;
+										$LoT = $Stats["Teams"][$N]["list"];
+										$size = sizeof($LoT) - 1;
+										$nCol = 6;
+										$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
+										foreach ($LoT as $Tm) {
+											$TeamName = $Team[$Tm]["Name"];
+											$TeamStyle = $Team[$Tm]["Mjr"];
+											print t(10)."<div class=\"team mx-1 my-2 ".$TeamStyle."\"><span> ".$TeamName." </span></div>\n";
+											if ($the_count == $colLength) {
+												print t(9)."</div>\n";
+												print t(9)."<div class=\"col-sm-2\">\n";
+												$the_count = 0;
+											}
+											$the_count += 1;
+										}
+									?>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
+					<?php
+						}
+					?>
+
 				</div>
 			</div>
 			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="badges" name="badges">

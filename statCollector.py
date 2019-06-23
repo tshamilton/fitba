@@ -149,9 +149,10 @@ with open(the_teams, 'r') as t:
 	#aagent,AA Gent,Gbwb,bw,b-bbw,x042,51.016111,3.734167,Ghent,BEL
 	teams = csv.reader(t)
 	for row in teams:
+		first = row[0].split("~")
 		Stats["Teams"]["total"] += 1
 		Stats["Teams"][row[9]]["total"] += 1
-		Stats["Teams"][row[9]]["list"].append(row[0])
+		Stats["Teams"][row[9]]["list"].append(first[0])
 		tally_colours(row[3], row[4])
 
 with open(the_comps, 'r') as c:
