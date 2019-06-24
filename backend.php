@@ -13,10 +13,6 @@ function pretty_var($myArray, $colour = 'ff0000', $s = "p") {
 		print "</div>\n";
 	}
 }
-function comment($t) {
-	print "<!-- $t -->\n";
-}
-
 function CheckName($n) {
 	#pretty_var("Diagnostic: Receiving and checking '<b>".$n."</b>'");
 	global $Team;
@@ -70,7 +66,7 @@ function CheckName($n) {
 		return false;
 	}
 }
-function doAgg($score, $res, $hS, $aS, $hC, $aC, $hN, $aN) { // agg score, agg result for home team, score, colours, names
+function doAgg($score, $res, $hS, $aS, $hC, $aC, $hN, $aN) { //agg score, agg result for home team, score, colours, names
 	global $Team;
 
 	$S = explode("-", $score);
@@ -106,22 +102,6 @@ function doAgg($score, $res, $hS, $aS, $hC, $aC, $hN, $aN) { // agg score, agg r
 		}
 	}
 }
-function doPenalties($hP, $aP, $hT, $aT, $hC, $aC) { // home pens, away pens, home team, away team
-	global $Team;
-
-	if (array_key_exists($hT, $Team)) { $hT = $Team[$hN]["Name"]; $hC = $Team[$hN]["Minor"]; }
-	if (array_key_exists($aT, $Team)) { $aT = $Team[$aN]["Name"]; $aC = $Team[$aN]["Minor"]; }
-
-	if ($hP > $aP) {
-		return "<div class=\"text-center matchAggregate ".$hC."\">".$hT." win ".$hP." - ".$aP." on penalties.</div>";
-	}
-	elseif ($hP < $aP) {
-		return "<div class=\"text-center matchAggregate ".$aC."\">".$aT." win ".$hP." - ".$aP." on penalties.</div>";
-	}
-	else {
-		return "<div class=\"text-center matchAggregate slate\">Penalties. But no-one won. Discuss.</div>";
-	}
-}
 function doCompetitions($c, $n) { // Country trigram, News for Country
 	global $Comp;
 	global $News;
@@ -138,7 +118,6 @@ function doCompetitions($c, $n) { // Country trigram, News for Country
 			$Comp[$c]["Comps"][$cN]["Name"] = "<img src=\"image/alert.gif\"> ".$cN;
 			$ord = $Comp[$c]["Comps"][$cN]["Order"];
 			$oComp[$cN] = $ord;
-			missing("Comp: ".$cN.", ".$c);
 		}
 	}
 	asort ($oComp);
@@ -176,22 +155,17 @@ function doDetails($eventList, $subList, $hC, $aC) {
 	}
 	$safety = sizeof($e) + sizeof($s);
 
-	comment("Events: ".$eventList);
-	comment("Subs:".$subList);
 	while ((sizeof($e) + sizeof($s)) > 0) {
-		#comment("Comparing ".$e[0]." to ".$s[0]);
 		$c_e = Array(); $c_e[0] = 200;
 		$c_s = Array(); $c_s[0] = 200;
 		if (sizeof($e) > 0) { $c_e = explode("~", $e[0]); }
 		if (sizeof($s) > 0) { $c_s = explode("~", $s[0]); }
 		if ($c_e[0] < $c_s[0] || empty($s)){
-			#comment("Event earlier than sub");
 			$this_e = MakeDetails($e[0], $hC, $aC, 'e');
 			print t(8)."<tr>".$this_e."</tr>\n";
 			array_shift($e);
 		}
 		if ($c_s[0] < $c_e[0] || empty($e)) {
-			#comment("Sub earlier than event");
 			if (!empty($s)) {
 				$this_s = MakeDetails($s[0], $hC, $aC, 's');
 				print t(8)."<tr>".$this_s."</tr>\n";
@@ -253,19 +227,15 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 				if (sizeof($p) == 8) { array_push($p, "X"); }
 				switch ($p[8]) {
 					case "X":			$fate = "";					$style = "ldrdata";				break;
-					case "UCL":			$fate = "Champs Lg.";		$style = "ucl ldrdata";			break;
-					case "COPALIB":		$fate = "Copa Lib.";		$style = "ucl ldrdata";			break;
 					case "UCLQ":		$fate = "UCL Qual.";		$style = "uclqual ldrdata";		break;
-					case "COPALIBQ":	$fate = "Copa Lib. Qual";	$style = "uclqual ldrdata";		break;
-					case "NEXTPOS":		$fate = "Playoffs";			$style = "uclqual ldrdata";		break;
-					case "COPASUD":		$fate = "Copa Sudam";		$style = "eurolg ldrdata";		break;
 					case "ELQ":			$fate = "UEL Qual.";		$style = "eurolgqual ldrdata";	break;
+					case "PROMOTED":	$fate = "&uarr; ";			$style = "promotion ldrdata";	break;
 					case "QUAL":		$fate = "Qualified";		$style = "promotion ldrdata";	break;
 					case "FINALS":		$fate = "Finals";			$style = "promotion ldrdata";	break;
-					case "PROMOTED":	$fate = "&uarr; ";			$style = "promotion ldrdata";	break;
+					case "NEXTPOS":		$fate = "Playoffs";			$style = "uclqual ldrdata";		break;
+					case "RELEGATED":	$fate = "&darr; ";			$style = "relegation ldrdata";	break;
 					case "PRPLAYOFF":	$fate = "Prom. Playoff";	$style = "promotion ldrdata";	break;
 					case "RLPLAYOFF":	$fate = "Rel. Playoff";		$style = "relegation ldrdata";	break;
-					case "RELEGATED":	$fate = "&darr; ";			$style = "relegation ldrdata";	break;
 					default:			$fate = $p[8];				$style = "unknown ldrdata";		break;
 				}
 				$team = "<td class=\"ldrTeam\">".doTeam($p[0], $c, 'l')."</td>";
@@ -317,15 +287,12 @@ function doMatch($match, $c, $t) { //Match, Country, Type
 		doDetails($m[14], $m[15], $hCol, $aCol);
 	}
 
-	# Row 6 -> Aggregate score and penalties
+	# Row 6 -> Aggregate score
 	if ($m[8] != "") {
 		print t(8)."<tr><td colspan=\"20\">".doAgg($m[8], $m[9], $m[2], $m[3], $hCol, $aCol, $m[1], $m[4])."</td></tr>\n";
 	}
-	if ($m[7] == "F-13" || $m[7] == "S-13") {
-		print t(8)."<tr><td colspan=\"20\">".doPenalties($m[10], $m[11], $m[1], $m[3], $hCol, $aCol)."</td></tr>\n";
-	}
 
-	# Row 7 -> Coaches
+	// # Row 7 -> Coaches
 	if ($m[12] != "") {
 		list($c1, $c2) = explode("~", $m[12]);
 		$mgr1 = explode(":", $c1);
@@ -399,11 +366,11 @@ function doTabs($tabs) {
 
 	foreach ($tabs as $t => $v) {
 		if ($t == "INT") {
-			print t(3)."<li class=\"nav-item slate\"><a role=\"nav-link\" data-toggle=\"pill\" style=\"color:inherit; text-decoration: inherit;\" href=\"#INT\"> International </a></li>\n";
+			print t(4)."<li class=\"nav-item slate\"><a role=\"nav-link\" data-toggle=\"pill\" style=\"color:inherit; text-decoration: inherit;\" href=\"#INT\"> International </a></li>\n";
 		}
 		else {
 			$n = $Nations[$t];
-			print t(3)."<li class=\"nav-item ".$Team[$n]["Mjr"]."\"><a role=\"nav-link\" data-toggle=\"pill\" href=\"#".$t."\">".doFlag(substr($Team[$n]["Mjr"], 2, 1), $t)." ".$Team[$n]["Name"]."</a></li>\n";
+			print t(4)."<li class=\"nav-item ".$Team[$n]["Mjr"]."\"><a role=\"nav-link\" data-toggle=\"pill\" href=\"#".$t."\">".doFlag(substr($Team[$n]["Mjr"], 2, 1), $t)." ".$Team[$n]["Name"]."</a></li>\n";
 		}
 	}
 }
@@ -510,7 +477,7 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		$tStyle = "";
 		$Flag = "";
 		$mnr = "darkSlate";
-		missing("Team: ".$t.", ".$c);
+		missing("Missing team -> ".$t);
 	}
 
 	if ($c == "INT") {
@@ -561,13 +528,11 @@ function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event,
 			elseif ($ev[2] == "homered") { $ev[2] == "home2yellow"; }
 		}
 		elseif ($ev[4] == "16") { $bleh = 0; } # Straight Red
-		elseif ($ev[4] == "18")	{ 	$bleh = 0; } # Normal goal (AET?) - ignore
-		elseif ($ev[3] == "1" && $ev[4] == "12" && $ev[0] == 121) { 	$bleh = 0; } # Penalty scored in end-game shootout
-		elseif ($ev[3] == "0" && $ev[4] == "11" && $ev[0] == 121) { 	$bleh = 0; 	} # Penalty missed in end-game shootout
-		else {
-			$ev[1] .= "(".$ev[3]."~".$ev[4].")"; # New event
-		}
 
+		elseif ($ev[4] == "18")	{ 	$bleh = 0; } # Normal goal (AET?) - ignore
+		else {
+			$ev[1] .= "(".$ev[3]."~".$ev[4].")";
+		}
 
 		if ($ev[2] == "homegoal") {
 			$hEv = "<div class=\"homeevent ".$h."\"><b>".$ev[1]." ".$goal."</b></div>";
@@ -587,7 +552,7 @@ function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event,
 		}
 		elseif ($ev[2] == "homeyellow") {
 			$hEv = "<div class=\"homeevent ".$h."\">".$ev[1]." ".$yellow."</div>";
-			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\"><div class=\"htimeevent ".$h."\">".$ev[0]."</div></td>".$blank."</tr>";
+			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td>".$blank."</tr>";
 		}
 		elseif ($ev[2] == "awayyellow") {
 			$aEv = "<div class=\"awayevent ".$a."\">".$yellow." ".$ev[1]."</div>";
@@ -595,7 +560,7 @@ function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event,
 		}
 		elseif ($ev[2] == "home2yellow") {
 			$hEv = "<div class=\"homeevent ".$h."\">".$ev[1]." ".$yellow2."</div>";
-			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\"><div class=\"htimeevent ".$h."\">".$ev[0]."</div></td>".$blank."</tr>";
+			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td>".$blank."</tr>";
 		}
 		elseif ($ev[2] == "away2yellow") {
 			$aEv = "<div class=\"awayevent ".$a."\">".$yellow2." ".$ev[1]."</div>";
@@ -603,7 +568,7 @@ function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event,
 		}
 		elseif ($ev[2] == "homered") {
 			$hEv = "<div class=\"homeevent ".$h."\">".$ev[1]." ".$red."</div>";
-			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\"><div class=\"htimeevent ".$h."\">".$ev[0]."</div></td>".$blank."</tr>";
+			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td>".$blank."</tr>";
 		}
 		elseif ($ev[2] == "awayred") {
 			$aEv = "<div class=\"awayevent ".$a."\">".$red." ".$ev[1]."</div>";
@@ -662,13 +627,22 @@ function MakeStatus($s) {
 }
 function missing($in) {
 	global $missing;
-	if (strlen($in) == 4) {
-		next;
+	print "<!-- $in -->\n";
+	$outM = "\n".date("Y/m/d H:i")."\n";
+
+	if ($in == "Send") {
+		if (sizeof($missing) > 0) {
+			$mFile = fopen("./news/missing.txt", "a") or die("Unable to open file!");
+			$outM .= join("\n", $missing);
+			fwrite($mFile, $outM);
+			fclose($mFile);
+		}
 	}
 	else {
-		$m = fopen("./news/missing.txt", "a") or die("Unable to open Missing file!");
-		fwrite($m."\n", $in);
-		fclose($m);
+		if (strlen($in) <= 4) {
+			next;
+		}
+		$missing[] = $in;
 	}
 }
 
@@ -768,9 +742,10 @@ foreach ($the_world as $w) {
 		$line = explode("|", $w);
 		$curr_cc = $line[0];
 		$curr_comp = $line[1];
+		# Check that nation exists in the config
 		if (!(array_key_exists($curr_cc, $Nations))) {
 			if ($curr_cc != "INT") {
-				comment("Missing nation! -> ".$curr_cc);
+				missing("Missing nation! -> ".$curr_cc);
 			}
 		}
 		if (!(array_key_exists($curr_cc, $News))) {
@@ -784,21 +759,17 @@ foreach ($the_world as $w) {
 				}
 			}
 		}
-		if (!(array_key_exists($curr_comp, $Comp[$curr_cc]))) {
-			comment("Missing comp! -> ".$line[1]);
+		# Check that competition exists in the config
+		if (!(array_key_exists($curr_comp, $Comp[$curr_cc]["Comps"]))) {
+			pretty_var($curr_comp);
+			pretty_var($Comp[$curr_cc], '00aaff');
+			missing("Missing competition in ".$curr_cc." -> ".$curr_comp);
 		}
 		if (!(array_key_exists($curr_comp, $News[$curr_cc]))) {
 			$News[$curr_cc][$curr_comp] = Array();
 		}
 	}
 	else {
-		$line = explode("|", $w);
-		if (!(array_key_exists($line[0], $Team))) {
-			comment("Missing team! -> $line[0]");
-		}
-		if (!(array_key_exists($line[0], $Team))) {
-			comment("Missing team! -> $line[3]");
-		}
 		array_push($News[$curr_cc][$curr_comp], $w);
 	}
 }

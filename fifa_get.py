@@ -384,7 +384,7 @@ def defineLeague(token, id, pl):
 
 		otab = open("./news/ladder/"+token+".lad", "w")
 		for group in out_table:
-			otab.write("group|"+out_table[group]["name"]+"\n")
+			otab.write("\ngroup|"+out_table[group]["name"]+"\n")
 			tab = "\n".join(out_table[group]["table"])
 			otab.write(tab)
 		otab.close
