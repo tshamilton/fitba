@@ -232,6 +232,7 @@ def washText(the_text, context, out="n"):
 							print(str(in_news[y])+" => ??")
 					print("====")
 			elif value == 208:
+				print("Code page recognised.")
 				if in_news[index+1] == 149:
 					if out == "h": out_news = out_news+"E" # 2019-06-24: Oddity, this is coming in as a Cyrillic "E" (Cyrillic letter 'ie')
 			elif value == 226:
