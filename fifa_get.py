@@ -231,6 +231,9 @@ def washText(the_text, context, out="n"):
 						else:
 							print(str(in_news[y])+" => ??")
 					print("====")
+			elif value == 208:
+				if in_news[index+1] == 149:
+					if out == "h": out_news = out_news+"E" # 2019-06-24: Oddity, this is coming in as a Cyrillic "E" (Cyrillic letter 'ie')
 			elif value == 226:
 				if in_news[index+1] == 128:
 					if in_news[index+2] == 153:
@@ -402,7 +405,6 @@ def defineMatch(the_match):
 					 time="22.06.2019 21:00"
 					 Status="F" med="1" pah="4" paa="1" sId="13"
 					 gs="22.06.2019 21:00:11" shs="22.06.2019 22:04:15" fehs="22.06.2019 22:59:16" sehs="22.06.2019 23:21:09" extid="ls_81301030" />
-
 	Simple league match <match id="3035933" hTeam="Madura United" aTeam="PSS Sleman" hScore="0" aScore="0" hId="165199" aId="585847" stage="4" time="14.06.2019 10:30" Status="F" sId="5" extid="ls_0" />"""
 	mid = pluck(" id=\"(.+?)\"", the_match)
 	mht = cleanWords(pluck(" hTeam=\"(.+?)\"", the_match)).lower()
