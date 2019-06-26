@@ -1,18 +1,6 @@
 <?php
-function pretty_var($myArray, $colour = 'ff0000', $s = "p") {
-	global $tGroup;
+include 'utility.php';
 
-	if ($s == "i") {
-		$tGroup .= "<div id='debug' style='background-color: #".$colour.";'>\n";
-		$tGroup .= str_replace(array("\n"," "),array("<br>","&nbsp;"), var_export($myArray,true))."<br>\n";
-		$tGroup .= "</div>\n";
-	}
-	elseif ($s == "p") {
-		print "<div id='debug' style='background-color: #".$colour.";'>\n";
-		print utf8_encode(str_replace(array("\n"," "),array("<br>","&nbsp;"), var_export($myArray,true))."<br>\n");
-		print "</div>\n";
-	}
-}
 function CheckName($n) {
 	#pretty_var("Diagnostic: Receiving and checking '<b>".$n."</b>'");
 	global $Team;

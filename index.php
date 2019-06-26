@@ -1,28 +1,5 @@
 <?php
 	include 'backend.php';
-	function aasort (&$array, $key) {
-		$sorter=array();
-		$ret=array();
-		reset($array);
-		foreach ($array as $ii => $va) {
-			$sorter[$ii]=$va[$key];
-		}
-		asort($sorter);
-		foreach ($sorter as $ii => $va) {
-			$ret[$ii]=$array[$ii];
-		}
-		$array=$ret;
-	}
-	function t($n = 1) {
-		$count = 1;
-		$tabs = "";
-		while ($count <= $n) {
-			$tabs .= "\t";
-			$count++;
-		}
-		return $tabs;
-	}
-
 ?>
 <!doctype html>
 <html lang="en">
