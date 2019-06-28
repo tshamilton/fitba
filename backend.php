@@ -749,8 +749,8 @@ foreach ($the_world as $w) {
 		}
 		# Check that competition exists in the config
 		if (!(array_key_exists($curr_comp, $Comp[$curr_cc]["Comps"]))) {
-			pretty_var($curr_comp);
-			pretty_var($Comp[$curr_cc], '00aaff');
+			#pretty_var($curr_comp);
+			#pretty_var($Comp[$curr_cc], '00aaff');
 			missing("Missing competition in ".$curr_cc." -> ".$curr_comp);
 		}
 		if (!(array_key_exists($curr_comp, $News[$curr_cc]))) {
