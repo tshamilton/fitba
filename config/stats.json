@@ -1,4 +1,5 @@
 {
+    "Badges": {},
     "Colours": {
         "bands": {
             "b-aab": 1,
@@ -717,7 +718,7 @@
             "ks": 6,
             "ku": 25,
             "kw": 374,
-            "ky": 285,
+            "ky": 286,
             "kz": 15,
             "mb": 1,
             "mk": 1,
@@ -963,7 +964,7 @@
             "wd": 33,
             "we": 4,
             "wf": 76,
-            "wg": 361,
+            "wg": 362,
             "wh": 33,
             "wk": 153,
             "wl": 5,
@@ -1319,7 +1320,7 @@
             "x-ks": 6,
             "x-ku": 17,
             "x-kw": 227,
-            "x-ky": 179,
+            "x-ky": 180,
             "x-kz": 14,
             "x-mn": 1,
             "x-mw": 1,
@@ -1371,7 +1372,7 @@
             "x-wd": 30,
             "x-we": 4,
             "x-wf": 59,
-            "x-wg": 251,
+            "x-wg": 252,
             "x-wh": 14,
             "x-wk": 56,
             "x-wl": 3,
@@ -2183,14 +2184,19 @@
     },
     "Teams": {
         "AFG": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "AIA": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "ALB": {
+            "badges": [
+                "skenderbeu,x106"
+            ],
             "list": [
                 "flamurtari",
                 "kfkamza",
@@ -2202,9 +2208,11 @@
                 "skenderbeu",
                 "teutadurres"
             ],
+            "ownbadge": "x115",
             "total": 9
         },
         "ALG": {
+            "badges": [],
             "list": [
                 "asainmlila",
                 "askhroub",
@@ -2239,6 +2247,7 @@
             "total": 29
         },
         "AND": {
+            "badges": [],
             "list": [
                 "fcsantacoloma",
                 "lusitanos",
@@ -2249,6 +2258,7 @@
             "total": 5
         },
         "ANG": {
+            "badges": [],
             "list": [
                 "benficaluanda",
                 "primeirodeagosto",
@@ -2257,6 +2267,17 @@
             "total": 3
         },
         "ARG": {
+            "badges": [
+                "argentinosjuniors,x260",
+                "bocajuniors,x256",
+                "cariverplate,x261",
+                "estudiantes,x270",
+                "independiente,x252",
+                "racingclub,x253",
+                "riverplate,x297",
+                "sanlorenzo,x274",
+                "velezsarsfield,x265"
+            ],
             "list": [
                 "9dejuliomorteros",
                 "acassuso",
@@ -2416,9 +2437,11 @@
                 "villamitre",
                 "villasancarlos"
             ],
+            "ownbadge": "x007",
             "total": 157
         },
         "ARM": {
+            "badges": [],
             "list": [
                 "alashkertfc",
                 "fcbanants",
@@ -2432,18 +2455,30 @@
             "total": 8
         },
         "ARU": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "ASA": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "ATG": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "AUS": {
+            "badges": [
+                "adelaideunited,x178",
+                "brisbaneroar,x175",
+                "centralcoastmariners,x174",
+                "melbournevictory,x113",
+                "newcastlejets,x173",
+                "sydneyfc,x172",
+                "westernsydneywanderersfc,x176"
+            ],
             "list": [
                 "adamstownrosebud",
                 "adelaideblueeagles",
@@ -2585,9 +2620,15 @@
                 "whittlesearangesfc",
                 "whittleseazebras"
             ],
+            "ownbadge": "x049",
             "total": 139
         },
         "AUT": {
+            "badges": [
+                "austriawien,x148",
+                "rapidwien,x100",
+                "salzburg,x147"
+            ],
             "list": [
                 "admiradornbirn",
                 "admiramoedling",
@@ -2765,9 +2806,15 @@
                 "wolfsbergerac",
                 "wschertha"
             ],
+            "ownbadge": "x053",
             "total": 175
         },
         "AZE": {
+            "badges": [
+                "fkqabala,x097",
+                "fkqaradaglokbatan,x142",
+                "qarabagfk,x098"
+            ],
             "list": [
                 "azalpfcbaku",
                 "fckapaz",
@@ -2790,16 +2837,19 @@
             "total": 17
         },
         "BAH": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "BAN": {
+            "badges": [],
             "list": [
                 "abahanilimited"
             ],
             "total": 1
         },
         "BDI": {
+            "badges": [],
             "list": [
                 "atleticoolympic",
                 "vitalo"
@@ -2807,6 +2857,15 @@
             "total": 2
         },
         "BEL": {
+            "badges": [
+                "aagent,x042",
+                "anderlecht,x056",
+                "clubbrugge,x068",
+                "genk,x146",
+                "gent,x042",
+                "standardliege,x126",
+                "zultewaregem,x159"
+            ],
             "list": [
                 "aagent",
                 "aalst",
@@ -2943,21 +3002,26 @@
                 "zultewaregem",
                 "zwarteleeuw"
             ],
+            "ownbadge": "x044",
             "total": 134
         },
         "BEN": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "BER": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "BFA": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "BHR": {
+            "badges": [],
             "list": [
                 "alnajma",
                 "malkiya"
@@ -2965,10 +3029,12 @@
             "total": 2
         },
         "BHU": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "BIH": {
+            "badges": [],
             "list": [
                 "boracbanjaluka",
                 "celikzenica",
@@ -3001,6 +3067,10 @@
             "total": 27
         },
         "BLR": {
+            "badges": [
+                "bateborisov,x031",
+                "dinamominsk,x073"
+            ],
             "list": [
                 "bateborisov",
                 "belshinabobruisk",
@@ -3030,12 +3100,14 @@
             "total": 24
         },
         "BLZ": {
+            "badges": [],
             "list": [
                 "verdesfc"
             ],
             "total": 1
         },
         "BOL": {
+            "badges": [],
             "list": [
                 "alwaysready",
                 "atleticobermejo",
@@ -3063,12 +3135,25 @@
             "total": 22
         },
         "BOT": {
+            "badges": [],
             "list": [
                 "townshiprollers"
             ],
             "total": 1
         },
         "BRA": {
+            "badges": [
+                "atleticomg,x272",
+                "corinthians,x271",
+                "cruzeiro,x255",
+                "flamengo,x258",
+                "gremio,x259",
+                "internacional,x273",
+                "palmeiras,x267",
+                "santosfc,x251",
+                "saopaulo,x264",
+                "vasco,x266"
+            ],
             "list": [
                 "abc",
                 "adcabofriense",
@@ -3179,19 +3264,25 @@
                 "xvdepiracicaba",
                 "ypirangars"
             ],
+            "ownbadge": "x066",
             "total": 108
         },
         "BRB": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "BRU": {
+            "badges": [],
             "list": [
                 "bruneidpmm"
             ],
             "total": 1
         },
         "BUL": {
+            "badges": [
+                "ludogoretsrazgrad,x137"
+            ],
             "list": [
                 "ardakardzhali",
                 "atletikkuklen",
@@ -3249,6 +3340,7 @@
             "total": 52
         },
         "CAM": {
+            "badges": [],
             "list": [
                 "boeungket",
                 "nagaworldfc",
@@ -3257,6 +3349,7 @@
             "total": 3
         },
         "CAN": {
+            "badges": [],
             "list": [
                 "asblainville",
                 "cavalryfc",
@@ -3276,20 +3369,26 @@
             "total": 14
         },
         "CAY": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "CGO": {
+            "badges": [],
             "list": [
                 "acleoparddedolisie"
             ],
             "total": 1
         },
         "CHA": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "CHI": {
+            "badges": [
+                "colocolo,x263"
+            ],
             "list": [
                 "antofagasta",
                 "atleticonublense",
@@ -3330,9 +3429,13 @@
                 "usanfelipe",
                 "vallenar"
             ],
+            "ownbadge": "x008",
             "total": 38
         },
         "CHN": {
+            "badges": [
+                "guangzhouevergrande,x280"
+            ],
             "list": [
                 "anhuihefeiguiguan",
                 "baodingyingliyitong",
@@ -3417,6 +3520,7 @@
             "total": 79
         },
         "CIV": {
+            "badges": [],
             "list": [
                 "asecmimosas",
                 "sewesport"
@@ -3424,12 +3528,15 @@
             "total": 2
         },
         "CMR": {
+            "badges": [],
             "list": [
                 "cotonsport"
             ],
+            "ownbadge": "x155",
             "total": 1
         },
         "COD": {
+            "badges": [],
             "list": [
                 "asvitaclub",
                 "tpmazembe"
@@ -3437,10 +3544,15 @@
             "total": 2
         },
         "COK": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "COL": {
+            "badges": [
+                "atleticonacional,x262",
+                "oncecaldas,x268"
+            ],
             "list": [
                 "alianzapetrolera",
                 "americadecali",
@@ -3472,17 +3584,21 @@
                 "uniautonoma",
                 "unionmagdalena"
             ],
+            "ownbadge": "x069",
             "total": 29
         },
         "COM": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "CPV": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "CRC": {
+            "badges": [],
             "list": [
                 "admunicipalliberia",
                 "aspumageneralena",
@@ -3507,9 +3623,14 @@
                 "santosdeguapiles",
                 "universidaddecostarica"
             ],
+            "ownbadge": "x070",
             "total": 22
         },
         "CRO": {
+            "badges": [
+                "dinamozagreb,x023",
+                "rijeka,x242"
+            ],
             "list": [
                 "bjelovar",
                 "cibalia",
@@ -3552,21 +3673,31 @@
                 "zadar",
                 "zagora"
             ],
+            "ownbadge": "x071",
             "total": 40
         },
         "CTA": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "CUB": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "CUW": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "CYP": {
+            "badges": [
+                "aeklarnaca,x295",
+                "aellimassol,x051",
+                "apoelnicosia,x055",
+                "apollonlimassol,x177"
+            ],
             "list": [
                 "aeklarnaca",
                 "aekouklion",
@@ -3612,6 +3743,14 @@
             "total": 40
         },
         "CZE": {
+            "badges": [
+                "jablonec,x287",
+                "slaviaprague,x239",
+                "slovanliberec,x107",
+                "spartaprague,x110",
+                "viktoriaplzen,x093",
+                "zlin,x162"
+            ],
             "list": [
                 "admiraprague",
                 "banikostrava",
@@ -3732,13 +3871,20 @@
                 "zlin",
                 "znojmo"
             ],
+            "ownbadge": "x072",
             "total": 118
         },
         "CZS": {
+            "badges": [],
             "list": [],
+            "ownbadge": "x191",
             "total": 0
         },
         "DEN": {
+            "badges": [
+                "fckobenhavn,x149",
+                "midtjylland,x086"
+            ],
             "list": [
                 "aabyhojif",
                 "aalborgfreja",
@@ -3886,19 +4032,23 @@
                 "virums",
                 "vskarhus"
             ],
+            "ownbadge": "x192",
             "total": 145
         },
         "DJI": {
+            "badges": [],
             "list": [
                 "asalisabiehdjiboutitelecom"
             ],
             "total": 1
         },
         "DMA": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "DOM": {
+            "badges": [],
             "list": [
                 "capantoja",
                 "cibao"
@@ -3906,6 +4056,9 @@
             "total": 2
         },
         "ECU": {
+            "badges": [
+                "ldudequito,x269"
+            ],
             "list": [
                 "aucas",
                 "barcelonasc",
@@ -3933,6 +4086,7 @@
             "total": 22
         },
         "EGY": {
+            "badges": [],
             "list": [
                 "alaabdamanhour",
                 "alahly",
@@ -3966,9 +4120,30 @@
                 "telephonatbanisweif",
                 "wadideglafc"
             ],
+            "ownbadge": "x275",
             "total": 31
         },
         "ENG": {
+            "badges": [
+                "arsenal,x009",
+                "astonvilla,x185",
+                "blackburnrovers,x186",
+                "burnley,x188",
+                "chelsea,x012",
+                "derby,x193",
+                "everton,x199",
+                "ipswichtown,x208",
+                "leedsunited,x213",
+                "leicestercity,x060",
+                "liverpool,x016",
+                "manchestercity,x015",
+                "manchesterunited,x014",
+                "nottinghamforest,x217",
+                "portsmouth,x219",
+                "southampton,x002",
+                "tottenhamhotspur,x099",
+                "wolverhamptonw,x231"
+            ],
             "list": [
                 "accringtonstanley",
                 "afcbournemouth",
@@ -4217,17 +4392,33 @@
                 "yeovil",
                 "yorkcity"
             ],
+            "ownbadge": "x003",
             "total": 246
         },
         "EQG": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "ERI": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "ESP": {
+            "badges": [
+                "athleticclub,x061",
+                "atleticomadrid,x032",
+                "barcelona,x019",
+                "celtavigo,x152",
+                "deportivolacoruna,x238",
+                "realbetis,x288",
+                "realmadrid,x020",
+                "realsociedad,x166",
+                "sevillafc,x039",
+                "valencia,x021",
+                "villarreal,x094"
+            ],
             "list": [
                 "adceutafc",
                 "adunionadarve",
@@ -4467,9 +4658,11 @@
                 "zamudiosd",
                 "zaragoza"
             ],
+            "ownbadge": "x048",
             "total": 237
         },
         "EST": {
+            "badges": [],
             "list": [
                 "fcelva",
                 "fckuressaare",
@@ -4493,6 +4686,7 @@
             "total": 18
         },
         "ETH": {
+            "badges": [],
             "list": [
                 "adamacity",
                 "stgeorge"
@@ -4500,12 +4694,14 @@
             "total": 2
         },
         "FIJ": {
+            "badges": [],
             "list": [
                 "ba"
             ],
             "total": 1
         },
         "FIN": {
+            "badges": [],
             "list": [
                 "ackajaani",
                 "acoulu",
@@ -4556,6 +4752,24 @@
             "total": 45
         },
         "FRA": {
+            "badges": [
+                "auxerre,x184",
+                "bordeaux,x077",
+                "lens,x222",
+                "lille,x214",
+                "lyon,x018",
+                "marseille,x089",
+                "monaco,x057",
+                "montpellier,x215",
+                "nantes,x216",
+                "nice,x133",
+                "parissaintgermain,x017",
+                "redstar,x125",
+                "reims,x230",
+                "rennes,x289",
+                "saintetienne,x104",
+                "strasbourg,x220"
+            ],
             "list": [
                 "acajaccio",
                 "afccompiegne",
@@ -4938,9 +5152,11 @@
                 "ytrac",
                 "yzeure"
             ],
+            "ownbadge": "x045",
             "total": 380
         },
         "FRO": {
+            "badges": [],
             "list": [
                 "b36torshavn",
                 "ebstreymur",
@@ -4953,14 +5169,17 @@
             "total": 7
         },
         "GAB": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "GAM": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "GEO": {
+            "badges": [],
             "list": [
                 "chikhura",
                 "dilagori",
@@ -4989,6 +5208,30 @@
             "total": 23
         },
         "GER": {
+            "badges": [
+                "1860munchen,x181",
+                "1fckoln,x163",
+                "1fcnurnberg,x180",
+                "augsburg,x058",
+                "bayerleverkusen,x028",
+                "bayernmunich,x013",
+                "borussiadortmund,x010",
+                "borussiamgladbach,x033",
+                "eintrachtbraunschweig,x197",
+                "eintrachtfrankfurt,x198",
+                "hamburgersv,x203",
+                "hannover96,x204",
+                "herthaberlin,x164",
+                "kaiserslautern,x179",
+                "mainz05,x075",
+                "rasenballsportleipzig,x157",
+                "rotweissessen,x225",
+                "schalke,x105",
+                "stuttgart,x234",
+                "tsg1899hoffenheim,x240",
+                "werderbremen,x235",
+                "wolfsburg,x027"
+            ],
             "list": [
                 "1860munchen",
                 "1860rosenheim",
@@ -5332,15 +5575,18 @@
                 "zfcmeuselwitz",
                 "zuzenhausen"
             ],
+            "ownbadge": "x004",
             "total": 341
         },
         "GHA": {
+            "badges": [],
             "list": [
                 "berekumchelsea"
             ],
             "total": 1
         },
         "GIB": {
+            "badges": [],
             "list": [
                 "collegeeuropafc",
                 "lincolnredimpsfc",
@@ -5349,16 +5595,25 @@
             "total": 3
         },
         "GNB": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "GPE": {
+            "badges": [],
             "list": [
                 "evolucaslamentin"
             ],
             "total": 1
         },
         "GRE": {
+            "badges": [
+                "aekathens,x171",
+                "asterastripolis,x059",
+                "olympiacos,x041",
+                "panathinaikos,x141",
+                "paokthessalonikifc,x091"
+            ],
             "list": [
                 "acharnaikosfc",
                 "aeermionidas",
@@ -5427,13 +5682,16 @@
                 "xanthiskoda",
                 "zakynthosaps"
             ],
+            "ownbadge": "x202",
             "total": 66
         },
         "GRN": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "GUA": {
+            "badges": [],
             "list": [
                 "antiguaguatemala",
                 "carcha",
@@ -5463,26 +5721,31 @@
             "total": 24
         },
         "GUF": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "GUI": {
+            "badges": [],
             "list": [
                 "horoyaac"
             ],
             "total": 1
         },
         "GUM": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "GUY": {
+            "badges": [],
             "list": [
                 "alphaunited"
             ],
             "total": 1
         },
         "HAI": {
+            "badges": [],
             "list": [
                 "donboscosc",
                 "valenciadeleogane"
@@ -5490,6 +5753,7 @@
             "total": 2
         },
         "HKG": {
+            "badges": [],
             "list": [
                 "easternsportsclub",
                 "kitchee",
@@ -5499,6 +5763,7 @@
             "total": 4
         },
         "HON": {
+            "badges": [],
             "list": [
                 "atleticocholoma",
                 "cdmarathon",
@@ -5521,6 +5786,9 @@
             "total": 17
         },
         "HUN": {
+            "badges": [
+                "vidifc,x291"
+            ],
             "list": [
                 "andrashidasc",
                 "aqvitalfccsakvar",
@@ -5577,9 +5845,11 @@
                 "vidifc",
                 "zalaegerszeg"
             ],
+            "ownbadge": "x116",
             "total": 54
         },
         "IDN": {
+            "badges": [],
             "list": [
                 "arema",
                 "baliunitedpusam",
@@ -5609,6 +5879,7 @@
             "total": 24
         },
         "IND": {
+            "badges": [],
             "list": [
                 "aizawl",
                 "atleticodekolkata",
@@ -5646,6 +5917,9 @@
             "total": 32
         },
         "IRL": {
+            "badges": [
+                "dundalk,x139"
+            ],
             "list": [
                 "aislingannacotty",
                 "arklowtown",
@@ -5750,9 +6024,11 @@
                 "waterfordunited",
                 "wexfordyouths"
             ],
+            "ownbadge": "x118",
             "total": 102
         },
         "IRN": {
+            "badges": [],
             "list": [
                 "aluminiumhormozganfc",
                 "baadraantehran",
@@ -5796,17 +6072,21 @@
                 "tractorsazitabriz",
                 "zobahan"
             ],
+            "ownbadge": "x079",
             "total": 41
         },
         "IRQ": {
+            "badges": [],
             "list": [
                 "alquwaaljawiya",
                 "alzawraa",
                 "naftmaysan"
             ],
+            "ownbadge": "x209",
             "total": 3
         },
         "ISL": {
+            "badges": [],
             "list": [
                 "aegir",
                 "afturelding",
@@ -5841,9 +6121,14 @@
                 "vikingurolafsvik",
                 "vikingurreykjavik"
             ],
+            "ownbadge": "x117",
             "total": 32
         },
         "ISR": {
+            "badges": [
+                "hapoelbeersheva,x143",
+                "maccabitelaviv,x024"
+            ],
             "list": [
                 "beitarjerusalem",
                 "beitarkfarsabafc",
@@ -5899,9 +6184,27 @@
                 "sektzianestziona",
                 "shikunhamizrah"
             ],
+            "ownbadge": "x210",
             "total": 53
         },
         "ITA": {
+            "badges": [
+                "acmilan,x183",
+                "atalanta,x165",
+                "bologna,x187",
+                "cagliari,x189",
+                "chievoverona,x190",
+                "fiorentina,x054",
+                "inter,x129",
+                "juventus,x011",
+                "lazio,x081",
+                "napoli,x088",
+                "parmacalcio1913,x218",
+                "roma,x034",
+                "sampdoria,x226",
+                "sassuolo,x150",
+                "torino,x233"
+            ],
             "list": [
                 "abano",
                 "acfbresciafemminile",
@@ -6133,9 +6436,11 @@
                 "vispesaro",
                 "viterbese"
             ],
+            "ownbadge": "x046",
             "total": 229
         },
         "JAM": {
+            "badges": [],
             "list": [
                 "montegobayunitedfc",
                 "waterhousefc"
@@ -6143,6 +6448,7 @@
             "total": 2
         },
         "JOR": {
+            "badges": [],
             "list": [
                 "alahlyamman",
                 "albaqaa",
@@ -6162,6 +6468,11 @@
             "total": 14
         },
         "JPN": {
+            "badges": [
+                "gambaosaka,x279",
+                "kashimaantlers,x296",
+                "urawareddiamonds,x285"
+            ],
             "list": [
                 "albirexniigata",
                 "avispafukuoka",
@@ -6232,9 +6543,13 @@
                 "yscc",
                 "zweigenkanazawa"
             ],
+            "ownbadge": "x006",
             "total": 68
         },
         "KAZ": {
+            "badges": [
+                "fcastana,x029"
+            ],
             "list": [
                 "aktobe",
                 "akzhaiykuralsk",
@@ -6262,6 +6577,7 @@
             "total": 22
         },
         "KEN": {
+            "badges": [],
             "list": [
                 "administrationpolice",
                 "afcleopards",
@@ -6300,6 +6616,7 @@
             "total": 33
         },
         "KGZ": {
+            "badges": [],
             "list": [
                 "dordoifc",
                 "fcalayosh"
@@ -6307,6 +6624,12 @@
             "total": 2
         },
         "KOR": {
+            "badges": [
+                "jeonbukfc,x281",
+                "pohangsteelers,x282",
+                "seongnamilhwa,x283",
+                "ulsanhyundai,x284"
+            ],
             "list": [
                 "ansangreeners",
                 "asanmugunghwa",
@@ -6336,9 +6659,11 @@
                 "suwonsb",
                 "ulsanhyundai"
             ],
+            "ownbadge": "x109",
             "total": 27
         },
         "KOS": {
+            "badges": [],
             "list": [
                 "drita",
                 "fcprishtina",
@@ -6348,6 +6673,9 @@
             "total": 4
         },
         "KSA": {
+            "badges": [
+                "alittihadjeddah,x277"
+            ],
             "list": [
                 "alahlijeddah",
                 "albatin",
@@ -6376,17 +6704,21 @@
                 "najransc",
                 "ohod"
             ],
+            "ownbadge": "x227",
             "total": 26
         },
         "KUW": {
+            "badges": [],
             "list": [
                 "alqadsia",
                 "altadhamon",
                 "kuwaitsc"
             ],
+            "ownbadge": "x212",
             "total": 3
         },
         "LAO": {
+            "badges": [],
             "list": [
                 "laotoyotafc",
                 "shbchampasakfc"
@@ -6394,10 +6726,12 @@
             "total": 2
         },
         "LBR": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "LBY": {
+            "badges": [],
             "list": [
                 "alahlib",
                 "alahlitripoli"
@@ -6405,14 +6739,17 @@
             "total": 2
         },
         "LCA": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "LES": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "LIB": {
+            "badges": [],
             "list": [
                 "alahed",
                 "alnejmeh"
@@ -6420,6 +6757,7 @@
             "total": 2
         },
         "LIE": {
+            "badges": [],
             "list": [
                 "eschenmauren",
                 "fcvaduz"
@@ -6427,6 +6765,7 @@
             "total": 2
         },
         "LTU": {
+            "badges": [],
             "list": [
                 "bangagargzdai",
                 "dainavaalytus",
@@ -6453,6 +6792,9 @@
             "total": 21
         },
         "LUX": {
+            "badges": [
+                "f91dudelange,x292"
+            ],
             "list": [
                 "asjeunesseesch",
                 "csfolaesch",
@@ -6470,6 +6812,7 @@
             "total": 12
         },
         "LVA": {
+            "badges": [],
             "list": [
                 "bfcdaugavpils",
                 "fcdaugava",
@@ -6492,16 +6835,19 @@
             "total": 17
         },
         "MAC": {
+            "badges": [],
             "list": [
                 "benficamacau"
             ],
             "total": 1
         },
         "MAD": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "MAR": {
+            "badges": [],
             "list": [
                 "chababatlaskhenifra",
                 "chababrifalhoceima",
@@ -6529,9 +6875,11 @@
                 "wydadfes",
                 "youssoufiaberrechid"
             ],
+            "ownbadge": "x248",
             "total": 25
         },
         "MAS": {
+            "badges": [],
             "list": [
                 "atmfa",
                 "drbhicomfc",
@@ -6566,6 +6914,9 @@
             "total": 29
         },
         "MDA": {
+            "badges": [
+                "fcsheriff,x169"
+            ],
             "list": [
                 "cfungheni",
                 "codru",
@@ -6587,12 +6938,14 @@
             "total": 16
         },
         "MDV": {
+            "badges": [],
             "list": [
                 "newradiantsc"
             ],
             "total": 1
         },
         "MEX": {
+            "badges": [],
             "list": [
                 "alebrijesoaxaca",
                 "altamirafc",
@@ -6635,13 +6988,16 @@
                 "venados",
                 "veracruz"
             ],
+            "ownbadge": "x153",
             "total": 40
         },
         "MLI": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "MLT": {
+            "badges": [],
             "list": [
                 "balzanfc",
                 "birkirkara",
@@ -6655,6 +7011,7 @@
             "total": 8
         },
         "MNE": {
+            "badges": [],
             "list": [
                 "berane",
                 "bratstvo",
@@ -6686,30 +7043,36 @@
             "total": 26
         },
         "MNG": {
+            "badges": [],
             "list": [
                 "fkcetinje"
             ],
             "total": 1
         },
         "MOZ": {
+            "badges": [],
             "list": [
                 "ferroviariodabeira"
             ],
             "total": 1
         },
         "MRI": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "MSR": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "MTN": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "MTQ": {
+            "badges": [],
             "list": [
                 "aiglon",
                 "clubfranciscain"
@@ -6717,10 +7080,12 @@
             "total": 2
         },
         "MWI": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "MYA": {
+            "badges": [],
             "list": [
                 "kanbawzafc",
                 "shanunited",
@@ -6729,10 +7094,12 @@
             "total": 3
         },
         "NAM": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "NCA": {
+            "badges": [],
             "list": [
                 "deportivowalterferreti",
                 "realestelifc"
@@ -6740,6 +7107,7 @@
             "total": 2
         },
         "NCL": {
+            "badges": [],
             "list": [
                 "gaitcha",
                 "montdore"
@@ -6747,6 +7115,23 @@
             "total": 2
         },
         "NED": {
+            "badges": [
+                "ajax,x052",
+                "azalkmaar,x062",
+                "doorwilskrachtsterk,x194",
+                "fceindhoven,x200",
+                "fcgroningen,x078",
+                "fctwente,x201",
+                "feyenoord,x128",
+                "groningen,x078",
+                "psv,x037",
+                "rcheemstede,x221",
+                "rodajckerkrade,x224",
+                "spartarotterdam,x229",
+                "svlimburgia,x232",
+                "vitessearnhem,x160",
+                "willem,x236"
+            ],
             "list": [
                 "achilles29",
                 "acv",
@@ -6969,15 +7354,18 @@
                 "zundertseselectie",
                 "zwaluwenvlaardingen"
             ],
+            "ownbadge": "x047",
             "total": 220
         },
         "NEP": {
+            "badges": [],
             "list": [
                 "manangmarshyangdi"
             ],
             "total": 1
         },
         "NGA": {
+            "badges": [],
             "list": [
                 "abiawarriors",
                 "absfc",
@@ -7007,13 +7395,16 @@
                 "wikkitourist",
                 "yobedesertstars"
             ],
+            "ownbadge": "x243",
             "total": 27
         },
         "NIG": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "NIR": {
+            "badges": [],
             "list": [
                 "ards",
                 "ballinamallardunited",
@@ -7030,9 +7421,13 @@
                 "portadown",
                 "warrenpointtown"
             ],
+            "ownbadge": "x120",
             "total": 14
         },
         "NMK": {
+            "badges": [
+                "vardarskopje,x170"
+            ],
             "list": [
                 "11oktomvri",
                 "belasica",
@@ -7061,6 +7456,11 @@
             "total": 23
         },
         "NOR": {
+            "badges": [
+                "molde,x087",
+                "rosenborg,x102",
+                "sarpsborg08,x294"
+            ],
             "list": [
                 "aalesund",
                 "aalgaardfk",
@@ -7234,25 +7634,30 @@
             "total": 168
         },
         "NZL": {
+            "badges": [],
             "list": [
                 "aucklandcityfc",
                 "teamwellington",
                 "waitakereunited",
                 "wellingtonphoenix"
             ],
+            "ownbadge": "x154",
             "total": 4
         },
         "OMA": {
+            "badges": [],
             "list": [
                 "alsuwaiq"
             ],
             "total": 1
         },
         "PAK": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "PAL": {
+            "badges": [],
             "list": [
                 "ahlialkhaleel",
                 "hilalalquds"
@@ -7260,6 +7665,7 @@
             "total": 2
         },
         "PAN": {
+            "badges": [],
             "list": [
                 "cdarabeunido",
                 "cdplazaamador",
@@ -7269,9 +7675,13 @@
                 "sportingsanmiguelito",
                 "taurofc"
             ],
+            "ownbadge": "x247",
             "total": 7
         },
         "PAR": {
+            "badges": [
+                "olimpia,x257"
+            ],
             "list": [
                 "12deoctubre",
                 "3defebrero",
@@ -7293,9 +7703,11 @@
                 "sportivotrinidense",
                 "tacuary"
             ],
+            "ownbadge": "x092",
             "total": 19
         },
         "PER": {
+            "badges": [],
             "list": [
                 "academiacantolao",
                 "alianzaatletico",
@@ -7331,9 +7743,11 @@
                 "universidadsanmartin",
                 "universitarioperu"
             ],
+            "ownbadge": "x244",
             "total": 33
         },
         "PHI": {
+            "badges": [],
             "list": [
                 "ceresnegrosfc",
                 "globalfc",
@@ -7343,10 +7757,15 @@
             "total": 4
         },
         "PNG": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "POL": {
+            "badges": [
+                "lechpoznan,x083",
+                "legiawarsaw,x084"
+            ],
             "list": [
                 "arkagdynia",
                 "blekitnistargard",
@@ -7433,9 +7852,19 @@
                 "zawiszabydgoszcz",
                 "zniczpruszkow"
             ],
+            "ownbadge": "x121",
             "total": 84
         },
         "POR": {
+            "badges": [
+                "belenenses,x090",
+                "benfica,x035",
+                "boavista,x237",
+                "braga,x065",
+                "porto,x036",
+                "sportinglisbon,x111",
+                "vitoriaguimaraes,x158"
+            ],
             "list": [
                 "academicacoimbra",
                 "academicoviseu",
@@ -7539,9 +7968,11 @@
                 "vitoriasetubal",
                 "vizela"
             ],
+            "ownbadge": "x095",
             "total": 101
         },
         "PRK": {
+            "badges": [],
             "list": [
                 "april25sc",
                 "hwaebulsc"
@@ -7549,12 +7980,16 @@
             "total": 2
         },
         "PUR": {
+            "badges": [],
             "list": [
                 "bayamonfc"
             ],
             "total": 1
         },
         "QAT": {
+            "badges": [
+                "alsadd,x278"
+            ],
             "list": [
                 "alarabi",
                 "alduhailsc",
@@ -7572,6 +8007,7 @@
             "total": 12
         },
         "REU": {
+            "badges": [],
             "list": [
                 "asexcelsior",
                 "usstmarienne"
@@ -7579,6 +8015,10 @@
             "total": 2
         },
         "ROU": {
+            "badges": [
+                "astragiurgiu,x140",
+                "steauabucuresti,x145"
+            ],
             "list": [
                 "acspolitimisoara",
                 "afcsageatanavodari",
@@ -7618,9 +8058,11 @@
                 "utarad",
                 "vointasibiu"
             ],
+            "ownbadge": "x101",
             "total": 37
         },
         "RSA": {
+            "badges": [],
             "list": [
                 "ajaxcapetown",
                 "amazulu",
@@ -7655,6 +8097,16 @@
             "total": 29
         },
         "RUS": {
+            "badges": [
+                "cskamoscow,x030",
+                "fcrostov,x136",
+                "krasnodar,x151",
+                "kubankrasnodar,x080",
+                "lokomotivmoscow,x085",
+                "rubinkazan,x103",
+                "spartakmoscow,x156",
+                "zenitstpetersburg,x038"
+            ],
             "list": [
                 "afipsafipsky",
                 "akademiarostov",
@@ -7800,9 +8252,11 @@
                 "zvezdaperm",
                 "zvezdaryazan"
             ],
+            "ownbadge": "x122",
             "total": 143
         },
         "RWA": {
+            "badges": [],
             "list": [
                 "aprfc",
                 "rayonsport"
@@ -7810,10 +8264,21 @@
             "total": 2
         },
         "SAM": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "SCO": {
+            "badges": [
+                "aberdeen,x182",
+                "celtic,x067",
+                "dundeefc,x195",
+                "dundeeunited,x196",
+                "hearts,x205",
+                "hibernian,x206",
+                "kilmarnock,x211",
+                "rangers,x001"
+            ],
             "list": [
                 "aberdeen",
                 "airdrieonians",
@@ -7917,9 +8382,11 @@
                 "wickacademy",
                 "wigtownandbladnoch"
             ],
+            "ownbadge": "x050",
             "total": 101
         },
         "SDN": {
+            "badges": [],
             "list": [
                 "alahlyshendi",
                 "alamal",
@@ -7930,14 +8397,18 @@
             "total": 5
         },
         "SEN": {
+            "badges": [],
             "list": [],
+            "ownbadge": "x245",
             "total": 0
         },
         "SEY": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "SIN": {
+            "badges": [],
             "list": [
                 "albirexniigatafc",
                 "balestierkhalsafc",
@@ -7958,14 +8429,17 @@
             "total": 15
         },
         "SKN": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "SLE": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "SLV": {
+            "badges": [],
             "list": [
                 "alianzafc",
                 "atleticomarte",
@@ -7988,6 +8462,7 @@
             "total": 17
         },
         "SMR": {
+            "badges": [],
             "list": [
                 "folgore",
                 "juvenesdogana",
@@ -8000,6 +8475,7 @@
             "total": 7
         },
         "SOL": {
+            "badges": [],
             "list": [
                 "hekariunited",
                 "solomonwarriorsfc"
@@ -8007,6 +8483,7 @@
             "total": 2
         },
         "SOM": {
+            "badges": [],
             "list": [
                 "benadirsc",
                 "heeganfc"
@@ -8014,6 +8491,11 @@
             "total": 2
         },
         "SRB": {
+            "badges": [
+                "fkcrvenazvezda,x223",
+                "partizanbelgrade,x082",
+                "redstarbelgrade,x223"
+            ],
             "list": [
                 "backabackapalanka",
                 "boraccacak",
@@ -8047,23 +8529,34 @@
                 "vozdovac",
                 "zfkspartaksuboticaw"
             ],
+            "ownbadge": "x246",
             "total": 31
         },
         "SRI": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "SSD": {
+            "badges": [],
             "list": [
                 "almalakia"
             ],
             "total": 1
         },
         "STP": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "SUI": {
+            "badges": [
+                "basel,x063",
+                "lugano,x161",
+                "sion,x114",
+                "youngboysbern,x138",
+                "zurich,x135"
+            ],
             "list": [
                 "aarau",
                 "acsementina",
@@ -8160,13 +8653,18 @@
                 "zug",
                 "zurich"
             ],
+            "ownbadge": "x112",
             "total": 94
         },
         "SUR": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "SVK": {
+            "badges": [
+                "trnava,x293"
+            ],
             "list": [
                 "banskabystrica",
                 "bardejov",
@@ -8215,9 +8713,13 @@
                 "zilina",
                 "zlatemoravce"
             ],
+            "ownbadge": "x131",
             "total": 46
         },
         "SVN": {
+            "badges": [
+                "maribor,x167"
+            ],
             "list": [
                 "aluminijkidricevo",
                 "ankaranhrvatini",
@@ -8258,9 +8760,15 @@
                 "zaricakranj",
                 "zavrc"
             ],
+            "ownbadge": "x108",
             "total": 38
         },
         "SWE": {
+            "badges": [
+                "ifkgothenburg,x207",
+                "malmoff,x025",
+                "ostersundsfk,x168"
+            ],
             "list": [
                 "abyif",
                 "afceskilstuna",
@@ -8318,6 +8826,7 @@
                 "gefle",
                 "gnosjo",
                 "goteneif",
+                "gottneif",
                 "grebbestadsif",
                 "hacken",
                 "halmia",
@@ -8458,6 +8967,7 @@
                 "sundsvall",
                 "syrianska",
                 "tabyfk",
+                "tagarpsaik",
                 "teamtgff",
                 "tenhultsif",
                 "tornsif",
@@ -8494,21 +9004,25 @@
                 "vittsjogik",
                 "ytterhogdalsik"
             ],
-            "total": 231
+            "ownbadge": "x130",
+            "total": 233
         },
         "SWZ": {
+            "badges": [],
             "list": [
                 "mbabaneswallows"
             ],
             "total": 1
         },
         "SYR": {
+            "badges": [],
             "list": [
                 "aljaish"
             ],
             "total": 1
         },
         "TAH": {
+            "badges": [],
             "list": [
                 "astefana",
                 "dragon"
@@ -8516,6 +9030,7 @@
             "total": 2
         },
         "TAN": {
+            "badges": [],
             "list": [
                 "azamfc",
                 "simbasc",
@@ -8524,14 +9039,17 @@
             "total": 3
         },
         "TCA": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "TGA": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "THA": {
+            "badges": [],
             "list": [
                 "airforcecentralfc",
                 "bangkokglass",
@@ -8573,6 +9091,7 @@
             "total": 36
         },
         "TJK": {
+            "badges": [],
             "list": [
                 "fcistiklol",
                 "fkkhujand"
@@ -8580,6 +9099,7 @@
             "total": 2
         },
         "TKM": {
+            "badges": [],
             "list": [
                 "ahal",
                 "altynasyr",
@@ -8588,22 +9108,26 @@
             "total": 3
         },
         "TLS": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "TOG": {
+            "badges": [],
             "list": [
                 "togoport"
             ],
             "total": 1
         },
         "TPE": {
+            "badges": [],
             "list": [
                 "hangyuenfujen"
             ],
             "total": 1
         },
         "TRI": {
+            "badges": [],
             "list": [
                 "caledonia",
                 "centralfc",
@@ -8612,6 +9136,7 @@
             "total": 3
         },
         "TUN": {
+            "badges": [],
             "list": [
                 "asgabes",
                 "askasserine",
@@ -8639,9 +9164,19 @@
                 "ustataouine",
                 "zarzis"
             ],
+            "ownbadge": "x249",
             "total": 25
         },
         "TUR": {
+            "badges": [
+                "akhisarspor,x286",
+                "besiktas,x064",
+                "fenerbahce,x076",
+                "galatasaray,x043",
+                "istanbulbuyuksehir,x241",
+                "konyaspor,x127",
+                "osmanlispor,x144"
+            ],
             "list": [
                 "12bingolspor",
                 "1461trabzon",
@@ -8840,9 +9375,13 @@
                 "yuksekovabelediyespor",
                 "zonguldakkomurspor"
             ],
+            "ownbadge": "x123",
             "total": 196
         },
         "UAE": {
+            "badges": [
+                "alain,x276"
+            ],
             "list": [
                 "ajman",
                 "alahli",
@@ -8864,6 +9403,7 @@
             "total": 16
         },
         "UGA": {
+            "badges": [],
             "list": [
                 "kccafc",
                 "policefc"
@@ -8871,6 +9411,13 @@
             "total": 2
         },
         "UKR": {
+            "badges": [
+                "dnipro,x074",
+                "dynamokyiv,x040",
+                "shakhtardonetsk,x026",
+                "vorsklapoltava,x290",
+                "zorya,x134"
+            ],
             "list": [
                 "arsenalkyiv",
                 "cherkashchynaakademiya",
@@ -8918,9 +9465,14 @@
                 "zirka",
                 "zorya"
             ],
+            "ownbadge": "x132",
             "total": 45
         },
         "URU": {
+            "badges": [
+                "clubatleticopenarol,x250",
+                "nacional,x254"
+            ],
             "list": [
                 "atenas",
                 "bellavista",
@@ -8950,9 +9502,11 @@
                 "villaespanola",
                 "villateresa"
             ],
+            "ownbadge": "x096",
             "total": 27
         },
         "USA": {
+            "badges": [],
             "list": [
                 "academicasc",
                 "acconnecticut",
@@ -9171,13 +9725,17 @@
                 "westernnewyorkflash",
                 "westvirginiachaos"
             ],
+            "ownbadge": "x005",
             "total": 216
         },
         "USR": {
+            "badges": [],
             "list": [],
+            "ownbadge": "x228",
             "total": 0
         },
         "UZB": {
+            "badges": [],
             "list": [
                 "agmk",
                 "agmkalmalyk",
@@ -9192,12 +9750,14 @@
             "total": 9
         },
         "VAN": {
+            "badges": [],
             "list": [
                 "amicalfc"
             ],
             "total": 1
         },
         "VEN": {
+            "badges": [],
             "list": [
                 "academiapuertocabello",
                 "araguafc",
@@ -9231,10 +9791,12 @@
             "total": 28
         },
         "VGB": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "VIE": {
+            "badges": [],
             "list": [
                 "binhduong",
                 "danang",
@@ -9256,14 +9818,17 @@
             "total": 16
         },
         "VIN": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "VIR": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "WAL": {
+            "badges": [],
             "list": [
                 "aberystwyth",
                 "afanlido",
@@ -9292,13 +9857,16 @@
                 "tns",
                 "wrexham"
             ],
+            "ownbadge": "x124",
             "total": 26
         },
         "YEM": {
+            "badges": [],
             "list": [],
             "total": 0
         },
         "ZAM": {
+            "badges": [],
             "list": [
                 "redarrows",
                 "zanaco",
@@ -9307,18 +9875,20 @@
             "total": 3
         },
         "ZAN": {
+            "badges": [],
             "list": [
                 "kmkmfc"
             ],
             "total": 1
         },
         "ZIM": {
+            "badges": [],
             "list": [
                 "capsunited",
                 "fcplatinum"
             ],
             "total": 2
         },
-        "total": 6105
+        "total": 6107
     }
 }

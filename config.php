@@ -1,48 +1,12 @@
 <?php
-function pretty_var($myArray, $colour = 'ff0000', $s = "p") {
-	global $tGroup;
-
-	if ($s == "i") {
-		$tGroup .= "<div id='debug' style='background-color: #".$colour.";'>\n";
-		$tGroup .= str_replace(array("\n"," "),array("<br>","&nbsp;"), var_export($myArray,true))."<br>\n";
-		$tGroup .= "</div>\n";
-	}
-	elseif ($s == "p") {
-		print "<div id='debug' style='background-color: #".$colour.";'>\n";
-		print utf8_encode(str_replace(array("\n"," "),array("<br>","&nbsp;"), var_export($myArray,true))."<br>\n");
-		print "</div>\n";
-	}
-}
-
-function t($n = 1) {
-	$count = 1;
-	$tabs = "";
-	while ($count <= $n) {
-		$tabs .= "\t";
-		$count++;
-	}
-	return $tabs;
-}
-
-function aasort (&$array, $key) {
-    $sorter=array();
-    $ret=array();
-    reset($array);
-    foreach ($array as $ii => $va) {
-        $sorter[$ii]=$va[$key];
-    }
-    asort($sorter);
-    foreach ($sorter as $ii => $va) {
-        $ret[$ii]=$array[$ii];
-    }
-    $array=$ret;
-}
+include 'utility.php';
 
 $string = file_get_contents('./config/stats.json');
 $Stats = json_decode($string, true);
 $the_comps	= file("config/comps.csv", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 $the_teams	= file("config/teams.csv", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 $the_nats	= file("config/nations.csv", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+$the_missing= file("news/missing.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
 $DEBUG = 0;
 
@@ -74,6 +38,7 @@ foreach ($the_nats as $in_t) {
 	$Team[$id]["Lat"] = $t_line[6];
 	$Team[$id]["Tri"] = $t_line[8];
 }
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -684,6 +649,11 @@ foreach ($the_nats as $in_t) {
 					<h2 class="text-center"> List </h2> <!-- Competition container -->
 					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 						<div class="container-fluid p-4">
+							<?php
+							foreach ($the_missing as $m) {
+								print $m."<br/>";
+							}
+							?>
 						</div>
 					</div>
 				</div>

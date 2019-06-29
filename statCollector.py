@@ -127,7 +127,8 @@ Stats = {
 			"total": 0,
 			"sortedby": {}
 		}
-	}
+	},
+	"Badges": {}
 }
 
 Team = {}
@@ -136,6 +137,8 @@ with open(the_nations, 'r') as n:
 	#name,Display,minor,major,baj,lat,lng,zoom,TRI
 	nats = csv.reader(n)
 	for row in nats:
+		if re.search("[soviet|czechosl]", row[0], re.IGNORECASE):
+			pass
 		id = row[0].split("~")
 		Stats["Nations"]["total"] += 1
 		Stats["Nations"]["by_tri"][row[8]] = id[0]
@@ -143,7 +146,10 @@ with open(the_nations, 'r') as n:
 		Stats["Teams"][row[8]] = {}
 		Stats["Teams"][row[8]]["total"] = 0
 		Stats["Teams"][row[8]]["list"] = []
+		Stats["Teams"][row[8]]["badges"] = []
 		tally_colours(row[2], row[3])
+		if len(row[4]) > 0:
+			Stats["Teams"][row[8]]["ownbadge"] = row[4]
 
 with open(the_teams, 'r') as t:
 	#aagent,AA Gent,Gbwb,bw,b-bbw,x042,51.016111,3.734167,Ghent,BEL
@@ -154,6 +160,8 @@ with open(the_teams, 'r') as t:
 		Stats["Teams"][row[9]]["total"] += 1
 		Stats["Teams"][row[9]]["list"].append(first[0])
 		tally_colours(row[3], row[4])
+		if len(row[5]) > 0:
+			Stats["Teams"][row[9]]["badges"].append(first[0]+","+row[5])
 
 with open(the_comps, 'r') as c:
 	comps = csv.reader(c)
