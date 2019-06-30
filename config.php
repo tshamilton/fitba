@@ -569,38 +569,38 @@ foreach ($the_nats as $in_t) {
 					<div class="container-fluid p-4">
 					<div class="row">
 						<div class="col-sm-2">
-<?php
-	$badged_nations = Array();
-	foreach ($Stats["Badges"] as $N => $B) {
-		if (sizeof($B["list"])) {
-			array_push($badged_nations, $N);
-		}
-	}
+						<?php
+							$badged_nations = Array();
+							foreach ($Stats["Badges"] as $N => $B) {
+								if (sizeof($B["list"])) {
+									array_push($badged_nations, $N);
+								}
+							}
 
-	$the_count = 1;
-	$size = sizeof($badged_nations);
-	$nCol = 6;
-	$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
-	foreach ($badged_nations as $N) {
-		$tRef = $Stats["Nations"]["by_tri"][$N];
-		$TeamName = $Team[$tRef]["Name"]." (".sizeof($Stats["Badges"][$N]["list"]).")";
-		if (preg_match("/x/", $Team[$tRef]["Badge"])) {
-			$TeamStyle = $Team[$tRef]["Badge"];
-		}
-		else {
-			$TeamStyle = $Team[$tRef]["Mjr"];
-		}
-		$Border = substr($Team[$tRef]["Mnr"], 0, 1);
-		$Flag = "<img class=\"".$Border."\" src=\"flags/".$N.".png\">";
-		print t(7)."<div class=\"team mx-1 my-2 ".$TeamStyle."\">".$Flag." ".$TeamName."</div>\n";
-		if ($the_count == $colLength) {
-			print t(6)."</div>\n";
-			print t(6)."<div class=\"col-sm-2\">\n";
-			$the_count = 0;
-		}
-		$the_count += 1;
-	}
-?>
+							$the_count = 1;
+							$size = sizeof($badged_nations);
+							$nCol = 6;
+							$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
+							foreach ($badged_nations as $N) {
+								$tRef = $Stats["Nations"]["by_tri"][$N];
+								$TeamName = $Team[$tRef]["Name"]." (".sizeof($Stats["Badges"][$N]["list"]).")";
+								if (preg_match("/x/", $Team[$tRef]["Badge"])) {
+									$TeamStyle = $Team[$tRef]["Badge"];
+								}
+								else {
+									$TeamStyle = $Team[$tRef]["Mjr"];
+								}
+								$Border = substr($Team[$tRef]["Mnr"], 0, 1);
+								$Flag = "<img class=\"".$Border."\" src=\"flags/".$N.".png\">";
+								print t(7)."<div class=\"team mx-1 my-2 ".$TeamStyle."\">".$Flag." ".$TeamName."</div>\n";
+								if ($the_count == $colLength) {
+									print t(6)."</div>\n";
+									print t(6)."<div class=\"col-sm-2\">\n";
+									$the_count = 0;
+								}
+								$the_count += 1;
+							}
+						?>
 						</div>
 					</div>
 					</div>
@@ -610,33 +610,33 @@ foreach ($the_nats as $in_t) {
 					<div class="container-fluid p-4">
 					<div class="row">
 						<div class="col-sm-2">
-<?php
-	$nations_with_badges = Array();
-	foreach ($Stats["Badges"] as $N => $B) {
-		if (array_key_exists("ownbadge", $B)) {
-			array_push($nations_with_badges, $N);
-		}
-	}
+						<?php
+							$nations_with_badges = Array();
+							foreach ($Stats["Badges"] as $N => $B) {
+								if (array_key_exists("ownbadge", $B)) {
+									array_push($nations_with_badges, $N);
+								}
+							}
 
-	$the_count = 1;
-	$size = sizeof($nations_with_badges);
-	$nCol = 6;
-	$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
-	foreach ($nations_with_badges as $N) {
-		$tRef = $Stats["Nations"]["by_tri"][$N];
-		$TeamName = $Team[$tRef]["Name"];
-		$TeamStyle = $Team[$tRef]["Badge"];
-		$Border = substr($Team[$tRef]["Mnr"], 0, 1);
-		$Flag = "<img class=\"".$Border."\" src=\"flags/".$N.".png\">";
-		print t(7)."<div class=\"team mx-1 my-2 ".$TeamStyle."\">".$Flag." ".$TeamName."</div>\n";
-		if ($the_count == $colLength) {
-			print t(6)."</div>\n";
-			print t(6)."<div class=\"col-sm-2\">\n";
-			$the_count = 0;
-		}
-		$the_count += 1;
-	}
-?>
+							$the_count = 1;
+							$size = sizeof($nations_with_badges);
+							$nCol = 6;
+							$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
+							foreach ($nations_with_badges as $N) {
+								$tRef = $Stats["Nations"]["by_tri"][$N];
+								$TeamName = $Team[$tRef]["Name"];
+								$TeamStyle = $Team[$tRef]["Badge"];
+								$Border = substr($Team[$tRef]["Mnr"], 0, 1);
+								$Flag = "<img class=\"".$Border."\" src=\"flags/".$N.".png\">";
+								print t(7)."<div class=\"team mx-1 my-2 ".$TeamStyle."\">".$Flag." ".$TeamName."</div>\n";
+								if ($the_count == $colLength) {
+									print t(6)."</div>\n";
+									print t(6)."<div class=\"col-sm-2\">\n";
+									$the_count = 0;
+								}
+								$the_count += 1;
+							}
+						?>
 						</div>
 					</div>
 					</div>
@@ -644,62 +644,81 @@ foreach ($the_nats as $in_t) {
 				<h2 class="text-center"> Clubs By Nation </h2> <!-- Competition container -->
 				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 					<div class="container-fluid p-4">
-<?php
-	$clubs_by_nation = Array();
-	foreach ($Stats["Badges"] as $N => $B) {
-		if (sizeof($B["list"]) > 0) {
-			array_push($clubs_by_nation, $N);
-		}
-	}
+					<?php
+						$clubs_by_nation = Array();
+						foreach ($Stats["Badges"] as $N => $B) {
+							if (sizeof($B["list"]) > 0) {
+								array_push($clubs_by_nation, $N);
+							}
+						}
 
-	foreach ($clubs_by_nation as $c) {
-		$tRef = $Stats["Nations"]["by_tri"][$c];
-		$TeamName = $Team[$tRef]["Name"];
-		$TeamStyle = $Team[$tRef]["Badge"];
-		$Border = substr($Team[$tRef]["Mnr"], 0, 1);
-		$Flag = "<img class=\"".$Border."\" src=\"flags/large/".$c.".png\">";
-		print t(7)."<h3> ".$Flag." ".$TeamName." </h3>\n";
-		print t(7)."<div class=\"row\">\n";
-		print t(8)."<div class=\"col-sm-2\">\n";
-		$the_count = 1;
-		$nCol = 6;
-		if (sizeof($Stats["Badges"][$c]["list"]) < 12) {
-			while ((sizeof($Stats["Badges"][$c]["list"]) % $nCol) != 0) {
-				array_push($Stats["Badges"][$c]["list"], "");
-			}
-		}
-		$size = sizeof($Stats["Badges"][$c]["list"]) - 1;
-		$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
-		foreach ($Stats["Badges"][$c]["list"] as $T) {
-			if ($T == "") {
-				print t(9)."<div class=\"team mx-1 my-2\"></div>\n";
-			}
-			else {
-				$TeamStyle = $Team[$T]["Badge"];
-				$TeamName = $Team[$T]["Name"];
-				print t(9)."<div class=\"team mx-1 my-2 ".$TeamStyle."\">".$TeamName."</div>\n";
-			}
-			if ($the_count == $colLength) {
-				print t(8)."</div>\n";
-				print t(8)."<div class=\"col-sm-2\">\n";
-				$the_count = 0;
-			}
-			$the_count += 1;
-		}
-		print t(8)."</div>\n";
-		print t(7)."</div>\n";
-		print t(7)."<p>&nbsp;</p>\n";
-		print t(7)."<p>&nbsp;</p>\n";
-	}
-?>
+						foreach ($clubs_by_nation as $c) {
+							$tRef = $Stats["Nations"]["by_tri"][$c];
+							$TeamName = $Team[$tRef]["Name"];
+							$TeamStyle = $Team[$tRef]["Badge"];
+							$Border = substr($Team[$tRef]["Mnr"], 0, 1);
+							$Flag = "<img class=\"".$Border."\" src=\"flags/large/".$c.".png\">";
+							print t(7)."<h3> ".$Flag." ".$TeamName." </h3>\n";
+							print t(7)."<div class=\"row\">\n";
+							print t(8)."<div class=\"col-sm-2\">\n";
+							$the_count = 1;
+							$nCol = 6;
+							if (sizeof($Stats["Badges"][$c]["list"]) < 12) {
+								while ((sizeof($Stats["Badges"][$c]["list"]) % $nCol) != 0) {
+									array_push($Stats["Badges"][$c]["list"], "");
+								}
+							}
+							$size = sizeof($Stats["Badges"][$c]["list"]) - 1;
+							$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
+							foreach ($Stats["Badges"][$c]["list"] as $T) {
+								if ($T == "") {
+									print t(9)."<div class=\"team mx-1 my-2\"></div>\n";
+								}
+								else {
+									$TeamStyle = $Team[$T]["Badge"];
+									$TeamName = $Team[$T]["Name"];
+									print t(9)."<div class=\"team mx-1 my-2 ".$TeamStyle."\">".$TeamName."</div>\n";
+								}
+								if ($the_count == $colLength) {
+									print t(8)."</div>\n";
+									print t(8)."<div class=\"col-sm-2\">\n";
+									$the_count = 0;
+								}
+								$the_count += 1;
+							}
+							print t(8)."</div>\n";
+							print t(7)."</div>\n";
+							print t(7)."<p>&nbsp;</p>\n";
+							print t(7)."<p>&nbsp;</p>\n";
+						}
+					?>
 					</div>
 				</div>
 			</div></div>
 			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="champs" name="champs"><div class="container-fluid">
 					<h1 class="text-center"> Champs </h1>
+					<?php
+						foreach($Stats["Champs"] as $C => $L) {
+							$title = explode("~", $C);
+							if ($title[0] != "INT") {
+								$Flag = "<img src=\"flags/large/".$title[0].".png\">";
+							}
+							else {
+								$Flag = "";
+							}
+							print "<h2 class=\"text-center\"> ".$Flag." ".$title[1]." </h2>\n";
+							print "<div class=\"d-flex justify-content-center clearfix my-3 darkSlate theCompBody\">\n";
+							print "<div class=\"container-fluid p-4\">\n";
+							print "</div>\n";
+							print "</div>\n";
+						}
+					?>
 					<h2 class="text-center"> World Cup </h2> <!-- Competition container -->
 					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 						<div class="container-fluid p-4">
+						<?php
+							pretty_var($Stats["Champs"], 'aa77dd');
+						?>
 						</div>
 					</div>
 					<h2 class="text-center"> England </h2> <!-- Competition container -->
