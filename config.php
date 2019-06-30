@@ -60,12 +60,12 @@ foreach ($the_nats as $in_t) {
 	<body>
 		<ul class="nav nav-pills nav-fill fixed-top theTabBody">
 			<li class="nav-item slate"><a role="nav-link" data-toggle="pill" href="#stats"> Stats </a></li>
-			<li class="nav-item x-yr"><a role="nav-link" data-toggle="pill" href="#colours"> Colours </a></li>
-			<li class="nav-item x-nw"><a role="nav-link" data-toggle="pill" href="#nations"> Nations </a></li>
-			<li class="nav-item x-rw"><a role="nav-link" data-toggle="pill" href="#clubs"> Clubs </a></li>
-			<li class="nav-item x-nr"><a role="nav-link" data-toggle="pill" href="#badges"> Badges </a></li>
-			<li class="nav-item x-yn"><a role="nav-link" data-toggle="pill" href="#champs"> Champs </a></li>
-			<li class="nav-item s-nhw"><a role="nav-link" data-toggle="pill" href="#missing"> Missing </a></li>
+			<li class="nav-item slate"><a role="nav-link" data-toggle="pill" href="#colours"> Colours </a></li>
+			<li class="nav-item slate"><a role="nav-link" data-toggle="pill" href="#nations"> Nations </a></li>
+			<li class="nav-item slate"><a role="nav-link" data-toggle="pill" href="#clubs"> Clubs </a></li>
+			<li class="nav-item slate"><a role="nav-link" data-toggle="pill" href="#badges"> Badges </a></li>
+			<li class="nav-item slate"><a role="nav-link" data-toggle="pill" href="#champs"> Champs </a></li>
+			<li class="nav-item slate"><a role="nav-link" data-toggle="pill" href="#missing"> Missing </a></li>
 		</ul>
 
 <!-- Tab panes -->
@@ -562,30 +562,140 @@ foreach ($the_nats as $in_t) {
 					?>
 				</div>
 			</div></div>
-			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="badges" name="badges">
-				<div class="container-fluid">
-					<h1 class="text-center"> Badges </h1>
-					<h2 class="text-center"> Count by nation </h2> <!-- Competition container -->
-					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
-						<div class="container-fluid p-4">
-						<?php
-						?>
+			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="badges" name="badges"><div class="container-fluid">
+				<h1 class="text-center"> Badges </h1>
+				<h2 class="text-center"> Count by Nation </h2> <!-- Competition container -->
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+					<div class="container-fluid p-4">
+					<div class="row">
+						<div class="col-sm-2">
+<?php
+	$badged_nations = Array();
+	foreach ($Stats["Badges"] as $N => $B) {
+		if (sizeof($B["list"])) {
+			array_push($badged_nations, $N);
+		}
+	}
+
+	$the_count = 1;
+	$size = sizeof($badged_nations);
+	$nCol = 6;
+	$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
+	foreach ($badged_nations as $N) {
+		$tRef = $Stats["Nations"]["by_tri"][$N];
+		$TeamName = $Team[$tRef]["Name"]." (".sizeof($Stats["Badges"][$N]["list"]).")";
+		if (preg_match("/x/", $Team[$tRef]["Badge"])) {
+			$TeamStyle = $Team[$tRef]["Badge"];
+		}
+		else {
+			$TeamStyle = $Team[$tRef]["Mjr"];
+		}
+		$Border = substr($Team[$tRef]["Mnr"], 0, 1);
+		$Flag = "<img class=\"".$Border."\" src=\"flags/".$N.".png\">";
+		print t(7)."<div class=\"team mx-1 my-2 ".$TeamStyle."\">".$Flag." ".$TeamName."</div>\n";
+		if ($the_count == $colLength) {
+			print t(6)."</div>\n";
+			print t(6)."<div class=\"col-sm-2\">\n";
+			$the_count = 0;
+		}
+		$the_count += 1;
+	}
+?>
 						</div>
 					</div>
-					<h2 class="text-center"> Nations </h2> <!-- Competition container -->
-					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
-						<div class="container-fluid p-4">
-						</div>
-					</div>
-					<h2 class="text-center"> Clubs By Nation </h2> <!-- Competition container -->
-					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
-						<div class="container-fluid p-4">
-						</div>
 					</div>
 				</div>
-			</div>
-			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="champs" name="champs">
-				<div class="container-fluid">
+				<h2 class="text-center"> Nations </h2> <!-- Competition container -->
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+					<div class="container-fluid p-4">
+					<div class="row">
+						<div class="col-sm-2">
+<?php
+	$nations_with_badges = Array();
+	foreach ($Stats["Badges"] as $N => $B) {
+		if (array_key_exists("ownbadge", $B)) {
+			array_push($nations_with_badges, $N);
+		}
+	}
+
+	$the_count = 1;
+	$size = sizeof($nations_with_badges);
+	$nCol = 6;
+	$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
+	foreach ($nations_with_badges as $N) {
+		$tRef = $Stats["Nations"]["by_tri"][$N];
+		$TeamName = $Team[$tRef]["Name"];
+		$TeamStyle = $Team[$tRef]["Badge"];
+		$Border = substr($Team[$tRef]["Mnr"], 0, 1);
+		$Flag = "<img class=\"".$Border."\" src=\"flags/".$N.".png\">";
+		print t(7)."<div class=\"team mx-1 my-2 ".$TeamStyle."\">".$Flag." ".$TeamName."</div>\n";
+		if ($the_count == $colLength) {
+			print t(6)."</div>\n";
+			print t(6)."<div class=\"col-sm-2\">\n";
+			$the_count = 0;
+		}
+		$the_count += 1;
+	}
+?>
+						</div>
+					</div>
+					</div>
+				</div>
+				<h2 class="text-center"> Clubs By Nation </h2> <!-- Competition container -->
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+					<div class="container-fluid p-4">
+<?php
+	$clubs_by_nation = Array();
+	foreach ($Stats["Badges"] as $N => $B) {
+		if (sizeof($B["list"]) > 0) {
+			array_push($clubs_by_nation, $N);
+		}
+	}
+
+	foreach ($clubs_by_nation as $c) {
+		$tRef = $Stats["Nations"]["by_tri"][$c];
+		$TeamName = $Team[$tRef]["Name"];
+		$TeamStyle = $Team[$tRef]["Badge"];
+		$Border = substr($Team[$tRef]["Mnr"], 0, 1);
+		$Flag = "<img class=\"".$Border."\" src=\"flags/large/".$c.".png\">";
+		print t(7)."<h3> ".$Flag." ".$TeamName." </h3>\n";
+		print t(7)."<div class=\"row\">\n";
+		print t(8)."<div class=\"col-sm-2\">\n";
+		$the_count = 1;
+		$nCol = 6;
+		if (sizeof($Stats["Badges"][$c]["list"]) < 12) {
+			while ((sizeof($Stats["Badges"][$c]["list"]) % $nCol) != 0) {
+				array_push($Stats["Badges"][$c]["list"], "");
+			}
+		}
+		$size = sizeof($Stats["Badges"][$c]["list"]) - 1;
+		$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
+		foreach ($Stats["Badges"][$c]["list"] as $T) {
+			if ($T == "") {
+				print t(9)."<div class=\"team mx-1 my-2\"></div>\n";
+			}
+			else {
+				$TeamStyle = $Team[$T]["Badge"];
+				$TeamName = $Team[$T]["Name"];
+				print t(9)."<div class=\"team mx-1 my-2 ".$TeamStyle."\">".$TeamName."</div>\n";
+			}
+			if ($the_count == $colLength) {
+				print t(8)."</div>\n";
+				print t(8)."<div class=\"col-sm-2\">\n";
+				$the_count = 0;
+			}
+			$the_count += 1;
+		}
+		print t(8)."</div>\n";
+		print t(7)."</div>\n";
+		print t(7)."<p>&nbsp;</p>\n";
+		print t(7)."<p>&nbsp;</p>\n";
+	}
+?>
+					</div>
+				</div>
+			</div></div>
+			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="champs" name="champs"><div class="container-fluid">
 					<h1 class="text-center"> Champs </h1>
 					<h2 class="text-center"> World Cup </h2> <!-- Competition container -->
 					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
@@ -602,10 +712,8 @@ foreach ($the_nats as $in_t) {
 						<div class="container-fluid p-4">
 						</div>
 					</div>
-				</div>
-			</div>
-			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="missing" name="missing">
-				<div class="container-fluid">
+			</div></div>
+			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="missing" name="missing"><div class="container-fluid">
 					<h1 class="text-center"> Missing </h1>
 					<h2 class="text-center"> List </h2> <!-- Competition container -->
 					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
@@ -617,8 +725,7 @@ foreach ($the_nats as $in_t) {
 							?>
 						</div>
 					</div>
-				</div>
-			</div>
+			</div></div>
 		</div>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

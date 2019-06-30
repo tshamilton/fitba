@@ -150,6 +150,7 @@ with open(the_nations, 'r') as n:
 		Stats["Teams"][row[8]]["list"] = []
 		Stats["Teams"][row[8]]["badges"] = []
 		tally_colours(row[2], row[3])
+		Stats["Badges"][row[8]] = {}
 		Stats["Badges"][row[8]]["list"] = []
 		if len(row[4]) > 0:
 			Stats["Badges"][row[8]]["ownbadge"] = row[4]
@@ -171,30 +172,13 @@ with open(the_teams, 'r') as t:
 		Stats["Teams"][row[9]]["list"].append(first[0])
 		tally_colours(row[3], row[4])
 		if len(row[5]) > 0:
-			Stats["Badges"][row[8]]["list"].append(first[0]+","+row[5])
+			Stats["Badges"][row[9]]["list"].append(first[0])
 
 with open(the_comps, 'r') as c:
 	comps = csv.reader(c)
 	for row in comps:
 		if row[0] == "N":
 			Stats["Nations"]["by_pref"][row[1]] = row[3]
-
-with open(the_champs, 'r') as c:
-	champs = csv.reader(c)
-	for row in champs:
-		if row[0][0].isalpha():
-			if row[0] is not "INT" or row[0] is not "NAT":
-				name = Stats["Nations"]["by_tri"][row[0]]
-				grp = row[0]
-			else:
-				name = row[1]
-				grp = "INT"
-			Stats["Champs"][grp]["name"] = name
-			Stats["Champs"][grp]["name"]["List"] = {}
-		else:
-			Stats["Champs"][grp]["name"]["List"].append(row[0]+","+row[1])
-
-
 
 with open('./config/stats.json', 'w', encoding='utf-8') as outfile:  
     json.dump(Stats, outfile, ensure_ascii=False, sort_keys=True, indent=4)

@@ -16,7 +16,6 @@
 68aksaraybelediyspor,68 Yeni Aksaray,6wrr,wr,x-wr,,38.430833,33.862222,Aksaray,TUR
 9dejuliomorteros,9 de Julio Morteros,9wff,wf,x-wf,,-30.7,-62,Morteros,ARG
 aabyhojif,Aabyh&oslash;j IF,Awgg,wg,x-wg,,56.156768,10.168656,Aabyh&oslash;j,DEN
-aagent,AA Gent,Gbwb,bw,b-bbw,x042,51.016111,3.734167,Ghent,BEL
 aalborgfreja,Aalborg Freja,Fbww,bw,x-bw,,57.0531282,9.8914774,Aalborg,DEN
 aalborg~aalborgbk,Aalborg BK,Arwr,rw,s-wwr,,57.0515,9.8991,Aalborg,DEN
 aalesund,Aalesunds FK,Aboo,bo,x-bo,,62.469722,6.187194,Aalesund,NOR
@@ -1968,7 +1967,7 @@ fcmulhouseportland,Mulhouse Portland,Mbww,bw,x-bw,,45.52543,-122.6515,Portland,U
 fcmuri,Muri,Mwrr,wr,x-wr,,47.277981,8.3374151,Muri,SUI
 fcnazarethillit,Nazareth Illit,Nkrk,kr,s-wkr,,32.6898,35.311325,Nazareth Illit,ISR
 fcoberlausitzneugersdorf,Oberlausitz Neugersdorf,Owbb,wb,x-wb,,54.320728,10.130581,Ebersbach-Neugersdorf,GER
-fcolexandria,Olexandria,Okyy,ky,d-kyk,,48.6745185,33.1038491,Olexandria,UKR
+fcolexandria,Oleksandria,Okyy,ky,d-kyk,x301,48.6745185,33.1038491,Olexandria,UKR
 fcolimpiavolgograd,Olimpia Volgograd,Obyy,by,x-by,,48.6700797,44.2265289,Volgograd,RUS
 fcorenburg~gazovikorenburg,FC Orenburg,Gwbb,wb,x-wb,,51.7843959,55.2214668,Orenburg,RUS
 fcoryol,Oryol,Owgg,wg,x-wg,,52.969875,36.045811,Oryol,RUS
@@ -2212,6 +2211,7 @@ forgefc,Forge FC,Fsoo,so,x-so,,43.2522022,-79.8300845,Hamilton,CAN
 forli,Forl&igrave;,Frwr,wr,s-wwr,,44.2136,12.0578,Forl&iacute;,ITA
 formartineunited,Formartine United,Fwrw,rw,s-rrw,,57.338056,-2.196111,Pitmedden,SCO
 forresmechanics,Forres Mechanics,Fduu,du,x-du,,57.6125936,-3.6166068,Forres,SCO
+forssabk,Forssa,Faww,aw,x-aw,,60.4920823,15.411485,B&ouml;rlange,SWE
 fortaleza~fortalezafc,Fortaleza,Fwrb,rb,h-wbrw,,-3.766783,-38.572786,Fortaleza,COL
 fortlauderdalestrikers,Fort Lauderdale Strikers,Fkyr,ry,h-kyr,,26.1931127,-80.1610244,Fort Lauderdale,USA
 fortpittregiment,Fort Pitt Regiment,Fkww,kw,x-kw,,40.46722,-80.11861,Monroeville,USA
@@ -2326,7 +2326,7 @@ generaldiaz,General Diaz,Gwkk,wk,e-wwk,,-25.2632926,-57.5187224,Luque,PAR
 generalvelasquez,General Vel&aacute;squez,Vwgw,wg,b-wwg,,-34.4367417,-71.1167955,San Vicente de Tagua Tagua,CHI
 genk~racinggenk,Racing Genk,Gwbb,wb,x-wb,x146,51.0050212,5.5334055,Genk,BEL
 genoa,Genoa CFC,Gbrb,br,v-urb,,44.416431,8.952428,Genoa,ITA
-gent,AA Gent,Gbwb,bw,b-bbw,x042,51.016111,3.734167,Ghent,BEL
+gent~aagent,AA Gent,Gbwb,bw,b-bbw,x042,51.016111,3.734167,Ghent,BEL
 germaniahalberstadt,Germania Halberstadt,Gkrr,kr,x-kr,,51.8760636,11.0498979,Halberstadt,GER
 germinalbeerschot~kfcobeerschotwilrijk,Beerschot Wilrijk,Wwpw,wp,b-wwp,,51.1934558,4.3763513,Wilrijk,BEL
 gersthofersv,Gersthofer SV,Gkgw,wg,b-kwg,,48.2252712,16.3284259,Gersthof,AUT
@@ -3140,7 +3140,7 @@ kvibillebk,Kvibille BK,Kwbb,wb,x-wb,,56.7822169,12.8295292,Kvibille,SWE
 kvik,Kvik Trondheim,Kwbw,wb,s-bbw,,63.428494,10.41991,Trondheim,NOR
 kvikhalden,Kvik Halden,Kbrw,rw,s-brw,,59.1224496,11.3738665,Halden,NOR
 kvkortrijk,KV Kortrijk,Kwrr,wr,e-wwr,,50.8302568,3.2492847,Kortrijk,BEL
-kvmechelen,KV Mechelen,Mkyr,ry,s-kry,,51.037553,4.4870259,Mechelen,BEL
+kvmechelen,KV Mechelen,Mkyr,ry,s-kry,x300,51.037553,4.4870259,Mechelen,BEL
 kvvklauwaertskemzeke,Klauwaerts Kemzeke,Kkrr,kr,x-kr,,51.2065346,4.0645712,Kemzeke,BEL
 kvvzelzate,KVV Zelzate,Zwgk,wg,e-wkg,,51.1963516,3.8129442,Zelzate,BEL
 kvwoluwezaventem,Woluwe-Zaventem,Wbyb,by,b-bby,,50.9078857,4.4332812,Diegem,BEL
@@ -5931,6 +5931,7 @@ watford,Watford,Wkyr,ry,b-rky,,51.6499059,-0.401525,Watford,ENG
 watlemcen,WA Tlemcen,Tkww,kw,x-kw,,35.2974494,-1.5076313,Tlemcen,ALG
 wattens,WSG Wattens,Wkww,kw,x-kw,,47.2951263,11.5825503,Wattens,AUT
 wattenscheid,Wattenscheid 09,Wkww,kw,x-kw,,51.485833,7.118611,Wattenscheid,GER
+wattholmaif~vattholmaif,Wattholma,Wkok,ko,b-kko,,60.020632,17.726118,Wattholma,SWE
 waver,KFC Katelijne-Waver,Kwbb,wb,x-wb,,51.0725854,4.526413,Sint-Katelijne-Waver,BEL
 wazitofc,Wazito FC,Wyky,ky,b-kky,,-1.2798295,36.8155863,Nairobi,KEN
 wconnectionfc,W Connection,Wgww,gw,x-gw,,10.3034132,-61.4417633,Marabella,TRI
@@ -5994,7 +5995,7 @@ witgeorgiatbilisi,WIT Georgia Tbilisi,Wkww,kw,x-kw,,41.847286,44.721492,Mtskheta
 wittenhorst,RKSV Wittenhorst,Wkoo,ko,x-ko,,51.463832,6.0588935,Horst,NED
 wohlen,Wohlen,Wkww,kw,x-kw,,47.356997,8.264067,Wohlen,SUI
 woking,Woking,Wkrw,wr,v-krw,,51.306333,-0.558811,Woking,ENG
-wolfsbergerac~wacstandra,wolfsberger AC St Andr&auml;,Wwkw,kw,s-kkw,,46.8262444,14.85189,Wolfsberg,AUT
+wolfsbergerac~wacstandra,wolfsberger AC St Andr&auml;,Wwkw,kw,s-kkw,x299,46.8262444,14.85189,Wolfsberg,AUT
 wolfsburg~wolfsberg~vflwolfsburg,VfL Wolfsburg,Wwgw,wg,d-wgw,x027,52.4324905,10.803933,Wolfsburg,GER
 wolverhamptonw~wolverhamptonwanderers~wolverhampton,Wolverhampton Wanderers,Wkoo,ko,x-ko,x231,52.5902362,-2.1304288,Wolverhampton,ENG
 wormatiaworms,Wormatia Worms,Wwrr,wr,x-wr,,49.631381,8.335803,Worms,GER

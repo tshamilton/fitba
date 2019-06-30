@@ -672,7 +672,7 @@
 	background-color: #ffffff;
 	background-size: 100% 100%;
 	color: #000000;
-	text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;
+	text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;
 }
 .x099 {
 	background-image: url('../image/logos/tottenhamhotspur.png');
@@ -976,7 +976,7 @@
 	text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;
 }
 .x142 {
-	background-image: url('../image/logos/qarabag.png');
+	background-image: url('../image/logos/qaradag.png');
 	background-color: #ffffff;
 	background-size: 100% 100%;
 	color: #ff0000;
@@ -2082,11 +2082,11 @@
 	text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;
 }
 .x299 {
-	background-image: url('../image/logos/rennes.png');
+	background-image: url('../image/logos/wolfsbergerac.png');
 	background-color: #ffffff;
 	background-size: 100% 100%;
-	color: #ff0000;
-	text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;
+	color: #000000;
+	text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;
 }
 .x300 {
 	background-image: url('../image/logos/kvmechelen.png');
@@ -2102,10 +2102,10 @@
 	color: #fff00c;
 	text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;
 }
-.x301 {
-	background-image: url('../image/logos/wolfsbergerac.png');
+.x302 {
+	background-image: url('../image/logos/qatar.png');
 	background-color: #ffffff;
 	background-size: 100% 100%;
-	color: #000000;
+	color: #990044;
 	text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;
 }
