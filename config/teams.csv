@@ -593,6 +593,7 @@ babelsberg,SV Babelsberg 03,Bwbb,wb,x-wb,,52.399083,13.094806,Potsdam-Babelsberg
 backabackapalanka~backapalanka,Ba&ccaron;ka Palanka,Pkhh,kh,x-kh,,45.2465721,19.3860558,Ba&ccaron;ka Palanka,SRB
 badalona,Badalona,Bwbb,wb,e-wwb,,41.447011,2.2215664,Badalona,ESP
 baden,Baden,Bwrr,wr,x-wr,,47.4458523,8.296802,Baden,SUI
+baderlach,Bad Erlach,Ewbw,wb,h-wwb,,47.7328886,16.2155514,Bad Erlach,AUT
 badgleichenberg,TuS Bad Gleichenberg,Gwrr,wr,x-wr,,46.8746786,15.9034253,Bad Gleichenberg,AUT
 badsauerbrunn,Bad Sauerbrunn,Swbw,wb,s-bbw,,47.7795979,16.3356638,Bad Sauerbrunn,AUT
 badwimsbach,Bad Wimsbach 1933,Wgwg,gw,s-ggw,,48.0694938,13.8963005,Bad Wimsbach,AUT
@@ -2460,7 +2461,7 @@ guadalupefc,Guadalupe,Gynn,yn,e-yyn,,9.9463933,-84.0568662,Guadelupe,CRC
 guangdonghuanan,Guangdong Huanan,Gwrr,wr,x-wr,,24.275271,116.078143,Meixian,CHN
 guangxibaoyun,Guangxi Baoyun,Bwrr,wr,x-wr,,22.762882,108.390654,Guangxi,CHN
 guangzhouevergrande,Guangzhou Evergrande,Gwrr,wr,x-wr,x280,23.1380215,113.3246753,Guangzhou,CHN
-guangzhourffc~guangzhourandffc,Guangzhou R&amp;F,Gbwb,wb,s-wwb,,23.135886,113.267217,Guangzhou,CHN
+guangzhourffc~guangzhourandffc~guangzhou&ffc,Guangzhou R&amp;F,Gbwb,wb,s-wwb,,23.135886,113.267217,Guangzhou,CHN
 guarani,Guarani,Gkyk,yk,s-kky,,-25.30345,-57.61599,Asunci&oacute;n,PAR
 guaraniantoniofranco,Guaran&iacute; Antonio Franco,Grww,rw,d-rwr,,-27.3569557,-55.8986317,Posadas,ARG
 guaranimg,Guarani,Gwrr,wr,x-wr,,-20.1432287,-44.8798176,Divinopolis,BRA
@@ -4715,6 +4716,7 @@ scwiedenbruck~scwiedenbrueck,SC Wiedenbr&uuml;ck,Wkbk,kb,s-kkb,,51.833611,8.3219
 scwienerviktoria,Wiener Viktoria,Vrww,rw,x-rw,,48.1678052,16.3225642,Wien,AUT
 sdamorebieta,SD Amorebieta,Awbb,wb,x-wb,,43.2221112,-2.7246304,Amorebieta-Etxano,ESP
 sdcgaliciademugardos,SDC Galicia Mugardos,Gwgg,wg,x-wg,,43.4555884,-8.241216,Murgados,ESP
+sdcputten,SDC Putten,Pwbb,wb,x-wb,,52.2579648,5.6016485,Putten,NED
 sdformentera,SD Formentera,Fkrr,kr,x-kr,,38.7011442,1.4384608,Sant Francesc Xavier,ESP
 sdgernika,SD Gernika,Gkww,kw,x-kw,,43.3228711,-2.6770307,Gernika,ESP
 sdleioa,SD Leioa,Lkrb,rb,s-wbr,,43.334323,-2.9860397,Leioa,ESP
@@ -5200,9 +5202,11 @@ svgroedig,SV Gr&ouml;dig,Sbww,bw,o-bwb,,47.7432841,13.0475481,Gr&ouml;dig,AUT
 svgrol,Grol,Gwbb,wb,x-wb,,52.0326111,6.6326034,Groenlo,NED
 svhattoheim,Hatto Heim,Hbyy,by,x-by,,52.458197,6.0670673,Hattem,NED
 svheimstetten,Heimstetten,Hwdd,wd,x-wd,,48.1633489,11.7474671,Heimstetten,GER
+svhonselersdijk,Honselersdijk,Hboo,bo,x-bo,,52.007222,4.226667,Honselersdijk,NED
 svhorn,Horn,Hwbb,wb,x-wb,,48.6693086,15.6603203,Horn,AUT
 svinnsbruck,SV Innsbruck,Iwkw,kw,b-kkw,,47.2551253,11.4136262,Innsbruck,AUT
 svitavy,TJ Svitavy,Sbwb,wb,e-wwb,,49.7510552,16.4627231,Svitavy,CZE
+svkirchanschoring,Kirchansch&ouml;ring,Kkyy,ky,x-ky,,47.95416,12.8404613,Kirchansch&ouml;ring,GER
 svlafnitz,Lafnitz,Lbyy,by,x-by,,47.3733529,16.0092937,Lafnitz,AUT
 svleobendorf,Leobendorf,Lwrr,wr,x-wr,,48.3773324,16.3199918,Leobendorf,AUT
 svlimburgia,SV Limburgia,Lwbb,wb,x-wb,x232,50.9360866,5.9752392,Brunssum,NED
@@ -6105,5 +6109,3 @@ zvezdaryazan,Zvezda Ryazan,Zwrr,wr,x-wr,,54.6080607,39.7725155,Ryazan,RUS
 zwaluwenvlaardingen,Zwaluwen Vlaardingen,Zwkw,wk,s-kkw,,51.930972,4.3594535,Vlaardingen,NED
 zwarteleeuw,Zwarte Leeuw,Zyky,ky,b-kky,,51.342415,4.7518377,Rijkevorsel,BEL
 zweigenkanazawa,Zweigen Kanazawa,Zkrr,kr,x-kr,,36.575833,136.605278,Kanazawa,JPN
-svkirchanschoring,Kirchansch&ouml;ring,Kkyy,ky,x-ky,,47.95416,12.8404613,Kirchansch&ouml;ring,GER
-baderlach,Bad Erlach,Ewbw,wb,h-wwb,,47.7328886,16.2155514,Bad Erlach,AUT
