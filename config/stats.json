@@ -1007,7 +1007,7 @@
             "list": []
         }
     },
-	"Champs": {
+    "Champs": {
 		"AUS~A-League": {
 			"2005-06": "sydneyfc",
 			"2006-07": "melbournevictory",
@@ -1862,8 +1862,8 @@
 			"2014": "germany",
 			"2018": "france"
 		}
-	},
-   "Colours": {
+    },
+    "Colours": {
         "bands": {
             "b-aab": 1,
             "b-bbf": 1,

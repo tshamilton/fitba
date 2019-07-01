@@ -507,6 +507,7 @@ foreach ($the_nats as $in_t) {
 								continue;
 							}
 							$tName = $Stats["Nations"]["by_tri"][$N];
+							$tNom = $Team[$tName]["Name"];
 							$tLat = $Team[$tName]["Lat"];
 							$tLon = $Team[$tName]["Long"];
 							$tZoom = $Team[$tName]["Zom"];
@@ -514,7 +515,7 @@ foreach ($the_nats as $in_t) {
 							$Flag = "<img src=\"flags/large/".$N.".png\" class=\"".$Edge."\">";
 							$TeamStyle = $Team[$tName]["Mjr"];
 							$to_top = "<a href=\"#top\"><i class=\"material-icons\">arrow_upward</i></a>";
-							$to_map = "<a href=\"map_page.php?lat=".$tLat."&lng=".$tLon."&z=".$tZoom."&t=".$N."&n=".$tName."\" target=\"_new\"><i class=\"material-icons\">map</i></a>";
+							$to_map = "<a href=\"map_page.php?lat=".$tLat."&lng=".$tLon."&z=".$tZoom."&t=".$N."&n=".$tNom."\" target=\"_new\"><i class=\"material-icons\">map</i></a>";
 							print t(5)."<a name=\"".$N."\"></a>\n";
 							print t(5)."<p>&nbsp;</p>\n";
 							print t(5)."<div class=\"theContent ".$TeamStyle." p-2 mb-3\">\n";
@@ -716,19 +717,7 @@ foreach ($the_nats as $in_t) {
 						$nCol = 6;
 						$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
 						foreach ($L as $y => $t){
-/*
-							if (preg_match("/x/", $Team[$t]["Badge"])) {
-								$TeamStyle = $Team[$t]["Badge"];
-							}
-							else {
-								$TeamStyle = $Team[$t]["Mjr"];
-							}
-							if ($title[0] == "INT") {
-								$Border = substr($Team[$t]["Mnr"], 0, 1);
-								$Flag = "<img class=\"".$Border."\" src=\"flags/".$Team[$t]["Tri"].".png\">";
-								$TeamName = $Flag." ".$TeamName;
-							}
-							print t(7)."<div class=\"team mx-1 my-2 ".$TeamStyle."\"> ".$TeamName." </div>\n";*/
+
 
 							if ($t == "N/A" || $t == "?") {
 								$TeamStyle = "slate";
