@@ -696,41 +696,71 @@ foreach ($the_nats as $in_t) {
 				</div>
 			</div></div>
 			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="champs" name="champs"><div class="container-fluid">
-					<h1 class="text-center"> Champs </h1>
-					<?php
-						foreach($Stats["Champs"] as $C => $L) {
-							$title = explode("~", $C);
-							if ($title[0] != "INT") {
-								$Flag = "<img src=\"flags/large/".$title[0].".png\">";
+				<h1 class="text-center"> Champs </h1>
+				<?php
+					foreach($Stats["Champs"] as $C => $L) {
+						$title = explode("~", $C);
+						if ($title[0] != "INT") {
+							$Flag = "<img src=\"flags/large/".$title[0].".png\">";
+						}
+						else {
+							$Flag = "";
+						}
+						print t(5)."<h2 class=\"text-center\"> ".$Flag." ".$title[1]." </h2>\n";
+						print t(5)."<div class=\"d-flex justify-content-center clearfix my-3 darkSlate theCompBody\">\n";
+						print t(6)."<div class=\"container-fluid p-4\">\n";
+						print t(6)."<div class=\"row\">\n";
+						print t(7)."<div class=\"col-sm-2\">\n";
+						$the_count = 1;
+						$size = sizeof($L);
+						$nCol = 6;
+						$colLength = ($size+($nCol-($size % $nCol)))/$nCol;
+						foreach ($L as $y => $t){
+/*
+							if (preg_match("/x/", $Team[$t]["Badge"])) {
+								$TeamStyle = $Team[$t]["Badge"];
 							}
 							else {
-								$Flag = "";
+								$TeamStyle = $Team[$t]["Mjr"];
 							}
-							print "<h2 class=\"text-center\"> ".$Flag." ".$title[1]." </h2>\n";
-							print "<div class=\"d-flex justify-content-center clearfix my-3 darkSlate theCompBody\">\n";
-							print "<div class=\"container-fluid p-4\">\n";
-							print "</div>\n";
-							print "</div>\n";
+							if ($title[0] == "INT") {
+								$Border = substr($Team[$t]["Mnr"], 0, 1);
+								$Flag = "<img class=\"".$Border."\" src=\"flags/".$Team[$t]["Tri"].".png\">";
+								$TeamName = $Flag." ".$TeamName;
+							}
+							print t(7)."<div class=\"team mx-1 my-2 ".$TeamStyle."\"> ".$TeamName." </div>\n";*/
+
+							if ($t == "N/A" || $t == "?") {
+								$TeamStyle = "slate";
+								$TeamName = $t;
+							}
+							elseif ($t == "westgermany") {
+								$TeamName = "<img class=\"k\" src=\"flags/GER.png\"> West Germany";
+								$TeamStyle = "x-kw";
+							}
+							else {
+								$TeamStyle = $Team[$t]["Badge"];
+								$TeamName = $Team[$t]["Name"];
+								if ($title[0] == "INT") {
+									$Border = substr($Team[$t]["Mnr"], 0, 1);
+									$Flag = "<img class=\"".$Border."\" src=\"flags/".$Team[$t]["Tri"].".png\">";
+									$TeamName = $Flag." ".$TeamName;
+								}
+							}
+							print t(7)."<div class=\"team mx-1 my-2 ".$TeamStyle."\"> ".$y.": ".$TeamName." </div>\n";
+							if ($the_count == $colLength) {
+								print t(6)."</div>\n";
+								print t(6)."<div class=\"col-sm-2\">\n";
+								$the_count = 0;
+							}
+							$the_count += 1;
 						}
-					?>
-					<h2 class="text-center"> World Cup </h2> <!-- Competition container -->
-					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
-						<div class="container-fluid p-4">
-						<?php
-							pretty_var($Stats["Champs"], 'aa77dd');
-						?>
-						</div>
-					</div>
-					<h2 class="text-center"> England </h2> <!-- Competition container -->
-					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
-						<div class="container-fluid p-4">
-						</div>
-					</div>
-					<h2 class="text-center"> Clubs By Nation </h2> <!-- Competition container -->
-					<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
-						<div class="container-fluid p-4">
-						</div>
-					</div>
+						print t(7)."</div>\n";
+						print t(6)."</div>\n";
+						print t(6)."</div>\n";
+						print t(5)."</div>\n";
+					}
+				?>
 			</div></div>
 			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="missing" name="missing"><div class="container-fluid">
 					<h1 class="text-center"> Missing </h1>
