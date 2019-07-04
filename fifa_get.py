@@ -35,6 +35,10 @@ def washText(the_text, context, out="n"):
 		if (value >= 32 and value < 128):
 			out_news = out_news + chr(value)
 		elif (value > 128):
+			if value == 194:
+				if (in_news[index+1] == 160):
+					if out == "h":	out_news = out_news + "&nbsp;"
+					else:			out_news = out_news + " "
 			if value == 195:
 				if (in_news[index+1] == 128):
 					if out == "h":	out_news = out_news + "&Agrave;"
