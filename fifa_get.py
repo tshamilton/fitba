@@ -247,7 +247,9 @@ def washText(the_text, context, out="n"):
 					if in_news[index+2] == 162:
 						pass
 			else:
-				if in_news[index-1] == 195:
+				if in_news[index-1] == 194:
+					pass
+				elif in_news[index-1] == 195:
 					pass
 				elif in_news[index-1] == 226 or in_news[index-2] == 226:
 					pass
