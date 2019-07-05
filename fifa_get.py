@@ -34,16 +34,17 @@ def washText(the_text, context, out="n"):
 	in_news = list(the_text)
 
 	for index, value in enumerate(in_news):
+		if value == 0:
+			pass
 		if (value >= 32 and value < 128):
 			out_news = out_news + chr(value)
 		elif (value > 128):
 			if value == 194:
-				print(in_news[index-2:index+2])
-				print("Index + 1 should be 160.")
 				if (in_news[index+1] == 160):
 					if out == "h":	out_news = out_news + "&nbsp;"
 					else:			out_news = out_news + " "
-			if value == 195:
+					in_news[index+1] = 0
+			elif value == 195:
 				if (in_news[index+1] == 128):
 					if out == "h":	out_news = out_news + "&Agrave;"
 					else:			out_news = out_news + "A"
