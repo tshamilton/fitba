@@ -379,6 +379,7 @@ def defineLeague(token, id, pl):
 		out_table = {}
 		this_ladder = washText(this_ladder, token)
 		this_ladder = re.sub(">", ">QQ", this_ladder)
+		this_ladder = re.sub("&", "and", this_ladder)
 
 		the_ladder = this_ladder.split("QQ")
 		
