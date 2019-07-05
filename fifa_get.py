@@ -23,6 +23,8 @@ def get_data(the_url):
 	return cinput
 
 def cleanWords(text):
+	if re.search("uangzhou", text):
+		print("Guangzhou found")
 	txt = re.sub("&amp;", "", text)
 	txt = re.sub("[\s|\'|\.|\-|\/|\°|\(|\)]", "", text)
 	return txt
@@ -36,6 +38,8 @@ def washText(the_text, context, out="n"):
 			out_news = out_news + chr(value)
 		elif (value > 128):
 			if value == 194:
+				print(in_news[index-2:index+2])
+				print("Index + 1 should be 160.")
 				if (in_news[index+1] == 160):
 					if out == "h":	out_news = out_news + "&nbsp;"
 					else:			out_news = out_news + " "
