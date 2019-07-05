@@ -45,6 +45,14 @@ def washText(the_text, context, out="n"):
 					if out == "h":	out_news = out_news + "&nbsp;"
 					else:			out_news = out_news + " "
 					in_news[index+1] = 0
+				else:
+					print("==== End of code page 194 ====")
+					for y in range(index-5, index+5):
+						if (in_news[y] < 128):
+							print(str(in_news[y])+" => "+chr(in_news[y]))
+						else:
+							print(str(in_news[y])+" => ??")
+					print("====")
 			elif value == 195:
 				if (in_news[index+1] == 128):
 					if out == "h":	out_news = out_news + "&Agrave;"
@@ -295,7 +303,7 @@ def washText(the_text, context, out="n"):
 					else:			out_news = out_news + "u"
 					in_news[index+1] = 0
 				else:
-					print("====")
+					print("==== End of code page 195 ====")
 					for y in range(index-5, index+5):
 						if (in_news[y] < 128):
 							print(str(in_news[y])+" => "+chr(in_news[y]))
@@ -308,7 +316,7 @@ def washText(the_text, context, out="n"):
 					else:			out_news = out_news + "E"
 					in_news[index+1] = 0
 				else:
-					print("====")
+					print("==== End of code page 208 ====")
 					for y in range(index-5, index+5):
 						if (in_news[y] < 128):
 							print(str(in_news[y])+" => "+chr(in_news[y]))
@@ -328,7 +336,7 @@ def washText(the_text, context, out="n"):
 						in_news[index+2] = 0
 						pass
 				else:
-					print("====")
+					print("==== End of code page 226 ====")
 					for y in range(index-5, index+5):
 						if (in_news[y] < 128):
 							print(str(in_news[y])+" => "+chr(in_news[y]))
@@ -336,8 +344,7 @@ def washText(the_text, context, out="n"):
 							print(str(in_news[y])+" => ??")
 					print("====")
 			else:
-				print("== Context: "+context+" ==")
-				print("====")
+				print("== Code page unknown. Context: "+context+" ==")
 				for y in range(index-5, index+5):
 					if (in_news[y] < 128):
 						print(str(in_news[y])+" -> "+chr(in_news[y]))
