@@ -25,6 +25,7 @@ def get_data(the_url):
 def cleanWords(text):
 	if re.search("uangzhou", text):
 		print("Guangzhou found")
+		txt = re.sub("&", "", text)
 	txt = re.sub("&amp;", "", text)
 	txt = re.sub("[\s|\'|\.|\-|\/|\°|\(|\)]", "", text)
 	return txt
