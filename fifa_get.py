@@ -515,7 +515,8 @@ def defineMatch(the_match):
 	status = ms1+"-"+ms2
 
 	mdetails = washText(get_data("http://fotmobenetpulse.s3-external-3.amazonaws.com/matchfacts."+mid+".fot"), mid+":"+mht+":"+mat, "h")
-
+	mdetails = re.sub("&amp;", "", mdetails)
+	
 	if "Access Denied" in mdetails:
 		debug("Access Denied for mid "+mid)
 	#md = open("news/match/"+mid+"_"+mht+"_"+mhs+"-"+mas+"_"+mat+"-"+status+".mch", "w")
