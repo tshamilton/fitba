@@ -41,6 +41,14 @@ def washText(the_text, context, out="n"):
 					if out == "h":	out_news = out_news + "&nbsp;"
 					else:			out_news = out_news + " "
 					in_news[index+1] = 0
+				elif (in_news[index+1] == 173):
+					if out == "h":	out_news = out_news + "-"
+					else:			out_news = out_news + "-"
+					in_news[index+1] = 0
+				elif (in_news[index+1] == 180):
+					if out == "h":	out_news = out_news + "'"
+					else:			out_news = out_news + "'"
+					in_news[index+1] = 0
 				else:
 					print("==== End of code page 194 ====")
 					for y in range(index-5, index+5):
@@ -306,6 +314,11 @@ def washText(the_text, context, out="n"):
 						else:
 							print(str(in_news[y])+" => ??")
 					print("====")
+			elif value == 196:
+				if in_news[index+1] == 188:
+					if out == "h":	out_news = out_news + "l"
+					else:			out_news = out_news + "l"
+					in_news[index+1] = 0
 			elif value == 208:
 				if in_news[index+1] == 149:
 					if out == "h":	out_news = out_news + "E"
