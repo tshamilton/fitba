@@ -334,11 +334,14 @@ def washText(the_text, context, out="n"):
 					print("====")
 			elif value == 226:
 				if in_news[index+1] == 128:
-					if in_news[index+2] == 153:
+					if in_news[index+2] == 147:
+						if out == "h":	out_news = out_news + "-"
+						else:			out_news = out_news + "-"
+					elif in_news[index+2] == 153:
 						if out == "h":	out_news = out_news + "'"
 						else:			out_news = out_news + "'"
-						in_news[index+1] = 0
-						in_news[index+2] = 0
+					in_news[index+1] = 0
+					in_news[index+2] = 0
 				elif in_news[index+1] == 132:
 					if in_news[index+2] == 162:
 						in_news[index+1] = 0
