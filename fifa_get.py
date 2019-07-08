@@ -378,7 +378,7 @@ def defineLeague(token, id, pl):
 
 	if (file_exists == False) or (file_exists and age >= (60*60*max_age)): # if the file exists, is it older than eight hours?
 		debug("Ladder file doesn't exist or is more than 8 hours old")
-		if id != "0":
+		if int(id) > 0:
 			debug("Comp ID isn't 0, so we use that in ladder download")
 			this_ladder = get_data("http://fotmobenetpulse.s3-external-3.amazonaws.com/tables.ext."+id+".fot")
 			if b"Access Denied" in this_ladder:
