@@ -203,6 +203,18 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 			$p = explode("|", $t);
 			if ($p[0] == "group") {
 				if ($grps > 1) {
+					if ($p[1] == "mls") {
+						continue;
+					}
+					elseif ($p[1] == "Eastern") {
+						$p[1] = "Eastern Conference";
+					}
+					elseif ($p[1] == "Western") {
+						$p[1] = "Western Conference";
+					}
+					elseif ($p[1] == "SupportersShield") {
+						$p[1] = "Supporter's Shield";
+					}
 					print t(8)."<tr><th colspan='10' class=\"text-center py-2\">".$p[1]."</th></tr>\n";
 				}
 			}

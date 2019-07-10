@@ -9,6 +9,7 @@
 1fcfrankfurt,1. FC Frankfurt,1kww,kw,x-kw,,52.332533,14.556133,Frankfurt,GER
 1fckoln~fckoln,1. FC K&ouml;ln,1rww,rw,x-rw,x163,50.933497,6.874997,K&ouml;ln,GER
 1fclokstendal,1. FC Lok Stendal,Lkrk,kr,s-kkr,,52.622653,11.8731593,Stendal,GER
+1fcmonchengladbach,1. FC M&ouml;nchengladbach,Mbyy,by,x-by,,1.1898696,6.428374,M&ouml;nchengladbach,GER
 1fcnurnberg~nurnberg,1. FC N&uuml;rnberg,Nkdd,kd,x-kd,x180,49.4264398,11.1252148,N&uuml;rnberg,GER
 24erzincanspor,24 Erzincanspor,2krk,kr,s-wkr,,39.746389,39.491389,Erzincan,TUR
 3defebrero,3&deg; de Febrero,3wrr,wr,x-wr,,-25.526944,-54.611944,Ciudad del Este,PAR
@@ -413,6 +414,7 @@ arsenalsarandi,Arsenal de Sarand&iacute;,Arhr,rh,d-rhr,,-34.6783811,-58.3406089,
 arsenaltula,Arsenal Tula,Ayrr,yr,x-yr,,54.174583,37.602722,Tula,RUS
 arsinspor,Arsinspor,Aykk,yk,x-yk,,40.9509879,39.9313069,Arsin,TUR
 arsmartinho,AR S&atilde;o Martinho,Agww,gw,x-gw,,41.366111,-8.351389,S&atilde;o Martinho,POR
+arteriowakayama,Arterivo Wakayama,Akgk,kg,s-kkg,,34.166667,135.190833,Wakayama,JPN
 artvinhopaspor,Artvin Hopaspor,Awpw,wp,s-wwp,,41.407778,41.435,Hopa,TUR
 arvoll,&Aring;rvoll,Abrr,br,x-br,,59.9446814,10.8164877,&Aring;rvoll,NOR
 arzachena,Polisportivo Arzachena,Agwg,gw,b-ggw,,41.083333,9.383333,Arzachena,ITA
@@ -592,6 +594,7 @@ baadraantehran,Baadraan Tehran,Bwoo,wo,x-wo,,35.6564155,51.4193174,Tehran,IRN
 babelsberg,SV Babelsberg 03,Bwbb,wb,x-wb,,52.399083,13.094806,Potsdam-Babelsberg,GER
 backabackapalanka~backapalanka,Ba&ccaron;ka Palanka,Pkhh,kh,x-kh,,45.2465721,19.3860558,Ba&ccaron;ka Palanka,SRB
 badalona,Badalona,Bwbb,wb,e-wwb,,41.447011,2.2215664,Badalona,ESP
+baddurrheim,Bad D&uuml;rrheim,Dkrr,kr,x-kr,,48.02146,8.52382,Bad D&uuml;rrheim,GER
 baden,Baden,Bwrr,wr,x-wr,,47.4458523,8.296802,Baden,SUI
 baderlach,Bad Erlach,Ewbw,wb,h-wwb,,47.7328886,16.2155514,Bad Erlach,AUT
 badgleichenberg,TuS Bad Gleichenberg,Gwrr,wr,x-wr,,46.8746786,15.9034253,Bad Gleichenberg,AUT
@@ -2340,6 +2343,7 @@ gfcgoor,GFC Goor,Gwrk,rk,s-wkr,,52.2410141,6.5956781,Goor,NED
 gfe105,GFE 105,Gwbw,bw,h-bbw,,0.525833,35.2802415,Eldoret,KEN
 ghazlalmehalla,Ghazl Al Mehalla,Gkfw,fw,s-kfw,,30.9607834,31.1728907,Al-Mehalla Al-Kubra,EGY
 gianaerminio,Giana Erminio,Ghwh,hw,s-wwh,,45.528778,9.401944,Gorgonzola,ITA
+gibraltarunitedfc,Gibraltar United,Gkrw,wr,s-krw,,36.1490289,-5.3501111,Gibraltar,GIB
 gieres,US Gier&egrave;s,Grww,rw,x-rw,,45.1872428,5.7844756,Gier&egrave;s,FRA
 gillingham,Gillingham,Gwbb,wb,x-wb,,51.384162,0.560913,Gillingham,ENG
 gilvicente,Gil Vicente,Gwrr,wr,x-wr,,41.5511151,-8.623283,Vila Boa,POR
@@ -2672,6 +2676,7 @@ hoogstraten,Hoogstraten,Hwrr,wr,x-wr,,51.3998568,4.7476307,Hoogstraten,BEL
 horoyaac,Horoya AC,Hwrr,wr,x-wr,,9.5460526,-13.6728152,Conakry,GUI
 horsens~achorsens,AC Horsens,Hkyy,ky,x-ky,,55.871555,9.857161,Horsens,DEN
 horsholmusserodik,H&oslash;rsholm-Usserod,Hbrr,br,x-br,,55.8902093,12.4826914,H&oslash;rsholm,DEN
+hoseiuniversityfc,Hosei University,Hnoo,no,x-no,,35.6959014,139.7383247,Chiyoda City,JPN
 hospitalet,CE L'Hospitalet,Hrww,rw,d-kwr,,41.3488087,2.1031094,L'Hospitalet de Llobregat,ESP
 hougangunitedfc,Hougang United,Hwoo,wo,x-wo,,1.369468,103.886035,Hougang,SIN
 houillesac,Houilles AC,Hpwp,pw,s-ppw,,48.926035,2.1682271,Houilles,FRA
@@ -4753,6 +4758,7 @@ selfoss,UMF Selfoss,Swcc,wc,x-wc,,63.9326423,-20.9946426,Selfoss,ISL
 selkirk,Selkirk,Swbw,wb,o-wbw,,55.547366,-2.8593657,Selkirk,SCO
 selleronovelle,ASD Sellero Novelle,Swgg,wg,x-wg,,46.0492191,10.3464701,Sellero,ITA
 semenpadang,Semen Padang,Skrr,kr,x-kr,,-0.9293893,100.3583295,Padang,IDN
+sendaiuniversity~sendaiunivesity,Sendai University,Skgg,kg,x-kg,,38.0504811,140.7748967,Shibata,JPN
 senec,Senec,Sgww,gw,x-gw,,48.217703,17.410412,Senec,SVK
 senefc,S&eacute;n&eacute;,Skrk,kr,v-rrk,,47.6114487,-2.7346515,S&eacute;n&eacute;,FRA
 senja,Senja/Silsand,Swbb,wb,x-wb,,69.2397083,17.8657635,Silsand,NOR
