@@ -320,9 +320,15 @@ def washText(the_text, context, out="n"):
 					else:			out_news = out_news + "l"
 					in_news[index+1] = 0
 			elif value == 197:
-				if in_news[index+1] == 161:
+				if in_news[index+1] == 160:
+					if out == "h": out_news = out_news + "&Scaron;"
+					else:			out_news = out_news + "S"
+				elif in_news[index+1] == 161:
 					if out == "h": out_news = out_news + "&scaron;"
 					else:			out_news = out_news + "s"
+				elif in_news[index+1] == 190:
+					if out == "h": out_news = out_news + "&#381;"
+					else:			out_news = out_news + "Z"
 			elif value == 208:
 				if in_news[index+1] == 149:
 					if out == "h":	out_news = out_news + "E"
@@ -490,7 +496,7 @@ def defineLeague(token, id, pl):
 					for p in pos:
 						out_table[tl]["table"][int(p)-1] = out_table[tl]["table"][int(p)-1]+"|QUAL"
 				else:
-					out_table[tl]["table"].append(f[0].decode('utf-8')+"~"+the_pos)
+					out_table[tl]["table"].append(f[0]+"~"+the_pos)
 			debug("Fates calculated.")
 
 		otab = open("./news/ladder/"+token+".lad", "w")
