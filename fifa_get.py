@@ -383,7 +383,6 @@ def defineLeague(token, id, pl):
 	max_age = 0 #time in hours that a ladder file needs to be before it is overwritten
 	ladder_file = "./news/ladder/"+token+".lad"
 	file_exists = False
-	print ("TOKEN: "+token)
 	
 	if os.path.isfile(ladder_file):
 		file_exists = True
