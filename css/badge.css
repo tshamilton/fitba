@@ -36,8 +36,8 @@
 	background-image: url('../image/logos/japan.png');
 	background-color: #ffffff;
 	background-size: 100% 100%;
-	color: #ff0000;
-	text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;
+	color: #ffffff;
+	text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;
 }
 .x007 {
 	background-image: url('../image/logos/argentina.png');
@@ -1246,7 +1246,7 @@
 	background-color: #ffffff;
 	background-size: 100% 100%;
 	color: #cc0000;
-	text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;
+	text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;
 }
 .x181 {
 	background-image: url('../image/logos/1860munich.png');
@@ -1707,7 +1707,7 @@
 	background-image: url('../image/logos/serbia.png');
 	background-color: #ffffff;
 	background-size: 100% 100%;
-	color: #ff0000;
+	color: #ffffff;
 	text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;
 }
 .x247 {
@@ -1791,8 +1791,8 @@
 	background-image: url('../image/logos/flamengo.png');
 	background-color: #ffffff;
 	background-size: 100% 100%;
-	color: #ff0000;
-	text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;
+	color: #000000;
+	text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;
 }
 .x259 {
 	background-image: url('../image/logos/gremio.png');
@@ -2016,7 +2016,7 @@
 	background-color: #000000;
 	background-size: 100% 100%;
 	color: #ff0000;
-	text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;
+	text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;
 }
 .x290 {
 	background-image: url('../image/logos/vorsklapoltava.png');
