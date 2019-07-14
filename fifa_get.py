@@ -380,8 +380,8 @@ def defineLeague(token, id, pl):
 	max_age = 0 #time in hours that a ladder file needs to be before it is overwritten
 	ladder_file = "./news/ladder/"+token+".lad"
 	file_exists = False
+	print ("TOKEN: "+token)
 	
-	DEBUG=1
 	if os.path.isfile(ladder_file):
 		file_exists = True
 		debug("Ladder file exists already.")
@@ -399,7 +399,6 @@ def defineLeague(token, id, pl):
 		else:
 			debug("lid not set, so downloading ladder data using lpl.")
 			this_ladder = get_data("http://fotmobenetpulse.s3-external-3.amazonaws.com/tables.ext."+pl+".fot")
-		DEBUG = 0
 
 		out_table = {}
 		this_ladder = washText(this_ladder, token)
@@ -494,6 +493,10 @@ def defineLeague(token, id, pl):
 					pos = the_pos.split(",")
 					for p in pos:
 						out_table[tl]["table"][int(p)-1] = out_table[tl]["table"][int(p)-1]+"|ELQ"
+				elif f[0] == 'uefa_qual_playoff':
+					pos = the_pos.split(",")
+					for p in pos:
+						out_table[tl]["table"][int(p)-1] = out_table[tl]["table"][int(p)-1]+"|ELQP"
 				elif f[0] == 'qual_next':
 					pos = the_pos.split(",")
 					for p in pos:
@@ -632,7 +635,12 @@ def main():
 			curr_nat = n_details[1]
 		elif re.match("^L", ldr):
 			l_details = ldr.split(",")
-			curr_lg = l_details[1]
+			if "~" in l_details[1]:
+				l_names = l_details[1].split("~")
+				for x in l_names:
+					ladders.append(curr_nat+x)
+			else:
+				curr_lg = l_details[1]
 			ladders.append(curr_nat+curr_lg)
 	lad_list.close 
 	debug("List of ladder bearing competitions completed.")
@@ -665,6 +673,7 @@ def main():
 
 			lnm = cleanWords(lnm).lower()
 			ltn = cleanWords(ltn).lower()
+
 
 			league_line = lcc+"|"+lnm+"|"+lid+"|"+lgr+"|"+lpl+"|"+ltn+"|"+lgn
 			the_output.append(league_line)

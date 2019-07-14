@@ -203,18 +203,10 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 			$p = explode("|", $t);
 			if ($p[0] == "group") {
 				if ($grps > 1) {
-					if ($p[1] == "mls") {
-						continue;
-					}
-					elseif ($p[1] == "Eastern") {
-						$p[1] = "Eastern Conference";
-					}
-					elseif ($p[1] == "Western") {
-						$p[1] = "Western Conference";
-					}
-					elseif ($p[1] == "SupportersShield") {
-						$p[1] = "Supporter's Shield";
-					}
+					if ($p[1] == "mls")						{	continue;	}
+					elseif ($p[1] == "Eastern")				{	$p[1] = "Eastern Conference";	}
+					elseif ($p[1] == "Western")				{	$p[1] = "Western Conference";	}
+					elseif ($p[1] == "SupportersShield")	{	$p[1] = "Supporter's Shield";	}
 					print t(8)."<tr><th colspan='10' class=\"text-center py-2\">".$p[1]."</th></tr>\n";
 				}
 			}
@@ -227,8 +219,10 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 				if (sizeof($p) == 8) { array_push($p, "X"); }
 				switch ($p[8]) {
 					case "X":			$fate = "";					$style = "ldrdata";				break;
+					case "UCL":			$fate = "UCL";				$style = "ucl ldrdata";			break;
 					case "UCLQ":		$fate = "UCL Qual.";		$style = "uclqual ldrdata";		break;
 					case "ELQ":			$fate = "UEL Qual.";		$style = "eurolgqual ldrdata";	break;
+					case "ELQP":		$fate = "UEL Playoffs";		$style = "eurolgqual ldrdata";	break;
 					case "PROMOTED":	$fate = "&uarr; ";			$style = "promotion ldrdata";	break;
 					case "QUAL":		$fate = "Qualified";		$style = "promotion ldrdata";	break;
 					case "FINALS":		$fate = "Finals";			$style = "promotion ldrdata";	break;
