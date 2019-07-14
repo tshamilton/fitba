@@ -688,6 +688,7 @@ beaune,AS Beaune,Bwbb,wb,x-wb,,47.0215673,4.8390092,Beaune,FRA
 beauvais,AS Beauvais Oise,Bwrr,wr,x-wr,,49.4305945,2.1143902,Beauvais,FRA
 beconstaugustin,B&eacute;con St Augustin,Bkww,kw,x-kw,,47.50254,-0.80298,B&eacute;con St. Augustin,FRA
 becterosasana,BEC Tero Sasana,Twrr,wr,x-wr,,13.867163,100.577392,Bangkok,THA
+bedford,Bedford,Bkwk,wk,s-kkw,,52.127792,-0.415081,Bedford,ENG
 beggsboro,Beggsboro AFC,Bkyy,ky,x-ky,,53.367353,-6.301475,Beggsboro,IRL
 beijingbg,Beijing Enterprises Group,Gbrr,br,o-wbr,,39.98357,116.399256,Beijing,CHN
 beijingguoan,Beijing Guoan,Gygg,yg,x-yg,,39.9308565,116.447228,Beijing,CHN
@@ -880,7 +881,7 @@ brentford,Brentford,Bkrw,rw,s-krw,,51.4881774,-0.3025242,Brentford,ENG
 brescia,Brescia,Bwbb,wb,e-wwb,,45.5706672,10.2370646,Brescia,ITA
 bressuire,Bressuire,Bkyy,ky,x-ky,,46.8423034,-0.4846796,Bressuire,FRA
 brest~stadebrest29,Stade Brest 29,Brww,rw,x-rw,,48.402932,-4.461694,Brest,FRA
-brightonandhovealbion,Brighton &amp; Hove Albion,Bwbw,bw,s-bbw,,50.8615651,-0.0837163,Brighton,ENG
+brighton~brightonhovealbion~brightonandhovealbion,Brighton &amp; Hove Albion,Bwbw,bw,s-bbw,,50.8615651,-0.0837163,Brighton,ENG
 brisbanecityfc,Brisbane City,Bwff,wf,x-wf,,-27.439444,153.011389,Newmarket,AUS
 brisbaneroar~brisbaneroarfc,Brisbane Roar,Bwoo,wo,x-wo,x175,-27.464845,153.0095312,Brisbane,AUS
 brisbanestrikers,Brisbane Strikers,Bbyb,by,b-bby,,-27.4434362,153.0401457,Bowen Hills,AUS
@@ -1246,6 +1247,7 @@ clubriverplate,Club River Plate Asunci&oacute;n,Rrww,rw,d-rwr,,-25.3012466,-57.6
 clubsportherediano,CS Herediano,Hrur,ru,v-uur,,9.9995175,-84.1231071,Heredia,CRC
 clubxelaju,Xelaj&uacute;,Xbrr,br,x-br,,14.8417644,-91.5170802,Quetzaltenango,GUA
 clubzacatepec,Club Zacatepec,Zgww,gw,e-ggw,,18.655145,-99.1921449,Zacatepec,MEX
+clusone,US Clusone,Cnhh,nh,x-nh,,45.8847251,9.9471476,Clusone,ITA
 clyde,Clyde,Crww,rw,x-rw,,55.944962,-4.0370156,Cumbernauld,SCO
 cmaubervilliers,CM Aubervilliers,Awbb,wb,x-wb,,48.910843,2.382586,Aubervilliers,FRA
 coatepeque,Deportivo Coatepeque,Cwrr,wr,x-wr,,14.6911371,-91.8732816,Coatepeque,GUA
@@ -1344,7 +1346,7 @@ cruzazul,Cruz Azul,Cwbb,wb,x-wb,,19.3834469,-99.1782654,Mexico City,MEX
 cruzeiro,Cruzeiro,Cwbb,wb,x-wb,x255,-19.865867,-43.9711315,Belo Horizonte,BRA
 crystalpalace,Crystal Palace,Cbrb,rb,s-wrb,,51.398333,-0.085556,Selhurst,ENG
 csakvari~csakvarifc,Cs&aacute;kv&aacute;ri TK,Cbyy,by,x-by,,47.4003614,18.4669757,Cs&aacute;kv&aacute;r,HUN
-csalagoano,Alagoano,Awbw,wb,s-bbw,,-9.6706219,-35.7596136,Macei&oacute;,BRA
+csalagoano~csa,CS Alagoano,Awbw,wb,s-bbw,,-9.6706219,-35.7596136,Macei&oacute;,BRA
 csauronzo,CS Auronzo,Arwk,rw,d-kwkr,,46.5491512,12.4400686,Auronzo di Cadore,ITA
 csc,Christiania SC,Cryr,yr,s-rry,,55.672406,12.610544,Copenhagen,DEN
 cscartagines,CS Cartagin&eacute;s,Cwbb,wb,e-wwb,,9.8584421,-83.9189067,Cartago,CRC
@@ -3178,6 +3180,7 @@ laemilia,CSyD La Emilia,Lkwk,wk,s-kkw,,-33.3508585,-60.3212857,San Nicol&aacute;
 laequidad,La Equidad,Lzgg,zg,x-zg,,4.623545,-74.135611,Bogota,COL
 laferrere,Deportivo Laferrere,Lwgw,wg,s-ggw,,-34.7328466,-58.5549505,Laferrere,ARG
 lafioritamontegiardino,La Fiorita Montegiardino,Lwnn,wn,x-wn,,43.9296365,12.4428943,Montegiardino,SMR
+lagunonak,Lagun Onak,Lfww,fw,x-fw,,43.1785239,-2.2668224,Azpeitia,ESP
 lakelandtropics,Florida Tropics,Togg,og,e-oog,,28.041053,-81.963619,Tampa,USA
 lakemacquariecityfc,Lake Macquarie City,Lbyy,by,x-by,,-32.9595262,151.6156811,Speers Point,AUS
 lalafc,AC Lala,Lhwh,hw,e-hhw,,8.3126419,-62.6962556,Cuidad Guyana,VEN
@@ -4359,6 +4362,7 @@ rcdeportivofabril,Real Deportivo Fabril,Fbwb,bw,s-wwb,,43.250833,-8.284722,A Cor
 rcgrasse,Racing Club de Grasse,Gbrr,br,x-br,,43.6425884,6.9125846,Grasse,FRA
 rcheemstede,RC Heemstede,Hwbb,wb,x-wb,x221,52.3394625,4.6219054,Heemstede,NED
 rcrelizane,RC R&eacute;lizane,Rwgw,wg,d-wgw,,35.7315446,0.5460641,R&eacute;lizane,ALG
+rcs,Racing Club Souburg,Skrr,kr,x-kr,,51.4686995,3.5976577,Oost-Souburg,NED
 rcsbrainois,RCS Brainois,Bbyy,by,x-by,,50.6783654,4.3840222,Braine-l'Alleud,BEL
 rcvillalbes,Racing Villalb&eacute;s,Vkgr,gr,s-kgr,,43.2970833,-7.6804672,Vilalba,ESP
 rdagueda,RD &Aacute;gueda,Abrr,br,x-br,,40.562026,-8.4413857,&Aacute;gueda,POR
@@ -4519,7 +4523,6 @@ royalwahingdoh,Royal Wahingdoh,Wkcc,kc,x-kc,,25.579995,91.894326,Shillong,IND
 roznava,Ro&zcaron;&ncaron;ava,Rybb,yb,x-yb,,48.647417,20.5327164,Ro&zcaron;&ncaron;ava,SVK
 rozwojkatowice,Rozw&oacute;j Katowice,Rkgg,kg,x-kg,,50.2395432,18.9829352,Katowice,POL
 rsbberkane,Renaissance Sportive Berkane,Bkoo,ko,x-ko,,34.9275921,-2.3261726,Berkane,MAR
-rcs,Racing Club Souburg,Skrr,kr,x-kr,,51.4686995,3.5976577,Oost-Souburg,NED
 rsgimnastica,Gimn&aacute;stica de Torrelavega,Gbwb,bw,s-bbw,,43.350556,-4.063889,Torrelavega,ESP
 rsveintracht,RSV Eintracht Stahnsdorf,Swbb,wb,x-wb,,52.38984,13.1905114,Stahnsdorf,GER
 rsvgottingen05,RSV G&ouml;ttingen 05,Gkyy,ky,x-ky,,51.5097467,9.9386075,G&ouml;ttingen,GER
@@ -5226,6 +5229,7 @@ svetkavitsa,Svetkavitsa Targovishte,Swnn,wn,x-wn,,43.2356575,26.5725401,Targovis
 svflexopacksierning,Sierning,Swbb,wb,x-wb,,48.0404136,14.3095943,Sierning,AUT
 svgaflenz,Harreither Gaflenz,Hkww,kw,x-kw,,47.8957534,14.7229289,Gaflenz,AUT
 svgerasdorfstammersdorf,Gerasdorf Stammersdorf,Gwrr,wr,x-wr,,48.300577,16.465204,Gerasdorf,AUT
+svgonsenheim,Mainz-Gonsenheim,Gwbb,wb,x-wb,,50.0058859,8.1998635,Gonsenheim,GER
 svgroedig,SV Gr&ouml;dig,Sbww,bw,o-bwb,,47.7432841,13.0475481,Gr&ouml;dig,AUT
 svgrol,Grol,Gwbb,wb,x-wb,,52.0326111,6.6326034,Groenlo,NED
 svhattoheim,Hatto Heim,Hbyy,by,x-by,,52.458197,6.0670673,Hattem,NED

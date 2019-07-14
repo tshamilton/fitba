@@ -106,6 +106,7 @@ C,firstprofessionalleaguequalificationplayoff,16,First League Qualification Play
 C,cup,100,Bulgarian FA Cup,
 N,CAN,Canada,210,canada
 L,premierleague,10,Canadian Premier League,
+L,premierleaguefallseason,10,Canadian Premier League (Fall),
 L,canadianchampionship,20,Canadian Championship,
 N,CHI,Chile,580,chile
 C,supercup,1,Supercopa de Chile,
@@ -143,6 +144,7 @@ C,primeradivisionaperturafinalstage,22,Primera Division Apertura Finals,
 C,primeradivisionclausura,22,Primera Division Clausura,
 C,primeradivisionclausurachampionshipfinal,22,Primera Division Clausura Finals,
 N,CRO,Croatia,290,croatia
+C,supercup,1,Super Cup,
 L,1division,10,Prva Liga,
 C,1divisionqualification,11,Prva Liga Qualification,
 C,facup,100,Nogometni Kup,

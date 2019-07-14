@@ -28,6 +28,7 @@ def cleanWords(text):
 
 def washText(the_text, context, out="n"):
 	out_news = ""
+	the_text = re.sub(b'&amp;', b'', the_text)
 	in_news = list(the_text)
 
 	for index, value in enumerate(in_news):
@@ -379,7 +380,8 @@ def defineLeague(token, id, pl):
 	max_age = 0 #time in hours that a ladder file needs to be before it is overwritten
 	ladder_file = "./news/ladder/"+token+".lad"
 	file_exists = False
-
+	
+	DEBUG=1
 	if os.path.isfile(ladder_file):
 		file_exists = True
 		debug("Ladder file exists already.")
@@ -397,6 +399,7 @@ def defineLeague(token, id, pl):
 		else:
 			debug("lid not set, so downloading ladder data using lpl.")
 			this_ladder = get_data("http://fotmobenetpulse.s3-external-3.amazonaws.com/tables.ext."+pl+".fot")
+		DEBUG = 0
 
 		out_table = {}
 		this_ladder = washText(this_ladder, token)
