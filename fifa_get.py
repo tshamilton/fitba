@@ -330,6 +330,9 @@ def washText(the_text, context, out="n"):
 				elif in_news[index+1] == 190:
 					if out == "h": out_news = out_news + "&#381;"
 					else:			out_news = out_news + "Z"
+				elif in_news[index+1] == 191:
+					if out == "h": out_news = out_news + "&#382;"
+					else:			out_news = out_news + "z"
 			elif value == 208:
 				if in_news[index+1] == 149:
 					if out == "h":	out_news = out_news + "E"
