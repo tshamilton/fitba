@@ -320,6 +320,14 @@ def washText(the_text, context, out="n"):
 					if out == "h":	out_news = out_news + "l"
 					else:			out_news = out_news + "l"
 					in_news[index+1] = 0
+				else:
+					print("==== End of code page 196 ====")
+					for y in range(index-5, index+5):
+						if (in_news[y] < 128):
+							print(str(in_news[y])+" => "+chr(in_news[y]))
+						else:
+							print(str(in_news[y])+" => ??")
+					print("====")
 			elif value == 197:
 				if in_news[index+1] == 160:
 					if out == "h": out_news = out_news + "&Scaron;"
@@ -333,6 +341,14 @@ def washText(the_text, context, out="n"):
 				elif in_news[index+1] == 191:
 					if out == "h": out_news = out_news + "&#382;"
 					else:			out_news = out_news + "z"
+				else:
+					print("==== End of code page 197 ====")
+					for y in range(index-5, index+5):
+						if (in_news[y] < 128):
+							print(str(in_news[y])+" => "+chr(in_news[y]))
+						else:
+							print(str(in_news[y])+" => ??")
+					print("====")
 			elif value == 208:
 				if in_news[index+1] == 149:
 					if out == "h":	out_news = out_news + "E"
@@ -380,7 +396,7 @@ def washText(the_text, context, out="n"):
 	return out_news
 
 def defineLeague(token, id, pl):
-	max_age = 0 #time in hours that a ladder file needs to be before it is overwritten
+	max_age = 4 #time in hours that a ladder file needs to be before it is overwritten
 	ladder_file = "./news/ladder/"+token+".lad"
 	file_exists = False
 	
