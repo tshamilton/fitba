@@ -386,7 +386,7 @@ def washText(the_text, context, out="n"):
 							print(str(in_news[y])+" => ??")
 					print("====")
 			else:
-				print("== Code page unknown. Context: "+context+" ==")
+				print("== Code page '"+value+"' unknown. Context: "+context+" ==")
 				for y in range(index-5, index+5):
 					if (in_news[y] < 128):
 						print(str(in_news[y])+" -> "+chr(in_news[y]))
