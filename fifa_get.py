@@ -332,15 +332,19 @@ def washText(the_text, context, out="n"):
 				if in_news[index+1] == 160:
 					if out == "h": out_news = out_news + "&Scaron;"
 					else:			out_news = out_news + "S"
+					in_news[index+1] = 0
 				elif in_news[index+1] == 161:
 					if out == "h": out_news = out_news + "&scaron;"
 					else:			out_news = out_news + "s"
+					in_news[index+1] = 0
 				elif in_news[index+1] == 190:
 					if out == "h": out_news = out_news + "&#381;"
 					else:			out_news = out_news + "Z"
+					in_news[index+1] = 0
 				elif in_news[index+1] == 191:
 					if out == "h": out_news = out_news + "&#382;"
 					else:			out_news = out_news + "z"
+					in_news[index+1] = 0
 				else:
 					print("==== End of code page 197 ====")
 					for y in range(index-5, index+5):
