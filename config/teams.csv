@@ -1959,6 +1959,7 @@ fclokomotivakosice,Lokomotiva Kosice,Lbww,bw,x-bw,,48.8001,21.2462,Ko&scaron;ice
 fcluchminsk,Luch Minsk,Lwnn,wn,x-wn,,53.9445262,27.6468282,Minsk,BLR
 fclustenau07,Lustenau 07,Lwbb,wb,x-wb,,47.4210865,9.6529158,Lustenau,AUT
 fclviv,Lviv,Lkww,kw,x-kw,,49.8193423,24.0481317,Lviv,UKR
+fcmarchfeldmannsdorf~scmannsdorf,Marchfeld Mannsdorf,Mkrr,kr,x-kr,,48.1479346,16.6253907,Mannsdorf an der Donau,AUT
 fcmarkadiatraiskirchen,FCM Arkadia Traiskirchen,Awbb,wb,x-wb,,48.0182188,16.3046252,Traiskirchen,AUT
 fcmashhad,Mashhad,Mrkr,rk,s-wrk,,36.425944,59.383829,Masshad,IRN
 fcmauerwerk,Mauerwerk,Mwrr,wr,x-wr,,48.129305,16.468678,Simmering,AUT
@@ -2520,6 +2521,7 @@ hakoahsydneycityeast,Hakoah Sydney City East,Hwbb,wb,x-wb,,-33.9471131,151.22260
 haladas,Szombathelyi Halad&aacute;s,Hwgg,wg,x-wg,,47.234762,16.607117,Szombathelyi,HUN
 halconesfc,Halcones,Hbrb,br,b-bbr,,15.320833,-91.481667,Huehuetenango,GUA
 halideedipadivarspor,Halide Edip Ad&inodot;var,Hrwr,rw,s-rrw,,41.0642762,28.9111614,Gaziomanpa&scedil;a,TUR
+hall,SV Hall,Hkrr,kr,x-kr,,47.2776932,11.5122003,Hall,AUT
 hallenafc,Hallen AFC,Hwbb,wb,x-wb,,51.5168106,-2.6549785,Hallen,ENG
 hallescherfc,Hallescher,Hrwr,wr,h-wwr,,51.465278,11.961944,Halle an der Saale,GER
 halmia,IS Halmia,Hrww,rw,x-rw,,56.684167,12.866389,Halmstad,SWE
@@ -2797,6 +2799,7 @@ independientedeneuquen,Independiente de Neuquen,Irww,rw,s-rrw,,-38.9581381,-68.0
 independientemedellin,Independiente Medell&iacute;n,Inrr,nr,x-nr,,6.256864,-75.59013,Medell&iacute;n,COL
 independienterivadavia,Independiente Rivadavia,Iwbb,wb,x-wb,,-32.8907551,-68.8629133,Mendoza,ARG
 indianarrows,Indian Arrows,Iwbb,wb,e-wwb,,22.568889,88.409167,New Dehli,IND
+indjija,In&#273;jija,Igwg,gw,h-ggw,,45.05,20.09,In&#273;jija,SRB
 indyeleven,Indy Eleven,Irnn,rn,x-rn,,39.7711263,-86.17788,Indianapolis,USA
 inegolspor,Ineg&ouml;lspor,Irwr,rw,s-rrw,,40.0814018,29.5012219,Bursa,TUR
 infonettallinn,Infonet Tallinn,Iwkk,wk,x-wk,,59.4362532,24.8378956,Lasman&auml;e,EST
@@ -3197,6 +3200,7 @@ lancyfc,Grand-Lancy,Gbwb,wb,s-wwb,,46.17851,6.12336,Grand Lancy,SUI
 landskrona~landskronabois,Landskrona BoIS,Lwkw,wk,s-kkw,,55.8899446,12.837623,Landskrona,SWE
 landvetteris,Landvetter IS,Lwgg,wg,x-wg,,57.7030835,12.2010633,Landvetter,SWE
 langatagremio,Langata Gremio,Lkoo,ko,x-ko,,-1.3234836,36.7802598,Nairobi,KEN
+langenegg,Langenegg,Lgww,gw,x-gw,,47.4687305,9.8969381,Langenegg,AUT
 langholmenfc,L&aring;ngholmen FC,Lwkw,wk,s-kkw,,59.3192521,17.9871747,L&aring;ngholmen,SWE
 lansdownebhoysfc,Lansdowne Bhoys,Lgwg,gw,h-ggw,,40.9270756,-73.8766967,Yonkers,USA
 lansingignitefc,Lansing Ignite,Lboo,bo,x-bo,,42.7342188,-84.5455985,Lansing,USA
@@ -4721,7 +4725,6 @@ sckfarkasem,Kfar Qasim,Kwdd,wd,x-wd,,32.0452952,34.8154371,Ramat Gan,ISR
 sclahr,SC Lahr,Lkbk,kb,s-kkb,,48.3385925,7.8782309,Lahr,GER
 scleopoldsdorfmfd,Leopoldsdorf,Lnww,nw,x-nw,,48.1087966,16.3990745,Leopoldsdorf bei Wien,AUT
 sclourinhanense,Lourinhanense,Lwgg,wg,x-wg,,39.2398605,-9.3109817,Louri&ntilde;ha,POR
-fcmarchfeldmannsdorf~scmannsdorf,Marchfeld Mannsdorf,Mkrr,kr,x-kr,,48.1479346,16.6253907,Mannsdorf an der Donau,AUT
 scmannswoerth,Mannsw&ouml;rth,Mwak,ka,s-kka,,48.1459897,16.5231259,Schwechat,AUT
 scmarch,March,Mwaa,wa,x-wa,,48.0679424,7.7523674,Neuershausen,GER
 scmirandela,Mirandela,Mkwk,kw,s-wwk,,41.4900396,-7.1766527,Mirandela,POR
@@ -5507,6 +5510,7 @@ troyes,Etoile Sportive Troyes AC,Twbb,wb,x-wb,,48.3075473,4.0984348,Troyes,FRA
 trujillanosfc,Trujillanos,Tkyy,ky,x-ky,,9.3334097,-70.6023073,Valera,VEN
 trurocity,Truro City,Tkww,kw,x-kw,,50.2597965,-5.0677501,Truro,ENG
 trygglade,Trygg/Lade,Tbww,bw,x-bw,,63.445465,10.446237,Lade,NOR
+tscbackatopola,TSC Ba&#269;ka Topola,Bwnn,wn,x-wn,,45.8238833,19.6283197,Ba&#269;ka Topola,SRB
 tsceuskirchen,TSC Euskirchen,Ewrw,rw,s-rrw,,50.6643009,6.7972325,Euskirchen,GER
 tsg1899hoffenheim~hoffenheim~tsghoffenheim,TSG 1899 Hoffenheim,Hwbb,wb,x-wb,x240,49.2381003,8.8880069,Hoffenheim,GER
 tsgbalingen,TSG Balingen,Bkrr,kr,x-kr,,48.2821193,8.8584915,Balingen,GER
@@ -6114,6 +6118,7 @@ zawiszabydgoszcz,Zawisza Bydgoszcz,Zwkb,bk,v-wkb,,53.145556,18.020556,Bydgoszcz,
 zeeuwselftal,Zeeuws Elftal,Zbww,bw,x-bw,,51.4715749,3.7407164,Nieuwdorp,NED
 zeleziarnepodbrezova,&Zcaron;eleziarne Podbrezov&aacute;,Zcww,cw,x-cw,,48.8075793,19.5232214,Podbrezov&aacute;,SVK
 zeljeznicar,&Zcaron;eljezni&ccaron;ar Sarajevo,Zwbb,wb,x-wb,,43.8467439,18.3872419,Sarajevo,BIH
+zellamsee,Zell am See,Zbyy,by,e-bby,,47.3104096,12.7950744,Zell am See,AUT
 zemplinmichalovce,Zempl&iacute;n Michalovce,Zbyb,by,v-bby,,48.7625827,21.9091051,Michalovce,SVK
 zenitirkutsk,Zenit Irkutsk,Zwbb,wb,x-wb,,52.2904323,104.3110252,Irkutsk,RUS
 zenitizhevsk,Zenit Izhevsk,Zwbb,wb,x-wb,,56.8490389,53.2227982,Izhevsk,RUS
@@ -6155,6 +6160,3 @@ zvezdaryazan,Zvezda Ryazan,Zwrr,wr,x-wr,,54.6080607,39.7725155,Ryazan,RUS
 zwaluwenvlaardingen,Zwaluwen Vlaardingen,Zwkw,wk,s-kkw,,51.930972,4.3594535,Vlaardingen,NED
 zwarteleeuw,Zwarte Leeuw,Zyky,ky,b-kky,,51.342415,4.7518377,Rijkevorsel,BEL
 zweigenkanazawa,Zweigen Kanazawa,Zkrr,kr,x-kr,,36.575833,136.605278,Kanazawa,JPN
-langenegg,Langenegg,Lgww,gw,x-gw,,47.4687305,9.8969381,Langenegg,AUT
-hall,SV Hall,Hkrr,kr,x-kr,,47.2776932,11.5122003,Hall,AUT
-zellamsee,Zell am See,Zbyy,by,e-bby,,47.3104096,12.7950744,Zell am See,AUT
