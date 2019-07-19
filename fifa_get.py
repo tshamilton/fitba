@@ -337,11 +337,11 @@ def washText(the_text, context, out="n"):
 					if out == "h": out_news = out_news + "&scaron;"
 					else:			out_news = out_news + "s"
 					in_news[index+1] = 0
-				elif in_news[index+1] == 190:
+				elif in_news[index+1] == 189:
 					if out == "h": out_news = out_news + "&#381;"
 					else:			out_news = out_news + "Z"
 					in_news[index+1] = 0
-				elif in_news[index+1] == 191:
+				elif in_news[index+1] == 190:
 					if out == "h": out_news = out_news + "&#382;"
 					else:			out_news = out_news + "z"
 					in_news[index+1] = 0
