@@ -1676,6 +1676,7 @@ eintrachtbraunschweig,Eintracht Braunschweig,Bbyy,by,x-by,x197,52.2900428,10.520
 eintrachtcuxhaven,Eintracht Cuxhaven,Cbww,bw,x-bw,,53.86056,8.70271,Cuxhaven,GER
 eintrachtfrankfurt,Eintracht Frankfurt,Ekrk,kr,s-kkr,x198,50.0685807,8.645472,Frankfurt am Main,GER
 eintrachtnorderstedt,Eintracht Norderstedt,Nwrr,wr,x-wr,,53.676986,9.977053,Norderstedt,GER
+eintrachtnortheim,Eintracht Northheim,Nyrr,yr,x-yr,,51.7110942,10.0094884,Northeim,GER
 eintrachtrheine~rheine,Eintracht Rheine,Rkrr,kr,x-kr,,52.2494931,7.4153009,Rheine,GER
 eintrachtstadtallendorf,Eintracht Stadtallendorf,Sgwg,gw,h-ggw,,50.8269501,9.0052851,Stadtallendorf,GER
 eintrachttrier,Eintracht Trier 05,Twbk,kb,s-wbk,,49.7682998,6.6479285,Trier,GER
@@ -4720,7 +4721,7 @@ sckfarkasem,Kfar Qasim,Kwdd,wd,x-wd,,32.0452952,34.8154371,Ramat Gan,ISR
 sclahr,SC Lahr,Lkbk,kb,s-kkb,,48.3385925,7.8782309,Lahr,GER
 scleopoldsdorfmfd,Leopoldsdorf,Lnww,nw,x-nw,,48.1087966,16.3990745,Leopoldsdorf bei Wien,AUT
 sclourinhanense,Lourinhanense,Lwgg,wg,x-wg,,39.2398605,-9.3109817,Louri&ntilde;ha,POR
-scmannsdorf,Mannsdorf/Donau,Mkrr,kr,x-kr,,48.1479346,16.6253907,Mannsdorf an der Donau,AUT
+fcmarchfeldmannsdorf~scmannsdorf,Marchfeld Mannsdorf,Mkrr,kr,x-kr,,48.1479346,16.6253907,Mannsdorf an der Donau,AUT
 scmannswoerth,Mannsw&ouml;rth,Mwak,ka,s-kka,,48.1459897,16.5231259,Schwechat,AUT
 scmarch,March,Mwaa,wa,x-wa,,48.0679424,7.7523674,Neuershausen,GER
 scmirandela,Mirandela,Mkwk,kw,s-wwk,,41.4900396,-7.1766527,Mirandela,POR
@@ -6154,3 +6155,6 @@ zvezdaryazan,Zvezda Ryazan,Zwrr,wr,x-wr,,54.6080607,39.7725155,Ryazan,RUS
 zwaluwenvlaardingen,Zwaluwen Vlaardingen,Zwkw,wk,s-kkw,,51.930972,4.3594535,Vlaardingen,NED
 zwarteleeuw,Zwarte Leeuw,Zyky,ky,b-kky,,51.342415,4.7518377,Rijkevorsel,BEL
 zweigenkanazawa,Zweigen Kanazawa,Zkrr,kr,x-kr,,36.575833,136.605278,Kanazawa,JPN
+langenegg,Langenegg,Lgww,gw,x-gw,,47.4687305,9.8969381,Langenegg,AUT
+hall,SV Hall,Hkrr,kr,x-kr,,47.2776932,11.5122003,Hall,AUT
+zellamsee,Zell am See,Zbyy,by,e-bby,,47.3104096,12.7950744,Zell am See,AUT
