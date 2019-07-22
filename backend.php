@@ -220,8 +220,11 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 				switch ($p[8]) {
 					case "X":			$fate = "";					$style = "ldrdata";				break;
 					case "UCL":			$fate = "UCL";				$style = "ucl ldrdata";			break;
+					case "COPALIB":		$fate = "Copa Lib.";		$style = "ucl ldrdata";			break;
 					case "UCLQ":		$fate = "UCL Qual.";		$style = "uclqual ldrdata";		break;
+					case "COPALIBQ":	$fate = "Copa Lib Q";		$style = "uclqual ldrdata";		break;
 					case "ELQ":			$fate = "UEL Qual.";		$style = "eurolgqual ldrdata";	break;
+					case "COPASUD":		$fate = "Copa Sud. Qual.";	$style = "eurolg ldrdata";		break;
 					case "ELQP":		$fate = "UEL Playoffs";		$style = "eurolgqual ldrdata";	break;
 					case "PROMOTED":	$fate = "&uarr; ";			$style = "promotion ldrdata";	break;
 					case "QUAL":		$fate = "Qualified";		$style = "promotion ldrdata";	break;

@@ -79,6 +79,7 @@ admunicipalliberia,Municipal Liberia,Lkyk,ky,s-kky,,10.635833,-85.433333,Liberia
 ado20,ADO '20,Awbb,wb,x-wb,,52.5212383,4.6552055,Heemskerk,NED
 adodenhaag,ADO Den Haag,Dygy,gy,s-ggy,,52.0629342,4.3827271,Den Haag,NED
 adoliveirense,AD Oliveirense,Owrr,wr,x-wr,,41.4042617,-8.4161171,Santa Maria de Oliveira,POR
+adrjicaral,ADR Jicaral,Jwaa,wa,x-wa,,9.9582813,-85.1193482,Jicaral,CRC
 adunionadarve,AD Uni&oacute;n Adarve,Arkr,rk,o-rkr,,40.4787681,-3.6959629,Adarve,ESP
 aeermionidas,AE Ermionidas,Ekww,kw,x-kw,,37.3797797,23.1546881,Kranidi,GRE
 aegir,&AElig;gir &THORN;orl&aacute;ksh&ouml;fn,Tnyy,ny,x-ny,,63.8507844,-21.3934709,&THORN;orl&aacute;ksh&ouml;fn,ISL
@@ -1901,6 +1902,7 @@ fcfleurier,Fleurier,Fkyy,ky,x-ky,,46.896284,6.5772601,Val-de-Travers,SUI
 fcfyn,Fyn,Fubr,rb,v-urb,,55.397771,10.350055,Odense,DEN
 fcgagra,Gagra,Gwnn,wn,x-wn,,41.6726729,44.8722066,Tbilisi,GEO
 fcgermaniaegestorflangreder,Germania Egestorf-Langreder,Gwrr,wr,x-wr,,52.3024306,9.4718348,Barsinghausen,GER
+fcgherdeina,Gherd&euml;ina,Gnrn,rn,v-nnr,,46.5693059,11.679771,Ortisei,ITA
 fcgifu,Gifu,Gwgg,wg,x-wg,,35.4413183,136.7660782,Gifu,JPN
 fcgoa,Goa,Gobb,ob,x-ob,,15.2893911,73.9623256,Fatorda,IND
 fcgoldenstateforce,Golden State Force,Gkww,kw,x-kw,,34.131416,-117.882743,Glendora,USA
@@ -1978,6 +1980,7 @@ fcmulhouseportland,Mulhouse Portland,Mbww,bw,x-bw,,45.52543,-122.6515,Portland,U
 fcmuri,Muri,Mwrr,wr,x-wr,,47.277981,8.3374151,Muri,SUI
 fcnazarethillit,Nazareth Illit,Nkrk,kr,s-wkr,,32.6898,35.311325,Nazareth Illit,ISR
 fcoberlausitzneugersdorf,Oberlausitz Neugersdorf,Owbb,wb,x-wb,,54.320728,10.130581,Ebersbach-Neugersdorf,GER
+fcobermais,Obermais,Owbb,wb,x-wb,,46.6661574,11.1467757,Meran,ITA
 fcolexandria,Oleksandria,Okyy,ky,d-kyk,x301,48.6745185,33.1038491,Olexandria,UKR
 fcolimpiavolgograd,Olimpia Volgograd,Obyy,by,x-by,,48.6700797,44.2265289,Volgograd,RUS
 fcorenburg~gazovikorenburg,FC Orenburg,Gwbb,wb,x-wb,,51.7843959,55.2214668,Orenburg,RUS
@@ -2081,6 +2084,7 @@ fcwettswilbonstetten,Wettswil-Bonstetten,Wkrk,kr,s-wkr,,47.335358,8.4605613,Wett
 fcwichita,Wichita,Wwrr,wr,x-wr,,37.735948,-97.2144721,Wichita,USA
 fcwindisch,Windisch,Wkrr,kr,x-kr,,47.474189,8.2126473,Windisch,SUI
 fcwinterswijk,Winterswijk,Wukk,uk,x-uk,,51.98381,6.7084373,Winterswijk,NED
+fcwolfurt,Wolfurt,Wbyy,by,x-by,,47.4745718,9.7271478,Wolfurt,AUT
 fcwunstorf,1. FC Wunstorf,Wrkr,kr,s-wkr,,52.412341,9.4327818,Wunstorf,GER
 fcyeniseykrasnoyarsk,Yenisey Krasnoyarsk,Ywbr,rb,v-wrb,,55.9984,92.8848,Krasnoyarsk,RUS
 fczaria,Zaria B&abreve;l&tcedil;i,Zkrk,kr,s-rrk,,47.7664201,27.9332923,B&abreve;l&tcedil;i,MDA
@@ -2089,6 +2093,7 @@ fczuerichfrauenw,Z&uuml;rich Frauen,Zhww,hw,x-hw,,47.4026973,8.5925016,Z&uuml;ri
 fczugdidi,Zugdidi,Zwbb,wb,x-wb,,42.4267553,41.6222163,Zugdidi,GEO
 feigniesaulnoye,Feignies Aulnoye,Zebe,eb,s-bbe,,50.3030023,3.9145822,Feignies,FRA
 feirense,CD Feirense,Fwnn,wn,x-wn,,40.9272555,-8.5458609,Santa Maria da Feira,POR
+felanitx,Felanitx,Fkww,kw,x-kw,,39.4729384,3.1621766,Felanitx,ESP
 felcrafc,FELCRA,Fbrw,wr,s-brw,,3.0822801,101.5439295,Shah Alam,MAS
 feldaunitedfc,FeLDA United FC,Fwoo,wo,x-wo,,3.7720871,102.5477848,Jengka,MAS
 feldkirchen,Feldkirchen,Fwbb,wb,x-wb,,46.726223,14.090262,Feldkirchen,AUT
@@ -3960,6 +3965,7 @@ olimpiecnizhny,Olimpiec Nizhny,Obww,bw,x-bw,,56.3372872,43.9632507,Nizhny Novgor
 olimpijaljubljana,Olimpija Ljubljana,Owgg,wg,x-wg,,46.0804912,14.5242148,Ljubljana,SVN
 olimpikdonetsk,Olimpik Donetsk,Ofnf,fn,h-ffn,,50.450401,30.5351007,Donetsk,UKR
 olimpiksarajevo,Olimpik Sarajevo,Owgg,wg,x-wg,,43.846143,18.3570103,Sarajevo,BIH
+olimpkhimki,Olimp Khimki,Okrk,kr,s-wkr,,55.8908531,37.4410241,Khimki,RUS
 olimpo,Olimpo de Bah&iacute;a Blanca,Oyky,ky,s-kky,,-38.726944,-62.275833,Bah&iacute;a Blanca,ARG
 oliveirense,UD Oliveirense,Onrr,nr,x-nr,,40.8420463,-8.4703569,Oliveira de Azem&eacute;is,POR
 olivhospital,Oliveira do Hospital,Okyy,ky,x-ky,,40.3619783,-7.8578824,Oliveira do Hospital,POR
@@ -4496,6 +4502,7 @@ rockdalecitysuns,Rockdale City Suns,Rkrk,kr,s-kkr,,-33.963889,151.144444,Rockdal
 rockmount,Rockmount AFC,Rygy,yg,b-yyg,,51.98401,-8.515556,Whitechurch,IRL
 rodajckerkrade,Roda JC Kerkrade,Rkyk,ky,b-kky,x224,50.8575421,6.0054373,Kerkrade,NED
 rodez~rodezaveyron,Rodez Aveyron,Rryr,ry,e-rry,,44.348,2.5911,Rodez,FRA
+rodina,Rodina Moscow,Rwnn,wn,x-wn,,55.7944719,37.7546237,Moscow,RUS
 roeselare,KSV Roeselare,Rkww,kw,d-kwk,,50.952087,3.105354,Roeselare,BEL
 rohrendorfgedersdorf,Rohrendorf/Gedersdorf,Rwbb,wb,x-wb,,48.4161935,15.6581618,Rohrdorf,AUT
 rolderboys,Rolder Boys,Rkwk,kw,e-kkw,,52.983154,6.642136,Rolde,NED
@@ -5234,6 +5241,7 @@ svetkavitsa,Svetkavitsa Targovishte,Swnn,wn,x-wn,,43.2356575,26.5725401,Targovis
 svflexopacksierning,Sierning,Swbb,wb,x-wb,,48.0404136,14.3095943,Sierning,AUT
 svgaflenz,Harreither Gaflenz,Hkww,kw,x-kw,,47.8957534,14.7229289,Gaflenz,AUT
 svgerasdorfstammersdorf,Gerasdorf Stammersdorf,Gwrr,wr,x-wr,,48.300577,16.465204,Gerasdorf,AUT
+svgloggnitz,Gloggnitz,Gbww,bw,x-bw,,47.6701588,15.9314884,Gloggnitz,AUT
 svgonsenheim,Mainz-Gonsenheim,Gwbb,wb,x-wb,,50.0058859,8.1998635,Gonsenheim,GER
 svgroedig,SV Gr&ouml;dig,Sbww,bw,o-bwb,,47.7432841,13.0475481,Gr&ouml;dig,AUT
 svgrol,Grol,Gwbb,wb,x-wb,,52.0326111,6.6326034,Groenlo,NED
@@ -5276,6 +5284,7 @@ svseligenporten,SV Seligenporten,Swrw,rw,h-wwr,,49.264042,11.298025,Seligenporte
 svsieghartskirchen,Sieghartskirchen,Swrr,wr,x-wr,,48.2513268,16.0252373,Siegshartskirchen,AUT
 svsonsbeck,SV Onsbeck,Owdd,wd,x-wd,,51.611128,6.3690448,Sonsbeck,GER
 svspielberg,Spielberg,Skrk,kr,s-wkr,,48.8983188,8.4621289,Spielberg,GER
+svstanna,St. Anna am Aigen,Awhh,wh,x-wh,,46.8285205,15.9749448,Aigen,AUT
 svstegersbach,Stegersbach,Sbww,bw,x-bw,,47.1549916,16.1664281,Stegersbach,AUT
 svstmargarethen,St. Margarethen,Mwbw,wb,s-bbw,,47.8086475,16.6035294,Sankt-Margarethen,AUT
 svstraelen,SV Straelen,Sgyy,gy,x-gy,,51.4396863,6.2492554,Straelen,GER
@@ -5626,9 +5635,11 @@ unionberlin,1. FC Union Berlin,Uyrr,yr,x-yr,,52.4578269,13.5659694,Berlin,GER
 unioncomercio,Uni&oacute;n Comercio,Ubrr,br,x-br,,-6.0319845,-76.964126,Nuevo Cajamarca,PER
 uniondemardelplata,Uni&oacute;n de Mar del Plata,Mwhw,wh,s-hhw,,-38.0179257,-57.5822429,Mar del Plata,ARG
 uniondesunchales,Uni&oacute;n de Sunchales,Swgw,wg,s-ggw,,-30.938694,-61.5620006,Sunchales,ARG
+unionedelweiss,Union Edelwei&szlig;,Ewbb,wb,x-wb,,48.2490051,14.289715,Linz,AUT
 unionesanremo,SSD Unione Sanremo,Swhw,wh,s-hhw,,43.8238471,7.8020492,Sanremo,ITA
 unionespanola,Uni&oacute;n Espa&ntilde;ola,Ebry,br,e-byr,,-33.4045266,-70.6590156,Independencia,CHI
 unionestepona,Uni&oacute;n Estepona,Ebrr,br,x-br,,36.4312046,-5.1587533,Estepona,ESP
+unionfeltre,Union Feltre SSD,Fgwr,gw,e-grw,,46.0224382,11.9043378,Feltre,ITA
 uniongurten,Union Gurten,Gkrk,rk,h-kkr,,48.240061,13.3402023,Gurten,AUT
 unionirun,Real Uni&oacute;n Ir&uacute;n,Ikww,kw,x-kw,,43.3455056,-1.7865051,Ir&uacute;n,ESP
 unionistasdesalamanca,Unionistas de Salamanca,Ukwk,wk,d-wk,,40.9963789,-5.6660226,Salamanca,ESP
@@ -5886,6 +5897,7 @@ virginiaunitedfc,Virginia United,Vrnn,rn,x-rn,,38.632157,-77.3816615,Manassas,US
 virton,Excelsior Virton,Vgww,gw,x-gw,,49.5623714,5.5287731,Virton,BEL
 virtusacquaviva,Virtus Acquaviva,Vkgg,kg,x-kg,,43.9285026,12.4431474,Acquaviva,SMR
 virtusbergamoalzanoseriate~virtusbergamo1909,Virtus Bergamo 1909,Vkww,kw,x-kw,,45.7349,9.722,Alanzo Lombardo,ITA
+virtusbolzano,AC Virtus Bolzano,Bwgw,wg,e-wwg,,46.50447,11.34648,Bolzano,ITA
 virtusentella,Virtus Entella,Vwfw,wf,v-wwf,,44.3157757,9.334409,Chiavari,ITA
 virtusfrancavilla,Virtus Francavilla,Vhwh,hw,s-hhw,,40.5352547,17.5773066,Francavilla Fontana,ITA
 virtuslanciano,Virtus Lanciano,Vwkr,kr,s-wkr,,42.219722,14.382222,Lanciano,ITA
@@ -6157,20 +6169,8 @@ zurich~fczurich~fczuerich,FC Z&uuml;rich,Zhwh,hw,s-wwh,x135,47.3826664,8.5038076
 zuzenhausen,Zuzenhausen,Zgwg,wg,b-wwg,,49.29945,8.81735,Zuzenhausen,GER
 zvezdaperm~zvezda2005perm,Zvezda Perm,Zwrr,wr,x-wr,,57.990694,56.244636,Perm,RUS
 zvezdaryazan,Zvezda Ryazan,Zwrr,wr,x-wr,,54.6080607,39.7725155,Ryazan,RUS
+zvezdasaintpetersburg,Zvezda St. Petersburg,Zkww,kw,x-kw,,59.9522227,30.2854058,St. Petersburg,RUS
+zvezdasaintpetersburg,Zvezda St. Petersburg,Zkww,kw,x-kw,,59.9522227,30.2854058,St. Petersburg,RUS
 zwaluwenvlaardingen,Zwaluwen Vlaardingen,Zwkw,wk,s-kkw,,51.930972,4.3594535,Vlaardingen,NED
 zwarteleeuw,Zwarte Leeuw,Zyky,ky,b-kky,,51.342415,4.7518377,Rijkevorsel,BEL
 zweigenkanazawa,Zweigen Kanazawa,Zkrr,kr,x-kr,,36.575833,136.605278,Kanazawa,JPN
-zvezdasaintpetersburg,Zvezda St. Petersburg,Zkww,kw,x-kw,,59.9522227,30.2854058,St. Petersburg,RUS
-virtusbolzano,AC Virtus Bolzano,Bwgw,wg,e-wwg,,46.50447,11.34648,Bolzano,ITA
-fcgherdeina,Gherd&euml;ina,Gnrn,rn,v-nnr,,46.5693059,11.679771,Ortisei,ITA
-fcwolfurt,Wolfurt,Wbyy,by,x-by,,47.4745718,9.7271478,Wolfurt,AUT
-olimpkhimki,Olimp Khimki,Okrk,kr,s-wkr,,55.8908531,37.4410241,Khimki,RUS
-rodina,Rodina Moscow,Rwnn,wn,x-wn,,55.7944719,37.7546237,Moscow,RUS
-svgloggnitz,Gloggnitz,Gbww,bw,x-bw,,47.6701588,15.9314884,Gloggnitz,AUT
-svstanna,St. Anna am Aigen,Awhh,wh,x-wh,,46.8285205,15.9749448,Aigen,AUT
-unionedelweiss,Union Edelwei&szlig;,Ewbb,wb,x-wb,,48.2490051,14.289715,Linz,AUT
-unionfeltre,Union Feltre SSD,Fgwr,gw,e-grw,,46.0224382,11.9043378,Feltre,ITA
-zvezdasaintpetersburg,Zvezda St. Petersburg,Zkww,kw,x-kw,,59.9522227,30.2854058,St. Petersburg,RUS
-adrjicaral,ADR Jicaral,Jwaa,wa,x-wa,,9.9582813,-85.1193482,Jicaral,CRC
-fcobermais,Obermais,Owbb,wb,x-wb,,46.6661574,11.1467757,Meran,ITA
-felanitx,Felanitx,Fkww,kw,x-kw,,39.4729384,3.1621766,Felanitx,ESP
