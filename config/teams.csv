@@ -66,6 +66,7 @@ adelaideblueeagles,Adelaide Blue Eagles,Bwbb,wb,x-wb,,-34.8908944,138.6339151,Ma
 adelaidecity,Adelaide City,Akwk,wk,s-kkw,,-34.9374785,138.6048567,Adelaide,AUS
 adelaidecobras,Adelaide Cobras,Cgwg,gw,h-wwg,,-34.9555261,138.5590876,Plympton,AUS
 adelaidecomets,Adelaide Comets,Ckbk,kb,s-wkb,,-34.929444,138.578333,Mile End,AUS
+adelaideolympic,Adelaide Olympic,Awbb,wb,x-wb,,-34.8524205,138.5654729,Ferryville Park,AUS
 adelaideraiders,Adelaide Raiders,Rwrb,wr,x-wr,,-34.840127,138.611336,Gepps Cross,AUS
 adelaideunited,Adelaide United,Anry,nr,x-yr,x178,-34.9155163,138.5961146,Adelaide,AUS
 adfafe,AD Fafe,Fkyk,ky,s-kky,,41.447161,-8.168197,Fafe,POR
@@ -682,7 +683,7 @@ bayernalzenau,Bayern Alzenau,Awbb,wb,x-wb,,50.0802653,9.0564192,Alzenau,GER
 bayernmunich~bayernmunchen,Bayern Munich,Bwrr,wr,x-wr,x013,48.2187997,11.6247072,M&uuml;nchen,GER
 bayonne,Aviron Bayonnais,Bwhh,wh,x-wf,,43.4944937,-1.4588672,Bayonne,FRA
 bayrampasa,Bayrampa&scedil;a,Brgg,rg,x-rg,,41.0379691,28.9053029,Bayrampa&scedil;a,TUR
-bayswatercitysc,Bayswater City,Bkbk,kb,s-wbk,,-31.9214555,115.9039334,Bayswater,AUS
+bayswatercity~bayswatercitysc,Bayswater City,Bkbk,kb,s-wbk,,-31.9214555,115.9039334,Bayswater,AUS
 bcfwolfratshausen,BCF Wolfratshausen,Wwgg,wg,x-wg,,47.908852,11.4351421,Wolfratshausen,GER
 bchang,BK Chang Odense,Obww,bw,x-bw,,55.4034899,10.3971016,Odense,DEN
 beasain,SD Beasain,Bbwb,wb,s-wwb,,43.0462636,-2.2128733,Beasain,ESP
@@ -931,6 +932,7 @@ buducnostpodgorica,Buducnost Podgorica,Bbwb,wb,s-wwb,,42.444723,19.264481,Podgor
 bugsasspor,Kahramankazanspor,Kwdw,wd,s-ddw,,39.9783809,32.4802289,Sincan,TUR
 buitenpost,VV Buitenpost,Bwbb,wb,x-wb,,53.2616706,6.1371946,Buitenpost,NED
 bulle,Bulle,Bwrr,wr,x-wr,,46.6160165,7.0665667,Bulle,SUI
+bulleenlions,Bulleen Lions,Budd,ud,x-ud,,-37.7719101,145.0758651,Bulleen,AUS
 bunburyforumforce,South West Phoenix,Bkyk,yk,s-kky,,-33.3717704,115.6382227,Bunbury,AUS
 bunyodkortashkent,Bunyodkor Tashkent,Bwbb,wb,x-wb,,41.2804847,69.2125075,Tashkent,UZB
 buochs,Buochs,Bwbb,wb,x-wb,,46.9797207,8.4186219,Buochs,SUI
@@ -1303,6 +1305,7 @@ conquense,UB Conquense,Ckww,kw,x-kw,,40.077222,-2.140278,Castille-La Mancha,ESP
 consadolesapporo,Consadole Sapporo,Ckrk,kr,s-kkr,,43.0194119,141.4638988,Sapporo,JPN
 constancia,CE Const&agrave;ncia,Ckww,kw,x-kw,,39.7150144,2.9162832,Inca,ESP
 coomatigers,Cooma Tigers,Ckyk,yk,s-kky,,-36.234901,149.1236213,Cooma,AUS
+coomera,Coomera Colts,Cwqq,wq,x-wq,,-27.8699002,153.3170309,Coomera,AUS
 coquimbo~coquimbounido,Coquimbo Unido,Ckyy,ky,v-kky,,-29.9652462,-71.3383481,Coquimbo,CHI
 corbytown,Corby Town,Ckww,kw,x-kw,,52.5077128,-0.7166116,Corby,ENG
 cordoba,Cord&oacute;ba,Cgwg,gw,s-wwg,,37.8722087,-4.7645945,Cord&oacute;ba,ESP
@@ -3475,6 +3478,7 @@ magallanes,Deportivo Magallanes,Mhwh,hw,s-wwh,,-33.594677,-70.6897112,San Bernad
 magdeburg,1. FC Magdeburg,Mwbb,wb,e-wwb,,52.1251042,11.6707624,Magdeburg,GER
 magni,Magni Grenv&iacute;k,Mwkw,wk,s-kkw,,65.9481445,-18.1783966,Grenv&iacute;k,ISL
 magny,Magny 78,Mwbb,wb,x-wb,,48.7199603,2.0834202,Magny Les Hameaux,FRA
+magpiescrusaders,Mackay Magpies Crusaders,Mwkk,wk,x-wk,,-21.12278,149.1458917,Mackay,AUS
 mahakama,Mahakama,Mkoo,ko,x-ko,,-1.2938474,36.8422439,Nairobi,KEN
 maidenheadunited,Maidenhead United,Mwkw,wk,s-kkw,,51.5199569,-0.7178322,Maidenhead,ENG
 maidstone,Maidstone United,Mkyy,ky,x-ky,,51.279822,0.5163091,Maidstone,ENG
@@ -3690,6 +3694,7 @@ monza,AC Monza Brianza 1912,Mwrr,wr,x-wr,,45.5830364,9.308106,Monza,ITA
 mordovya,Modovya Saransk,Mbrr,br,x-br,,54.1760062,45.1924164,Saransk,RUS
 morecambe,Morecambe,Mkrr,kr,x-wr,,54.0615,-2.8672,Morecambe,ENG
 moreirense,Moreirense,Mgwg,gw,z-ggw,,41.378076,-8.3545795,Moreira de C&oacute;negos,POR
+morelandzebras,Moreland Zebras,Zwkw,kw,s-kkw,,-37.7041324,144.9663974,Fawkner,AUS
 morenovalleyfc,Moreno Valley,Mwqq,wq,x-wq,,33.9264842,-117.2598958,Moreno Valley,USA
 moretonbayunited,Moreton Bay United,Mkyy,ky,x-ky,,-27.3442159,152.9805442,Albany Creek,AUS
 mornar,Mornar Bar,Mwbb,wb,x-wb,,42.104444,19.09,Bar,MNE
@@ -3996,7 +4001,7 @@ olympiawijgmaal,Olympia Wijgmaal,Owbb,wb,x-wb,,50.9257652,4.7037406,Wijgmaal,BEL
 olympiccharleroi,Olympic Charleroi,Okww,kw,x-kw,,50.408621,4.4569578,Charleroi,BEL
 olympicclubdesafi,Olympic Club de Safi,Orbr,rb,b-rrb,,32.3003601,-9.2295447,Safi,MAR
 olympicelqanahfc,Olympic El Qanah,Owbb,wb,x-wb,,30.601111,32.273611,Suez,EGY
-olympicfc,Olympic FC,Orwr,wr,s-rrw,,-27.5083475,153.0136085,Yeronga,AUS
+olympicfc,Olympic,Orwr,wr,s-rrw,,-27.5083475,153.0136085,Yeronga,AUS
 olympicmorbegno,Olympic Morbegno,Obfb,bf,s-wfb,,46.1432974,9.5741826,Morbegno,ITA
 olympiquedebeja,Olympique de B&eacute;ja,Orww,rw,x-rw,,36.7277836,9.1928852,B&eacute;ja,TUN
 olympiquedemedea,Olympique de M&eacute;d&eacute;a,Oobb,ob,x-ob,,36.2617367,2.7696209,M&eacute;d&eacute;a,ALG
@@ -6052,7 +6057,6 @@ whitehawk,Whitehawk,Wwrr,wr,x-wr,,50.8212153,-0.097762,Brighton,ENG
 whitehill,Whitehill Welfare,Wwcf,cf,b-wcf,,55.8540904,-3.132916,Rosewell,SCO
 whitleybayfc,Whitley Bay,Wwbw,bw,s-bbw,,55.0352731,-1.457572,Whitely Bay,ENG
 whittlesearangesfc,Whittlesea Ranges,Wkrr,kr,x-kr,,-37.6248493,145.0249393,Epping,AUS
-whittleseazebras,Whittlesea Zebras,Zwkw,kw,s-kkw,,-37.7041324,144.9663974,Fawkner,AUS
 wickacademy,Wick Academy,Wwkw,wk,s-kkw,,58.4329163,-3.0952461,Wick,SCO
 widzewlodz,Widzew &Lstrok;&oacute;d&zacute;,Wwrr,wr,x-wr,,51.7686334,19.4816716,&Lstrok;&oacute;d&zacute;,POL
 wienerberg,Young Style Wienerberg,Ybwb,bw,o-bwb,,48.1609656,16.3391358,Wienerberg,AUT

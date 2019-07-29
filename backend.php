@@ -204,6 +204,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 			if ($p[0] == "group") {
 				if ($grps > 1) {
 					if ($p[1] == "mls")						{	continue;	}
+					elseif ($p[1] == "uslchampionship")		{	$p[1] = "USL Championship";	}
 					elseif ($p[1] == "Eastern")				{	$p[1] = "Eastern Conference";	}
 					elseif ($p[1] == "Western")				{	$p[1] = "Western Conference";	}
 					elseif ($p[1] == "SupportersShield")	{	$p[1] = "Supporter's Shield";	}
