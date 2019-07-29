@@ -54,6 +54,13 @@ def tally_colours(mN, mJ):
 			Stats["Colours"]["offsets"][mJ] = 1
 			Stats["Colours"]["offsets"]["sortedby"][mJ] = mJ[3:]+mJ[2]
 
+	elif "d-" in mJ:
+		if mJ in Stats["Colours"]["sashes"]:
+			Stats["Colours"]["sashes"][mJ] += 1
+		else:
+			Stats["Colours"]["sashes"][mJ] = 1
+			Stats["Colours"]["sashes"]["sortedby"][mJ] = mJ[3:]+mJ[2]
+
 	elif "v-" in mJ:
 		if mJ in Stats["Colours"]["halves"]:
 			Stats["Colours"]["halves"][mJ] += 1
@@ -74,6 +81,7 @@ def tally_colours(mN, mJ):
 	Stats["Colours"]["bands"]["total"] = len(Stats["Colours"]["bands"]) - 2
 	Stats["Colours"]["hoops"]["total"] = len(Stats["Colours"]["hoops"]) - 2
 	Stats["Colours"]["edges"]["total"] = len(Stats["Colours"]["edges"]) - 2
+	Stats["Colours"]["sashes"]["total"] = len(Stats["Colours"]["sashes"]) - 2
 	Stats["Colours"]["offsets"]["total"] = len(Stats["Colours"]["offsets"]) - 2
 	Stats["Colours"]["halves"]["total"] = len(Stats["Colours"]["halves"]) - 2
 	Stats["Colours"]["others"]["total"] = len(Stats["Colours"]["others"]) - 2
@@ -124,6 +132,10 @@ Stats = {
 			"total": 0,
 			"sortedby": {}
 		},
+		"sashes": {
+			"total": 0,
+			"sortedby": {}
+		},
 		"others": { 
 			"total": 0,
 			"sortedby": {}
@@ -168,7 +180,10 @@ with open(the_teams, 'r') as t:
 		except(IndexError):
 			print("Line: "+str(ind_count))
 		Stats["Teams"]["total"] += 1
-		Stats["Teams"][row[9]]["total"] += 1
+		try:
+			Stats["Teams"][row[9]]["total"] += 1
+		except(IndexError):
+			print("Line: "+row[0])
 		Stats["Teams"][row[9]]["list"].append(first[0])
 		tally_colours(row[3], row[4])
 		if len(row[5]) > 0:
