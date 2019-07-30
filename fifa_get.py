@@ -319,7 +319,11 @@ def washText(the_text, context, out="n"):
 							print(str(in_news[y])+" => ??")
 					print("====")
 			elif value == 196:
-				if in_news[index+1] == 188:
+				if in_news[index+1] == 135:
+					if out == "h":	out_news = out_news + "&#263;"
+					else:			out_news = out_news + "c"
+					in_news[index+1] = 0
+				elif in_news[index+1] == 188:
 					if out == "h":	out_news = out_news + "l"
 					else:			out_news = out_news + "l"
 					in_news[index+1] = 0
