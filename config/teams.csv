@@ -988,7 +988,7 @@ cambrai,Athletic Cambrai,Ckyy,ky,x-ky,,50.1673552,3.2238907,Cambrai,FRA
 cambridgec,Cambridge City,Ckww,kw,e-kkw,,52.3303648,-0.0843854,St. Ives,ENG
 cambridgeunited~cambridgeu,Cambridge United,Ukyk,ky,s-kky,,52.2121,0.15415,Cambridge,ENG
 cambuurleeuwarden~cambuur,Cambuur Leeuwarden,Cbyy,by,x-by,,53.2055089,5.8143286,Leeuwarden,NED
-campbelltowncitysc,Campbelltown City,Cwrr,wr,x-wr,,-34.8841391,138.6904391,Campbelltown,AUS
+campbelltowncity~campbelltowncityfc~campbelltowncitysc,Campbelltown City,Cwrr,wr,x-wr,,-34.8841391,138.6904391,Campbelltown,AUS
 campodarsego,Campodarsego,Cwrr,wr,x-wr,,45.4797132,11.9264379,Campodarsego,ITA
 canberrafc,Canberra,Cwrr,wr,x-wr,,-35.3139112,149.1032427,Deakin,AUS
 canberraolympic~canberraolympicpl,Canberra Olympic,Cwbb,wb,x-wb,,-35.2610112,149.1235269,O'Connor,AUS
@@ -1304,7 +1304,7 @@ connerre,ES Connerr&eacute;,Ckrr,kr,x-kr,,48.0606738,0.497044,Connerr&eacute;,FR
 conquense,UB Conquense,Ckww,kw,x-kw,,40.077222,-2.140278,Castille-La Mancha,ESP
 consadolesapporo,Consadole Sapporo,Ckrk,kr,s-kkr,,43.0194119,141.4638988,Sapporo,JPN
 constancia,CE Const&agrave;ncia,Ckww,kw,x-kw,,39.7150144,2.9162832,Inca,ESP
-coomatigers,Cooma Tigers,Ckyk,yk,s-kky,,-36.234901,149.1236213,Cooma,AUS
+coomatigers~tigersfc,Cooma Tigers,Ckyk,yk,s-kky,,-36.234901,149.1236213,Cooma,AUS
 coomera,Coomera Colts,Cwqq,wq,x-wq,,-27.8699002,153.3170309,Coomera,AUS
 coquimbo~coquimbounido,Coquimbo Unido,Ckyy,ky,v-kky,,-29.9652462,-71.3383481,Coquimbo,CHI
 corbytown,Corby Town,Ckww,kw,x-kw,,52.5077128,-0.7166116,Corby,ENG
@@ -3484,7 +3484,7 @@ maidenheadunited,Maidenhead United,Mwkw,wk,s-kkw,,51.5199569,-0.7178322,Maidenhe
 maidstone,Maidstone United,Mkyy,ky,x-ky,,51.279822,0.5163091,Maidstone,ENG
 mainz05,1. FSV Mainz 05,Mwrr,wr,x-wr,x075,49.9839442,8.2243816,Mainz,GER
 mairena,Mairena,Mwkw,wk,s-kkw,,37.0034563,-3.0516068,Mairena,ESP
-maitlandfc,Maitland,Mkww,kw,e-kkw,,-32.7525851,151.5825176,Maitland,AUS
+maitland~maitlandfc,Maitland,Mkww,kw,e-kkw,,-32.7525851,151.5825176,Maitland,AUS
 makedonijagjp,Makedonija Gjor&ccaron;e Petrov,Myry,ry,s-rry,,42.0023851,21.360371,Gjor&ccaron;e Petrov,NMK
 maktaaralfc,Maktaaral,Mwrr,wr,x-wr,,40.766667,68.316667,Maktaaral,KAZ
 malaccaunited,Malacca United,Mwgg,wg,x-wg,,2.2891579,102.2322338,Malacca City,MAS
