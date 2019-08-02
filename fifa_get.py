@@ -49,7 +49,7 @@ def washText(the_text, context, out="n"):
 					if out == "h":	out_news = out_news + "-"
 					else:			out_news = out_news + "-"
 					in_news[index+1] = 0
-				elif (in_news[index+1] == 174):
+				elif (in_news[index+1] == 179):
 					if out == "h":	out_news = out_news + "3"
 					else:			out_news = out_news + "3"
 					in_news[index+1] = 0
