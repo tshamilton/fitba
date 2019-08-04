@@ -61,9 +61,9 @@ def washText(the_text, context, out="n"):
 					#print("==== End of code page 194 ====")
 					for y in range(index-5, index+5):
 						if (in_news[y] < 128):
-							#print(str(in_news[y])+" => "+chr(in_news[y]))
+							pass #print(str(in_news[y])+" => "+chr(in_news[y]))
 						else:
-							#print(str(in_news[y])+" => ??")
+							pass #print(str(in_news[y])+" => ??")
 					#print("====")
 			elif value == 195:
 				if (in_news[index+1] == 128):
@@ -318,9 +318,9 @@ def washText(the_text, context, out="n"):
 					#print("==== End of code page 195 ====")
 					for y in range(index-5, index+5):
 						if (in_news[y] < 128):
-							#print(str(in_news[y])+" => "+chr(in_news[y]))
+							pass #print(str(in_news[y])+" => "+chr(in_news[y]))
 						else:
-							#print(str(in_news[y])+" => ??")
+							pass #print(str(in_news[y])+" => ??")
 					#print("====")
 			elif value == 196:
 				if in_news[index+1] == 135:
@@ -339,9 +339,9 @@ def washText(the_text, context, out="n"):
 					#print("==== End of code page 196 ====")
 					for y in range(index-5, index+5):
 						if (in_news[y] < 128):
-							#print(str(in_news[y])+" => "+chr(in_news[y]))
+							pass #print(str(in_news[y])+" => "+chr(in_news[y]))
 						else:
-							#print(str(in_news[y])+" => ??")
+							pass #print(str(in_news[y])+" => ??")
 					#print("====")
 			elif value == 197:
 				if in_news[index+1] == 160:
@@ -364,9 +364,9 @@ def washText(the_text, context, out="n"):
 					#print("==== End of code page 197 ====")
 					for y in range(index-5, index+5):
 						if (in_news[y] < 128):
-							#print(str(in_news[y])+" => "+chr(in_news[y]))
+							pass #print(str(in_news[y])+" => "+chr(in_news[y]))
 						else:
-							#print(str(in_news[y])+" => ??")
+							pass #print(str(in_news[y])+" => ??")
 					#print("====")
 			elif value == 208:
 				if in_news[index+1] == 149:
@@ -377,9 +377,9 @@ def washText(the_text, context, out="n"):
 					#print("==== End of code page 208 ====")
 					for y in range(index-5, index+5):
 						if (in_news[y] < 128):
-							#print(str(in_news[y])+" => "+chr(in_news[y]))
+							pass #print(str(in_news[y])+" => "+chr(in_news[y]))
 						else:
-							#print(str(in_news[y])+" => ??")
+							pass #print(str(in_news[y])+" => ??")
 					#print("====")
 			elif value == 226:
 				if in_news[index+1] == 128:
@@ -400,17 +400,17 @@ def washText(the_text, context, out="n"):
 					#print("==== End of code page 226 ====")
 					for y in range(index-5, index+5):
 						if (in_news[y] < 128):
-							#print(str(in_news[y])+" => "+chr(in_news[y]))
+							pass #print(str(in_news[y])+" => "+chr(in_news[y]))
 						else:
-							#print(str(in_news[y])+" => ??")
+							pass #print(str(in_news[y])+" => ??")
 					#print("====")
 			else:
 				#print("== Code page '"+str(index)+"' unknown. Context: "+context+" ==")
 				for y in range(index-5, index+5):
 					if (in_news[y] < 128):
-						#print(str(in_news[y])+" -> "+chr(in_news[y]))
+						pass #print(str(in_news[y])+" -> "+chr(in_news[y]))
 					else:
-						#print(str(in_news[y])+" -> ??")
+						pass #print(str(in_news[y])+" -> ??")
 				#print("====")
 	return out_news
 
