@@ -14,6 +14,11 @@ function CheckName($n) {
 		$tn = substr($n, 0, -1);
 		if (CheckName($tn)) { return true; } else { return false; }
 	}
+	elseif (preg_match("/qw$/", $n)) { 
+		#pretty_var("Diagnostic: '<b>".$n."</b>' is women's team (DEN)?");
+		$tn = substr($n, 0, -2);
+		if (CheckName($tn)) { return true; } else { return false; }
+	}
 	elseif (preg_match("/ii$/", $n)) {
 		#pretty_var("Diagnostic: '<b>".$n."</b>' is reserve 'ii' team?");
 		$tn = substr($n, 0, -2);

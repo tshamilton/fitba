@@ -1394,7 +1394,7 @@ daegufc,Daegu,Dkff,kf,x-kf,,35.8295258,128.6902985,Daegu,KOR
 daejeoncitizen,Daejeon Citizen,Dndd,nd,x-nd,,36.3652954,127.324859,Daejeon,KOR
 daejeonkorail,Daejon Korail,Kwbb,wb,x-wb,,36.316145,127.431632,Daejon,KOR
 dagdissel,Dagdizel Kaspiysk,Dwgg,wg,x-wg,,42.8864769,47.6455996,Kaspiysk,RUS
-dagenhamandredbridge,Dagenham &amp; Redbridge,Dbrb,br,s-wrb,,51.5473567,0.1605476,Dagenham,ENG
+dagenhamandredbridge~dagenhamredbridge,Dagenham &amp; Redbridge,Dbrb,br,s-wrb,,51.5473567,0.1605476,Dagenham,ENG
 dagsbergsif,Dagsberg,Dkrk,rk,s-kkr,,58.583979,16.3112211,Dagsberg,SWE
 dainavaalytus,Dainava Alytus,Dbrb,br,s-wrb,,54.3908477,24.0553114,Alytus,LTU
 dakotafusion,Dakota Fusion,Dkyy,ky,e-kky,,46.8720698,-96.7428763,Moorhead,USA
@@ -2547,7 +2547,7 @@ hamiltonacademical,Hamilton Academicals,Hrwr,wr,h-wwr,,55.7818498,-4.0586377,Ham
 hamiltonolympic,Hamilton Olympic,Hwbw,bw,s-bbw,,-32.933956,151.7410187,Hamilton,AUS
 hammarby,Hammarby,Hwgw,wg,s-ggw,,59.291278,18.0839639,S&ouml;dermalm,SWE
 hamme,VW Hamme,Hkak,ka,s-kka,,51.0937256,4.14294,Hamme,BEL
-hamptonandrichmond,Hampton &amp; Richmond Borough,Hwbr,rb,s-wbr,,51.4147473,-0.3660984,Hampton,ENG
+hamptonandrichmond~hamptonrichmond,Hampton &amp; Richmond Borough,Hwbr,rb,s-wbr,,51.4147473,-0.3660984,Hampton,ENG
 hangyuenfujen,Hang Yuen,Hkwq,qw,b-kqw,,25.0394438,121.4241042,New Taipei City,TPE
 hannover96,Hannover 96,Hkrr,kr,x-kr,x204,52.360017,9.7312249,Hannover,GER
 hanoi~hanoitt,H&agrave; N&ocirc;i,Hwpp,wp,x-wp,,21.029834,105.8329196,H&agrave; N&ocirc;i,VIE
@@ -3093,7 +3093,7 @@ kkontichfc,Kontich,Kyrr,yr,x-yr,,51.1311113,4.4512654,Kontich,BEL
 kkpkmedykkoninw,KKPK Medyk Konin,Kkww,kw,e-kkw,,52.2161329,18.2549033,Konin,POL
 kladno,SK Kladno,Kbww,bw,x-bw,,50.1379087,14.0915621,Kladno,CZE
 klaipedosatlantas~atlantasklaipeda,Klaip&edot;dos Atlantas,Abyy,by,x-by,,55.726402,21.110676,Klaip&edot;da,LTU
-klaipedosgranitas,Klaip&edot;dos Granitas,Gkww,kw,x-kw,,55.726373,21.109618,Klaip&edot;da,LTU
+klaipedosgranitas,Klaip&edot;dos Granitas,Gkww,kw,x-kw,,55.726373,21.109618,KlaMip&edot;da,LTU
 klaksvik,K&Iacute; Klaksv&iacute;k,Kwbb,wb,x-wb,,62.225246,-6.579201,Klaksv&iacute;k,FRO
 klatovy1898,Klatovy 1898,Kwrr,wr,x-wr,,49.400278,13.302778,Klatovy,CZE
 klepp,Klepp,Kwgg,wg,x-wg,,58.7732287,5.623755,Klepp,NOR
@@ -5313,7 +5313,7 @@ svstmargarethen,St. Margarethen,Mwbw,wb,s-bbw,,47.8086475,16.6035294,Sankt-Marga
 svstraelen,SV Straelen,Sgyy,gy,x-gy,,51.4396863,6.2492554,Straelen,GER
 svstrasswalchen,Stra&szlig;walchen,Swgg,wg,x-wg,,47.968077,13.2699957,Stra&szlig;walchen,AUT
 svstripfing,Stripfing,Sybb,yb,x-yb,,48.3424271,16.794719,Stripfing,AUT
-svturkgucuataspor,T&uuml;rkg&uuml;c&uuml;-Ataspor M&uuml;nchen,Twrr,wr,x-wr,,48.11362,11.64502,M&uuml;nchen,GER
+turkgucumunchen~svturkgucuataspor,T&uuml;rkg&uuml;c&uuml;-Ataspor M&uuml;nchen,Twrr,wr,x-wr,,48.11362,11.64502,M&uuml;nchen,GER
 svurk,SV Urk,Ubww,bw,e-bbw,,52.680798,5.6153669,Urk,NED
 svv04,SVV '04,Swkw,wk,s-kkw,,52.6598754,6.894258,Schoonebeek,NED
 svvdamme,SVV Damme,Drww,rw,x-rw,,51.2144307,3.31131,Damme,BEL
@@ -6199,3 +6199,17 @@ zvezdasaintpetersburg,Zvezda St. Petersburg,Zkww,kw,x-kw,,59.9522227,30.2854058,
 zwaluwenvlaardingen,Zwaluwen Vlaardingen,Zwkw,wk,s-kkw,,51.930972,4.3594535,Vlaardingen,NED
 zwarteleeuw,Zwarte Leeuw,Zyky,ky,b-kky,,51.342415,4.7518377,Rijkevorsel,BEL
 zweigenkanazawa,Zweigen Kanazawa,Zkrr,kr,x-kr,,36.575833,136.605278,Kanazawa,JPN
+cafetalerosdechiapas,Cafetaleros de Chiapas,Cuku,uk,e-uuk,,16.7628167,-93.0963766,Tuxtla Guti&eacute;rrez,MEX
+farsleycelticafc,Farsley Celtic AFC,Fgwg,gw,h-ggw,,53.809711,-1.664214,Farsley,ENG
+ketteringtownfc,Kettering Town,Kwrr,wr,x-wr,,52.3609357,-0.6930205,Kettering,ENG
+dorkingwanderers,Dorking Wanderers,Dbrw,wr,s-brw,,51.205722,-0.3529158,Dorking,ENG
+weymouth,Weymouth,Wcff,cf,x-cf,,50.621791,-2.4864493,Weymouth,ENG
+fa2000,Frederiksberg Alliancen 2000,Fwbb,wb,x-wb,,55.6810232,12.4986814,Frederiksberg,DEN
+farumbk,Farum,Fwbb,wb,x-wb,,55.8177717,12.3483256,Farum,DEN
+lorosdecolima,Loros Uni. de Colima,Lgww,gw,x-gw,,19.2461,-103.7014,Colima,MEX
+argentinodequilmes,Argentino de Quilmes,Afwf,fw,s-wwf,,-34.7241445,-58.2817394,Quilmes,ARG
+cittadifasano,USD Citt&agrave; di Fasano,Fwbw,bw,s-wwb,,40.8297087,17.3525455,Fasano,ITA
+adriese,USD Adriese,Awdd,wd,x-wd,,45.0452175,12.0617556,Adria,ITA
+sanremese,SSD Unione San Remo,Swfw,wf,s-ffw,,43.8238471,7.8020492,San Remo,ITA
+cavenagofanfulla,Cavenago Fanfulla,Fwkw,wk,s-kkw,,45.3073924,9.4950228,Lodi,ITA
+asdlanusei,ASD Lanusei,Lwrg,wr,e-wwr,,39.8820329,9.5519847,Lanusei,ITA
