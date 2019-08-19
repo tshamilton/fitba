@@ -906,7 +906,7 @@ L,kleague2,20,K-League 2,
 C,cup,100,Korean FA Cup,
 N,ESP,Spain,60,spain
 C,supercup,1,Supercopa de Espa&ntilde;a,
-L,primeradivision,10,La Liga,
+L,laliga~primeradivision,10,La Liga,
 L,laliga2~segundadivision,20,La Liga 2,
 C,laliga2playoff~segundadivisionplayoff,21,Segundad Division Playoff,
 L,segundabgrpi,31,Segunda Divisi&oacute;n B Group I,
