@@ -4452,7 +4452,7 @@ redstar,Red Star St. Ouen,Rwgr,wg,x-wg,x125,48.84332,2.252936,Saint Ouen,FRA
 redstarbelgrade,Red Star Belgrade,Rrwr,rw,s-wwr,x223,44.7833072,20.4649195,Belgrade,SRB
 redstarpenzing,Red Star Penzing,Rkrr,kr,e-kkr,,48.2038505,16.3071664,Ottakring,AUT
 redstarzurich~redstarzuerich,Red Star Z&uuml;rich,Rgww,gw,x-gw,,47.3536247,8.5216715,Z&uuml;rich,SUI
-reggiana,AC Reggiana 1919,Rwdd,wd,x-wd,,44.7145409,10.6497216,Reggio Emilia,ITA
+reggioaudace~reggiana,Reggio Audace,Rwdd,wd,x-wd,,44.7145409,10.6497216,Reggio Emilia,ITA
 reggina,Urbs Reggina 1904,Rwqq,wq,x-wq,,38.0926383,15.6351211,Reggio Calabria,ITA
 regionalunited,Regional United,Rrww,rw,x-rw,,52.662567,-8.532557,Dooradoyle,IRL
 reichenau,SVG Reichenau,Rkrk,rk,s-kkr,,47.2690496,11.414941,Reichenau,AUT
@@ -6216,4 +6216,16 @@ zwarteleeuw,Zwarte Leeuw,Zyky,ky,b-kky,,51.342415,4.7518377,Rijkevorsel,BEL
 zweigenkanazawa,Zweigen Kanazawa,Zkrr,kr,x-kr,,36.575833,136.605278,Kanazawa,JPN
 ladatolyatti,Lada-Tolyatti,Lwbb,wb,x-wb,,53.504167,49.266944,Tolyatti,RUS
 novosibirskfk,Novosibirsk,Nkww,kw,x-kw,,55.038203,82.925019,Novosibirsk,RUS
-
+abha,Abha,Arbb,rb,x-rb,,18.3110554,42.597363,Abha,KSA
+aladalh,Al Adalah,Arww,rw,x-rw,,25.3059084,49.6128071,Al Hofuf,KSA
+damacfc,Damac,Dyrr,yr,x-yr,,18.3110554,42.597363,Abha,KSA
+fcrottachegern,Rottach-Egern,Rwbb,wb,x-wb,,47.6894886,11.788549,Rottach-Egern,GER
+fkstruga,Struga,Swrw,wr,b-wwr,,41.1729153,20.6791833,Struga,NMK
+golgohar,Gwaa,wa,x-wa,,29.4279643,55.6739983,Sirjan,IRN
+hapoelummalfahm,Hapoel Umm Al Fahm,Ukrr,kr,x-kr,,32.5332,35.1558,Umm Al Fahm,ISR
+lauuniversitarios,La U Universitarios,Ubff,bf,d-bfb,,Desamparados,CRC
+ncmagra,NC Magra,Mnww,nw,x-nw,,35.6177564,5.0999335,Magra,ALG
+oppsal,Oppsal,Owbb,wb,x-wb,,59.9058025,10.8462971,Oslo,NOR
+penybont,Pen-y-Bont,Pnhh,nh,x-nh,,51.5120217,-3.6099153,Pen-y-Bont,WAL
+rccesena,RC Cesena,Cwnw,wn,s-nnw,,44.140378,12.261882,Cesena,ITA
+turudusseldorf,TuRU D&uuml;sseldorf,Tbww,bw,x-bw,,51.2086441,6.791942,D&uuml;sseldorf,GER
