@@ -3665,7 +3665,7 @@ mksolawa,MKS O&lstrok;awa,Okgg,kg,x-kg,,50.9485491,17.2925302,O&lslash;awa,POL
 mladaboleslav,Mlada Boleslav,Mhww,hw,x-hw,,50.4270713,14.9170563,Mlad&aacute; Boleslav,CZE
 mladostcd,Mladost Carev Dvor,Cwgg,wg,x-wg,,41.0896435,20.9965145,Carev Dvor,NMK
 mladostlucani,Mladost Lu&ccaron;ani,Mbww,bw,x-bw,,43.8600142,20.1324569,Lu&ccaron;ni,SRB
-mladostpodgorica,Mladost Podgorica,Mwrr,wr,x-wr,,42.4441931,19.2819732,Podgorica,MNE
+mladostpodgorica~fkpodgorica,Mladost Podgorica,Mwrr,wr,x-wr,,42.4441931,19.2819732,Podgorica,MNE
 mladostzdralovi,Mladost &Zcaron;dralovi,Zwrr,wr,x-wr,,45.883333,16.866667,&Zcaron;dralovi,CRO
 mlsallstars,MLS All-Stars,Mwnn,wn,x-wn,,38.8935128,-77.1546602,Washington D.C.,USA
 mo,Mo,Mwvv,wv,x-wv,,66.3203534,14.1519123,Mo i Rana,NOR
@@ -5073,7 +5073,7 @@ spartaksemey,Spartak Semey,Swrr,wr,x-wr,,50.4149465,80.2411453,Semey,KAZ
 spartaktambov,Spartak Tambov,Swrr,wr,x-wr,,52.746401,41.4107333,Tambov,RUS
 spartakutnahora,Sparta Kutn&aacute; Hora,Srwr,rw,s-rrw,,49.9579405,15.2700918,Kutn&aacute; Hora,CZE
 spartakvarna,Spartak Varna,Swbb,wb,x-wb,,43.218611,27.9125,Varna,BUL
-spartakvladikavkaz~alaniavladikavkaz,Spartak Vladikavkaz,Syry,yr,s-rry,,43.02301,44.695119,Vladikavkaz,RUS
+spartakvladikavkaz~alaniavladikavkaz~fcalaniavladikavkaz,Spartak Vladikavkaz,Syry,yr,s-rry,,43.02301,44.695119,Vladikavkaz,RUS
 spartakyoshkarola,Spartak Yoshkar-Ola,Srww,rw,x-rw,,56.62272,47.8933023,Yoshkar-Ola,RUS
 spartanijkerk,Sparta Nijkerk,Skoo,ko,x-ko,,52.2237148,5.4988108,Nijkerk,NED
 spartansfc,Spartans,Srwr,rw,e-rrw,,55.9717067,-3.2325513,Edinburgh,SCO
@@ -6229,3 +6229,11 @@ oppsal,Oppsal,Owbb,wb,x-wb,,59.9058025,10.8462971,Oslo,NOR
 penybont,Pen-y-Bont,Pnhh,nh,x-nh,,51.5120217,-3.6099153,Pen-y-Bont,WAL
 rccesena,RC Cesena,Cwnw,wn,s-nnw,,44.140378,12.261882,Cesena,ITA
 turudusseldorf,TuRU D&uuml;sseldorf,Tbww,bw,x-bw,,51.2086441,6.791942,D&uuml;sseldorf,GER
+algharafa,Al Gharafa,Gbyy,by,x-by,,25.3447511,51.4405428,Al Rayyan,QAT
+asslimane,AS Soliman,Szkk,zk,e-zzk,,36.6934068,10.4817077,Soliman,TUN
+fcandorra,FC Andorra,Arby,yr,v-ybr,,42.5304159,1.5718389,Encamp,AND
+lasrozascf,Las Rozas,Rwbb,wb,x-wb,,40.5082735,-3.8914225,Las Rozas de Madrid,ESP
+pergolettese,US Pergolettese 1932,Pbyy,by,x-by,,45.3581474,9.6759594,Crema,ITA
+pianese,US Pianese,Pwkw,wk,s-kkw,,42.7601992,11.1063401,Piancastagnio,ITA
+sportifdechebba,CS de Chebba,Ckee,ke,x-ke,,35.2336518,11.10191,Chebba,TUN
+villarrubiacf,Villarubia,Vwbw,wb,s-bbw,,39.2226376,-3.6107511,Villarubia de los Ojos,ESP
