@@ -14,6 +14,11 @@ function CheckName($n) {
 		$tn = substr($n, 0, -1);
 		if (CheckName($tn)) { return true; } else { return false; }
 	}
+	elseif (preg_match("/q$/", $n)) { 
+		#pretty_var("Diagnostic: '<b>".$n."</b>' is women's team (DEN)?");
+		$tn = substr($n, 0, -1);
+		if (CheckName($tn)) { return true; } else { return false; }
+	}
 	elseif (preg_match("/qw$/", $n)) { 
 		#pretty_var("Diagnostic: '<b>".$n."</b>' is women's team (DEN)?");
 		$tn = substr($n, 0, -2);
@@ -229,6 +234,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 					case "COPALIB":		$fate = "Copa Lib.";		$style = "ucl ldrdata";			break;
 					case "UCLQ":		$fate = "UCL Qual.";		$style = "uclqual ldrdata";		break;
 					case "COPALIBQ":	$fate = "Copa Lib Q";		$style = "uclqual ldrdata";		break;
+					case "EL":			$fate = "UEL";				$style = "eurolg ldrdata";		break;
 					case "ELQ":			$fate = "UEL Qual.";		$style = "eurolgqual ldrdata";	break;
 					case "COPASUD":		$fate = "Copa Sud. Qual.";	$style = "eurolg ldrdata";		break;
 					case "ELQP":		$fate = "UEL Playoffs";		$style = "eurolgqual ldrdata";	break;
@@ -321,8 +327,8 @@ function doCoaches($mgrs, $h, $a) {
 	list($ch, $ca) = explode("~", $mgrs);
 	$mh = explode(":", $ch);
 	$ma = explode(":", $ca);
-	if (len($mh[1] > 2)) { $mhf = doFlag(substr($h, 0, 1), $mh[1]); } else { $mhf = ""; }
-	if (len($ma[1] > 2)) { $maf = doFlag(substr($a, 0, 1), $ma[1]); } else { $maf = ""; }
+	if (strlen($mh[1]) > 2) { $mhf = doFlag(substr($h, 0, 1), $mh[1]); } else { $mhf = ""; }
+	if (strlen($ma[1]) > 2) { $maf = doFlag(substr($a, 0, 1), $ma[1]); } else { $maf = ""; }
 
 	$rh = "<div class=\"matchCoach ".$h."\">".$mhf." ".$mh[0]."</div>";
 	$ra = "<div class=\"matchCoach ".$a."\">".$ma[0]." ".$maf."</div>";
