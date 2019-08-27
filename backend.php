@@ -14,6 +14,11 @@ function CheckName($n) {
 		$tn = substr($n, 0, -1);
 		if (CheckName($tn)) { return true; } else { return false; }
 	}
+	elseif (preg_match("/q$/", $n)) { 
+		#pretty_var("Diagnostic: '<b>".$n."</b>' is women's team (DEN)?");
+		$tn = substr($n, 0, -1);
+		if (CheckName($tn)) { return true; } else { return false; }
+	}
 	elseif (preg_match("/qw$/", $n)) { 
 		#pretty_var("Diagnostic: '<b>".$n."</b>' is women's team (DEN)?");
 		$tn = substr($n, 0, -2);
@@ -229,6 +234,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 					case "COPALIB":		$fate = "Copa Lib.";		$style = "ucl ldrdata";			break;
 					case "UCLQ":		$fate = "UCL Qual.";		$style = "uclqual ldrdata";		break;
 					case "COPALIBQ":	$fate = "Copa Lib Q";		$style = "uclqual ldrdata";		break;
+					case "EL":			$fate = "UEL";				$style = "eurolg ldrdata";		break;
 					case "ELQ":			$fate = "UEL Qual.";		$style = "eurolgqual ldrdata";	break;
 					case "COPASUD":		$fate = "Copa Sud. Qual.";	$style = "eurolg ldrdata";		break;
 					case "ELQP":		$fate = "UEL Playoffs";		$style = "eurolgqual ldrdata";	break;
@@ -303,12 +309,8 @@ function doMatch($match, $c, $t) { //Match, Country, Type
 
 	// # Row 7 -> Coaches
 	if ($m[12] != "") {
-		list($c1, $c2) = explode("~", $m[12]);
-		$mgr1 = explode(":", $c1);
-		$mgr2 = explode(":", $c2);
-		$r1 = "<div class=\"matchCoach ".$hCol."\">".doFlag(substr($hCol, 0, 1), $mgr1[1])." ".$mgr1[0]."</div>";
-		$r2 = "<div class=\"matchCoach ".$aCol."\">".$mgr2[0]." ".doFlag(substr($aCol, 0, 1), $mgr2[1])."</div>";
-		print t(8)."<tr><td colspan=\"10\">".$r1."</td><td colspan=\"10\">".$r2."</td></tr>\n";
+		list($Ch, $Ca) = doCoaches($m[12], $hCol, $aCol);
+		print t(8)."<tr><td colspan=\"10\">".$Ch."</td><td colspan=\"10\">".$Ca."</td></tr>\n";
 	}
 
 	# Row 8 -> Facts
@@ -320,6 +322,18 @@ function doMatch($match, $c, $t) { //Match, Country, Type
 	print t(8)."<tr><td colspan=\"20\" class=\"matchBottom ".$hCol."\"></td></tr>\n";
 	print t(8)."</table>\n";
 	print t(7)."</div>\n";
+}
+function doCoaches($mgrs, $h, $a) {
+	list($ch, $ca) = explode("~", $mgrs);
+	$mh = explode(":", $ch);
+	$ma = explode(":", $ca);
+	if (strlen($mh[1]) > 2) { $mhf = doFlag(substr($h, 0, 1), $mh[1]); } else { $mhf = ""; }
+	if (strlen($ma[1]) > 2) { $maf = doFlag(substr($a, 0, 1), $ma[1]); } else { $maf = ""; }
+
+	$rh = "<div class=\"matchCoach ".$h."\">".$mhf." ".$mh[0]."</div>";
+	$ra = "<div class=\"matchCoach ".$a."\">".$ma[0]." ".$maf."</div>";
+
+	return array($rh, $ra);
 }
 function doMatchStage($stage, $s) { //stage, style
 
@@ -403,6 +417,21 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		$tStyle = $Team[$tIdent]["Badge"] != "" ? $Team[$tIdent]["Badge"] : $Team[$tIdent]["Mjr"];
 		$tName = $Team[$tIdent]["Name"]." <b>&#9792;</b>";
 		$Flag = doFlag(substr($Team[$tIdent]["Mjr"], 2, 1), $Team[$tIdent]["Tri"]);
+		$mnr = $Team[$tIdent]["Mnr"];
+	}
+	elseif ((preg_match("/q$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
+		$status = "women";
+		$tIdent = substr($t, 0, -1);
+		$tStyle = $Team[$tIdent]["Badge"] != "" ? $Team[$tIdent]["Badge"] : $Team[$tIdent]["Mjr"];
+		$tName = $Team[$tIdent]["Name"]." <b>&#9792;</b>";
+		$Flag = doFlag(substr($Team[$tIdent]["Mjr"], 2, 1), $Team[$tIdent]["Tri"]);
+		$mnr = $Team[$tIdent]["Mnr"];
+	}
+	elseif ((preg_match("/qw$/", $t)) && (array_key_exists(substr($t, 0, -2), $Team))) {
+		$status = "women";
+		$tIdent = substr($t, 0, -2);
+		$tStyle = $Team[$tIdent]["Mjr"];
+		$tName = $Team[$tIdent]["Name"]." II";
 		$mnr = $Team[$tIdent]["Mnr"];
 	}
 	elseif ((preg_match("/a$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{

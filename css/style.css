@@ -149,7 +149,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .oh	{ color: #ff9900; background-color: #00aaff;}
 .ok	{ color: #ff9900; background-color: #000000;}
 .op	{ color: #ff9900; background-color: #660099;}
-.os	{ color: #ff9900; background-color: #aaaaaa;}
+.os	{ color: #ff9900; background-color: #aaaaaa; text-shadow: 1px 1px #804500, 1px -1px #804800, -1px 1px #804500, -1px -1px #804500;}
 .ow	{ color: #ff9900; background-color: #ffffff;}
 .oy	{ color: #ff9900; background-color: #fff00c;}
 .po	{ color: #660099; background-color: #ff9900;}
