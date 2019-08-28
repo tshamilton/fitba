@@ -1996,7 +1996,7 @@ fcmotown,Motown,Mgyy,gy,x-gy,,40.761,-74.427,Morristown,USA
 fcmoutier,Moutier,Mnhh,nh,x-nh,,47.2715791,7.3577323,Moutier,SUI
 fcmulhouseportland,Mulhouse Portland,Mbww,bw,x-bw,,45.52543,-122.6515,Portland,USA
 fcmuri,Muri,Mwrr,wr,x-wr,,47.277981,8.3374151,Muri,SUI
-fcnazarethillit,Nazareth Illit,Nkrk,kr,s-wkr,,32.6898,35.311325,Nazareth Illit,ISR
+hapoelnofhagalil~fcnazarethillit,Hapoel Nof HaGalil,Nkrk,kr,s-wkr,,32.6898,35.311325,Nazareth Illit,ISR
 fcoberlausitzneugersdorf,Oberlausitz Neugersdorf,Owbb,wb,x-wb,,54.320728,10.130581,Ebersbach-Neugersdorf,GER
 fcobermais,Obermais,Owbb,wb,x-wb,,46.6661574,11.1467757,Meran,ITA
 fcolexandria,Oleksandria,Okyy,ky,d-kyk,x301,48.6745185,33.1038491,Olexandria,UKR
@@ -6223,7 +6223,7 @@ fcrottachegern,Rottach-Egern,Rwbb,wb,x-wb,,47.6894886,11.788549,Rottach-Egern,GE
 fkstruga,Struga,Swrw,wr,b-wwr,,41.1729153,20.6791833,Struga,NMK
 golgohar,Gol-Gohar Sirjan,Gwaa,wa,x-wa,,29.4279643,55.6739983,Sirjan,IRN
 hapoelummalfahm,Hapoel Umm Al Fahm,Ukrr,kr,x-kr,,32.5332,35.1558,Umm Al Fahm,ISR
-lauuniversitarios,La U Universitarios,Ubff,bf,d-bfb,,Desamparados,CRC
+lauuniversitarios,La U Universitarios,Ubff,bf,d-bfb,,9.889628,-84.049322,Desamparados,CRC
 ncmagra,NC Magra,Mnww,nw,x-nw,,35.6177564,5.0999335,Magra,ALG
 oppsal,Oppsal,Owbb,wb,x-wb,,59.9058025,10.8462971,Oslo,NOR
 penybont,Pen-y-Bont,Pnhh,nh,x-nh,,51.5120217,-3.6099153,Pen-y-Bont,WAL
@@ -6237,3 +6237,11 @@ pergolettese,US Pergolettese 1932,Pbyy,by,x-by,,45.3581474,9.6759594,Crema,ITA
 pianese,US Pianese,Pwkw,wk,s-kkw,,42.7601992,11.1063401,Piancastagnio,ITA
 sportifdechebba,CS de Chebba,Ckee,ke,x-ke,,35.2336518,11.10191,Chebba,TUN
 villarrubiacf,Villarubia,Vwbw,wb,s-bbw,,39.2226376,-3.6107511,Villarubia de los Ojos,ESP
+managuafc,Managua,Myby,yb,e-yyb,,12.131667,-86.285,Managua,NCA
+svrobinhood,Robin Hood,wgr,s-wgr,,5.811475,-55.207308,Paramaribo,SUR
+1fcolesniceubouzova,1. FC Ole&#353;nice u Bouzova,Owhw,hw,s-wwh,,49.698041,16.935894,Bouzova,CZE
+fkchlumecnadcidlinou,Chlumec nad Cidlinou,Cwaa,wa,x-wa,,50.1524291,15.466033,Chlumec nad Cidlinou,CZE
+fkprepere,FK P&#345;epe&#345;e,Pkyy,ky,x-ky,,50.586906,15.1119595,P&#345;epe&#345;e,CZE
+motorletprague,Motorlet Prague,Mnrr,nr,x-nr,,50.0620097,14.3590645,Jinonice,CZE
+tjsokollanzhot,TJ Sokol Lan&#381;hot,Lrww,lrw,x-rw,,48.723769,16.9711513,Lan&#381;hot,CZE
+viktoriamarianskelazne,Viktoria Mari&aacute;nsk&eacute; L&aacute;zn&#283;,Vbyy,by,x-by,,49.9625952,12.7055168,Mari&aacute;nsk&eacute; L&aacute;zn&#283;,CZE
