@@ -1,4 +1,3 @@
-
 11oktomvri,11 Oktomvri,1rww,rw,x-rw,,41.343611,21.561944,Prilep,NMK
 12bingolspor,12 Bing&ouml;lspor,1gww,gw,x-gw,,38.886111,40.501667,Bing&ouml;l,TUR
 12deoctubre,12 de Octubre,1bwb,wb,s-bbw,,-25.383333,-57.333333,Itaugu&aacute;,PAR
@@ -1140,7 +1139,7 @@ cesson,OC Cesson,Cnrr,nr,x-nr,,48.1251663,-1.5898411,Cesson-S&eacute;vign&eacute
 cfamerica,Club Am&eacute;rica,Cbyr,by,e-rby,,19.3028607,-99.1505277,Mexico City,MEX
 cfperalada,Peralada,Pwgw,wg,s-kgw,,42.3109078,3.0138046,Perelada,ESP
 cfplatgesdecalvia,Platges de Calvi&agrave;,Pkow,wo,s-kow,,39.5118417,2.5319151,Illes Balears,ESP
-cfrcluj,CFR Cluj Napoca,Cwcc,wc,x-wc,,46.779678,23.577247,Cluj-Napoca,ROU
+cfrcluj,CFR Cluj Napoca,Cwcc,wc,x-wc,x303,46.779678,23.577247,Cluj-Napoca,ROU
 cfripoll,Ripoll,Rwbw,wb,d-wbw,,42.1937627,2.1919856,Ripoll,ESP
 cfungheni,CF Ungheni,Uwob,wo,d-wowb,,47.078931,28.180499,Nisporeni,MDA
 chababatlaskhenifra,Chabab Atlas Kh&eacute;nifra,Cwrw,wr,s-rrw,,32.9352,-5.6401,Kh&eacute;nifra,MAR
@@ -1789,7 +1788,7 @@ eskilsminneif,Eskilsminne,Eyby,yb,s-bby,,56.0319766,12.7245908,Helsingborg,SWE
 eskilstunauniteddff,Eskilstuna United DFF,Ewbb,wb,x-wb,,59.370667,16.495,Eskilstuna,SWE
 eskisehirspor,Eski&scedil;ehirspor,Ekrr,kr,b-kkr,,39.7709104,30.5135223,Eski&scedil;ehir,TUR
 eslovs,Esl&ouml;vs,Ekrk,kr,s-kkr,,55.838171,13.2896213,Esl&ouml;v,SWE
-espanyol,Real Espanyol,Ewbw,wb,b-wwb,,41.347861,2.075667,Barcelona,ESP
+espanyol,Real Espanyol,Ewbw,wb,b-wwb,x306,41.347861,2.075667,Barcelona,ESP
 esperance,Esp&eacute;rance Sportif de Tunis,Ekyr,ky,s-kry,,36.7479797,10.2726928,Tunis,TUN
 espinho,Sporting Espinho,Ekww,kw,s-kkw,,41.0020847,-8.647356,Espinho,POR
 esplagos,Esperan&ccedil;a de Lagos,Ebyy,by,x-by,,37.116543,-8.677804,Lagos,POR
@@ -1936,7 +1935,6 @@ fcgoldenstateforce,Golden State Force,Gkww,kw,x-kw,,34.131416,-117.882743,Glendo
 fcgossau,Gossau,Gwbb,wb,e-wwb,,47.4097951,9.2521914,Gossau,SUI
 fcgreifensee,Greifensee,Gkyy,ky,x-ky,,47.3735093,8.672517,Greifensee,SUI
 fcgrimma,Grimma,Grww,rw,x-rw,,51.239641,12.7257033,Grimma,GER
-fcgroningen,Groningen,Ggwg,gw,s-gwgwg,x078,53.2067858,6.5919917,Groningen,NED
 fcgullegem,Gullegem,Grww,rw,x-rw,,50.840037,3.1977274,Gullegem,BEL
 fcgulpen,Gulpen,Gkyy,ky,x-ky,,50.8177739,5.9017236,Gulpen,NED
 fcgute,Gute,Gkoo,ko,x-ko,,57.635317,18.2974398,Gute,SWE
@@ -2130,7 +2128,7 @@ femhojif,Femh&oslash;j IF,Fkoo,ko,x-ko,,55.8372242,11.9876167,Femh&oslash;j,DEN
 fenerbahce,Fenerbah&ccedil;e,Fnyn,yn,s-nny,x076,40.9876894,29.0365648,Istanbul,TUR
 fenix~cafenix,Fenix,Fkwk,kw,s-kkw,,-34.4699339,-58.9187089,Pilar Centro,ARG
 feralpisalo,FeralpiSal&ograve;,Fwgb,gb,v-wgb,,45.603944,10.513083,Sal&ograve;,ITA
-ferencvaros,Ferencvaros,Fwgw,wg,s-ggw,,47.4754906,19.0952709,Budapest,HUN
+ferencvaros,Ferencvaros,Fwgw,wg,s-ggw,x304,47.4754906,19.0952709,Budapest,HUN
 fermana,Fermana,Fbyy,by,x-by,,43.1676033,13.7298578,Fermo,ITA
 feronikeli,Feronikeli,Fwgg,wg,x-wg,,42.616446,20.903551,Glogovac,KOS
 ferrocarriloeste~ferrocarriloestegeneralpico,Ferrocarril Oeste General Pico,Fwgg,wg,e-wwg,,-35.6609312,-63.7862173,General Pico,ARG
@@ -2379,7 +2377,7 @@ gent~aagent,AA Gent,Gbwb,bw,b-bbw,x042,51.016111,3.734167,Ghent,BEL
 germaniahalberstadt,Germania Halberstadt,Gkrr,kr,x-kr,,51.8760636,11.0498979,Halberstadt,GER
 germinalbeerschot~kfcobeerschotwilrijk,Beerschot Wilrijk,Wwpw,wp,b-wwp,,51.1934558,4.3763513,Wilrijk,BEL
 gersthofersv,Gersthofer SV,Gkgw,wg,b-kwg,,48.2252712,16.3284259,Gersthof,AUT
-getafe,Getafe,Gwbb,wb,x-wb,,40.3257267,-3.7149399,Getafe,ESP
+getafe,Getafe,Gwbb,wb,x-wb,x298,40.3257267,-3.7149399,Getafe,ESP
 geylangunitedfc~geylanginternationalfc,Geylang International,Gwgw,wg,h-ggw,,1.3265123,103.9393749,Singapore,SIN
 gfasportingwestlake,GFA Sporting Westlake,Gkrr,kr,x-kr,,1.3393491,103.8632722,Singapore,SIN
 gfcgoor,GFC Goor,Gwrk,rk,s-wkr,,52.2410141,6.5956781,Goor,NED
@@ -2499,7 +2497,7 @@ grimsbytown,Grimsby Town,Grkw,wk,s-rkw,,53.5702307,-0.0465604,Grimsby,ENG
 grindavik,UMF Grindav&iacute;k,Gbyy,by,x-by,,63.844635,-22.4296277,Grindav&iacute;k,ISL
 groenester,Groene Ster,Ggww,gw,x-gw,,50.9129115,5.9669767,Heerlerheide,NED
 grombaliasports,Grombalia Sports,Gwbw,wb,s-bbw,,36.5934635,10.5033377,Grombalia,TUN
-groningen,Groningen,Ggwg,gw,s-gwgwg,x078,53.2067858,6.5919917,Groningen,NED
+groningen~fcgroningen,Groningen,Ggwg,gw,s-gwgwg,x078,53.2067858,6.5919917,Groningen,NED
 grorud,Grorud IL,Gbyy,by,x-by,,59.9586375,10.8776994,Oslo,NOR
 grosseto,US Grosseto,Gwrr,wr,d-wrw,,42.7591222,11.1076019,Grosseto,ITA
 grossklein,Gro&szlig;klein,Gwrr,wr,x-wr,,46.7381802,15.4361966,Gro&szlig;klein,GER
@@ -3264,7 +3262,7 @@ larne,Larne,Lwrr,wr,x-wr,,54.8499941,-5.8291817,Larne,NIR
 laroda,La Roda,Rbrr,br,x-br,,39.2008544,-2.153728,La Roda,ESP
 lasaintcolombanlocmine,St Colomban Locmin&eacute;,Lree,re,x-re,,47.8801101,-2.8308144,Locmin&eacute;,FRA
 laserena,La Serena,Swrr,wr,x-wr,,-29.911111,-71.251944,La Serena,CHI
-lasklinz~lask,LASK Linz,Swkw,wk,s-kkw,,48.2361294,14.2280783,Linz,AUT
+lasklinz~lask,LASK Linz,Swkw,wk,s-kkw,x305,48.2361294,14.2280783,Linz,AUT
 laspalmas,Las Palmas,Pbyy,by,x-by,,28.1004063,-15.4567456,Las Palmas,ESP
 lasrozascf,Las Rozas,Rwbb,wb,x-wb,,40.5082735,-3.8914225,Las Rozas de Madrid,ESP
 lassee,Lassee,Lwgg,wg,x-wg,,48.2194378,16.8256969,Lassee,AUT
@@ -5023,7 +5021,7 @@ slivnishkigeroi,Slivnishki Geroi Slivnitsa,Skoo,ko,x-ko,,42.8582436,23.0300957,S
 slobodatuzla,Sloboda Tuzla,Skrk,rk,s-wkr,,44.5418275,18.661445,Tuzla,BIH
 slough~sloughtown,Slough Town,Sbyy,by,x-by,,51.519746,-0.5917037,Slough,ENG
 slovacko,1. FC Slov&aacute;cko,Snww,nw,x-nw,,49.0655002,17.4714571,Uhersk&eacute; Hradi&scaron;t&ecaron;,CZE
-slovanbratislava,Slovan Bratislava,Swff,wf,x-wf,,48.1661334,17.1424825,Bratislava,SVK
+slovanbratislava,Slovan Bratislava,Swff,wf,x-wf,x307,48.1661334,17.1424825,Bratislava,SVK
 slovanliberec,Slovan Liberec,Lwbb,wb,x-wb,x107,50.776198,15.0500372,Liberec,CZE
 slovanvarnsdorf,Slovan Varnsdorf,Sbyy,by,x-by,,50.9149065,14.6167362,Varnsdorf,CZE
 slovanvelvary,Slovan Velvary,Vbwb,bw,e-bbw,,50.2815979,14.2303193,Velvary,CZE
@@ -5556,7 +5554,7 @@ tpostrovia1909,TP Ostrovia 1909,Twrw,rw,s-rrw,,51.6431018,17.8216258,Ostr&oacute
 tpsturku~turkups~tps,TPS Turku,Twkw,kw,s-kkw,,60.4426938,22.291491,Turku,FIN
 tpvtampere,Tampereen Pallo-Veikot,Twrg,wr,x-wr,,61.5002626,23.7853792,Tampere,FIN
 trabzonakcaabat,Ak&ccedil;aabat Sebatspor,Twrw,wr,s-rrw,,41.0175469,39.5843364,Ak&ccedil;aabat,TUR
-trabzonspor,Trabzonspor,Thch,hc,s-cch,,40.9945253,39.6572837,Trabzon,TUR
+trabzonspor,Trabzonspor,Thch,hc,s-cch,x308,40.9945253,39.6572837,Trabzon,TUR
 tractorsazitabriz,Tractor Sazi Tabriz,Twrw,wr,b-wwr,,38.0267669,46.2960555,Tabriz,IRN
 traeff~traff,SK Tr&aelig;ff,Tgww,gw,x-gw,,62.7398041,7.1518076,Molde,NOR
 trakufk,Traku,Tnyy,ny,x-ny,,54.6691898,25.294696,Vilnius,LTU
