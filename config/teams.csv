@@ -286,7 +286,7 @@ alsharkeyah,El Sharkia,Swgg,wg,x-wg,,30.566667,31.5,Zagazig,EGY
 alshoalah,Al Shoalah,Sgww,gw,x-gw,,24.0957,47.205,Al-Kharj,KSA
 alsuwaiq,Al Suwaiq,Skyy,ky,x-ky,,23.618716,58.2165374,Sib,OMA
 alta,Alta IF,Ayby,yb,s-bby,,69.9746,23.2955,Alta,NOR
-altaawon,Al Taawon,Tbyy,by,x-by,,26.378889,43.947778,Buraidah,KSA
+altaawon~altaawoun,Al Taawon,Tbyy,by,x-by,,26.378889,43.947778,Buraidah,KSA
 altach,Rheindorf Altach,Akww,kw,x-kw,,47.353889,9.636667,Altach,AUT
 altadhamon,Al Tadhamon,Twbb,wb,x-wb,,29.2888925,47.9629513,Al Tadhamon,KUW
 altaee,Al Tai,Tkww,kw,x-kw,,27.50398,41.697589,Ha'il,KSA
@@ -786,6 +786,7 @@ bkastrio,BK Astrio,Akyy,ky,x-ky,,56.6700313,12.7986091,Halmstad,SWE
 bkforward,BK Forward,Fkyy,ky,x-ky,,59.2779651,15.1858547,&Ouml;rebro,SWE
 bkheimdal,BK Heimdal,Hwgg,wg,x-by,,55.699722,12.57,K&oslash;bnhaven,DEN
 bkolympic,Olympic Malm&ouml;,Owgg,wg,x-wg,,55.5551852,13.0121436,Malm&ouml;,SWE
+bkunion,BoldKlubben Union,Uwrr,wr,x-wr,,55.699355,12.517654,K&oslash;benhavn,DEN
 bkvnorrtalje,BKV Norrt&auml;lje,Nbrr,br,x-br,,59.7519023,18.6976447,Norrt&auml;lje,SWE
 blackburnrovers,Blackburn Rovers,Rwbb,wb,v-rbw,x186,53.7285943,-2.4891959,Blackburn,ENG
 blackleopards,Black Leopards,Bkyy,ky,x-ky,,-22.986269,30.46255,Thohoyandou,RSA
@@ -1229,6 +1230,7 @@ ciliverghemazzano,ASDP Ciliverghe di Mazzano,Cbyy,by,e-bby,,45.5176767,10.351523
 cimarronesdesonora,Cimarrones de Sonora,Cnrr,nr,x-nr,,29.107694,-110.995764,Hermosillo,MEX
 cincinnatidutchlions,Cincinnati Dutch Lions,Coww,wo,b-oow,,39.0306033,-84.4660243,Cincinnati,USA
 cinemadranspor,&Ccedil;ine Madranspor,Cgyg,gy,s-ggy,,37.606827,28.059199,&Ccedil;ine,TUR
+circulodeportivo,Circulo Deportivo,Cgwr,gr,o-gwgr,,-38.1165329,-57.8491019,Nicanor Otamendi,ARG
 cirencestertown,Cirencester Town,Ckrk,kr,s-kkr,,51.7115186,-1.9472044,Cirencester Town,ENG
 cittadella,AS Cittadella,Cwcc,wc,x-wc,,45.6428912,11.7810828,Cittadella,ITA
 cittadifasano,USD Citt&agrave; di Fasano,Fwbw,bw,s-wwb,,40.8297087,17.3525455,Fasano,ITA
@@ -1262,6 +1264,7 @@ clubpetrolero,Club Petrolero,Pwgg,wg,x-wg,,-21.9998049,-63.805436,Yacuiba,BOL
 clubrivadavia,Club Rivadavia,Rrwr,rw,s-wwr,,-34.8684492,-61.5290906,Lincoln,ARG
 clubriverplate,Club River Plate Asunci&oacute;n,Rrww,rw,d-rwr,,-25.3012466,-57.6014337,Asunci&oacute;n,PAR
 clubsportherediano,CS Herediano,Hrur,ru,v-uur,,9.9995175,-84.1231071,Heredia,CRC
+clubsportivopenarol,CS Pe&ntilde;arol,Prbw,wb,s-rbwr,,-31.5205441,-68.5307047,Chimbas,ARG
 clubxelaju,Xelaj&uacute;,Xbrr,br,x-br,,14.8417644,-91.5170802,Quetzaltenango,GUA
 clubzacatepec,Club Zacatepec,Zgww,gw,e-ggw,,18.655145,-99.1921449,Zacatepec,MEX
 clusone,US Clusone,Cnhh,nh,x-nh,,45.8847251,9.9471476,Clusone,ITA
@@ -4115,7 +4118,7 @@ pachuca,Pachuca,Pwbw,bw,s-bbw,,20.105144,-98.756114,Pachuca,MEX
 pacificfc,Pacific,Hwpp,wp,x-wp,,48.443056,-123.519444,Langford,CAN
 pacosdeferreira,Pa&ccedil;os de Ferreira,Pgyy,gy,x-gy,,41.270585,-8.3856525,Pa&ccedil;os de Ferreira,POR
 paderborn,SC Paderborn 07,Pakk,ak,x-ak,,51.7301715,8.7112373,Paderborn,GER
-padideh~padidehfc,Padideh,Prww,rw,x-rw,,36.425944,59.383829,Mashhad,IRN
+padideh~padidehfc~shahrkhodroufc,Padideh,Prww,rw,x-rw,,36.425944,59.383829,Mashhad,IRN
 padova,Padova,Prww,rw,x-rw,,45.4324229,11.8583106,Padua,ITA
 paeek,PAEE Kerynias,Kyky,yk,s-kky,,35.2180837,33.1701489,Kyrenia,CYP
 paernulinnameeskond,P&auml;rnu Linnameeskond,Pkyy,ky,x-ky,,58.3749257,24.503125,P&auml;rnu,EST
@@ -5555,7 +5558,7 @@ tpsturku~turkups~tps,TPS Turku,Twkw,kw,s-kkw,,60.4426938,22.291491,Turku,FIN
 tpvtampere,Tampereen Pallo-Veikot,Twrg,wr,x-wr,,61.5002626,23.7853792,Tampere,FIN
 trabzonakcaabat,Ak&ccedil;aabat Sebatspor,Twrw,wr,s-rrw,,41.0175469,39.5843364,Ak&ccedil;aabat,TUR
 trabzonspor,Trabzonspor,Thch,hc,s-cch,x308,40.9945253,39.6572837,Trabzon,TUR
-tractorsazitabriz,Tractor Sazi Tabriz,Twrw,wr,b-wwr,,38.0267669,46.2960555,Tabriz,IRN
+tractorsazitabriz~tractorfc,Tractor Sazi Tabriz,Twrw,wr,b-wwr,,38.0267669,46.2960555,Tabriz,IRN
 traeff~traff,SK Tr&aelig;ff,Tgww,gw,x-gw,,62.7398041,7.1518076,Molde,NOR
 trakufk,Traku,Tnyy,ny,x-ny,,54.6691898,25.294696,Vilnius,LTU
 tranasff,Tran&aring;s,Tkrk,rk,s-kkr,,58.0281941,15.0064028,Tran&aring;s,SWE
