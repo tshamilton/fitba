@@ -162,6 +162,7 @@ romania,Romania,by,o-byr,x101,45.943161,24.96676,7,ROU
 russia,Russia,wd,x-wd,x122,61.52401,105.318756,4,RUS
 rwanda,Rwanda,yg,h-byg,,-1.940278,29.873888,9,RWA
 saintlucia,St. Lucia,kf,b-kyf,,13.909444,-60.978893,8,LCA
+saintmartin,St. Martin,by,s-bby,,18.0647624,-63.1518563,12,SMN
 saintvincentandthegrenadines,St. Vincent &amp; Grenadines,by,x-by,,12.984305,-61.287228,8,VIN
 samoa,Samoa,wb,x-wb,,-13.759029,-172.104629,10,SAM
 sanmarino,San Marino,wb,x-wb,,43.94236,12.457777,13,SMR
@@ -189,7 +190,7 @@ sweden,Sweden,by,x-by,x130,60.128161,18.643501,5,SWE
 switzerland,Switzerland,wr,x-wr,x112,46.818188,8.227512,8,SUI
 syria,Syria,wr,x-wr,,34.802075,38.996815,7,SYR
 tahiti,Tahiti,wr,x-wr,,-17.631026,-149.5472408,11,TAH
-taiwan,Taiwan,wb,e-wrb,,23.69781,120.960515,8,TPE
+taiwan~chinesetaipei,Taiwan,wb,e-wrb,,23.69781,120.960515,8,TPE
 tajikistan,Tajikistan,rw,x-rw,,38.861034,71.276093,8,TJK
 tanzania,Tanzania,kb,x-kb,,-6.369028,34.888822,7,TAN
 thailand,Thailand,ky,x-ky,,15.870032,100.992541,6,THA
@@ -210,7 +211,7 @@ uzbekistan,Uzbekistan,bw,x-bw,,41.377491,64.585262,7,UZB
 vanuatu,Vanuatu,ku,x-ku,,-15.376706,166.959158,8,VAN
 venezuela,Venezuela,wc,x-wc,,6.42375,-66.58973,7,VEN
 vietnam,Vietnam,yr,x-yr,,14.058324,108.277199,6,VIE
-virginislands,US Virgin Islands,yb,x-yb,,18.335765,-64.896335,8,VIR
+virginislands~usvirginislands,US Virgin Islands,yb,x-yb,,18.335765,-64.896335,8,VIR
 wales,Wales,wr,x-wr,x124,52.2901285,-3.9158267,8,WAL
 yemen,Yemen,wr,x-wr,,15.552727,48.516388,7,YEM
 zambia,Zambia,og,x-og,,-13.133897,27.849332,7,ZAM
