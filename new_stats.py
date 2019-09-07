@@ -88,7 +88,6 @@ with open(the_nations) as f:
 
 with open(the_teams) as f:
 	orig_teams = f.read().splitlines()
-
 	f.close()
 
 with open(the_comps) as f:
