@@ -103,7 +103,7 @@ japan,Japan,rw,x-rw,x006,36.204824,138.252924,6,JPN
 jordan,Jordan,rw,x-rw,,30.585164,36.238414,8,JOR
 kazakhstan,Kazakhstan,yb,x-yb,,48.019573,66.923684,6,KAZ
 kenya,Kenya,gr,x-gr,,-0.023559,37.906193,7,KEN
-koreadpr~northkorea,North Korea,kw,x-kw,,40.339852,127.510093,7,PRK
+northkorea~koreadpr,North Korea,kw,x-kw,,40.339852,127.510093,7,PRK
 southkorea,South Korea,br,x-br,x109,35.907757,127.766922,6,KOR
 kosovo,Kosovo,wb,x-wb,,42.602636,20.902977,9,KOS
 kuwait,Kuwait,wb,x-wb,x212,29.31166,47.481766,9,KUW
@@ -175,6 +175,7 @@ serbia,Serbia,wr,x-wr,x246,44.016521,21.005859,7,SRB
 seychelles,Seychelles,wr,x-wr,,-4.679574,55.491977,9,SEY
 sierraleone,Sierra Leone,wb,x-wb,,8.460555,-11.779889,8,SLE
 singapore,Singapore,wr,x-wr,,1.352083,103.819836,12,SIN
+sintmaarten,Sint Maarten,wr,x-wr,,18.0289137,-63.0518085,13,SMA
 slovakia,Slovakia,bw,x-bw,x131,48.669026,19.699024,8,SVK
 slovenia,Slovenia,gw,x-gw,x108,46.151241,14.995463,9,SVN
 solomonislands,Solomon Islands,by,x-by,,-9.64571,160.156194,8,SOL
