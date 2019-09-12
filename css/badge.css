@@ -815,11 +815,11 @@
 	text-shadow: -1px -1px 0 #009900,1px -1px 0 #009900,-1px 1px 0 #009900,1px 1px 0 #009900;
 }
 .x119 {
-	background-image: url('../image/logos/ireland.png');
+	background-image: url('../image/logos/trabzonspor.png');
 	background-color: #ffffff;
 	background-size: 100% 100%;
-	color: #ffffff;
-	text-shadow: -1px -1px 0 #009900,1px -1px 0 #009900,-1px 1px 0 #009900,1px 1px 0 #009900;
+	color: #00aaff;
+	text-shadow: -1px -1px 0 #990044,1px -1px 0 #990044,-1px 1px 0 #990044,1px 1px 0 #990044;
 }
 .x120 {
 	background-image: url('../image/logos/northernireland.png');
@@ -1802,13 +1802,6 @@
 	text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;
 }
 .x260 {
-	background-image: url('../image/logos/gremio.png');
-	background-color: #ffffff;
-	background-size: 100% 100%;
-	color: #ffffff;
-	text-shadow: -1px -1px 0 #00aaff, 1px -1px 0 #00aaff, -1px 1px 0 #00aaff, 1px 1px 0 #00aaff;
-}
-.x260 {
 	background-image: url('../image/logos/argentinosjuniors.png');
 	background-color: #ffffff;
 	background-size: 100% 100%;
@@ -2143,11 +2136,4 @@
 	background-size: 100% 100%;
 	color: #77aadd;
 	text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;
-}
-.x308 {
-	background-image: url('../image/logos/trabzonspor.png');
-	background-color: #ffffff;
-	background-size: 100% 100%;
-	color: #00aaff;
-	text-shadow: -1px -1px 0 #990044,1px -1px 0 #990044,-1px 1px 0 #990044,1px 1px 0 #990044;
 }
