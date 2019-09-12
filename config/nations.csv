@@ -52,6 +52,7 @@ cuba,Cuba,wr,x-wr,,21.521757,-77.781167,7,CUB
 curacao,Cura&ccedil;ao,yb,x-yb,,12.2142767,-68.9874252,11,CUW
 cyprus,Cyprus,bw,x-bw,,35.126413,33.429859,9,CYP
 czechoslovakia,Czechoslovakia,wr,x-wr,x191,,,8,CZS
+czechoslovakia,Czechoslovakia,wr,x-wr,x191,49.817492,15.472962,8,CZS
 czechrepublic,Czech Republic,wr,x-wr,x072,49.817492,15.472962,8,CZE
 denmark,Denmark,wr,x-wr,x192,56.26392,9.501785,8,DEN
 djibouti,Djibouti,wf,x-wf,,11.825138,42.590275,9,DJI
@@ -103,8 +104,7 @@ japan,Japan,rw,x-rw,x006,36.204824,138.252924,6,JPN
 jordan,Jordan,rw,x-rw,,30.585164,36.238414,8,JOR
 kazakhstan,Kazakhstan,yb,x-yb,,48.019573,66.923684,6,KAZ
 kenya,Kenya,gr,x-gr,,-0.023559,37.906193,7,KEN
-northkorea~koreadpr,North Korea,kw,x-kw,,40.339852,127.510093,7,PRK
-southkorea,South Korea,br,x-br,x109,35.907757,127.766922,6,KOR
+koreadpr~northkorea,North Korea,kw,x-kw,,40.339852,127.510093,7,PRK
 kosovo,Kosovo,wb,x-wb,,42.602636,20.902977,9,KOS
 kuwait,Kuwait,wb,x-wb,x212,29.31166,47.481766,9,KUW
 kyrgyzstan,Kyrgyzstan,bw,x-bw,,41.20438,74.766098,8,KGZ
@@ -118,7 +118,6 @@ liechtenstein,Liechtenstein,wr,x-wr,,47.166,9.555373,10,LIE
 lithuania,Lithuania,gy,x-gy,,55.169438,23.881275,8,LTU
 luxembourg,Luxembourg,wr,x-wr,,49.815273,6.129583,10,LUX
 macau,Macau,gw,x-gw,,22.198745,113.543873,12,MAC
-northmacedonia~macedonia~fyrmacedonia,North Macedonia,yr,x-yr,,41.608635,21.745275,9,MKD
 madagascar,Madagascar,wg,x-wg,,-18.766947,46.869107,6,MAD
 malawi,Malawi,gr,x-gr,,-13.254308,34.301525,6,MWI
 malaysia,Malaysia,ky,x-ky,,3.546991,108.9782616,7,MAS
@@ -145,6 +144,8 @@ nicaragua,Nicaragua,wb,x-wb,,12.865416,-85.207229,8,NCA
 niger,Niger,gw,e-gow,,17.607789,8.081666,6,NIG
 nigeria,Nigeria,wg,x-wg,x243,9.081999,8.675277,7,NGA
 northernireland~nireland,Northern Ireland,gw,x-gw,x120,54.6672763,-7.3625515,9,NIR
+northkorea~koreadpr,North Korea,kw,x-kw,,40.339852,127.510093,7,PRK
+northmacedonia~macedonia~fyrmacedonia,North Macedonia,yr,x-yr,,41.608635,21.745275,9,MKD
 norway,Norway,nr,x-nr,,64.296139,8.7789911,5,NOR
 oman,Oman,wr,x-wr,,21.512583,55.923255,7,OMA
 pakistan,Pakistan,wg,x-wg,,30.375321,69.345116,6,PAK
@@ -181,6 +182,7 @@ slovenia,Slovenia,gw,x-gw,x108,46.151241,14.995463,9,SVN
 solomonislands,Solomon Islands,by,x-by,,-9.64571,160.156194,8,SOL
 somalia,Somalia,wb,x-wb,,5.152149,46.199616,6,SOM
 southafrica,South Africa,gy,x-gy,,-30.559482,22.937506,6,RSA
+southkorea,South Korea,br,x-br,x109,35.907757,127.766922,6,KOR
 southsudan,South Sudan,rb,d-wbr,,7.8621772,27.4508981,7,SSD
 sovietunion,Soviet Union,wr,x-wr,x228,61.52401,105.318756,4,USR
 spain,Spain,yr,x-yr,x048,40.463667,-3.74922,7,ESP
