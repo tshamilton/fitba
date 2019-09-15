@@ -56,7 +56,11 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .bi	{ color: #0000ff; background-color: #ff9f9f;}
 .bk	{ color: #2255ff; background-color: #000000;}
 .bm	{ color: #0000ff; background-color: #ff00ff;}
+<<<<<<< HEAD
 .bo	{ color: #0000ff; background-color: #ff0000;}
+=======
+.bo	{ color: #0000ff; background-color: #ff9900;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .br	{ color: #0000ff; background-color: #ff0000;}
 .bs	{ color: #0000ff; background-color: #aaaaaa;}
 .bu	{ color: #0000ff; background-color: #ffcc00;}
@@ -137,12 +141,17 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .ng	{ color: #000099; background-color: #009900;}
 .nh	{ color: #000099; background-color: #00aaff;}
 .nm	{ color: #000099; background-color: #ff00ff;}
+<<<<<<< HEAD
 .no	{ color: #000099; background-color: #ff0000;}
+=======
+.no	{ color: #000099; background-color: #ff9900;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .nr	{ color: #000099; background-color: #ff0000;}
 .nu	{ color: #000099; background-color: #ffcc00;}
 .nw	{ color: #000099; background-color: #ffffff;}
 .ny	{ color: #000099; background-color: #fff00c;}
 .nz	{ color: #000099; background-color: #00ff00;}
+<<<<<<< HEAD
 .ob	{ color: #ff0000; background-color: #0000ff;}
 .og	{ color: #ff0000; background-color: #009900;}
 .oh	{ color: #ff0000; background-color: #00aaff;}
@@ -153,6 +162,18 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .ow	{ color: #ff0000; background-color: #ffffff;}
 .oy	{ color: #ff0000; background-color: #fff00c;}
 .po	{ color: #660099; background-color: #ff0000;}
+=======
+.ob	{ color: #ff9900; background-color: #0000ff;}
+.og	{ color: #ff9900; background-color: #009900;}
+.oh	{ color: #ff9900; background-color: #00aaff;}
+.oh	{ color: #ff9900; background-color: #00aaff;}
+.ok	{ color: #ff9900; background-color: #000000;}
+.op	{ color: #ff9900; background-color: #660099;}
+.os	{ color: #ff9900; background-color: #aaaaaa; text-shadow: 1px 1px #804500, 1px -1px #804800, -1px 1px #804500, -1px -1px #804500;}
+.ow	{ color: #ff9900; background-color: #ffffff;}
+.oy	{ color: #ff9900; background-color: #fff00c;}
+.po	{ color: #660099; background-color: #ff9900;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .pr	{ color: #660099; background-color: #ff0000;}
 .pw	{ color: #660099; background-color: #ffffff;}
 .qu	{ color: #880000; background-color: #ffcc00;}
@@ -164,13 +185,21 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .rh	{ color: #ff0000; background-color: #00aaff;}
 .rk	{ color: #ff0000; background-color: #000000;}
 .rn	{ color: #ff0000; background-color: #000099;}
+<<<<<<< HEAD
 .ro	{ color: #ff0000; background-color: #ff0000;}
+=======
+.ro	{ color: #ff0000; background-color: #ff9900;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .rs	{ color: #ff0000; background-color: #aaaaaa;}
 .ru	{ color: #ff0000; background-color: #ffcc00;}
 .rw	{ color: #ff0000; background-color: #ffffff;}
 .ry	{ color: #ff0000; background-color: #fff00c;}
 .sk	{ color: #aaaaaa; background-color: #000000;}
+<<<<<<< HEAD
 .so	{ color: #aaaaaa; background-color: #ff0000; text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
+=======
+.so	{ color: #aaaaaa; background-color: #ff9900; text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .sr	{ color: #aaaaaa; background-color: #ff0000;}
 .tk	{ color: #d9ab4b; background-color: #000000;}
 .ub	{ color: #ffcc00; background-color: #0000ff;}
@@ -260,13 +289,21 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .b-kku	{ color: #000000; background: repeating-linear-gradient(to right, #000000, #000000 10%, #ffcc00 10%, #ffcc00 90%, #000000 90%, #000000); text-shadow: -1px -1px 0 #ffcc00,1px -1px 0 #ffcc00,-1px 1px 0 #ffcc00,1px 1px 0 #ffcc00;}
 .b-kkw	{ color: #000000; background: repeating-linear-gradient(to right, #000000, #000000 10%, #ffffff 10%, #ffffff 90%, #000000 90%, #000000); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .b-kky	{ color: #000000; background: repeating-linear-gradient(to right, #000000, #000000 10%, #fff00c 10%, #fff00c 90%, #000000 90%, #000000); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
+<<<<<<< HEAD
 .b-kor	{ color: #000000; background: repeating-linear-gradient(to right, #ff0000, #ff0000 10%, #ff0000 10%, #ff0000 90%, #ff0000 90%, #ff0000); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
+=======
+.b-kor	{ color: #000000; background: repeating-linear-gradient(to right, #ff9900, #ff9900 10%, #ff0000 10%, #ff0000 90%, #ff9900 90%, #ff9900); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .b-kqw	{ color: #000000; background: repeating-linear-gradient(to right, #880000, #880000 10%, #ffffff 10%, #ffffff 90%, #880000 90%, #880000); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .b-kry	{ color: #000000; background: repeating-linear-gradient(to right, #ff0000, #ff0000 10%, #fff00c 10%, #fff00c 90%, #ff0000 90%, #ff0000); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
 .b-kwb	{ color: #000000; background: repeating-linear-gradient(to right, #ffffff, #ffffff 10%, #0000ff 10%, #0000ff 90%, #ffffff 90%, #ffffff); text-shadow: -1px -1px 0 #3366ff,1px -1px 0 #3366ff,-1px 1px 0 #3366ff,1px 1px 0 #3366ff;}
 .b-kwf	{ color: #000000; background: repeating-linear-gradient(to right, #ffffff, #ffffff 10%, #77aadd 10%, #77aadd 90%, #ffffff 90%, #ffffff); text-shadow: -1px -1px 0 #77aadd,1px -1px 0 #77aadd,-1px 1px 0 #77aadd,1px 1px 0 #77aadd;}
 .b-kwg	{ color: #000000; background: repeating-linear-gradient(to right, #ffffff, #ffffff 10%, #009900 10%, #009900 90%, #ffffff 90%, #ffffff); text-shadow: -1px -1px 0 #009900,1px -1px 0 #009900,-1px 1px 0 #009900,1px 1px 0 #009900;}
+<<<<<<< HEAD
 .b-kwo	{ color: #000000; background: repeating-linear-gradient(to right, #ffffff, #ffffff 10%, #ff0000 10%, #ff0000 90%, #ffffff 90%, #ffffff); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
+=======
+.b-kwo	{ color: #000000; background: repeating-linear-gradient(to right, #ffffff, #ffffff 10%, #ff9900 10%, #ff9900 90%, #ffffff 90%, #ffffff); text-shadow: -1px -1px 0 #ff9900,1px -1px 0 #ff9900,-1px 1px 0 #ff9900,1px 1px 0 #ff9900;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .b-kwr	{ color: #000000; background: repeating-linear-gradient(to right, #ffffff, #ffffff 10%, #ff0000 10%, #ff0000 90%, #ffffff 90%, #ffffff); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
 .b-kyf	{ color: #000000; background: repeating-linear-gradient(to right, #fff00c, #fff00c 10%, #77aadd 10%, #77aadd 90%, #fff00c 90%, #fff00c); text-shadow: -1px -1px 0 #77aadd,1px -1px 0 #77aadd,-1px 1px 0 #77aadd,1px 1px 0 #77aadd;}
 .b-kyg	{ color: #000000; background: repeating-linear-gradient(to right, #fff00c, #fff00c 10%, #009900 10%, #009900 90%, #fff00c 90%, #fff00c); text-shadow: -1px -1px 0 #009900,1px -1px 0 #009900,-1px 1px 0 #009900,1px 1px 0 #009900;}
@@ -277,10 +314,17 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .b-nnh	{ color: #000099; background: repeating-linear-gradient(to right, #000099, #000099 10%, #00aaff 10%, #00aaff 90%, #000099 90%, #000099); text-shadow: -1px -1px 0 #00aaff,1px -1px 0 #00aaff,-1px 1px 0 #00aaff,1px 1px 0 #00aaff;}
 .b-nnr	{ color: #000099; background: repeating-linear-gradient(to right, #000099, #000099 10%, #ff0000 10%, #ff0000 90%, #000099 90%, #000099); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
 .b-nnu	{ color: #000099; background: repeating-linear-gradient(to right, #000099, #000099 10%, #ffcc00 10%, #ffcc00 90%, #000099 90%, #000099); text-shadow: -1px -1px 0 #ffcc00,1px -1px 0 #ffcc00,-1px 1px 0 #ffcc00,1px 1px 0 #ffcc00;}
+<<<<<<< HEAD
 .b-ohw	{ color: #ff0000; background: repeating-linear-gradient(to right, #00aaff, #00aaff 10%, #ffffff 10%, #ffffff 90%, #00aaff 90%, #00aaff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .b-oob	{ color: #ff0000; background: repeating-linear-gradient(to right, #ff0000, #ff0000 10%, #0000ff 10%, #0000ff 90%, #ff0000 90%, #ff0000); text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;}
 .b-oow	{ color: #ff0000; background: repeating-linear-gradient(to right, #ff0000, #ff0000 10%, #ffffff 10%, #ffffff 90%, #ff0000 90%, #ff0000); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .b-ppo	{ color: #660099; background: repeating-linear-gradient(to right, #660099, #660099 10%, #ff0000 10%, #ff0000 90%, #660099 90%, #660099); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
+=======
+.b-ohw	{ color: #ff9900; background: repeating-linear-gradient(to right, #00aaff, #00aaff 10%, #ffffff 10%, #ffffff 90%, #00aaff 90%, #00aaff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
+.b-oob	{ color: #ff9900; background: repeating-linear-gradient(to right, #ff9900, #ff9900 10%, #0000ff 10%, #0000ff 90%, #ff9900 90%, #ff9900); text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;}
+.b-oow	{ color: #ff9900; background: repeating-linear-gradient(to right, #ff9900, #ff9900 10%, #ffffff 10%, #ffffff 90%, #ff9900 90%, #ff9900); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
+.b-ppo	{ color: #660099; background: repeating-linear-gradient(to right, #660099, #660099 10%, #ff9900 10%, #ff9900 90%, #660099 90%, #660099); text-shadow: -1px -1px 0 #ff9900,1px -1px 0 #ff9900,-1px 1px 0 #ff9900,1px 1px 0 #ff9900;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .b-rbw	{ color: #ff0000; background: repeating-linear-gradient(to right, #0000ff, #0000ff 10%, #ffffff 10%, #ffffff 90%, #0000ff 90%, #0000ff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .b-rgw	{ color: #ff0000; background: repeating-linear-gradient(to right, #009900, #009900 10%, #ffffff 10%, #ffffff 90%, #009900 90%, #009900); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .b-rky	{ color: #ff0000; background: repeating-linear-gradient(to right, #000000, #000000 10%, #fff00c 10%, #fff00c 90%, #000000 90%, #000000); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
@@ -289,7 +333,11 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .b-rrn	{ color: #ff0000; background: repeating-linear-gradient(to right, #ff0000, #ff0000 10%, #000099 10%, #000099 90%, #ff0000 90%, #ff0000); text-shadow: -1px -1px 0 #000099,1px -1px 0 #000099,-1px 1px 0 #000099,1px 1px 0 #000099;}
 .b-rrw	{ color: #ff0000; background: repeating-linear-gradient(to right, #ff0000, #ff0000 10%, #ffffff 10%, #ffffff 90%, #ff0000 90%, #ff0000); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .b-rry	{ color: #ff0000; background: repeating-linear-gradient(to right, #ff0000, #ff0000 10%, #fff00c 10%, #fff00c 90%, #ff0000 90%, #ff0000); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
+<<<<<<< HEAD
 .b-ssr	{ color: #aaaaaa; background: repeating-linear-gradient(to right, #aaaaaa, #aaaaaa 10%, #ff0000 10%, #ff0000 90%, #aaaaaa 90%, #aaaaaa); text-shadow: -1px -1px 0 #cc0000,1px -1px 0 #cc0000,-1px 1px 0 #cc0000,1px 1px 0 #cc0000; box-sizing: border-box; border: 1px solid #cc0000;}
+=======
+.b-ssr	{ color: #aaaaaa; background: repeating-linear-gradient(to right, #aaaaaa, #aaaaaa 10%, #ff0000 10%, #ff0000 90%, #aaaaaa 90%, #aaaaaa); text-shadow: -1px -1px 0 #cc0000,1px -1px 0 #cc0000,-1px 1px 0 #cc0000,1px 1px 0 #cc0000;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .b-uuq	{ color: #ffcc00; background: repeating-linear-gradient(to right, #ffcc00, #ffcc00 10%, #880000 10%, #880000 90%, #ffcc00 90%, #ffcc00); text-shadow: -1px -1px 0 #880000,1px -1px 0 #880000,-1px 1px 0 #880000,1px 1px 0 #880000;}
 .b-wdg	{ color: #ffffff; background: repeating-linear-gradient(to right, #cc0000, #cc0000 10%, #009900 10%, #009900 90%, #cc0000 90%, #cc0000); text-shadow: -1px -1px 0 #009900,1px -1px 0 #009900,-1px 1px 0 #009900,1px 1px 0 #009900;}
 .b-wcf	{ color: #ffffff; background: repeating-linear-gradient(to right, #990044, #990044 10%, #77aadd 10%, #77aadd 90%, #990044 90%, #990044); text-shadow: -1px -1px 0 #77aadd,1px -1px 0 #77aadd,-1px 1px 0 #77aadd,1px 1px 0 #77aadd;}
@@ -300,8 +348,12 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .b-wkf	{ color: #ffffff; background: repeating-linear-gradient(to right, #000000, #000000 10%, #77aadd 10%, #77aadd 90%, #000000 90%, #000000); text-shadow: -1px -1px 0 #77aadd,1px -1px 0 #77aadd,-1px 1px 0 #77aadd,1px 1px 0 #77aadd;}
 .b-wkg	{ color: #ffffff; background: repeating-linear-gradient(to right, #000000, #000000 10%, #009900 10%, #009900 90%, #000000 90%, #000000); text-shadow: -1px -1px 0 #009900,1px -1px 0 #009900,-1px 1px 0 #009900,1px 1px 0 #009900;}
 .b-wkr	{ color: #ffffff; background: repeating-linear-gradient(to right, #000000, #000000 10%, #ff0000 10%, #ff0000 90%, #000000 90%, #000000); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
+<<<<<<< HEAD
 .b-woh	{ color: #ffffff; background: repeating-linear-gradient(to right, #ff0000, #ff0000 10%, #00aaff 10%, #00aaff 90%, #ff0000 90%, #ff0000); text-shadow: -1px -1px 0 #00aaff,1px -1px 0 #00aaff,-1px 1px 0 #00aaff,1px 1px 0 #00aaff;}
 .b-wok	{ color: #ffffff; background: repeating-linear-gradient(to right, #ff0000, #ff0000 10%, #000000 10%, #000000 90%, #ff0000 90%, #ff0000); text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
+=======
+.b-woh	{ color: #ffffff; background: repeating-linear-gradient(to right, #ff9900, #ff9900 10%, #00aaff 10%, #00aaff 90%, #ff9900 90%, #ff9900); text-shadow: -1px -1px 0 #00aaff,1px -1px 0 #00aaff,-1px 1px 0 #00aaff,1px 1px 0 #00aaff;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .b-wrg	{ color: #ffffff; background: repeating-linear-gradient(to right, #ff0000, #ff0000 10%, #009900 10%, #009900 90%, #ff0000 90%, #ff0000); text-shadow: -1px -1px 0 #006600,1px -1px 0 #006600,-1px 1px 0 #006600,1px 1px 0 #006600;}
 .b-wwb	{ color: #ffffff; background: repeating-linear-gradient(to right, #ffffff, #ffffff 10%, #0000ff 10%, #0000ff 90%, #ffffff 90%, #ffffff); text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;}
 .b-wwc	{ color: #ffffff; background: repeating-linear-gradient(to right, #ffffff, #ffffff 10%, #990044 10%, #990044 90%, #ffffff 90%, #ffffff); text-shadow: -1px -1px 0 #990044,1px -1px 0 #990044,-1px 1px 0 #990044,1px 1px 0 #990044;}
@@ -319,8 +371,12 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .b-yyg	{ color: #fff00c; background: repeating-linear-gradient(to right, #fff00c, #fff00c 10%, #009900 10%, #009900 90%, #fff00c 90%, #fff00c); text-shadow: -1px -1px 0 #009900,1px -1px 0 #009900,-1px 1px 0 #009900,1px 1px 0 #009900;}
 .b-yyr	{ color: #fff00c; background: repeating-linear-gradient(to right, #fff00c, #fff00c 10%, #ff0000 10%, #ff0000 90%, #fff00c 90%, #fff00c); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
 
+<<<<<<< HEAD
 .d-bfb	{ color: #0000ff; background: repeating-linear-gradient( -45deg, #77aadd, #77aadd 45%, #0000ff 45%, #0000ff 55%, #ffffff 55%, #77aadd ); text-shadow: -1px -1px 0 #77aadd,1px -1px 0 #77aadd,-1px 1px 0 #77aadd,1px 1px 0 #77aadd;}
 .d-bob	{ color: #0000ff; background: repeating-linear-gradient( -45deg, #ff0000, #ff0000 45%, #0000ff 45%, #0000ff 55%, #ff0000 55%, #ff0000 ); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
+=======
+.d-bob	{ color: #0000ff; background: repeating-linear-gradient( -45deg, #ff9900, #ff9900 45%, #0000ff 45%, #0000ff 55%, #ff9900 55%, #ff9900 ); text-shadow: -1px -1px 0 #ff9900,1px -1px 0 #ff9900,-1px 1px 0 #ff9900,1px 1px 0 #ff9900;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .d-bwb	{ color: #0000ff; background: repeating-linear-gradient( -45deg, #ffffff, #ffffff 45%, #0000ff 45%, #0000ff 55%, #ffffff 55%, #ffffff ); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .d-bwr	{ color: #0000ff; background: repeating-linear-gradient( -45deg, #ffffff, #ffffff 45%, #ff0000 45%, #ff0000 55%, #ffffff 55%, #ffffff ); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .d-by	{ color: #0000ff; background: repeating-linear-gradient( -45deg, #0000ff, #0000ff 50%, #fff00c 50%, #fff00c ); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
@@ -366,10 +422,13 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .d-wr	{ color: #ffffff; background: repeating-linear-gradient( -45deg, #ffffff, #ffffff 50%, #ff0000 50%, #ff0000 ); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
 .d-wrw	{ color: #ffffff; background: repeating-linear-gradient( -45deg, #ff0000, #ff0000 45%, #ffffff 45%, #ffffff 55%, #ff0000 55%, #ff0000 ); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
 .d-yby	{ color: #fff00c; background: repeating-linear-gradient( -45deg, #0000ff, #0000ff 45%, #fff00c 45%, #fff00c 55%, #0000ff 55%, #0000ff ); text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;}
-.d-yky	{ color: #fff00c; background: repeating-linear-gradient( -45deg, #000000, #000000 45%, #fff00c 45%, #fff00c 55%, #000000 55%, #000000 ); text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
 
 .e-aay	{ color: #3366ff; background: repeating-linear-gradient(to bottom, #3366ff, #3366ff 15%, #fff00c 15%, #fff00c); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
+<<<<<<< HEAD
 .e-bbo	{ color: #0000ff; background: repeating-linear-gradient(to bottom, #0000ff, #0000ff 15%, #ff0000 15%, #ff0000); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
+=======
+.e-bbo	{ color: #0000ff; background: repeating-linear-gradient(to bottom, #0000ff, #0000ff 15%, #ff9900 15%, #ff9900); text-shadow: -1px -1px 0 #ff9900,1px -1px 0 #ff9900,-1px 1px 0 #ff9900,1px 1px 0 #ff9900;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .e-bbr	{ color: #0000ff; background: repeating-linear-gradient(to bottom, #0000ff, #0000ff 15%, #ff0000 15%, #ff0000); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
 .e-bbu	{ color: #0000ff; background: repeating-linear-gradient(to bottom, #0000ff, #0000ff 15%, #ffcc00 15%, #ffcc00); text-shadow: -1px -1px 0 #ffcc00,1px -1px 0 #ffcc00,-1px 1px 0 #ffcc00,1px 1px 0 #ffcc00;}
 .e-bbw	{ color: #0000ff; background: repeating-linear-gradient(to bottom, #0000ff, #0000ff 15%, #ffffff 15%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
@@ -389,7 +448,11 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .e-gkw	{ color: #009900; background: repeating-linear-gradient(to bottom, #000000, #000000 15%, #ffffff 15%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .e-ggy	{ color: #009900; background: repeating-linear-gradient(to bottom, #009900, #009900 15%, #fff00c 15%, #fff00c); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
 .e-gkr	{ color: #009900; background: repeating-linear-gradient(to bottom, #000000, #000000 15%, #ff0000 15%, #ff0000); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
+<<<<<<< HEAD
 .e-gow	{ color: #009900; background: repeating-linear-gradient(to bottom, #ff0000, #ff0000 15%, #ffffff 15%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
+=======
+.e-gow	{ color: #009900; background: repeating-linear-gradient(to bottom, #ff9900, #ff9900 15%, #ffffff 15%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .e-grw	{ color: #009900; background: repeating-linear-gradient(to bottom, #ff0000, #ff0000 15%, #ffffff 15%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .e-gry	{ color: #009900; background: repeating-linear-gradient(to bottom, #ff0000, #ff0000 15%, #fff00c 15%, #fff00c); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
 .e-hhb	{ color: #00aaff; background: repeating-linear-gradient(to bottom, #00aaff, #00aaff 15%, #0000ff 15%, #0000ff); text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;}
@@ -409,12 +472,20 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .e-kkf	{ color: #000000; background: repeating-linear-gradient(to bottom, #000000, #000000 15%, #77aadd 15%, #77aadd); text-shadow: -1px -1px 0 #77aadd,1px -1px 0 #77aadd,-1px 1px 0 #77aadd,1px 1px 0 #77aadd;}
 .e-kkw	{ color: #000000; background: repeating-linear-gradient(to bottom, #000000, #000000 15%, #ffffff 15%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .e-kky	{ color: #000000; background: repeating-linear-gradient(to bottom, #000000, #000000 15%, #fff00c 15%, #fff00c); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
+<<<<<<< HEAD
 .e-kow	{ color: #000000; background: repeating-linear-gradient(to bottom, #ff0000, #ff0000 15%, #ffffff 15%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
+=======
+.e-kow	{ color: #000000; background: repeating-linear-gradient(to bottom, #ff9900, #ff9900 15%, #ffffff 15%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .e-krg	{ color: #000000; background: repeating-linear-gradient(to bottom, #ff0000, #ff0000 15%, #009900 15%, #009900); text-shadow: -1px -1px 0 #009900,1px -1px 0 #009900,-1px 1px 0 #009900,1px 1px 0 #009900;}
 .e-krw	{ color: #000000; background: repeating-linear-gradient(to bottom, #ff0000, #ff0000 15%, #ffffff 15%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .e-kwd	{ color: #000000; background: repeating-linear-gradient(to bottom, #ffffff, #ffffff 15%, #cc0000 15%, #cc0000); text-shadow: -1px -1px 0 #cc0000,1px -1px 0 #cc0000,-1px 1px 0 #cc0000,1px 1px 0 #cc0000;}
 .e-kwl	{ color: #000000; background: repeating-linear-gradient(to bottom, #ffffff, #ffffff 15%, #8866ee 15%, #8866ee); text-shadow: -1px -1px 0 #8866ee,1px -1px 0 #8866ee,-1px 1px 0 #8866ee,1px 1px 0 #8866ee;}
+<<<<<<< HEAD
 .e-kwo	{ color: #000000; background: repeating-linear-gradient(to bottom, #ffffff, #ffffff 15%, #ff0000 15%, #ff0000); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
+=======
+.e-kwo	{ color: #000000; background: repeating-linear-gradient(to bottom, #ffffff, #ffffff 15%, #ff9900 15%, #ff9900); text-shadow: -1px -1px 0 #ff9900,1px -1px 0 #ff9900,-1px 1px 0 #ff9900,1px 1px 0 #ff9900;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .e-kwr	{ color: #000000; background: repeating-linear-gradient(to bottom, #ffffff, #ffffff 15%, #ff0000 15%, #ff0000); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
 .e-nnf	{ color: #000099; background: repeating-linear-gradient(to bottom, #000099, #000099 15%, #77aadd 15%, #77aadd); text-shadow: -1px -1px 0 #77aadd,1px -1px 0 #77aadd,-1px 1px 0 #77aadd,1px 1px 0 #77aadd;}
 .e-nnr	{ color: #000099; background: repeating-linear-gradient(to bottom, #000099, #000099 15%, #ff0000 15%, #ff0000); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
@@ -440,10 +511,13 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .e-ryg	{ color: #ff0000; background: repeating-linear-gradient(to bottom, #fff00c, #fff00c 15%, #009900 15%, #009900); text-shadow: -1px -1px 0 #009900,1px -1px 0 #009900,-1px 1px 0 #009900,1px 1px 0 #009900;}
 .e-ura	{ color: #ffcc00; background: repeating-linear-gradient(to bottom, #ff0000, #ff0000 15%, #3366ff 15%, #3366ff); text-shadow: -1px -1px 0 #3366ff,1px -1px 0 #3366ff,-1px 1px 0 #3366ff,1px 1px 0 #3366ff;}
 .e-uub	{ color: #ffcc00; background: repeating-linear-gradient(to bottom, #ffcc00, #ffcc00 15%, #0000ff 15%, #0000ff); text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;}
-.e-uuk	{ color: #ffcc00; background: repeating-linear-gradient(to bottom, #ffcc00, #ffcc00 15%, #000000 15%, #000000); text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
 .e-uun	{ color: #ffcc00; background: repeating-linear-gradient(to bottom, #ffcc00, #ffcc00 15%, #000099 15%, #000099); text-shadow: -1px -1px 0 #000099,1px -1px 0 #000099,-1px 1px 0 #000099,1px 1px 0 #000099;}
 .e-vvw	{ color: #aa5533; background: repeating-linear-gradient(to bottom, #aa5533, #aa5533 15%, #ffffff 15%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
+<<<<<<< HEAD
 .e-wbo	{ color: #ffffff; background: repeating-linear-gradient(to bottom, #0000ff, #0000ff 15%, #ff0000 15%, #ff0000); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
+=======
+.e-wbo	{ color: #ffffff; background: repeating-linear-gradient(to bottom, #0000ff, #0000ff 15%, #ff9900 15%, #ff9900); text-shadow: -1px -1px 0 #ff9900,1px -1px 0 #ff9900,-1px 1px 0 #ff9900,1px 1px 0 #ff9900;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .e-wbr	{ color: #ffffff; background: repeating-linear-gradient(to bottom, #0000ff, #0000ff 15%, #ff0000 15%, #ff0000); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
 .e-wdu	{ color: #ffffff; background: repeating-linear-gradient(to bottom, #cc0000, #cc0000 15%, #ffcc00 15%, #ffcc00); text-shadow: -1px -1px 0 #ffcc00,1px -1px 0 #ffcc00,-1px 1px 0 #ffcc00,1px 1px 0 #ffcc00;}
 .e-web	{ color: #ffffff; background: repeating-linear-gradient(to bottom, #00cc00, #00cc00 15%, #0000ff 15%, #0000ff); text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;}
@@ -482,9 +556,14 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .e-yyn	{ color: #fff00c; background: repeating-linear-gradient(to bottom, #fff00c, #fff00c 15%, #000099 15%, #000099); text-shadow: -1px -1px 0 #000099,1px -1px 0 #000099,-1px 1px 0 #000099,1px 1px 0 #000099;}
 .e-yyp	{ color: #fff00c; background: repeating-linear-gradient(to bottom, #fff00c, #fff00c 15%, #660099 15%, #660099); text-shadow: -1px -1px 0 #660099,1px -1px 0 #660099,-1px 1px 0 #660099,1px 1px 0 #660099;}
 .e-yyr	{ color: #fff00c; background: repeating-linear-gradient(to bottom, #fff00c, #fff00c 15%, #ff0000 15%, #ff0000); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
+<<<<<<< HEAD
 .e-zzk	{ color: #00ff00; background: repeating-linear-gradient(to bottom, #00ff00, #00ff00 15%, #000000 15%, #000000); text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
 
 .h-bbo	{ color: #0000ff; background: repeating-linear-gradient(to bottom, #0000ff, #0000ff 15%, #ff0000 15%, #ff0000 85%, #0000ff 85%, #0000ff); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
+=======
+
+.h-bbo	{ color: #0000ff; background: repeating-linear-gradient(to bottom, #0000ff, #0000ff 15%, #ff9900 15%, #ff9900 85%, #0000ff 85%, #0000ff); text-shadow: -1px -1px 0 #ff9900,1px -1px 0 #ff9900,-1px 1px 0 #ff9900,1px 1px 0 #ff9900;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .h-bbr	{ color: #0000ff; background: repeating-linear-gradient(to bottom, #0000ff, #0000ff 15%, #ff0000 15%, #ff0000 85%, #0000ff 85%, #0000ff); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
 .h-bbu	{ color: #0000ff; background: repeating-linear-gradient(to bottom, #0000ff, #0000ff 15%, #ffcc00 15%, #ffcc00 85%, #0000ff 85%, #0000ff); text-shadow: -1px -1px 0 #ffcc00,1px -1px 0 #ffcc00,-1px 1px 0 #ffcc00,1px 1px 0 #ffcc00;}
 .h-bbw	{ color: #0000ff; background: repeating-linear-gradient(to bottom, #0000ff, #0000ff 15%, #ffffff 15%, #ffffff 85%, #0000ff 85%, #0000ff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
@@ -518,8 +597,13 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .h-kwr	{ color: #000000; background: repeating-linear-gradient(to bottom, #ffffff, #ffffff 15%, #ff0000 15%, #ff0000 85%, #ffffff 85%, #ffffff);}
 .h-kyr	{ color: #000000; background: repeating-linear-gradient(to bottom, #fff00c, #fff00c 15%, #ff0000 15%, #ff0000 85%, #fff00c 85%, #fff00c);}
 .h-nnh	{ color: #000099; background: repeating-linear-gradient(to bottom, #000099, #000099 15%, #00aaff 15%, #00aaff 85%, #000099 85%, #000099); text-shadow: -1px -1px 0 #00aaff,1px -1px 0 #00aaff,-1px 1px 0 #00aaff,1px 1px 0 #00aaff;}
+<<<<<<< HEAD
 .h-oob	{ color: #ff0000; background: repeating-linear-gradient(to bottom, #ff0000, #ff0000 15%, #0000ff 15%, #0000ff 85%, #ff0000 85%, #ff0000); text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;}
 .h-rfw	{ color: #ff0000; background: repeating-linear-gradient(to bottom, #77aadd, #77aadd 15%, #ffffff 15%, #ffffff 85%, #77aadd 85%, #77aadd); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
+=======
+.h-oob	{ color: #ff9900; background: repeating-linear-gradient(to bottom, #ff9900, #ff9900 15%, #0000ff 15%, #0000ff 85%, #ff9900 85%, #ff9900); text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;}
+.h-rfw	{ color: #ff0000; background: repeating-linear-gradient(to bottom, #77aadd, #77aadd 15%, #ffffff 15%, #ffffff 85%, #77aadd 85%, #77aadd);}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .h-rrb	{ color: #ff0000; background: repeating-linear-gradient(to bottom, #ff0000, #ff0000 15%, #0000ff 15%, #0000ff 85%, #ff0000 85%, #ff0000); text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;}
 .h-rrn	{ color: #ff0000; background: repeating-linear-gradient(to bottom, #ff0000, #ff0000 15%, #000099 15%, #000099 85%, #ff0000 85%, #ff0000); text-shadow: -1px -1px 0 #000099,1px -1px 0 #000099,-1px 1px 0 #000099,1px 1px 0 #000099;}
 .h-rrw	{ color: #ff0000; background: repeating-linear-gradient(to bottom, #ff0000, #ff0000 15%, #ffffff 15%, #ffffff 85%, #ff0000 85%, #ff0000); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
@@ -559,20 +643,30 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .o-kgk	{ color: #000000; background: repeating-linear-gradient(to right, #009900, #009900 70%, #000000 70%, #000000 80%, #009900 80%, #009900); text-shadow: -1px -1px 0 #009900,1px -1px 0 #009900,-1px 1px 0 #009900,1px 1px 0 #009900;}
 .o-kgr	{ color: #000000; background: repeating-linear-gradient(to right, #009900, #009900 70%, #ff0000 70%, #ff0000 80%, #009900 80%, #009900); text-shadow: -1px -1px 0 #009900,1px -1px 0 #009900,-1px 1px 0 #009900,1px 1px 0 #009900;}
 .o-kky	{ color: #000000; background: repeating-linear-gradient(to right, #000000, #000000 70%, #fff00c 70%, #fff00c 80%, #000000 80%, #000000); text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000; text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
+<<<<<<< HEAD
 .o-kok	{ color: #000000; background: repeating-linear-gradient(to right, #ff0000, #ff0000 70%, #000000 70%, #000000 80%, #ff0000 80%, #ff0000); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
+=======
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .o-krk	{ color: #000000; background: repeating-linear-gradient(to right, #ff0000, #ff0000 70%, #000000 70%, #000000 80%, #ff0000 80%, #ff0000); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
 .o-krky	{ color: #000000; background: repeating-linear-gradient(to right, #ff0000, #ff0000 65%, #000000 65%, #000000 75%, #fff00c 75%, #fff00c 85%, #ff0000 85%, #ff0000); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
 .o-krw	{ color: #000000; background: repeating-linear-gradient(to right, #ff0000, #ff0000 70%, #ffffff 70%, #ffffff 80%, #ff0000 80%, #ff0000); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
 .o-kwg	{ color: #000000; background: repeating-linear-gradient(to right, #ffffff, #ffffff 70%, #009900 70%, #009900 80%, #ffffff 80%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .o-kwk	{ color: #000000; background: repeating-linear-gradient(to right, #ffffff, #ffffff 70%, #000000 70%, #000000 80%, #ffffff 80%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .o-kwkg	{ color: #000000; background: repeating-linear-gradient(to right, #ffffff, #ffffff 65%, #000000 65%, #000000 75%, #009900 75%, #009900 85%, #ffffff 85%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
+<<<<<<< HEAD
 .o-kwko	{ color: #000000; background: repeating-linear-gradient(to right, #ffffff, #ffffff 65%, #000000 65%, #000000 75%, #ff0000 75%, #ff0000 85%, #ffffff 85%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
+=======
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .o-kwkr	{ color: #000000; background: repeating-linear-gradient(to right, #ffffff, #ffffff 65%, #000000 65%, #000000 75%, #ff0000 75%, #ff0000 85%, #ffffff 85%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .o-kwky	{ color: #000000; background: repeating-linear-gradient(to right, #ffffff, #ffffff 65%, #000000 65%, #000000 75%, #fff00c 75%, #fff00c 85%, #ffffff 85%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .o-kwyk	{ color: #000000; background: repeating-linear-gradient(to right, #ffffff, #ffffff 65%, #fff00c 65%, #fff00c 75%, #000000 75%, #000000 85%, #ffffff 85%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .o-kyk	{ color: #000000; background: repeating-linear-gradient(to right, #fff00c, #fff00c 70%, #000000 70%, #000000 80%, #fff00c 80%, #fff00c); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
 .o-mkhy	{ color: #ff00ff; background: repeating-linear-gradient(to right, #000000, #000000 65%, #00aaff 65%, #00aaff 75%, #fff00c 75%, #fff00c 85%, #000000 85%, #000000); text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
+<<<<<<< HEAD
 .o-okoy	{ color: #ff0000; background: repeating-linear-gradient(to right, #000000, #000000 65%, #ff0000 65%, #ff0000 75%, #fff00c 75%, #fff00c 85%, #000000 85%, #000000); text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
+=======
+.o-okoy	{ color: #ff9900; background: repeating-linear-gradient(to right, #000000, #000000 65%, #ff9900 65%, #ff9900 75%, #fff00c 75%, #fff00c 85%, #000000 85%, #000000); text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .o-rbr	{ color: #ff0000; background: repeating-linear-gradient(to right, #0000ff, #0000ff 70%, #ff0000 70%, #ff0000 80%, #0000ff 80%, #0000ff); text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;}
 .o-rkr	{ color: #ff0000; background: repeating-linear-gradient(to right, #000000, #000000 70%, #ff0000 70%, #ff0000 80%, #000000 80%, #000000); text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
 .o-rwr	{ color: #ff0000; background: repeating-linear-gradient(to right, #ffffff, #ffffff 70%, #ff0000 70%, #ff0000 80%, #ffffff 80%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
@@ -580,7 +674,11 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .o-rwygr	{ color: #ff0000; background: repeating-linear-gradient(to right, #ffffff, #ffffff 55%, #fff00c 55%, #fff00c 65%, #ff0000 65%, #ff0000 75%, #009900 75%, #009900 85%, #ffffff 85%, #ffffff); text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;}
 .o-rwrg	{ color: #ff0000; background: repeating-linear-gradient(to right, #ffffff, #ffffff 65%, #ff0000 65%, #ff0000 75%, #009900 75%, #009900 85%, #ffffff 85%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .o-rwry	{ color: #ff0000; background: repeating-linear-gradient(to right, #ffffff, #ffffff 65%, #ff0000 65%, #ff0000 75%, #fff00c 75%, #fff00c 85%, #ffffff 85%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
+<<<<<<< HEAD
 .o-vuv	{ color: #aa5533; background: repeating-linear-gradient(to right, #ffcc00, #ffcc00 70%, #aa5533 70%, #aa5533 80%, #ffcc00 80%, #ffcc00); text-shadow: -1px -1px 0 #ffcc00,1px -1px 0 #ffcc00,-1px 1px 0 #ffcc00,1px 1px 0 #ff0000;}
+=======
+.o-vuv	{ color: #aa5533; background: repeating-linear-gradient(to right, #ffcc00, #ffcc00 70%, #aa5533 70%, #aa5533 80%, #ffcc00 80%, #ffcc00); text-shadow: -1px -1px 0 #ffcc00,1px -1px 0 #ffcc00,-1px 1px 0 #ffcc00,1px 1px 0 #ff9900;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .o-wbgr	{ color: #ffffff; background: repeating-linear-gradient(to right, #0000ff, #0000ff 65%, #009900 65%, #009900 75%, #ff0000 75%, #ff0000 85%, #0000ff 85%, #0000ff);}
 .o-wbr	{ color: #ffffff; background: repeating-linear-gradient(to right, #0000ff, #0000ff 70%, #ff0000 70%, #ff0000 80%, #0000ff 80%, #0000ff); text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;}
 .o-wbw	{ color: #ffffff; background: repeating-linear-gradient(to right, #0000ff, #0000ff 70%, #ffffff 70%, #ffffff 80%, #0000ff 80%, #0000ff); text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;}
@@ -590,7 +688,11 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .o-wnh	{ color: #ffffff; background: repeating-linear-gradient(to right, #000099, #000099 70%, #00aaff 70%, #00aaff 80%, #000099 80%, #000099); text-shadow: -1px -1px 0 #000099,1px -1px 0 #000099,-1px 1px 0 #000099,1px 1px 0 #000099;}
 .o-wnr	{ color: #ffffff; background: repeating-linear-gradient(to right, #000099, #000099 70%, #ff0000 70%, #ff0000 80%, #000099 80%, #000099); text-shadow: -1px -1px 0 #000099,1px -1px 0 #000099,-1px 1px 0 #000099,1px 1px 0 #000099;}
 .o-wnrw	{ color: #ffffff; background: repeating-linear-gradient(to right, #000099, #000099 65%, #ff0000 65%, #ff0000 75%, #ffffff 75%, #ffffff 85%, #000099 85%, #000099); text-shadow: -1px -1px 0 #000099,1px -1px 0 #000099,-1px 1px 0 #000099,1px 1px 0 #000099;}
+<<<<<<< HEAD
 .o-wow	{ color: #ffffff; background: repeating-linear-gradient(to right, #ff0000, #ff0000 70%, #ffffff 70%, #ffffff 80%, #ff0000 80%, #ff0000); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
+=======
+.o-wow	{ color: #ffffff; background: repeating-linear-gradient(to right, #ff9900, #ff9900 70%, #ffffff 70%, #ffffff 80%, #ff9900 80%, #ff9900); text-shadow: -1px -1px 0 #ff9900,1px -1px 0 #ff9900,-1px 1px 0 #ff9900,1px 1px 0 #ff9900;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .o-wrg	{ color: #ffffff; background: repeating-linear-gradient(to right, #ff0000, #ff0000 70%, #009900 70%, #009900 80%, #ff0000 80%, #ff0000); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
 .o-wwb	{ color: #ffffff; background: repeating-linear-gradient(to right, #ffffff, #ffffff 70%, #0000ff 70%, #0000ff 80%, #ffffff 80%, #ffffff); text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;}
 .o-wwbr	{ color: #ffffff; background: repeating-linear-gradient(to right, #ffffff, #ffffff 65%, #0000ff 65%, #0000ff 75%, #ff0000 75%, #ff0000 85%, #ffffff 85%, #ffffff); text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;}
@@ -634,7 +736,11 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .s-kkf	{ color: #000000; background: repeating-linear-gradient(to right, #000000, #000000 14%, #77aadd 14%, #77aadd 29%, #000000 29%, #000000 43%, #77aadd 43%, #77aadd 57%, #000000 57%, #000000 71%, #77aadd 71%, #77aadd 86%, #000000 86%, #000000 ); text-shadow: -1px -1px 0 #77aadd,1px -1px 0 #77aadd,-1px 1px 0 #77aadd,1px 1px 0 #77aadd;}
 .s-kkg	{ color: #000000; background: repeating-linear-gradient(to right, #000000, #000000 14%, #009900 14%, #009900 29%, #000000 29%, #000000 43%, #009900 43%, #009900 57%, #000000 57%, #000000 71%, #009900 71%, #009900 86%, #000000 86%, #000000 ); text-shadow: -1px -1px 0 #009900,1px -1px 0 #009900,-1px 1px 0 #009900,1px 1px 0 #009900;}
 .s-kkh	{ color: #000000; background: repeating-linear-gradient(to right, #000000, #000000 14%, #00aaff 14%, #00aaff 29%, #000000 29%, #000000 43%, #00aaff 43%, #00aaff 57%, #000000 57%, #000000 71%, #00aaff 71%, #00aaff 86%, #000000 86%, #000000 ); text-shadow: -1px -1px 0 #00aaff,1px -1px 0 #00aaff,-1px 1px 0 #00aaff,1px 1px 0 #00aaff;}
+<<<<<<< HEAD
 .s-kko	{ color: #000000; background: repeating-linear-gradient(to right, #000000, #000000 14%, #ff0000 14%, #ff0000 29%, #000000 29%, #000000 43%, #ff0000 43%, #ff0000 57%, #000000 57%, #000000 71%, #ff0000 71%, #ff0000 86%, #000000 86%, #000000 ); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
+=======
+.s-kko	{ color: #000000; background: repeating-linear-gradient(to right, #000000, #000000 14%, #ff9900 14%, #ff9900 29%, #000000 29%, #000000 43%, #ff9900 43%, #ff9900 57%, #000000 57%, #000000 71%, #ff9900 71%, #ff9900 86%, #000000 86%, #000000 ); text-shadow: -1px -1px 0 #ff9900,1px -1px 0 #ff9900,-1px 1px 0 #ff9900,1px 1px 0 #ff9900;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .s-kkr	{ color: #000000; background: repeating-linear-gradient(to right, #000000, #000000 14%, #ff0000 14%, #ff0000 29%, #000000 29%, #000000 43%, #ff0000 43%, #ff0000 57%, #000000 57%, #000000 71%, #ff0000 71%, #ff0000 86%, #000000 86%, #000000 ); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
 .s-kku	{ color: #000000; background: repeating-linear-gradient(to right, #000000, #000000 14%, #ffcc00 14%, #ffcc00 29%, #000000 29%, #000000 43%, #ffcc00 43%, #ffcc00 57%, #000000 57%, #000000 71%, #ffcc00 71%, #ffcc00 86%, #000000 86%, #000000 ); text-shadow: -1px -1px 0 #ffcc00,1px -1px 0 #ffcc00,-1px 1px 0 #ffcc00,1px 1px 0 #ffcc00;}
 .s-kkw	{ color: #000000; background: repeating-linear-gradient(to right, #000000, #000000 14%, #ffffff 14%, #ffffff 29%, #000000 29%, #000000 43%, #ffffff 43%, #ffffff 57%, #000000 57%, #000000 71%, #ffffff 71%, #ffffff 86%, #000000 86%, #000000 ); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
@@ -724,7 +830,11 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 
 .v-bbw	{ color: #0000ff; background: repeating-linear-gradient(to right, #0000ff, #0000ff 50%, #ffffff 50%, #ffffff ); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .v-bby	{ color: #0000ff; background: repeating-linear-gradient(to right, #0000ff, #0000ff 50%, #fff00c 50%, #fff00c ); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
+<<<<<<< HEAD
 .v-bgo	{ color: #0000ff; background: repeating-linear-gradient(to right, #009900, #009900 50%, #ff0000 50%, #ff0000 );}
+=======
+.v-bgo	{ color: #0000ff; background: repeating-linear-gradient(to right, #009900, #009900 50%, #ff9900 50%, #ff9900 );}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .v-brb	{ color: #0000ff; background: repeating-linear-gradient(to right, #ff0000, #ff0000 50%, #0000ff 50%, #0000ff ); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
 .v-bwb	{ color: #0000ff; background: repeating-linear-gradient(to right, #ffffff, #ffffff 50%, #0000ff 50%, #0000ff ); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .v-byw	{ color: #0000ff; background: repeating-linear-gradient(to right, #fff00c, #fff00c 50%, #ffffff 50%, #ffffff );}
@@ -733,7 +843,11 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .v-ggy	{ color: #009900; background: repeating-linear-gradient(to right, #009900, #009900 50%, #fff00c 50%, #fff00c ); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
 .v-kgr	{ color: #000000; background: repeating-linear-gradient(to right, #009900, #009900 50%, #ff0000 50%, #ff0000 );}
 .v-kkg	{ color: #000000; background: repeating-linear-gradient(to right, #000000, #000000 50%, #009900 50%, #009900 ); text-shadow: -1px -1px 0 #009900,1px -1px 0 #009900,-1px 1px 0 #009900,1px 1px 0 #009900;}
+<<<<<<< HEAD
 .v-kko	{ color: #000000; background: repeating-linear-gradient(to right, #000000, #000000 50%, #ff0000 50%, #ff0000 ); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
+=======
+.v-kko	{ color: #000000; background: repeating-linear-gradient(to right, #000000, #000000 50%, #ff9900 50%, #ff9900 ); text-shadow: -1px -1px 0 #ff9900,1px -1px 0 #ff9900,-1px 1px 0 #ff9900,1px 1px 0 #ff9900;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .v-kkr	{ color: #000000; background: repeating-linear-gradient(to right, #000000, #000000 50%, #ff0000 50%, #ff0000 ); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
 .v-kkw	{ color: #000000; background: repeating-linear-gradient(to right, #000000, #000000 50%, #ffffff 50%, #ffffff ); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .v-kky	{ color: #000000; background: repeating-linear-gradient(to right, #000000, #000000 50%, #fff00c 50%, #fff00c ); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
@@ -743,8 +857,12 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .v-kry	{ color: #000000; background: repeating-linear-gradient(to right, #ff0000, #ff0000 50%, #fff00c 50%, #fff00c );}
 .v-kwr	{ color: #000000; background: repeating-linear-gradient(to right, #ffffff, #ffffff 50%, #ff0000 50%, #ff0000 );}
 .v-kyr	{ color: #000000; background: repeating-linear-gradient(to right, #fff00c, #fff00c 50%, #ff0000 50%, #ff0000 );}
+<<<<<<< HEAD
 .v-nnr	{ color: #000099; background: repeating-linear-gradient(to right, #000099, #000099 50%, #ff0000 50%, #ff0000 ); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
 .v-oko	{ color: #ff0000; background: repeating-linear-gradient(to right, #000000, #000000 50%, #ff0000 50%, #ff0000 ); text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
+=======
+.v-oko	{ color: #ff9900; background: repeating-linear-gradient(to right, #000000, #000000 50%, #ff9900 50%, #ff9900 ); text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .v-rbw	{ color: #ff0000; background: repeating-linear-gradient(to right, #0000ff, #0000ff 50%, #ffffff 50%, #ffffff );}
 .v-rrk	{ color: #ff0000; background: repeating-linear-gradient(to right, #ff0000, #ff0000 50%, #000000 50%, #000000 ); text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
 .v-rry	{ color: #ff0000; background: repeating-linear-gradient(to right, #ff0000, #ff0000 50%, #fff00c 50%, #fff00c ); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
@@ -757,7 +875,11 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .v-wkb	{ color: #ffffff; background: repeating-linear-gradient(to right, #000000, #000000 50%, #0000ff 50%, #0000ff );}
 .v-wkr	{ color: #ffffff; background: repeating-linear-gradient(to right, #000000, #000000 50%, #ff0000 50%, #ff0000 );}
 .v-wrb	{ color: #ffffff; background: repeating-linear-gradient(to right, #ff0000, #ff0000 50%, #0000ff 50%, #0000ff );}
+<<<<<<< HEAD
 .v-wob	{ color: #ffffff; background: repeating-linear-gradient(to right, #ff0000, #ff0000 50%, #0000ff 50%, #0000ff );}
+=======
+.v-wob	{ color: #ffffff; background: repeating-linear-gradient(to right, #ff9900, #ff9900 50%, #0000ff 50%, #0000ff );}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .v-wrk	{ color: #ffffff; background: repeating-linear-gradient(to right, #ff0000, #ff0000 50%, #000000 50%, #000000 );}
 .v-wrn	{ color: #ffffff; background: repeating-linear-gradient(to right, #ff0000, #ff0000 50%, #000099 50%, #000099 );}
 .v-wrw	{ color: #ffffff; background: repeating-linear-gradient(to right, #ff0000, #ff0000 50%, #ffffff 50%, #ffffff ); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
@@ -782,7 +904,11 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .x-bg	{ color: #0000ff; background-color: #009900;}
 .x-bh	{ color: #0000ff; background-color: #00aaff;}
 .x-bi	{ color: #0000ff; background-color: #ff9f9f;}
+<<<<<<< HEAD
 .x-bo	{ color: #0000ff; background-color: #ff0000;}
+=======
+.x-bo	{ color: #0000ff; background-color: #ff9900;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .x-br	{ color: #0000ff; background-color: #ff0000;}
 .x-bs	{ color: #0000ff; background-color: #aaaaaa; box-sizing: border-box; border: 1px solid #0000ff;}
 .x-bu	{ color: #0000ff; background-color: #ffcc00;}
@@ -847,11 +973,16 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .x-ng	{ color: #000099; background-color: #009900;}
 .x-nh	{ color: #000099; background-color: #00aaff;}
 .x-nm	{ color: #000099; background-color: #ff00ff;}
+<<<<<<< HEAD
 .x-no	{ color: #000099; background-color: #ff0000;}
+=======
+.x-no	{ color: #000099; background-color: #ff9900;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .x-nr	{ color: #000099; background-color: #ff0000;}
 .x-nw	{ color: #000099; background-color: #ffffff;}
 .x-ny	{ color: #000099; background-color: #fff00c;}
 .x-nz	{ color: #000099; background-color: #00ff00;}
+<<<<<<< HEAD
 .x-ob	{ color: #ff0000; background-color: #0000ff;}
 .x-og	{ color: #ff0000; background-color: #009900;}
 .x-ok	{ color: #ff0000; background-color: #000000;}
@@ -859,6 +990,15 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .x-os	{ color: #ff0000; background-color: #aaaaaa;}
 .x-ow	{ color: #ff0000; background-color: #ffffff;}
 .x-oy	{ color: #ff0000; background-color: #fff00c;}
+=======
+.x-ob	{ color: #ff9900; background-color: #0000ff;}
+.x-og	{ color: #ff9900; background-color: #009900;}
+.x-ok	{ color: #ff9900; background-color: #000000;}
+.x-op	{ color: #ff9900; background-color: #660099;}
+.x-os	{ color: #ff9900; background-color: #aaaaaa;}
+.x-ow	{ color: #ff9900; background-color: #ffffff;}
+.x-oy	{ color: #ff9900; background-color: #fff00c;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .x-pr	{ color: #660099; background-color: #ff0000;}
 .x-pw	{ color: #660099; background-color: #ffffff;}
 .x-qw	{ color: #880000; background-color: #ffffff;}
@@ -867,11 +1007,19 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .x-rg	{ color: #cc0000; background-color: #009900; text-shadow: -1px -1px 0 #00b900,1px -1px 0 #00b900,-1px 1px 0 #00b900,1px 1px 0 #00b900;}
 .x-rk	{ color: #ff0000; background-color: #000000;}
 .x-rn	{ color: #ff0000; background-color: #000099;}
+<<<<<<< HEAD
 .x-ro	{ color: #ff0000; background-color: #ff0000;}
 .x-rs	{ color: #ff0000; background-color: #aaaaaa; box-sizing: border-box; border: 1px solid #ff0000;}
 .x-rw	{ color: #ff0000; background-color: #ffffff;}
 .x-ry	{ color: #ff0000; background-color: #fff00c;}
 .x-so	{ color: #aaaaaa; background-color: #ff0000; text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
+=======
+.x-ro	{ color: #ff0000; background-color: #ff9900;}
+.x-rs	{ color: #ff0000; background-color: #aaaaaa; box-sizing: border-box; border: 1px solid #ff0000;}
+.x-rw	{ color: #ff0000; background-color: #ffffff;}
+.x-ry	{ color: #ff0000; background-color: #fff00c;}
+.x-so	{ color: #aaaaaa; background-color: #ff9900; text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
+>>>>>>> parent of bb73052... Fixes and updates for missing styles.
 .x-tk	{ color: #d9ab4b; background-color: #000000;}
 .x-ub	{ color: #ffcc00; background-color: #0000ff;}
 .x-uc	{ color: #ffcc00; background-color: #990044;}
