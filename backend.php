@@ -392,6 +392,10 @@ function doTabs($tabs) {
 			print t(4)."<li class=\"nav-item slate\"><a role=\"nav-link\" data-toggle=\"pill\" style=\"color:inherit; text-decoration: inherit;\" href=\"#INT\"> International </a></li>\n";
 		}
 		else {
+			if ($t == "MKD") {
+				$t = "NMK";
+			}
+			print "<!-- ".$t." -->\n";
 			$n = $Nations[$t];
 			print t(4)."<li class=\"nav-item ".$Team[$n]["Mjr"]."\"><a role=\"nav-link\" data-toggle=\"pill\" href=\"#".$t."\">".doFlag(substr($Team[$n]["Mjr"], 2, 1), $t)." ".$Team[$n]["Name"]."</a></li>\n";
 		}

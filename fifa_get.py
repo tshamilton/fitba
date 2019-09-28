@@ -23,7 +23,7 @@ def get_data(the_url):
 	return cinput
 
 def cleanWords(text):
-	txt = re.sub("[\s|\'|\.|\-|\/|\°|\(|\)]", "", text)
+	txt = re.sub(r'[\s|\'|\.|\-|\/|\°|\(|\)]', "", text)
 	return txt
 
 def washText(the_text, context, out="n"):

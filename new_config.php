@@ -3,27 +3,27 @@ include 'utility.php';
 
 function table($in_t, $nC, $type) {
 	if ($type == "minor") {
-		##=((Size+(nCol-mod))/nCol)
-		#$the_count = 0;
-		#$size = sizeof($in_t)-1;
-		#$colLength = ($size+($nC-($size % $nC)))/$nC;
-		#print "<p>N => ".sizeof($in_t).", C -> ".$nC." thf. L = ".$colLength."</p>\n";
-		#print t(5)."<div class=\"row\">\n";
-		#print t(5)."<div class=\"col-sm-1\">\n";
-		#foreach ($in_t as $N => $P) {
-		#	print t(6)."<div class=\"team mx-1 my-2 ".strrev($N)."\"><span> ".$N." (".$P.") </span></div>\n";
-		#	if ($the_count == $colLength) {
-		#		print t(5)."</div>\n";
-		#		print t(5)."<div class=\"col-sm-1\">\n";
-		#		$the_count = 0;
-		#	}
-		#	$the_count += 1;
-		#}
-		#print t(5)."</div>\n";
-		#print t(5)."</div>\n";
-		print "\$in_t has ".sizeof($in_t)." elements across ".$nC." columns.<br/>\n";
-		$mC = floor(sizeof($in_t) / $nC);
-		print "So, ".$mC." entries for ".($nC-1)." columns and ".(sizeof($in_t) % $nC)." for the last.<br/>\n";
+		$ks = array_keys($in_t);
+		$size = sizeof($in_t);
+		$colLen = ceil($size / $nC);
+		$leftOver = $size - ($colLen * ($nC-1));
+		#print t(5)."Size=".$size.", Columns=".$nC.", colLen=".$colLen." entries for ".($nC-1)." columns and ".$leftOver." for the last.<br/>\n";
+		print t(5)."<div class=\"row\">\n";
+		for ($tC = 0; $tC < $nC-1; $tC++) {
+			print t(6)."<div class=\"col-sm-1\">\n";
+			for ($e = 0; $e < $colLen; $e++) {
+				$x = array_shift($ks);
+				print t(7)."<div class=\"team mx-1 my-2 ".strrev($x)."\">".strrev($x)." (".$in_t[$x].")</div>\n";
+			}
+			print t(6)."</div>\n";
+		}
+		print t(6)."<div class=\"col-sm-1\">\n";
+		for ($e = 0; $e < $leftOver; $e++) {
+			$x = array_shift($ks);
+			print t(7)."<div class=\"team mx-1 my-2 ".strrev($x)."\">".strrev($x)." (".$in_t[$x].")</div>\n";
+		}
+		print t(6)."</div>\n";
+		print t(5)."</div>\n";
 	}
 }
 
@@ -70,42 +70,42 @@ $Stats = json_decode($string, true);
 					<div class="theContent grass p-2">
 						<div class="row">
 							<div class="col-sm-2">
-								<div style="border: 1px solid #0000ff; box-sizing: border-box;" class="team mx-1 my-2 wa"><span> a - azure - 3366ff </span></div>
-								<div style="border: 1px solid #000099; box-sizing: border-box;" class="team mx-1 my-2 wb"><span> b - blue - 0000ff </span></div>
-								<div style="border: 1px solid #4c0022; box-sizing: border-box;" class="team mx-1 my-2 wc"><span> c - claret - 990044 </span></div>
-								<div style="border: 1px solid #660000; box-sizing: border-box;" class="team mx-1 my-2 wd"><span> d - blood - cc0000 </span></div>
+								<div style="border: 1px solid #0033cc; box-sizing: border-box;" class="team mx-1 my-2 wa"><span> a - azure - 3366ff </span></div>
+								<div style="border: 1px solid #3333cc; box-sizing: border-box;" class="team mx-1 my-2 wb"><span> b - blue - 0000ff </span></div>
+								<div style="border: 1px solid #660011; box-sizing: border-box;" class="team mx-1 my-2 wc"><span> c - claret - 990044 </span></div>
+								<div style="border: 1px solid #330000; box-sizing: border-box;" class="team mx-1 my-2 wd"><span> d - blood - cc0000 </span></div>
 							</div>
 							<div class="col-sm-2">
-								<div class="team mx-1 my-2 ke"><span> e - emerald - 00cc00 </span></div>
-								<div class="team mx-1 my-2 kf"><span> f - sky - 77aadd </span></div>
-								<div class="team mx-1 my-2 wg"><span> g - green - 009900 </span></div>
-								<div class="team mx-1 my-2 kh"><span> h - light blue - 00aaff </span></div>
+								<div style="border: 1px solid #009900; box-sizing: border-box;" class="team mx-1 my-2 ke"><span> e - emerald - 00cc00 </span></div>
+								<div style="border: 1px solid #4477aa; box-sizing: border-box;" class="team mx-1 my-2 kf"><span> f - sky - 77aadd </span></div>
+								<div style="border: 1px solid #00cc00; box-sizing: border-box;" class="team mx-1 my-2 wg"><span> g - green - 009900 </span></div>
+								<div style="border: 1px solid #0077cc; box-sizing: border-box;" class="team mx-1 my-2 kh"><span> h - light blue - 00aaff </span></div>
 							</div>
 							<div class="col-sm-2">
-								<div class="team mx-1 my-2 ki"><span> i - pink - ff9f9f </span></div>
-								<div class="team mx-1 my-2 kj"><span> j - puce - aa3388 </span></div>
-								<div class="team mx-1 my-2 wk"><span> k - black - 000000 </span></div>
-								<div class="team mx-1 my-2 wl"><span> l - lilac - 8866ee </span></div>
-								<div class="team mx-1 my-2 wm"><span> m - magenta - ff00ff </span></div>
+								<div style="border: 1px solid #cc6c6c; box-sizing: border-box;" class="team mx-1 my-2 ki"><span> i - pink - ff9f9f </span></div>
+								<div style="border: 1px solid #770055; box-sizing: border-box;" class="team mx-1 my-2 kj"><span> j - puce - aa3388 </span></div>
+								<div style="border: 1px solid #333333; box-sizing: border-box;" class="team mx-1 my-2 wk"><span> k - black - 000000 </span></div>
+								<div style="border: 1px solid #5533bb; box-sizing: border-box;" class="team mx-1 my-2 wl"><span> l - lilac - 8866ee </span></div>
+								<div style="border: 1px solid #cc00cc; box-sizing: border-box;" class="team mx-1 my-2 wm"><span> m - magenta - ff00ff </span></div>
 							</div>
 							<div class="col-sm-2">
-								<div class="team mx-1 my-2 wn"><span> n - navy - 000099 </span></div>
-								<div class="team mx-1 my-2 ko"><span> o - orange - ff9900 </span></div>
-								<div class="team mx-1 my-2 wp"><span> p - purple - 660099 </span></div>
-								<div class="team mx-1 my-2 wq"><span> q - maroon - 880000 </span></div>
-								<div class="team mx-1 my-2 wr"><span> r - red - ff0000 </span></div>
+								<div style="border: 1px solid #3333cc; box-sizing: border-box;" class="team mx-1 my-2 wn"><span> n - navy - 000099 </span></div>
+								<div style="border: 1px solid #cc6600; box-sizing: border-box;" class="team mx-1 my-2 ko"><span> o - orange - ff9900 </span></div>
+								<div style="border: 1px solid #330066; box-sizing: border-box;" class="team mx-1 my-2 wp"><span> p - purple - 660099 </span></div>
+								<div style="border: 1px solid #550000; box-sizing: border-box;" class="team mx-1 my-2 wq"><span> q - maroon - 880000 </span></div>
+								<div style="border: 1px solid #cc0000; box-sizing: border-box;" class="team mx-1 my-2 wr"><span> r - red - ff0000 </span></div>
 							</div>
 							<div class="col-sm-2">
-								<div style="border: 1px solid #555555;" class="team mx-1 my-2 ks"><span> s - silver - aaaaaa </span></div>
-								<div class="team mx-1 my-2 kt"><span> t - beige - d9ab4b </span></div>
-								<div class="team mx-1 my-2 ku"><span> u - gold - ffcc00 </span></div>
-								<div class="team mx-1 my-2 wv"><span> v - brown - aa5533 </span></div>
+								<div style="border: 1px solid #777777; box-sizing: border-box;" class="team mx-1 my-2 ks"><span> s - silver - aaaaaa </span></div>
+								<div style="border: 1px solid #a67818; box-sizing: border-box;" class="team mx-1 my-2 kt"><span> t - beige - d9ab4b </span></div>
+								<div style="border: 1px solid #cc9900; box-sizing: border-box;" class="team mx-1 my-2 ku"><span> u - gold - ffcc00 </span></div>
+								<div style="border: 1px solid #772200; box-sizing: border-box;" class="team mx-1 my-2 wv"><span> v - brown - aa5533 </span></div>
 							</div>
 							<div class="col-sm-2">
-								<div class="team mx-1 my-2 kw"><span> w - white - ffffff </span></div>
-								<div class="team mx-1 my-2 wx"><span> x - bordeaux - 660033 </span></div>
-								<div class="team mx-1 my-2 ky"><span> y - yellow - fff00c </span></div>
-								<div class="team mx-1 my-2 kz"><span> z - lime - 00ff00 </span></div>
+								<div style="border: 1px solid #cccccc; box-sizing: border-box;" class="team mx-1 my-2 kw"><span> w - white - ffffff </span></div>
+								<div style="border: 1px solid #993366; box-sizing: border-box;" class="team mx-1 my-2 wx"><span> x - bordeaux - 660033 </span></div>
+								<div style="border: 1px solid #ccbd00; box-sizing: border-box;" class="team mx-1 my-2 ky"><span> y - yellow - fff00c </span></div>
+								<div style="border: 1px solid #00cc00; box-sizing: border-box;" class="team mx-1 my-2 kz"><span> z - lime - 00ff00 </span></div>
 							</div>
 						</div>
 					</div>
@@ -146,11 +146,24 @@ $Stats = json_decode($string, true);
 				<div class="container-fluid p-4">
 <?php
 	$countMnS = array();
-	foreach ($Stats["countByMinor"] as $S => $c) {
+	foreach ($Stats["countMinor"] as $S => $c) {
 		$countMnS[strrev($S)] = $c;
 	}
 	ksort($countMnS);
 	table($countMnS, 12, 'minor');
+?>
+				</div>
+				</div>
+				<h2 class="text-center"> Plain Styles </h2>
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+				<div class="container-fluid p-4">
+<?php
+	$countMjX = array();
+	foreach ($Stats["countMajor"]["x"] as $S => $c) {
+		$countMjX[strrev($S)] = $c;
+	}
+	ksort($countMjX);
+	table($countMjX, 6, 'minor');
 ?>
 				</div>
 				</div>

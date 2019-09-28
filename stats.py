@@ -4,6 +4,7 @@ import csv
 import json
 
 DEBUG=1
+Out = {}
 Champs = {}
 countByCountry = {}
 countByMajorStyle = {}
@@ -15,6 +16,9 @@ tempBadgeList = {}
 
 tempTeamNames = []
 errorList = []
+
+totalCountries = 0
+totalTeams = 0
 
 the_nations = "./config/nations.csv"
 the_teams = "./config/teams.csv"
@@ -94,6 +98,7 @@ x - Open the teams file?
 	When something doesn't work report line number and whole line
 x - If I can't open a file, report the file
 '''
+
 if os.path.isfile(the_oldfile): # TEST: Does the current JSON file exist and can it be opened?
 	debug("Can open current JSON")
 	with open(the_oldfile) as f:
@@ -233,12 +238,9 @@ for the_nat in orig_nations:
 	if re.match("~", n[0]):
 		nList = n[0].split("~")
 		n[0] = nList[0]
-	countryByName[n[0]] = n[8]
-	countryByTri[n[8]] = n[0]
-	countByMinorStyle[n[2]] = countByMinorStyle[n[2]] + 1
-	countByMajorStyle[n[3]] = countByMajorStyle[n[3]] + 1
-	countByCountry[n[8]] = 0
-	listByCountry[n[8]] = []
+
+	totalCountries = totalCountries + 1
+
 
 if os.path.isfile(the_teams): # TEST: Does the teams csv exist and can it be opened?
 	debug("Can open teams csv")
@@ -342,7 +344,15 @@ for the_team in orig_teams:
 		debug("\t"+text)
 		errorList.append(text)
 
-	countByCountry[t[9]] = countByCountry[t[9]] + 1
-	listByCountry[t[9]].append(t[0])
+	totalTeams = totalTeams + 1
+
+Out["champs"] = Champs
+Out["errorList"] = errorList
+Out["totalCountries"] = totalCountries
+Out["totalTeams"] = totalTeams
+Out["countMinor"] = countByMinorStyle
+
+with open('base.json', 'w') as j:
+	json.dump(Out, j, indent='\t')
 
 exit(0)
