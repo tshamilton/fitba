@@ -25,8 +25,93 @@ function table($in_t, $nC, $type) {
 		print t(6)."</div>\n";
 		print t(5)."</div>\n";
 	}
+	elseif ($type == "majorX") {
+		$ks = array_keys($in_t);
+		$size = sizeof($in_t);
+		$colLen = ceil($size / $nC);
+		$leftOver = $size - ($colLen * ($nC-1));
+		#print t(5)."Size=".$size.", Columns=".$nC.", colLen=".$colLen." entries for ".($nC-1)." columns and ".$leftOver." for the last.<br/>\n";
+		print t(5)."<div class=\"row\">\n";
+		for ($tC = 0; $tC < $nC-1; $tC++) {
+			print t(6)."<div class=\"col-sm-1\">\n";
+			for ($e = 0; $e < $colLen; $e++) {
+				$x = array_shift($ks);
+				print t(7)."<div class=\"team mx-1 my-2 x-".strrev($x)."\">x-".strrev($x)." (".$in_t[$x].")</div>\n";
+			}
+			print t(6)."</div>\n";
+		}
+		print t(6)."<div class=\"col-sm-1\">\n";
+		for ($e = 0; $e < $leftOver; $e++) {
+			$x = array_shift($ks);
+			print t(7)."<div class=\"team mx-1 my-2 ".strrev($x)."\">x-".strrev($x)." (".$in_t[$x].")</div>\n";
+		}
+		print t(6)."</div>\n";
+		print t(5)."</div>\n";
+	}
+	elseif ($type == "majorS" || $type == "majorB" || $type == "majorE" || $type == "majorH" || $type == "majorD" || $type == "majorO" || $type == "majorV" || $type = "majorZ") {
+		#pretty_var($in_t);
+		switch ($type) {
+			case "majorS":	$sty = "s";	break;
+			case "majorB":	$sty = "b"; break;
+			case "majorE":	$sty = "e"; break;
+			case "majorH":	$sty = "h"; break;
+			case "majorD":	$sty = "d"; break;
+			case "majorO":	$sty = "o"; break;
+			case "majorV":	$sty = "v";	break;
+			case "majorZ":	$sty = "z";	break;
+		}
+		if (sizeof($in_t) <= 12) {
+			print t(5)."<div class=\"row\">\n";
+			foreach ($in_t as $x => $count) {
+				$x = substr($x, -1, 1).substr($x, 0, strlen($x)-1);
+				print t(7)."<div class=\"team mx-1 my-2 ".$sty."-".$x."\"> ".$sty."-".$x." (".$count.")</div>\n";
+			}
+			print t(5)."</div>\n";
+		}
+		else {
+			if ((sizeof($in_t) - (ceil(sizeof($in_t) / $nC) * ($nC-1))) > 0) {
+				$ks = array_keys($in_t);
+				$size = sizeof($in_t);
+				$colLen = ceil($size / $nC);
+				$leftOver = $size - ($colLen * ($nC-1));
+			}
+			else {
+				$ks = array_keys($in_t);
+				$size = sizeof($in_t);
+				$colLen = floor($size / $nC);
+				$leftOver = $size - ($colLen * ($nC-1));
+			}
+			ksort($in_t);
+			print t(5)."<p>Size=".$size.", Columns=".$nC.", colLen=".($size/$nC)." or ".$colLen." entries for ".($nC-1)." columns and ".$leftOver." for the last.</p>\n";
+			print t(5)."<div class=\"row\">\n";
+			for ($tC = 0; $tC < $nC-1; $tC++) {
+				print t(6)."<div class=\"col-sm-1\">\n";
+				for ($e = 0; $e < $colLen; $e++) {
+					$orig = array_shift($ks);
+					if (isset($in_t[$orig])) {
+						$count = $in_t[$orig];
+						$x = substr($orig, -1, 1).substr($orig, 0, strlen($orig)-1);
+					}
+					else {
+						$count = "X?";
+						$x = $orig;
+					}
+					print t(7)."<div class=\"team mx-1 my-2 ".$sty."-".$x."\"> ".$sty."-".$x." (".$count.")</div>\n";
+				}
+				print t(6)."</div>\n";
+			}
+			print t(6)."<div class=\"col-sm-1\">\n";
+			for ($e = 0; $e < $leftOver; $e++) {
+				$orig = array_shift($ks);
+				$count = $in_t[$orig];
+				$x = substr($orig, -1, 1).substr($orig, 0, strlen($orig)-1);
+				print t(7)."<div class=\"team mx-1 my-2 ".$sty."-".$x."\"> ".$sty."-".$x." (".$count.")</div>\n";
+			}
+			print t(6)."</div>\n";
+			print t(5)."</div>\n";
+		}
+	}
 }
-
 
 $string = file_get_contents('base.json');
 $Stats = json_decode($string, true);
@@ -111,7 +196,7 @@ $Stats = json_decode($string, true);
 					</div>
 				</div>
 				</div>
-				<h2 class="text-center">Info</h2> <!-- Competition container -->
+				<h2 class="text-center">Info</h2>
 				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 				<div class="container-fluid p-4">
 					<div class="theContent slate p-2">
@@ -136,12 +221,26 @@ $Stats = json_decode($string, true);
 					</div>
 				</div>
 				</div>
+				<h2 class="text-center">Errors</h2>
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+				<div class="container-fluid p-4">
+					<div class="theContent slate p-2">
+						<p style="margin-top: 1rem;">
+							<?php
+								foreach ($Stats["errorList"] as $err) {
+									print $err."<br/>\n";
+								}
+							?>
+						</p>
+					</div>
+				</div>
+				</div>
 			</div>
 			</div><!-- End tab panel -->
 			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="colours" name="colours">
 			<div class="container-fluid">
 				<h1 class="text-center"> Colours </h1>
-				<h2 class="text-center"> Minor Styles </h2>
+				<h2 class="text-center"> Minor Styles (<?php print sizeof($Stats["countMinor"]); ?> total)</h2>
 				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 				<div class="container-fluid p-4">
 <?php
@@ -154,16 +253,129 @@ $Stats = json_decode($string, true);
 ?>
 				</div>
 				</div>
-				<h2 class="text-center"> Plain Styles </h2>
+				<h2 class="text-center"> Plain Styles (<?php print sizeof($Stats["countMajor"]["x"]); ?> total)</h2>
 				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 				<div class="container-fluid p-4">
 <?php
 	$countMjX = array();
 	foreach ($Stats["countMajor"]["x"] as $S => $c) {
-		$countMjX[strrev($S)] = $c;
+		$the_key = strrev(substr($S,2,2));
+		$countMjX[$the_key] = $c;
 	}
 	ksort($countMjX);
-	table($countMjX, 6, 'minor');
+	table($countMjX, 12, 'majorX');
+?>
+				</div>
+				</div>
+				<h2 class="text-center"> Striped Styles (<?php print sizeof($Stats["countMajor"]["s"]); ?> total)</h2>
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+				<div class="container-fluid p-4">
+<?php
+	$countMjX = array();
+	foreach ($Stats["countMajor"]["s"] as $S => $c) {
+		$the_key = substr($S,3).substr($S,2,1);
+		$countMjX[$the_key] = $c;
+	}
+	ksort($countMjX);
+	table($countMjX, 12, 'majorS');
+?>
+				</div>
+				</div>
+				<h2 class="text-center"> Edged Styles (<?php print sizeof($Stats["countMajor"]["e"]); ?> total)</h2>
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+				<div class="container-fluid p-4">
+<?php
+	$countMjX = array();
+	foreach ($Stats["countMajor"]["e"] as $S => $c) {
+		$the_key = substr($S,3).substr($S,2,1);
+		$countMjX[$the_key] = $c;
+	}
+	ksort($countMjX);
+	table($countMjX, 12, 'majorE');
+?>
+				</div>
+				</div>
+				<h2 class="text-center"> Banded Styles (<?php print sizeof($Stats["countMajor"]["b"]); ?> total)</h2>
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+				<div class="container-fluid p-4">
+<?php
+	$countMjX = array();
+	foreach ($Stats["countMajor"]["b"] as $S => $c) {
+		$the_key = substr($S,3).substr($S,2,1);
+		$countMjX[$the_key] = $c;
+	}
+	ksort($countMjX);
+	table($countMjX, 12, 'majorB');
+?>
+				</div>
+				</div>
+				<h2 class="text-center"> Hooped Styles (<?php print sizeof($Stats["countMajor"]["h"]); ?> total)</h2>
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+				<div class="container-fluid p-4">
+<?php
+	$countMjX = array();
+	foreach ($Stats["countMajor"]["h"] as $S => $c) {
+		$the_key = substr($S,3).substr($S,2,1);
+		$countMjX[$the_key] = $c;
+	}
+	ksort($countMjX);
+	table($countMjX, 12, 'majorH');
+?>
+				</div>
+				</div>
+				<h2 class="text-center"> Offset Styles (<?php print sizeof($Stats["countMajor"]["o"]); ?> total)</h2>
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+				<div class="container-fluid p-4">
+<?php
+	$countMjX = array();
+	foreach ($Stats["countMajor"]["o"] as $S => $c) {
+		$the_key = substr($S,3).substr($S,2,1);
+		$countMjX[$the_key] = $c;
+	}
+	ksort($countMjX);
+	table($countMjX, 12, 'majorO');
+?>
+				</div>
+				</div>
+				<h2 class="text-center"> Halved Styles (<?php print sizeof($Stats["countMajor"]["v"]); ?> total)</h2>
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+				<div class="container-fluid p-4">
+<?php
+	$countMjX = array();
+	foreach ($Stats["countMajor"]["v"] as $S => $c) {
+		$the_key = substr($S,3).substr($S,2,1);
+		$countMjX[$the_key] = $c;
+	}
+	ksort($countMjX);
+	table($countMjX, 12, 'majorV');
+?>
+				</div>
+				</div>
+				<h2 class="text-center"> Sash Styles (<?php print sizeof($Stats["countMajor"]["d"]); ?> total)</h2>
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+				<div class="container-fluid p-4">
+<?php
+	$countMjX = array();
+	foreach ($Stats["countMajor"]["d"] as $S => $c) {
+		$the_key = substr($S,3).substr($S,2,1);
+		$countMjX[$the_key] = $c;
+	}
+	ksort($countMjX);
+	table($countMjX, 12, 'majorD');
+?>
+				</div>
+				</div>
+				<h2 class="text-center"> Checkered Styles (<?php print sizeof($Stats["countMajor"]["z"]); ?> total)</h2>
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+				<div class="container-fluid p-4">
+<?php
+	$countMjX = array();
+	foreach ($Stats["countMajor"]["z"] as $S => $c) {
+		$the_key = substr($S,3).substr($S,2,1);
+		$countMjX[$the_key] = $c;
+	}
+	ksort($countMjX);
+	table($countMjX, 12, 'majorZ');
 ?>
 				</div>
 				</div>

@@ -9,6 +9,16 @@ Champs = {}
 countByCountry = {}
 countByMajorStyle = {}
 countByMinorStyle = {}
+countByMajorStyle['b'] = {}
+countByMajorStyle['d'] = {}
+countByMajorStyle['e'] = {}
+countByMajorStyle['h'] = {}
+countByMajorStyle['o'] = {}
+countByMajorStyle['s'] = {}
+countByMajorStyle['v'] = {}
+countByMajorStyle['x'] = {}
+countByMajorStyle['z'] = {}
+
 countryByName = {}
 countryByTri = {}
 listByCountry = {}
@@ -133,7 +143,7 @@ for c in orig_styles:
 		if len(cStyle) == 2:
 			countByMinorStyle[cStyle] = 0
 		elif re.search(r"^.\-", cStyle):
-			countByMajorStyle[cStyle] = 0
+			countByMajorStyle[cStyle[0]][cStyle] = 0
 
 if os.path.isfile(the_badges): # TEST: Does the badge css exist and can it be opened?
 	debug("Can open badges csv")
@@ -199,6 +209,7 @@ for the_nat in orig_nations:
 			countByMinorStyle[n[2]] = countByMinorStyle[n[2]] + 1
 		else:
 			text = "NationError: '"+the_nat+"' appears to need '"+n[2]+" added to the style sheet."
+			countByMinorStyle[n[2]] = 1
 			debug("\t"+text)
 			errorList.append(text)
 	if not re.match(r'\w\-.+?', n[3]): # TEST: Does the major style (4th part) fit the template?
@@ -206,10 +217,11 @@ for the_nat in orig_nations:
 		debug("\t"+text)
 		errorList.append(text)
 	else:
-		if n[3] in countByMajorStyle:
-			countByMajorStyle[n[3]] = countByMajorStyle[n[3]] + 1
+		if n[3] in countByMajorStyle[n[3][0]]:
+			countByMajorStyle[n[3][0]][n[3]] = countByMajorStyle[n[3][0]][n[3]] + 1
 		else: # TEST: Does the major style exist in the styles css?
-			text = "NationError: '"+the_nat+"' appears to need '"+n[3]+" added to the style sheet."
+			text = "NationError: '"+the_nat+"' appears to need '"+n[3]+"' added to the style sheet."
+			countByMajorStyle[n[3][0]][n[3]] = 1
 			debug("\t"+text)
 			errorList.append(text)
 	if n[4] == "":
@@ -253,7 +265,7 @@ else:
 
 for the_team in orig_teams:
 	if len(the_team) < 5:
-		pass
+		continue
 	t = the_team.split(",")
 	if not len(t) == 10: # TEST: Does the entry have the correct number of parts?
 		text = "TeamError: "+t[0]+" doesn't have the correct number of elements.\n<"+the_team+">\n"
@@ -299,10 +311,11 @@ for the_team in orig_teams:
 		debug("\t"+text)
 		errorList.append(text)
 	else:
-		if t[4] in countByMajorStyle:
-			countByMajorStyle[t[4]] = countByMajorStyle[t[4]] + 1
+		if t[4] in countByMajorStyle[t[4][0]]:
+			countByMajorStyle[t[4][0]][t[4]] = countByMajorStyle[t[4][0]][t[4]] + 1
 		else: # TEST: Does the major style exist in the styles css?
 			text = "TeamError: '"+the_team+"' appears to need '"+t[4]+"' added to the style sheet."
+			countByMajorStyle[t[4][0]][t[4]] = 1
 			debug("\t"+text)
 			errorList.append(text)
 	if t[5] == "":
@@ -331,18 +344,6 @@ for the_team in orig_teams:
 	if re.match("~", t[0]):
 		tList = t[0].split("~")
 		t[0] = tList[0]
-	try:
-		countByMinorStyle[t[3]] = countByMinorStyle[t[3]] + 1
-	except KeyError:
-		text = "TeamError: Minor style "+t[3]+" not listed in css."
-		debug("\t"+text)
-		errorList.append(text)
-	try:
-		countByMajorStyle[t[4]] = countByMajorStyle[t[4]] + 1
-	except KeyError:
-		text = "TeamError: Major style "+t[4]+" not listed in css."
-		debug("\t"+text)
-		errorList.append(text)
 
 	totalTeams = totalTeams + 1
 
@@ -351,6 +352,7 @@ Out["errorList"] = errorList
 Out["totalCountries"] = totalCountries
 Out["totalTeams"] = totalTeams
 Out["countMinor"] = countByMinorStyle
+Out["countMajor"] = countByMajorStyle
 
 with open('base.json', 'w') as j:
 	json.dump(Out, j, indent='\t')
