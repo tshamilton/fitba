@@ -1,120 +1,159 @@
 <?php
 include 'utility.php';
 
-function table($in_t, $nC, $type) {
-	if ($type == "minor") {
-		$ks = array_keys($in_t);
-		$size = sizeof($in_t);
-		$colLen = ceil($size / $nC);
-		$leftOver = $size - ($colLen * ($nC-1));
-		#print t(5)."Size=".$size.", Columns=".$nC.", colLen=".$colLen." entries for ".($nC-1)." columns and ".$leftOver." for the last.<br/>\n";
-		print t(5)."<div class=\"row\">\n";
-		for ($tC = 0; $tC < $nC-1; $tC++) {
-			print t(6)."<div class=\"col-sm-1\">\n";
-			for ($e = 0; $e < $colLen; $e++) {
-				$x = array_shift($ks);
-				print t(7)."<div class=\"team mx-1 my-2 ".strrev($x)."\">".strrev($x)." (".$in_t[$x].")</div>\n";
-			}
-			print t(6)."</div>\n";
-		}
-		print t(6)."<div class=\"col-sm-1\">\n";
-		for ($e = 0; $e < $leftOver; $e++) {
-			$x = array_shift($ks);
-			print t(7)."<div class=\"team mx-1 my-2 ".strrev($x)."\">".strrev($x)." (".$in_t[$x].")</div>\n";
-		}
-		print t(6)."</div>\n";
-		print t(5)."</div>\n";
+function table($in_t, $nC, $context) {
+	global $Team;
+	global $Stats;
+	
+	$tCols = Array();
+	$tCols = array_pad($tCols, $nC, 0);
+	$index = 0;
+	$size = sizeof($in_t);
+	$tKeys = array_keys($in_t);
+
+	while ($size) {
+		$tCols[$index]++;
+		$index++;
+		if ($index >= $nC) { $index = 0; }
+		$size--;
 	}
-	elseif ($type == "majorX") {
-		$ks = array_keys($in_t);
-		$size = sizeof($in_t);
-		$colLen = ceil($size / $nC);
-		$leftOver = $size - ($colLen * ($nC-1));
-		#print t(5)."Size=".$size.", Columns=".$nC.", colLen=".$colLen." entries for ".($nC-1)." columns and ".$leftOver." for the last.<br/>\n";
-		print t(5)."<div class=\"row\">\n";
-		for ($tC = 0; $tC < $nC-1; $tC++) {
-			print t(6)."<div class=\"col-sm-1\">\n";
-			for ($e = 0; $e < $colLen; $e++) {
-				$x = array_shift($ks);
-				print t(7)."<div class=\"team mx-1 my-2 x-".strrev($x)."\">x-".strrev($x)." (".$in_t[$x].")</div>\n";
-			}
-			print t(6)."</div>\n";
-		}
-		print t(6)."<div class=\"col-sm-1\">\n";
-		for ($e = 0; $e < $leftOver; $e++) {
-			$x = array_shift($ks);
-			print t(7)."<div class=\"team mx-1 my-2 ".strrev($x)."\">x-".strrev($x)." (".$in_t[$x].")</div>\n";
-		}
-		print t(6)."</div>\n";
-		print t(5)."</div>\n";
+	switch($nC){
+		case 12:
+			$colW = t(6)."<div class=\"col-sm-1\">\n";
+			break;
+		case 6:
+			$colW = t(6)."<div class=\"col-sm-2\">\n";
+			break;
+		case 4:
+			$colW = t(6)."<div class=\"col-sm-3\">\n";
+			break;
+		case 3:
+			$colW = t(6)."<div class=\"col-sm-4\">\n";
+			break;
 	}
-	elseif ($type == "majorS" || $type == "majorB" || $type == "majorE" || $type == "majorH" || $type == "majorD" || $type == "majorO" || $type == "majorV" || $type = "majorZ") {
-		#pretty_var($in_t);
-		switch ($type) {
-			case "majorS":	$sty = "s";	break;
-			case "majorB":	$sty = "b"; break;
-			case "majorE":	$sty = "e"; break;
-			case "majorH":	$sty = "h"; break;
-			case "majorD":	$sty = "d"; break;
-			case "majorO":	$sty = "o"; break;
-			case "majorV":	$sty = "v";	break;
-			case "majorZ":	$sty = "z";	break;
-		}
-		if (sizeof($in_t) <= 12) {
-			print t(5)."<div class=\"row\">\n";
-			foreach ($in_t as $x => $count) {
-				$x = substr($x, -1, 1).substr($x, 0, strlen($x)-1);
-				print t(7)."<div class=\"team mx-1 my-2 ".$sty."-".$x."\"> ".$sty."-".$x." (".$count.")</div>\n";
-			}
-			print t(5)."</div>\n";
-		}
-		else {
-			if ((sizeof($in_t) - (ceil(sizeof($in_t) / $nC) * ($nC-1))) > 0) {
-				$ks = array_keys($in_t);
-				$size = sizeof($in_t);
-				$colLen = ceil($size / $nC);
-				$leftOver = $size - ($colLen * ($nC-1));
-			}
-			else {
-				$ks = array_keys($in_t);
-				$size = sizeof($in_t);
-				$colLen = floor($size / $nC);
-				$leftOver = $size - ($colLen * ($nC-1));
-			}
-			ksort($in_t);
-			print t(5)."<p>Size=".$size.", Columns=".$nC.", colLen=".($size/$nC)." or ".$colLen." entries for ".($nC-1)." columns and ".$leftOver." for the last.</p>\n";
-			print t(5)."<div class=\"row\">\n";
-			for ($tC = 0; $tC < $nC-1; $tC++) {
-				print t(6)."<div class=\"col-sm-1\">\n";
-				for ($e = 0; $e < $colLen; $e++) {
-					$orig = array_shift($ks);
-					if (isset($in_t[$orig])) {
-						$count = $in_t[$orig];
-						$x = substr($orig, -1, 1).substr($orig, 0, strlen($orig)-1);
+	
+	print t(5)."<div class=\"row\">\n";
+	foreach ($tCols as $cL) {
+		print $colW;
+		for ($cL = $cL; $cL > 0; $cL--) {
+			$k = array_shift($tKeys);
+			$v = $in_t[$k];
+			switch ($context) {
+				case "minor":
+					$k = strrev($k);
+					print t(7)."<div class=\"team mx-1 my-2 ".$k."\">".$k." (".$v.")</div>\n";
+					break;
+				case "majorX":
+					$k = strrev($k);
+					print t(7)."<div class=\"team mx-1 my-2 x-".$k."\">x-".$k." (".$v.")</div>\n";
+					break;
+				case "majorE":
+					$k = strrev($k);
+					print t(7)."<div class=\"team mx-1 my-2 e-".$k."\">e-".$k." (".$v.")</div>\n";
+					break;
+				case "majorV":
+					$k = strrev($k);
+					print t(7)."<div class=\"team mx-1 my-2 v-".$k."\">v-".$k." (".$v.")</div>\n";
+					break;
+				case "majorB":
+					$k = strrev($k);
+					print t(7)."<div class=\"team mx-1 my-2 b-".$k."\">b-".$k." (".$v.")</div>\n";
+					break;
+				case "majorZ":
+					$k = strrev($k);
+					print t(7)."<div class=\"team mx-1 my-2 z-".$k."\">z-".$k." (".$v.")</div>\n";
+					break;
+				case "majorE":
+					$k = strrev($k);
+					print t(7)."<div class=\"team mx-1 my-2 e-".$k."\">e-".$k." (".$v.")</div>\n";
+					break;
+				case "majorH":
+					$k = strrev($k);
+					print t(7)."<div class=\"team mx-1 my-2 h-".$k."\">h-".$k." (".$v.")</div>\n";
+					break;
+				case "majorS":
+					$body = substr($k, 0, strlen($k)-1);
+					$text = substr($k, strlen($k)-1, 1);
+					print t(7)."<div class=\"team mx-1 my-2 s-".$text.$body."\">s-".$text.$body." (".$v.")</div>\n";
+					break;
+				case "majorO":
+					$body = substr($k, 0, strlen($k)-1);
+					$text = substr($k, strlen($k)-1, 1);
+					print t(7)."<div class=\"team mx-1 my-2 o-".$text.$body."\">o-".$text.$body." (".$v.")</div>\n";
+					break;
+				case "majorD":
+					$body = substr($k, 0, strlen($k)-1);
+					$text = substr($k, strlen($k)-1, 1);
+					print t(7)."<div class=\"team mx-1 my-2 d-".$text.$body."\">d-".$text.$body." (".$v.")</div>\n";
+					break;
+				case "nats":
+					if ($k == "MKD") {
+						$k = "NMK";
+					}
+					if ($k == "INT") {
+						print t(7)."<div class=\"team mx-1 my-2 slate\">International (".$v.")</div>\n";
 					}
 					else {
-						$count = "X?";
-						$x = $orig;
+						$name = $Stats['countryByTri'][$k];
+						print t(7)."<div class=\"team mx-1 my-2 slate\">".$Team[$name]["Name"]." (".$v.")</div>\n";
 					}
-					print t(7)."<div class=\"team mx-1 my-2 ".$sty."-".$x."\"> ".$sty."-".$x." (".$count.")</div>\n";
-				}
-				print t(6)."</div>\n";
+					
+					break;
+				default:
+					pretty_var($k." => ".$v);
 			}
-			print t(6)."<div class=\"col-sm-1\">\n";
-			for ($e = 0; $e < $leftOver; $e++) {
-				$orig = array_shift($ks);
-				$count = $in_t[$orig];
-				$x = substr($orig, -1, 1).substr($orig, 0, strlen($orig)-1);
-				print t(7)."<div class=\"team mx-1 my-2 ".$sty."-".$x."\"> ".$sty."-".$x." (".$count.")</div>\n";
-			}
-			print t(6)."</div>\n";
-			print t(5)."</div>\n";
 		}
+		print t(6)."</div>\n";
 	}
+	print t(5)."</div>\n";
 }
 
 $string = file_get_contents('base.json');
 $Stats = json_decode($string, true);
+$the_teams	= file("config/teams.csv", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+$the_nats	= file("config/nations.csv", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+
+$Team = Array();
+$Nations = Array();
+
+foreach ($the_teams as $in_t) {
+	if (preg_match("/^#/", $in_t) || strlen($in_t) < 5) {
+		# skip line
+	}
+	else {
+		#arsenal,Arsenal,Awrw,wr,b-wwr,x009,51.555,-0.108611,Highbury,ENG
+		$t_line = explode(",", $in_t);
+		$idName = explode("~", $t_line[0]);
+		$id = $idName[0];
+		$Team[$id]["Name"] = $t_line[1];
+		$Team[$id]["Pin"] = $t_line[2];
+		$Team[$id]["Mnr"] = $t_line[3];
+		$Team[$id]["Mjr"] = $t_line[4];
+		$Team[$id]["Badge"] = $t_line[5];
+		$Team[$id]["Long"] = $t_line[6];
+		$Team[$id]["Lat"] = $t_line[7];
+		$Team[$id]["Loc"] = $t_line[8];
+		$Team[$id]["Tri"] = $t_line[9];
+	}
+}
+foreach ($the_nats as $in_t) {
+	if (preg_match("/^#/", $in_t) || strlen($in_t) < 5) {
+		# skip line
+	}
+	else {
+		#australia,Australia,gy,x-gy,x049,-25.274398,133.775136,5,AUS
+		$t_line = explode(",", $in_t);
+		$idName = explode("~", $t_line[0]);
+		$id = $idName[0];
+		$Team[$id]["Name"] = $t_line[1];
+		$Team[$id]["Mnr"] = $t_line[2];
+		$Team[$id]["Mjr"] = $t_line[3];
+		$Team[$id]["Badge"] = $t_line[4];
+		$Team[$id]["Long"] = $t_line[5];
+		$Team[$id]["Lat"] = $t_line[6];
+		$Team[$id]["Tri"] = $t_line[8];
+	}
+}
 
 ?>
 <!doctype html>
@@ -204,15 +243,15 @@ $Stats = json_decode($string, true);
 							<?php print $Stats["totalTeams"]." teams in the database from ".$Stats["totalCountries"]." countries.<br/>\n"; ?>
 						</p>
 						<p style="margin-top: 1rem;">
-							<?php #print $Stats["Colours"]["plain"]["total"]." plain designs.<br/>\n"; ?>
-							<?php #print $Stats["Colours"]["stripes"]["total"]." striped designs.<br/>\n"; ?>
-							<?php #print $Stats["Colours"]["edges"]["total"]." edged designs.<br/>\n"; ?>
-							<?php #print $Stats["Colours"]["bands"]["total"]." banded designs.<br/>\n"; ?>
-							<?php #print $Stats["Colours"]["hoops"]["total"]." hooped designs.<br/>\n"; ?>
-							<?php #print $Stats["Colours"]["halves"]["total"]." halved designs.<br/>\n"; ?>
-							<?php #print $Stats["Colours"]["offsets"]["total"]." offset designs.<br/>\n"; ?>
-							<?php #print $Stats["Colours"]["sashed"]["total"]." sashed designs.<br/>\n"; ?>
-							<?php #print $Stats["Colours"]["others"]["total"]." chequered designs.<br/>\n"; ?>
+							<?php print "\$Stats[\"Colours\"][\"plain\"][\"total\"].\" plain designs.<br/>\n"; ?>
+							<?php print "\$Stats[\"Colours\"][\"stripes\"][\"total\"].\" striped designs.<br/>\n"; ?>
+							<?php print "\$Stats[\"Colours\"][\"edges\"][\"total\"].\" edged designs.<br/>\n"; ?>
+							<?php print "\$Stats[\"Colours\"][\"bands\"][\"total\"].\" banded designs.<br/>\n"; ?>
+							<?php print "\$Stats[\"Colours\"][\"hoops\"][\"total\"].\" hooped designs.<br/>\n"; ?>
+							<?php print "\$Stats[\"Colours\"][\"halves\"][\"total\"].\" halved designs.<br/>\n"; ?>
+							<?php print "\$Stats[\"Colours\"][\"offsets\"][\"total\"].\" offset designs.<br/>\n"; ?>
+							<?php print "\$Stats[\"Colours\"][\"sashed\"][\"total\"].\" sashed designs.<br/>\n"; ?>
+							<?php print "\$Stats[\"Colours\"][\"others\"][\"total\"].\" chequered designs.<br/>\n"; ?>
 						</p>
 						<p style="margin-top: 1rem;">
 							<a href="./news/world.orig">See the current raw text.</a><br/>
@@ -273,7 +312,9 @@ $Stats = json_decode($string, true);
 <?php
 	$countMjX = array();
 	foreach ($Stats["countMajor"]["s"] as $S => $c) {
-		$the_key = substr($S,3).substr($S,2,1);
+		$text = substr($S, 2, 1);
+		$body = substr($S, 3);
+		$the_key = $body.$text;
 		$countMjX[$the_key] = $c;
 	}
 	ksort($countMjX);
@@ -287,7 +328,7 @@ $Stats = json_decode($string, true);
 <?php
 	$countMjX = array();
 	foreach ($Stats["countMajor"]["e"] as $S => $c) {
-		$the_key = substr($S,3).substr($S,2,1);
+		$the_key = strrev(substr($S, 2));
 		$countMjX[$the_key] = $c;
 	}
 	ksort($countMjX);
@@ -301,7 +342,7 @@ $Stats = json_decode($string, true);
 <?php
 	$countMjX = array();
 	foreach ($Stats["countMajor"]["b"] as $S => $c) {
-		$the_key = substr($S,3).substr($S,2,1);
+		$the_key = strrev(substr($S, 2));
 		$countMjX[$the_key] = $c;
 	}
 	ksort($countMjX);
@@ -315,7 +356,7 @@ $Stats = json_decode($string, true);
 <?php
 	$countMjX = array();
 	foreach ($Stats["countMajor"]["h"] as $S => $c) {
-		$the_key = substr($S,3).substr($S,2,1);
+		$the_key = strrev(substr($S, 2));
 		$countMjX[$the_key] = $c;
 	}
 	ksort($countMjX);
@@ -329,7 +370,9 @@ $Stats = json_decode($string, true);
 <?php
 	$countMjX = array();
 	foreach ($Stats["countMajor"]["o"] as $S => $c) {
-		$the_key = substr($S,3).substr($S,2,1);
+		$text = substr($S, 2, 1);
+		$body = substr($S, 3);
+		$the_key = $body.$text;
 		$countMjX[$the_key] = $c;
 	}
 	ksort($countMjX);
@@ -343,7 +386,7 @@ $Stats = json_decode($string, true);
 <?php
 	$countMjX = array();
 	foreach ($Stats["countMajor"]["v"] as $S => $c) {
-		$the_key = substr($S,3).substr($S,2,1);
+		$the_key = strrev(substr($S, 2));
 		$countMjX[$the_key] = $c;
 	}
 	ksort($countMjX);
@@ -357,7 +400,9 @@ $Stats = json_decode($string, true);
 <?php
 	$countMjX = array();
 	foreach ($Stats["countMajor"]["d"] as $S => $c) {
-		$the_key = substr($S,3).substr($S,2,1);
+		$text = substr($S, 2, 1);
+		$body = substr($S, 3);
+		$the_key = $body.$text;
 		$countMjX[$the_key] = $c;
 	}
 	ksort($countMjX);
@@ -371,7 +416,7 @@ $Stats = json_decode($string, true);
 <?php
 	$countMjX = array();
 	foreach ($Stats["countMajor"]["z"] as $S => $c) {
-		$the_key = substr($S,3).substr($S,2,1);
+		$the_key = strrev(substr($S, 2));
 		$countMjX[$the_key] = $c;
 	}
 	ksort($countMjX);
@@ -384,7 +429,16 @@ $Stats = json_decode($string, true);
 			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="nations" name="nations">
 			<div class="container-fluid">
 				<h1 class="text-center"> Nations </h1>
-			
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+				<div class="container-fluid p-4">
+<?php 
+	asort($Stats['monNats']);
+	//pretty_var($Stats["countryByTri"], '77aadd');
+	//pretty_var($Stats["countryByTri"], 'ddaa77');
+	table($Stats['monNats'], 6, 'nats');
+?>
+				</div>
+				</div>
 			</div>
 			</div><!-- End tab panel -->
 			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="clubs" name="clubs">

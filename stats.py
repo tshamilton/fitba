@@ -18,6 +18,7 @@ countByMajorStyle['s'] = {}
 countByMajorStyle['v'] = {}
 countByMajorStyle['x'] = {}
 countByMajorStyle['z'] = {}
+monitored_Nations = {}
 
 countryByName = {}
 countryByTri = {}
@@ -126,6 +127,11 @@ if os.path.isfile(the_comps): # TEST: Does the competition csv exist and can it 
 else:
 	debug("FileError: Can't open comps file")
 	exit(1)
+
+for c in orig_comps:
+	if re.match(r"^N,", c):
+		this_nat = c.split(",")
+		monitored_Nations[this_nat[1]] = this_nat[3]
 
 if os.path.isfile(the_styles): # TEST: Does the styles css exist and can it be opened?
 	debug("Can open styles css")
@@ -247,10 +253,12 @@ for the_nat in orig_nations:
 		debug("\t"+text)
 		errorList.append(text)
 
-	if re.match("~", n[0]):
+	if re.search(r'~', n[0]):
 		nList = n[0].split("~")
 		n[0] = nList[0]
 
+	countryByTri[n[8]] = n[0]
+	countryByName[n[0]] = n[8]
 	totalCountries = totalCountries + 1
 
 
@@ -353,6 +361,9 @@ Out["totalCountries"] = totalCountries
 Out["totalTeams"] = totalTeams
 Out["countMinor"] = countByMinorStyle
 Out["countMajor"] = countByMajorStyle
+Out["monNats"] = monitored_Nations
+Out["countryByTri"] = countryByTri
+Out["countryByName"] = countryByName
 
 with open('base.json', 'w') as j:
 	json.dump(Out, j, indent='\t')
