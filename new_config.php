@@ -95,9 +95,14 @@ function table($in_t, $nC, $context) {
 					}
 					else {
 						$name = $Stats['countryByTri'][$k];
-						print t(7)."<div class=\"team mx-1 my-2 slate\">".$Team[$name]["Name"]." (".$v.")</div>\n";
+						if (strlen($Team[$name]["Badge"]) > 0) {
+							$style = $Team[$name]["Badge"];
+						}
+						else {
+							$style = $Team[$name]["Mjr"];
+						}
+						print t(7)."<div class=\"team mx-1 my-2 ".$style."\">".$Team[$name]["Name"]." (".$v.") <img class=\"".substr($Team[$name]["Mnr"], 0, 1)." flag\" src=\"flags/".$k.".png\"></div>\n";
 					}
-					
 					break;
 				default:
 					pretty_var($k." => ".$v);
@@ -433,8 +438,6 @@ foreach ($the_nats as $in_t) {
 				<div class="container-fluid p-4">
 <?php 
 	asort($Stats['monNats']);
-	//pretty_var($Stats["countryByTri"], '77aadd');
-	//pretty_var($Stats["countryByTri"], 'ddaa77');
 	table($Stats['monNats'], 6, 'nats');
 ?>
 				</div>
@@ -444,7 +447,15 @@ foreach ($the_nats as $in_t) {
 			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="clubs" name="clubs">
 			<div class="container-fluid">
 				<h1 class="text-center"> Clubs </h1>
-			
+				<h2 class="text-center"> Nations </h2>
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+				<div class="container-fluid p-4">
+<?php
+	ksort($Stats['countryByName']);
+	table($Stats['countryByName'], 6, 'nats');
+?>
+				</div>
+				</div>
 			</div>
 			</div><!-- End tab panel -->
 			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="badges" name="badges">
