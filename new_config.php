@@ -104,6 +104,18 @@ function table($in_t, $nC, $context) {
 						print t(7)."<div class=\"team mx-1 my-2 ".$style."\">".$Team[$name]["Name"]." (".$v.") <img class=\"".substr($Team[$name]["Mnr"], 0, 1)." flag\" src=\"flags/".$k.".png\"></div>\n";
 					}
 					break;
+				case "cNats":
+					if ($k == "MKD") {
+						$k = "NMK";
+					}
+					if ($k == "czechoslovakia" || $k == "sovietunion") {
+					}
+					else {
+						$name = $Team[$k]["Name"];
+						$tr = $Stats['countryByName'][$k];
+						print t(7)."<div class=\"team mx-1 my-2 ".$Team[$k]["Mjr"]."\"><a href=\"#".$tr."\">".$name." <img class=\"".substr($Team[$k]["Mnr"], 0, 1)." flag\" src=\"flags/".$tr.".png\"> ()</a></div>";
+					}
+					break;
 				default:
 					pretty_var($k." => ".$v);
 			}
@@ -452,7 +464,7 @@ foreach ($the_nats as $in_t) {
 				<div class="container-fluid p-4">
 <?php
 	ksort($Stats['countryByName']);
-	table($Stats['countryByName'], 6, 'nats');
+	table($Stats['countryByName'], 6, 'cNats');
 ?>
 				</div>
 				</div>

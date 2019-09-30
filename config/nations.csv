@@ -197,7 +197,7 @@ taiwan~chinesetaipei,Taiwan,wb,e-wrb,,23.69781,120.960515,8,TPE
 tajikistan,Tajikistan,rw,x-rw,,38.861034,71.276093,8,TJK
 tanzania,Tanzania,kb,x-kb,,-6.369028,34.888822,7,TAN
 thailand,Thailand,ky,x-ky,,15.870032,100.992541,6,THA
-timorleste,East Timor,kr,x-kr,,-8.874217,125.727539,8,TLS
+easttimor~timorleste,East Timor,kr,x-kr,,-8.874217,125.727539,8,TLS
 togo,Togo,gy,h-gry,,8.619543,0.824782,8,TOG
 tonga,Tonga,wr,x-wr,,-21.178986,-175.198242,11,TGA
 trinidadandtobago,Trinidad &amp; Tobago,wr,e-kwr,,10.691803,-61.222503,9,TRI
