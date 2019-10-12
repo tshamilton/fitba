@@ -1176,7 +1176,7 @@ chaves,GD Chaves,Cwbr,rb,s-wbr,,41.75064,-7.464985,Chaves,POR
 chayka,Chayka Yubileyny,Cwbb,wb,x-wb,,55.9401561,37.8314587,Korolyov,RUS
 chelmsford,Chelmsford City,Cwqq,wq,x-wq,,51.585927,0.481386,Chelmsford,ENG
 chelsea,Chelsea,Cwbb,wb,x-wb,x012,51.481663,-0.1909565,Chelsea,ENG
-chelsealadies,Chelsea,Cwbb,wb,x-wb,,51.481662,-0.1909565,Chelsea,ENG
+chelsealadies~chelseafcwomen,Chelsea,Cwbb,wb,x-wb,,51.481662,-0.1909565,Chelsea,ENG
 cheltenhamtown,Cheltenham Town,Cwrw,rw,s-rrw,,51.9061398,-2.0602539,Cheltenham,ENG
 chemnitz~chemnitzerfc,Chemnitzer FC,Cwff,wf,x-wf,,50.8421921,12.9455406,Chemnitzer,GER
 chengduqianbaofc,Chengdu Qianbao,Cwee,we,x-we,,30.570414,103.895691,Chengdu,CHN
@@ -6279,3 +6279,6 @@ zwarteleeuw,Zwarte Leeuw,Zyky,ky,b-kky,,51.342415,4.7518377,Rijkevorsel,BEL
 zweigenkanazawa,Zweigen Kanazawa,Zkrr,kr,x-kr,,36.575833,136.605278,Kanazawa,JPN
 spvgbrakel,SpVg Brakel,Bkrr,kr,x-kr,,51.7173992,9.1791714,Brakel,GER
 mondsee,Union Raiffeisen Mondsee,Mwrr,wr,x-wr,,47.8609067,13.3297442,Mondsee,AUT
+westernunitedfc,Western United,Wkgk,kg,s-kkg,,-38.1579763,144.3545702,South Geelong,AUS
+niroyezamini,Niroye Zamini,Nkww,kw,x-kw,,35.715373,51.4259427,Tehran,IRN
+elmoadab,Elmo Adab Masshad,Ekww,kw,e-kkw,,36.297332,59.5917114,Masshad,IRN
