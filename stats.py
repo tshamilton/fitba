@@ -19,10 +19,9 @@ countByMajorStyle['v'] = {}
 countByMajorStyle['x'] = {}
 countByMajorStyle['z'] = {}
 monitored_Nations = {}
-
+teamByCountry = {}
 countryByName = {}
 countryByTri = {}
-listByCountry = {}
 tempBadgeList = {}
 
 tempTeamNames = []
@@ -259,6 +258,7 @@ for the_nat in orig_nations:
 
 	countryByTri[n[8]] = n[0]
 	countryByName[n[0]] = n[8]
+	teamByCountry[n[8]] = []
 	totalCountries = totalCountries + 1
 
 
@@ -272,7 +272,7 @@ else:
 	exit(1)
 
 for the_team in orig_teams:
-	if len(the_team) < 5:
+	if len(the_team) < 5: # Skip blank lines
 		continue
 	t = the_team.split(",")
 	if not len(t) == 10: # TEST: Does the entry have the correct number of parts?
@@ -349,9 +349,11 @@ for the_team in orig_teams:
 		debug("\t"+text)
 		errorList.append(text)
 
-	if re.match("~", t[0]):
+	if "~" in t[0]:
 		tList = t[0].split("~")
 		t[0] = tList[0]
+	
+	teamByCountry[t[9]].append(t[0])
 
 	totalTeams = totalTeams + 1
 
@@ -364,6 +366,7 @@ Out["countMajor"] = countByMajorStyle
 Out["monNats"] = monitored_Nations
 Out["countryByTri"] = countryByTri
 Out["countryByName"] = countryByName
+Out["teamByCountry"] = teamByCountry
 
 with open('base.json', 'w') as j:
 	json.dump(Out, j, indent='\t')

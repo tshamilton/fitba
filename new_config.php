@@ -171,7 +171,6 @@ foreach ($the_nats as $in_t) {
 		$Team[$id]["Tri"] = $t_line[8];
 	}
 }
-
 ?>
 <!doctype html>
 <html lang="en">
@@ -191,7 +190,7 @@ foreach ($the_nats as $in_t) {
 	</head>
 	<body>
 		<ul class="nav nav-pills nav-fill static-top theTabBody">
-			<li class="nav-item slate active"><a role="nav-link" data-toggle="pill" href="#stats"> Stats </a></li>
+			<li class="nav-item slate"><a role="nav-link" data-toggle="pill" href="#stats"> Stats </a></li>
 			<li class="nav-item slate"><a role="nav-link" data-toggle="pill" href="#colours"> Colours </a></li>
 			<li class="nav-item slate"><a role="nav-link" data-toggle="pill" href="#nations"> Nations </a></li>
 			<li class="nav-item slate"><a role="nav-link" data-toggle="pill" href="#clubs"> Clubs </a></li>
@@ -202,7 +201,7 @@ foreach ($the_nats as $in_t) {
 
 <!-- Tab panes -->
 		<div class="tab-content theBody">
-			<div role="tabpanel" class="tab-pane active container-fluid fade theNation slate" id="stats" name="stats">
+			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="stats" name="stats">
 			<div class="container-fluid">
 				<h1 class="text-center"> Stats </h1>
 				<h2 class="text-center"> Colours </h2>
@@ -260,15 +259,15 @@ foreach ($the_nats as $in_t) {
 							<?php print $Stats["totalTeams"]." teams in the database from ".$Stats["totalCountries"]." countries.<br/>\n"; ?>
 						</p>
 						<p style="margin-top: 1rem;">
-							<?php print "\$Stats[\"Colours\"][\"plain\"][\"total\"].\" plain designs.<br/>\n"; ?>
-							<?php print "\$Stats[\"Colours\"][\"stripes\"][\"total\"].\" striped designs.<br/>\n"; ?>
-							<?php print "\$Stats[\"Colours\"][\"edges\"][\"total\"].\" edged designs.<br/>\n"; ?>
-							<?php print "\$Stats[\"Colours\"][\"bands\"][\"total\"].\" banded designs.<br/>\n"; ?>
-							<?php print "\$Stats[\"Colours\"][\"hoops\"][\"total\"].\" hooped designs.<br/>\n"; ?>
-							<?php print "\$Stats[\"Colours\"][\"halves\"][\"total\"].\" halved designs.<br/>\n"; ?>
-							<?php print "\$Stats[\"Colours\"][\"offsets\"][\"total\"].\" offset designs.<br/>\n"; ?>
-							<?php print "\$Stats[\"Colours\"][\"sashed\"][\"total\"].\" sashed designs.<br/>\n"; ?>
-							<?php print "\$Stats[\"Colours\"][\"others\"][\"total\"].\" chequered designs.<br/>\n"; ?>
+							<?php print sizeof($Stats["countMajor"]["x"])." plain designs.<br/>\n"; ?>
+							<?php print sizeof($Stats["countMajor"]["s"])." striped designs.<br/>\n"; ?>
+							<?php print sizeof($Stats["countMajor"]["e"])." edged designs.<br/>\n"; ?>
+							<?php print sizeof($Stats["countMajor"]["b"])." banded designs.<br/>\n"; ?>
+							<?php print sizeof($Stats["countMajor"]["h"])." hooped designs.<br/>\n"; ?>
+							<?php print sizeof($Stats["countMajor"]["o"])." offset designs.<br/>\n"; ?>
+							<?php print sizeof($Stats["countMajor"]["v"])." halved designs.<br/>\n"; ?>
+							<?php print sizeof($Stats["countMajor"]["d"])." sashed designs.<br/>\n"; ?>
+							<?php print sizeof($Stats["countMajor"]["z"])." chequered designs.<br/>\n"; ?>
 						</p>
 						<p style="margin-top: 1rem;">
 							<a href="./news/world.orig">See the current raw text.</a><br/>
@@ -446,11 +445,21 @@ foreach ($the_nats as $in_t) {
 			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="nations" name="nations">
 			<div class="container-fluid">
 				<h1 class="text-center"> Nations </h1>
+				<h2 class="text-center"> By Competition Preference </h2>
 				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 				<div class="container-fluid p-4">
 <?php 
 	asort($Stats['monNats']);
 	table($Stats['monNats'], 6, 'nats');
+?>
+				</div>
+				</div>
+				<h2 class="text-center"> By Name </h2>
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+				<div class="container-fluid p-4">
+<?php
+	ksort($Stats['countryByName']);
+	table($Stats['countryByName'], 6, 'natsTC');
 ?>
 				</div>
 				</div>
@@ -463,7 +472,6 @@ foreach ($the_nats as $in_t) {
 				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 				<div class="container-fluid p-4">
 <?php
-	ksort($Stats['countryByName']);
 	table($Stats['countryByName'], 6, 'cNats');
 ?>
 				</div>
