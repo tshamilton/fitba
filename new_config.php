@@ -113,8 +113,20 @@ function table($in_t, $nC, $context) {
 					else {
 						$name = $Team[$k]["Name"];
 						$tr = $Stats['countryByName'][$k];
-						print t(7)."<div class=\"team mx-1 my-2 ".$Team[$k]["Mjr"]."\"><a href=\"#".$tr."\">".$name." <img class=\"".substr($Team[$k]["Mnr"], 0, 1)." flag\" src=\"flags/".$tr.".png\"> ()</a></div>";
+						if ($Stats["teamCountByCountry"][$Stats["countryByName"][$k]] > 0) { $tCount = " (".$Stats["teamCountByCountry"][$Stats["countryByName"][$k]].")"; }
+						else { $tCount = ""; }
+						print t(7)."<div class=\"team mx-1 my-2 ".$Team[$k]["Mjr"]."\"><a href=\"#".$tr."\">".$name." <img class=\"".substr($Team[$k]["Mnr"], 0, 1)." flag\" src=\"flags/".$tr.".png\">".$tCount."</a></div>";
 					}
+					break;
+				case "natsTC":
+					$name = $Stats['countryByTri'][$k];
+					if (strlen($Team[$name]["Badge"]) > 0) {
+						$style = $Team[$name]["Badge"];
+					}
+					else {
+						$style = $Team[$name]["Mjr"];
+					}
+					print t(7)."<div class=\"team mx-1 my-2 ".$style."\">".$Team[$name]["Name"]." (".$v.") <img class=\"".substr($Team[$name]["Mnr"], 0, 1)." flag\" src=\"flags/".$k.".png\"></div>\n";
 					break;
 				default:
 					pretty_var($k." => ".$v);
@@ -454,12 +466,12 @@ foreach ($the_nats as $in_t) {
 ?>
 				</div>
 				</div>
-				<h2 class="text-center"> By Name </h2>
+				<h2 class="text-center"> By Count </h2>
 				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 				<div class="container-fluid p-4">
 <?php
-	ksort($Stats['countryByName']);
-	table($Stats['countryByName'], 6, 'natsTC');
+	arsort($Stats['teamCountByCountry']);
+	table(array_slice($Stats['teamCountByCountry'], 0, 50), 6, 'natsTC');
 ?>
 				</div>
 				</div>
@@ -476,6 +488,17 @@ foreach ($the_nats as $in_t) {
 ?>
 				</div>
 				</div>
+<?php
+	foreach ($Stats["countryByTri"] as $cName) {
+		$tBC_s = $Team[$cName]["Mjr"];
+		$tBC_n = $Team[$cName]["Name"];
+		print t(4)."<div class=\"d-flex justify-content-center clearfix my-3 ".$tBC_s." theCompBody\">\n";
+		print t(4)."<div class=\"container-fluid p-4\">\n";
+		print t(5)."<h2>".$tBC_n."</h2>\n";
+		print t(4)."</div>";
+		print t(4)."</div>";
+	}
+?>
 			</div>
 			</div><!-- End tab panel -->
 			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="badges" name="badges">
