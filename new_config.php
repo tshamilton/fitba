@@ -561,22 +561,24 @@ foreach ($Stats["countryByTri"] as $cName) {
 			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="missing" name="missing">
 			<div class="container-fluid">
 				<h1 class="text-center"> Missing </h1>
-				<?php
-				$current_date = "";
-				foreach ($the_missing as $m) {
-					if (preg_match("/^20/", $m)) {
-						print "<span style=\"color: #990000; font-style: italic;\">".$m."</span><br/>\n";
-					}
-					elseif (preg_match("/ team /", $m)) {
-						$mTeam = explode(" ", $m);
-						$mTeam = array_
-						pretty_var($mTeam, '77aadd');
-					}
-					else {
-						print $m."<br/>\n";
-					}
-				}
-				?>
+<?php
+$current_date = "";
+foreach ($the_missing as $m) {
+	if (preg_match("/^20/", $m)) {
+		print "<span style=\"color: #990000; font-style: italic;\">".$m."</span><br/>\n";
+	}
+	elseif (preg_match("/ team /", $m)) {
+		$mTeam = explode(" ", $m);
+		$mTeam = array_pop($mTeam);
+		if (!(isset($Team[$mTeam]))) {
+			pretty_var($mTeam, '77aadd');
+		}
+	}
+	else {
+		print $m."<br/>\n";
+	}
+}
+?>
 			</div>
 			</div><!-- End tab panel -->
 		</div>
