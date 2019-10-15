@@ -128,6 +128,12 @@ function table($in_t, $nC, $context) {
 					}
 					print t(7)."<div class=\"team mx-1 my-2 ".$style."\">".$Team[$name]["Name"]." (".$v.") <img class=\"".substr($Team[$name]["Mnr"], 0, 1)." flag\" src=\"flags/".$k.".png\"></div>\n";
 					break;
+				case "tBC":
+					print t(7)."<div class=\"team mx-1 my-2 ".$Team[$v]["Mjr"]."\"> ".$Team[$v]["Name"]." </a></div>";
+					break;
+				case "nB":
+					print t(7)."<div class=\"team mx-1 my-2 ".$Team[$k]["Badge"]."\"> ".$Team[$k]["Name"]." </a></div>";
+					break;
 				default:
 					pretty_var($k." => ".$v);
 			}
@@ -141,6 +147,7 @@ $string = file_get_contents('base.json');
 $Stats = json_decode($string, true);
 $the_teams	= file("config/teams.csv", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 $the_nats	= file("config/nations.csv", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+$the_missing= file("news/missing.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
 $Team = Array();
 $Nations = Array();
@@ -180,6 +187,7 @@ foreach ($the_nats as $in_t) {
 		$Team[$id]["Badge"] = $t_line[4];
 		$Team[$id]["Long"] = $t_line[5];
 		$Team[$id]["Lat"] = $t_line[6];
+		$Team[$id]["Zom"] = $t_line[7];
 		$Team[$id]["Tri"] = $t_line[8];
 	}
 }
@@ -479,6 +487,7 @@ foreach ($the_nats as $in_t) {
 			</div><!-- End tab panel -->
 			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="clubs" name="clubs">
 			<div class="container-fluid">
+				<a name="TOP">
 				<h1 class="text-center"> Clubs </h1>
 				<h2 class="text-center"> Nations </h2>
 				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
@@ -489,22 +498,59 @@ foreach ($the_nats as $in_t) {
 				</div>
 				</div>
 <?php
-	foreach ($Stats["countryByTri"] as $cName) {
-		$tBC_s = $Team[$cName]["Mjr"];
-		$tBC_n = $Team[$cName]["Name"];
-		print t(4)."<div class=\"d-flex justify-content-center clearfix my-3 ".$tBC_s." theCompBody\">\n";
-		print t(4)."<div class=\"container-fluid p-4\">\n";
-		print t(5)."<h2>".$tBC_n."</h2>\n";
-		print t(4)."</div>";
-		print t(4)."</div>";
+foreach ($Stats["countryByTri"] as $cName) {
+	$cTri = $Stats["countryByName"][$cName];
+	$tBC_n = $Team[$cName]["Name"];
+	$tBC_lt = $Team[$cName]["Lat"];
+	$tBC_ln = $Team[$cName]["Long"];
+	$tBC_z = $Team[$cName]["Zom"];
+	$tBC_s = $Team[$cName]["Mjr"];
+	$tBC_n = $Team[$cName]["Name"];
+	$tBC_e = substr($Team[$cName]["Mnr"], 0, 1);
+	$tBC_f = "<img src=\"flags/large/".$cTri.".png\" class=\"".$tBC_e."\">";
+	$to_top = "<a href=\"#top\"><i class=\"material-icons\">arrow_upward</i></a>";
+	$to_map = "<a href=\"map_page.php?lat=".$tBC_lt."&lng=".$tBC_ln."&z=".$tBC_z."&t=".$cName."&n=".$tBC_n."\" target=\"_new\"><i class=\"material-icons\">map</i></a>";
+	if ($Stats["teamCountByCountry"][$cTri] == 0) {
+		$dataLine = "<div class=\"text-center\">".$to_map." | ".$to_top."</div>\n";
 	}
+	else {
+		$dataLine = "<div class=\"text-center\">".$Stats["teamCountByCountry"][$cTri]."  <i class=\"material-icons\">person</i> | ".$to_map." | ".$to_top."</div>\n";
+	}
+	print t(5)."<a name=\"".$cTri."\"></a>\n";
+	print t(5)."<p>&nbsp;</p>\n";
+	print t(5)."<div class=\"theContent ".$tBC_s." p-2 mb-3\">\n";
+	print t(6)."<h3> ".$tBC_f." ".$tBC_n." </h3>\n";
+	print t(6).$dataLine;
+	if ($Stats["teamCountByCountry"][$cTri] > 0) {
+		print t(6)."<div class=\"theContent grass ".$tBC_e." p-2 mb-3\" style=\"text-shadow: 0px 0px black\">\n";
+		table($Stats['teamByCountry'][$cTri], 6, 'tBC');
+		print t(6)."</div>\n";
+	}
+	print t(5)."</div>\n";
+	
+}
 ?>
 			</div>
 			</div><!-- End tab panel -->
 			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="badges" name="badges">
 			<div class="container-fluid">
 				<h1 class="text-center"> Badges </h1>
-			
+				<h2 class="text-center"> Badged Teams by Country </h2>
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+				<div class="container-fluid p-4">
+				</div>
+				</div>
+				<h2 class="text-center"> National Teams </h2>
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+				<div class="container-fluid p-4">
+<?php					table($Stats["nationalBadges"], 6, 'nB'); ?>
+				</div>
+				</div>
+				<h2 class="text-center"> Teams </h2>
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+				<div class="container-fluid p-4">
+				</div>
+				</div>
 			</div>
 			</div><!-- End tab panel -->
 			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="champs" name="champs">
@@ -515,7 +561,22 @@ foreach ($the_nats as $in_t) {
 			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="missing" name="missing">
 			<div class="container-fluid">
 				<h1 class="text-center"> Missing </h1>
-				<?php pretty_var($Stats); ?>
+				<?php
+				$current_date = "";
+				foreach ($the_missing as $m) {
+					if (preg_match("/^20/", $m)) {
+						print "<span style=\"color: #990000; font-style: italic;\">".$m."</span><br/>\n";
+					}
+					elseif (preg_match("/ team /", $m)) {
+						$mTeam = explode(" ", $m);
+						$mTeam = array_
+						pretty_var($mTeam, '77aadd');
+					}
+					else {
+						print $m."<br/>\n";
+					}
+				}
+				?>
 			</div>
 			</div><!-- End tab panel -->
 		</div>
