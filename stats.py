@@ -26,6 +26,7 @@ countryByTri = {}
 tempBadgeList = {}
 nationalBadges = {}
 teamBadgesByCountry = {}
+teamBadgesCountByCountry = {}
 
 tempTeamNames = []
 errorList = []
@@ -284,7 +285,11 @@ for the_team in orig_teams:
 	if countryByTri[t[9]] not in teamBadgesByCountry:
 		teamBadgesByCountry[countryByTri[t[9]]] = []
 	if "x" in t[5]:
+		if countryByTri[t[9]] not in teamBadgesCountByCountry:
+			teamBadgesCountByCountry[countryByTri[t[9]]] = 0
 		teamBadgesByCountry[countryByTri[t[9]]].append(t[0])
+		teamBadgesCountByCountry[countryByTri[t[9]]] = teamBadgesCountByCountry[countryByTri[t[9]]] + 1
+
 	totalTeams = totalTeams + 1
 	
 	if errorFlag:
@@ -294,6 +299,7 @@ tempTeamNames = []
 totalCountries = len(countryByTri)
 natsWBadges = sorted(teamBadgesByCountry.keys())
 
+Out["teamBadgesCountByCountry"] = teamBadgesCountByCountry
 Out["champs"] = Champs
 Out["errorList"] = errorList
 Out["totalCountries"] = totalCountries

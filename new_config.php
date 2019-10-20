@@ -118,6 +118,12 @@ function table($in_t, $nC, $context) {
 						print t(7)."<div class=\"team mx-1 my-2 ".$Team[$k]["Mjr"]."\"><a href=\"#".$tr."\">".$name." <img class=\"".substr($Team[$k]["Mnr"], 0, 1)." flag\" src=\"flags/".$tr.".png\">".$tCount."</a></div>";
 					}
 					break;
+				case "cNatsBadges":
+					$tN = $Team[$k];
+#					print t(7)."<div class=\"team mx-1 my-2 ".$Team[$k]["Mjr"]."\"><a href=\"#".$tr."\">".$name." <img class=\"".substr($Team[$k]["Mnr"], 0, 1)." flag\" src=\"flags/".$tr.".png\">".$tCount."</a></div>";
+					pretty_var($tN, '77aadd');
+					pretty_var($v, 'ffcc00');
+					break;
 				case "natsTC":
 					$name = $Stats['countryByTri'][$k];
 					if (strlen($Team[$name]["Badge"]) > 0) {
@@ -485,7 +491,7 @@ foreach ($the_nats as $in_t) {
 				</div>
 			</div>
 			</div><!-- End tab panel -->
-			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="clubs" name="clubs">
+			<div role="tabpanel" class="tab-pane container-fluid fade theNation darkSlate" id="clubs" name="clubs">
 			<div class="container-fluid">
 				<a name="TOP">
 				<h1 class="text-center"> Clubs </h1>
@@ -521,7 +527,6 @@ foreach ($Stats["countryByTri"] as $cName) {
 	print t(5)."<div class=\"theContent ".$tBC_s." p-2 mb-3\">\n";
 	print t(6)."<h3> ".$tBC_f." ".$tBC_n." </h3>\n";
 	print t(6).$dataLine;
-	pretty_var($Team[$cName]);
 	if ($Stats["teamCountByCountry"][$cTri] > 0) {
 		print t(6)."<div class=\"theContent grass ".$tBC_e." p-2 mb-3\" style=\"text-shadow: 0px 0px black\">\n";
 		table($Stats['teamByCountry'][$cTri], 6, 'tBC');
@@ -539,6 +544,10 @@ foreach ($Stats["countryByTri"] as $cName) {
 				<h2 class="text-center"> Badged Teams by Country </h2>
 				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 				<div class="container-fluid p-4">
+<?php
+	ksort($Stats['teamBadgesCountByCountry']);
+	table($Stats['teamBadgesCountByCountry'], 6, 'cNatsBadges');
+?>
 				</div>
 				</div>
 				<h2 class="text-center"> National Teams </h2>
