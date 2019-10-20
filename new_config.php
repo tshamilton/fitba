@@ -185,8 +185,8 @@ foreach ($the_nats as $in_t) {
 		$Team[$id]["Mnr"] = $t_line[2];
 		$Team[$id]["Mjr"] = $t_line[3];
 		$Team[$id]["Badge"] = $t_line[4];
-		$Team[$id]["Long"] = $t_line[5];
-		$Team[$id]["Lat"] = $t_line[6];
+		$Team[$id]["Lat"] = $t_line[5];
+		$Team[$id]["Long"] = $t_line[6];
 		$Team[$id]["Zom"] = $t_line[7];
 		$Team[$id]["Tri"] = $t_line[8];
 	}
@@ -509,7 +509,7 @@ foreach ($Stats["countryByTri"] as $cName) {
 	$tBC_e = substr($Team[$cName]["Mnr"], 0, 1);
 	$tBC_f = "<img src=\"flags/large/".$cTri.".png\" class=\"".$tBC_e."\">";
 	$to_top = "<a href=\"#top\"><i class=\"material-icons\">arrow_upward</i></a>";
-	$to_map = "<a href=\"map_page.php?lat=".$tBC_lt."&lng=".$tBC_ln."&z=".$tBC_z."&t=".$cName."&n=".$tBC_n."\" target=\"_new\"><i class=\"material-icons\">map</i></a>";
+	$to_map = "<a href=\"map_page.php?lat=".$tBC_lt."&lng=".$tBC_ln."&z=".$tBC_z."&t=".$cTri."&n=".$tBC_n."\" target=\"_new\"><i class=\"material-icons\">map</i></a>";
 	if ($Stats["teamCountByCountry"][$cTri] == 0) {
 		$dataLine = "<div class=\"text-center\">".$to_map." | ".$to_top."</div>\n";
 	}
@@ -521,6 +521,7 @@ foreach ($Stats["countryByTri"] as $cName) {
 	print t(5)."<div class=\"theContent ".$tBC_s." p-2 mb-3\">\n";
 	print t(6)."<h3> ".$tBC_f." ".$tBC_n." </h3>\n";
 	print t(6).$dataLine;
+	pretty_var($Team[$cName]);
 	if ($Stats["teamCountByCountry"][$cTri] > 0) {
 		print t(6)."<div class=\"theContent grass ".$tBC_e." p-2 mb-3\" style=\"text-shadow: 0px 0px black\">\n";
 		table($Stats['teamByCountry'][$cTri], 6, 'tBC');
