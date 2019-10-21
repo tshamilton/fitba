@@ -120,9 +120,12 @@ function table($in_t, $nC, $context) {
 					break;
 				case "cNatsBadges":
 					$tN = $Team[$k];
-#					print t(7)."<div class=\"team mx-1 my-2 ".$Team[$k]["Mjr"]."\"><a href=\"#".$tr."\">".$name." <img class=\"".substr($Team[$k]["Mnr"], 0, 1)." flag\" src=\"flags/".$tr.".png\">".$tCount."</a></div>";
-					pretty_var($tN, '77aadd');
-					pretty_var($v, 'ffcc00');
+					if (preg_match("/x/", $tN["Badge"])) {
+						print t(7)."<div class=\"team mx-1 my-2 ".$tN["Badge"]."\"><a href=\"#".$Stats["countryByName"][$k]."\">".$tN["Name"]." <img class=\"".substr($tN["Mnr"], 0, 1)." flag\" src=\"flags/".$Stats["countryByName"][$k].".png\"> (".$Stats["teamBadgesCountByCountry"][$k].")</a></div>";
+					}
+					else {
+						print t(7)."<div class=\"team mx-1 my-2 ".$tN["Mjr"]."\"><a href=\"#".$Stats["countryByName"][$k]."\">".$tN["Name"]." <img class=\"".substr($tN["Mnr"], 0, 1)." flag\" src=\"flags/".$Stats["countryByName"][$k].".png\"> (".$Stats["teamBadgesCountByCountry"][$k].")</a></div>";
+					}
 					break;
 				case "natsTC":
 					$name = $Stats['countryByTri'][$k];
@@ -139,6 +142,23 @@ function table($in_t, $nC, $context) {
 					break;
 				case "nB":
 					print t(7)."<div class=\"team mx-1 my-2 ".$Team[$k]["Badge"]."\"> ".$Team[$k]["Name"]." </a></div>";
+					break;
+				case "nTB":
+					print t(7)."<div class=\"team mx-1 my-2 ".$Team[$v]["Badge"]."\"> ".$Team[$v]["Name"]." </a></div>";
+					break;
+				case "champs":
+					if ($v == "N/A") {
+						print t(7)."<div class=\"team mx-1 my-2 slate\" style=\"font-size: 13.5px;\"> ".$k.": N/A </a></div>";
+					}
+					elseif ($v == "?") {
+						print t(7)."<div class=\"team mx-1 my-2 slate\" style=\"font-size: 13.5px;\"> ".$k.": ? </a></div>";
+					}
+					elseif ($v == "westgermany") {
+						print t(7)."<div class=\"team mx-1 my-2 ".$Team["germany"]["Badge"]."\" style=\"font-size: 13.5px;\"> ".$k.": West Germany </a></div>";
+					}
+					else {
+						print t(7)."<div class=\"team mx-1 my-2 ".$Team[$v]["Badge"]."\" style=\"font-size: 13.5px;\"> ".$k.": ".$Team[$v]["Name"]." </a></div>";
+					}
 					break;
 				default:
 					pretty_var($k." => ".$v);
@@ -504,37 +524,37 @@ foreach ($the_nats as $in_t) {
 				</div>
 				</div>
 <?php
-foreach ($Stats["countryByTri"] as $cName) {
-	$cTri = $Stats["countryByName"][$cName];
-	$tBC_n = $Team[$cName]["Name"];
-	$tBC_lt = $Team[$cName]["Lat"];
-	$tBC_ln = $Team[$cName]["Long"];
-	$tBC_z = $Team[$cName]["Zom"];
-	$tBC_s = $Team[$cName]["Mjr"];
-	$tBC_n = $Team[$cName]["Name"];
-	$tBC_e = substr($Team[$cName]["Mnr"], 0, 1);
-	$tBC_f = "<img src=\"flags/large/".$cTri.".png\" class=\"".$tBC_e."\">";
-	$to_top = "<a href=\"#top\"><i class=\"material-icons\">arrow_upward</i></a>";
-	$to_map = "<a href=\"map_page.php?lat=".$tBC_lt."&lng=".$tBC_ln."&z=".$tBC_z."&t=".$cTri."&n=".$tBC_n."\" target=\"_new\"><i class=\"material-icons\">map</i></a>";
-	if ($Stats["teamCountByCountry"][$cTri] == 0) {
-		$dataLine = "<div class=\"text-center\">".$to_map." | ".$to_top."</div>\n";
+	foreach ($Stats["countryByTri"] as $cName) {
+		$cTri = $Stats["countryByName"][$cName];
+		$tBC_n = $Team[$cName]["Name"];
+		$tBC_lt = $Team[$cName]["Lat"];
+		$tBC_ln = $Team[$cName]["Long"];
+		$tBC_z = $Team[$cName]["Zom"];
+		$tBC_s = $Team[$cName]["Mjr"];
+		$tBC_n = $Team[$cName]["Name"];
+		$tBC_e = substr($Team[$cName]["Mnr"], 0, 1);
+		$tBC_f = "<img src=\"flags/large/".$cTri.".png\" class=\"".$tBC_e."\">";
+		$to_top = "<a href=\"#top\"><i class=\"material-icons\">arrow_upward</i></a>";
+		$to_map = "<a href=\"map_page.php?lat=".$tBC_lt."&lng=".$tBC_ln."&z=".$tBC_z."&t=".$cTri."&n=".$tBC_n."\" target=\"_new\"><i class=\"material-icons\">map</i></a>";
+		if ($Stats["teamCountByCountry"][$cTri] == 0) {
+			$dataLine = "<div class=\"text-center\">".$to_map." | ".$to_top."</div>\n";
+		}
+		else {
+			$dataLine = "<div class=\"text-center\">".$Stats["teamCountByCountry"][$cTri]."  <i class=\"material-icons\">person</i> | ".$to_map." | ".$to_top."</div>\n";
+		}
+		print t(5)."<a name=\"".$cTri."\"></a>\n";
+		print t(5)."<p>&nbsp;</p>\n";
+		print t(5)."<div class=\"theContent ".$tBC_s." p-2 mb-3\">\n";
+		print t(6)."<h3> ".$tBC_f." ".$tBC_n." </h3>\n";
+		print t(6).$dataLine;
+		if ($Stats["teamCountByCountry"][$cTri] > 0) {
+			print t(6)."<div class=\"theContent grass ".$tBC_e." p-2 mb-3\" style=\"text-shadow: 0px 0px black\">\n";
+			table($Stats['teamByCountry'][$cTri], 6, 'tBC');
+			print t(6)."</div>\n";
+		}
+		print t(5)."</div>\n";
+		
 	}
-	else {
-		$dataLine = "<div class=\"text-center\">".$Stats["teamCountByCountry"][$cTri]."  <i class=\"material-icons\">person</i> | ".$to_map." | ".$to_top."</div>\n";
-	}
-	print t(5)."<a name=\"".$cTri."\"></a>\n";
-	print t(5)."<p>&nbsp;</p>\n";
-	print t(5)."<div class=\"theContent ".$tBC_s." p-2 mb-3\">\n";
-	print t(6)."<h3> ".$tBC_f." ".$tBC_n." </h3>\n";
-	print t(6).$dataLine;
-	if ($Stats["teamCountByCountry"][$cTri] > 0) {
-		print t(6)."<div class=\"theContent grass ".$tBC_e." p-2 mb-3\" style=\"text-shadow: 0px 0px black\">\n";
-		table($Stats['teamByCountry'][$cTri], 6, 'tBC');
-		print t(6)."</div>\n";
-	}
-	print t(5)."</div>\n";
-	
-}
 ?>
 			</div>
 			</div><!-- End tab panel -->
@@ -559,6 +579,17 @@ foreach ($Stats["countryByTri"] as $cName) {
 				<h2 class="text-center"> Teams </h2>
 				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 				<div class="container-fluid p-4">
+<?php
+	foreach ($Stats["teamBadgesByCountry"] as $cnt => $badges) {
+		$cTri = $Stats["countryByName"][$cnt];
+		print t(5)."<a name=\"".$cTri."\"><h3><img src=\"flags/large/".$cTri.".png\" class=\"k\"> ".$Team[$cnt]["Name"]." </h3></a>\n";
+		print t(5)."<div class=\"container-fluid p-4\">\n";
+		table($badges, 6, 'nTB');
+		print t(5)."<p>&nbsp;</p>\n";
+		print t(5)."</div>\n";
+		
+	}
+?>
 				</div>
 				</div>
 			</div>
@@ -566,28 +597,136 @@ foreach ($Stats["countryByTri"] as $cName) {
 			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="champs" name="champs">
 			<div class="container-fluid">
 				<h1 class="text-center"> Champs </h1>
+				<h2 class="text-center"> English Premier League </h2>
+				<div class="container-fluid p-4">
+<?php
+	table($Stats["champs"]["ENG~Premier League"], 6, 'champs');
+?>
+				</div>
+				<h2 class="text-center"> English FA Cup </h2>
+				<div class="container-fluid p-4">
+<?php
+	table($Stats["champs"]["ENG~FA Cup"], 6, 'champs');
+?>
+				</div>
+				<h2 class="text-center"> Australian A-League </h2>
+				<div class="container-fluid p-4">
+<?php
+	table($Stats["champs"]["AUS~A-League"], 6, 'champs');
+?>
+				</div>
+				<h2 class="text-center"> Australian FFA Cup </h2>
+				<div class="container-fluid p-4">
+<?php
+	table($Stats["champs"]["AUS~FFA Cup"], 6, 'champs');
+?>
+				</div>
+				<h2 class="text-center"> French Ligue 1 </h2>
+				<div class="container-fluid p-4">
+<?php
+	table($Stats["champs"]["FRA~Ligue 1"], 6, 'champs');
+?>
+				</div>
+				<h2 class="text-center"> German 1. Bundesliga </h2>
+				<div class="container-fluid p-4">
+<?php
+	table($Stats["champs"]["GER~Bundesliga"], 6, 'champs');
+?>
+				</div>
+				<h2 class="text-center"> Spanish La Liga </h2>
+				<div class="container-fluid p-4">
+<?php
+	table($Stats["champs"]["ESP~La Liga"], 6, 'champs');
+?>
+				</div>
+				<h2 class="text-center"> Scottish Premier League </h2>
+				<div class="container-fluid p-4">
+<?php
+	table($Stats["champs"]["SCO~Scottish Premier League"], 6, 'champs');
+?>
+				</div>
+				<h2 class="text-center"> Italian Serie A </h2>
+				<div class="container-fluid p-4">
+<?php
+	table($Stats["champs"]["ITA~Serie A"], 6, 'champs');
+?>
+				</div>
+				<h2 class="text-center"> Portuguese Primeira Liga </h2>
+				<div class="container-fluid p-4">
+<?php
+	table($Stats["champs"]["POR~Primeira Liga"], 6, 'champs');
+?>
+				</div>
+				<h2 class="text-center"> Dutch Eredivisie </h2>
+				<div class="container-fluid p-4">
+<?php
+	table($Stats["champs"]["NED~Eredivisie"], 6, 'champs');
+?>
+				</div>
+				<h2 class="text-center"> UEFA Champions League </h2>
+				<div class="container-fluid p-4">
+<?php
+	table($Stats["champs"]["INT~UEFA Champions League"], 6, 'champs');
+?>
+				</div>
+				<h2 class="text-center"> UEFA Europa League </h2>
+				<div class="container-fluid p-4">
+<?php
+	table($Stats["champs"]["INT~Europa League"], 6, 'champs');
+?>
+				</div>
+				<h2 class="text-center"> AFC Champions League </h2>
+				<div class="container-fluid p-4">
+<?php
+	table($Stats["champs"]["INT~AFC Champions League"], 6, 'champs');
+?>
+				</div>
+				<h2 class="text-center"> UEFA European Championship </h2>
+				<div class="container-fluid p-4">
+<?php
+	table($Stats["champs"]["INT~UEFA European Championship"], 6, 'champs');
+?>
+				</div>
+				<h2 class="text-center"> AFC Asian Cup </h2>
+				<div class="container-fluid p-4">
+<?php
+	table($Stats["champs"]["INT~AFC Asian Cup"], 6, 'champs');
+?>
+				</div>
+				<h2 class="text-center"> Copa Libertadores </h2>
+				<div class="container-fluid p-4">
+<?php
+	table($Stats["champs"]["INT~Copa Libertadores"], 6, 'champs');
+?>
+				</div>
+				<h2 class="text-center"> FIFA World Cup </h2>
+				<div class="container-fluid p-4">
+<?php
+	table($Stats["champs"]["INT~FIFA World Cup"], 6, 'champs');
+?>
+				</div>
 			</div>
 			</div><!-- End tab panel -->
 			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="missing" name="missing">
 			<div class="container-fluid">
 				<h1 class="text-center"> Missing </h1>
 <?php
-$current_date = "";
-foreach ($the_missing as $m) {
-	if (preg_match("/^20/", $m)) {
-		print "<span style=\"color: #990000; font-style: italic;\">".$m."</span><br/>\n";
-	}
-	elseif (preg_match("/ team /", $m)) {
-		$mTeam = explode(" ", $m);
-		$mTeam = array_pop($mTeam);
-		if (!(isset($Team[$mTeam]))) {
-			pretty_var($mTeam, '77aadd');
+	$current_date = "";
+	foreach ($the_missing as $m) {
+		if (preg_match("/^20/", $m)) {
+			print "<span style=\"color: #990000; font-style: italic;\">".$m."</span><br/>\n";
+		}
+		elseif (preg_match("/ team /", $m)) {
+			$mTeam = explode(" ", $m);
+			$mTeam = array_pop($mTeam);
+			if (!(isset($Team[$mTeam]))) {
+				pretty_var($mTeam, '77aadd');
+			}
+		}
+		else {
+			print $m."<br/>\n";
 		}
 	}
-	else {
-		print $m."<br/>\n";
-	}
-}
 ?>
 			</div>
 			</div><!-- End tab panel -->
