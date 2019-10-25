@@ -43,7 +43,7 @@ orig_teams = []
 the_badges = "./css/badge.css"
 the_comps = "./config/comps.csv"
 the_nations = "./config/nations.csv"
-the_oldfile = "./config/stats.json"
+the_oldfile = "./config/base.json"
 the_styles = "./css/style.css"
 the_teams = "./config/teams.csv"
 
