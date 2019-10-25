@@ -115,7 +115,7 @@ for c in orig_styles:
 for b in orig_badges:
 	errorFlag = 0
 	eText = ""
-	if b[0] == ".":
+	if len(b) and b[0] == ".":
 		bStyle = re.search(r"\.(.+?)\s{", b)
 		bStyle = bStyle[1]
 	else:
@@ -280,7 +280,11 @@ for the_team in orig_teams:
 		tList = t[0].split("~")
 		t[0] = tList[0]
 	
-	teamByCountry[t[9]].append(t[0])
+	try:
+		teamByCountry[t[9]].append(t[0])
+	except KeyError:
+		print("Problem: "+the_team)
+	
 	teamCountByCountry[t[9]] = teamCountByCountry[t[9]] + 1
 	if countryByTri[t[9]] not in teamBadgesByCountry:
 		teamBadgesByCountry[countryByTri[t[9]]] = []

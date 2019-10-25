@@ -710,24 +710,63 @@ foreach ($the_nats as $in_t) {
 			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="missing" name="missing">
 			<div class="container-fluid">
 				<h1 class="text-center"> Missing </h1>
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+				<div class="container-fluid p-4">
 <?php
 	$current_date = "";
+	$perm_list = Array();
+	$current_list = Array();
 	foreach ($the_missing as $m) {
+		print $m."<br/>\n";
 		if (preg_match("/^20/", $m)) {
-			print "<span style=\"color: #990000; font-style: italic;\">".$m."</span><br/>\n";
-		}
-		elseif (preg_match("/ team /", $m)) {
-			$mTeam = explode(" ", $m);
-			$mTeam = array_pop($mTeam);
-			if (!(isset($Team[$mTeam]))) {
-				pretty_var($mTeam, '77aadd');
+			if ($current_date == "") {
+				$current_date = $m;
+			}
+			else {
+				if (sizeof($current_list) > 0) {
+					print "Missing details for: ".$current_date."<br/>\n";
+					pretty_var($current_list, 'ffcccc');
+					$current_date = $m;
+					$current_list = Array();
+				}
+				else {
+					$current_date = $m;
+					$current_list = Array();
+				}
 			}
 		}
 		else {
-			print $m."<br/>\n";
+			if (preg_match("/Missing team -> (.+)$/", $m, $mTeam)) {
+				$mTeam = $mTeam[1];
+				if (isset($Team[$mTeam]) || in_array($m, $perm_list)) {
+					continue;
+				}
+				else {
+					array_push($current_list, $mTeam);
+					array_push($perm_list, $m);
+				}
+			}
+			if (preg_match("/Missing competition/", $m)) {
+				if (!(in_array($m, $perm_list))) {
+					array_push($current_list, $m);
+					array_push($perm_list, $m);
+				}
+			}
+			if (preg_match("/Missing nation/", $m)) {
+				if (!(in_array($m, $perm_list))) {
+					array_push($current_list, $m);
+					array_push($perm_list, $m);
+				}
+			}
 		}
 	}
+	if (sizeof($current_list) > 0) {
+		print "Missing details for: ".$current_date."<br/>\n";
+		pretty_var($current_list, 'ffcccc');
+	}
 ?>
+				</div>
+				</div>
 			</div>
 			</div><!-- End tab panel -->
 		</div>
