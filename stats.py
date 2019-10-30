@@ -70,7 +70,7 @@ def testFilePresence(fn):
 if testFilePresence(the_oldfile):
 	with open(the_oldfile) as f:
 		orig_oldfile = json.load(f)
-		Champs = orig_oldfile["Champs"]
+		Champs = orig_oldfile["champs"]
 		f.close()
 
 if testFilePresence(the_comps):

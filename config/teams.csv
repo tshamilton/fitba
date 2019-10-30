@@ -1104,7 +1104,7 @@ cdronda,Ronda,Rkww,kw,x-kw,,36.7499875,-5.154608,Ronda,ESP
 cdsanroquedelepe,San Roque de Lepe,Skyk,ky,s-kky,,37.2494674,-7.1980256,Lepe,ESP
 cdsonsonate,Sonsonate,Snzz,nz,x-nz,,13.7280641,-89.7237533,Sonsonate,SLV
 cdsuchitepequez,Suchitep&eacute;quez,Sbwb,wb,d-wb,,14.531667,-91.509167,Mazatenango,GUA
-cdtaconw,CD Tac&oacute;n,Tmww,mw,x-mw,,40.4769411,-3.6142656,Madrid,ESP
+cdtacon,CD Tac&oacute;n,Tmww,mw,x-mw,,40.4769411,-3.6142656,Madrid,ESP
 cdteruel,Teruel,Tbrr,br,x-br,,40.3323869,-1.1067029,Teruel,ESP
 cdtropezon,Tropez&oacute;n,Tgyy,gy,e-ggy,,43.3306436,-4.117577,Tanos,ESP
 cdtuilla,Tuilla,Tbwb,wb,v-bbw,,43.3263596,-5.6438633,Langreo,ESP
@@ -1796,7 +1796,7 @@ eschborn,Eschborn,Ebwb,bw,h-bbw,,50.1401669,8.5611585,Eschborn,GER
 escheminotslongueau,Escheminots Longueau,Ebww,bw,x-bw,,49.8661576,2.35257,Longueau,FRA
 eschenmauren,USV Eschen/Mauren,Ebww,bw,x-bw,,47.2060569,9.5386683,Eschen,LIE
 escuintlaheredia,Escuintla Heredia,Ekzz,kz,x-kz,,9.9853329,-84.2431232,Heredia,GUA
-esenlererokspor,Esenler Erokspor,Egyg,gy,v-gyg,,41.0538623,28.8800117,Esenler,TUR
+esenlererokspor,Esenler Erokspor,Eygy,gy,v-ggy,,41.0538623,28.8800117,Esenler,TUR
 eshamamsousse,ES Hamam Sousse,Hkyy,ky,x-ky,,35.8545657,10.599398,Hammam-Sousse,TUN
 eskilsminneif,Eskilsminne,Eyby,yb,s-bby,,56.0319766,12.7245908,Helsingborg,SWE
 eskilstunauniteddff,Eskilstuna United DFF,Ewbb,wb,x-wb,,59.37057,16.495,Eskilstuna,SWE
@@ -1913,7 +1913,6 @@ fcbassecourt,Bassecourt,Bkyy,ky,x-ky,,47.3403234,7.2401307,Bassecourt,SUI
 fcbassersdorf,Bassersdorf,Bwbb,wb,x-wb,,47.4448103,8.6130164,Basserdorf,SUI
 fcbastiaborgo,Bastia Borgo,Bkrr,kr,x-kr,,42.5705967,9.448677,Borgo,FRA
 fcbergheim,Bergheim 2000,Bbww,bw,b-wwb,,50.9429803,6.6353894,Bergheim,GER
-fcberochegorgieri,B&eacute;roche-Gorgier,Bwrr,wr,x-wr,,46.9114956,6.7865703,Gorgier,SUI
 fcberochegorgier~fcberochegorgieri,B&eacute;roche-Gorgier,Bwrr,wr,x-wr,,46.8915257,6.7725269,Saint-Aubin-Sauges,SUI
 fcbisamberg,1. FC Bisamberg,Bbww,bw,x-bw,,48.3421685,16.344105,Bisamberg,AUT
 fcbrasov,Bra&scedil;ov,Bkyy,ky,x-ky,,45.6648485,25.5854868,Bra&scedil;ov,ROU
@@ -4942,7 +4941,6 @@ shahin,Shahin,Skww,kw,x-kw,,35.7102871,51.4273858,Tehran,IRN
 shahinbandaranzali,Shahin Bandar Anzali,Skww,kw,x-kw,,37.4653317,49.479175,Bandar,IRN
 shahrdari,Shahrdari Tabriz,Swrr,wr,x-wr,,38.0473721,46.3984893,Tabriz,IRN
 shahrdarimahshahr,Shahrdari Mahshahr,Skyy,ky,x-ky,,30.5727376,49.2039283,Mahshahr,IRN
-shahrkhodroufc,Shahr Khodro,Swdd,wd,x-wd,,36.3073383,59.5500263,Mashhad,IRN
 shakhtardonetsk,Shakhtar Donetsk,Skok,ko,s-kko,x026,49.9808776,36.2615479,Donetsk,UKR
 shakhterpeshelan,Shakhter Peshelan',Skoo,ko,x-ko,,55.3116363,43.9128239,Peshelan,RUS
 shakhtyorkaragandy~shakhterkaragandy,Shakhtyor Karagandy,Skok,ko,v-kko,,49.8186844,73.0752524,Karagandy,KAZ
