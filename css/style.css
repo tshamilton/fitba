@@ -440,7 +440,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .e-ruk	{ color: #ff0000; background: repeating-linear-gradient(to bottom, #ffcc00, #ffcc00 15%, #000000 15%, #000000); text-shadow: -1px -1px 0 #ffcc00,1px -1px 0 #ffcc00,-1px 1px 0 #ffcc00,1px 1px 0 #ffcc00;}
 .e-rwk	{ color: #ff0000; background: repeating-linear-gradient(to bottom, #ffffff, #ffffff 15%, #000000 15%, #000000); text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
 .e-ryb	{ color: #ff0000; background: repeating-linear-gradient(to bottom, #fff00c, #fff00c 15%, #0000ff 15%, #0000ff); text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;}
-.e-ryg	{ color: #ff0000; background: repeating-linear-gradient(to bottom, #fff00c, #fff00c 15%, #009900 15%, #009900); text-shadow: -1px -1px 0 #009900,1px -1px 0 #009900,-1px 1px 0 #009900,1px 1px 0 #009900;}
+.e-ryg	{ color: #ff0000; background: repeating-linear-gradient(to bottom, #fff00c, #fff00c 15%, #009900 15%, #009900); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
 .e-ura	{ color: #ffcc00; background: repeating-linear-gradient(to bottom, #ff0000, #ff0000 15%, #3366ff 15%, #3366ff); text-shadow: -1px -1px 0 #3366ff,1px -1px 0 #3366ff,-1px 1px 0 #3366ff,1px 1px 0 #3366ff;}
 .e-uub	{ color: #ffcc00; background: repeating-linear-gradient(to bottom, #ffcc00, #ffcc00 15%, #0000ff 15%, #0000ff); text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;}
 .e-uuk	{ color: #ffcc00; background: repeating-linear-gradient(to bottom, #ffcc00, #ffcc00 15%, #000000 15%, #000000); text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
