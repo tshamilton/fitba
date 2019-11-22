@@ -1,4 +1,3 @@
-
 1074cankirispor,1074 &Ccedil;ank&inodot;r&inodot;spor,Cwrw,wr,s-rrw,,40.5978354,33.6095713,&Ccedil;ank&inodot;r&inodot;,TUR
 11oktomvri,11 Oktomvri,1rww,rw,x-rw,,41.343611,21.561944,Prilep,NMK
 12bingolspor,12 Bing&ouml;lspor,1gww,gw,x-gw,,38.886111,40.501667,Bing&ouml;l,TUR
@@ -651,7 +650,7 @@ banikostrava,Ban&iacute;k Ostrava,Obww,bw,x-bw,,49.803819,18.2555079,Ostrava,CZE
 baniyas,Bani Yas,Bwff,wf,x-wf,,24.34986,54.68571,Bani Yas,UAE
 banksodee,Banks O'Dee,Bwbb,wb,x-wb,,57.1287658,-2.0961705,Aberdeen,SCO
 bankstownberries,Bankstown Berries,Bwbb,wb,x-wb,,-33.9085175,150.9935691,Georges Hall,AUS
-banskabystrica,Dukla Bansk&aacute; Bystrica,Bwrr,wr,x-wr,,48.7320339,19.1309681,Bansk&aacute; Bystrica,SVK
+duklabanskabystrica~banskabystrica,Dukla Bansk&aacute; Bystrica,Bwrr,wr,x-wr,,48.7320339,19.1309681,Bansk&aacute; Bystrica,SVK
 bansko,Bansko,Bwdd,wq,x-wq,,41.8323739,23.4879345,Bansko,BUL
 baodingyingliyitong,Baoding Yingli Yitong,Bkbb,kb,x-kb,,38.8668659,115.5019252,Baoding,CHN
 baotou,Inner Mongolia Caoshangfei,Cwrr,wr,x-wr,,40.6634167,109.7163318,Baotou,CHN
@@ -2370,7 +2369,7 @@ garminsencur,&Scaron;en&ccaron;ur,Sbyy,by,x-by,,46.243039,14.418108,&Scaron;en&c
 gateshead~gatesheadfc,Gateshead,Gkwk,kw,b-kkw,,54.961111,-1.579722,Gateshead,ENG
 gava,Gav&agrave;,Gbrb,rb,s-wbr,,41.304493,1.9269553,Gav&agrave;,ESP
 gazelecfcoajaccio~gfcajaccio,Gaz&eacute;lec FCO Ajaccio,Gbrb,rb,s-wbr,,41.9513138,8.772053,Ajaccio,FRA
-gaziantepbb,Gaziantep BB,Gbwb,bw,s-bbw,,37.123711,37.3826,Gaziantep,TUR
+gaziantepfk~gaziantepbb,Gaziantep,Grww,rw,x-rw,,37.123711,37.3826,Gaziantep,TUR
 gaziantepspor,Gaziantepspor,Gkrk,kr,s-kkr,,37.123611,37.3825,Gaziantep,TUR
 gaziosmanpasa,Gaziomanpa&scedil;aspor,Ggrg,gr,s-rrg,,41.0608991,28.9085303,Gaziomanpa&scedil;a,TUR
 gazisehirgaziantepfk,Gazi&scedil;ehir Gaziantep,Gwbw,wb,s-bbw,,37.067525,37.3776851,Gaziantep,TUR
@@ -2646,7 +2645,7 @@ hautslyonnais,Hauts Lyonnais,Hfbf,fb,b-ffb,,45.64584,4.44879,Pomeys,FRA
 havantandwaterlooville,Havant &amp; Waterlooville,Hbww,bw,x-bw,,50.86719,-0.9756176,Havant,ENG
 haverfordwest,Haverfordwest County AFC,Hwbb,wb,e-wwb,,51.809155,-4.967473,Haverfordwest,WAL
 hawickroyalalbert,Hawick Royal Albert,Hrbr,rb,s-wbr,,55.4320664,-2.7642092,Hawick,SCO
-hayesandyeadingunited,Hayes &amp; Yeading United,Hkrr,kr,x-kr,,51.510719,-0.3989185,Hayes,ENG
+hayesyeadingunited~hayesandyeadingunited,Hayes &amp; Yeading United,Hkrr,kr,x-kr,,51.510719,-0.3989185,Hayes,ENG
 hbkoge,HB K&oslash;ge,Kbkb,kb,s-kkb,,55.4135824,12.1319586,Herf&oslash;lge,DEN
 hbscraeyenhout,HBS Craeyenhout,Hwkr,kr,o-wkwr,,52.0739233,4.24829,Den Haag,NED
 hbsv,HBSV Hout-Blerick,Hwgw,wg,b-wwg,,51.3555628,6.1244766,Venlo,NED
@@ -3053,8 +3052,7 @@ kashimaantlers,Kashima Antlers,Krnr,rn,h-rrn,x296,35.9919935,140.6403308,Kashima
 kashiwareysol,Kashiwa Reysol,Kkyy,ky,x-ky,,35.8484877,139.9751674,Kashiwa,JPN
 kasimpasa,Kasimpasa,Kbww,bw,x-bw,,41.0330069,28.9733361,Beyo&gbreve;lu,TUR
 kastamonuozelidare,Kastamonu &Ouml;zel &Idot;are,Kwrr,wr,x-wr,,41.4237981,33.7929975,Kastamonu,TUR
-kastamonuspor,Kastamonuspor,Krkr,kr,s-rrk,,41.3660837,33.7674086,Kastamonu,TUR
-kastamonuspor1966,Kastamonuspor 1966,Kkrr,kr,x-kr,,41.366088,33.7666899,Kastamonu,TUR
+kastamonuspor~kastamonuspor1966,Kastamonuspor 1966,Kkrr,kr,x-kr,,41.366088,33.7666899,Kastamonu,TUR
 katallertoyama,Kataller Toyama,Knaa,na,x-na,,36.6250008,137.195698,Toyama,JPN
 katsinaunited,Katsina United,Kgyy,gy,x-gy,,12.9960052,7.6049834,Katsina,NGA
 katwijk,VV Katwijk,Kkoo,ko,x-ko,,52.2097231,4.42888,Katwijk,NED
@@ -6252,8 +6250,7 @@ youngafricans,Young Africans,Ygyy,gy,x-gy,,-6.855676,39.2726322,Dar es Salaam,TA
 youngboysbern~youngboys,Young Boys Bern,Ykyy,ky,x-ky,x138,46.9631123,7.4648745,Bern,SUI
 younglions,Young Lions,Ywrr,wr,x-wr,,1.309662,103.8600859,Singapore,SIN
 youssoufiaberrechid,Youssoufia Berrechid,Ykgk,kg,s-kkg,,33.2812074,-7.5922702,Berrechid,MAR
-yozgatspor,Yozgatspor,Ykrk,kr,s-rrk,,39.8216551,34.815545,Yozgat,TUR
-yozgatspor1959,Yozgatspor 1959,Yrkr,rk,s-rrk,,39.8216551,34.815545,Yogzat,TUR
+yozgatspor~yozgatspor1959,Yozgatspor 1959,Yrkr,rk,s-rrk,,39.8216551,34.815545,Yogzat,TUR
 ypirangars,Ypiranga RS,Yygg,yg,x-yg,,-27.6513433,-52.2646047,Erechim,BRA
 yscc,YSCC Yokohama,Ynaa,na,x-na,,35.4691549,139.60163,Kanagawa,JPN
 ytrac,Ytrac Foot,Ykww,kw,x-kw,,44.883212,2.3954861,Ytrac,FRA
@@ -6325,3 +6322,24 @@ zvezdasaintpetersburg,Zvezda St. Petersburg,Zkww,kw,x-kw,,59.9522227,30.2854058,
 zwaluwenvlaardingen,Zwaluwen Vlaardingen,Zwkw,wk,s-kkw,,51.930972,4.3594535,Vlaardingen,NED
 zwarteleeuw,Zwarte Leeuw,Zyky,ky,b-kky,,51.342415,4.7518377,Rijkevorsel,BEL
 zweigenkanazawa,Zweigen Kanazawa,Zkrr,kr,x-kr,,36.575833,136.605278,Kanazawa,JPN
+achillesveen,Agwg,gw,s-wwg,,51.7753,5.0859164,Veen,NED
+adamawaunited,Adamawa United,Agww,gw,x-gw,,9.2692531,12.4618381,Jimeta,NGA
+akwastarlets,Akwa Starlets,Awow,wo,e-wwo,,5.0188162,7.9252762,Uyo,NGA
+belisce,Beli&scaron;&cacute;e,Bkrr,kr,x-kr,,45.682646,18.4058905,Beli&scaron;&cacute;e,CRO
+bijelobrdo,Bijelo Brdo,Bbyb,by,h-bby,,45.5193885,18.8730818,Bijelo Brdo,CRO
+carshaltonathletic,Carshalton Athletic,Cwdd,wd,x-wd,,51.3691974,-0.1736172,Carshalton,ENG
+chelmiankachelm,Che&lslash;mianka Che&lslash;m,Cwgg,wg,x-wg,,51.1355547,23.4834784,Che&lslash;m,POL
+fchirnyksport,Hirnyk Sport Horishni Plavni,Hkrr,kr,x-kr,,49.004167,33.648056,Horishini Plavni,UKR
+fcpetrzalka1898,Petr&zcaron;alka,Pwkw,wk,s-kkw,,48.119722,17.133333,Bratislava,SVK
+fortunawormerveer,Fortuna Wormerveer,Fbwr,bw,o-bwrb,52.4937189,4.7797153,Wormerveer,NED
+hvcvquick,HV &amp; CV Quick,Qwbb,wb,x-wb,,52.0722002,4.2436,Den Haag,NED
+jigawagoldenstars,Jigawa Golden Stars,Jbww,bw,x-bw,,12.473611,10.031389,Hadejia,NGA
+kars36spor,Kars 36 Spor,Kgww,gw,x-gw,,40.5774238,43.1075027,Kars,TUR
+maldontiptree,Maldon &amp; Tiptree,Mbrb,rb,s-brw,,51.720827,0.694016,Maldon,ENG
+oss20,Oss '20,Obyy,by,x-by,,51.776564,5.5250173,Oss,NED
+partizanbardejov,Partiz&aacute;n Bardejov,Bwrr,wr,x-wr,,49.2894222,21.2717751,Bardejov,SVK
+rekordbielskobiala,Rekord Bielsko Bia&lslash;a,Rwgg,wg,x-wg,,49.792105,19.053961,Bielsko Bia&lslash;a,POL
+shahrdaritabriz,Shahrdari Tabriz,Swrr,wr,x-wr,,38.0472,46.3983,Tabriz,IRN
+sksupernova,SK Supernova,Sbyy,by,e-bby,,57.0202658,24.1334782,Riga,LTV
+stilongorzow,Stilon Gorz&oacute;w Wielkopolski,Swbb,wb,x-wb,,52.7314482,15.2076154,Gorz&oacute;w Wielkopolski,POL
+warriwolvesfc,Warri Wolves,Wybb,yb,x-yb,,5.511667,5.756389,Warri,NGA
