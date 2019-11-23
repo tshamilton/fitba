@@ -101,6 +101,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .hn	{ color: #00aaff; background-color: #000099;}
 .hw	{ color: #00aaff; background-color: #ffffff;}
 .hy	{ color: #00aaff; background-color: #fff00c;}
+.id	{ color: #ff9f9f; background-color: #cc0000;}
 .if	{ color: #ff9f9f; background-color: #77aadd;}
 .in	{ color: #ff9f9f; background-color: #000099;}
 .ka	{ color: #000000; background-color: #3366ff;}
@@ -756,6 +757,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .v-wbc	{ color: #ffffff; background: repeating-linear-gradient(to right, #0000ff, #0000ff 50%, #990044 50%, #990044 );}
 .v-wbk	{ color: #ffffff; background: repeating-linear-gradient(to right, #0000ff, #0000ff 50%, #000000 50%, #000000 );}
 .v-wbr	{ color: #ffffff; background: repeating-linear-gradient(to right, #0000ff, #0000ff 50%, #ff0000 50%, #ff0000 );}
+.v-wdi	{ color: #ffffff; background: repeating-linear-gradient(to right, #cc0000, #cc0000 50%, #ff9f9f 50%, #ff9f9f );}
 .v-wgb	{ color: #ffffff; background: repeating-linear-gradient(to right, #009900, #009900 50%, #0000ff 50%, #0000ff );}
 .v-wkb	{ color: #ffffff; background: repeating-linear-gradient(to right, #000000, #000000 50%, #0000ff 50%, #0000ff );}
 .v-wkr	{ color: #ffffff; background: repeating-linear-gradient(to right, #000000, #000000 50%, #ff0000 50%, #ff0000 );}

@@ -285,7 +285,7 @@ for the_team in orig_teams:
 	except KeyError:
 		print("Problem: "+the_team)
 	
-	teamCountByCountry[t[9]] = teamCountByCountry[t[9]] + 1
+	teamCountByCountry[t[9]] = teamCountByCountry[t[9]] + 1	
 	if countryByTri[t[9]] not in teamBadgesByCountry:
 		teamBadgesByCountry[countryByTri[t[9]]] = []
 	if "x" in t[5]:

@@ -1,3 +1,5 @@
+N,ALB,Albania,565,albania
+L,kategoriasuperiore,10,Kategoria Superiore,
 N,ALG,Algeria,410,algeria
 L,ligue1,10,Ligue 1,
 N,ARG,Argentina,270,argentina
@@ -238,6 +240,12 @@ L,efltrophysoutherngrpf,84,EFL Trophy Southern Group F,
 L,efltrophysoutherngrpg,85,EFL Trophy Southern Group G,
 L,efltrophysoutherngrph,86,EFL Trophy Southern Group H,
 C,efltrophyfinalstage,87,EFL Trophy Finals,
+L,isthmianpremierdivision,90,Isthmian League,
+L,northernpremierdivision,90,Northern Premier Division,
+L,premierleague2division1,90,Premier League 2 Division 1,
+L,premierleague2division2,90,Premier League 2 Division 2,
+L,southernpremierdivisioncentral,90,Southern Premier Division Central,
+L,southernpremierdivisionsouth,90,Southern Premier Divison South,
 C,facup,100,The FA Cup,
 N,EST,Estonia,460,estonia
 C,supercup,1,Eesti Superkarikas,
@@ -315,7 +323,7 @@ C,liganacionalconcacafchampionsleagueplayoff,12,Liga Nacional - CONCACAF Champio
 N,HON,Honduras,610,honduras
 L,liganacionalapertura,10,Liga Nacional - Apertura,
 L,liganacionalclausura,10,Liga Nacional - Clausura,
-C,liganacionalaperturafinalstage,11,Liga Nacional - Apertura Finals,
+C,liganacionalaperturafinalstage~liganacionalaperturafinalgroup,11,Liga Nacional - Apertura Finals,
 C,liganacionalclausurafinalstage,11,Liga Nacional - Clausura Finals,
 C,liganacionalconcacafchampionsleagueplayoff,12,Liga Nacional CONCACAF CL Playoffs,
 C,liganacionalrelegationgroup,13,Liga Nacional Relegation Group,
@@ -946,6 +954,7 @@ N,KOR,South Korea,280,southkorea
 L,kleague~kleague1,10,K-League,
 C,kleaguequalification,11,K-League Qualification,
 L,kleague2,20,K-League 2,
+C,kleague2playoff,21,K-League 2 Playoff,
 C,cup,100,Korean FA Cup,
 N,ESP,Spain,60,spain
 C,supercup,1,Supercopa de Espa&ntilde;a,
