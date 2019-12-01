@@ -1224,6 +1224,7 @@ chiasso,Chiasso,Cwrb,rb,v-wrb,,45.8339948,9.0165675,Chiasso,SUI
 chicagofcunited,Chicago FC United,Ckrr,kr,x-kr,,41.7639066,-87.8068921,Bridgeview,USA
 chicagofire,Chicago Fire,Cbrr,br,x-br,,41.764722,-87.806111,Bridgeview,USA
 chicagoredstars,Chicago Red Stars,Crhf,fw,h-rfw,,41.7647229,-87.8055081,Bridgeview,USA
+chichestercityfc,Chichester City,Cwgw,wg,s-ggw,,50.842511,-0.775411,Chichester,ENG
 chicofc,Boyac&aacute; Chic&oacute;,Cgwg,gw,z-ggw,,5.5420478,-73.3533681,Boyac&aacute;,COL
 chieti,SS Chieti,Ckgk,kg,s-gke,,42.3436467,14.1364946,Chieti,ITA
 chievoverona,Chievo Verona,Cbyb,by,b-bby,x190,45.4353226,10.9686282,Chievo,ITA
@@ -3361,6 +3362,7 @@ lehavre,Le Havre AC,Lnfn,fn,v-ffn,,49.4990004,0.1698396,Le Havre,FRA
 leher,Leher TS,Lwbb,wb,x-wb,,53.58821,8.5870801,Bremerhaven,GER
 leicestercity,Leicester City,Lwbb,wb,x-wb,x060,52.6203662,-1.1421895,Leicester,ENG
 leiknirreykjavik,Leiknir Reykjav&iacute;k,Lbrb,rb,s-wbr,,64.102972,-21.817773,Reykjav&iacute;k,ISL
+leiston,Leiston,Lwbb,wb,x-wb,,52.2044,1.571425,Leiston,ENG
 leixlipunited,Leixlip United AFC,Krwr,rw,h-krw,,53.3706162,-6.5138484,Leixlip,IRL
 leixoes,Leix&otilde;es SC,Lwrw,rw,s-rrw,,41.183969,-8.666919,Matosinhos,POR
 lemans,Le Mans,Lyry,yr,s-kry,,47.9592601,0.2231634,Le Mans,FRA
@@ -4305,6 +4307,7 @@ petalingjayacityfc,Petaling Jaya City,Pwrk,kr,s-krw,,3.098709,101.593768,Petalin
 peterboroughsports,Peterborough Sports,Pwbb,wb,x-wb,,52.5935094,-0.2572339,Peterborough,ENG
 peterboroughunited,Peterborough United,Prbb,rb,x-rb,,52.564697,-0.240406,Peterborough,ENG
 peterhead,Peterhead,Pwbb,wb,x-wb,,57.511694,-1.795847,Peterhead,SCO
+petroatletico,Petro Atletico de Luanda,Pbyr,by,e-bry,,-8.9699969,13.2833034,Luanda,ANG
 petrojet,Petrojet,Prbr,rb,s-wbr,,29.957686,32.5425124,Suez,EGY
 petrolulploiesti,Petrolul Ploie&scedil;ti,Pbyy,by,b-bby,,44.9405867,26.0344491,Ploie&scedil;ti,ROU
 petrovac,OFK Petrovac,Pwff,wf,x-wf,,42.203591,18.945928,Petrovac,MNE
@@ -4441,6 +4444,7 @@ puertomontt,Puerto Montt,Pgww,gw,x-gw,,-41.4915,-72.98705,Puerto Montt,CHI
 pulaupinang,Penang,Pwff,wf,x-wf,,5.2610507,100.4375858,Penang,MAS
 pullyfootball,Pully Football,Pwrw,wr,s-rrw,,46.5115232,6.6700055,Pully,SUI
 punefc,Pune,Pyrr,yr,x-yr,,18.5763019,73.7518383,Pune,IND
+punjabfc,Punjab,Pnhn,hn,s-nnh,,30.910961,75.845082,Mohali,IND
 puntarenasfc,Puntarenas,Pkoo,ko,x-ko,,9.9761974,-84.838183,Puntarenas,CRC
 purbach,UFC Purbach,Pwgg,wg,x-wg,,47.9176601,16.6807336,Purbach am Neuseidler See,AUT
 purgstall,Volksbank Purgstall,Pwpp,wp,x-wp,,48.0672038,15.1356787,Purgstall,AUT
@@ -4758,7 +4762,7 @@ salernitana,US Salernitana,Skdd,kd,x-kd,,40.6455384,14.8236281,Salerno,ITA
 salfordcity,Salford City,Swrr,wr,e-wwr,,53.5138018,-2.2810975,Salford,ENG
 salgaocar,Salgaocar,Swgg,wg,x-wg,,15.2893911,73.9623256,Fatorda,IND
 salgueiro,Salgueiro AC,Srwg,rg,o-rwgr,,-8.0759612,-39.1194047,Salgueiro,BRA
-salisburycity,Salisbury City,Skww,kw,x-kw,,51.104339,-1.785758,Salisbury,ENG
+salisbury~salisburycity,Salisbury,Skww,kw,x-kw,,51.104339,-1.785758,Salisbury,ENG
 salthilldevon,Salthill Devon,Snhw,hw,s-nhw,,53.29318,-9.133338,Drom East,IRL
 salzburg~rbsalzburg,Red Bull Salzburg,Rrww,rw,x-rw,x147,47.8162823,12.9982153,Salzburg,AUT
 sambenedettese,US Sambenedettese,Swnr,rn,v-wrn,,42.9305639,13.8900799,San Benedetto del Tronto,ITA
@@ -5366,6 +5370,7 @@ strakonice,Junior Strakonice,Jwbb,wb,x-wb,,49.2616625,13.912384,Strakonice,CZE
 stranraer,Stranraer,Swbb,wb,x-wb,,54.902147,-5.012481,Stranraer,SCO
 strasbourg,Racing Club Strasbourg,Rwbb,wb,x-wb,x220,48.5600356,7.7551235,Strasbourg,FRA
 strasbourgolympique,Strasbourg Olympique,Swrr,wr,x-wr,,48.558177,7.7552683,Strasbourg,FRA
+stratfordtown,Stratford Town,Swbb,wb,x-wb,,52.19415,-1.676361,Tiddington,ENG
 strathspeythistle,Strathspey Thistle,Swbb,wb,x-wb,,57.3325955,-3.6031622,Grantown-on-Spey,SCO
 strindheim,Strindheim,Sbyy,by,x-by,,63.4270298,10.4473455,Strindheim,NOR
 strogino,Strogino Moscow,Sbyy,by,x-by,,55.804946,37.4098431,Moscow,RUS
@@ -5678,6 +5683,7 @@ tranmererovers~tranmere,Tranmere Rovers,Thww,hw,x-hw,,53.373611,-3.0325,Birkenhe
 trapani,Trapani,Twdd,wd,x-wd,,38.0287017,12.5457406,Trapani,ITA
 trasandino,Trasandino de Los Andes,Twgg,wg,x-wg,,-32.838611,-70.604167,Los Andes,CHI
 tratfc,Trat,Twrr,wr,x-wr,,12.233759,102.524949,Trat,THA
+trau,TRAU,Twgw,wg,b-wwg,,24.822691,93.95245,Imphal,IND
 travnik,Travnik,Twbw,wb,b-wwb,,44.2253335,17.6449965,Travnik,BIH
 trebic,HFK T&rcaron;eb&iacute;&ccaron;,Twrr,wr,x-wr,,49.2124849,15.8933049,T&rcaron;eb&iacute;&ccaron;,CZE
 trefiori,SP Tre Fiori,Tbyy,by,x-by,,43.9087301,12.4479995,Fiorentino,SMR
