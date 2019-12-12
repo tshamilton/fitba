@@ -2722,6 +2722,7 @@ hfxwanderersfc,Halifax Wanderers,Hwnn,wn,x-wn,,44.6444,-63.5836,Halifax,CAN
 hhc,Hardenberg HHC,Hkoo,ko,x-ko,,52.5662265,6.5896987,Hardenberg,NED
 hibernians,Hibernians,Hwkw,kw,s-kkw,,35.8827932,14.5130716,Paola,MLT
 hibernian~hibernianslfc~hibernianlfc,Hibernian,Hwgw,wg,b-wwg,x206,55.9617787,-3.165291,Leith,SCO
+hienghenesport,Hiengh&egrave;ne Sport,Hwhw,wh,s-hhw,,-20.6880307,164.9459668,Hiengh&egrave;ne,NCL
 hifk,Helsingfors,Hwrr,wr,x-wr,,60.1875,24.9225,Helsinki,FIN
 highlandspark,Highlands Park,Hwrr,wr,x-wr,,-26.099357,28.167143,Modderfontein,RSA
 hik,Hellerup IK,Hfww,fw,x-fw,,55.7571107,12.5271883,Hellerup,DEN
@@ -4757,7 +4758,7 @@ salernitana,US Salernitana,Skdd,kd,x-kd,,40.6455384,14.8236281,Salerno,ITA
 salfordcity,Salford City,Swrr,wr,e-wwr,,53.5138018,-2.2810975,Salford,ENG
 salgaocar,Salgaocar,Swgg,wg,x-wg,,15.2893911,73.9623256,Fatorda,IND
 salgueiro,Salgueiro AC,Srwg,rg,o-rwgr,,-8.0759612,-39.1194047,Salgueiro,BRA
-salisburycity,Salisbury City,Skww,kw,x-kw,,51.104339,-1.785758,Salisbury,ENG
+salisbury~salisburycity,Salisbury,Skww,kw,x-kw,,51.104339,-1.785758,Salisbury,ENG
 salthilldevon,Salthill Devon,Snhw,hw,s-nhw,,53.29318,-9.133338,Drom East,IRL
 salzburg~rbsalzburg,Red Bull Salzburg,Rrww,rw,x-rw,x147,47.8162823,12.9982153,Salzburg,AUT
 sambenedettese,US Sambenedettese,Swnr,rn,v-wrn,,42.9305639,13.8900799,San Benedetto del Tronto,ITA
