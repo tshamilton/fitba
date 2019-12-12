@@ -169,7 +169,7 @@ function table($in_t, $nC, $context) {
 	print t(5)."</div>\n";
 }
 
-$string = file_get_contents('base.json');
+$string = file_get_contents('config/base.json');
 $Stats = json_decode($string, true);
 $the_teams	= file("config/teams.csv", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 $the_nats	= file("config/nations.csv", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
