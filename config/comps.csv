@@ -56,6 +56,7 @@ L,premierleague,10,Premyer Liqa,
 N,BLR,Belarus,450,belarus
 C,supercup,1,Supercup,
 L,premierleague,10,Premier League,
+C,premierleaguequalification,11,Premier League Qualification,
 N,BEL,Belgium,80,belgium
 C,supercup,1,Super Cup,
 L,firstdivisiona,10,First Division A,
@@ -247,6 +248,7 @@ L,premierleague2division2,90,Premier League 2 Division 2,
 L,southernpremierdivisioncentral,90,Southern Premier Division Central,
 L,southernpremierdivisionsouth,90,Southern Premier Divison South,
 C,facup,100,The FA Cup,
+C,fatrophy,101,The FA Trophy,
 N,EST,Estonia,460,estonia
 C,supercup,1,Eesti Superkarikas,
 L,meistriliiga,10,Meistriliiga,
@@ -734,6 +736,7 @@ C,coppaitalia,50,Coppa Italia,
 N,JPN,Japan,90,japan
 C,supercup,1,Super Cup,
 L,jleague,10,J-League,
+C,jleaguequalification,11,J-League Qualification,
 C,jleague2playoff,11,J-League 2 Playoff,
 C,jleague2promotionplayoff,12,J-League 2 Promotion Playoff,
 L,jleague2,20,J-League 2,
@@ -851,6 +854,7 @@ C,divisionprofesionalrelegationplayoff,11,Division Profesional Relegation Playof
 N,PER,Peru,630,peru
 L,liga1apertura~primeradivisionapertura,10,Liga 1 Apertura,
 L,liga1clausura~primeradivisionclausura,10,Liga 1 Clausura,
+L,liga1finalstage,10,Liga 1 Finals,
 L,primeradivisiontorneodeveranogrpa,10,Primera Division Torneo de Verano Group A,
 L,primeradivisiontorneodeveranogrpb,10,Primera Division Torneo de Verano Group B,
 C,primeradivisionfinalstage,15,Primera Division Final Stage,
@@ -954,6 +958,7 @@ L,premiersoccerleaguequalificationgroup,11,Premier Soccer League Qualification G
 N,KOR,South Korea,280,southkorea
 L,kleague~kleague1,10,K-League,
 C,kleaguequalification,11,K-League Qualification,
+C,kleague1qualification,11,K-League Qualification,
 L,kleague2,20,K-League 2,
 C,kleague2playoff,21,K-League 2 Playoff,
 C,cup,100,Korean FA Cup,
@@ -1039,6 +1044,7 @@ C,usopencup,100,US Open Cup,
 N,URU,Uruguay,380,uruguay
 L,primeradivisionapertura,10,Primera Division Apertura,
 L,primeradivisionclausura,10,Primera Division Clausura,
+L,primeradivisionclausurafinalstage,11,Primera Division Clausura Finals,
 C,primeradivisionfinalstage,11,Primera Division Finals,
 C,primeradivisionintermedio,15,Primera Division Intermedio,
 C,primeradivisionintermediofinalstage,16,Primera Division Intermedio Finals,
