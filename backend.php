@@ -519,7 +519,7 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		$tStyle = "";
 		$Flag = "";
 		$mnr = "darkSlate";
-		missing("Missing team -> ".$t);
+		missing("T:".$c.":".$t);
 	}
 
 	if ($c == "INT") {
@@ -646,19 +646,20 @@ function MakeStatus($s) {
 		elseif	($st[1] == 17)	{ return "Abandoned"; }
 		elseif	($st[1] == 93)	{ return "Resume Postponed Match"; }
 		elseif	($st[1] == 106)	{ return "Cancelled"; }
-		else					{ return "Status unknown (".$s.")"; missing("Match Status: ".$s." ?"); }
+		else					{ missing("S:".$s); return "Status unknown (".$s.")"; }
 	}
 	elseif	($st[0] == "N") {
 		if 		($st[1] == 1) 	{ return "Not started"; }
-		else					{ return "Status unknown (".$s.")"; missing("Match Status: ".$s." ?"); }
+		else					{ missing("S:".$s); return "Status unknown (".$s.")"; }
 	}
 	elseif	($st[0] == "P") {
 		if		($st[1] == 5)	{ return "Postponed"; }
-		else					{ return "Status unknown (".$s.")"; missing("Match Status: ".$s." ?"); }
+		else					{ missing("S:".$s); return "Status unknown (".$s.")"; }
 	}
 	elseif	($st[0] == "S") {
 		if		($st[1] == 2)	{ return "First Half"; }
 		elseif	($st[1] == 3)	{ return "Second Half"; }
+		elseif	($st[1] == 4)	{ return "Penalty Shootout"; }
 		elseif	($st[1] == 8)	{ return "Extra Time Break"; }
 		elseif	($st[1] == 9)	{ return "Extra Time"; }
 		elseif	($st[1] == 10)	{ return "Half Time"; }
@@ -667,7 +668,11 @@ function MakeStatus($s) {
 		elseif	($st[1] == 18)	{ return "Kick-Off"; }
 		elseif	($st[1] == 106)	{ return "Cancelled"; }
 		elseif	($st[1] == 190)	{ return "Full Time"; }
-		else					{ return "Status unknown ".$st[0]." - ".$st[1]; missing("Match Status: ".$s." ?"); }
+		else					{ missing("S:".$s); return "Status unknown ".$st[0]." - ".$st[1]; }
+	}
+	else {
+		missing("S:".$s);
+		return "Status unknown ".$st[0]." - ".$st[1];
 	}
 }
 function missing($in) {
@@ -684,10 +689,9 @@ function missing($in) {
 		}
 	}
 	else {
-		if (strlen($in) <= 4) {
-			next;
+		if (strlen($in) > 3) {
+			$missing[] = $in;
 		}
-		$missing[] = $in;
 	}
 }
 
@@ -790,7 +794,7 @@ foreach ($the_world as $w) {
 		# Check that nation exists in the config
 		if (!(array_key_exists($curr_cc, $Nations))) {
 			if ($curr_cc != "INT") {
-				missing("Missing nation! -> ".$curr_cc);
+				missing("N:".$curr_cc);
 			}
 		}
 		if (!(array_key_exists($curr_cc, $News))) {
@@ -808,7 +812,7 @@ foreach ($the_world as $w) {
 		if (!(array_key_exists($curr_comp, $Comp[$curr_cc]["Comps"]))) {
 			#pretty_var($curr_comp);
 			#pretty_var($Comp[$curr_cc], '00aaff');
-			missing("Missing competition in ".$curr_cc." -> ".$curr_comp);
+			missing("C:".$curr_cc.":".$curr_comp);
 		}
 		if (!(array_key_exists($curr_comp, $News[$curr_cc]))) {
 			$News[$curr_cc][$curr_comp] = Array();
