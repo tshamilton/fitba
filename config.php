@@ -717,52 +717,25 @@ foreach ($the_nats as $in_t) {
 	$perm_list = Array();
 	$current_list = Array();
 	foreach ($the_missing as $m) {
-		print $m."<br/>\n";
 		if (preg_match("/^20/", $m)) {
-			if ($current_date == "") {
-				$current_date = $m;
-			}
-			else {
-				if (sizeof($current_list) > 0) {
-					print "Missing details for: ".$current_date."<br/>\n";
-					pretty_var($current_list, 'ffcccc');
-					$current_date = $m;
-					$current_list = Array();
-				}
-				else {
-					$current_date = $m;
-					$current_list = Array();
+			if ($current_date != "") {
+				if (sizeof($current_list[$current_date] > 0)) {
+					pretty_var('3366ff', $current_list[$current_date]);
 				}
 			}
+			$current_list[$m] = Array();
+			$current_date = $m;
 		}
+#		if (preg_match("/^T:/", $m)) {
 		else {
-			if (preg_match("/Missing team -> (.+)$/", $m, $mTeam)) {
-				$mTeam = $mTeam[1];
-				if (isset($Team[$mTeam]) || in_array($m, $perm_list)) {
-					continue;
-				}
-				else {
-					array_push($current_list, $mTeam);
-					array_push($perm_list, $m);
-				}
-			}
-			if (preg_match("/Missing competition/", $m)) {
-				if (!(in_array($m, $perm_list))) {
-					array_push($current_list, $m);
-					array_push($perm_list, $m);
-				}
-			}
-			if (preg_match("/Missing nation/", $m)) {
-				if (!(in_array($m, $perm_list))) {
-					array_push($current_list, $m);
-					array_push($perm_list, $m);
-				}
+			$mTeam = explode($m);
+			if (!(isset($Team[$mTeam[2]]))) {
+				array_push($current_list[$current_date], $m);
 			}
 		}
 	}
-	if (sizeof($current_list) > 0) {
-		print "Missing details for: ".$current_date."<br/>\n";
-		pretty_var($current_list, 'ffcccc');
+	if (sizeof($current_list[$current_date] > 0)) {
+		pretty_var('ff6633', $current_list[$current_date]);
 	}
 ?>
 				</div>
