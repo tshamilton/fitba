@@ -735,7 +735,7 @@ foreach ($the_nats as $in_t) {
 		}
 	}
 	if (sizeof($current_list[$current_date] > 0)) {
-		pretty_var('ff6633', $current_list[$current_date]);
+		pretty_var($current_list[$current_date], 'ff6633');
 	}
 ?>
 				</div>
