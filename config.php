@@ -714,28 +714,55 @@ foreach ($the_nats as $in_t) {
 				<div class="container-fluid p-4">
 <?php
 	$current_date = "";
+	$seen = Array();
 	$perm_list = Array();
 	$current_list = Array();
+
 	foreach ($the_missing as $m) {
-		if (preg_match("/^20/", $m)) {
-			if ($current_date != "") {
-				if (sizeof($current_list[$current_date] > 0)) {
-					pretty_var('3366ff', $current_list[$current_date]);
+		if (!(in_array($m, $seen))){
+			if (preg_match("/^20/", $m)) {
+//				pretty_var("Date-> ".$m, '3366ff');
+				$current_date = $m;
+				$current_list[$current_date] = Array();
+			}
+			elseif (preg_match("/^T/", $m)) {
+				$this_team = explode(":", $m);
+				if (isset($Team[$this_team[2]])) {
+//					pretty_var("Known -> ".$this_team[2], '77aadd');
+				}
+				else {
+//					pretty_var("Team-> ".$m, '66ff33');
+					array_push($current_list[$current_date], $m);
 				}
 			}
-			$current_list[$m] = Array();
-			$current_date = $m;
-		}
-#		if (preg_match("/^T:/", $m)) {
-		else {
-			$mTeam = explode($m);
-			if (!(isset($Team[$mTeam[2]]))) {
+			elseif (preg_match("/^C/", $m)) {
+//				pretty_var("Comp-> ".$m, 'ff3366');
 				array_push($current_list[$current_date], $m);
 			}
+			else {
+				pretty_var($m, 'ffffff');
+			}
+			array_push($seen, $m);
+		}
+		else {
+//			pretty_var("Seen-> ".$m, 'cccccc');
 		}
 	}
-	if (sizeof($current_list[$current_date] > 0)) {
-		pretty_var($current_list[$current_date], 'ff6633');
+	foreach($current_list as $d => $l) {
+		if (sizeof($l) > 0) {
+			print "<b>".$d."</b><br/>\n";
+			foreach ($l as $e)	{
+				if  (preg_match("/^T/", $e)) {
+					$this_team = explode(":", $e);
+					print "<span style=\"margin-left: 15px;\"><i>".$this_team[2].",Name,Pin,Minor,Major,Badge,L1,L2,Location,".$this_team[1]."</i></span><br/>\n";
+				}
+				elseif (preg_match("/^C/", $e)) {
+					$this_comp = explode(":", $e);
+					print "<span style=\"margin-left: 15px;\"><i>LC,".$this_comp[2].",0,Name, (".$this_comp[1].")</i></span><br/>\n";
+				}
+			}
+			print "<br/>&nbsp;<br/>\n";
+		}
 	}
 ?>
 				</div>

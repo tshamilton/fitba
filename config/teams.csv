@@ -126,6 +126,7 @@ agropecuario,Agropecuario,Argr,rg,s-wgr,,-35.616667,-61.366667,Carlos Casuares,A
 agrotikosasteras,Agrotikos Asteras,Awgg,wg,x-wg,,40.666667,22.9,Evosmos,GRE
 agsmveronaw,AGSM Verona,Vybb,yb,x-yb,,45.4358451,10.960251,Verona,ITA
 aguasanta,&Aacute;gua Santa,Abwb,bw,h-bbw,,-23.7231357,-46.612866,Diadema,BRA
+agudatsportashdod,Agudat Sport Ashdod,Awrk,kr,e-wkr,,31.8081221,34.6591135,Ashdod,ISR
 aguiasmoradal,GD &Aacute;guias do Moradal,Ayby,yb,x-yb,,39.9586617,-7.8157727,Estreito,POR
 aguilas,&Aacute;guilas,Abwb,wb,s-bbw,,37.4042629,-1.5900854,&Aacute;guilas,ESP
 ahal,Ahal,Awgw,wg,b-wwg,,37.9282864,58.3495872,Ashgabat,TKM
@@ -266,7 +267,6 @@ alnasr,Al Nasr,Nnrr,nr,x-nr,,30.6296026,30.3126085,Nasr,EGY
 alnasrsc,Al Nasr Dubai SC,Nwbb,wb,x-wb,,25.24,55.313056,Dubai,UAE
 alnassrfc,Al Nassr,Nbyy,by,b-bby,,24.788106,46.839336,Riyadh,KSA
 alnejmeh,Nejmeh,Nwqq,wq,x-wq,,33.894444,35.469444,Ras Beirut,LIB
-alriffa,Al Riffa,Raww,aw,x-aw,,26.153794,50.5436453,Riffa,BHR
 alorobahfc,Al Orobah,Oygg,yg,x-yg,,29.969722,40.2,Sakakah,KSA
 alphaunited,Alpha United,Akdd,kd,x-kd,,6.8081641,-58.1497879,Bourda,GUY
 alqadasiya,Al Qadasiya,Qyrr,yr,x-yr,,26.3699,50.2052,Al Khobar,KSA
@@ -275,6 +275,7 @@ alqenah,Al Qenah,Qwbb,wb,x-wb,,30.592667,32.292528,Suez,EGY
 alquwaaljawiya,Al-Quwa Al-Jawiya,Qwbb,wb,s-bbw,,33.3487467,44.4535653,Baghdad,IRQ
 alraed,Al Ra'ed,Rrkk,rk,e-kkr,,26.378789,43.947878,Buraidah,KSA
 alrayyan,Al Rayyan,Rkrr,kr,x-kr,,25.330538,51.341279,Al Rayyan,QAT
+alriffa,Al Riffa,Raww,aw,x-aw,,26.153794,50.5436453,Riffa,BHR
 alsadd,Al Sadd,Skww,kw,x-kw,x278,25.267358,51.484251,Al Sadd,QAT
 alsailiya,Al Sailiya,Sbkb,bk,s-wbk,,25.334838,51.342279,Al Rayyan,QAT
 alsalt,Al Salt,Swbb,wb,x-wb,,32.0321701,35.6909932,Balqa,JOR
@@ -309,6 +310,7 @@ aluminijkidricevo~aluminij,Aluminij Kidri&ccaron;evo,Awrr,wr,x-wr,,46.407778,15.
 aluminiumarak,Aluminium Arak,Abww,bw,x-bw,,34.0964046,49.7309446,Arak,IRN
 aluminiumhormozganfc,Aluminium Hormozgan,Akyy,ky,x-ky,,27.183333,56.266667,Bandar Abbas,IRN
 alumnidevillamaria,Alumni de Villa Maria,Arwr,rw,s-wwr,,-32.410278,-63.231389,Villa Maria,ARG
+aluwaynah,Al Uwaynah,Ukyk,yk,b-kky,,25.4430039,50.9558801,Al Uwaynah,QAT
 alvechurch,Alvechurch,Akyy,ky,x-ky,,52.345371,-1.957759,Alvechurch,ENG
 alverca,Alverca,Abrr,br,x-br,,38.892917,-9.034311,Alverca,POR
 alwahda~alwehda,Al Wahda,Wwqq,wq,x-wq,,21.485528,39.973744,Mecca,KSA
@@ -1321,6 +1323,7 @@ cobresal,Cobresal,Cwoo,ow,b-wwo,,-26.251944,-69.628611,El Salvador,CHI
 cockburncity,Cockburn City,Cwbb,wb,e-wwb,,-32.0952012,115.7749713,Cockburn,AUS
 cockhillceltic,Cockhill Celtic,Cgwg,gw,h-ggw,,55.1318001,-7.4615388,Buncrana,IRL
 codru,Codru Lozova,Cwrr,wr,x-wr,,47.088464,28.7717031,Ghidighici,MDA
+coimbra,Coimbra EC,Ckww,kw,x-kw,,-20.0830633,-44.5800981,Ita&uacute;na,BRA
 coimbroes,SC Coimbr&otilde;es,Ckgg,kg,x-kg,,41.1274864,-8.6321991,Coimbr&otilde;es,POR
 colchagua,Colchagua,Cbww,bw,e-bbw,,-34.5950276,-70.9877757,San Fernando,CHI
 colchesterunited,Colchester United,Cwbw,wb,s-bbw,,51.923322,0.896991,Colchester,ENG
@@ -2575,6 +2578,7 @@ gryfwejherowo,Gryf Wejherowo,Gkyk,ky,s-kky,,54.5923124,18.225335,Wejherowo,POL
 guabira,Guabir&agrave; Montero,Gwrr,wr,x-wr,,-17.3432282,-63.2623679,Montero,BOL
 guadalajarachivas~cdguadalajara~guadalajara,Chivas de Guadalajara,Cbrw,wr,s-brw,,20.6817764,-103.4626455,Guadalajara,MEX
 guadalupefc,Guadalupe,Gynn,yn,e-yyn,,9.9463933,-84.0568662,Guadelupe,CRC
+guairena,Guaire&ntilde;a,Gkhw,wh,s-khw,,-25.7562824,-56.4338131,Villarrica,PAR
 guangdonghuanan,Guangdong Huanan,Gwrr,wr,x-wr,,24.275271,116.078143,Meixian,CHN
 guangxibaoyun,Guangxi Baoyun,Bwrr,wr,x-wr,,22.762882,108.390654,Guangxi,CHN
 guangzhouevergrande,Guangzhou Evergrande,Gwrr,wr,x-wr,x280,23.1380215,113.3246753,Guangzhou,CHN
@@ -2765,6 +2769,7 @@ hnkgorica,HNK Gorica,Gwrr,wr,x-wr,,45.7231282,16.0734161,Velika Gorica,CRO
 hoanganhgialai,Ho&aacute;ng Anh Gia Lai,Hrww,rw,x-rw,,13.978976,108.0048531,Ho&aacute;ng Anh Gia Lai,VIE
 hobartzebras~tilfordzebras,Hobart Zebras,Hkwk,kw,s-wwk,,-42.8715461,147.3128434,Hobart,AUS
 hobro,Hobro IK,Hbyb,by,h-bby,,56.633326,9.8169869,Hobro,DEN
+hochiminhcityfc,Ho Ch&iacute; Minh City,Hwrr,wr,x-wr,,10.760703,106.663331,Ho Ch&iacute; Minh,VIE
 hodd,H&oslash;dd,Hwbb,wb,x-wb,,62.3396311,5.8815231,Ulsteinvik,NOR
 hodonin,Hodon&iacute;n,Hkrr,kr,x-kr,,48.8618011,17.1064105,Hodon&iacute;n,CZE
 hoek,HSV Hoek,Hbww,bw,x-bw,,51.3145801,3.7859475,Hoek,NED
@@ -3573,6 +3578,7 @@ macae,Maca&eacute; Esporte,Mwhw,hw,s-wwh,,-22.3565,-41.7716,Maca&eacute;,BRA
 macarthurramsfc,Macarthur Rams,Mkqq,kq,b-kkq,,-37.7292475,145.1206148,St. Helens Park,AUS
 maccabiahinazareth,Maccabi Ahi Nazareth,Mwgg,wg,x-wg,,32.72105,35.265137,Nazareth,ISR
 maccabibeersheva,Maccabi Be'er Sheva,Mwrr,wr,x-wr,,31.2535597,34.7864981,Be'er Sheva,ISR
+maccabibneiraina,Maccabi Bnei Raina,Rkrr,kr,x-kr,,32.7179775,35.3233283,Reineh,ISR
 maccabihaifa,Maccabi Haifa,Mwgw,wg,h-ggw,,32.783121,34.9653143,Haifa,ISR
 maccabiherzeliya~maccabiherzliya,Maccabi Herzeliya,Mkyy,ky,x-ky,,32.1680402,34.8250783,Herzliya,ISR
 maccabikiryatgat,Maccabi Kiryat Gat,Mbyy,by,x-by,,31.6058952,34.7606796,Kiryat Gat,ISR
@@ -5394,6 +5400,7 @@ stourbridge,Stourbridge,Swrw,rw,s-rrw,,52.4629851,-2.1526107,Stourbridge,ENG
 stpatricks~stpatricksathletic,St Patrick's Athletic,Swrw,wr,b-wwr,,53.340922,-6.316619,Inchicore,IRL
 stpauli,St Pauli,Swvv,wv,x-wv,,53.5545585,9.9677482,Hamburg,GER
 stpeters,St Peter's Athlone,Pwgw,gw,h-ggw,,53.4271986,-7.957695,Bogganfin,IRL
+stpierroisejs,JS Saint-Pierroise,Pkww,kw,x-kw,,-21.3387,55.4681,Saint-Pierre,REU
 stpontivyen,Stade Pontivyen,Pyky,ky,e-kky,,48.0595068,-2.9755328,Pontivy,FRA
 stpriest,AS St. Priest,Pryy,ry,x-ry,,45.6951259,4.9355863,Saint-Priest,FRA
 stpryvesthilaire,Saint-Pryv&eacute; Saint-Hilaire,Swnn,wn,x-wn,,47.8851677,1.8751793,Saint-Pryv&eacute-Saint-Mesmin,FRA
@@ -5811,6 +5818,7 @@ tyumen,Tyumen,Twkk,wk,x-wk,,57.1617,65.5139,Tyumen,RUS
 uaestadodemexico,Potros UAEM,Pguu,gu,x-gu,,19.2849387,-99.6762522,Toluca de Lerdo,MEX
 uamferoise,UA Fere en Tardenois,Fwrr,wr,x-wr,,49.203954,3.5156139,Fere en Tardenois,FRA
 ubberudif,Ubberud IF,Ubyy,by,x-by,,55.3966104,10.2524395,Blommenslyst,DEN
+uberlandia,Uberl&acirc;ndia EC,Uwgw,wg,e-wwg,,-18.913889,-48.2325,Uberl&acirc;ndia,BRA
 ubonumtfc,Ubon UMT United,Uuww,uw,x-uw,,15.263592,104.842982,Ubon Ratchathani,THA
 ubuntucapetownfc,Ubuntu Cape Town,Urkk,rk,x-rk,,-33.9618853,18.5184353,Cape Town,RSA
 ucammurcia,UCAM Murcia,Uwbb,wb,x-wb,,37.986111,-1.121389,Murcia,ESP
