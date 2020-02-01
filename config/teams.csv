@@ -526,10 +526,11 @@ atleticocholoma,Atletico Choloma,Cwrr,wr,x-wr,,15.6130342,-87.9484909,Choloma,HO
 atleticodekolkata~atk,Atletico de Kolkata,Krwr,rw,s-brw,,22.568889,88.409167,Kolkata,IND
 atleticodesanluis,Atl&eacute;tico San Luis,Abrw,wr,s-brw,,22.138706,-100.950864,San Luis Potos&iacute;,MEX
 atleticogoianiense~atleticogo,Atl&eacute;tico Goianiense,Gkrr,kr,h-kkr,,-16.670833,-49.2625,Goi&acirc;nia,BRA
+atleticograu,Atl&eacute;tico Grau,Grwy,rw,x-rw,,-5.1927337,-80.616967,Piura,PER
 atleticoguemes,Atl&eacute;tico G&uuml;emes,Grnn,rn,h-rrn,,-27.784444,-64.266944,G&uuml;mes,ARG
 atleticoguimar,Atl&eacute;tico Uni&oacute;n G&uuml;&iacute;mar,Gwbw,wb,s-bbw,,28.315019,-16.40995,G&uuml;&iacute;mar,ESP
 atleticohuila,Atl&eacute;tico Huila,Hgyy,gy,x-gy,,2.9358896,-75.2802974,Huila,COL
-atleticojunior,Atl&eacute;tico Junior,Jwrw,rw,s-brw,,10.926861,-74.800722,Barranquilla,COL
+atleticojunior~juniorfc,Atl&eacute;tico Junior,Jwrw,rw,s-brw,,10.926861,-74.800722,Barranquilla,COL
 atleticolevanteud,Atletico Levante,Lcbc,bc,s-wbc,,39.430278,-0.773056,Bu&ntilde;ol,ESP
 atleticomadrid,Atletico Madrid,Awrb,rw,s-brw,x032,40.4362417,-3.5994735,Madrid,ESP
 atleticomalagueno,Atl&eacute;tico Malague&ntilde;o,Mwhw,wh,s-hhw,,36.715833,-4.484444,M&aacute;laga,ESP
@@ -1040,6 +1041,7 @@ cankayafk,&Ccedil;ankaya,Cwrr,wr,x-wr,,39.9814388,32.7405654,Ostim,TUR
 cankirispor,&Ccedil;ank&inodot;r&inodot;spor,Cwbb,wb,e-wwb,,40.5962795,33.6165328,&Ccedil;ank&inodot;r&inodot;,TUR
 cannes,AS Cannes,Crwr,rw,s-wwr,,43.5530237,6.9649036,Cannes,FRA
 canuelas,Ca&ntilde;uelas,Crwr,wr,s-krw,,-35.0001717,-58.7642971,Ca&ntilde;uelas,ARG
+capalmaflor,Palmaflor,Pryg,gy,e-ggy,,-17.39333,-66.2750774,Quillacollo,BOL
 capantoja,Atl&eacute;tico Pantoja,Pyby,yb,e-yyb,,18.480454,-69.918662,Santo Domingo,DOM
 capelle,Capelle,Ckgw,wg,b-kwg,,51.9225123,4.5069116,Capelle aan den Ijssel,NED
 capenapolense,Penapolense,Pwrb,rb,s-rbwr,,-21.4221397,-50.0711774,Pen&aacute;polis,BRA
@@ -1058,6 +1060,7 @@ carewpark,Carew Park,Cbyy,by,x-by,,52.6507652,-8.624311,Roxboro,IRL
 cariverplate,River Plate,Rkwr,rw,d-kwr,x261,-34.545319,-58.449736,Belgrano,ARG
 carlisleunited,Carlisle United,Cwbb,wb,x-wb,,54.8958163,-2.9144752,Carlisle,ENG
 carlosamannucci,Carlos A. Mannucci,Cwnr,wn,o-wnrw,,-8.106655,-79.030977,Trujillo,PER
+carlosstein,Carlos Stein,Cwqq,wq,x-wq,,-6.6975882,-79.9042272,Lambayeque,PER
 carlstadunited,Carlstad United,Cwkk,wk,x-wk,,59.3853333,13.4935529,Karlstad,SWE
 carlzeissjena,Carl Zeiss Jena,Jbww,bw,x-bw,,50.9160426,11.5829277,Jena,GER
 carmarthen,Carmarthen Town,Ckuu,ku,b-kku,,51.859838,-4.3022165,Carmarthen,WAL
@@ -1193,7 +1196,6 @@ chamalieres,Chamalieres,Cwrr,wr,x-wr,,45.7774567,3.0477755,Chamalieres,FRA
 chambly,Chambly Thelle,Ckbk,kb,s-wbk,,49.1779278,2.2314765,Chambly,FRA
 changchunyatai,Changchun Yatai,Cyrr,yr,x-yr,,43.839549,125.396007,Changchun,CHN
 changwoncity,Changwon City,Ckrk,kr,s-wkr,,35.2233864,128.705868,Changwon,KOR
-chaniafc,AO Chania,Cwbw,wb,s-bbw,,35.48725,24.000556,Chania,GRE
 chantillyus,US Chantilly,Crgg,rg,x-rg,,49.1995651,2.4686311,Chantilly,FRA
 chapecoenseaf,Chapecoense AF,Cwgg,wg,x-wg,,-27.1041983,-52.6069171,Chapec&oacute;,BRA
 charlestonbattery,Charleston Battery,Ckyk,yk,s-kky,,32.87084,-79.9197806,Charleston,USA
@@ -1451,6 +1453,7 @@ cumbernauldcolts,Cumbernauld Colts,Cbyy,by,x-by,,55.944862,-4.0371156,Cumbernaul
 cuneo,AC Cuneo 1905,Cwrw,wr,s-rrw,,44.3831376,7.5318436,Cuneo,ITA
 curicounido,Curic&oacute; Unido,Crww,rw,d-rwr,,-34.974444,-71.2306608,Curic&oacute;,CHI
 curzon,Curzon Ashton,Cwbb,wb,x-wb,,53.4938411,-2.1181361,Ashton-under-Lyne,ENG
+cuscofc~realgarcilaso,Cusco FC,Cwkk,wk,x-wk,,-13.5252114,-71.9664377,Cusco,PER
 cvvdejodanboys,CVV de Jodan Boys,Ckwo,kw,e-kow,,52.0078146,4.7311117,Gouda,NED
 dac1904dunajskastreda,DAC1904 Dunajsk&aacute; Streda,Dbyb,by,s-yyb,,47.9991438,17.6186178,Dunajsk&aacute; Streda,SVK
 daciachisinau,Dacia Chisinau,Dbyy,by,x-by,,46.9133,26.929805,Speia,MDA
@@ -1539,6 +1542,7 @@ deportivoheredia,Deportivo Heredia,Hbrw,rw,s-brw,,15.4654854,-88.8424424,Morales
 deportivolacoruna,Deportivo La Coru&ntilde;a,Lwbw,wb,s-bbw,x238,43.3687184,-8.4174835,La Coru&ntilde;a,ESP
 deportivolaguaira,Deportivo La Guaira,Lkoo,ko,x-ko,,10.4914445,-66.8857108,Caracas,VEN
 deportivolara,Lara,Lkrk,kr,s-wkr,,9.993636,-69.2195853,Cabudare,VEN
+deportivollacuabamba,Deportivo Llacuabamba,Lwhh,wh,x-wh,,-8.0319286,-77.4563591,Parcoy,PER
 deportivoloscaimanes,CCD Los Caimanes,Lygg,yg,e-yyg,,-6.6373371,-79.3941003,Chongoyape,PER
 deportivomadryn,Deportivo Madryn,Mkyk,ky,s-kky,,-42.7470208,-65.0423957,Madryn,ARG
 deportivomaipu,Deportivo Maip&uacute;,Mwrr,wr,d-krw,,-32.9750927,-68.7960968,Maip&uacute;,ARG
@@ -1748,7 +1752,7 @@ eideomegn,Eide/Omegn,Ebrr,br,x-br,,62.9174298,7.4370222,Eide,NOR
 eiderstedt,SG Eiderstedt,Ewbb,wb,x-wb,,54.3207802,8.9455882,T&ouml;nning,GER
 eidsvoldtf,Eidsvold Turn,Ewbb,wb,x-wb,,60.3270613,11.1936703,Eidsvold,NOR
 eif,Eken&auml;s,Ewgg,wg,x-wg,,59.9735001,23.4430698,Eken&auml;s,FIN
-eiktonsberg,Eik-T&oslash;nsberg,Ekww,kw,x-kw,,59.2915897,10.42618,T&oslash;nsberg,NOR
+eiktonsberg~fkeiktonsberg,Eik-T&oslash;nsberg,Ekww,kw,x-kw,,59.2915897,10.42618,T&oslash;nsberg,NOR
 eintrachtbamberg,Eintracht Bamberg,Bwpp,wp,x-wp,,49.9005358,10.9288061,Bamberg,GER
 eintrachtbraunschweig,Eintracht Braunschweig,Bbyy,by,x-by,x197,52.2900428,10.5207144,Braunschweig,GER
 eintrachtcuxhaven,Eintracht Cuxhaven,Cbww,bw,x-bw,,53.86056,8.70271,Cuxhaven,GER
@@ -2935,6 +2939,7 @@ interbratislava,Inter Bratislava,Ikyk,yk,s-kky,,48.2781267,17.0387038,Bratislava
 intercdf,Inter CDF,Irww,rw,x-rw,,47.4714622,19.0877379,Budapest,HUN
 intercherkessk,Inter Cherkessk,Iwnn,wn,x-wn,,44.2245642,42.0664548,Cherkessk,RUS
 interdelages,Inter de Lages,Iwrw,wr,b-wwr,,-27.8063998,-50.3095936,Lages,BRA
+interdelimeira,Internacional de Limeira,Lkww,kw,x-kw,,-22.555294,-47.385042,Limeira,BRA
 internacional,SC Internacional,Iwrr,wr,x-wr,x273,-30.065485,-51.2358471,Porto Alegre,BRA
 internacionaldemadridcf,Internacional de Madrid,Iwnn,wn,x-wn,,40.4165052,-3.9308575,Boadilla del Monte,ESP
 internashvillefc,Inter Nashville,Iwbw,wb,e-wwb,,36.0638991,-86.6759416,Antioch,USA
@@ -4232,6 +4237,7 @@ pacosdeferreira,Pa&ccedil;os de Ferreira,Pgyy,gy,x-gy,,41.270585,-8.3856525,Pa&c
 paderborn,SC Paderborn 07,Pakk,ak,x-ak,,51.7301715,8.7112373,Paderborn,GER
 padideh~padidehfc~shahrkhodroufc,Padideh,Prww,rw,x-rw,,36.425944,59.383829,Mashhad,IRN
 padova,Padova,Prww,rw,x-rw,,45.4324229,11.8583106,Padua,ITA
+paechania~chaniafc,PAE Chania,Cwbw,wb,s-bbw,,35.48725,24.000556,Chania,GRE
 paeek,PAEE Kerynias,Kyky,yk,s-kky,,35.2180837,33.1701489,Kyrenia,CYP
 paernulinnameeskond,P&auml;rnu Linnameeskond,Pkyy,ky,x-ky,,58.3749257,24.503125,P&auml;rnu,EST
 pafosfc~aeppaphos,Paphos FC,Pwbb,wb,x-wb,,34.769186,32.440144,Paphos,CYP
@@ -4583,7 +4589,6 @@ realespana,Real Espa&ntilde;a,Ekyk,ky,s-kky,,15.5074743,-88.0334178,San Pedro Su
 realesppor,Deportivo La Guaira,Lkoo,ko,x-ko,,10.6,-66.933056,La Guaira,VEN
 realestelifc,Real Esteli,Erwr,rw,s-rrw,,13.0977412,-86.3530422,Esteli,NCA
 realfondogesu,Real Fondo Ges&ugrave;,Fgyy,yg,e-yyg,,39.0763123,17.1068251,Crotone,ITA
-realgarcilaso,AC Real Atl&eacute;tico Garcilaso,Gwff,wf,x-wf,,-13.5252114,-71.9664377,Cusco,PER
 realjaen,Real Ja&eacute;n,Jpww,pw,x-pw,,37.7753883,-3.7673872,Ja&eacute;n,ESP
 realkashmir,Real Kashmir,Kyby,yb,s-bby,,34.1066986,74.7367155,Srinigar,IND
 realmadrid,Real Madrid,Rpww,pw,x-pw,x020,40.4530541,-3.6883445,Madrid,ESP
@@ -4596,6 +4601,7 @@ realpilar,Real Pilar,Pwkw,wk,b-wwk,,-34.4693703,-58.9207823,Pilar,ARG
 realpotosi,Real Potos&iacute;,Rwpp,wp,x-wp,,-19.5787027,-65.7615403,Potos&iacute;,BOL
 realroccabernarda,Real Roccabernarda,Rwrr,wr,o-wrw,,39.1304294,16.8622782,Roccabernarda,ITA
 realsaltlake,Real Salt Lake,Ryrn,nr,e-ynr,,40.582923,-111.893156,Salt Lake City,USA
+realsantacruz,Real Santa Cruz,Skww,kw,x-kw,,-17.8055082,-63.1660259,Santa Cruz de la Sierra,BOL
 realsc,Real SC Queluz,Rybk,kb,s-ykb,,38.7556649,-9.2786736,Queluz,POR
 realsociedad,Real Sociedad,Sbwb,bw,s-wwb,x166,43.3013934,-1.973682,San Sebasti&aacute;n,ESP
 realunion,Real Uni&oacute;n de Ir&uacute;n,Ikww,kw,x-kw,,43.345556,-1.785833,Ir&uacute;n,ESP
