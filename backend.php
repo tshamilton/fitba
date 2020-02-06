@@ -197,18 +197,24 @@ function doFlag($s, $c) { // Style (minor), Country (trig)
 function doLadder ($c, $n) { // Country trigram, Competition Name
 	global $Team;
 	global $Comp;
+	global $Nations;
 
 	$fileN = "news/ladder/".$c.$n.".lad";
 
 	if (file_exists($fileN)) {
 		$ladder	= file($fileN, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+		$nat = $Nations[$c];
+		$tBC_z = 8;
+		$tBC_lt = $Team[$nat]["Lat"];
+		$tBC_ln = $Team[$nat]["Long"];
+		$map_link = "<a href=\"map_page.php?lat=".$tBC_lt."&lng=".$tBC_ln."&z=".$tBC_z."&t=".$c."&n=".$n."\" target=\"_new\"><i class=\"material-icons\">map</i></a>"
 		print t(7)."<div class=\"float-right col-6\">\n";
 		$grps = 0;
 		foreach ($ladder as $t) {
 			if (preg_match("/^group\|/", $t)) { $grps++; }
 		}
 		print t(8)."<table class=\"ladder table table-sm align-middle\"><tbody>\n";
-		print t(8)."<tr><th>&nbsp;</th><th class=\"lStat\">Pl</th><th class=\"lStat\">W</th><th class=\"lStat\">D</th><th class=\"lStat\">L</th><th class=\"lStat\">GF</th><th class=\"lStat\">GA</th><th class=\"lStat\">GD</th><th class=\"lStat\">Pts</th><th>&nbsp;</th></tr>\n";
+		print t(8)."<tr><th>&nbsp;</th><th class=\"lStat\">Pl</th><th class=\"lStat\">W</th><th class=\"lStat\">D</th><th class=\"lStat\">L</th><th class=\"lStat\">GF</th><th class=\"lStat\">GA</th><th class=\"lStat\">GD</th><th class=\"lStat\">Pts</th><th>".$map_link."</th></tr>\n";
 		foreach ($ladder as $t) {
 			$p = explode("|", $t);
 			if ($p[0] == "group") {
