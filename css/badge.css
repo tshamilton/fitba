@@ -128,7 +128,7 @@
 	background-color: #ffffff;
 	background-size: 100% 100%;
 	color: #0000ff;
-	text-shadow: -1px -1px 0 #cc0000,1px -1px 0 #cc0000,-1px 1px 0 #cc0000,1px 1px 0 #cc0000;
+	text-shadow: 1px 1px #cc0000;
 }
 .x020 {
 	background-image: url('../image/logos/realmadrid.png');
@@ -916,7 +916,7 @@
 	background-image: url('../image/logos/ogcnice.png');
 	background-color: #ffffff;
 	background-size: 100% 100%;
-	color: #000000;
+	color: #ffffff;
 	text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;
 }
 .x134 {
@@ -924,7 +924,7 @@
 	background-color: #ffffff;
 	background-size: 100% 100%;
 	color: #000000;
-	text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;
+	text-shadow: -1px -1px #000000;
 }
 .x135 {
 	background-image: url('../image/logos/zurich.png');
