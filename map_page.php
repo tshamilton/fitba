@@ -67,7 +67,7 @@ else {
 			if (isset($Team[$tm]['Loc'])) {
 				$tot_lat += $Team[$tm]['Lat'];
 				$tot_lng += $Team[$tm]['Lng'];
-				$mkr = "\t\t\tvar marker1 = new google.maps.Marker({ position: {lat: ".$Team[$tm]['Lat'].", lng: ".$Team[$tm]['Long']."}, title: '".$Team[$tm]['Name'].", ".$Team[$tm]['Loc']."', icon: 'http://www.googlemapsmarkers.com/v1/".$Team[$tm]['Pin'][0]."/".mCol($Team[$tm]['Pin'][2])."/".mCol($Team[$tm]['Pin'][1])."/".mCol($Team[$tm]['Pin'][3])."/', map: map });\n";
+				$mkr = "\t\t\tvar marker1 = new google.maps.Marker({ position: {lat: ".$Team[$tm]['Long'].", lng: ".$Team[$tm]['Lat']."}, title: '".$Team[$tm]['Name'].", ".$Team[$tm]['Loc']."', icon: 'http://www.googlemapsmarkers.com/v1/".$Team[$tm]['Pin'][0]."/".mCol($Team[$tm]['Pin'][2])."/".mCol($Team[$tm]['Pin'][1])."/".mCol($Team[$tm]['Pin'][3])."/', map: map });\n";
 				array_push($MAR, $start.$pos.$title.$pincol);
 			}
 		}
