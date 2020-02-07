@@ -1,9 +1,5 @@
 <?php
 include 'utility.php';
-session_start();
-$Team = $_SESSION['T'];
-$MAR = Array();
-
 function mCol ($x) {
 	switch($x) {
 		case 'a': return "3366FF"; break;
@@ -34,8 +30,48 @@ function mCol ($x) {
 		case 'z': return "00FF00"; break;
 	}
 }
+session_start();
 
-//include 'readData.php';
+$Team = $_SESSION['T'];
+$Tri = $_GET['t'];
+$Name = $_GET['n'];
+$Zoom = $_GET['z'];
+$LAT = $_GET['lat'];
+$LNG = $_GET['lng'];
+$ZOM = $_GET['z'];
+$MAR = Array();
+
+if (strlen($Tri) == 3) { # If it's a national map
+	$title = "Map of ".$Name;
+	$map_init = "var map = new google.maps.Map(document.getElementById('map'), { center: new google.maps.LatLng(".$LAT.",".$LNG."), zoom: ".$ZOM." });\n";
+
+	foreach ($Team as $tm) {
+		if ($tm['Tri'] == $Tri) {
+			if (isset($tm['Loc'])) {
+				$mkr = "var marker1 = new google.maps.Marker({ position: {lat: ".$tm['Long'].", lng: ".$tm['Lat']."}, title: '".$tm['Name'].", ".$tm['Loc']."', icon: 'http://www.googlemapsmarkers.com/v1/".$tm['Pin'][0]."/".mCol($tm['Pin'][2])."/".mCol($tm['Pin'][1])."/".mCol($tm['Pin'][3])."/', map: map });\n";
+				array_push($MAR, $mkr);
+			}
+		}
+	}
+}
+else {
+	$title = "League Map";
+	$tr = substr($Tri, 1);
+	if (is_readable("./news/ladder/".$tr.$Name.".lad")) {
+		$ladder	= file("./news/ladder/".$tr.$Name.".lad", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+		foreach($ladder as $line) {
+			$tm = explode('|', $line);
+			$tm = $tm[0];
+			if (isset($Team[$tm]['Loc'])) {
+				$start	= "\t\t\tvar marker1 = new google.maps.Marker({";
+				$pos	= "position: {lat: ".$Team[$tm]['Lat'].", lng: ".$Team[$tm]['Long']."},";
+				$title	= "title: '".$Team[$tm]['Name'].", ".$Team[$tm]['Loc']."',";
+				$pincol	= "icon: 'http://www.googlemapsmarkers.com/v1/".$Team[$tm]['Pin'][0]."/".mCol($Team[$tm]['Pin'][2])."/".mCol($Team[$tm]['Pin'][1])."/".mCol($Team[$tm]['Pin'][3])."/', map: map });\n";
+				array_push($MAR, $start.$pos.$title.$pincol);
+			}
+		}
+	}
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -53,54 +89,12 @@ function mCol ($x) {
 				padding: 0;
 			}
 		</style>
-	<title>Map of League Teams</title>
+		<title><?php print $title; ?></title>
 	</head>
 	<body>
-<?php
-	if (strlen($_GET['t']) == 3) {
-		print "Filter for whole country<br/>\n";
-		foreach ($Team as $tm) {
-			if ($tm['Tri'] == $_GET['t']) {
-				if (isset($tm['Loc'])) {
-					$start	= "\t\t\tvar marker1 = new google.maps.Marker({";
-					$pos	= "position: {lat: ".$tm['Lat'].", lng: ".$tm['Long']."},";
-					$title	= "title: '".$tm['Name'].", ".$tm['Loc']."',";
-					$pincol	= "icon: 'http://www.googlemapsmarkers.com/v1/".$tm['Pin'][0]."/".mCol($tm['Pin'][2])."/".mCol($tm['Pin'][1])."/".mCol($tm['Pin'][3])."/', map: map });\n";
-					array_push($MAR, $start.$pos.$title.$pincol);
-				}
-			}
-		}
-	}
-	else {
-		if ($_GET['t'][0] == 't') {
-			$tr = substr($_GET['t'], 1);
-			print "Does ".$tr.$_GET['n'].".lad exist?<br/>\n";
-			if (is_readable("./news/ladder/".$tr.$_GET['n'].".lad")) {
-				print "<B>Yes</B><br/>\n";
-				$ladder	= file("./news/ladder/".$tr.$_GET['n'].".lad", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-				foreach($ladder as $line) {
-					$tm = explode('|', $line);
-					$tm = $tm[0];
-					if (isset($Team[$tm]['Loc'])) {
-						$start	= "\t\t\tvar marker1 = new google.maps.Marker({";
-						$pos	= "position: {lat: ".$Team[$tm]['Lat'].", lng: ".$Team[$tm]['Long']."},";
-						$title	= "title: '".$Team[$tm]['Name'].", ".$Team[$tm]['Loc']."',";
-						$pincol	= "icon: 'http://www.googlemapsmarkers.com/v1/".$Team[$tm]['Pin'][0]."/".mCol($Team[$tm]['Pin'][2])."/".mCol($Team[$tm]['Pin'][1])."/".mCol($Team[$tm]['Pin'][3])."/', map: map });\n";
-						array_push($MAR, $start.$pos.$title.$pincol);
-					}
-				}
-			}
-			print "Filter for supplied ladder<br/>\n";
-		}
-	}
-?>
 		<div id="map"></div>
 		<script>
 			function initMap() {
-				var map = new google.maps.Map(document.getElementById('map'), {
-					center: new google.maps.LatLng(<?php print $_GET['lat'].",".$_GET['lng']; ?>),
-					zoom: <?php print $_GET['z']; ?>
-				});
 <?php 
 	foreach ($MAR as $m) {
 		print $m;
