@@ -98,8 +98,8 @@ function mCol ($x) {
 		<script>
 			function initMap() {
 				var map = new google.maps.Map(document.getElementById('map'), {
-					center: new google.maps.LatLng(<?php /*print $_GET['lat'].",".$_GET['lng'];*/ ?>),
-					zoom: <?php /*print $_GET['z']; */?>
+					center: new google.maps.LatLng(<?php print $_GET['lat'].",".$_GET['lng']; ?>),
+					zoom: <?php print $_GET['z']; ?>
 				});
 <?php 
 	foreach ($MAR as $m) {

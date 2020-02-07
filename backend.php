@@ -209,7 +209,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 		$tBC_lt = $Team[$nat]["Lat"];
 		$tBC_ln = $Team[$nat]["Long"];
 		$_SESSION['T'] = $Team;
-		$map_link = "<a href=\"map_page.php?lat=".$tBC_ln."&lng=".$tBC_lt."&z=".$tBC_z."&t=t".$c."&n=".$n."\" target=\"_new\"><i class=\"material-icons\">map</i></a>";
+		$map_link = "<a href=\"map_page.php?lat=".$tBC_lt."&lng=".$tBC_ln."&z=".$tBC_z."&t=t".$c."&n=".$n."\" target=\"_new\"><i class=\"material-icons\">map</i></a>";
 		print t(7)."<div class=\"float-right col-6\">\n";
 		$grps = 0;
 		foreach ($ladder as $t) {
