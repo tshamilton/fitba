@@ -40,7 +40,7 @@ $LAT = $_GET['lat'];
 $LNG = $_GET['lng'];
 $ZOM = $_GET['z'];
 $MAR = Array();
-
+/*
 if (strlen($Tri) == 3) { # If it's a national map
 	$title = "Map of ".$Name;
 	$map_init = "var map = new google.maps.Map(document.getElementById('map'), { center: new google.maps.LatLng(".$LAT.",".$LNG."), zoom: ".$ZOM." });\n";
@@ -80,11 +80,11 @@ else {
 	<head>
 		<style>
 			/* Always set the map height explicitly to define the size of the div
-			 * element that contains the map. */
+			 * element that contains the map. 
 			#map {
 				height: 95%;
 			}
-			/* Optional: Makes the sample page fill the window. */
+			/* Optional: Makes the sample page fill the window. 
 			html, body {
 				height: 100%;
 				margin: 0;
@@ -103,7 +103,7 @@ else {
 		print t(4).$m;
 	}
 ?>
-			}
+			}*/
 		</script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7hP3y2nf3CfHP9HSKPs9YlfDvCBOU3MY&callback=initMap"></script>
 	</body>
