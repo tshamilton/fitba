@@ -48,7 +48,7 @@ if (strlen($Tri) == 3) { # If it's a national map
 	foreach ($Team as $tm) {
 		if ($tm['Tri'] == $Tri) {
 			if (isset($tm['Loc'])) {
-				$mkr = "var marker1 = new google.maps.Marker({ position: {lat: ".$tm['Long'].", lng: ".$tm['Lat']."}, title: '".$tm['Name'].", ".$tm['Loc']."', icon: 'http://www.googlemapsmarkers.com/v1/".$tm['Pin'][0]."/".mCol($tm['Pin'][2])."/".mCol($tm['Pin'][1])."/".mCol($tm['Pin'][3])."/', map: map });\n";
+				$mkr = "var marker1 = new google.maps.Marker({ position: {lat: ".$tm['Lat'].", lng: ".$tm['Long']."}, title: '".$tm['Name'].", ".$tm['Loc']."', icon: 'http://www.googlemapsmarkers.com/v1/".$tm['Pin'][0]."/".mCol($tm['Pin'][2])."/".mCol($tm['Pin'][1])."/".mCol($tm['Pin'][3])."/', map: map });\n";
 				array_push($MAR, $mkr);
 			}
 		}
