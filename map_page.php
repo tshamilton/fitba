@@ -57,19 +57,21 @@ if (strlen($Tri) == 3) { # If it's a national map
 else {
 	$title = "League Map";
 	$tr = substr($Tri, 1);
+	$tot_lng = 0;
+	$tot_lat = 0;
 	if (is_readable("./news/ladder/".$tr.$Name.".lad")) {
 		$ladder	= file("./news/ladder/".$tr.$Name.".lad", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 		foreach($ladder as $line) {
 			$tm = explode('|', $line);
 			$tm = $tm[0];
 			if (isset($Team[$tm]['Loc'])) {
-				$start	= "\t\t\tvar marker1 = new google.maps.Marker({";
-				$pos	= "position: {lat: ".$Team[$tm]['Lat'].", lng: ".$Team[$tm]['Long']."},";
-				$title	= "title: '".$Team[$tm]['Name'].", ".$Team[$tm]['Loc']."',";
-				$pincol	= "icon: 'http://www.googlemapsmarkers.com/v1/".$Team[$tm]['Pin'][0]."/".mCol($Team[$tm]['Pin'][2])."/".mCol($Team[$tm]['Pin'][1])."/".mCol($Team[$tm]['Pin'][3])."/', map: map });\n";
+				$tot_lat += $Team[$tm]['Lat'];
+				$tot_lng += $Team[$tm]['Lng'];
+				$mkr = "\t\t\tvar marker1 = new google.maps.Marker({ position: {lat: ".$Team[$tm]['Lat'].", lng: ".$Team[$tm]['Long']."}, title: '".$Team[$tm]['Name'].", ".$Team[$tm]['Loc']."', icon: 'http://www.googlemapsmarkers.com/v1/".$Team[$tm]['Pin'][0]."/".mCol($Team[$tm]['Pin'][2])."/".mCol($Team[$tm]['Pin'][1])."/".mCol($Team[$tm]['Pin'][3])."/', map: map });\n";
 				array_push($MAR, $start.$pos.$title.$pincol);
 			}
 		}
+		$map_init = "var map = new google.maps.Map(document.getElementById('map'), { center: new google.maps.LatLng(".($tot_lat/sizeof($MAR)).",".($tot_lng/sizeof($MAR))."), zoom: 8 });\n";
 	}
 }
 ?>
@@ -95,9 +97,10 @@ else {
 		<div id="map"></div>
 		<script>
 			function initMap() {
-<?php 
+<?php
+	print $map_init;
 	foreach ($MAR as $m) {
-		print $m;
+		print t(4).$m;
 	}
 ?>
 			}
