@@ -1,5 +1,6 @@
 <?php
 include 'utility.php';
+session_start();
 
 function table($in_t, $nC, $context) {
 	global $Team;
@@ -535,6 +536,7 @@ foreach ($the_nats as $in_t) {
 		$tBC_e = substr($Team[$cName]["Mnr"], 0, 1);
 		$tBC_f = "<img src=\"flags/large/".$cTri.".png\" class=\"".$tBC_e."\">";
 		$to_top = "<a href=\"#top\"><i class=\"material-icons\">arrow_upward</i></a>";
+		$_SESSION['T'] = $Team;
 		$to_map = "<a href=\"map_page.php?lat=".$tBC_lt."&lng=".$tBC_ln."&z=".$tBC_z."&t=".$cTri."&n=".$tBC_n."\" target=\"_new\"><i class=\"material-icons\">map</i></a>";
 		if ($Stats["teamCountByCountry"][$cTri] == 0) {
 			$dataLine = "<div class=\"text-center\">".$to_map." | ".$to_top."</div>\n";
