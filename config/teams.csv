@@ -392,8 +392,8 @@ arabcontractors,Arab Contractors,Akyy,ky,x-ky,,30.051167,31.297,Nasr,EGY
 araguafc,Aragua,Aryy,ry,x-ry,,10.258611,-67.612222,Maracay,VEN
 arameiskasyrianskaif,Arameiska-Syrianska IF,Aryr,yr,s-rry,,59.251667,17.809722,Norsborg,SWE
 arandinacf,Arandina,Abwb,bw,s-wwb,,41.667997,-3.698911,Aranda de Duero,ESP
+ararat~araratmoscow,Ararat Moscow,Abyy,by,x-by,,55.8095779,37.7132093,Moscow,RUS
 araratarmenia,Ararat Armenia,Aaww,aw,x-aw,,40.1715593,44.5267151,Yerevan,ARM
-araratmoscow,Ararat Moscow,Abyy,by,x-by,,55.8095779,37.7132093,Moscow,RUS
 arbroath,Arbroath,Awcc,wc,x-wc,,56.552269,-2.591519,Arbroath,SCO
 arc,SV ARC,Arkr,rk,s-wkr,,52.133333,4.666667,Alphen aan den Rijn,NED
 arcoscf,Arcos CF,Abww,bw,x-bw,,36.748294,-5.806313,Arcos de la Frontera,ESP
@@ -657,7 +657,7 @@ bandirmaspor,Band&inodot;rmaspor,Bwqw,wq,b-wwq,,40.336908,27.9833973,Band&inodot
 bandonafc,Bandon AFC,Brww,rw,x-rw,,51.75067,-8.7407299,Bandon,IRL
 banfield,CA Banfield,Bgwg,gw,s-ggw,,-34.7509629,-58.3876237,Banfield,ARG
 bangagargzdai,Banga Garg&zcaron;dai,Gboo,bo,x-bo,,55.715278,21.404444,Garg&zcaron;dai,LTU
-bangkokglass,Bangkok Glass,Ggww,gw,o-gwg,,14.000649,100.679028,Thanyaburi,THA
+bgpathumunited~bangkokglass,BG Pathum United,Pwbb,wb,x-wb,,14.000649,100.679028,Thanyaburi,THA
 bangkokunited,Bangkok United,Bkrr,kr,b-kkr,,14.0678971,100.5989471,Khlong Nung,THA
 bangorceltic,Bangor Celtic,Cgyy,gy,v-ggy,,53.3283343,-6.3060243,Drimnagh,IRL
 bangorcity,Bangor City,Cwbb,wb,x-wb,,53.225453,-4.150139,Bangor,WAL
@@ -6446,3 +6446,10 @@ alansar,Al Ansar,Agwg,gw,e-ggw,,33.8739361,35.4983886,Beirut,LIB
 alwathbah,Al Wathbah,Wwrw,wr,b-wwr,,34.7296451,36.6980807,Homs,SYR
 dhofar,Dhofar,Dwrr,wr,x-wr,,17.0827578,54.1446101,Salalah,OMA
 thanquangninh,Than Quang Ninh,Twnn,wn,x-wn,,21.0299138,107.3676051,Cua Ong,VIE
+iiikeruletitve,III. Ker&uuml;leti TVE,Kkyy,ky,x-ky,,47.5512786,19.0358362,Budapest,HUN
+lipotpekseg,Lip&oacute;t SE,Lybb,yb,x-yb,,47.8587199,17.4592488,Lip&oacute;t,HUN
+dunaujvarospalhalma,Duna&uacute;jv&aacute;ros PASE,Dwrr,wr,x-wr,,46.955833,18.947417,Duna&uacute;jv&aacute;ros,HUN
+rayongfc,Rayong,Rwff,wf,x-wf,,12.6802345,101.2354433,Rayong,THA
+deportivomaldonado,Deportivo Maldonado,Mkrg,rg,s-kgr,,-34.9143646,-54.9553071,Maldonado,URU
+montevideocitytorque,Montevideo City Torque,Twff,wf,x-wf,,-34.8945376,-56.1528289,Montevideo,URU
+lduportoviejo,LDU Portoviejo,Pgww,gw,x-gw,,-1.0483849,-80.4538597,Portoviejo,ECU
