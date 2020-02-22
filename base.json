@@ -9,7 +9,7 @@
 		"netherlands": 14,
 		"turkey": 8,
 		"unitedarabemirates": 1,
-		"saudiarabia": 1,
+		"saudiarabia": 2,
 		"qatar": 1,
 		"belgium": 7,
 		"argentina": 9,
@@ -985,7 +985,7 @@
 	},
 	"errorList": [],
 	"totalCountries": 221,
-	"totalTeams": 6455,
+	"totalTeams": 6457,
 	"monNats": {
 		"ALB": "565",
 		"ALG": "410",
@@ -1545,7 +1545,7 @@
 		"bu": 2,
 		"bw": 359,
 		"by": 272,
-		"bz": 3,
+		"bz": 4,
 		"cf": 6,
 		"ck": 1,
 		"cw": 2,
@@ -1670,7 +1670,7 @@
 		"vu": 1,
 		"vw": 1,
 		"wa": 31,
-		"wb": 862,
+		"wb": 863,
 		"wc": 16,
 		"wd": 37,
 		"we": 5,
@@ -1863,7 +1863,7 @@
 			"e-bbu": 1,
 			"e-bbw": 25,
 			"e-bby": 16,
-			"e-bbz": 1,
+			"e-bbz": 2,
 			"e-bgr": 1,
 			"e-bgy": 1,
 			"e-brw": 4,
@@ -2382,7 +2382,7 @@
 			"x-uw": 7,
 			"x-vw": 1,
 			"x-wa": 27,
-			"x-wb": 659,
+			"x-wb": 660,
 			"x-wc": 14,
 			"x-wd": 34,
 			"x-we": 5,
@@ -4045,6 +4045,7 @@
 			"manta",
 			"mushucruna",
 			"olmedo",
+			"orense",
 			"tecnicouniversitario"
 		],
 		"EGY": [
@@ -6062,6 +6063,7 @@
 		],
 		"JAM": [
 			"montegobayunitedfc",
+			"portmoreunited",
 			"waterhousefc"
 		],
 		"JPN": [
@@ -9320,7 +9322,7 @@
 		"DJI": 1,
 		"DMA": 0,
 		"DOM": 2,
-		"ECU": 23,
+		"ECU": 24,
 		"EGY": 40,
 		"SLV": 19,
 		"ENG": 299,
@@ -9361,7 +9363,7 @@
 		"ISR": 57,
 		"ITA": 246,
 		"CIV": 2,
-		"JAM": 2,
+		"JAM": 3,
 		"JPN": 81,
 		"JOR": 14,
 		"KAZ": 22,
@@ -9823,6 +9825,7 @@
 			"zenitstpetersburg"
 		],
 		"saudiarabia": [
+			"alhilal",
 			"alittihadjeddah"
 		],
 		"scotland": [

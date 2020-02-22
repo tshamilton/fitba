@@ -200,6 +200,91 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 	global $Team;
 	global $Comp;
 	global $Nations;
+	$_SESSION['T'] = $Team;
+	
+	$table_body = Array();
+	$points_Lt = Array();
+	$points_Ln = Array();
+	$maxLt = 0;
+	$maxLn = 0;
+	$minLt = 0;
+	$minLn = 0;
+	$tBC_z = 8;
+
+	if ($c != "INT") {
+		$nat = $Nations[$c];
+		$tBC_lt = $Team[$nat]["Lat"];
+		$tBC_ln = $Team[$nat]["Long"];
+	}
+
+	$fileN = "news/ladder/".$c.$n.".lad";
+
+	if (file_exists($fileN)) {
+		$ladder	= file($fileN, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+		foreach ($ladder as $t) {
+			$p = explode("|", $t);
+			if ($p[0] == "group") {
+				if ($p[1] == "mls")						{	continue;	}
+				elseif ($p[1] == "uslchampionship")		{	$p[1] = "USL Championship";	}
+				elseif ($p[1] == "Eastern")				{	$p[1] = "Eastern Conference";	}
+				elseif ($p[1] == "Western")				{	$p[1] = "Western Conference";	}
+				elseif ($p[1] == "SupportersShield")	{	$p[1] = "Supporter's Shield";	}
+				array_push($table_body, t(8)."<tr><th colspan='10' class=\"text-center py-2\">".$p[1]."</th></tr>\n");
+			}
+			else {
+				array_push($points_Ln, $Team[$p[0]]["Long"]);
+				array_push($points_Lt, $Team[$p[0]]["Lat"]);
+				#   0   1 2 3 4 5 6 7   8
+				#canada|1|0|0|1|0|3|D|QUAL
+				$pl = $p[1]+$p[2]+$p[3];
+				$gd = $p[4]-$p[5];
+				$fate = "";
+				if (sizeof($p) == 8) { array_push($p, "X"); }
+				switch ($p[8]) {
+					case "X":			$fate = "";					$style = "ldrdata";				break;
+					case "UCL":			$fate = "UCL";				$style = "ucl ldrdata";			break;
+					case "COPALIB":		$fate = "Copa Lib.";		$style = "ucl ldrdata";			break;
+					case "UCLQ":		$fate = "UCL Qual.";		$style = "uclqual ldrdata";		break;
+					case "COPALIBQ":	$fate = "Copa Lib Q";		$style = "uclqual ldrdata";		break;
+					case "EL":			$fate = "UEL";				$style = "eurolg ldrdata";		break;
+					case "ELQ":			$fate = "UEL Qual.";		$style = "eurolgqual ldrdata";	break;
+					case "COPASUD":		$fate = "Copa Sud. Qual.";	$style = "eurolg ldrdata";		break;
+					case "ELQP":		$fate = "UEL Playoffs";		$style = "eurolgqual ldrdata";	break;
+					case "PROMOTED":	$fate = "&uarr; ";			$style = "promotion ldrdata";	break;
+					case "QUAL":		$fate = "Qualified";		$style = "promotion ldrdata";	break;
+					case "FINALS":		$fate = "Finals";			$style = "promotion ldrdata";	break;
+					case "NEXTPOS":		$fate = "Playoffs";			$style = "uclqual ldrdata";		break;
+					case "RELEGATED":	$fate = "&darr; ";			$style = "relegation ldrdata";	break;
+					case "PRPLAYOFF":	$fate = "Prom. Playoff";	$style = "promotion ldrdata";	break;
+					case "RLPLAYOFF":	$fate = "Rel. Playoff";		$style = "relegation ldrdata";	break;
+					default:			$fate = $p[8];				$style = "unknown ldrdata";		break;
+				}
+				$team = "<td class=\"ldrTeam\">".doTeam($p[0], $c, 'l')."</td>";
+				$games = "<td class=\"".$style."\">".$pl."</td><td class=\"".$style."\">".$p[1]."</td><td class=\"".$style."\">".$p[2]."</td><td class=\"".$style."\">".$p[3]."</td>";
+				$goals = "<td class=\"".$style."\">".$p[4]."</td><td class=\"".$style."\">".$p[5]."</td><td class=\"".$style."\">".$gd."</td>";
+				$pts_fate = "<td class=\"".$style."\"><b>".$p[6]."</b></td><td class=\"text-center ".$style."\">".$fate."</td>";
+				array_push($table_body, t(8)."<tr>".$team.$games.$goals.$pts_fate."</tr>\n");
+			}
+		}
+		$maxLt = max($points_Lt);
+		$minLt = min($points_Lt);
+		$maxLn = max($points_Ln);
+		$minLn = min($points_Ln);
+		$tBC_lt = $minLt + (($maxLt - $minLt) / 2);
+		$tBC_ln = $minLn + (($maxLn - $minLn) / 2);
+		$map_link = "<a href=\"http://tshamilton.com/fitba/map_page.php?lat=".$tBC_lt."&lng=".$tBC_ln."&z=".$tBC_z."&t=t".$c."&n=".$n."\" target=\"_new\"><i class=\"material-icons\">map</i></a>";
+		$table_header = t(7)."<div class=\"float-right col-6\">\n";
+		$table_header .= t(8)."<table class=\"ladder table table-sm align-middle\"><tbody>\n";
+		$table_header .= t(8)."<tr><th>&nbsp;</th><th class=\"lStat\">Pl</th><th class=\"lStat\">W</th><th class=\"lStat\">D</th><th class=\"lStat\">L</th><th class=\"lStat\">GF</th><th class=\"lStat\">GA</th><th class=\"lStat\">GD</th><th class=\"lStat\">Pts</th><th>".$map_link."</th></tr>\n";
+		$table_footer = t(8)."</tbody></table>\n".t(7)."</div>\n";
+		return $table_header.$table_body.$table_footer;
+	}
+	else {
+		return "<b><i>NB: Ladder currently unavailable</i></b><br/>\n";
+	}
+/*	global $Team;
+	global $Comp;
+	global $Nations;
 
 	$fileN = "news/ladder/".$c.$n.".lad";
 
@@ -268,7 +353,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 	}
 	else {
 		print "<b><i>NB: Ladder currently unavailable</i></b><br/>\n";
-	}
+	}*/
 }
 function doMatch($match, $c, $t) { //Match, Country, Type
 	global $Team;
