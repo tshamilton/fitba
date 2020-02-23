@@ -129,7 +129,6 @@ function doCompetitions($c, $n) { // Country trigram, News for Country
 		print t(6)."<div class=\"container-fluid p-4\">\n";
 		if ($cType == "L") {
 			$lad = doLadder($c, $name);
-			$the_lad = join($lad);
 			print $lad;
 		}
 		foreach ($News[$c][$name] as $thisC) {
@@ -278,7 +277,8 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 		$table_header .= t(8)."<table class=\"ladder table table-sm align-middle\"><tbody>\n";
 		$table_header .= t(8)."<tr><th>&nbsp;</th><th class=\"lStat\">Pl</th><th class=\"lStat\">W</th><th class=\"lStat\">D</th><th class=\"lStat\">L</th><th class=\"lStat\">GF</th><th class=\"lStat\">GA</th><th class=\"lStat\">GD</th><th class=\"lStat\">Pts</th><th>".$map_link."</th></tr>\n";
 		$table_footer = t(8)."</tbody></table>\n".t(7)."</div>\n";
-		return $table_header.$table_body.$table_footer;
+		$table_body_string = join("", $table_body);
+		return $table_header.$table_body_string.$table_footer;
 	}
 	else {
 		return "<b><i>NB: Ladder currently unavailable</i></b><br/>\n";
