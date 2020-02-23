@@ -271,7 +271,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 		$minLn = min($points_Ln);
 		$tBC_lt = $minLt + (($maxLt - $minLt) / 2);
 		$tBC_ln = $minLn + (($maxLn - $minLn) / 2);
-		$map_link = "<a href=\"http://tshamilton.com/fitba/map_page.php?lat=".$tBC_ln."&lng=".$tBC_lt."&z=".$tBC_z."&t=t".$c."&n=".$n."\" target=\"_new\"><i class=\"material-icons\">map</i></a>";
+		$map_link = "<a href=\"http://tshamilton.com/fitba/map_page.php?lat=".$tBC_lt."&lng=".$tBC_ln."&z=".$tBC_z."&t=t".$c."&n=".$n."\" target=\"_new\"><i class=\"material-icons\">map</i></a>";
 		$table_header = t(7)."<div class=\"float-right col-6\">\n";
 		$table_header .= t(8)."<table class=\"ladder table table-sm align-middle\"><tbody>\n";
 		$table_header .= t(8)."<tr><th>&nbsp;</th><th class=\"lStat\">Pl</th><th class=\"lStat\">W</th><th class=\"lStat\">D</th><th class=\"lStat\">L</th><th class=\"lStat\">GF</th><th class=\"lStat\">GA</th><th class=\"lStat\">GD</th><th class=\"lStat\">Pts</th><th>".$map_link."</th></tr>\n";
