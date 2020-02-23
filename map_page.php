@@ -96,7 +96,7 @@ else {
 		<script>
 			function initMap() {
 				var map = new google.maps.Map(document.getElementById('map'), {
-					center: new google.maps.LatLng(<?php print $LAT; ?>,<?php print $LNG; ?>),
+					center: new google.maps.LatLng(<?php print $LNG; ?>,<?php print $LAT; ?>),
 					zoom: 8
 				});
 <?php
