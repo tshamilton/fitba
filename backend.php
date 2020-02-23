@@ -129,6 +129,7 @@ function doCompetitions($c, $n) { // Country trigram, News for Country
 		print t(6)."<div class=\"container-fluid p-4\">\n";
 		if ($cType == "L") {
 			$lad = doLadder($c, $name);
+			$the_lad = join($lad);
 			print $lad;
 		}
 		foreach ($News[$c][$name] as $thisC) {
