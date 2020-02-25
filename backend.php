@@ -460,6 +460,14 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		$tName = $Team[$tIdent]["Name"]." II";
 		$mnr = $Team[$tIdent]["Mnr"];
 	}
+	elseif ((preg_match("/fcw$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
+		$status = "women";
+		$tIdent = substr($t, 0, -3);
+		$tStyle = $Team[$tIdent]["Badge"] != "" ? $Team[$tIdent]["Badge"] : $Team[$tIdent]["Mjr"];
+		$tName = $Team[$tIdent]["Name"]." <b>&#9792;</b>";
+		$Flag = doFlag(substr($Team[$tIdent]["Mjr"], 2, 1), $Team[$tIdent]["Tri"]);
+		$mnr = $Team[$tIdent]["Mnr"];
+	}
 	elseif ((preg_match("/a$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
 		$status = "a-side";
 		$tIdent = substr($t, 0, -1);
