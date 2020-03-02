@@ -444,7 +444,6 @@ asa,ASA de Arapiraca,Akww,kw,x-kw,,-9.751944,-36.660833,Arapiraca,BRA
 asainmlila,AS A&iuml;n M'lila,Akrk,rk,s-kkr,,36.0363655,6.580305,A&iuml;n M'lila,ALG
 asalisabiehdjiboutitelecom,AS Djibouti T&eacute;l&eacute;com,Akww,kw,x-kw,,11.574139,43.131889,Djibouti City,DJI
 asane,&Aring;sane,Akoo,ko,x-ko,,60.470208,5.3151349,&Aring;sane,NOR
-asanmugunghwa,Asan Mugunghwa,Abyb,by,b-bby,,36.783333,126.983333,Asan,KOR
 asarumsiffk,Asarums IF,Awbb,wb,x-wb,,56.166667,14.85,Asarums,SWE
 asbeziers,AS Bezi&eacute;rs,Brnn,rn,x-rn,,43.331389,3.225,Bezi&eacute;rs,FRA
 asblainville,AS Blainville,Bwbb,wb,x-wb,,45.6554445,-73.8499052,Blainville,CAN
@@ -1267,6 +1266,7 @@ chukyouniversity,Chukyo University,Cwbb,wb,x-wb,,35.138252,136.965351,Aichi,JPN
 chulaunited,Chula United,Ckmm,km,x-km,,13.8789433,100.5437073,Nonthaburi,THA
 chulavistafc,Chula Vista,Cwnn,wn,x-wn,,32.6402859,-116.9675992,Chula Vista,USA
 chungjuhummel,Chungju Hummel,Ckyk,ky,s-kky,,36.9803736,127.934288,Chungju,KOR
+chungnamasanfc~asanmugunghwa,Chungnam Asan,Abyy,by,b-bby,,36.768172,127.021685,Asan,KOR
 chunnamdragons,Chunnam Dragons,Ckyk,ky,x-ky,,34.933365,127.7272465,Chunnam,KOR
 churchillbrothers,Churchill Brothers,Cwrr,wr,x-wr,,15.2897857,73.9622536,Fatorda,IND
 cibalia~cibaliavinkovci,Cibalia Vinkovci,Cbff,bf,x-bf,,45.283665,18.7972893,Vinkovci,CRO
@@ -2948,6 +2948,7 @@ intercdf,Inter CDF,Irww,rw,x-rw,,47.4714622,19.0877379,Budapest,HUN
 intercherkessk,Inter Cherkessk,Iwnn,wn,x-wn,,44.2245642,42.0664548,Cherkessk,RUS
 interdelages,Inter de Lages,Iwrw,wr,b-wwr,,-27.8063998,-50.3095936,Lages,BRA
 interdelimeira,Internacional de Limeira,Lkww,kw,x-kw,,-22.555294,-47.385042,Limeira,BRA
+intermiamicf,Inter Miami,Miww,iw,x-iw,,26.193056,-80.161111,Fort Lauderdale,USA
 internacional,SC Internacional,Iwrr,wr,x-wr,x273,-30.065485,-51.2358471,Porto Alegre,BRA
 internacionaldemadridcf,Internacional de Madrid,Iwnn,wn,x-wn,,40.4165052,-3.9308575,Boadilla del Monte,ESP
 internashvillefc,Inter Nashville,Iwbw,wb,e-wwb,,36.0638991,-86.6759416,Antioch,USA
@@ -3097,6 +3098,7 @@ kalyanibharatfc,Kalyani Bharat,Krnn,rn,x-rn,,18.5737925,73.7618612,Pune,IND
 kamatamaresanuki,Kamatamare Sanuki,Knff,nf,x-nf,,34.2617588,133.7861374,Takamatsu,JPN
 kamaz,KAMAZ Naberezhnye Chelny,Kbww,bw,x-bw,,55.732137,52.417703,Naberezhnye Chelny,RUS
 kampenhoutsk,Sporting Kampenhout,Kbww,by,x-by,,50.9461953,4.5624276,Kampenhout,BEL
+kamza~kfkamza,Kamza,Kwbb,wb,x-wb,,41.384722,19.761389,Kam&euml;z,ALB
 kanbawzafc,Shan United,Kkww,kw,x-kw,,20.7784505,97.0380239,Taunggyi,MYA
 kanopillars,Kano Pillars,Kgyy,gy,x-gy,,11.9997995,8.5291909,Kano,NGA
 kanoyauniversity,Kanoya University,Kwaa,wa,x-wa,,31.3935117,130.7858317,Kagoshima,JPN
@@ -3166,8 +3168,6 @@ kfcmandelunited,Mandel United,Mkrr,kr,x-kr,,50.911438,3.2048288,Izegem,BEL
 kfcmerelbeke,KFC Merelbeke,Mbyb,by,b-bby,,50.9893685,3.7550232,Merelbeke,BEL
 kfcmeulebeke,KFC Meulebeke,Mrww,rw,x-rw,,50.9495314,3.2863273,Meulebeke,BEL
 kfcmoerbeke,KFC Moerbeke,Mwgg,wg,x-wg,,51.1763927,3.9421636,Moerbeke,BEL
-kfkamza,Kamza,Kwbb,wb,x-wb,,41.384722,19.761389,Kam&euml;z,ALB
-kftirana,KF Tirana,Tbwb,wb,s-wwb,,41.3190024,19.8112655,Tirana,ALB
 kfum,KFUM-Kameratene,Kbrw,wr,b-bwr,,59.8901799,10.7805599,Ekeberg,NOR
 kgrkatelijne,KGR Katelijne,Kkgr,rg,v-krg,,51.0418124,4.5030753,Sint-Katelijne-Waver,BEL
 khanhhoanhatrang,Khatoco Kh&aacute;nh Ho&agrave;,Kbff,bf,x-bf,,12.250427,109.192944,Nha Trang,VIE
@@ -4351,7 +4351,10 @@ perseruserui,Perseru Serui,Skok,ko,s-kko,,-1.879722,136.227778,Serui,IDN
 persibabalikpapan,Persiba Balikpapan,Pwbw,wb,s-wwb,,-1.2439064,116.8300979,Balikpapan,IDN
 persibbandung,Persib Bandung,Bwbb,wb,x-wb,,-6.958611,107.711389,Bandung,IDN
 persijajakarta,Persija Jakarta,Jwrr,wr,x-wr,,-6.996389,107.529722,Jakarta,IDN
+persik,Persik Kediri,Kwpp,wp,x-wp,,-7.817041,112.028602,Kota Kediri,IDN
 persipurajayapura,Persipura Jayapura,Jkrr,kr,s-wkr,,-2.530556,140.723611,Jayapura,IDN
+persirajaaceh,Persiraja Banda Aceh,Bkoo,ko,x-ko,,5.565437,95.34126,Banda Aceh,IDN
+persita,Persita Tangerang,Twpp,wp,x-wp,,-6.258583,106.60425,Kelapa Dua,IDN
 perthglory,Perth Glory,Popp,op,x-op,,-31.9457767,115.8698613,Perth,AUS
 perthsc,Perth,Pwff,wf,x-wf,,-31.9384788,115.8553162,West Perth,AUS
 perugia,AC Perugia,Pwrr,wr,x-wr,,43.106217,12.3570322,Perugia,ITA
@@ -5670,6 +5673,7 @@ tigre,Tigre,Trnn,rn,e-rrn,,-34.449333,-58.542219,Victoria,ARG
 tigres,UA Nuevo Leon Tigres,Ubub,bu,e-bbu,,25.7225198,-100.3120225,Nuevo Leon,MEX
 tigresfc,Tigres,Tkss,ks,x-ks,,4.6234123,-74.1374618,Bogot&aacute;,COL
 tijuana,Club Tijuana XC,Tkrk,kr,e-kkr,,32.5068213,-116.9934082,Tijuana,MEX
+tirana~kftirana,KF Tirana,Tbwb,wb,s-wwb,,41.3190024,19.8112655,Tirana,ALB
 tire1922spor~bucafk,Tire 1922,Tkrr,kr,x-kr,,37.4169465,24.4411758,Tire,TUR
 tirofederalbahiablanca,Tiro Federal Bahia Blanca,Tpyp,yp,s-yyp,,-38.722462,-62.244834,Newton,ARG
 tirofederal~tirofederalrosario,Tiro Federal,Tbww,bw,x-bw,,-32.9159578,-60.7541273,Rosario,ARG
