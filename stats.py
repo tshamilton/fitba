@@ -321,7 +321,8 @@ for nB in natsWBadges:
 	if len(teamBadgesByCountry[nB]) > 0:
 		Out["teamBadgesByCountry"][nB] = teamBadgesByCountry[nB]
 
-with open('base.json', 'w') as j:
+with open(the_oldfile, 'w') as j:
 	json.dump(Out, j, indent='\t')
 
 exit(0)
+
