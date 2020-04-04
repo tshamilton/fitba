@@ -166,6 +166,7 @@ akritaschlorakas,Akritas Chlorakas,Cwgg,wg,x-wg,,34.7924,32.4126,Chloraka,CYP
 akrontolyatti,Akron Tolyatti,Awkk,wk,x-wk,,53.5118943,49.4069102,Tolyatti,RUS
 akropolisif,Akropolis IF,Abww,bw,x-wb,,59.380278,17.893333,Sp&aring;nga,SWE
 aksarayspor,Aksarayspor,Akwk,kw,s-wwk,,38.3728052,34.0349873,Aksaray,TUR
+aktaukaspyia~kaspyiaktau,Kaspyi Aktau,Kkyy,ky,x-ky,,43.6648989,51.1475791,Aktau,KAZ
 aktobe,Aktobe Lento,Arwr,rw,s-wwr,,50.291389,57.160278,Aktobe,KAZ
 akwaunited,Akwa United,Awbw,wb,b-wwb,,5.006389,7.886111,Uyo,NGA
 akzhaiykuralsk,Akzhaiyk Uralsk,Awcc,wc,x-wc,,51.211944,51.350833,Ural,KAZ
@@ -904,7 +905,7 @@ bostonriver,Boston River,Brgr,rg,v-krg,,-34.7764666,-56.1657974,Boston River,URU
 bostonunited,Boston United,Bkoo,ko,v-oko,,52.976786,-0.019117,Boston,ENG
 botafogopb,Botafogo da Para&iacute;ba,Bkwk,kw,s-kkw,,-7.1671695,-34.8734486,Jo&atilde;o Pessoa,BRA
 botafogoribeiraop,Botafogo-Ribeirao,Bwrk,kr,s-rkwr,,-21.2022264,-47.7900447,Santa Cruz,BRA
-botafogosaopaolo~botafogo,Botafogo (SP),Bkwr,kw,e-krw,,-21.2021264,-47.7901447,Ribeir&atilde;o Preto,BRA
+botafogosaopaolo~botafogosp~botafogo,Botafogo (SP),Bkwr,kw,e-krw,,-21.2021264,-47.7901447,Ribeir&atilde;o Preto,BRA
 botevgalabovo,Botev Galabovo,Bkrr,kr,x-kr,,42.1411012,25.8653736,Galabovo,BUL
 botevihtiman,Botev Ihtiman,Bwrg,wr,d-wrwg,,42.4357449,23.8241717,Ihtiman,BUL
 botevplovdiv,Botev Plovdiv,Bkyk,yk,s-kky,,42.139861,24.764444,Plovdiv,BUL
@@ -944,7 +945,7 @@ bremersv,Bremer SV,Bwbb,wb,x-wb,,53.086506,8.7936015,Bremen,GER
 brentford,Brentford,Bkrw,rw,s-krw,,51.4881774,-0.3025242,Brentford,ENG
 brescia,Brescia,Bwbb,wb,e-wwb,,45.5706672,10.2370646,Brescia,ITA
 bressuire,Bressuire,Bkyy,ky,x-ky,,46.8423034,-0.4846796,Bressuire,FRA
-brestdinamo~dinamobrest,Dinamo Brest,Dbww,bw,x-bw,,52.0897446,23.6832645,Brest,BLR
+brestdinamo~dynamobrest~dinamobrest,Dinamo Brest,Dbww,bw,x-bw,,52.0897446,23.6832645,Brest,BLR
 brestrukh~rukhbrest,Rukh Brest,Rnff,nf,x-nf,,44.996,41.1143113,Brest,BLR
 brest~stadebrest29,Stade Brest 29,Brww,rw,x-rw,,48.402932,-4.461694,Brest,FRA
 brightlingsearegent,Brightlingsea Regent,Bkrk,kr,s-wkr,,51.815812,1.026347,Brightlingsea,ENG
@@ -1562,7 +1563,7 @@ didcottown,Didcot Town,Dwrr,wr,x-wr,,51.614103,-1.239736,Didcot,ENG
 diegem,Diegem Sport,Dwgg,wg,x-wg,,50.8943155,4.4386516,Diegem,BEL
 dieppe,FC Dieppois,Dwbb,wb,x-wb,,49.9055386,1.068608,Dieppe,FRA
 difaaeljadida,Difaa El Jadida,Dwgg,wg,e-wwg,,33.2414934,-8.4933848,El Jadida,MAR
-differdang03,Differdange 03,Dkrr,kr,x-kr,,49.5223115,5.8774456,Differdange,LUX
+differdange03~fcdifferdang03~differdang03,Differdange 03,Dkrr,kr,x-kr,,49.5223115,5.8774456,Differdange,LUX
 digenismorphou,Digenis Akritas Morphou,Dgwg,wg,h-ggw,,35.146111,33.314444,Morphou,CYP
 digenisoroklinis,Digenis Oroklinis,Dwbb,wb,x-wb,,34.9873277,33.6540676,Oroklini,CYP
 dijkasv~asvdedijk,ASV de Dijk,Dbwr,br,s-bwrwb,,52.390556,4.955556,Schellingwoude,NED
@@ -1869,7 +1870,7 @@ etslabeuvriere,Etoile Sportive Labeuvriere,Lkyy,ky,x-ky,,50.516825,2.5589991,Lab
 etstrinitelyon,Etoile Sportive Trinite Lyon,Tkww,kw,x-kw,,45.7305898,4.8775215,Lyon,FRA
 etsvallieres,Etoile Sportive Valli&egrave;res,Vwgg,wg,x-wg,,45.8971627,5.9370232,Valli&egrave;res,FRA
 etsvweicheflensburg,ETSV Weiche Flensburg,Wkdd,kd,x-kd,,54.7945048,9.397062,Flensburg,GER
-etzellaettelbruck,Etzella Ettelbruck,Ebwr,bw,x-bw,,49.8409447,6.0955973,Ettelbruck,LUX
+etzellaettelbruck~fcetzellaettelbruck,Etzella Ettelbruck,Ebwr,bw,x-bw,,49.8409447,6.0955973,Ettelbruck,LUX
 eugendorf~usceugendorf,USC Eugendorf,Ekgg,kg,x-kg,,47.8728598,13.1260109,Eugendorf,AUT
 eupen,AS Eupen,Ewkk,wk,x-wk,,50.626389,6.045833,Eupen,BEL
 europort~fceuroport,Europort,Ekrr,kr,x-kr,,48.7415434,4.1604237,Haussimont,FRA
@@ -2548,7 +2549,6 @@ hamptonandrichmond~hamptonrichmond,Hampton &amp; Richmond Borough,Hwbr,rb,s-wbr,
 hanau93~fchanau93,Hanau 93,Hkww,kw,x-kw,,50.1390494,8.8704632,Hanau,GER
 hangyuenfujen,Hang Yuen,Hkwq,qw,b-kqw,,25.0394438,121.4241042,New Taipei City,TPE
 hannover96,Hannover 96,Hkrr,kr,x-kr,x204,52.360017,9.7312249,Hannover,GER
-hanoi~hanoitt,H&agrave; N&ocirc;i,Hwpp,wp,x-wp,,21.029834,105.8329196,H&agrave; N&ocirc;i,VIE
 hansarostock,Hansa Rostock,Hwbb,wb,x-wb,,54.084948,12.0951651,Rostock,GER
 hapoelafula,Hapoel Afula,Awnn,wn,x-wn,,32.627222,35.317222,Afula,ISR
 hapoelashkelon,Hapoel Ashkelon,Awbb,wb,x-wb,,31.6655531,34.569488,Ashkelon,ISR
@@ -2709,11 +2709,11 @@ holzhacker,Holzhacker 07,Hynn,yn,x-yn,,47.097366,15.4192273,Graz,AUT
 hombourghaut,SSEP Hombourg Haut,Hkww,kw,x-kw,,49.1251695,6.7784123,Hombourg Haut,FRA
 homburg,FC 08 Homburg,Hwgg,wg,x-wg,,49.3162666,7.3548521,Homburg,GER
 homefarm,Home Farm,Hbwb,wb,h-bbw,,53.3836193,-6.253545,Whitehall,IRL
-homeunitedfc,Home United,Hwrr,wr,x-wr,,1.354544,103.851475,Bishan,SIN
 hondafc,Honda FC,Hwrr,wr,x-wr,,34.810639,137.722389,Hamamatsu,JPN
 hondalock,Honda Lock,Hwrr,wr,x-wr,,31.9433791,131.3694657,Miyazaki,JPN
 hondurasprogreso,Honduras Progreso,Hwnn,wn,x-wn,,15.400556,-87.815,El Progreso,HON
 honefoss,H&oslash;nefoss,Hkwg,gw,b-kgw,,60.1589963,10.2660142,H&oslash;nefoss,NOR
+honglinhhatinh,H&ocirc;&quot;ng L&itilde;nh H&agrave; T&itilde;nh,Hwrr,wr,x-wr,,18.3331857,105.9056496,H&agrave; T&itilde;nh,VIE
 honka,Honka Espoo,Hykk,yk,x-yk,,60.177778,24.781389,Espoo,FIN
 honselersdijk~svhonselersdijk,Honselersdijk,Hboo,bo,x-bo,,52.007222,4.226667,Honselersdijk,NED
 hoogeveen,Hoogeveen,Hwbb,wb,x-wb,,52.723102,6.4960087,Hoogeveen,NED
@@ -2726,6 +2726,7 @@ horsham,Horsham,Hgyy,gy,x-gy,,51.046944,-0.340722,Horsham,ENG
 horsholmusserodik,H&oslash;rsholm-Usserod,Hbrr,br,x-br,,55.8902093,12.4826914,H&oslash;rsholm,DEN
 hoseiuniversityfc,Hosei University,Hnoo,no,x-no,,35.6959014,139.7383247,Chiyoda City,JPN
 hospitalet,CE L&#39;Hospitalet,Hrww,rw,d-kwr,,41.3488087,2.1031094,L&#39;Hospitalet de Llobregat,ESP
+hostertus~ushostert,US Hostert,Hgwg,gw,h-ggw,,49.6590849,6.228503,Hostert,LUX
 hougangunitedfc,Hougang United,Hwoo,wo,x-wo,,1.369468,103.886035,Hougang,SIN
 houillesac,Houilles AC,Hpwp,pw,s-ppw,,48.926035,2.1682271,Houilles,FRA
 houstondash,Houston Dash,Hwoo,wo,x-wo,,29.7521988,-95.3524146,Houston,USA
@@ -3414,6 +3415,7 @@ linth,FC Linth 04,Lkyk,ky,s-kky,,47.108012,9.065244,N&auml;fels,SUI
 linx~svlinx,Linx,Lkww,kw,x-kw,,48.6244418,7.9063797,Rheinau,GER
 linzbw~bwlinz,Blau-Weiss Linz,Bwbb,wb,x-wb,,48.293723,14.27658,Linz,AUT
 linzlask~lasklinz~lask,LASK Linz,Swkw,wk,s-kkw,x305,48.293723,14.27658,Linz,AUT
+lioncitysailorsfc~homeunitedfc,Lion City Sailors,Hbww,bw,x-bw,,1.354544,103.851475,Bishan,SIN
 lionsfc,Queensland Lions,Lboo,bo,x-bo,,-27.6643565,152.7988848,Brisbane,AUS
 lipany,Odeva Lipany,Lwgg,wg,x-wg,,49.147738,20.9622449,Lipany,SVK
 lipotpekseg,Lip&oacute;t SE,Lybb,yb,x-yb,,47.8587199,17.4592488,Lip&oacute;t,HUN
@@ -3541,6 +3543,7 @@ lyngby,Lyngby,Lwbb,wb,x-wb,,55.7811421,12.5057906,Lyngby,DEN
 lyn~lynfotball,Lyn,Lbwr,rw,b-brw,,59.9275961,10.7092385,Oslo,NOR
 lyonladuchere,AS Lyon Duch&egrave;re,Lryy,ry,x-ry,,45.7870311,4.7967415,Lyon,FRA
 lyon~olympiquelyonnais~olympiquelyon,Olympique Lyon,Lbwr,br,o-bwbr,x018,45.765295,4.982029,Lyon,FRA
+lypovaalians~alians,Alians Lypova Dolyna,Akgk,kg,e-kkg,,50.9473519,34.9146572,Lypova Dolyna,UKR
 lysekloster,Lysekloster,Lbww,bw,x-bw,,60.2121887,5.3898735,Lysekloster,NOR
 lyslezlannoystella,Lys Lez Lannoy Stella,Lwbb,wb,x-wb,,50.6669275,3.2165264,Lys-Lez-Lannoy,FRA
 lystrupif,Lystrup IF,Lkrr,kr,x-kr,,56.2446805,10.1798185,Lystrup,DEN
@@ -3834,6 +3837,7 @@ monarcasmorelia~morelia,Monarcas Morelia,Mryr,ry,d-ryr,,19.7187738,-101.2333944,
 monaropanthers,Monaro Panthers,Mkgk,kg,s-ggk,,-35.3890699,149.1959546,Queanbeyan,AUS
 monceenne,ES Monceene,Mwbb,wb,x-wb,,47.8900229,0.1880518,Monce et Belin,FRA
 mondeville,USON Mondeville,Mbrb,rb,b-bbr,,49.1754352,-0.3188874,Mondeville,FRA
+mondorflesbains~usmondorflesbains,US Mondorf-les-Bains,Mkgg,kg,x-kg,,49.5095948,6.2891343,Mondorf-les-Bains,LUX
 mondsee,Union Raiffeisen Mondsee,Mwrr,wr,x-wr,,47.8609067,13.3297442,Mondsee,AUT
 monfalcone,UF Monfalcone,Mwbb,wb,x-wb,,45.8020734,13.5417039,Monfalcone,ITA
 monopoli,SS Monopoli 1966,Mwgg,wg,x-wg,,40.95712,17.29372,Monopoli,ITA
@@ -3891,6 +3895,7 @@ mtdruitttownrangers,Mount Druitt Town Rangers,Mgyy,gy,x-gy,,-33.7384783,150.8078
 mtkbudapest,MTK Budapest,Mhww,hw,d-hwh,,47.4909204,19.1069345,Budapest,HUN
 muangthongunited,Muang Thong United,Mkrr,kr,x-kr,,13.917989,100.547411,Muang Thong Thani,THA
 muglaspor,Mu&gbreve;laspor,Mgwg,gw,s-ggw,,37.2117771,28.3608537,Mu&gbreve;la,TUR
+muhlenbachblueboys~fcmuhlenbachblueboys,Blue Boys Muhlenbach,Mwff,wf,x-wf,,49.6315894,6.1146855,Muhlenbach,LUX
 muhoroniyouthfc,Muhoroni Youth,Mkyy,ky,x-ky,,-1.304194,36.824472,Nairobi,KEN
 mulhouse,Mulhouse,Mnww,nw,x-nw,,47.7381218,7.3214849,Mulhouse,FRA
 mumbaicityfc,Mumbai City,Myby,yb,d-yby,,19.1288162,72.8349,Mumbai,IND
@@ -4567,6 +4572,7 @@ qingdaohuanghai,Qingdao Huanghai,Qbrb,rb,s-bbr,,36.105787,120.445514,Qingdao,CHN
 qingdaojonoon,Qingdao Jonoon,Qwoo,wo,x-wo,,36.058761,120.349192,Qingdao,CHN
 qingdaoredlions,Qingdao Red Lions,Qkrr,kr,x-kr,,36.4700228,120.0407218,Qingdao,CHN
 qizilqumzarafshon,Qizilqum Zarafshon,Qrbr,rb,s-wbr,,40.1147018,65.3804963,Zarafshon,UZB
+quangnam~qnkquangnam,Quang Nam,Qwbb,wb,x-wb,,15.5599398,108.5045869,Tam Ky,VIE
 queenofthesouth~queenofsouth,Queen of the South,Qwbb,wb,x-wb,,55.070339,-3.6246,Dumfries,SCO
 queenspark,Queen&#39;s Park,Qkwk,kw,h-kkw,,55.8258422,-4.2520476,Glasgow,SCO
 queensparkrangers,Queen&#39;s Park Rangers,Qwbw,bw,h-bbw,,51.5092767,-0.2321123,Shepherd&#39;s Bush,ENG
@@ -4751,6 +4757,7 @@ rochesterrhinos,Rochester Rhinos,Rkww,kw,x-kw,,43.162067,-77.629566,Rochester,US
 rockdalecitysuns,Rockdale City Suns,Rkrk,kr,s-kkr,,-33.963889,151.144444,Rockdale,AUS
 rockmount,Rockmount AFC,Rygy,yg,b-yyg,,51.98401,-8.515556,Whitechurch,IRL
 rodajckerkrade,Roda JC Kerkrade,Rkyk,ky,b-kky,x224,50.8575421,6.0054373,Kerkrade,NED
+rodange91~fcrodange91,Rodange 91,Rwrr,wr,x-wr,,49.5462065,5.8380191,Petingen,LUX
 rodez~rodezaveyron,Rodez Aveyron,Rryr,ry,e-rry,,44.348,2.5911,Rodez,FRA
 rodina,Rodina Moscow,Rwnn,wn,x-wn,,55.7944719,37.7546237,Moscow,RUS
 roeselare,KSV Roeselare,Rkww,kw,d-kwk,,50.952087,3.105354,Roeselare,BEL
@@ -4765,6 +4772,7 @@ rorvik,R&oslash;rvik,Rwrr,wr,x-wr,,64.8723082,11.2351436,R&oslash;rvik,NOR
 rosariocentral,Rosario Central,Rbyb,yb,s-bby,,-32.9140305,-60.6745499,Rosario,ARG
 rosariosport~sportrosario,Sport Rosario,Rnyn,ny,s-nny,,-9.5265213,-77.5336379,Huaraz,PER
 rosenborg,Rosenborg,Rkww,kw,x-kw,x102,63.4123278,10.404471,Rosenborg,NOR
+rosportvictoria~victoriarosport~fcvictoriarosport,Victoria Rosport,Vkrr,kr,x-kr,,49.80846,6.505675,Rosport,LUX
 rosscounty,Ross County,Rwnn,wn,x-wn,,57.595947,-4.418914,Dingwall,SCO
 rotalianacalcio,ASD Rotaliana,Rkrr,kr,x-kr,,46.2172064,11.0844614,Mezzolombardo,ITA
 rotenburgersv,Rotenburger SV,Rwrw,wr,e-wwr,,53.1098,9.3827113,Rotenburg,GER
@@ -4825,6 +4833,7 @@ sagadam,&Scedil;agadam,Swbw,wb,b-wwb,,40.0149507,52.9875376,T&uuml;rkmenba&scedi
 sagantosu,Sagan Tosu,Siff,if,e-iif,,33.3716907,130.5202175,Tosu,JPN
 sahabsc,Sahab,Swbb,wb,x-wb,,31.8568339,35.9998198,Sahab,JOR
 saida~mcsaida,MC Sa&iuml;da,Sgww,gw,x-gw,,34.8630523,0.1511807,Sa&iuml;da,ALG
+saigonfc~hanoi~hanoitt,S&agrave;i G&ograve;n,Hwmm,wm,d-wmw,,21.029834,105.8329196,H&agrave; N&ocirc;i,VIE
 saigonxuanthanh,Sai Gon Xuan Thanh,Swoo,wo,x-wo,,10.760703,106.663331,Ho Chi Minh City,VIE
 saintchamond,Saint-Chamond,Swrw,wr,s-rrw,,45.4701989,4.5274296,Saint-Chamond,FRA
 saintegenevieve,Sainte Genevi&egrave;ve des Bois,Gwrr,wr,x-wr,,48.6305672,2.3295761,Sainte Genevi&egrave;ve des Bois,FRA
@@ -5432,6 +5441,7 @@ strakonice,Junior Strakonice,Jwbb,wb,x-wb,,49.2616625,13.912384,Strakonice,CZE
 stranraer,Stranraer,Swbb,wb,x-wb,,54.902147,-5.012481,Stranraer,SCO
 strasbourg,Racing Club Strasbourg,Rwbb,wb,x-wb,x220,48.5600356,7.7551235,Strasbourg,FRA
 strasbourgolympique,Strasbourg Olympique,Swrr,wr,x-wr,,48.558177,7.7552683,Strasbourg,FRA
+strassenuna~unastrassen,UNA Strassen,Ukrk,kr,s-rrk,,49.6178603,6.0716703,Strassen,LUX
 strasswalchen~svstrasswalchen,Stra&szlig;walchen,Swgg,wg,x-wg,,47.968077,13.2699957,Stra&szlig;walchen,AUT
 stratfordtown,Stratford Town,Swbb,wb,x-wb,,52.19415,-1.676361,Stratford-Upon-Avon,ENG
 strathspeythistle,Strathspey Thistle,Swbb,wb,x-wb,,57.3325955,-3.6031622,Grantown-on-Spey,SCO
@@ -5557,6 +5567,7 @@ talleres,Talleres de C&oacute;rdoba,Tnwn,nw,s-wwn,,-31.3688642,-64.246113,C&oacu
 talleresremediosdeescalada~catalleresremediosdeescalada,Talleres Remedios de Escalada,Rwrw,wr,s-rrw,,-34.716667,-58.4,Remedios de Escalada,ARG
 tallinnafclevadia~fcilevadia~levadiatallinn,Levadia Tallinn,Lwgg,wg,x-wg,,59.4339364,24.7829809,Taillinn,EST
 tallinnakalev~talinnakalev,Tallinna Kalev,Kkww,kw,x-kw,,59.4257942,24.7645654,Taillin,EST
+tallinnalegion~tjklegion,Tallinna Legion,Lwrr,wr,x-wr,,59.434472,24.783444,Kadriorg,EST
 tamai,ASD Polisportivo Tamai,Twrr,wr,x-wr,,45.9087162,12.536215,Brugnera,ITA
 tampabayrowdies,Tampa Bay Rowdies,Tygy,gy,h-ggy,,27.7680117,-82.6329818,St. Petersburg,USA
 tampinesroversfc,Tampines Rovers,Tbyy,by,x-by,,1.338555,103.6949249,Tampines,SIN
@@ -5776,10 +5787,11 @@ tucumantletico~atleticotucuman,Atl&eacute;tico Tucum&aacute;n,Tnwh,wh,s-nwh,,-26
 tudelano,Tudelano,Tkww,kw,x-kw,,42.0574,-1.612,Tudelano,ESP
 tuggen,Tuggen,Tbww,bw,x-bw,,47.1969242,8.94281,Tuggen,SUI
 tuggeranongunited,Tuggeranong United,Twgg,wg,x-wg,,-35.3900733,149.0648547,Kambah,AUS
+tukums2000~fktukums2000,Tukums 2000,Tgwg,gw,s-wwg,,56.9510033,23.1222549,Tukums,LVA
 tulevikviljandi,Tulevik Viljandi,Tkyy,ky,x-ky,,58.3611632,25.606928,Tulevik,EST
 tullingetpfk,Tullinge TP,Twgw,wg,d-gwg,,59.1936884,17.902363,Tullinge,SWE
 tulsaathletics,Tulsa Athletics,Tygg,yg,x-yg,,36.0815865,-95.9143588,Tulsa,USA
-tulsaroughnecksfc,Tulsa Roughnecks,Twoo,wo,x-wo,,36.159722,-95.988056,Tulsa,USA
+tulsa~fctulsa~tulsaroughnecksfc,FC Tulsa,Tuww,uw,x-uw,,36.159722,-95.988056,Tulsa,USA
 tupi,Tupi,Twkw,kw,s-kkw,,-21.7875923,-43.3780288,Aeroporto,BRA
 tupynambas,Tupynamb&aacute;s,Twrr,wr,x-wr,,-21.7651409,-43.3328552,Juiz de Fora,BRA
 turbinepotsdam,1. FFC Turbine Potsdam,Twbb,wb,x-wb,,52.399083,13.094806,Potsdam,GER
@@ -5958,7 +5970,7 @@ vallemaggia~acvallemaggia,AC Vallemaggia,Vrww,rw,x-rw,,46.3452065,8.4739177,Vall
 vallenar,Vallenar,Vwgg,wg,x-wg,,-28.5805746,-70.7588115,Vallenar,CHI
 vallensbaekif,Vallensb&aelig;k IF 39,Vkyy,ky,x-ky,,55.629838,12.37191,Vallensb&aelig;k,DEN
 valletta,Valletta,Vrww,rw,x-rw,,35.896538,14.5064585,Valletta,MLT
-valmierasfk,Valmieras,Vkwk,kw,s-kkw,,57.541031,25.4405317,Valmiera,LVA
+valmierasfk~valmierafc,Valmieras,Vgkk,gk,x-gk,,57.541031,25.4405317,Valmiera,LVA
 valourfc,Valour,Vkdk,kd,b-kkd,,49.807778,-97.143056,Winnipeg,CAN
 valstasyrianska,Valsta Syrianska,Vyry,yr,b-yyr,,59.6206597,17.8370192,M&auml;rsten,SWE
 valur,Valur Reykjavik,Vwrr,wr,x-wr,,64.1327637,-21.9234939,Hl&iacute;&eth;arendi,ISL
@@ -6076,6 +6088,7 @@ videotonfc,Videoton FC Fehervar,Vnrn,nr,s-nnr,,47.4639875,18.5866822,Felcs&uacut
 vidifc~fehervarfc,MOL Vidi Feh&eacute;rv&aacute;r,Vbrb,br,s-rrb,x291,50.7833107,7.7208859,Sz&eacute;kesfeh&eacute;rv&aacute;r,HUN
 vidimarakovski,Vidima-Rakovski Sevlievo,Vwbb,wb,x-wb,,43.0241412,25.1113121,Sevlievo,BUL
 vidir,Vi&eth;ir,Vwbb,wb,x-wb,,64.0755012,-22.6487931,Gar&eth;ur,ISL
+viettel,Viettel,Vwrr,wr,x-wr,,21.020556,105.763806,H&agrave; N&ocirc;i,VIE
 vifk,Vasa IFK,Vwbb,wb,x-wb,,63.085278,21.627778,Vaasa,FIN
 vigasio,ASD Vigasio,Vkuu,ku,x-ku,,45.3238737,10.9434677,Vigasio,ITA
 vigor,Vig&oslash;r,Vwvv,wv,x-wv,,58.1472417,7.9330516,Kristiansand,NOR
