@@ -1919,20 +1919,20 @@ fatihkaragumruk,Fatih Karag&uuml;mr&uuml;k,Fkrk,kr,s-kkr,,41.0322771,28.9537783,
 fatima,F&aacute;tima,Fwqq,wq,x-wq,,39.6022604,-8.6673211,F&aacute;tima,POR
 fatsabelediyespor,Fatsa Belediyespor,Fyby,yb,s-bby,,41.0366844,37.4947542,Fatsa,TUR
 favac,Favoritner AC,Frkr,kr,s-rrk,,48.1709587,16.382084,Favoriten,AUT
-fbcmelgar,Melgar FBC,Mkrk,rk,v-rrk,,-16.4072701,-71.5202784,Arequipa,PER
-fbkkarlstad,FBK Karlstad,Kwrr,wr,x-wr,,59.404468,13.5125481,Karlstad,SWE
-fc08villingen,FC 08 Villingen,Vwkw,kw,s-kkw,,48.0570777,8.4281011,Villingen-Schwenningen,GER
-fc1931eddersheim,FC 1931 Eddersheim,Ekww,kw,x-kw,,50.040362,8.471608,Hattersheim am Main,GER
-fcaarberg,Aarberg,Akrk,kr,s-wrk,,47.0498076,7.2770111,Aarberg,SUI
-fcacademiachisinau,Academia Chi&scedil;in&abreve;u,Awbb,wb,x-wb,,47.088564,28.7716031,Ghidighici,MDA
-fcacademicaclinceni,Academica Clinceni,Awak,wa,e-wka,,44.3778931,25.940856,Cliceni,ROU
-fcacademypandev,Akademija Pandev,Abww,bw,x-bw,,41.4454432,22.6374013,Strumica,NMK
-fcajka,Ajka,Agww,gw,x-gw,,47.1096225,17.5494305,Ajka,HUN
-fcalayosh,Alay Osh,Akyy,ky,x-ky,,40.520556,72.804722,Osh,KGZ
-fcambacht,IFC Ambacht,Arkr,kr,b-kkr,,51.8433159,4.6339008,Hendrik-Ido-Ambacht,NED
+melgarfbc~fbcmelgar,Melgar FBC,Mkrk,rk,v-rrk,,-16.4072701,-71.5202784,Arequipa,PER
+karlstadfbk~fbkkarlstad,FBK Karlstad,Kwrr,wr,x-wr,,59.404468,13.5125481,Karlstad,SWE
+villingen08~fc08villingen,FC 08 Villingen,Vwkw,kw,s-kkw,,48.0570777,8.4281011,Villingen-Schwenningen,GER
+eddersheim31~fc1931eddersheim,FC 1931 Eddersheim,Ekww,kw,x-kw,,50.040362,8.471608,Hattersheim am Main,GER
+aarberg~fcaarberg,Aarberg,Akrk,kr,s-wrk,,47.0498076,7.2770111,Aarberg,SUI
+academiachisinau~fcacademiachisinau,Academia Chi&scedil;in&abreve;u,Awbb,wb,x-wb,,47.088564,28.7716031,Ghidighici,MDA
+academicaclinceni~fcacademicaclinceni,Academica Clinceni,Awak,wa,e-wka,,44.3778931,25.940856,Cliceni,ROU
+academypandev~fcacademypandev,Akademija Pandev,Abww,bw,x-bw,,41.4454432,22.6374013,Strumica,NMK
+ajka~fcajka,Ajka,Agww,gw,x-gw,,47.1096225,17.5494305,Ajka,HUN
+alayosh~fcalayosh,Alay Osh,Akyy,ky,x-ky,,40.520556,72.804722,Osh,KGZ
+ambacht~fcambacht,IFC Ambacht,Arkr,kr,b-kkr,,51.8433159,4.6339008,Hendrik-Ido-Ambacht,NED
 fcamberg,Amberg,Akyy,ky,x-ky,,49.4314618,11.8679846,Amberg,GER
 fcamriswil,Amriswil,Arww,rw,x-rw,,47.5468385,9.2933561,Amriswil,SUI
-fcandorra,FC Andorra,Arby,yr,v-ybr,,42.5304159,1.5718389,Encamp,AND
+andorrafc~fcandorra,FC Andorra,Arby,yr,v-ybr,,42.5304159,1.5718389,Encamp,AND
 fcankerwismar,Anker Wismar,Awrr,wr,x-wr,,53.885748,11.451995,Wismar,GER
 fcanyang,Anyang,Awpp,wp,x-wp,,37.405304,126.946422,Anyang,KOR
 fcarizona,FC Arizona,Awrr,wr,x-wr,,33.391072,-111.871868,Mesa,USA

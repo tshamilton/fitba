@@ -497,7 +497,10 @@ def defineLeague(token, id, pl):
 				elif f[0] == 'relegation_playoff':
 					pos = the_pos.split(",")
 					for p in pos:
-						out_table[tl]["table"][int(p)-1] = out_table[tl]["table"][int(p)-1]+"|RLPLAYOFF"
+						try:
+							out_table[tl]["table"][int(p)-1] = out_table[tl]["table"][int(p)-1]+"|RLPLAYOFF"
+						except IndexError:
+							next
 				elif f[0] == 'copa_libertadores':
 					pos = the_pos.split(",")
 					for p in pos:
