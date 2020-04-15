@@ -2641,8 +2641,8 @@ houtvenne,Houtvenne,Hrgg,rg,x-rg,,51.0436703,4.8116901,Herselt,BEL
 hoverlauzhhorod,Hoverla Uzhhorod,Hwhh,wh,x-wh,,48.6234901,22.2762344,Uzhhorod,UKR
 hradeckralove,Hradec Kr&aacute;lov&eacute;,Hkww,kw,x-kw,,50.2064654,15.845446,Hradec Kr&aacute;lov&eacute;,CZE
 hradeckraloveolympia~olympiahk,Olympia Hradec Kr&aacute;lov&eacute;,Owgw,wg,h-ggw,,50.209444,15.833333,Hradec Kr&aacute;lov&eacute;,CZE
-hranice,Hranice,Hyrr,yr,x-yr,,49.543654,17.7262671,Hranice,CZE
-hranice~skhranice,Hranice,Hwbw,wb,s-bbw,,49.543654,17.7240784,Hranice,CZE
+hranice,Hranice FK,Hyrr,yr,x-yr,,49.543654,17.7262671,Hranice,CZE
+hranicesk~skhranice,Hranice SK,Hwbw,wb,s-bbw,,49.543654,17.7240784,Hranice,CZE
 hrvatskiakademski~nkhask,Hrvatski Akademski,Hyry,yr,h-rry,,45.8037107,16.0236573,Zagreb,CRO
 hsc21,Haaksbergse SC &#39;21,Hwgg,wg,x-wg,,52.1486745,6.7278681,Haaksbergen,NED
 hschannover,Hannoverscher SC,Hwgg,wg,x-wg,,52.40223,9.7668413,Hannover,GER
@@ -4500,7 +4500,7 @@ praguemeteor~meteorprague,Meteor Prague,Mwgw,wg,s-ggw,,50.109353,14.468522,Pragu
 praguemotorlet~motorletprague,Motorlet Prague,Mnrr,nr,x-nr,,50.0620097,14.3590645,Jinonice,CZE
 pragueolympia~olympiaprague,Olympia Prague,Okyy,ky,x-ky,,50.080428,14.3837,Prague,CZE
 pragueslavia~slaviaprague~slaviapraha,Slavia Prague,Swrw,rw,v-wrw,x239,50.0674643,14.4715123,Prague,CZE
-praguesparta~spartaprague~spartaprague~spartapraha,Sparta Prague,Swqq,wq,x-wq,x110,50.0998302,14.4159181,Prague,CZE
+praguesparta~spartaprague~spartapraha,Sparta Prague,Swqq,wq,x-wq,x110,50.0998302,14.4159181,Prague,CZE
 praiense,Praiense,Prwr,rw,s-rrw,,38.7329162,-27.072927,Praia da Vit&oacute;ria,POR
 prato,AC Prato,Pwbb,wb,x-wb,,43.875727,11.109559,Prato,ITA
 prat~aeprat,AE Prat,Pbww,bw,x-bw,,41.321815,2.083034,El Prat,ESP
