@@ -283,7 +283,7 @@ for the_team in orig_teams:
 	try:
 		teamByCountry[t[9]].append(t[0])
 	except KeyError:
-		print("Problem: "+the_team)
+		print("Problem (INT or unknown Trigramme): "+the_team)
 	
 	teamCountByCountry[t[9]] = teamCountByCountry[t[9]] + 1	
 	if countryByTri[t[9]] not in teamBadgesByCountry:
