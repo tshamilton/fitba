@@ -4055,10 +4055,10 @@
 			"alassiouty",
 			"aldakhleya",
 			"alentag",
+			"alexandriaalittihad",
 			"algeishtalaea",
 			"algounah",
 			"alhodood",
-			"alittihadalsakandary",
 			"almasry",
 			"almehallaghazl",
 			"alminya",
@@ -4092,24 +4092,24 @@
 		],
 		"SLV": [
 			"aguilacd",
+			"ahuachapanonce",
 			"alianzafc",
 			"audaz",
-			"cdsonsonate",
 			"chalatenango",
 			"dragoncd",
-			"elvencedor",
 			"fas",
 			"firpo",
-			"isidrometapan",
 			"jocoro",
 			"juventudindependiente",
+			"limenomunicipal",
 			"marteatletico",
-			"municipallimeno",
-			"oncedeportivo",
+			"metapanisidro",
 			"oncemunicipal",
 			"pasaquina",
 			"santateclafc",
-			"ues"
+			"sonsonate",
+			"ues",
+			"vencedor"
 		],
 		"ENG": [
 			"accringtonstanley",
@@ -4415,10 +4415,8 @@
 		"ERI": [],
 		"EST": [
 			"elva",
-			"tallinnflora",
-			"tallinninfonet",
-			"kalevsillamae",
 			"johvifclokomotiv",
+			"kalevsillamae",
 			"kuressaarefc",
 			"maardulinnameeskond",
 			"narvajktrans",
@@ -4427,9 +4425,11 @@
 			"paidelinnameeskond",
 			"parnujkvaprus",
 			"rakverejktarvas",
-			"tallinnlevadia",
+			"tallinnflora",
+			"tallinninfonet",
 			"tallinnkalev",
 			"tallinnlegion",
+			"tallinnlevadia",
 			"tammekatartu",
 			"tartusantos",
 			"tulevikviljandi"
@@ -4442,13 +4442,13 @@
 			"stgeorge"
 		],
 		"FRO": [
-			"torshavnb36",
 			"ebstreymur",
 			"fuglafjordur",
 			"gotavikingur",
-			"torshavnhavnar",
 			"klaksvik",
-			"runaviknsi"
+			"runaviknsi",
+			"torshavnb36",
+			"torshavnhavnar"
 		],
 		"FIJ": [
 			"ba"
@@ -5401,8 +5401,6 @@
 			"valenciadeleogane"
 		],
 		"HON": [
-			"cdnecaxa",
-			"cdolimpia",
 			"cdrealsociedad",
 			"cdvictoria",
 			"cdvida",
@@ -5412,6 +5410,8 @@
 			"lobosupnfm",
 			"marathoncd",
 			"motagua",
+			"necaxacd",
+			"olimpiacd",
 			"parrillasone",
 			"platensefc",
 			"realdeminas",
@@ -8979,7 +8979,6 @@
 			"byucougars",
 			"calfc",
 			"carolinadynamo",
-			"cdmotaguaofneworleans",
 			"charlestonbattery",
 			"charlotteeagles",
 			"charlotteindependence",
@@ -9082,6 +9081,7 @@
 			"newjerseycopasc",
 			"newmexicounited",
 			"neworleansjesters",
+			"neworleansmotagua",
 			"newyorkcityfc",
 			"newyorkcosmos",
 			"newyorkgreekamericanatlas",
