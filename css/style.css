@@ -197,6 +197,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .wf	{ color: #ffffff; background-color: #77aadd;}
 .wg	{ color: #ffffff; background-color: #009900;}
 .wh	{ color: #ffffff; background-color: #00aaff;}
+.wj { color: #ffffff; background-color: #aa3388;}
 .wk	{ color: #ffffff; background-color: #000000;}
 .wl	{ color: #ffffff; background-color: #8866ee;}
 .wm	{ color: #ffffff; background-color: #ff00ff;}
@@ -310,6 +311,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .b-wwc	{ color: #ffffff; background: repeating-linear-gradient(to right, #ffffff, #ffffff 10%, #990044 10%, #990044 90%, #ffffff 90%, #ffffff); text-shadow: -1px -1px 0 #990044,1px -1px 0 #990044,-1px 1px 0 #990044,1px 1px 0 #990044;}
 .b-wwf	{ color: #ffffff; background: repeating-linear-gradient(to right, #ffffff, #ffffff 10%, #77aadd 10%, #77aadd 90%, #ffffff 90%, #ffffff); text-shadow: -1px -1px 0 #77aadd,1px -1px 0 #77aadd,-1px 1px 0 #77aadd,1px 1px 0 #77aadd;}
 .b-wwg	{ color: #ffffff; background: repeating-linear-gradient(to right, #ffffff, #ffffff 10%, #009900 10%, #009900 90%, #ffffff 90%, #ffffff); text-shadow: -1px -1px 0 #009900,1px -1px 0 #009900,-1px 1px 0 #009900,1px 1px 0 #009900;}
+.b-wwj	{ color: #ffffff; background: repeating-linear-gradient(to right, #ffffff, #ffffff 10%, #aa3388 10%, #aa3388 90%, #ffffff 90%, #ffffff); text-shadow: -1px -1px 0 #aa3388,1px -1px 0 #aa3388,-1px 1px 0 #aa3388,1px 1px 0 #aa3388;}
 .b-wwk	{ color: #ffffff; background: repeating-linear-gradient(to right, #ffffff, #ffffff 10%, #000000 10%, #000000 90%, #ffffff 90%, #ffffff); text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
 .b-wwl	{ color: #ffffff; background: repeating-linear-gradient(to right, #ffffff, #ffffff 10%, #8866ee 10%, #8866ee 90%, #ffffff 90%, #ffffff); text-shadow: -1px -1px 0 #8866ee,1px -1px 0 #8866ee,-1px 1px 0 #8866ee,1px 1px 0 #8866ee;}
 .b-wwn	{ color: #ffffff; background: repeating-linear-gradient(to right, #ffffff, #ffffff 10%, #000099 10%, #000099 90%, #ffffff 90%, #ffffff); text-shadow: -1px -1px 0 #000099,1px -1px 0 #000099,-1px 1px 0 #000099,1px 1px 0 #000099;}
