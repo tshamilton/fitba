@@ -264,6 +264,8 @@ N,EST,Estonia,460,estonia
 C,supercup,1,Eesti Superkarikas,
 L,meistriliiga,10,Meistriliiga,
 L,meistriliigaqualification,11,Meistriliiga Qualification,
+N,FRO,Faroe Islands,faroeislands
+L,premierleague,10,Faroese Premier League,
 N,FIN,Finland,320,finland
 L,veikkausliiga,10,Veikkausliiga,
 L,veikkausliigachampionshipgroup,11,Veikkausliiga Championship Group,
@@ -837,6 +839,8 @@ L,1cfl,10,1. CFL,
 C,1cflqualification,11,1. CFL Qualification,
 N,MAR,Morocco,500,morocco
 L,botolapro,10,Botola Pro,
+N,MYA,Myanmar,705,myanmar
+L,nationalleague,10,National League,
 N,NED,Netherlands,100,netherlands
 C,supercup,1,Johan Cruyff Shield,
 L,eredivisie,10,Eredivisie,
