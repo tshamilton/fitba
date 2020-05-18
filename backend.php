@@ -391,6 +391,9 @@ function doNations($n) { // news
 		else {
 			$cTitle = $Comp[$c]["Name"];
 			$cStyle = $Team[$Comp[$c]["ID"]]["Mjr"];
+			if ($cStyle = "") { 
+				missing("Style not found for Nation panel. Looking for ".$c."\n");
+			}
 			$flag = " <img class=\"".substr($Team[$Comp[$c]["ID"]]["Mnr"], 0, 1)."\" src=\"flags/large/".$c.".png\">";
 		}
 		print t(3)."<div role=\"tabpanel\" class=\"tab-pane container-fluid fade theNation ".$cStyle."\" id=\"".$c."\" name=\"".$c."\"> <!--National container -->\n";
