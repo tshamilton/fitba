@@ -304,7 +304,7 @@ function doMatch($match, $c, $t) { //Match, Country, Type
 	# Row 1 -> Time, Stage and Status
 	$theTime = "<td colspan=\"8\">".doMatchTime($m[6], $hCol)."</td>";
 	$theStage = "<td colspan=\"4\">".doMatchStage($m[5], $hCol)."</td>";
-	$theStatus = "<td colspan=\"8\">".doMatchStatus($m[7], $hCol)."</div></td>";
+	$theStatus = "<td colspan=\"8\">".doMatchStatus($m[7], $hCol)."</td>";
 	print t(8)."<tr>".$theTime.$theStage.$theStatus."</tr>\n";
 
 	# Row 2 -> Venue
