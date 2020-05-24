@@ -61,6 +61,7 @@ N,BLR,Belarus,450,belarus
 C,supercup,1,Supercup,
 L,premierleague,10,Premier League,
 C,premierleaguequalification,11,Premier League Qualification,
+C,cup,100,Belorussian FA Cup,
 N,BEL,Belgium,80,belgium
 C,supercup,1,Super Cup,
 L,firstdivisiona,10,First Division A,
@@ -266,7 +267,7 @@ N,EST,Estonia,460,estonia
 C,supercup,1,Eesti Superkarikas,
 L,meistriliiga,10,Meistriliiga,
 L,meistriliigaqualification,11,Meistriliiga Qualification,
-N,FRO,Faroe Islands,faroeislands
+N,FRO,Faroe Islands,870,faroeislands
 L,premierleague,10,Faroese Premier League,
 N,FIN,Finland,320,finland
 L,veikkausliiga,10,Veikkausliiga,
