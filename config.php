@@ -237,7 +237,7 @@ foreach ($the_nats as $in_t) {
 	</head>
 	<body>
 		<ul class="nav nav-pills nav-fill static-top theTabBody">
-			<li class="nav-item slate"><a role="nav-link" data-toggle="pill" href="#stats"> Stats </a></li>
+			<li class="nav-item active slate"><a role="nav-link" data-toggle="pill" href="#stats"> Stats </a></li>
 			<li class="nav-item slate"><a role="nav-link" data-toggle="pill" href="#colours"> Colours </a></li>
 			<li class="nav-item slate"><a role="nav-link" data-toggle="pill" href="#nations"> Nations </a></li>
 			<li class="nav-item slate"><a role="nav-link" data-toggle="pill" href="#clubs"> Clubs </a></li>
@@ -248,7 +248,7 @@ foreach ($the_nats as $in_t) {
 
 <!-- Tab panes -->
 		<div class="tab-content theBody">
-			<div role="tabpanel" class="tab-pane container-fluid fade theNation slate" id="stats" name="stats">
+			<div role="tabpanel" class="tab-pane active container-fluid fade theNation slate" id="stats" name="stats">
 			<div class="container-fluid">
 				<h1 class="text-center"> Stats </h1>
 				<h2 class="text-center"> Colours </h2>
@@ -293,6 +293,167 @@ foreach ($the_nats as $in_t) {
 								<div style="border: 1px solid #993366; box-sizing: border-box;" class="team mx-1 my-2 wx"><span> x - bordeaux - 660033 </span></div>
 								<div style="border: 1px solid #ccbd00; box-sizing: border-box;" class="team mx-1 my-2 ky"><span> y - yellow - fff00c </span></div>
 								<div style="border: 1px solid #00cc00; box-sizing: border-box;" class="team mx-1 my-2 kz"><span> z - lime - 00ff00 </span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				<h2 class="text-center"> Diacritics </h2>
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+				<div class="container-fluid p-4">
+					<div class="theContent grass p-2">
+						<div class="row">
+							<div class="col-sm-3 table-responsive justify-content-center my-3">
+								<small>
+								<table style="width: 100%;" class="table table-sm table-light align-left">
+								<thead>
+								<tr><th colspan="3" class="text-center white-text" style="background-color: black; color: white;">A - C</th></tr>
+								<tr><th class="text-center">Char</th><th class="text-left">Called</th><th class="text-left">HTML</th></tr>
+								</thead>
+								<tbody>
+								<tr><td class="text-center">&amp;</td><td class="text-left">ampersand</td><td class="text-left">&amp;amp;</td></tr>
+								<tr><td class="text-center">&#39;</td><td class="text-left">apostrophe</td><td class="text-left">&amp;#39;</td></tr>
+								<tr><td class="text-center">&#44;</td><td class="text-left">comma</td><td class="text-left">&amp;#44;</td></tr>
+								<tr><td class="text-center">&deg;</td><td class="text-left">degree</td><td class="text-left">&amp;deg;</td></tr>
+								<tr><td class="text-center">&quot;</td><td class="text-left">quote</td><td class="text-left">&amp;quot;</td></tr>
+								<tr><td colspan="3" height="2" style="background-color: black;"></td></tr>
+								<tr><td class="text-center">&aacute;</td><td class="text-left">a-acute</td><td class="text-left">&amp;aacute;</td></tr>
+								<tr><td class="text-center">&Aacute;</td><td class="text-left">A-acute</td><td class="text-left">&amp;Aacute;</td></tr>
+								<tr><td class="text-center">&abreve;</td><td class="text-left">a-breve</td><td class="text-left">&amp;abreve;</td></tr>
+								<tr><td class="text-center">&acirc;</td><td class="text-left">a-circumflex</td><td class="text-left">&amp;acirc;</td></tr>
+								<tr><td class="text-center">&agrave;</td><td class="text-left">a-grave</td><td class="text-left">&amp;agrave;</td></tr>
+								<tr><td class="text-center">&amacr;</td><td class="text-left">a-macron</td><td class="text-left">&amp;amacr;</td></tr>
+								<tr><td class="text-center">&aogon;</td><td class="text-left">a-ogon</td><td class="text-left">&amp;aogon;</td></tr>
+								<tr><td class="text-center">&aring;</td><td class="text-left">a-ring</td><td class="text-left">&amp;aring;</td></tr>
+								<tr><td class="text-center">&Aring;</td><td class="text-left">A-ring</td><td class="text-left">&amp;Aring;</td></tr>
+								<tr><td class="text-center">&atilde;</td><td class="text-left">a-tilde</td><td class="text-left">&amp;atilde;</td></tr>
+								<tr><td class="text-center">&auml;</td><td class="text-left">a-umlaut</td><td class="text-left">&amp;auml;</td></tr>
+								<tr><td class="text-center">&Auml;</td><td class="text-left">A-umlaut</td><td class="text-left">&amp;Auml;</td></tr>
+								<tr><td class="text-center">&aelig;</td><td class="text-left">ae-ligature</td><td class="text-left">&amp;aelig;</td></tr>
+								<tr><td class="text-center">&AElig;</td><td class="text-left">AE-ligature</td><td class="text-left">&amp;AElig;</td></tr>
+								<tr><td colspan="3" height="2" style="background-color: black;"></td></tr>
+								<tr><td class="text-center">&cacute;</td><td class="text-left">c-acute</td><td class="text-left">&amp;cacute;</td></tr>
+								<tr><td class="text-center">&ccaron;</td><td class="text-left">c-caron</td><td class="text-left">&amp;ccaron;</td></tr>
+								<tr><td class="text-center">&Ccaron;</td><td class="text-left">C-caron</td><td class="text-left">&amp;Ccaron;</td></tr>
+								<tr><td class="text-center">&ccedil;</td><td class="text-left">c-cedilla</td><td class="text-left">&amp;ccedil;</td></tr>
+								<tr><td class="text-center">&Ccedil;</td><td class="text-left">C-cedilla</td><td class="text-left">&amp;Ccedil;</td></tr>
+								</tbody>
+								</table>
+								</small>
+							</div>
+							<div class="col-sm-3 table-responsive justify-content-center my-3">
+								<small>
+								<table style="width: 100%;" class="table table-sm table-light align-left">
+								<thead>
+								<tr><th colspan="3" class="text-center white-text" style="background-color: black; color: white;">D - K</th></tr>
+								<tr><th class="text-center">Char</th><th class="text-left">Called</th><th class="text-left">HTML</th></tr>
+								</thead>
+								<tbody>
+								<tr><td class="text-center">&eth;</td><td class="text-left">eth (lower)</td><td class="text-left">&amp;eth;</td></tr>
+								<tr><td class="text-center">&dstrok;</td><td class="text-left">d-stroke</td><td class="text-left">&amp;dstrok;</td></tr>
+								<tr><td class="text-center">&Dstrok;</td><td class="text-left">D-stroke</td><td class="text-left">&amp;Dstrok;</td></tr>
+								<tr><td colspan="3" height="2" style="background-color: black;"></td></tr>
+								<tr><td class="text-center">&eacute;</td><td class="text-left">e-acute</td><td class="text-left">&amp;eacute;</td></tr>
+								<tr><td class="text-center">&Eacute;</td><td class="text-left">E-acute</td><td class="text-left">&amp;Eacute;</td></tr>
+								<tr><td class="text-center">&ecaron;</td><td class="text-left">e-caron</td><td class="text-left">&amp;ecaron;</td></tr>
+								<tr><td class="text-center">&ecirc;</td><td class="text-left">e-circumflex</td><td class="text-left">&amp;ecirc;</td></tr>
+								<tr><td class="text-center">&edot;</td><td class="text-left">e-dot</td><td class="text-left">&amp;edot;</td></tr>
+								<tr><td class="text-center">&egrave;</td><td class="text-left">e-grave</td><td class="text-left">&amp;egrave;</td></tr>
+								<tr><td class="text-center">&emacr;</td><td class="text-left">e-macron</td><td class="text-left">&amp;emacr;</td></tr>
+								<tr><td class="text-center">&eogon;</td><td class="text-left">e-ogon</td><td class="text-left">&amp;eogon;</td></tr>
+								<tr><td class="text-center">&euml;</td><td class="text-left">e-umlaut</td><td class="text-left">&amp;euml;</td></tr>
+								<tr><td class="text-center">&#601;</td><td class="text-left">schwa</td><td class="text-left">&amp;#601;</td></tr>
+								<tr><td colspan="3" height="2" style="background-color: black;"></td></tr>
+								<tr><td class="text-center">&gbreve;</td><td class="text-left">g-breve</td><td class="text-left">&amp;gbreve;</td></tr>
+								<tr><td colspan="3" height="2" style="background-color: black;"></td></tr>
+								<tr><td class="text-center">&iacute;</td><td class="text-left">i-acute</td><td class="text-left">&amp;iacute;</td></tr>
+								<tr><td class="text-center">&Iacute;</td><td class="text-left">I-acute</td><td class="text-left">&amp;Iacute;</td></tr>
+								<tr><td class="text-center">&icirc;</td><td class="text-left">i-circumflex</td><td class="text-left">&amp;icirc;</td></tr>
+								<tr><td class="text-center">&Icirc;</td><td class="text-left">I-circumflex</td><td class="text-left">&amp;Icirc;</td></tr>
+								<tr><td class="text-center">&igrave;</td><td class="text-left">i-grave</td><td class="text-left">&amp;igrave;</td></tr>
+								<tr><td class="text-center">&imacr;</td><td class="text-left">i-macron</td><td class="text-left">&amp;imacr;</td></tr>
+								<tr><td class="text-center">&inodot;</td><td class="text-left">i-nodot</td><td class="text-left">&amp;inodot;</td></tr>
+								<tr><td class="text-center">&Idot;</td><td class="text-left">I-dot</td><td class="text-left">&amp;Idot;</td></tr>
+								<tr><td class="text-center">&itilde;</td><td class="text-left">i-tilde</td><td class="text-left">&amp;itilde;</td></tr>
+								<tr><td class="text-center">&iuml;</td><td class="text-left">i-umlaut</td><td class="text-left">&amp;iuml;</td></tr>
+								<tr><td class="text-center">&IJlig;</td><td class="text-left">IJ-ligature</td><td class="text-left">&amp;IJlig;</td></tr>
+								</tbody>
+								</table>
+								</small>
+							</div>
+							<div class="col-sm-3 table-responsive justify-content-center my-3">
+								<small>
+								<table style="width: 100%;" class="table table-sm table-light align-left">
+								<thead>
+								<tr><th colspan="3" class="text-center white-text" style="background-color: black; color: white;">L - R</th></tr>
+								<tr><th class="text-center">Char</th><th class="text-left">Called</th><th class="text-left">HTML</th></tr>
+								</thead>
+								<tbody>
+								<tr><td class="text-center">&lstrok;</td><td class="text-left">l-stroke</td><td class="text-left">&amp;lstrok;</td></tr>
+								<tr><td class="text-center">&Lstrok;</td><td class="text-left">L-stroke</td><td class="text-left">&amp;Lstrok;</td></tr>
+								<tr><td colspan="3" height="2" style="background-color: black;"></td></tr>
+								<tr><td class="text-center">&nacute;</td><td class="text-left">n-acute</td><td class="text-left">&amp;nacute;</td></tr>
+								<tr><td class="text-center">&ncaron;</td><td class="text-left">n-caron</td><td class="text-left">&amp;ncaron;</td></tr>
+								<tr><td class="text-center">&ntilde;</td><td class="text-left">n-tilde</td><td class="text-left">&amp;ntilde;</td></tr>
+								<tr><td class="text-center">&Ntilde;</td><td class="text-left">N-tilde</td><td class="text-left">&amp;Ntilde;</td></tr>
+								<tr><td colspan="3" height="2" style="background-color: black;"></td></tr>
+								<tr><td class="text-center">&oacute;</td><td class="text-left">o-acute</td><td class="text-left">&amp;oacute;</td></tr>
+								<tr><td class="text-center">&Oacute;</td><td class="text-left">O-acute</td><td class="text-left">&amp;Oacute;</td></tr>
+								<tr><td class="text-center">&odblac;</td><td class="text-left">o-doubleacute</td><td class="text-left">&amp;odblac;</td></tr>
+								<tr><td class="text-center">&ocirc;</td><td class="text-left">o-circumflex</td><td class="text-left">&amp;ocirc;</td></tr>
+								<tr><td class="text-center">&ograve;</td><td class="text-left">o-grave</td><td class="text-left">&amp;ograve;</td></tr>
+								<tr><td class="text-center">&omacr;</td><td class="text-left">o-macron</td><td class="text-left">&amp;omacr;</td></tr>
+								<tr><td class="text-center">&Omacr;</td><td class="text-left">O-macron</td><td class="text-left">&amp;Omacr;</td></tr>
+								<tr><td class="text-center">&oslash;</td><td class="text-left">o-slash</td><td class="text-left">&amp;oslash;</td></tr>
+								<tr><td class="text-center">&Oslash;</td><td class="text-left">O-slash</td><td class="text-left">&amp;Oslash;</td></tr>
+								<tr><td class="text-center">&otilde;</td><td class="text-left">o-tilde</td><td class="text-left">&amp;otilde;</td></tr>
+								<tr><td class="text-center">&ouml;</td><td class="text-left">o-umlaut</td><td class="text-left">&amp;ouml;</td></tr>
+								<tr><td class="text-center">&Ouml;</td><td class="text-left">O-umlaut</td><td class="text-left">&amp;Ouml;</td></tr>
+								<tr><td class="text-center">&oelig;</td><td class="text-left">oe-ligature</td><td class="text-left">&amp;oelig;</td></tr>
+								<tr><td colspan="3" height="2" style="background-color: black;"></td></tr>
+								<tr><td class="text-center">&rcaron;</td><td class="text-left">r-caron</td><td class="text-left">&amp;rcaron;</td></tr>
+								<tr><td class="text-center">&Rcaron;</td><td class="text-left">R-caron</td><td class="text-left">&amp;Rcaron;</td></tr>
+								</tbody>
+								</table>
+								</small>
+							</div>
+							<div class="col-sm-3 table-responsive justify-content-center my-3">
+								<small>
+								<table style="width: 100%;" class="table table-sm table-light align-left">
+								<thead>
+								<tr><th colspan="3" class="text-center white-text" style="background-color: black; color: white;">S - Z</th></tr>
+								<tr><th class="text-center">Char</th><th class="text-left">Called</th><th class="text-left">HTML</th></tr>
+								</thead>
+								<tbody>
+								<tr><td class="text-center">&sacute;</td><td class="text-left">s-acute</td><td class="text-left">&amp;sacute;</td></tr>
+								<tr><td class="text-center">&Sacute;</td><td class="text-left">S-acute</td><td class="text-left">&amp;Sacute;</td></tr>
+								<tr><td class="text-center">&scaron;</td><td class="text-left">s-caron</td><td class="text-left">&amp;scaron;</td></tr>
+								<tr><td class="text-center">&Scaron;</td><td class="text-left">S-caron</td><td class="text-left">&amp;Scaron;</td></tr>
+								<tr><td class="text-center">&scedil;</td><td class="text-left">s-cedilla</td><td class="text-left">&amp;scedil;</td></tr>
+								<tr><td class="text-center">&Scedil;</td><td class="text-left">S-cedilla</td><td class="text-left">&amp;Scedil;</td></tr>
+								<tr><td class="text-center">&scirc;</td><td class="text-left">s-circumflex</td><td class="text-left">&amp;scirc;</td></tr>
+								<tr><td class="text-center">&szlig;</td><td class="text-left">sz-ligature</td><td class="text-left">&amp;szlig;</td></tr>
+								<tr><td colspan="3" height="2" style="background-color: black;"></td></tr>
+								<tr><td class="text-center">&tcedil;</td><td class="text-left">t-cedilla</td><td class="text-left">&amp;tcedil;</td></tr>
+								<tr><td class="text-center">&THORN;</td><td class="text-left">Thorn (upper)</td><td class="text-left">&amp;THORN;</td></tr>
+								<tr><td colspan="3" height="2" style="background-color: black;"></td></tr>
+								<tr><td class="text-center">&uacute;</td><td class="text-left">u-acute;</td><td class="text-left">&amp;uacute;</td></tr>
+								<tr><td class="text-center">&Uacute;</td><td class="text-left">U-acute</td><td class="text-left">&amp;Uacute;</td></tr>
+								<tr><td class="text-center">&ugrave;</td><td class="text-left">u-grave</td><td class="text-left">&amp;ugrave;</td></tr>
+								<tr><td class="text-center">&umacr;</td><td class="text-left">u-macron</td><td class="text-left">&amp;umacr;</td></tr>
+								<tr><td class="text-center">&uogon;</td><td class="text-left">u-ogon</td><td class="text-left">&amp;uogon;</td></tr>
+								<tr><td class="text-center">&uring;</td><td class="text-left">u-ring</td><td class="text-left">&amp;uring;</td></tr>
+								<tr><td class="text-center">&uuml;</td><td class="text-left">u-umlaut</td><td class="text-left">&amp;uuml;</td></tr>
+								<tr><td class="text-center">&Uuml;</td><td class="text-left">U-umlaut</td><td class="text-left">&amp;Uuml;</td></tr>
+								<tr><td colspan="3" height="2" style="background-color: black;"></td></tr>
+								<tr><td class="text-center">&yacute;</td><td class="text-left">y-acute</td><td class="text-left">&amp;yacute;</td></tr>
+								<tr><td colspan="3" height="2" style="background-color: black;"></td></tr>
+								<tr><td class="text-center">&zacute;</td><td class="text-left">z-acute</td><td class="text-left">&amp;zacute;</td></tr>
+								<tr><td class="text-center">&zcaron;</td><td class="text-left">z-caron</td><td class="text-left">&amp;zcaron;</td></tr>
+								<tr><td class="text-center">&Zcaron;</td><td class="text-left">Z-caron</td><td class="text-left">&amp;Zcaron;</td></tr>
+								<tr><td class="text-center">&zdot;</td><td class="text-left">z-dot</td><td class="text-left">&amp;zdot;</td></tr>
+								</table>
+								</small>
 							</div>
 						</div>
 					</div>
