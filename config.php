@@ -473,8 +473,8 @@ foreach ($the_nats as $in_t) {
 							<?php print sizeof($Stats["countMajor"]["b"])." banded designs.<br/>\n"; ?>
 							<?php print sizeof($Stats["countMajor"]["h"])." hooped designs.<br/>\n"; ?>
 							<?php print sizeof($Stats["countMajor"]["o"])." offset designs.<br/>\n"; ?>
-							<?php print sizeof($Stats["countMajor"]["v"])." halved designs.<br/>\n"; ?>
 							<?php print sizeof($Stats["countMajor"]["d"])." sashed designs.<br/>\n"; ?>
+							<?php print sizeof($Stats["countMajor"]["v"])." halved designs.<br/>\n"; ?>
 							<?php print sizeof($Stats["countMajor"]["z"])." chequered designs.<br/>\n"; ?>
 						</p>
 						<p style="margin-top: 1rem;">
@@ -604,20 +604,6 @@ foreach ($the_nats as $in_t) {
 ?>
 				</div>
 				</div>
-				<h2 class="text-center"> Halved Styles (<?php print sizeof($Stats["countMajor"]["v"]); ?> total)</h2>
-				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
-				<div class="container-fluid p-4">
-<?php
-	$countMjX = array();
-	foreach ($Stats["countMajor"]["v"] as $S => $c) {
-		$the_key = strrev(substr($S, 2));
-		$countMjX[$the_key] = $c;
-	}
-	ksort($countMjX);
-	table($countMjX, 12, 'majorV');
-?>
-				</div>
-				</div>
 				<h2 class="text-center"> Sash Styles (<?php print sizeof($Stats["countMajor"]["d"]); ?> total)</h2>
 				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
 				<div class="container-fluid p-4">
@@ -631,6 +617,20 @@ foreach ($the_nats as $in_t) {
 	}
 	ksort($countMjX);
 	table($countMjX, 12, 'majorD');
+?>
+				</div>
+				</div>
+				<h2 class="text-center"> Halved Styles (<?php print sizeof($Stats["countMajor"]["v"]); ?> total)</h2>
+				<div class="d-flex justify-content-center clearfix my-3 darkSlate theCompBody">
+				<div class="container-fluid p-4">
+<?php
+	$countMjX = array();
+	foreach ($Stats["countMajor"]["v"] as $S => $c) {
+		$the_key = strrev(substr($S, 2));
+		$countMjX[$the_key] = $c;
+	}
+	ksort($countMjX);
+	table($countMjX, 12, 'majorV');
 ?>
 				</div>
 				</div>
