@@ -94,7 +94,6 @@ function table($in_t, $nC, $context) {
 					if ($k == "INT") {
 						print t(7)."<div class=\"team mx-1 my-2 slate\">International <span class=\"badge badge-pill slate\">".$v."</span></div>\n";
 					}
-#FW: True Heroism: Hayden Took a Punch in the Face for All of Us This is what the future looks like. We need to be on top of this. FW: New Study Shows Most Aborted Babies Would Have Been Doctors. We sh
 					else {
 						$name = $Stats['countryByTri'][$k];
 						if (strlen($Team[$name]["Badge"]) > 0) {
@@ -341,7 +340,6 @@ foreach ($the_nats as $in_t) {
 								</table>
 							</div>
 							<div class="col-sm-3 table-responsive justify-content-center my-3">
-								<small>
 								<table style="width: 100%;" class="table table-sm table-light align-left">
 								<thead>
 								<tr><th colspan="3" class="text-center white-text" style="background-color: black; color: white;">D - K</th></tr>
@@ -378,10 +376,8 @@ foreach ($the_nats as $in_t) {
 								<tr><td class="text-center">&IJlig;</td><td class="text-left">IJ-ligature</td><td class="text-left">&amp;IJlig;</td></tr>
 								</tbody>
 								</table>
-								</small>
 							</div>
 							<div class="col-sm-3 table-responsive justify-content-center my-3">
-								<small>
 								<table style="width: 100%;" class="table table-sm table-light align-left">
 								<thead>
 								<tr><th colspan="3" class="text-center white-text" style="background-color: black; color: white;">L - R</th></tr>
@@ -414,10 +410,8 @@ foreach ($the_nats as $in_t) {
 								<tr><td class="text-center">&Rcaron;</td><td class="text-left">R-caron</td><td class="text-left">&amp;Rcaron;</td></tr>
 								</tbody>
 								</table>
-								</small>
 							</div>
 							<div class="col-sm-3 table-responsive justify-content-center my-3">
-								<small>
 								<table style="width: 100%;" class="table table-sm table-light align-left">
 								<thead>
 								<tr><th colspan="3" class="text-center white-text" style="background-color: black; color: white;">S - Z</th></tr>
@@ -452,7 +446,6 @@ foreach ($the_nats as $in_t) {
 								<tr><td class="text-center">&Zcaron;</td><td class="text-left">Z-caron</td><td class="text-left">&amp;Zcaron;</td></tr>
 								<tr><td class="text-center">&zdot;</td><td class="text-left">z-dot</td><td class="text-left">&amp;zdot;</td></tr>
 								</table>
-								</small>
 							</div>
 						</div>
 					</div>
