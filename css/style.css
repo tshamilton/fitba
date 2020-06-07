@@ -122,7 +122,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .kq	{ color: #000000; background-color: #880000;}
 .kr	{ color: #000000; background-color: #ff0000;}
 .ks	{ color: #000000; background-color: #aaaaaa;}
-/*.kt	{ color: #000000; background-color: #d9ab4b;} */
+.kt	{ color: #000000; background-color: #d9ab4b;}
 .ku	{ color: #000000; background-color: #ffcc00;}
 .kw	{ color: #000000; background-color: #ffffff;}
 .ky	{ color: #000000; background-color: #fff00c;}
@@ -208,7 +208,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .wr	{ color: #ffffff; background-color: #ff0000;}
 .wu	{ color: #ffffff; background-color: #ffcc00;}
 .wv	{ color: #ffffff; background-color: #aa5533;}
-/*.wx { color: #ffffff; background-color: #660033;} */
+.wx { color: #ffffff; background-color: #660033;}
 .wz	{ color: #ffffff; background-color: #00ff00;}
 .xs	{ color: #660033; background-color: #aaaaaa;}
 .ya	{ color: #fff00c; background-color: #3366ff;}

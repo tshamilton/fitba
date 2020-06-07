@@ -92,8 +92,9 @@ function table($in_t, $nC, $context) {
 						$k = "NMK";
 					}
 					if ($k == "INT") {
-						print t(7)."<div class=\"team mx-1 my-2 slate\">International (".$v.")</div>\n";
+						print t(7)."<div class=\"team mx-1 my-2 slate\">International <span class=\"badge badge-pill slate\">".$v."</span></div>\n";
 					}
+#FW: True Heroism: Hayden Took a Punch in the Face for All of Us This is what the future looks like. We need to be on top of this. FW: New Study Shows Most Aborted Babies Would Have Been Doctors. We sh
 					else {
 						$name = $Stats['countryByTri'][$k];
 						if (strlen($Team[$name]["Badge"]) > 0) {
@@ -102,7 +103,7 @@ function table($in_t, $nC, $context) {
 						else {
 							$style = $Team[$name]["Mjr"];
 						}
-						print t(7)."<div class=\"team mx-1 my-2 ".$style."\">".$Team[$name]["Name"]." (".$v.") <img class=\"".substr($Team[$name]["Mnr"], 0, 1)." flag\" src=\"flags/".$k.".png\"></div>\n";
+						print t(7)."<div class=\"team mx-1 my-2 ".$style."\">".$Team[$name]["Name"]." <span style=\"text-shadow: none;\" class=\"badge badge-pill ".$Team[$name]["Mnr"]."\"><small>".$v."</small></span> <img class=\"".substr($Team[$name]["Mnr"], 0, 1)." flag\" src=\"flags/".$k.".png\"></div>\n";
 					}
 					break;
 				case "cNats":
@@ -304,7 +305,6 @@ foreach ($the_nats as $in_t) {
 					<div class="theContent grass p-2">
 						<div class="row">
 							<div class="col-sm-3 table-responsive justify-content-center my-3">
-								<small>
 								<table style="width: 100%;" class="table table-sm table-light align-left">
 								<thead>
 								<tr><th colspan="3" class="text-center white-text" style="background-color: black; color: white;">A - C</th></tr>
@@ -339,7 +339,6 @@ foreach ($the_nats as $in_t) {
 								<tr><td class="text-center">&Ccedil;</td><td class="text-left">C-cedilla</td><td class="text-left">&amp;Ccedil;</td></tr>
 								</tbody>
 								</table>
-								</small>
 							</div>
 							<div class="col-sm-3 table-responsive justify-content-center my-3">
 								<small>
