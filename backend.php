@@ -124,9 +124,9 @@ function doCompetitions($c, $n) { // Country trigram, News for Country
 	foreach ($oComp as $name => $orderVal) {
 		$cTitle = $Comp[$c]["Comps"][$name]["Name"];
 		$cType = $Comp[$c]["Comps"][$name]["Type"];
-		print t(5)."<h2 class=\"text-center\">".$cTitle."</h2> <!-- Competition container -->\n";
-		print t(5)."<div class=\"d-flex justify-content-center clearfix my-3 darkSlate theCompBody\">\n";
-		print t(6)."<div class=\"container-fluid p-4\">\n";
+		print t(5)."<h2 class=\"text-center display-4\">".$cTitle."</h2> <!-- Competition container -->\n";
+		print t(5)."<div class=\"d-flex justify-content-center clearfix my-3 nationFrame\">\n";
+		print t(6)."<div class=\"container-fluid p-4 grass nationFrame\">\n";
 		if ($cType == "L") {
 			$lad = doLadder($c, $name);
 			print $lad;
@@ -198,7 +198,6 @@ function doFlag($s, $c) { // Style (minor), Country (trig)
 }
 function doLadder ($c, $n) { // Country trigram, Competition Name
 	global $Team;
-	global $Comp;
 	global $Nations;
 	$_SESSION['T'] = $Team;
 	
@@ -216,6 +215,20 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 		$tBC_lt = $Team[$nat]["Lat"];
 		$tBC_ln = $Team[$nat]["Long"];
 	}
+
+	$map_link = "<a href=\"http://tshamilton.com/fitba/map_page.php?lat=".$tBC_lt."&lng=".$tBC_ln."&z=".$tBC_z."&t=t".$c."&n=".$n."\" style=\"color: inherit; text-decoration: inherit;\" target=\"_new\">Map</a>";
+
+	$table_header = t(7)."<div class=\"float-right col-6\">\n";
+	$table_header .= t(8)."<table class=\"text-center ladder\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">\n<thead>\n".t(9)."<tr>";
+	$table_header .= "<th><div class=\"rounded-tl darkSlate\">&nbsp;</div></th>"; //Team
+	$table_header .= "<th><div class=\"ldrHd\">Pl</div></th><th><div class=\"ldrHd\">W</div></th><th><div class=\"ldrHd\">D</div></th><th><div class=\"ldrHd\">L</div></th>"; //P W D L
+	$table_header .= "<th><div class=\"ldrHd\">GF</div></th><th><div class=\"ldrHd\">GA</div></th><th><div class=\"ldrHd\">GD</div></th>"; // GF GA GD
+	$table_header .= "<th><div class=\"ldrHd\">Pts</div></th><th><div class=\"rounded-tr darkSlate text-center\">".$map_link."</div></th></tr>\n"; // Pts Fate-Map
+	$table_header .= t(8)."</thead>\n";
+	$table_header .= t(8)."<tbody>\n";
+
+	$table_footer = t(8)."<tr><td><div class=\"rounded-bl darkSlate\">&nbsp;</div><td colspan=\"8\"><div class=\"darkSlate\">&nbsp;</div></td><td><div class=\"rounded-br darkSlate\">&nbsp;</div></td></tr>\n";
+	$table_footer .= t(8)."</tbody></table>\n".t(7)."</div>\n";
 
 	$fileN = "news/ladder/".$c.$n.".lad";
 
@@ -240,29 +253,29 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 				$fate = "";
 				if (sizeof($p) == 8) { array_push($p, "X"); }
 				switch ($p[8]) {
-					case "X":			$fate = "";					$style = "ldrdata";				break;
-					case "UCL":			$fate = "UCL";				$style = "ucl ldrdata";			break;
-					case "COPALIB":		$fate = "Copa Lib.";		$style = "ucl ldrdata";			break;
-					case "UCLQ":		$fate = "UCL Qual.";		$style = "uclqual ldrdata";		break;
-					case "COPALIBQ":	$fate = "Copa Lib Q";		$style = "uclqual ldrdata";		break;
-					case "EL":			$fate = "UEL";				$style = "eurolg ldrdata";		break;
-					case "ELQ":			$fate = "UEL Qual.";		$style = "eurolgqual ldrdata";	break;
-					case "COPASUD":		$fate = "Copa Sud. Qual.";	$style = "eurolg ldrdata";		break;
-					case "ELQP":		$fate = "UEL Playoffs";		$style = "eurolgqual ldrdata";	break;
-					case "PROMOTED":	$fate = "&uarr; ";			$style = "promotion ldrdata";	break;
-					case "QUAL":		$fate = "Qualified";		$style = "promotion ldrdata";	break;
-					case "FINALS":		$fate = "Finals";			$style = "promotion ldrdata";	break;
-					case "NEXTPOS":		$fate = "Playoffs";			$style = "uclqual ldrdata";		break;
-					case "RELEGATED":	$fate = "&darr; ";			$style = "relegation ldrdata";	break;
-					case "PRPLAYOFF":	$fate = "Prom. Playoff";	$style = "promotion ldrdata";	break;
-					case "RLPLAYOFF":	$fate = "Rel. Playoff";		$style = "relegation ldrdata";	break;
-					default:			$fate = $p[8];				$style = "unknown ldrdata";		break;
+					case "X":			$fate = "&nbsp;";			$style = "ldrData";				break;
+					case "UCL":			$fate = "UCL";				$style = "ucl ldrData";			break;
+					case "COPALIB":		$fate = "Copa Lib.";		$style = "ucl ldrData";			break;
+					case "UCLQ":		$fate = "UCL Qual.";		$style = "uclqual ldrData";		break;
+					case "COPALIBQ":	$fate = "Copa Lib Q";		$style = "uclqual ldrData";		break;
+					case "EL":			$fate = "UEL";				$style = "eurolg ldrData";		break;
+					case "ELQ":			$fate = "UEL Qual.";		$style = "eurolgqual ldrData";	break;
+					case "COPASUD":		$fate = "Copa Sud. Qual.";	$style = "eurolg ldrData";		break;
+					case "ELQP":		$fate = "UEL Playoffs";		$style = "eurolgqual ldrData";	break;
+					case "PROMOTED":	$fate = "&uarr; ";			$style = "promotion ldrData";	break;
+					case "QUAL":		$fate = "Qualified";		$style = "promotion ldrData";	break;
+					case "FINALS":		$fate = "Finals";			$style = "promotion ldrData";	break;
+					case "NEXTPOS":		$fate = "Playoffs";			$style = "uclqual ldrData";		break;
+					case "RELEGATED":	$fate = "&darr; ";			$style = "relegation ldrData";	break;
+					case "PRPLAYOFF":	$fate = "Prom. Playoff";	$style = "promotion ldrData";	break;
+					case "RLPLAYOFF":	$fate = "Rel. Playoff";		$style = "relegation ldrData";	break;
+					default:			$fate = $p[8];				$style = "unknown ldrData";		break;
 				}
-				$team = "<td class=\"ldrTeam\">".doTeam($p[0], $c, 'l')."</td>";
-				$games = "<td class=\"".$style."\">".$pl."</td><td class=\"".$style."\">".$p[1]."</td><td class=\"".$style."\">".$p[2]."</td><td class=\"".$style."\">".$p[3]."</td>";
-				$goals = "<td class=\"".$style."\">".$p[4]."</td><td class=\"".$style."\">".$p[5]."</td><td class=\"".$style."\">".$gd."</td>";
-				$pts_fate = "<td class=\"".$style."\"><b>".$p[6]."</b></td><td class=\"text-center ".$style."\">".$fate."</td>";
-				array_push($table_body, t(8)."<tr>".$team.$games.$goals.$pts_fate."</tr>\n");
+				$team = "<td><div style=\"padding: 2px;\">".doTeam($p[0], $c, 'l')."</div></td>";
+				$games = "<td><div class=\"".$style."\">".$pl."</div></td><td><div class=\"".$style."\">".$p[1]."</div></td><td><div class=\"".$style."\">".$p[2]."</div></td><td><div class=\"".$style."\">".$p[3]."</div></td>";
+				$goals = "<td><div class=\"".$style."\">".$p[4]."</div></td><td><div class=\"".$style."\">".$p[5]."</div></td><td><div class=\"".$style."\">".$gd."</div></td>";
+				$pts_fate = "<td><div class=\"".$style."\"><b>".$p[6]."</b></div></td><td><div class=\"text-center ".$style."\">".$fate."</div></td>";
+				array_push($table_body, t(8)."<tr class=\"darkSlate\">".$team.$games.$goals.$pts_fate."</tr>\n");
 			}
 		}
 		$maxLt = max($points_Lt);
@@ -271,11 +284,6 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 		$minLn = min($points_Ln);
 		$tBC_lt = $minLt + (($maxLt - $minLt) / 2);
 		$tBC_ln = $minLn + (($maxLn - $minLn) / 2);
-		$map_link = "<a href=\"http://tshamilton.com/fitba/map_page.php?lat=".$tBC_lt."&lng=".$tBC_ln."&z=".$tBC_z."&t=t".$c."&n=".$n."\" target=\"_new\"><i class=\"material-icons\">map</i></a>";
-		$table_header = t(7)."<div class=\"float-right col-6\">\n";
-		$table_header .= t(8)."<table class=\"ladder table table-sm align-middle\"><tbody>\n";
-		$table_header .= t(8)."<tr><th>&nbsp;</th><th class=\"lStat\">Pl</th><th class=\"lStat\">W</th><th class=\"lStat\">D</th><th class=\"lStat\">L</th><th class=\"lStat\">GF</th><th class=\"lStat\">GA</th><th class=\"lStat\">GD</th><th class=\"lStat\">Pts</th><th>".$map_link."</th></tr>\n";
-		$table_footer = t(8)."</tbody></table>\n".t(7)."</div>\n";
 		$table_body_string = join("", $table_body);
 		return $table_header.$table_body_string.$table_footer;
 	}
@@ -303,9 +311,13 @@ function doMatch($match, $c, $t) { //Match, Country, Type
 
 	# Row 1 -> Time, Stage and Status
 	$theTime = "<td colspan=\"8\">".doMatchTime($m[6], $hCol)."</td>";
-	$theStage = "<td colspan=\"4\">".doMatchStage($m[5], $hCol)."</td>";
-	$theStatus = "<td colspan=\"8\">".doMatchStatus($m[7], $hCol)."</td>";
+	$theStage = "<td colspan=\"4\">".doMatchStatus($m[7], $hCol)."</td>";
+	$theStatus = "<td colspan=\"8\">".doMatchStage($m[5], $hCol)."</td>";
 	print t(8)."<tr>".$theTime.$theStage.$theStatus."</tr>\n";
+
+	if (preg_match("/unknown/", $theStatus)) {
+		missing("Status -> ".$theStatus." : ".$m[1]." vs ".$m[4]);
+	}
 
 	# Row 2 -> Venue
 	if ($m[13] != "") {	$theVenue = doMatchVenue($m[13], $hCol);	print t(8)."<tr><td colspan=\"20\">".$theVenue."</td></tr>\n";	}
@@ -352,8 +364,8 @@ function doCoaches($mgrs, $h, $a) {
 	if (strlen($mh[1]) > 2) { $mhf = doFlag(substr($h, 0, 1), $mh[1]); } else { $mhf = ""; }
 	if (strlen($ma[1]) > 2) { $maf = doFlag(substr($a, 0, 1), $ma[1]); } else { $maf = ""; }
 
-	$rh = "<div class=\"matchCoach ".$h."\">".$mhf." ".$mh[0]."</div>";
-	$ra = "<div class=\"matchCoach ".$a."\">".$ma[0]." ".$maf."</div>";
+	$rh = "<div class=\"text-center rounded-bl ".$h."\">".$mhf." ".$mh[0]."</div>";
+	$ra = "<div class=\"text-center rounded-br ".$a."\">".$ma[0]." ".$maf."</div>";
 
 	return array($rh, $ra);
 }
@@ -366,16 +378,16 @@ function doMatchStage($stage, $s) { //stage, style
 	elseif	($stage == "bronze")	{	$stage = "3rd Place Match";		}
 	elseif	($stage == "final")		{	$stage = "The Final";			}
 	else							{	$stage = "Matchday ".$stage;	}
-	return "<div class=\"matchStage ".$s."\">".$stage."</div>";
+	return "<div class=\"matchStage rounded-tr ".$s."\">".$stage."</div>";
 }
 function doMatchStatus($st, $s) { //status, style
-	return "<div class=\"pr-2 matchStatus ".$s."\">".MakeStatus($st)."</div>";
+	return "<div class=\"pr-2 text-center matchStatus ".$s."\">".MakeStatus($st)."</div>";
 }
 function doMatchTime($mt, $s) { //match time, home team minor style
-	return "<div class=\"pl-2 matchTime ".$s."\">".$mt."</div>";
+	return "<div class=\"pl-2 text-right rounded-tl matchTime ".$s."\">".$mt."</div>";
 }
 function doMatchVenue($v, $s) { // venue, style
-	return "<div class=\"matchVenue ".$s."\">".$v."</div>";
+	return "<div class=\"matchVenue text-center ".$s."\">".$v."</div>";
 }
 function doNations($n) { // news
 	global $Team;
@@ -393,17 +405,16 @@ function doNations($n) { // news
 			$cStyle = $Team[$Comp[$c]["ID"]]["Mjr"];
 			$flag = " <img class=\"".substr($Team[$Comp[$c]["ID"]]["Mnr"], 0, 1)."\" src=\"flags/large/".$c.".png\">";
 		}
-		print t(3)."<div role=\"tabpanel\" class=\"tab-pane container-fluid fade theNation ".$cStyle."\" id=\"".$c."\" name=\"".$c."\"> <!--National container -->\n";
-		print t(3)."<!-- Style: '".$cStyle."' -->\n";
+		print t(3)."<div role=\"tabpanel\" class=\"tab-pane container-fluid fade mx-2 px-4 pt-4 nationFrame ".$cStyle."\" id=\"".$c."\" name=\"".$c."\"> <!--National container -->\n";
 		print t(4)."<div class=\"container-fluid\">\n";
-		print t(5)."<h1 class=\"text-center\">".$flag." ".$cTitle."</h1>\n";
+		print t(5)."<h1 class=\"display-3\">".$flag." ".$cTitle."</h1>\n";
 		doCompetitions($c, $n);
 		print t(4)."</div>\n";
 		print t(3)."</div>\n";	  
 	}
 }
 function doScore($sc, $s) { // score, style
-	return "<div><b> ".$sc." </b></div>";
+	return "<div class=\"score\"><b> ".$sc." </b></div>";
 }
 function doTabs($tabs) {
 	global $Nations;
@@ -412,7 +423,7 @@ function doTabs($tabs) {
 
 	foreach ($tabs as $t => $v) {
 		if ($t == "INT") {
-			print t(4)."<li class=\"nav-item slate\"><a role=\"nav-link\" data-toggle=\"pill\" style=\"color:inherit; text-decoration: inherit;\" href=\"#INT\"> International </a></li>\n";
+			print t(4)."<li class=\"nav-item slate\"><a role=\"nav-link\" class=\"nav-link\" data-toggle=\"pill\" style=\"color:inherit; text-decoration: inherit;\" href=\"#INT\"> International </a></li>\n";
 		}
 		else {
 			if ($t == "MKD") {
@@ -420,7 +431,7 @@ function doTabs($tabs) {
 			}
 			print "<!-- ".$t." -->\n";
 			$n = $Nations[$t];
-			print t(4)."<li class=\"nav-item ".$Team[$n]["Mjr"]."\"><a role=\"nav-link\" data-toggle=\"pill\" href=\"#".$t."\">".doFlag(substr($Team[$n]["Mjr"], 2, 1), $t)." ".$Team[$n]["Name"]."</a></li>\n";
+			print t(4)."<li class=\"nav-item ".$Team[$n]["Mjr"]."\"><a role=\"nav-link\" class=\"nav-link\" data-toggle=\"pill\" href=\"#".$t."\">".doFlag(substr($Team[$n]["Mjr"], 2, 1), $t)." ".$Team[$n]["Name"]."</a></li>\n";
 		}
 	}
 }
@@ -561,7 +572,7 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		return array("<div class=\"m-2 team ".$tStyle."\">".$tName."</div>", $mnr);
 	}
 	else {
-		return "<div class=\"m-2 team ".$tStyle."\">".$tName."</div>";
+		return "<div class=\"ldrTeam ".$tStyle."\">".$tName."</div>";
 	}
 }
 function doTrivia ($triv, $h) {
@@ -581,11 +592,11 @@ function doTrivia ($triv, $h) {
 function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event, s for sub)
 	$blank = "<td colspan=\"9\">&nbsp;</td>";
 	$goal = "<span class=\"goal\">&#9917;</span>";
-	$yellow = "<img src=\"image/yellow.gif\">";
-	$yellow2 = "<img src=\"image/yellow-red.gif\">";
-	$red = "<img src=\"image/red.gif\">";
-	$off = "<span class=\"suboff\">&#8603;</span>";
-	$on = "<span class=\"subon\">&#8602;</span>";
+	$yellow = "<span class=\"badge badge-warning\">YC</span>";
+	$yellow2 = "<span class=\"badge badge-warning\">YC</span><span class=\"badge badge-warning k\">YC</span>";
+	$red = "<span class=\"badge badge-danger\">RC</span>";
+	$off = "<span class=\"badge badge-danger\">Off</span>";
+	$on = "<span class=\"badge badge-success\">On</span>";
 
 	$rv = $e;
 	$ev = explode("~", $e);
@@ -656,11 +667,11 @@ function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event,
 	}
 	elseif ($s == "s") {
 		if ($ev[1] == "a") {
-			$aEv = "<div class=\"px-2 awayevent ".$a."\">".$ev[2]." <span class=\"subon\">&#8602;</span> <div class=\"float-right\"><span class=\"suboff\">&#8603;</span> ".$ev[3]."</div> </div>";
+			$aEv = "<div class=\"px-2 awayevent ".$a."\">".$ev[2]." ".$on." <div class=\"float-right\">".$off." ".$ev[3]."</div> </div>";
 			$rv = $blank."<td colspan=\"2\"><div class=\"atimeevent ".$a."\">".$ev[0]."</div></td><td colspan=\"9\">".$aEv."</td>";
 		}
 		elseif ($ev[1] == "h") {
-			$hEv = "<div class=\"px-2 homeevent ".$h."\"><div class=\"float-left\">".$ev[3]." <span class=\"suboff\">&#8603;</span></div> <span class=\"subon\">&#8602;</span> ".$ev[2]."</div>";
+			$hEv = "<div class=\"px-2 homeevent ".$h."\"><div class=\"float-left\">".$ev[3]." ".$off."</div> ".$on." ".$ev[2]."</div>";
 			$rv = "<td colspan=\"9\">".$hEv."</td><td colspan=\"2\"><div class=\"htimeevent ".$h."\">".$ev[0]."</div></td></td>".$blank;
 		}
 	}
@@ -671,21 +682,21 @@ function MakeStatus($s) {
 	$st = explode("-", $s);
 	if 		($st[0] == "F") {
 		if 		($st[1] == 5)	{ return "Postponed"; }
-		elseif	($st[1] == 6)	{ return "Full Time"; }
-		elseif	($st[1] == 11)	{ return "After Extra Time"; }
-		elseif	($st[1] == 13)	{ return "After Penalties"; }
-		elseif	($st[1] == 17)	{ return "Abandoned"; }
+		elseif	($st[1] == 6)	{ return "<b>Full Time</b>"; }
+		elseif	($st[1] == 11)	{ return "<b>After Extra Time</b>"; }
+		elseif	($st[1] == 13)	{ return "<b>After Penalties</b>"; }
+		elseif	($st[1] == 17)	{ return "<b>Abandoned</b>"; }
 		elseif	($st[1] == 93)	{ return "Resume Postponed Match"; }
 		elseif	($st[1] == 106)	{ return "Cancelled"; }
-		else					{ missing("S:".$s); return "Status unknown (".$s.")"; }
+		else					{ return "Status unknown (".$s.")"; }
 	}
 	elseif	($st[0] == "N") {
 		if 		($st[1] == 1) 	{ return "Not started"; }
-		else					{ missing("S:".$s); return "Status unknown (".$s.")"; }
+		else					{ return "Status unknown (".$s.")"; }
 	}
 	elseif	($st[0] == "P") {
 		if		($st[1] == 5)	{ return "Postponed"; }
-		else					{ missing("S:".$s); return "Status unknown (".$s.")"; }
+		else					{ return "Status unknown (".$s.")"; }
 	}
 	elseif	($st[0] == "S") {
 		if		($st[1] == 2)	{ return "First Half"; }
@@ -694,12 +705,12 @@ function MakeStatus($s) {
 		elseif	($st[1] == 8)	{ return "Extra Time Break"; }
 		elseif	($st[1] == 9)	{ return "Extra Time"; }
 		elseif	($st[1] == 10)	{ return "Half Time"; }
-		elseif	($st[1] == 13)	{ return "After Penalties"; }
+		elseif	($st[1] == 13)	{ return "<b>After Penalties</b>"; }
 		elseif	($st[1] == 17)	{ return "Abandoned"; }
 		elseif	($st[1] == 18)	{ return "Kick-Off"; }
 		elseif	($st[1] == 106)	{ return "Cancelled"; }
-		elseif	($st[1] == 190)	{ return "Full Time"; }
-		else					{ missing("S:".$s); return "Status unknown ".$st[0]." - ".$st[1]; }
+		elseif	($st[1] == 190)	{ return "<b>Full Time</b>"; }
+		else					{ return "Status unknown ".$st[0]." - ".$st[1]; }
 	}
 	else {
 		missing("S:".$s);

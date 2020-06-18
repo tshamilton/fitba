@@ -1,55 +1,52 @@
-.nav-tabs { border-bottom: 2px solid #dddddd; }
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
-.nav-tabs > li > a { border: none; text-decoration: none; font-weight: bold; }
-.nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; background: transparent; }
-/*.nav-tabs > li > a::after { content: ""; background: #4285F4; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }*/
-.nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
-.tab-nav > li > a::after { none repeat scroll 0% 0%; }
-.tab-content { padding: 20px; }
-.tab-pane { padding: 15px 0; }
-
-li { padding: 5px 10px 5px 10px; margin: 2px 3px 2px 3px; border-radius: 0.5rem; font-weight: bold; }
-li > a { text-decoration: none; color: inherit !important; }
-li > a:hover { text-decoration: none; color: inherit !important; }
-a, a:hover   { text-decoration: none; color: inherit !important; }
-
 body {
     background-color: #cccccc;
     /*background-image: url("../image/grass.png");*/
     font-family: 'Montserrat', 'Segoe UI', 'Calibri', 'Verdana', 'Helvetica Neue', sans-serif;
 	font-size: 0.875rem !important;
 }
-h1, h2, h3 {
-    font-weight: bold;
-    text-align: center;
-}
-ul {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-top: 0.5rem;
-    padding-bottom: 0.25rem;
-}
-.table td, .table th {
-    padding: 0.1rem;
-    text-align: right;
-    vertical-align: middle;
-    background-color: #aaaaaa;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-    text-align: right;
+h1 {	margin-bottom: 10px; text-align: center; }
+h2 {	margin-bottom: 6px; text-align: center; }
+
+.rounded-tl {    border-top-left-radius: 1rem; }
+.rounded-tr {    border-top-right-radius: 1rem; }
+.rounded-bl {    border-bottom-left-radius: 1rem; }
+.rounded-br {    border-bottom-right-radius: 1rem; }
+
+.gauze {
+	background-color: rgba(238,238,238,0.6);
 }
 
-/*
-	Relating to competition table
-*/
-.ladder {
-    padding: 0;
-    background-color: #666666;
+/* This CSS makes sure the nav tabs don't change background or text-colour. */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link { color: inherit; border: none; background: transparent; }
+.nav-item > a { color: inherit; text-decoration: inherit; }
+
+/* Navbar styling */
+.nav { margin-top: 4px; margin-bottom: 5px; }
+.nav-item {	margin: 0px 2px 2px 2px; border-radius: 0.5rem; }
+.nav-link {	font-weight: bold; margin: 0px 2px 2px 2px; padding: 3px 6px 3px 6px; }
+
+.nationFrame {
+	border-radius: 1.5rem;
 }
-.ldrdata {
-    text-align: right;
-    padding: 0 !important;
-    margin: 0;
+
+/* Styles for ladders */
+.ladder {
+	margin-bottom: 10px;
+}
+.ldrHd {
+	background-color: #888888;
+	text-align: right;
+	padding-right: 2px;
+}
+.ldrTeam {
+	border-radius: 1.0rem;
+	font-weight: bold;
+}
+.ldrData {
+	text-align: right;
+	padding: 2px;
+	min-width: 1.8rem;
+	background-color: #888888;
 }
 .promotion {
     background-color: #98fb98 !important;
@@ -80,35 +77,8 @@ ul {
 	background-color: #79baec !important;
 	border-bottom: #00aaff solid 1px;
 }
-.ladder tr {
-	line-height: 1.2rem;
-}
-.lStat {
-	max-width: 1.7rem;
-}
-.ldrTeam {
-	max-width: 305px;
-}
-.theTabBody {
-    background-color: #bbbbbb;
-}
-.theBody {
-    background-color: #bbbbbb;
-    padding-top: 100px;
-}
-.theCompBody {
-	border-radius: 1.5rem;
-	text-shadow: 0px 0px !important;
-}
-.theNation {
-	border-radius: 1.5rem;
-}
-.theSection {
-    border-radius: 1.5rem;
-}
-.theContent {
-    border-radius: 1.0rem;
-}
+
+/* Styles for team displays */
 .team {
     text-align: center;
     font-weight: bold;
@@ -116,6 +86,20 @@ ul {
     font-size: 0.9625rem;
     margin: 0.2rem !important;
 }
+
+/* Styles for matches */
+/*.badge {
+	display: inline-block;
+    padding: .25em .4em;
+    font-size: 60%;
+    font-weight: 600;
+    line-height: 0.7;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}*/
 .score {
     font-weight: bold;
     text-align: center;
@@ -125,71 +109,27 @@ ul {
 .homeevent {
     text-align: right;
     border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+	padding-bottom: 1px;
+	padding-top: 1px;
 }
 .awayevent {
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
+	padding-bottom: 1px;
+	padding-top: 1px;
 }
 .htimeevent {
     text-align: center;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
+	padding-bottom: 1px;
+	padding-top: 1px;
 }
 .atimeevent {
     text-align: center;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
+	padding-bottom: 1px;
+	padding-top: 1px;
 }
-.matchAggregate {
-    font-weight: bold;
-}
-.matchBottom {
-    height: 1rem;
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-}
-.matchTime {
-    text-align: left;
-    border-top-left-radius: 0.5rem;
-}
-.matchStatus {
-    text-align: right;
-    border-top-right-radius: 0.5rem;
-}
-.matchStage {
-    text-align: center;
-}
-.matchCoach {
-    text-align: center;
-}
-.matchTrivia {
-	text-align: left;
-	padding-left: 5px;
-}
-.matchVenue {
-    text-align: center;
-}
-.matchFrame {
-    font-size: 0.8rem;
-}
-.subon {
-    font-weight: bold;
-    color: #00aa00;
-    text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;
-}
-.suboff {
-    font-weight: bold;
-    color: #cc0000;
-    text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;
-}
-.lgFlag {
-	border: 1px solid;
-}
-.MSS > a {
-    color: #333333;
-}
-.showMeR {    border: 1px dashed red; }
-.showMeK {    border: 1px dashed black; }
-.showMeM {    border: 1px dashed magenta; }
-.showMeC {    border: 1px dashed cyan; }
