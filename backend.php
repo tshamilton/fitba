@@ -245,8 +245,6 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 				elseif ($p[1] == "SupportersShield")	{	$p[1] = "Supporter's Shield";	array_push($table_body, t(8)."<tr><th colspan='10' class=\"text-center py-2\">".$p[1]."</th></tr>\n");	}
 			}
 			else {
-				array_push($points_Ln, $Team[$p[0]]["Long"]);
-				array_push($points_Lt, $Team[$p[0]]["Lat"]);
 				#   0   1 2 3 4 5 6 7   8
 				#canada|1|0|0|1|0|3|D|QUAL
 				$pl = $p[1]+$p[2]+$p[3];
@@ -276,7 +274,10 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 					case "RLPLAYOFF":	$fate = "Rel. Playoff";		$style = "relegation ldrData";	break;
 					default:			$fate = $p[8];				$style = "unknown ldrData";		break;
 				}
-				$team = "<td><div style=\"padding: 2px;\">".doTeam($p[0], $c, 'l')."</div></td>";
+				list($tm, $tnm) = doTeam($p[0], $c, 'l');
+				array_push($points_Ln, $Team[$tnm]["Long"]);
+				array_push($points_Lt, $Team[$tnm]["Lat"]);
+				$team = "<td><div style=\"padding: 2px;\">".$tm."</div></td>";
 				$games = "<td><div class=\"".$style."\">".$pl."</div></td><td><div class=\"".$style."\">".$p[1]."</div></td><td><div class=\"".$style."\">".$p[2]."</div></td><td><div class=\"".$style."\">".$p[3]."</div></td>";
 				$goals = "<td><div class=\"".$style."\">".$p[4]."</div></td><td><div class=\"".$style."\">".$p[5]."</div></td><td><div class=\"".$style."\">".$gd."</div></td>";
 				$pts_fate = "<td><div class=\"".$style."\"><b>".$p[6]."</b></div></td><td><div class=\"text-center ".$style."\">".$fate."</div></td>";
@@ -328,13 +329,21 @@ function doMatch($match, $c, $t) { //Match, Country, Type
 	}
 
 	# Row 2 -> Venue
-	if ($m[13] != "") {	$theVenue = doMatchVenue($m[13], $hCol);	print t(8)."<tr><td colspan=\"20\">".$theVenue."</td></tr>\n";	}
+	if ($m[13] != "") {
+		$theVenue = doMatchVenue($m[13], $hCol);
+		print t(8)."<tr><td colspan=\"20\">".$theVenue."</td></tr>\n";
+	}
 
 	# Row 3 -> Teams and score
-	$theHScore = doScore($m[2], $hCol);
-	$theAScore = doScore($m[3], $aCol);
-	$theScore = "<td colspan=\"2\"><div class=\"m-2 score ".$hCol."\">".$theHScore."</div></td><td colspan=\"2\"><div class=\"m-2 score ".$aCol."\">".$theAScore."</div></td>";
-	print t(8)."<tr><td colspan=\"8\">".$theHTeam."</td>".$theScore."<td colspan=\"8\">".$theATeam."</td></tr>\n";
+	if ($m[7] != "N-1" && $m[7] != "F-5" && $m[7] != "P-5") {
+		$theHScore = doScore($m[2], $hCol);
+		$theAScore = doScore($m[3], $aCol);
+		$theScore = "<td colspan=\"2\"><div class=\"m-2 score ".$hCol."\">".$theHScore."</div></td><td colspan=\"2\"><div class=\"m-2 score ".$aCol."\">".$theAScore."</div></td>";
+		print t(8)."<tr><td colspan=\"8\">".$theHTeam."</td>".$theScore."<td colspan=\"8\">".$theATeam."</td></tr>\n";
+	}
+	else {
+		print t(8)."<tr><td colspan=\"10\">".$theHTeam."</td><td colspan=\"10\">".$theATeam."</td><td></td></tr>\n";
+	}
 
 	# Row 4 -> Spacer row
 	print t(8)."<tr>"; for ($x = 0; $x < 20; $x++) { print "<td width=\"5%\"></td>"; } print "</td></tr>\n";
@@ -356,8 +365,11 @@ function doMatch($match, $c, $t) { //Match, Country, Type
 	}
 
 	# Row 8 -> Facts
-	if ($m[16] != "" && $m[5] == "N-1") { // Only do trivia if game is in "Not started" status.
-		print t(8)."<tr><td colspan=\"20\">".doTrivia($m[16], $hCol)."</td></tr>";
+	if ($m[16] != "" && ($m[7] == "N-1" || $m[7] == "F-5" || $m[7] == "P-5")) { // Only do trivia if game is in "Not started" status.
+		print t(8)."<!-- R8 --><tr><td colspan=\"20\">".doTrivia($m[16], $hCol)."</td></tr>";
+	}
+	else {
+		print t(8)."<!-- Juice: ".$m[7]." -->\n";
 	}
 
 	# Row 9 -> bottom Spacer
@@ -437,7 +449,6 @@ function doTabs($tabs) {
 			if ($t == "MKD") {
 				$t = "NMK";
 			}
-			print "<!-- ".$t." -->\n";
 			$n = $Nations[$t];
 			print t(4)."<li class=\"nav-item ".$Team[$n]["Mjr"]."\"><a role=\"nav-link\" class=\"nav-link\" data-toggle=\"pill\" href=\"#".$t."\">".doFlag(substr($Team[$n]["Mjr"], 2, 1), $t)." ".$Team[$n]["Name"]."</a></li>\n";
 		}
@@ -449,6 +460,7 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 	$tName = "";
 	$tStyle = "";
 	$tIdent = "";
+	$trueName = "";
 
 	if (array_key_exists($t, $Team)) {
 		$tIdent = $t;
@@ -456,6 +468,7 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		$tStyle = $Team[$tIdent]["Badge"] != "" ? $Team[$tIdent]["Badge"] : $Team[$tIdent]["Mjr"];
 		$Flag = doFlag(substr($Team[$tIdent]["Mjr"], 2, 1), $Team[$tIdent]["Tri"]);
 		$mnr = $Team[$tIdent]["Mnr"];
+		$trueName = $t;
 	}
 	elseif ((preg_match("/fcw$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
 		$status = "women";
@@ -464,6 +477,7 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		$tName = $Team[$tIdent]["Name"]." <b>&#9792;</b>";
 		$Flag = doFlag(substr($Team[$tIdent]["Mjr"], 2, 1), $Team[$tIdent]["Tri"]);
 		$mnr = $Team[$tIdent]["Mnr"];
+		$trueName = substr($t, 0, -1);
 	}
 	elseif ((preg_match("/qw$/", $t)) && (array_key_exists(substr($t, 0, -2), $Team))) {
 		$status = "women";
@@ -471,6 +485,7 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		$tStyle = $Team[$tIdent]["Mjr"];
 		$tName = $Team[$tIdent]["Name"]." II";
 		$mnr = $Team[$tIdent]["Mnr"];
+		$trueName = substr($t, 0, -2);
 	}
 	elseif ((preg_match("/w$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
 		$status = "women";
@@ -479,6 +494,7 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		$tName = $Team[$tIdent]["Name"]." <b>&#9792;</b>";
 		$Flag = doFlag(substr($Team[$tIdent]["Mjr"], 2, 1), $Team[$tIdent]["Tri"]);
 		$mnr = $Team[$tIdent]["Mnr"];
+		$trueName = substr($t, 0, -1);
 	}
 	elseif ((preg_match("/q$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
 		$status = "women";
@@ -487,6 +503,7 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		$tName = $Team[$tIdent]["Name"]." <b>&#9792;</b>";
 		$Flag = doFlag(substr($Team[$tIdent]["Mjr"], 2, 1), $Team[$tIdent]["Tri"]);
 		$mnr = $Team[$tIdent]["Mnr"];
+		$trueName = substr($t, 0, -1);
 	}
 	elseif ((preg_match("/a$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
 		$status = "a-side";
@@ -495,6 +512,7 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		$tName = $Team[$tIdent]["Name"]." 'A'";
 		$Flag = doFlag(substr($Team[$tIdent]["Mjr"], 2, 1), $Team[$tIdent]["Tri"]);
 		$mnr = $Team[$tIdent]["Mnr"];
+		$trueName = substr($t, 0, -1);
 	}
 	elseif ((preg_match("/b$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
 		$status = "b-side";
@@ -503,6 +521,7 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		$tName = $Team[$tIdent]["Name"]." 'B'";
 		$Flag = doFlag(substr($Team[$tIdent]["Mjr"], 2, 1), $Team[$tIdent]["Tri"]);
 		$mnr = $Team[$tIdent]["Mnr"];
+		$trueName = substr($t, 0, -1);
 	}
 	elseif ((preg_match("/2$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
 		$status = "2-side";
@@ -511,6 +530,7 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		$tName = $Team[$tIdent]["Name"]." 2";
 		$Flag = doFlag(substr($Team[$tIdent]["Mjr"], 2, 1), $Team[$tIdent]["Tri"]);
 		$mnr = $Team[$tIdent]["Mnr"];
+		$trueName = substr($t, 0, -1);
 	}
 	elseif ((preg_match("/3$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
 		$status = "3-side";
@@ -519,6 +539,7 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		$tName = $Team[$tIdent]["Name"]." 3";
 		$Flag = doFlag(substr($Team[$tIdent]["Mjr"], 2, 1), $Team[$tIdent]["Tri"]);
 		$mnr = $Team[$tIdent]["Mnr"];
+		$trueName = substr($t, 0, -1);
 	}
 	elseif ((preg_match("/ii$/", $t)) && (array_key_exists(substr($t, 0, -2), $Team))) {
 		$status = "ii-side";
@@ -526,6 +547,7 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		$tStyle = $Team[$tIdent]["Mjr"];
 		$tName = $Team[$tIdent]["Name"]." II";
 		$mnr = $Team[$tIdent]["Mnr"];
+		$trueName = substr($t, 0, -2);
 	}
 	elseif ((preg_match("/fc$/", $t)) && (array_key_exists(substr($t, 0, -2), $Team))) {
 		$status = "fc-side";
@@ -533,6 +555,7 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		$tStyle = $Team[$tIdent]["Mjr"];
 		$tName = $Team[$tIdent]["Name"]." II";
 		$mnr = $Team[$tIdent]["Mnr"];
+		$trueName = substr($t, 0, -2);
 	}
 	elseif ((preg_match("/^jong/", $t)) && (array_key_exists(substr($t, 4), $Team))) {
 		$status = "jong";
@@ -540,6 +563,7 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		$tStyle = $Team[$tIdent]["Mjr"];
 		$tName = "Jong ".$Team[$tIdent]["Name"];
 		$mnr = $Team[$tIdent]["Mnr"];
+		$trueName = substr($t, 4);
 	}
 	elseif ((preg_match("/academy$/", $t)) && (array_key_exists(substr($t, 0, -7), $Team))) {
 		$status = "academy";
@@ -547,6 +571,7 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		$tStyle = $Team[$tIdent]["Mjr"];
 		$tName = $Team[$tIdent]["Name"]." Academy";
 		$mnr = $Team[$tIdent]["Mnr"];
+		$trueName = substr($t, 0, -7);
 	}
 	elseif ((preg_match("/primavera$/", $t)) && (array_key_exists(substr($t, 0, -9), $Team))) {
 		$status = "primavera";
@@ -554,6 +579,7 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		$tStyle = $Team[$tIdent]["Mjr"];
 		$tName = $Team[$tIdent]["Name"]." Primavera";
 		$mnr = $Team[$tIdent]["Mnr"];
+		$trueName = substr($t, 0, -9);
 	}
 	elseif ((preg_match("/u(\d{2})$/", $t, $age)) && (array_key_exists(substr($t, 0, -3), $Team))) {
 		$status = "agelimit";
@@ -562,6 +588,7 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		$Flag = doFlag(substr($Team[$tIdent]["Mjr"], 2, 1), $Team[$tIdent]["Tri"]);
 		$tName = $Team[$tIdent]["Name"]." Under-".$age[1];
 		$mnr = $Team[$tIdent]["Mnr"];
+		$trueName = substr($t, 0, -3);
 	}
 	else {
 		$tIdent = $t;
@@ -569,6 +596,7 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		$tStyle = "";
 		$Flag = "";
 		$mnr = "darkSlate";
+		$trueName = $t;
 		missing("T:".$c.":".$t);
 	}
 
@@ -580,7 +608,8 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 		return array("<div class=\"m-2 team ".$tStyle."\">".$tName."</div>", $mnr);
 	}
 	else {
-		return "<div class=\"ldrTeam ".$tStyle."\">".$tName."</div>";
+		$rt = "<div class=\"ldrTeam ".$tStyle."\">".$tName."</div>";
+		return array( $rt, $trueName );
 	}
 }
 function doTrivia ($triv, $h) {
