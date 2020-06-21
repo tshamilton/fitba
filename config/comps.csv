@@ -55,7 +55,7 @@ L,bundesligarelegationgroup,12,Bundesliga Relegation Group,
 L,bundesligaeuropaleagueplayoff,12,Bundesliga EL Playoff,
 L,2liga,20,2. Liga,
 C,cup,100,&Ouml;FB-Cup,
-N,AZE,Azerbaijan,790,azerbaijan
+N,AZE,Azerbaijan,820,azerbaijan
 L,premierleague,10,Premyer Liqa,
 N,BLR,Belarus,450,belarus
 C,supercup,1,Supercup,
@@ -74,7 +74,7 @@ L,firstdivisionb1ststage,20,First Division B 1st Stage,
 C,firstdivisionbpromotionplayoff,21,First Division B Promotion Playoff,
 L,firstdivisionbrelegationgroup,22,First Division B Relegation Group,
 C,cup,100,Belgian Cup,
-N,BOL,Bolivia,730,bolivia
+N,BOL,Bolivia,760,bolivia
 L,primeradivisionclausura,10,Liga Nacional Clausura,
 L,primeradivisionapertura,10,Liga Nacional Apertura,
 C,primeradivisionclausuraadecuacion,10,Liga Nacional Clausura Adecuaci&oacute;n,
@@ -203,17 +203,17 @@ L,2divisiongrp3,32,2. Division Group 3,
 L,2divisionpromotiongroup,25,2. Division Promotion Group,
 L,2divisionrelegationgroup,26,2. Division Relegation Group,
 C,dbupokalen,100,DBU Pokalen,
-N,ECU,Ecuador,720,ecuador
+N,ECU,Ecuador,750,ecuador
 L,seriea,10,Serie A,
 L,serieafirststage,10,Series A (1st Stage),
 L,serieaapertura,10,Serie A Apertura,
 L,serieaclausura,10,Serie A Clausura,
 C,serieacopasudamericanaplayoff,11,Serie A Copa Sudamericana Playoff,
 C,serieafinalstage,12,Serie A Finals,
-N,EGY,Egypt,760,egypt
+N,EGY,Egypt,790,egypt
 L,premierleague,10,Premier League,
 C,cup,100,Egypt FA Cup,
-N,SLV,El Salvador,750,elsalvador
+N,SLV,El Salvador,780,elsalvador
 L,primeradivisionapertura,10,Primera Divisi&oacute;n - Apertura,
 L,primeradivisionclausura,10,Primera Divisi&oacute;n - Clausura,
 L,primeradivisionclausurarelegationplayoff,11,Primera Divisi&oacute;n - Relegation Playoff,
@@ -267,7 +267,7 @@ N,EST,Estonia,460,estonia
 C,supercup,1,Eesti Superkarikas,
 L,meistriliiga,10,Meistriliiga,
 L,meistriliigaqualification,11,Meistriliiga Qualification,
-N,FRO,Faroe Islands,870,faroeislands
+N,FRO,Faroe Islands,900,faroeislands
 L,premierleague,10,Faroese Premier League,
 N,FIN,Finland,320,finland
 L,veikkausliiga,10,Veikkausliiga,
@@ -294,7 +294,7 @@ L,national,30,National,
 C,leaguecupqualification,50,League Cup Qualification,
 C,leaguecup,50,Coupe de la Ligue,
 C,coupedefrance,100,Coupe de France,
-N,GEO,Georgia,840,georgia
+N,GEO,Georgia,870,georgia
 L,erovnuliligaqualification,10,Erovnuli Liga,
 C,erovnuliligaqualification,11,Erovnuli Liga Qualification,
 N,GER,Germany,50,germany
@@ -355,11 +355,11 @@ N,ISL,Iceland,640,iceland
 L,urvalsdeild,10,Urvalsdeild,
 L,1deild,20,1. Deild,
 C,cup,100,Icelandic FA Cup,
-N,IND,India,740,india
+N,IND,India,770,india
 L,ileague,10,I-League,
 L,indiansuperleague,10,Indian Super League,
 C,indiansuperleaguefinalstage,11,Indian Super League Finals,
-N,IDN,Indonesia,780,indonesia
+N,IDN,Indonesia,810,indonesia
 L,liga1,10,Liga 1,
 N,INT,Internationals,10,internationals
 #,,,,
@@ -774,7 +774,7 @@ C,leaguecupgrpb,201,J-League Cup Group B,
 C,leaguecupgrpc,202,J-League Cup Group C,
 C,leaguecupgrpd,203,J-League Cup Group D,
 C,leaguecupfinalstage,202,J-League Cup,
-N,JOR,Jordan,820,jordan
+N,JOR,Jordan,850,jordan
 L,premierleague,10,Premier League,
 N,KAZ,Kazakhstan,690,kazakhstan
 C,supercup,1,Supercup,
@@ -797,7 +797,7 @@ C,cup,100,Luxembourg Cup,
 N,MKD,North Macedonia,600,macedonia
 L,prvaliga,10,Prva Liga,
 C,prvaligaqualification,11,Prva Liga Qualification,
-N,MAS,Malaysia,710,malaysia
+N,MAS,Malaysia,740,malaysia
 L,premierleague,10,Premier League,
 L,superliga,20,Superliga,
 N,MEX,Mexico,260,mexico
@@ -849,7 +849,7 @@ L,1cfl,10,1. CFL,
 C,1cflqualification,11,1. CFL Qualification,
 N,MAR,Morocco,500,morocco
 L,botolapro,10,Botola Pro,
-N,MYA,Myanmar,705,myanmar
+N,MYA,Myanmar,730,myanmar
 L,nationalleague,10,National League,
 N,NED,Netherlands,100,netherlands
 C,supercup,1,Johan Cruyff Shield,
@@ -858,10 +858,10 @@ C,europaleagueplayoff,11,Europa League Playoff,
 C,eredivisiequalification,19,Eredivisie Qualification,
 L,eerstedivisie,20,Eerste Divisie,
 C,knvbcup,100,KNVB Cup,
-N,NCA,Nicuragua,860,nicuragua
+N,NCA,Nicuragua,890,nicuragua
 L,ligaprimeraclausura,10,Liga Primera Clausura,
 C,ligaprimeraclausuraplayoff,10,Liga Primera Clausura Playoff,
-N,NGA,Nigeria,810,nigeria
+N,NGA,Nigeria,840,nigeria
 L,npfl,10,Nigeria Professional Football League,
 L,npflgrpa,10,Nigeria Professional Football League Group A,
 L,npflgrpb,11,Nigeria Professional Football League Group B,
@@ -915,7 +915,7 @@ C,leaguecupgrpb,102,Ta&ccedil;a da Liga Group B,
 C,leaguecupgrpc,103,Ta&ccedil;a da Liga Group C,
 C,leaguecupgrpd,104,Ta&ccedil;a da Liga Group D,
 C,leaguecupfinalstage,105,Ta&ccedil;a da Liga Finals,
-N,QAT,Qatar,830,qatar
+N,QAT,Qatar,860,qatar
 L,qatarstarsleague,10,Qatar Stars League,
 N,ROU,Romania,680,romania
 C,supercup,1,Supercupa Rom&acirc;niei,
@@ -938,7 +938,7 @@ L,pflzoneuralpovolzhye,35,PFL Zone Ural-Povolzhye,
 C,pflzoneuralpovolzhyepromotiongroup,35,PFL Zone Ural-Povolzhye Promotion Group,
 C,pflzoneuralpovolzhyerelegationgroup,35,PFL Zone Ural-Povolzhye Relegation Group,
 C,cup,100,Russian FA Cup,
-N,KSA,Saudi Arabia,770,saudiarabia
+N,KSA,Saudi Arabia,800,saudiarabia
 L,premierleague,10,Premier League,
 C,premierleaguequalification,11,Premier League Qualification,
 C,kingscup,100,King's Cup,
@@ -1063,7 +1063,7 @@ L,premierleaguechampionshipgroup,11,Premier League Championship Group,
 L,premierleaguerelegationgroup,12,Premier League Relegation Group,
 C,premierleaguequalification,13,Premier League Qualification,
 C,cup,100,Ukrainian FA Cup,
-N,UAE,United Arab Emirates,800,unitedarabemirates
+N,UAE,United Arab Emirates,830,unitedarabemirates
 L,arabiangulfleague,10,Arabian Gulf League,
 C,presidentscup,100,President's Cup,
 N,USA,United States,190,unitedstates
@@ -1093,7 +1093,7 @@ C,primeradivisionaperturafinalstage,11,Primera Division Apertura Final Stage,
 L,primeradivisionclausura,10,Primera Division Clausura,
 C,primeradivisionclausurafinalstage,11,Primera Division Clausura Final Stage,
 C,primeradivisionfinalstage,9999,Primera Division Finals,
-N,VIE,Vietnam,850,vietnam
+N,VIE,Vietnam,880,vietnam
 L,vleague,10,V-League,
 C,vleaguequalification,11,V-League Qualification,
 N,WAL,Wales,310,wales

@@ -126,7 +126,7 @@ function doCompetitions($c, $n) { // Country trigram, News for Country
 		$cType = $Comp[$c]["Comps"][$name]["Type"];
 		print t(5)."<h2 class=\"text-center display-4\">".$cTitle."</h2> <!-- Competition container -->\n";
 		print t(5)."<div class=\"d-flex justify-content-center clearfix my-3 nationFrame\">\n";
-		print t(6)."<div class=\"container-fluid p-4 grass nationFrame\">\n";
+		print t(6)."<div class=\"container-fluid p-4 mb-4 grass nationFrame\">\n";
 		if ($cType == "L") {
 			$lad = doLadder($c, $name);
 			print $lad;
@@ -209,6 +209,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 	$minLt = 0;
 	$minLn = 0;
 	$tBC_z = 7;
+	$notes = "";
 
 	if ($c != "INT") {
 		$nat = $Nations[$c];
@@ -250,6 +251,10 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 				#canada|1|0|0|1|0|3|D|QUAL
 				$pl = $p[1]+$p[2]+$p[3];
 				$gd = $p[4]-$p[5];
+				if ($p[7] != "") {
+					$notes .= $Team[$p[0]]["Name"]." deducted ".$p[7]." points.<br/>\n";
+					$p[6] = $p[6]."*";
+				}
 				$fate = "";
 				if (sizeof($p) == 8) { array_push($p, "X"); }
 				switch ($p[8]) {
@@ -285,6 +290,9 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 		$tBC_lt = $minLt + (($maxLt - $minLt) / 2);
 		$tBC_ln = $minLn + (($maxLn - $minLn) / 2);
 		$table_body_string = join("", $table_body);
+		if ($notes != "") {
+			$table_body_string .= "<tr><td colspan=\"10\"><div class=\"small darkSlate\">".$notes."</div></td></tr>\n";
+		}
 		return $table_header.$table_body_string.$table_footer;
 	}
 	else {
@@ -348,12 +356,12 @@ function doMatch($match, $c, $t) { //Match, Country, Type
 	}
 
 	# Row 8 -> Facts
-	if ($m[16] != "") {
+	if ($m[16] != "" && $m[5] == "N-1") { // Only do trivia if game is in "Not started" status.
 		print t(8)."<tr><td colspan=\"20\">".doTrivia($m[16], $hCol)."</td></tr>";
 	}
 
 	# Row 9 -> bottom Spacer
-	print t(8)."<tr><td colspan=\"20\" class=\"matchBottom ".$hCol."\"></td></tr>\n";
+	print t(8)."<tr><td colspan=\"20\" class=\"rounded-bl rounded-br ".$hCol."\"><div class=\"rounded-bl rounded-br\">&nbsp;</div></td></tr>\n";
 	print t(8)."</table>\n";
 	print t(7)."</div>\n";
 }
@@ -364,8 +372,8 @@ function doCoaches($mgrs, $h, $a) {
 	if (strlen($mh[1]) > 2) { $mhf = doFlag(substr($h, 0, 1), $mh[1]); } else { $mhf = ""; }
 	if (strlen($ma[1]) > 2) { $maf = doFlag(substr($a, 0, 1), $ma[1]); } else { $maf = ""; }
 
-	$rh = "<div class=\"text-center rounded-bl ".$h."\">".$mhf." ".$mh[0]."</div>";
-	$ra = "<div class=\"text-center rounded-br ".$a."\">".$ma[0]." ".$maf."</div>";
+	$rh = "<div class=\"text-center ".$h."\">".$mhf." ".$mh[0]."</div>";
+	$ra = "<div class=\"text-center ".$a."\">".$ma[0]." ".$maf."</div>";
 
 	return array($rh, $ra);
 }
@@ -576,17 +584,14 @@ function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used
 	}
 }
 function doTrivia ($triv, $h) {
-	$t = explode("~", $triv);
-	if (sizeof($t) > 2) {
-		 shuffle($t);
-		 iconv("ISO-8859-1", "utf-8", $t[0]);
-		 iconv("ISO-8859-1", "utf-8", $t[1]);
-		 return "<div class=\"matchTrivia ".$h."\">".$t[0]."<br/>".$t[1]."</div>";
-	}
-	else {
-		return "<div class=\"matchTrivia ".$h."\">".$t[0]."<br/>".$t[1]."</div>";
-	}
+	$tv = explode("~", $triv);
 
+	$trivia = "<ul>\n";
+	foreach ($tv as $t) {
+		$trivia .= "<li>".$t."</li>\n";
+	}
+	$trivia .= "</ul>\n";
+	return "<div class=\"matchTrivia ".$h."\">".$trivia."</div>";
 
 }
 function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event, s for sub)

@@ -653,9 +653,9 @@ def defineMatch(the_match):
 	d_facts = pluck("<ff>(.+?)</ff>", mdetails)
 	if d_facts != "":
 		d_fu = re.findall("\"Fact\":\"(.+?)\"", d_facts)
-		d_facts = "~".join(d_fu), "h"
+		d_facts = "~".join(d_fu)
 
-	mt = mid+"|"+mht+"|"+mhs+"|"+mas+"|"+mat+"|"+mrd+"|"+mts+"|"+status+"|"+mag+"|"+mah+"|"+mph+"|"+mpa+"|"+d_coach+"|"+d_venue+"|"+dmd+"|"+d_subs+"|"
+	mt = mid+"|"+mht+"|"+mhs+"|"+mas+"|"+mat+"|"+mrd+"|"+mts+"|"+status+"|"+mag+"|"+mah+"|"+mph+"|"+mpa+"|"+d_coach+"|"+d_venue+"|"+dmd+"|"+d_subs+"|"+d_facts+"|"
 	debug(mt)
 	return mt
 

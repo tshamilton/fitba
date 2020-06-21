@@ -27,7 +27,6 @@
 		<link rel="mask-icon" href="image/safari-pinned-tab.svg" color="#2d89ef">
 	</head>
 	<body>
-	
 		<ul class="nav nav-pills nav-fill justify-content-center">
 <?php
 	doTabs($tablist);

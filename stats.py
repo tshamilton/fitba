@@ -34,6 +34,7 @@ errorList = []
 totalCountries = 0
 totalTeams = 0
 
+
 orig_badges = []
 orig_comps = []
 orig_nations = []

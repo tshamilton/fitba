@@ -1,8 +1,8 @@
 body {
     background-color: #cccccc;
-    /*background-image: url("../image/grass.png");*/
     font-family: 'Montserrat', 'Segoe UI', 'Calibri', 'Verdana', 'Helvetica Neue', sans-serif;
-	font-size: 0.875rem !important;
+    font-size: 0.875rem !important;
+    color: inherit; text-decoration: inherit;
 }
 h1 {	margin-bottom: 10px; text-align: center; }
 h2 {	margin-bottom: 6px; text-align: center; }
@@ -16,6 +16,20 @@ h2 {	margin-bottom: 6px; text-align: center; }
 	background-color: rgba(238,238,238,0.6);
 }
 
+.nationFrame > p > a {
+    color: inherit; text-decoration: inherit;
+}
+
+.matchTrivia > ul {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.matchTrivia > ul > li {
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
 /* This CSS makes sure the nav tabs don't change background or text-colour. */
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link { color: inherit; border: none; background: transparent; }
 .nav-item > a { color: inherit; text-decoration: inherit; }
@@ -85,6 +99,13 @@ h2 {	margin-bottom: 6px; text-align: center; }
     border-radius: 0.5rem;
     font-size: 0.9625rem;
     margin: 0.2rem !important;
+}
+
+.team > a {
+    color: inherit; text-decoration: inherit;
+}
+.nationFrame > div > a {
+    color: inherit; text-decoration: inherit;
 }
 
 /* Styles for matches */
