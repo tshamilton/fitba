@@ -217,7 +217,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 		$tBC_ln = $Team[$nat]["Long"];
 	}
 
-	$map_link = "<a href=\"http://tshamilton.com/fitba/map_page.php?lat=".$tBC_lt."&lng=".$tBC_ln."&z=".$tBC_z."&t=t".$c."&n=".$n."\" style=\"color: inherit; text-decoration: inherit;\" target=\"_new\">Map</a>";
+	$map_link = "<a href=\"https://tshamilton.com/fitba/map_page.php?lat=".$tBC_lt."&lng=".$tBC_ln."&z=".$tBC_z."&t=t".$c."&n=".$n."\" style=\"color: inherit; text-decoration: inherit;\" target=\"_new\">Map</a>";
 
 	$table_header = t(7)."<div class=\"float-right col-6\">\n";
 	$table_header .= t(8)."<table class=\"text-center ladder\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">\n<thead>\n".t(9)."<tr>";
