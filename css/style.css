@@ -13,13 +13,40 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .slate	{ color: #000000; background-color: #eeeeee; text-shadow: 0px 0px;}
 .grass	{ color: #000000; background-color: #eeeeee; background-image: url('../image/grass.png');}
 
+.gz-a	{ background-color: rgba( 51,102,255,0.6); }
+.gz-b	{ background-color: rgba(  0,  0,255,0.6); }
+.gz-c	{ background-color: rgba(153,  0, 68,0.6); }
+.gz-d	{ background-color: rgba(204,  0,  0,0.6); }
+.gz-e	{ background-color: rgba(  0,204,  0,0.6); }
+.gz-f	{ background-color: rgba(119,170,221,0.6); }
+.gz-g	{ background-color: rgba(  0,153,  0,0.6); }
+.gz-h	{ background-color: rgba(  0,170,255,0.6); }
+.gz-i	{ background-color: rgba(255,159,159,0.6); }
+.gz-j	{ background-color: rgba(170, 51, 88,0.6); }
+.gz-k	{ background-color: rgba(  0,  0,  0,0.6); }
+.gz-l	{ background-color: rgba(136,102,238,0.6); }
+.gz-m	{ background-color: rgba(255,  0,255,0.6); }
+.gz-n	{ background-color: rgba(  0,  0,255,0.6); }
+.gz-o	{ background-color: rgba(255,153,  0,0.6); }
+.gz-p	{ background-color: rgba(102,  0,153,0.6); }
+.gz-q	{ background-color: rgba(136,  0,  0,0.6); }
+.gz-r	{ background-color: rgba(255,  0,  0,0.6); }
+.gz-s	{ background-color: rgba(170,170,170,0.6); }
+.gz-t	{ background-color: rgba(217,171, 75,0.6); }
+.gz-u	{ background-color: rgba(255,204,  0,0.6); }
+.gz-v	{ background-color: rgba(102, 34,  0,0.6); }
+.gz-w	{ background-color: rgba(255,255,255,0.6); }
+.gz-x	{ background-color: rgba(102,  0, 51,0.6); }
+.gz-y	{ background-color: rgba(255,240, 12,0.6); }
+.gz-z	{ background-color: rgba(  0,255,  0,0.6); }
+
 .a	{ border-color: #3366ff; border-width: 1px; border-style: solid; margin: 1px;}
 .b	{ border-color: #0000ff; border-width: 1px; border-style: solid; margin: 1px;}
 .c	{ border-color: #990044; border-width: 1px; border-style: solid; margin: 1px;}
 .d	{ border-color: #cc0000; border-width: 1px; border-style: solid; margin: 1px;}
 .e	{ border-color: #00cc00; border-width: 1px; border-style: solid; margin: 1px;}
 .f	{ border-color: #77aadd; border-width: 1px; border-style: solid; margin: 1px;}
-.g	{ border-color: #00cc00; border-width: 1px; border-style: solid; margin: 1px;}
+.g	{ border-color: #009900; border-width: 1px; border-style: solid; margin: 1px;}
 .h	{ border-color: #00aaff; border-width: 1px; border-style: solid; margin: 1px;}
 .i	{ border-color: #ff9f9f; border-width: 1px; border-style: solid; margin: 1px;}
 .j	{ border-color: #aa3388; border-width: 1px; border-style: solid; margin: 1px;}
