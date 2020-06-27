@@ -6,7 +6,7 @@ body {
 }
 h1 {	margin-bottom: 10px; text-align: center; }
 h2 {	margin-bottom: 6px; text-align: center; }
-
+code { background-color: black; color: white; }
 .rounded-tl {    border-top-left-radius: 1rem; }
 .rounded-tr {    border-top-right-radius: 1rem; }
 .rounded-bl {    border-bottom-left-radius: 1rem; }
@@ -45,6 +45,7 @@ h2 {	margin-bottom: 6px; text-align: center; }
 
 /* Styles for ladders */
 .ladder {
+    text-shadow: none;
 	margin-bottom: 10px;
 }
 .ldrHd {
@@ -93,6 +94,9 @@ h2 {	margin-bottom: 6px; text-align: center; }
 }
 
 /* Styles for team displays */
+.theMatchBody {
+    text-shadow: none;
+}
 .team {
     text-align: center;
     font-weight: bold;
@@ -129,14 +133,14 @@ h2 {	margin-bottom: 6px; text-align: center; }
 }
 .homeevent {
     text-align: right;
-    border-top-left-radius: 0.5rem;
-	border-bottom-left-radius: 0.5rem;
+    /*border-top-left-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;*/
 	padding-bottom: 1px;
 	padding-top: 1px;
 }
 .awayevent {
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    /*border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;*/
 	padding-bottom: 1px;
 	padding-top: 1px;
 }

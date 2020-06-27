@@ -274,10 +274,19 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 					case "RLPLAYOFF":	$fate = "Rel. Playoff";		$style = "relegation ldrData";	break;
 					default:			$fate = $p[8];				$style = "unknown ldrData";		break;
 				}
-				list($tm, $tnm) = doTeam($p[0], $c, 'l');
+				list($tnm, $tm) = makeTeamName($p[0]);
+				//pretty_var("OT1 <code>".$tnm."</code> = <code>".$tm."</code>");
+				if (preg_match("/alert\.gif/", $tm)) {
+					missing("T(L):".$c.":".$tnm);
+				}
+				else {
+				}
+
+				$tm = doTeam($tnm, $tm, $c, 'l');
+				//pretty_var("<code>".$tnm."</code> = <code>".$tm."</code>");
 				array_push($points_Ln, $Team[$tnm]["Long"]);
 				array_push($points_Lt, $Team[$tnm]["Lat"]);
-				$team = "<td><div style=\"padding: 2px;\">".$tm."</div></td>";
+				$team = "<td>".$tm."</td>";
 				$games = "<td><div class=\"".$style."\">".$pl."</div></td><td><div class=\"".$style."\">".$p[1]."</div></td><td><div class=\"".$style."\">".$p[2]."</div></td><td><div class=\"".$style."\">".$p[3]."</div></td>";
 				$goals = "<td><div class=\"".$style."\">".$p[4]."</div></td><td><div class=\"".$style."\">".$p[5]."</div></td><td><div class=\"".$style."\">".$gd."</div></td>";
 				$pts_fate = "<td><div class=\"".$style."\"><b>".$p[6]."</b></div></td><td><div class=\"text-center ".$style."\">".$fate."</div></td>";
@@ -304,16 +313,43 @@ function doMatch($match, $c, $t) { //Match, Country, Type
 	global $Team;
 	#   0         1        2         3         4        5        6       7       8         9        10      11      12      13       14          15        16
 	#match_id|homeTeam|homeScore|awayScore|awayTeam|matchDay|timeStamp|status|aggScore|aggHomeRes|penHome|penAway|coaches|venue|matchDetails|substitutes|trivia
+	$homeName = "";
+	$homeTitle = "";
+	$awayName = "";
+	$awayTitle = "";
 
 	$m = explode("|", $match);
+
+	//pretty_var("Start -> <pre>".$m[1]."</pre>");
+	//pretty_var("Away -> <pre>".$m[4]."</pre>", '00aaff');
+
+	list($homeName, $homeTitle) = makeTeamName($m[1]);
+	if (preg_match("/alert\.gif/", $homeTitle)) {
+		missing("T:".$c.":".$homeTitle);
+		$hCol = "darkSlate";
+	}
+	else {
+		$hCol = $Team[$homeName]["Mnr"];
+	}
+	//pretty_var("After makeTeamName (h) -> ".$homeName);
+	list($awayName, $awayTitle) = makeTeamName($m[4]);
+	if (preg_match("/alert.gif/", $awayTitle)) {
+		missing("T:".$c.":".$awayTitle);
+		$aCol = "darkSlate";
+	}
+	else {
+		$aCol = $Team[$awayName]["Mnr"];
+	}
+	//pretty_var("After makeTeamName (a) -> ".$awayName, '00aaff');
+
 	if ($m[10] > 0 && $m[11]) {
 		$hSco = $m[2] - $m[10];
 		$aSco = $m[3] - $m[11];
 		$m[2] = $hSco." (".$m[10].")";
 		$m[3] = "(".$m[11].") ".$aSco;
 	}
-	list($theHTeam, $hCol) = doTeam($m[1], $c, 'h');
-	list($theATeam, $aCol) = doTeam($m[4], $c, 'a');
+	$theHTeam = doTeam($homeName, $homeTitle, $c, 'h');
+	$theATeam = doTeam($awayName, $awayTitle, $c, 'a');
 
 	print t(7)."<div class=\"col-6 float-left px-3 pb-4 theMatchBody\">\n";
 	print t(8)."<table width=\"100%\" class=\"matchFrame\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n";
@@ -338,11 +374,17 @@ function doMatch($match, $c, $t) { //Match, Country, Type
 	if ($m[7] != "N-1" && $m[7] != "F-5" && $m[7] != "P-5") {
 		$theHScore = doScore($m[2], $hCol);
 		$theAScore = doScore($m[3], $aCol);
-		$theScore = "<td colspan=\"2\"><div class=\"m-2 score ".$hCol."\">".$theHScore."</div></td><td colspan=\"2\"><div class=\"m-2 score ".$aCol."\">".$theAScore."</div></td>";
-		print t(8)."<tr><td colspan=\"8\">".$theHTeam."</td>".$theScore."<td colspan=\"8\">".$theATeam."</td></tr>\n";
+		$theScore = "
+		<td class=\"gz-".substr($hCol, 1, 1)."\" colspan=\"2\"><div class=\"m-2 score ".$hCol."\">".$theHScore."</div></td>
+		<td class=\"gz-".substr($aCol, 1, 1)."\" colspan=\"2\"><div class=\"m-2 score ".$aCol."\">".$theAScore."</div></td>";
+		print t(8)."
+		<tr>
+		<td class=\"gz-".substr($hCol, 1, 1)."\" colspan=\"8\">".$theHTeam."</td>
+		".$theScore."
+		<td class=\"gz-".substr($aCol, 1, 1)."\" colspan=\"8\">".$theATeam."</td></tr>\n";
 	}
 	else {
-		print t(8)."<tr><td colspan=\"10\">".$theHTeam."</td><td colspan=\"10\">".$theATeam."</td><td></td></tr>\n";
+		print t(8)."<tr><td class=\"gz-".substr($hCol, 1, 1)."\" colspan=\"10\">".$theHTeam."</td><td class=\"gz-".substr($aCol, 1, 1)."\" colspan=\"10\">".$theATeam."</td><td></td></tr>\n";
 	}
 
 	# Row 4 -> Spacer row
@@ -434,7 +476,7 @@ function doNations($n) { // news
 	}
 }
 function doScore($sc, $s) { // score, style
-	return "<div class=\"score\"><b> ".$sc." </b></div>";
+	return "<div class=\"score ".$s." ".substr($s, 0, 1)."\"><b> ".$sc." </b></div>";
 }
 function doTabs($tabs) {
 	global $Nations;
@@ -454,163 +496,26 @@ function doTabs($tabs) {
 		}
 	}
 }
-function doTeam($t, $c, $s = 'h') { //Team Name, Competition Country (trig, used as test for INT comps), Side (home/away)
+function doTeam($name, $title, $c, $s = "h") { // Derived team db name and title, Competition Country (trig, used as test for INT comps), Side (home/away/ladder)
 	global $Team;
 
-	$tName = "";
-	$tStyle = "";
-	$tIdent = "";
-	$trueName = "";
+	//pretty_var("IN <code>".$name."</code> = <code>".$title."</code>");
+	//pretty_var("Name -> '".$name."'<br/>Title -> '".$title."'<br/> C -> '".$c."'<br/>S -> '".$s."'<br/>", 'dddddd');
+	//pretty_var($Team[$name], '00cccc');
 
-	if (array_key_exists($t, $Team)) {
-		$tIdent = $t;
-		$tName = $Team[$tIdent]["Name"];
-		$tStyle = $Team[$tIdent]["Badge"] != "" ? $Team[$tIdent]["Badge"] : $Team[$tIdent]["Mjr"];
-		$Flag = doFlag(substr($Team[$tIdent]["Mjr"], 2, 1), $Team[$tIdent]["Tri"]);
-		$mnr = $Team[$tIdent]["Mnr"];
-		$trueName = $t;
-	}
-	elseif ((preg_match("/fcw$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
-		$status = "women";
-		$tIdent = substr($t, 0, -3);
-		$tStyle = $Team[$tIdent]["Badge"] != "" ? $Team[$tIdent]["Badge"] : $Team[$tIdent]["Mjr"];
-		$tName = $Team[$tIdent]["Name"]." <b>&#9792;</b>";
-		$Flag = doFlag(substr($Team[$tIdent]["Mjr"], 2, 1), $Team[$tIdent]["Tri"]);
-		$mnr = $Team[$tIdent]["Mnr"];
-		$trueName = substr($t, 0, -1);
-	}
-	elseif ((preg_match("/qw$/", $t)) && (array_key_exists(substr($t, 0, -2), $Team))) {
-		$status = "women";
-		$tIdent = substr($t, 0, -2);
-		$tStyle = $Team[$tIdent]["Mjr"];
-		$tName = $Team[$tIdent]["Name"]." II";
-		$mnr = $Team[$tIdent]["Mnr"];
-		$trueName = substr($t, 0, -2);
-	}
-	elseif ((preg_match("/w$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
-		$status = "women";
-		$tIdent = substr($t, 0, -1);
-		$tStyle = $Team[$tIdent]["Badge"] != "" ? $Team[$tIdent]["Badge"] : $Team[$tIdent]["Mjr"];
-		$tName = $Team[$tIdent]["Name"]." <b>&#9792;</b>";
-		$Flag = doFlag(substr($Team[$tIdent]["Mjr"], 2, 1), $Team[$tIdent]["Tri"]);
-		$mnr = $Team[$tIdent]["Mnr"];
-		$trueName = substr($t, 0, -1);
-	}
-	elseif ((preg_match("/q$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
-		$status = "women";
-		$tIdent = substr($t, 0, -1);
-		$tStyle = $Team[$tIdent]["Badge"] != "" ? $Team[$tIdent]["Badge"] : $Team[$tIdent]["Mjr"];
-		$tName = $Team[$tIdent]["Name"]." <b>&#9792;</b>";
-		$Flag = doFlag(substr($Team[$tIdent]["Mjr"], 2, 1), $Team[$tIdent]["Tri"]);
-		$mnr = $Team[$tIdent]["Mnr"];
-		$trueName = substr($t, 0, -1);
-	}
-	elseif ((preg_match("/a$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
-		$status = "a-side";
-		$tIdent = substr($t, 0, -1);
-		$tStyle = $Team[$tIdent]["Badge"] != "" ? $Team[$tIdent]["Badge"] : $Team[$tIdent]["Mjr"];
-		$tName = $Team[$tIdent]["Name"]." 'A'";
-		$Flag = doFlag(substr($Team[$tIdent]["Mjr"], 2, 1), $Team[$tIdent]["Tri"]);
-		$mnr = $Team[$tIdent]["Mnr"];
-		$trueName = substr($t, 0, -1);
-	}
-	elseif ((preg_match("/b$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
-		$status = "b-side";
-		$tIdent = substr($t, 0, -1);
-		$tStyle = $Team[$tIdent]["Badge"] != "" ? $Team[$tIdent]["Badge"] : $Team[$tIdent]["Mjr"];
-		$tName = $Team[$tIdent]["Name"]." 'B'";
-		$Flag = doFlag(substr($Team[$tIdent]["Mjr"], 2, 1), $Team[$tIdent]["Tri"]);
-		$mnr = $Team[$tIdent]["Mnr"];
-		$trueName = substr($t, 0, -1);
-	}
-	elseif ((preg_match("/2$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
-		$status = "2-side";
-		$tIdent = substr($t, 0, -1);
-		$tStyle = $Team[$tIdent]["Badge"] != "" ? $Team[$tIdent]["Badge"] : $Team[$tIdent]["Mjr"];
-		$tName = $Team[$tIdent]["Name"]." 2";
-		$Flag = doFlag(substr($Team[$tIdent]["Mjr"], 2, 1), $Team[$tIdent]["Tri"]);
-		$mnr = $Team[$tIdent]["Mnr"];
-		$trueName = substr($t, 0, -1);
-	}
-	elseif ((preg_match("/3$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
-		$status = "3-side";
-		$tIdent = substr($t, 0, -1);
-		$tStyle = $Team[$tIdent]["Badge"] != "" ? $Team[$tIdent]["Badge"] : $Team[$tIdent]["Mjr"];
-		$tName = $Team[$tIdent]["Name"]." 3";
-		$Flag = doFlag(substr($Team[$tIdent]["Mjr"], 2, 1), $Team[$tIdent]["Tri"]);
-		$mnr = $Team[$tIdent]["Mnr"];
-		$trueName = substr($t, 0, -1);
-	}
-	elseif ((preg_match("/ii$/", $t)) && (array_key_exists(substr($t, 0, -2), $Team))) {
-		$status = "ii-side";
-		$tIdent = substr($t, 0, -2);
-		$tStyle = $Team[$tIdent]["Mjr"];
-		$tName = $Team[$tIdent]["Name"]." II";
-		$mnr = $Team[$tIdent]["Mnr"];
-		$trueName = substr($t, 0, -2);
-	}
-	elseif ((preg_match("/fc$/", $t)) && (array_key_exists(substr($t, 0, -2), $Team))) {
-		$status = "fc-side";
-		$tIdent = substr($t, 0, -2);
-		$tStyle = $Team[$tIdent]["Mjr"];
-		$tName = $Team[$tIdent]["Name"]." II";
-		$mnr = $Team[$tIdent]["Mnr"];
-		$trueName = substr($t, 0, -2);
-	}
-	elseif ((preg_match("/^jong/", $t)) && (array_key_exists(substr($t, 4), $Team))) {
-		$status = "jong";
-		$tIdent = substr($t, 4);
-		$tStyle = $Team[$tIdent]["Mjr"];
-		$tName = "Jong ".$Team[$tIdent]["Name"];
-		$mnr = $Team[$tIdent]["Mnr"];
-		$trueName = substr($t, 4);
-	}
-	elseif ((preg_match("/academy$/", $t)) && (array_key_exists(substr($t, 0, -7), $Team))) {
-		$status = "academy";
-		$tIdent = substr($t, 0, -7);
-		$tStyle = $Team[$tIdent]["Mjr"];
-		$tName = $Team[$tIdent]["Name"]." Academy";
-		$mnr = $Team[$tIdent]["Mnr"];
-		$trueName = substr($t, 0, -7);
-	}
-	elseif ((preg_match("/primavera$/", $t)) && (array_key_exists(substr($t, 0, -9), $Team))) {
-		$status = "primavera";
-		$tIdent = substr($t, 0, -9);
-		$tStyle = $Team[$tIdent]["Mjr"];
-		$tName = $Team[$tIdent]["Name"]." Primavera";
-		$mnr = $Team[$tIdent]["Mnr"];
-		$trueName = substr($t, 0, -9);
-	}
-	elseif ((preg_match("/u(\d{2})$/", $t, $age)) && (array_key_exists(substr($t, 0, -3), $Team))) {
-		$status = "agelimit";
-		$tIdent = substr($t, 0, -3);
-		$tStyle = $Team[$tIdent]["Mjr"];
-		$Flag = doFlag(substr($Team[$tIdent]["Mjr"], 2, 1), $Team[$tIdent]["Tri"]);
-		$tName = $Team[$tIdent]["Name"]." Under-".$age[1];
-		$mnr = $Team[$tIdent]["Mnr"];
-		$trueName = substr($t, 0, -3);
-	}
-	else {
-		$tIdent = $t;
-		$tName = "<img src=\"image/alert.gif\"> ".$t;
-		$tStyle = "";
-		$Flag = "";
-		$mnr = "darkSlate";
-		$trueName = $t;
-		missing("T:".$c.":".$t);
-	}
+	if (preg_match("/alert.gif/", $title)) {	$tStyle = "darkSlate";	}
+	elseif (preg_match("/x/", $Team[$name]["Badge"])) {	$tStyle = $Team[$name]["Badge"]." ".substr($Team[$name]["Mnr"], 0, 1);	}
+	else {	$tStyle = $Team[$name]["Mjr"]." ".substr($Team[$name]["Mnr"], 0, 1);	}
 
 	if ($c == "INT") {
-		$tName = $s == 'h' ? $Flag." ".$tName : $tName." ".$Flag;
+		$Flag = doFlag(substr($Team[$name]["Mjr"], 2, 1), $Team[$name]["Tri"]);
+		$title = $s == 'h' ? $Flag." ".$title : $title." ".$Flag;
 	}
 
-	if ($s == "h" || $s == "a") {
-		return array("<div class=\"m-2 team ".$tStyle."\">".$tName."</div>", $mnr);
-	}
-	else {
-		$rt = "<div class=\"ldrTeam ".$tStyle."\">".$tName."</div>";
-		return array( $rt, $trueName );
-	}
+	if ($s == "h" || $s == "a") {	$tStyle = "m-2 team ".$tStyle;	}
+	else {	$tStyle = "ldrTeam ".$tStyle;	}
+
+	return "<div class=\"".$tStyle."\">".$title."</div>";
 }
 function doTrivia ($triv, $h) {
 	$tv = explode("~", $triv);
@@ -624,7 +529,6 @@ function doTrivia ($triv, $h) {
 
 }
 function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event, s for sub)
-	$blank = "<td colspan=\"9\">&nbsp;</td>";
 	$goal = "<span class=\"goal\">&#9917;</span>";
 	$yellow = "<span class=\"badge badge-warning\">YC</span>";
 	$yellow2 = "<span class=\"badge badge-warning\">YC</span><span class=\"badge badge-warning k\">YC</span>";
@@ -657,43 +561,43 @@ function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event,
 
 		if ($ev[2] == "homegoal") {
 			$hEv = "<div class=\"homeevent ".$h."\"><b>".$ev[1]." ".$goal."</b></div>";
-			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td>".$blank."</tr>";
+			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\" class=\"gz-".substr($a,1,1)."\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td><td colspan=\"9\" class=\"gz-".substr($a,1,1)."\">&nbsp;</td></tr>";
 		}
 		elseif ($ev[2] == "awaygoal") {
 			$aEv = "<b><div class=\"awayevent ".$a."\">".$goal." ".$ev[1]."</div></b>";
-			$rv = "<tr>".$blank."<td colspan=\"2\"><b><div class=\"atimeevent ".$a."\">".$ev[0]."</div></b></td><td colspan=\"9\">".$aEv."</td></tr>";
+			$rv = "<tr><td colspan=\"9\" class=\"gz-".substr($h,1,1)."\">&nbsp;</td><td class=\"gz-".substr($h,1,1)."\" colspan=\"2\"><b><div class=\"atimeevent ".$a." gz-".substr($h,1,1)."\">".$ev[0]."</div></b></td><td colspan=\"9\">".$aEv."</td></tr>";
 		}
 		elseif ($ev[2] == "homenogoal") {
 			$hEv = "<div class=\"homeevent ".$h."\"><b>".$ev[1]." (Pen Miss)</b></div>";
-			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td>".$blank."</tr>";
+			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\" class=\"gz-".substr($a,1,1)."\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td><td colspan=\"9\" class=\"gz-".substr($a,1,1)."\">&nbsp;</td></tr>";
 		}
 		elseif ($ev[2] == "awaynogoal") {
 			$aEv = "<b><div class=\"awayevent ".$a."\">(Pen Miss) ".$ev[1]."</div></b>";
-			$rv = "<tr>".$blank."<td colspan=\"2\"><b><div class=\"atimeevent ".$a."\">".$ev[0]."</div></b></td><td colspan=\"9\">".$aEv."</td></tr>";
+			$rv = "<tr><td colspan=\"9\" class=\"gz-".substr($h,1,1)."\">&nbsp;</td><td class=\"gz-".substr($h,1,1)."\" colspan=\"2\"><b><div class=\"atimeevent ".$a."\">".$ev[0]."</div></b></td><td colspan=\"9\">".$aEv."</td></tr>";
 		}
 		elseif ($ev[2] == "homeyellow") {
 			$hEv = "<div class=\"homeevent ".$h."\">".$ev[1]." ".$yellow."</div>";
-			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td>".$blank."</tr>";
+			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\" class=\"gz-".substr($a,1,1)."\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td><td colspan=\"9\" class=\"gz-".substr($a,1,1)."\">&nbsp;</td></tr>";
 		}
 		elseif ($ev[2] == "awayyellow") {
 			$aEv = "<div class=\"awayevent ".$a."\">".$yellow." ".$ev[1]."</div>";
-			$rv = "<tr>".$blank."<td colspan=\"2\"><div class=\"atimeevent ".$a."\">".$ev[0]."</div></td><td colspan=\"9\">".$aEv."</td></tr>";
+			$rv = "<tr><td colspan=\"9\" class=\"gz-".substr($h,1,1)."\">&nbsp;</td><td class=\"gz-".substr($h,1,1)."\" colspan=\"2\"><div class=\"atimeevent ".$a."\">".$ev[0]."</div></td><td colspan=\"9\">".$aEv."</td></tr>";
 		}
 		elseif ($ev[2] == "home2yellow") {
 			$hEv = "<div class=\"homeevent ".$h."\">".$ev[1]." ".$yellow2."</div>";
-			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td>".$blank."</tr>";
+			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\" class=\"gz-".substr($a,1,1)."\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td><td colspan=\"9\" class=\"gz-".substr($a,1,1)."\">&nbsp;</td></tr>";
 		}
 		elseif ($ev[2] == "away2yellow") {
 			$aEv = "<div class=\"awayevent ".$a."\">".$yellow2." ".$ev[1]."</div>";
-			$rv = "<tr>".$blank."<td colspan=\"2\"><div class=\"atimeevent ".$a."\">".$ev[0]."</div></td><td colspan=\"9\">".$aEv."</td></tr>";
+			$rv = "<tr><td colspan=\"9\" class=\"gz-".substr($h,1,1)."\">&nbsp;</td><td class=\"gz-".substr($h,1,1)."\" colspan=\"2\"><div class=\"atimeevent ".$a."\">".$ev[0]."</div></td><td colspan=\"9\">".$aEv."</td></tr>";
 		}
 		elseif ($ev[2] == "homered") {
 			$hEv = "<div class=\"homeevent ".$h."\">".$ev[1]." ".$red."</div>";
-			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td>".$blank."</tr>";
+			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\" class=\"gz-".substr($a,1,1)."\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td><td colspan=\"9\" class=\"gz-".substr($a,1,1)."\">&nbsp;</td></tr>";
 		}
 		elseif ($ev[2] == "awayred") {
 			$aEv = "<div class=\"awayevent ".$a."\">".$red." ".$ev[1]."</div>";
-			$rv = "<tr>".$blank."<td colspan=\"2\"><div class=\"atimeevent ".$a."\">".$ev[0]."</div></td><td colspan=\"9\">".$aEv."</td></tr>";
+			$rv = "<tr><td colspan=\"9\" class=\"gz-".substr($h,1,1)."\">&nbsp;</td><td class=\"gz-".substr($h,1,1)."\" colspan=\"2\"><div class=\"atimeevent ".$a."\">".$ev[0]."</div></td><td colspan=\"9\">".$aEv."</td></tr>";
 		}
 		elseif ($ev[2] == "homeassist") {	$rv = ""; }
 		elseif ($ev[2] == "awayassist") {	$rv = ""; }
@@ -702,11 +606,11 @@ function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event,
 	elseif ($s == "s") {
 		if ($ev[1] == "a") {
 			$aEv = "<div class=\"px-2 awayevent ".$a."\">".$ev[2]." ".$on." <div class=\"float-right\">".$off." ".$ev[3]."</div> </div>";
-			$rv = $blank."<td colspan=\"2\"><div class=\"atimeevent ".$a."\">".$ev[0]."</div></td><td colspan=\"9\">".$aEv."</td>";
+			$rv = "<td colspan=\"9\" class=\"gz-".substr($h,1,1)."\">&nbsp;</td><td colspan=\"2\"><div class=\"atimeevent ".$a."\">".$ev[0]."</div></td><td colspan=\"9\">".$aEv."</td>";
 		}
 		elseif ($ev[1] == "h") {
 			$hEv = "<div class=\"px-2 homeevent ".$h."\"><div class=\"float-left\">".$ev[3]." ".$off."</div> ".$on." ".$ev[2]."</div>";
-			$rv = "<td colspan=\"9\">".$hEv."</td><td colspan=\"2\"><div class=\"htimeevent ".$h."\">".$ev[0]."</div></td></td>".$blank;
+			$rv = "<td colspan=\"9\">".$hEv."</td><td colspan=\"2\"><div class=\"htimeevent ".$h."\">".$ev[0]."</div></td></td><td colspan=\"9\" class=\"gz-".substr($a,1,1)."\">&nbsp;</td>";
 		}
 	}
 
@@ -750,6 +654,104 @@ function MakeStatus($s) {
 		missing("S:".$s);
 		return "Status unknown ".$st[0]." - ".$st[1];
 	}
+}
+function MakeTeamName($t) {
+	global $Team;
+
+	if (array_key_exists($t, $Team)) {
+		$tIdent = $t;
+		$tName = $Team[$tIdent]["Name"];
+	}
+	elseif ((preg_match("/fcw$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
+		/* women */
+		$tIdent = substr($t, 0, -3);
+		if (array_key_exists($tIdent, $Team)) { $tName = $Team[$tIdent]["Name"]." <b>&#9792;</b>"; }
+		else { $tIdent = $t; $tName = "<img src=\"image/alert.gif\"> ".$t; }
+	}
+	elseif ((preg_match("/qw$/", $t)) && (array_key_exists(substr($t, 0, -2), $Team))) {
+		/* women */
+		$tIdent = substr($t, 0, -2);
+		if (array_key_exists($tIdent, $Team)) { $tName = $Team[$tIdent]["Name"]." <b>&#9792;</b>"; }
+		else { $tIdent = $t; $tName = "<img src=\"image/alert.gif\"> ".$t; }
+	}
+	elseif ((preg_match("/w$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
+		/* women */
+		$tIdent = substr($t, 0, -1);
+		if (array_key_exists($tIdent, $Team)) { $tName = $Team[$tIdent]["Name"]." <b>&#9792;</b>"; }
+		else { $tIdent = $t; $tName = "<img src=\"image/alert.gif\"> ".$t; }
+	}
+	elseif ((preg_match("/q$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
+		/* women */
+		$tIdent = substr($t, 0, -1);
+		if (array_key_exists($tIdent, $Team)) { $tName = $Team[$tIdent]["Name"]." <b>&#9792;</b>"; }
+		else { $tIdent = $t; $tName = "<img src=\"image/alert.gif\"> ".$t; }
+	}
+	elseif ((preg_match("/a$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
+		/* reserve side */
+		$tIdent = substr($t, 0, -1);
+		if (array_key_exists($tIdent, $Team)) { $tName = $Team[$tIdent]["Name"]." A"; }
+		else { $tIdent = $t; $tName = "<img src=\"image/alert.gif\"> ".$t; }
+	}
+	elseif ((preg_match("/b$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
+		/* reserve side */
+		$tIdent = substr($t, 0, -1);
+		if (array_key_exists($tIdent, $Team)) { $tName = $Team[$tIdent]["Name"]." B"; }
+		else { $tIdent = $t; $tName = "<img src=\"image/alert.gif\"> ".$t; }
+	}
+	elseif ((preg_match("/2$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
+		/* reserve side */
+		$tIdent = substr($t, 0, -1);
+		if (array_key_exists($tIdent, $Team)) { $tName = $Team[$tIdent]["Name"]." 2"; }
+		else { $tIdent = $t; $tName = "<img src=\"image/alert.gif\"> ".$t; }
+	}
+	elseif ((preg_match("/3$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
+		/* reserve side */
+		$tIdent = substr($t, 0, -1);
+		if (array_key_exists($tIdent, $Team)) { $tName = $Team[$tIdent]["Name"]." 3"; }
+		else { $tIdent = $t; $tName = "<img src=\"image/alert.gif\"> ".$t; }
+	}
+	elseif ((preg_match("/ii$/", $t)) && (array_key_exists(substr($t, 0, -2), $Team))) {
+		/* reserve side */
+		$tIdent = substr($t, 0, -2);
+		if (array_key_exists($tIdent, $Team)) { $tName = $Team[$tIdent]["Name"]." II"; }
+		else { $tIdent = $t; $tName = "<img src=\"image/alert.gif\"> ".$t; }
+	}
+	elseif ((preg_match("/fc$/", $t)) && (array_key_exists(substr($t, 0, -2), $Team))) {
+		/* abbreviation (NB: liverpool (ENG) and liverpoolfc (ECU) co-exist because a search for liverpoolfc finds the ECU team first) */
+		$tIdent = substr($t, 0, -2);
+		if (array_key_exists($tIdent, $Team)) { $tName = $Team[$tIdent]["Name"]; }
+		else { $tIdent = $t; $tName = "<img src=\"image/alert.gif\"> ".$t; }
+	}
+	elseif ((preg_match("/^jong/", $t)) && (array_key_exists(substr($t, 4), $Team))) {
+		/* Youth side (NED) */
+		$tIdent = substr($t, 4);
+		if (array_key_exists($tIdent, $Team)) { $tName = "Jong ".$Team[$tIdent]["Name"]; }
+		else { $tIdent = $t; $tName = "<img src=\"image/alert.gif\"> ".$t; }
+	}
+	elseif ((preg_match("/academy$/", $t)) && (array_key_exists(substr($t, 0, -7), $Team))) {
+		/* Youth side */
+		$tIdent = substr($t, 0, -7);
+		if (array_key_exists($tIdent, $Team)) { $tName = $Team[$tIdent]["Name"]." Academy"; }
+		else { $tIdent = $t; $tName = "<img src=\"image/alert.gif\"> ".$t; }
+	}
+	elseif ((preg_match("/primavera$/", $t)) && (array_key_exists(substr($t, 0, -9), $Team))) {
+		/* Youth side (ITA) */
+		$tIdent = substr($t, 0, -9);
+		if (array_key_exists($tIdent, $Team)) { $tName = $Team[$tIdent]["Name"]." Primavera"; }
+		else { $tIdent = $t; $tName = "<img src=\"image/alert.gif\"> ".$t; }
+	}
+	elseif ((preg_match("/u(\d{2})$/", $t, $age)) && (array_key_exists(substr($t, 0, -3), $Team))) {
+		/* Youth side (Age-limited) */
+		$tIdent = substr($t, 0, -3);
+		if (array_key_exists($tIdent, $Team)) { $tName = $Team[$tIdent]["Name"]." Under-".$age[1]; }
+		else { $tIdent = $t; $tName = "<img src=\"image/alert.gif\"> ".$t; }
+	}
+	else {
+		$tIdent = $t;
+		$tName = "<img src=\"image/alert.gif\"> ".$t;
+	}
+
+	return array($tIdent, $tName);
 }
 function missing($in) {
 	global $missing;
