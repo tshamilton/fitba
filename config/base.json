@@ -67,14 +67,16 @@
 			"2015-16": "adelaideunited",
 			"2016-17": "sydneyfc",
 			"2017-18": "melbournevictory",
-			"2018-19": "sydneyfc"
+			"2018-19": "sydneyfc",
+			"2019-20": "sydneyfc"
 		},
 		"AUS~FFA Cup": {
 			"2014": "adelaideunited",
 			"2015": "melbournevictory",
 			"2016": "melbournecity",
 			"2017": "sydneyfc",
-			"2018": "adelaideunited"
+			"2018": "adelaideunited",
+			"2019": "adelaideunited"
 		},
 		"ENG~Premier League": {
 			"1949-50": "portsmouth",
@@ -146,7 +148,8 @@
 			"2015-16": "leicestercity",
 			"2016-17": "chelsea",
 			"2017-18": "manchestercity",
-			"2018-19": "manchestercity"
+			"2018-19": "manchestercity",
+			"2019-20": "liverpool"
 		},
 		"ENG~FA Cup": {
 			"1949-50": "wolverhamptonwanderers",
@@ -291,7 +294,8 @@
 			"2015-16": "parissaintgermain",
 			"2016-17": "monaco",
 			"2017-18": "parissaintgermain",
-			"2018-19": "parissaintgermain"
+			"2018-19": "parissaintgermain",
+			"2019-20": "parissaintgermain"
 		},
 		"GER~Bundesliga": {
 			"1949-50": "stuttgart",
@@ -363,7 +367,8 @@
 			"2015-16": "munichbayern",
 			"2016-17": "munichbayern",
 			"2017-18": "munichbayern",
-			"2018-19": "munichbayern"
+			"2018-19": "munichbayern",
+			"2019-20": "munichbayern"
 		},
 		"ESP~La Liga": {
 			"1949-50": "madridatletico",
@@ -507,7 +512,8 @@
 			"2015-16": "celtic",
 			"2016-17": "celtic",
 			"2017-18": "celtic",
-			"2018-19": "celtic"
+			"2018-19": "celtic",
+			"2019-20": "celtic"
 		},
 		"ITA~Serie A": {
 			"1949-50": "juventus",
@@ -723,7 +729,8 @@
 			"2015-16": "psv",
 			"2016-17": "feyenoord",
 			"2017-18": "psv",
-			"2018-19": "ajax"
+			"2018-19": "ajax",
+			"2019-20": "N/A"
 		},
 		"INT~UEFA Champions League": {
 			"1955-56": "realmadrid",
