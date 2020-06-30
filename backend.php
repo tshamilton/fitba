@@ -610,7 +610,7 @@ function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event,
 		}
 		elseif ($ev[1] == "h") {
 			$hEv = "<div class=\"px-2 homeevent ".$h."\"><div class=\"float-left\">".$ev[3]." ".$off."</div> ".$on." ".$ev[2]."</div>";
-			$rv = "<td colspan=\"9\">".$hEv."</td><td colspan=\"2\"><div class=\"gz-".substr($h,1,1)."\" class=\"htimeevent ".$h."\">".$ev[0]."</div></td></td><td colspan=\"9\" class=\"gz-".substr($a,1,1)."\">&nbsp;</td>";
+			$rv = "<td colspan=\"9\">".$hEv."</td><td class=\"gz-".substr($h,1,1)."\" colspan=\"2\"><div class=\"htimeevent ".$h."\">".$ev[0]."</div></td></td><td colspan=\"9\" class=\"gz-".substr($a,1,1)."\">&nbsp;</td>";
 		}
 	}
 
