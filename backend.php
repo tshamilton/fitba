@@ -260,7 +260,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 					case "UCL":			$fate = "UCL";				$style = "ucl ldrData";			break;
 					case "COPALIB":		$fate = "Copa Lib.";		$style = "ucl ldrData";			break;
 					case "UCLQ":		$fate = "UCL Qual.";		$style = "uclqual ldrData";		break;
-					case "COPALIBQ":	$fate = "Copa Lib Q";		$style = "uclqual ldrData";		break;
+					case "COPALIBQ":	$fate = "Copa Lib Q.";		$style = "uclqual ldrData";		break;
 					case "EL":			$fate = "UEL";				$style = "eurolg ldrData";		break;
 					case "ELQ":			$fate = "UEL Qual.";		$style = "eurolgqual ldrData";	break;
 					case "COPASUD":		$fate = "Copa Sud. Qual.";	$style = "eurolg ldrData";		break;
@@ -272,6 +272,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 					case "RELEGATED":	$fate = "&darr; ";			$style = "relegation ldrData";	break;
 					case "PRPLAYOFF":	$fate = "Prom. Playoff";	$style = "promotion ldrData";	break;
 					case "RLPLAYOFF":	$fate = "Rel. Playoff";		$style = "relegation ldrData";	break;
+					case "ECQ":			$fate = "UEFA Conf. Q.";	$style = "eurolg ldrData";		break;
 					default:			$fate = $p[8];				$style = "unknown ldrData";		break;
 				}
 				list($tnm, $tm) = makeTeamName($p[0]);
