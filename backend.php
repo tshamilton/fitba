@@ -291,7 +291,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 				$games = "<td><div class=\"".$style."\">".$pl."</div></td><td><div class=\"".$style."\">".$p[1]."</div></td><td><div class=\"".$style."\">".$p[2]."</div></td><td><div class=\"".$style."\">".$p[3]."</div></td>";
 				$goals = "<td><div class=\"".$style."\">".$p[4]."</div></td><td><div class=\"".$style."\">".$p[5]."</div></td><td><div class=\"".$style."\">".$gd."</div></td>";
 				$pts_fate = "<td><div class=\"".$style."\"><b>".$p[6]."</b></div></td><td><div class=\"text-center ".$style."\">".$fate."</div></td>";
-				array_push($table_body, t(8)."<tr class=\"darkSlate\">".$team.$games.$goals.$pts_fate."</tr>\n");
+				array_push($table_body, t(8)."<tr class=\"darkSlate\">".$team.$games.$goals.$pts_fate."</tr><!-- Fate: ".$p[8]." -->\n");
 			}
 		}
 		$maxLt = max($points_Lt);

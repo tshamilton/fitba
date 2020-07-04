@@ -542,6 +542,7 @@ def defineLeague(token, id, pl):
 					for p in pos:
 						out_table[tl]["table"][int(p)-1] = out_table[tl]["table"][int(p)-1]+"|QUAL"
 				elif f[0] == 'conf_qual':
+					pos = the_pos.split(",")
 					for p in pos:
 						out_table[tl]["table"][int(p)-1] = out_table[tl]["table"][int(p)-1]+"|ECQ"
 				else:
