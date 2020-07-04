@@ -127,8 +127,8 @@
 	background-image: url('../image/logos/barcelona.png');
 	background-color: #ffffff;
 	background-size: 100% 100%;
-	color: #0000ff;
-	text-shadow: 1px 1px #cc0000;
+	color: #deb405;
+	text-shadow: 1px 1px #cc0000,-1px -1px #0000ff, 1px -1px #cc0000, -1px 1px #0000ff;
 }
 .x020 {
 	background-image: url('../image/logos/realmadrid.png');
@@ -650,8 +650,8 @@
 	background-image: url('../image/logos/portugal.png');
 	background-color: #ffffff;
 	background-size: 100% 100%;
-	color: #009900;
-	text-shadow: -1px -1px 0 #cc0000,1px -1px 0 #cc0000,-1px 1px 0 #cc0000,1px 1px 0 #cc0000;
+	color: #008800;
+	text-shadow: -1px -1px 0 #d3c084,1px -1px 0 #d3c084,-1px 1px 0 #d3c084,1px 1px 0 #d3c084;
 }
 .x096 {
 	background-image: url('../image/logos/uruguay.png');

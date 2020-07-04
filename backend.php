@@ -625,7 +625,7 @@ function MakeStatus($s) {
 		elseif	($st[1] == 11)	{ return "<b>After Extra Time</b>"; }
 		elseif	($st[1] == 13)	{ return "<b>After Penalties</b>"; }
 		elseif	($st[1] == 17)	{ return "<b>Abandoned</b>"; }
-		elseif	($st[1] == 93)	{ return "Resume Postponed Match"; }
+		elseif	($st[1] == 93)	{ return "Resuming Postponed Match"; }
 		elseif	($st[1] == 106)	{ return "Cancelled"; }
 		else					{ return "Status unknown (".$s.")"; }
 	}
@@ -649,6 +649,7 @@ function MakeStatus($s) {
 		elseif	($st[1] == 18)	{ return "Kick-Off"; }
 		elseif	($st[1] == 106)	{ return "Cancelled"; }
 		elseif	($st[1] == 190)	{ return "<b>Full Time</b>"; }
+		elseif	($st[1] == 234) { return "Resuming Postponed Match"; }
 		else					{ return "Status unknown ".$st[0]." - ".$st[1]; }
 	}
 	else {
