@@ -81,7 +81,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .bg	{ color: #0000ff; background-color: #009900;}
 .bh	{ color: #0000ff; background-color: #00aaff;}
 .bi	{ color: #0000ff; background-color: #ff9f9f;}
-.bk	{ color: #2255ff; background-color: #000000;}
+.bk	{ color: #5d8dfd; background-color: #000000;}
 .bm	{ color: #0000ff; background-color: #ff00ff;}
 .bo	{ color: #0000ff; background-color: #ff9900;}
 .br	{ color: #0000ff; background-color: #ff0000;}
@@ -862,7 +862,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .x-hy	{ color: #00aaff; background-color: #fff00c;}
 .x-iw	{ color: #ff9f9f; background-color: #ffffff;}
 .x-ka	{ color: #000000; background-color: #3366ff;}
-.x-kb	{ color: #000000; background-color: #0000ff; text-shadow: -1px -1px 0 #3366ff,1px -1px 0 #3366ff,-1px 1px 0 #3366ff,1px 1px 0 #3366ff;}
+.x-kb	{ color: #ffffff; background-color: #0000ff; text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
 .x-kc	{ color: #000000; background-color: #990044;}
 .x-kd	{ color: #000000; background-color: #cc0000;}
 .x-ke	{ color: #000000; background-color: #00cc00;}

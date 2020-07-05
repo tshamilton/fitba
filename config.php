@@ -121,7 +121,7 @@ function table($in_t, $nC, $context) {
 					else {
 						$name = $Team[$k]["Name"];
 						$tr = $Stats['countryByName'][$k];
-						if ($Stats["teamCountByCountry"][$Stats["countryByName"][$k]] > 0) { $tCount = " (".$Stats["teamCountByCountry"][$Stats["countryByName"][$k]].")"; }
+						if ($Stats["teamCountByCountry"][$Stats["countryByName"][$k]] > 0) { $tCount = "<div class=\"badge badge-pill ".$Team[$k]["Mjr"]." ".substr($Team[$k]["Mnr"], 0, 1)."\">".$Stats["teamCountByCountry"][$Stats["countryByName"][$k]]."</div>"; }
 						else { $tCount = ""; }
 						print t(7)."<div class=\"team mx-1 my-2 ".$Team[$k]["Mjr"]."\"><a href=\"#".$tr."\">".$name." <img class=\"".substr($Team[$k]["Mnr"], 0, 1)." flag\" src=\"flags/".$tr.".png\">".$tCount."</a></div>\n";
 					}
