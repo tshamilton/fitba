@@ -560,6 +560,7 @@ function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event,
 			$ev[1] .= "(".$ev[3]."~".$ev[4].")";
 		}
 
+		if 
 		if ($ev[2] == "homegoal") {
 			$hEv = "<div class=\"homeevent ".$h."\"><b>".$ev[1]." ".$goal."</b></div>";
 			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\" class=\"gz-".substr($a,1,1)."\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td><td colspan=\"9\" class=\"gz-".substr($a,1,1)."\">&nbsp;</td></tr>";
@@ -569,16 +570,16 @@ function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event,
 			$rv = "<tr><td colspan=\"9\" class=\"gz-".substr($h,1,1)."\">&nbsp;</td><td class=\"gz-".substr($h,1,1)."\" colspan=\"2\"><b><div class=\"atimeevent ".$a." gz-".substr($h,1,1)."\">".$ev[0]."</div></b></td><td colspan=\"9\">".$aEv."</td></tr>";
 		}
 		elseif ($ev[2] == "homenogoal") {
-			$hEv = "<div class=\"homeevent ".$h."\"><b>".$ev[1]." (Pen Miss)</b></div>";
-			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\" class=\"gz-".substr($a,1,1)."\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td><td colspan=\"9\" class=\"gz-".substr($a,1,1)."\">&nbsp;</td></tr>";
+			$hEv = "<div class=\"homeevent ".$h."\">".$ev[1]." (Pen Miss)</div>";
+			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\" class=\"gz-".substr($a,1,1)."\"><div class=\"htimeevent ".$h."\">".$ev[0]."</div></td><td colspan=\"9\" class=\"gz-".substr($a,1,1)."\">&nbsp;</td></tr>";
 		}
 		elseif ($ev[2] == "awaynogoal") {
-			$aEv = "<b><div class=\"awayevent ".$a."\">(Pen Miss) ".$ev[1]."</div></b>";
-			$rv = "<tr><td colspan=\"9\" class=\"gz-".substr($h,1,1)."\">&nbsp;</td><td class=\"gz-".substr($h,1,1)."\" colspan=\"2\"><b><div class=\"atimeevent ".$a."\">".$ev[0]."</div></b></td><td colspan=\"9\">".$aEv."</td></tr>";
+			$aEv = "<div class=\"awayevent ".$a."\">(Pen Miss) ".$ev[1]."</div>";
+			$rv = "<tr><td colspan=\"9\" class=\"gz-".substr($h,1,1)."\">&nbsp;</td><td class=\"gz-".substr($h,1,1)."\" colspan=\"2\"><div class=\"atimeevent ".$a."\">".$ev[0]."</div></td><td colspan=\"9\">".$aEv."</td></tr>";
 		}
 		elseif ($ev[2] == "homeyellow") {
 			$hEv = "<div class=\"homeevent ".$h."\">".$ev[1]." ".$yellow."</div>";
-			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\" class=\"gz-".substr($a,1,1)."\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td><td colspan=\"9\" class=\"gz-".substr($a,1,1)."\">&nbsp;</td></tr>";
+			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\" class=\"gz-".substr($a,1,1)."\"><div class=\"htimeevent ".$h."\">".$ev[0]."</div></td><td colspan=\"9\" class=\"gz-".substr($a,1,1)."\">&nbsp;</td></tr>";
 		}
 		elseif ($ev[2] == "awayyellow") {
 			$aEv = "<div class=\"awayevent ".$a."\">".$yellow." ".$ev[1]."</div>";
@@ -586,7 +587,7 @@ function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event,
 		}
 		elseif ($ev[2] == "home2yellow") {
 			$hEv = "<div class=\"homeevent ".$h."\">".$ev[1]." ".$yellow2."</div>";
-			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\" class=\"gz-".substr($a,1,1)."\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td><td colspan=\"9\" class=\"gz-".substr($a,1,1)."\">&nbsp;</td></tr>";
+			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\" class=\"gz-".substr($a,1,1)."\"><div class=\"htimeevent ".$h."\">".$ev[0]."</div></td><td colspan=\"9\" class=\"gz-".substr($a,1,1)."\">&nbsp;</td></tr>";
 		}
 		elseif ($ev[2] == "away2yellow") {
 			$aEv = "<div class=\"awayevent ".$a."\">".$yellow2." ".$ev[1]."</div>";
@@ -594,7 +595,7 @@ function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event,
 		}
 		elseif ($ev[2] == "homered") {
 			$hEv = "<div class=\"homeevent ".$h."\">".$ev[1]." ".$red."</div>";
-			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\" class=\"gz-".substr($a,1,1)."\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td><td colspan=\"9\" class=\"gz-".substr($a,1,1)."\">&nbsp;</td></tr>";
+			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\" class=\"gz-".substr($a,1,1)."\"><div class=\"htimeevent ".$h."\">".$ev[0]."</div></td><td colspan=\"9\" class=\"gz-".substr($a,1,1)."\">&nbsp;</td></tr>";
 		}
 		elseif ($ev[2] == "awayred") {
 			$aEv = "<div class=\"awayevent ".$a."\">".$red." ".$ev[1]."</div>";
