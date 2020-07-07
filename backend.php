@@ -560,7 +560,10 @@ function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event,
 			$ev[1] .= "(".$ev[3]."~".$ev[4].")";
 		}
 
-		if 
+		if ($ev[1] == 121) {
+			$ev[1] = "PSO";
+		}
+		
 		if ($ev[2] == "homegoal") {
 			$hEv = "<div class=\"homeevent ".$h."\"><b>".$ev[1]." ".$goal."</b></div>";
 			$rv = "<tr><td colspan=\"9\">".$hEv."</td><td colspan=\"2\" class=\"gz-".substr($a,1,1)."\"><b><div class=\"htimeevent ".$h."\">".$ev[0]."</div></b></td><td colspan=\"9\" class=\"gz-".substr($a,1,1)."\">&nbsp;</td></tr>";
