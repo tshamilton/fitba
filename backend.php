@@ -239,10 +239,10 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 			$p = explode("|", $t);
 			if ($p[0] == "group") {
 				if ($p[1] == "mls")						{	continue;	}
-				elseif ($p[1] == "uslchampionship")		{	$p[1] = "USL Championship";		array_push($table_body, t(8)."<tr><th colspan='10' class=\"text-center py-2\">".$p[1]."</th></tr>\n");	}
-				elseif ($p[1] == "Eastern")				{	$p[1] = "Eastern Conference";	array_push($table_body, t(8)."<tr><th colspan='10' class=\"text-center py-2\">".$p[1]."</th></tr>\n");	}
-				elseif ($p[1] == "Western")				{	$p[1] = "Western Conference";	array_push($table_body, t(8)."<tr><th colspan='10' class=\"text-center py-2\">".$p[1]."</th></tr>\n");	}
-				elseif ($p[1] == "SupportersShield")	{	$p[1] = "Supporter's Shield";	array_push($table_body, t(8)."<tr><th colspan='10' class=\"text-center py-2\">".$p[1]."</th></tr>\n");	}
+				elseif ($p[1] == "uslchampionship")		{	$p[1] = "USL Championship";		array_push($table_body, t(8)."<tr><th colspan='10' class=\"darkSlate text-center py-2\">".$p[1]."</th></tr>\n");	}
+				elseif ($p[1] == "Eastern")				{	$p[1] = "Eastern Conference";	array_push($table_body, t(8)."<tr><th colspan='10' class=\"darkSlate text-center py-2\">".$p[1]."</th></tr>\n");	}
+				elseif ($p[1] == "Western")				{	$p[1] = "Western Conference";	array_push($table_body, t(8)."<tr><th colspan='10' class=\"darkSlate text-center py-2\">".$p[1]."</th></tr>\n");	}
+				elseif ($p[1] == "SupportersShield")	{	$p[1] = "Supporter's Shield";	array_push($table_body, t(8)."<tr><th colspan='10' class=\"darkSlate text-center py-2\">".$p[1]."</th></tr>\n");	}
 			}
 			else {
 				#   0   1 2 3 4 5 6 7   8
