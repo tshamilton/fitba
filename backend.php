@@ -243,6 +243,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 				elseif ($p[1] == "Eastern")				{	$p[1] = "Eastern Conference";	array_push($table_body, t(8)."<tr><th colspan='10' class=\"darkSlate text-center py-2\">".$p[1]."</th></tr>\n");	}
 				elseif ($p[1] == "Western")				{	$p[1] = "Western Conference";	array_push($table_body, t(8)."<tr><th colspan='10' class=\"darkSlate text-center py-2\">".$p[1]."</th></tr>\n");	}
 				elseif ($p[1] == "SupportersShield")	{	$p[1] = "Supporter's Shield";	array_push($table_body, t(8)."<tr><th colspan='10' class=\"darkSlate text-center py-2\">".$p[1]."</th></tr>\n");	}
+				else 									{	array_push($table_body, t(8)."<tr><th colspan='10' class=\"darkSlate text-center py-2\"><i>".$p[1]."</i></th></tr>\n"); }
 			}
 			else {
 				#   0   1 2 3 4 5 6 7   8
@@ -716,7 +717,7 @@ function MakeTeamName($t) {
 		if (array_key_exists($tIdent, $Team)) { $tName = $Team[$tIdent]["Name"]." 3"; }
 		else { $tIdent = $t; $tName = "<img src=\"image/alert.gif\"> ".$t; }
 	}
-	elseif ((preg_match("/ii$/", $t)) && (array_key_exists(substr($t, 0, -2), $Team))) {
+	elseif ((preg_match("/ii$/", $t) || (preg_match("/ll$/", $t))) && (array_key_exists(substr($t, 0, -2), $Team))) {
 		/* reserve side */
 		$tIdent = substr($t, 0, -2);
 		if (array_key_exists($tIdent, $Team)) { $tName = $Team[$tIdent]["Name"]." II"; }
