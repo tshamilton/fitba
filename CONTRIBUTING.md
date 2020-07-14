@@ -1,0 +1,1 @@
+Y'know, this is just a private project and not really something I'm sharing with the world. That said, if you, dear reader, happen to chance across tis project and feel that you'd like to add something to it, by all means let's talk! Drop me a line here.
