@@ -239,7 +239,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 			$p = explode("|", $t);
 			if ($p[0] == "group") {
 				if ($p[1] == "mls" || $p[1] == $n)					{	continue;						}
-				elseif (preg_match("/^group(.+?)/i", $p[1], $gp))	{	$p[1] = "Group ".$gp[0];		}
+				elseif (preg_match("/^group(.+?)/i", $p[1], $gp))	{	$p[1] = "Group ".$gp[1];		}
 				elseif ($p[1] == "uslchampionship")					{	$p[1] = "USL Championship";		}
 				elseif ($p[1] == "Eastern")							{	$p[1] = "Eastern Conference";	}
 				elseif ($p[1] == "Western")							{	$p[1] = "Western Conference";	}
