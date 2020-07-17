@@ -120,6 +120,7 @@ C,firstprofessionalleagueeuropaleagueplayoff,12,First League Europa League Playo
 L,firstprofessionalleaguerelegationgrp1,13,First League Relegation Group 1,
 L,firstprofessionalleaguerelegationgrp2,14,First League Relegation Group 2,
 C,firstprofessionalleaguerelegationplayoff,15,First League Relegation Playoff,
+C,firstprofessionalleaguequalification,16,First League Qualification,
 C,firstprofessionalleaguequalificationplayoff,16,First League Qualification Playoff,
 C,cup,100,Bulgarian FA Cup,
 N,CAN,Canada,210,canada
@@ -1086,6 +1087,7 @@ L,nwsl,50,National Women's Soccer League,
 C,nwslplayoff,51,NWSL Playoff,
 C,usopencup,100,US Open Cup,
 C,nwslchallengecup,101,NWSL Challenge Cup,
+C,nwslchallengecupfinalstage,101,NWSL Challenge Cup Finals,
 N,URU,Uruguay,380,uruguay
 L,primeradivisionapertura,10,Primera Division Apertura,
 L,primeradivisionclausura,10,Primera Division Clausura,
