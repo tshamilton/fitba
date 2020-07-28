@@ -65,7 +65,8 @@ code {  background-color: black; color: white; }
 }
 .ldrHd {
 	background-color: #888888;
-	text-align: right;
+    text-align: right;
+    font-weight: bold;
 	padding-right: 2px;
 }
 .ldrTeam {

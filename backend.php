@@ -200,6 +200,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 	global $Team;
 	global $Nations;
 	$_SESSION['T'] = $Team;
+	$ladder_header = ("mls", "divisionprofesional", "championshipgroup")
 	
 	$table_body = Array();
 	$points_Lt = Array();
@@ -238,7 +239,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 		foreach ($ladder as $t) {
 			$p = explode("|", $t);
 			if ($p[0] == "group") {
-				if ($p[1] == "mls" || $p[1] == $n)					{	continue;						}
+				if (in_array($p[1], $ladder_header) || $p[1] == $n)	{	continue;						}
 				elseif (preg_match("/^group(.+?)/i", $p[1], $gp))	{	$p[1] = "Group ".$gp[1];		}
 				elseif ($p[1] == "uslchampionship")					{	$p[1] = "USL Championship";		}
 				elseif ($p[1] == "Eastern")							{	$p[1] = "Eastern Conference";	}
