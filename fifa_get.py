@@ -14,7 +14,7 @@ def pluck(re_s, source):
 def debug(message):
 	global DEBUG
 	
-	if DEBUG and isFile("./config/wfh.txt"):
+	if DEBUG and os.path.isfile("./config/wfh.txt"):
 		print(message)
 
 def get_data(the_url):
@@ -445,7 +445,7 @@ def defineLeague(token, id, pl):
 
 		the_ladder = this_ladder.split("QQ")
 		
-		if len(the_ladder) > 4:
+		if len(the_ladder) > 4: #NB: this test skips over ladders that have header tags (<table..., etc.) but no content following
 			for tl in the_ladder:
 				if "<table " in tl:
 					gnm = "one"
