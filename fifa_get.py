@@ -14,7 +14,7 @@ def pluck(re_s, source):
 def debug(message):
 	global DEBUG
 	
-	if DEBUG:
+	if DEBUG and isFile("./config/wfh.txt"):
 		print(message)
 
 def get_data(the_url):
@@ -418,6 +418,7 @@ def defineLeague(token, id, pl):
 	max_age = 4 #time in hours that a ladder file needs to be before it is overwritten
 	ladder_file = "./news/ladder/"+token+".lad"
 	file_exists = False
+	debug("Ladder token is "+token)
 	
 	if os.path.isfile(ladder_file):
 		file_exists = True
@@ -425,8 +426,8 @@ def defineLeague(token, id, pl):
 		st=os.stat(ladder_file)
 		age=(time.time()-st.st_mtime)
 
-	if (file_exists == False) or (file_exists and age >= (60*60*max_age)): # if the file exists, is it older than eight hours?
-		debug("Ladder file doesn't exist or is more than 8 hours old")
+	if (file_exists == False) or (file_exists and age >= (60*60*max_age)): # if the file exists, is it older than 'max_age' hours?
+		debug("Ladder file doesn't exist or does exist but needs updating")
 		if int(id) > 0:
 			debug("Comp ID isn't 0, so we use that in ladder download")
 			this_ladder = get_data("http://fotmobenetpulse.s3-external-3.amazonaws.com/tables.ext."+id+".fot")
@@ -444,34 +445,37 @@ def defineLeague(token, id, pl):
 
 		the_ladder = this_ladder.split("QQ")
 		
-		for tl in the_ladder:
-			if "<table " in tl:
-				gnm = "one"
-				out_table[gnm] = {}
-				out_table[gnm]["fate"] = re.findall("l_(.+?)=\"(.+?)\"", tl)
-				t_name = pluck(" name=\"(.+?)\"", tl)
-				out_table[gnm]["name"] = cleanWords(t_name).lower()
-				out_table[gnm]["table"] = []
-			elif "<subt " in tl:
-				gnm = pluck(" name=\"(.+?)\"", tl)
-				out_table[gnm] = {}
-				out_table[gnm]["fate"] = re.findall("l_(.+?)=\"(.+?)\"", tl)
-				t_name = pluck(" name=\"(.+?)\"", tl)
-				out_table[gnm]["name"] = cleanWords(t_name)
-				out_table[gnm]["table"] = []
-			elif "<t " in tl:
-				#<t name="Reus" id="96927" p="0" w="5" d="6" l="30" g="16" c="47" hp="8" hw="1" hd="5" hl="15" hg="8" hc="25" change="" deduction="-21" />
-				tnm = cleanWords(pluck(" name=\"(.+?)\"", tl)).lower()
-				tpt = pluck(" p=\"(.+?)\"", tl)
-				two = pluck(" w=\"(.+?)\"", tl)
-				tdr = pluck(" d=\"(.+?)\"", tl)
-				tlo = pluck(" l=\"(.+?)\"", tl)
-				tgf = pluck(" g=\"(.+?)\"", tl)
-				tga = pluck(" c=\"(.+?)\"", tl)
-				if ' deduction' in tl: tde = pluck(" deduction=\"(.+?)\"", tl)
-				else : tde = ""
-				table_line = "|".join([tnm,two,tdr,tlo,tgf,tga,tpt,tde])
-				out_table[gnm]["table"].append(table_line)
+		if len(the_ladder) > 4:
+			for tl in the_ladder:
+				if "<table " in tl:
+					gnm = "one"
+					out_table[gnm] = {}
+					out_table[gnm]["fate"] = re.findall("l_(.+?)=\"(.+?)\"", tl)
+					t_name = pluck(" name=\"(.+?)\"", tl)
+					out_table[gnm]["name"] = cleanWords(t_name).lower()
+					out_table[gnm]["table"] = []
+				elif "<subt " in tl:
+					gnm = pluck(" name=\"(.+?)\"", tl)
+					out_table[gnm] = {}
+					out_table[gnm]["fate"] = re.findall("l_(.+?)=\"(.+?)\"", tl)
+					t_name = pluck(" name=\"(.+?)\"", tl)
+					out_table[gnm]["name"] = cleanWords(t_name)
+					out_table[gnm]["table"] = []
+				elif "<t " in tl:
+					#<t name="Reus" id="96927" p="0" w="5" d="6" l="30" g="16" c="47" hp="8" hw="1" hd="5" hl="15" hg="8" hc="25" change="" deduction="-21" />
+					tnm = cleanWords(pluck(" name=\"(.+?)\"", tl)).lower()
+					tpt = pluck(" p=\"(.+?)\"", tl)
+					two = pluck(" w=\"(.+?)\"", tl)
+					tdr = pluck(" d=\"(.+?)\"", tl)
+					tlo = pluck(" l=\"(.+?)\"", tl)
+					tgf = pluck(" g=\"(.+?)\"", tl)
+					tga = pluck(" c=\"(.+?)\"", tl)
+					if ' deduction' in tl: tde = pluck(" deduction=\"(.+?)\"", tl)
+					else : tde = ""
+					table_line = "|".join([tnm,two,tdr,tlo,tgf,tga,tpt,tde])
+					out_table[gnm]["table"].append(table_line)
+		else:
+			return
 
 		for tl in out_table:
 			for f in out_table[tl]["fate"]:
@@ -599,14 +603,14 @@ def defineMatch(the_match):
 	if d_coach != "":
 		coach_details = d_coach.split(":")
 		d_coach = coach_details[0]+":"+coach_details[1]+"~"+coach_details[2]+":"+coach_details[3]
-		debug("Coaches: "+coach_details[0]+":"+coach_details[1]+" "+coach_details[2]+":"+coach_details[3])
+		#debug("Coaches: "+coach_details[0]+":"+coach_details[1]+" "+coach_details[2]+":"+coach_details[3])
 
 	dmd = pluck("<gd>(.+?)</gd>", mdetails)
 	if dmd != "":
 		event_list = ""
 		dmd = re.sub("/#$/", "", dmd)
 		match_details = dmd.split("#")
-		debug(str(len(match_details))+" events.")
+		#debug(str(len(match_details))+" events.")
 		for event in match_details:
 			if event == '': 
 				break
@@ -660,7 +664,7 @@ def defineMatch(the_match):
 		d_facts = "~".join(d_fu)
 
 	mt = mid+"|"+mht+"|"+mhs+"|"+mas+"|"+mat+"|"+mrd+"|"+mts+"|"+status+"|"+mag+"|"+mah+"|"+mph+"|"+mpa+"|"+d_coach+"|"+d_venue+"|"+dmd+"|"+d_subs+"|"+d_facts+"|"
-	debug(mt)
+	#debug(mt)
 	return mt
 
 def main():
