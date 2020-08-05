@@ -222,7 +222,7 @@
 			"2016-17": "manchesterunited",
 			"2017-18": "arsenal",
 			"2018-19": "chelsea",
-			"2019-20": "manchestercity"
+			"2019-20": "arsenal"
 		},
 		"FRA~Ligue 1": {
 			"1949-50": "bordeaux",
@@ -440,7 +440,8 @@
 			"2015-16": "barcelona",
 			"2016-17": "realmadrid",
 			"2017-18": "barcelona",
-			"2018-19": "barcelona"
+			"2018-19": "barcelona",
+			"2019-20": "realmadrid"
 		},
 		"SCO~Scottish Premier League": {
 			"1949-50": "rangers",
@@ -585,7 +586,8 @@
 			"2015-16": "juventus",
 			"2016-17": "juventus",
 			"2017-18": "juventus",
-			"2018-19": "juventus"
+			"2018-19": "juventus",
+			"2019-20": "juventus"
 		},
 		"POR~Primeira Liga": {
 			"1949-50": "benfica",
