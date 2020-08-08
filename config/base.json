@@ -992,9 +992,7 @@
 			"2018": "france"
 		}
 	},
-	"errorList": [
-		"TeamError: 'interclubdescaldes,Inter Club d&quot;Escaldes,Iwak,ka,s-kak,,42.501222,1.51385,Escaldes-Engordany,AND' appears to need 's-kak' added to the style sheet.~"
-	],
+	"errorList": [],
 	"totalCountries": 221,
 	"totalTeams": 6612,
 	"monNats": {
@@ -2130,7 +2128,7 @@
 			"s-kgw": 6,
 			"s-kow": 2,
 			"s-khw": 5,
-			"s-kka": 8,
+			"s-kka": 9,
 			"s-kkb": 12,
 			"s-kke": 4,
 			"s-kkf": 1,
@@ -2221,8 +2219,7 @@
 			"s-yyn": 1,
 			"s-yyp": 1,
 			"s-yyr": 5,
-			"s-yyv": 1,
-			"s-kak": 1
+			"s-yyv": 1
 		},
 		"v": {
 			"v-bbw": 4,
@@ -2483,11 +2480,11 @@
 		"AND": [
 			"andorrafc",
 			"engordany",
+			"interclubdescaldes",
 			"lusitanos",
 			"santacolomafc",
 			"santacolomaue",
-			"santjulia",
-			"interclubdescaldes"
+			"santjulia"
 		],
 		"ANG": [
 			"luandaatleticos",
