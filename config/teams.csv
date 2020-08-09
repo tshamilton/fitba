@@ -1620,6 +1620,7 @@ dobrovice~fkdobrovice,Dobrovice,Dwbw,wb,s-wwb,,50.3594201,14.957664,Dobrovice,CZ
 dobrudzhadobrich,Dobrudzha Dobrich,Dgyg,gy,v-ggy,,43.5560128,27.8268188,Dobrich,BUL
 docksud,Sportivo Dock Sud,Dbyb,by,s-yyb,,-34.6576096,-58.3470335,Dock Sud,ARG
 dolcanzabki,Dolcan Z&aogon;bki,Dkrr,kr,x-kr,,52.2922127,21.12204,Z&aogon;bki,POL
+dolgoprudnyolimp~olimpdolgoprudny~olimpkhimki,Olimp-Dolgoprudny,Obww,bw,x-bw,,55.9394166,37.4978373,Dolgoprudny,RUS
 dolgoprudny~fcdolgoprudny,Dolgoprudny,Dbww,bw,x-bw,,50.603271,37.5,Dolgoprudny,RUS
 dolnibenesov,Doln&iacute; Bene&scaron;ov,Dwbw,wb,e-wwb,,49.9232724,18.0927171,Doln&iacute; Bene&scaron;ov,CZE
 dolnykubin,MFK Doln&yacute; Kub&iacute;n,Dbff,bf,x-bf,,49.206333,19.291833,Doln&yacute; Kub&iacute;n,SVK
@@ -1850,6 +1851,7 @@ eskisehirspor,Eski&scedil;ehirspor,Ekrr,kr,b-kkr,,39.7709104,30.5135223,Eski&sce
 eslovs,Esl&ouml;vs,Ekrk,kr,s-kkr,,55.838171,13.2896213,Esl&ouml;v,SWE
 espanoldeportivo~deportivoespanol,Deportivo Espa&ntilde;ol,Ekrr,kr,x-kr,,-34.6570198,-58.4639586,Parque Avallaneda,ARG
 espanyol,Real Espanyol,Ewbw,wb,b-wwb,x306,41.347861,2.075667,Barcelona,ESP
+espelkamppreussen~fcpreussenespelkamp,Pru&szlig;en Espelkamp,Ewkk,wk,x-wk,,52.3802471,8.6000715,Espelkamp,GER
 esperance,Esp&eacute;rance Sportif de Tunis,Ekyr,ky,s-kry,,36.7479797,10.2726928,Tunis,TUN
 espinho,Sporting Espinho,Ekww,kw,s-kkw,,41.0020847,-8.647356,Espinho,POR
 esplagos,Esperan&ccedil;a de Lagos,Ebyy,by,x-by,,37.116543,-8.677804,Lagos,POR
@@ -1903,7 +1905,7 @@ fabregues,AS Fabr&egrave;gues,Fkrr,kr,x-kr,,43.5547103,3.7791922,Fabr&egrave;gue
 fafe~adfafe,AD Fafe,Fkyk,ky,s-kky,,41.447161,-8.168197,Fafe,POR
 fagianookayamafc,Fagiano Okayama,Fkrk,kr,h-kkr,,34.680656,133.919634,Okayama,JPN
 fajrsepasi,Fajr Sepasi,Fkyy,ky,x-ky,,29.5651599,52.4914467,Shiraz,IRN
-fakel~fakelvoronezh,Fakel Voronezh,Fbww,bw,x-bw,,51.672778,39.204167,Voronezh,RUS
+fakel~fakelmvoronezh~fakelvoronezh,Fakel Voronezh,Fbww,bw,x-bw,,51.672778,39.204167,Voronezh,RUS
 falkenbergsff,Falkenbergs FF,Fkyy,ky,x-ky,,56.8939657,12.5093508,Falkenberg,SWE
 falkenseefinkenkrug,SV Falkensee-Finkenkrug,Fryy,ry,e-rry,,52.55957,13.04263,Falkensee,GER
 falkirk,Falkirk,Fwnn,wn,x-wn,,56.005369,-3.75261,Falkirk,SCO
@@ -3104,6 +3106,7 @@ kpv,Kokkokan PV,Kwgg,wg,x-wg,,63.8421652,23.1225534,Kokkokan,FIN
 krakeroy,Kr&aring;ker&oslash;y,Kgwg,gw,b-ggw,,59.1915155,10.919408,Kr&aring;ker&oslash;y,NOR
 kraluvdvur,Kr&aacute;l&uring;v Dv&uring;r,Kbww,bw,o-bwb,,49.9441385,14.0269336,Kr&aacute;l&uring;v Dv&uring;r,CZE
 krasnodar~fckrasnodar,Krasnodar,Kkgg,kg,x-kg,x151,45.044589,39.0291951,Krasnodar,RUS
+krasny~krasnysgafkst,FK Krasnyy-SGAFKST,Kwgk,kg,x-kg,,54.5640861,31.4409542,Krasny,RUS
 krayfc~fckray,Kray,Kbzz,bz,e-bbz,,51.4627009,7.0748201,Essen,GER
 krazeunited,Kraze United,Kwkw,wk,b-wwk,,28.612658,-81.272662,Orlando,USA
 kremsersc,Kremser SC,Kkwk,kw,b-kkw,,48.4062313,15.5974527,Krems,AUT
@@ -3162,8 +3165,6 @@ lachauxdefonds,La Chaux-de-Fonds,Lbyy,by,x-by,,47.11097,6.83608,La Chaux-de-Fond
 laci,La&ccedil;i,Lkwk,wk,s-wwk,,41.6424224,19.7117332,La&ccedil;,ALB
 lacorunadeportivo~deportivolacoruna,Deportivo La Coru&ntilde;a,Lwbw,wb,s-bbw,x238,43.3687184,-8.4174835,La Coru&ntilde;a,ESP
 ladasok,Lada SOK Dimitrovgrad,Lrnn,rn,x-rn,,54.2235291,49.5516358,Dimitrovgrad,RUS
-ladatogliati,Lada Togliatti,Lwbb,wb,x-wb,,53.504129,49.2670728,Tolyatti,RUS
-ladatolyatti,Lada-Tolyatti,Lwbb,wb,x-wb,,53.504167,49.266944,Tolyatti,RUS
 laemilia,CSyD La Emilia,Lkwk,wk,s-kkw,,-33.3508585,-60.3212857,San Nicol&aacute;s,ARG
 laferrere,Deportivo Laferrere,Lwgw,wg,s-ggw,,-34.7328466,-58.5549505,Laferrere,ARG
 lafioritamontegiardino,La Fiorita Montegiardino,Lwnn,wn,x-wn,,43.9296365,12.4428943,Montegiardino,SMR
@@ -4073,7 +4074,7 @@ niort,Chamois Niortais,Nwbb,wb,d-wbw,,46.3174484,-0.4898633,Niort,FRA
 niroyezamini,Niroye Zamini,Nkww,kw,x-kw,,35.715373,51.4259427,Tehran,IRN
 nisradnicki~radnickinis~fkradnickinis,Radni&ccaron;ki Ni&scaron;,Rwrr,wr,x-wr,,43.315528,21.908533,Ni&scaron;,SRB
 nitra,Nitra,Nnhh,nh,x-nh,,48.3218783,18.0877135,Nitra,SVK
-nizhnynovgorod,Nizhny Novgorod,Nwbw,bw,s-bbw,,56.309507,43.929281,Nizhny Novgorod,RUS
+nizhnynovgorod~volnanizhnynovgorod,Nizhny Novgorod,Nwbw,bw,s-bbw,,56.309507,43.929281,Nizhny Novgorod,RUS
 njardvik,Njardvik,Nwgw,wg,o-wgw,,63.9748293,-22.5139897,Njardvik,ISL
 noah~fcnoah,Noah,Nzkk,zk,x-zk,,40.148373,44.475449,Yerevan,ARM
 nocerina,ASD Citt&agrave; di Nocera,Nwrk,kr,s-wkr,,40.747319,14.652581,Nocera,ITA
@@ -4213,7 +4214,6 @@ olimpicxativacd~cdolimpicxativa,Ol&igrave;mpic X&aacute;tiva,Okww,kw,x-kw,,38.99
 olimpiecnizhny,Olimpiec Nizhny,Obww,bw,x-bw,,56.3372872,43.9632507,Nizhny Novgorod,RUS
 olimpijaljubljana,Olimpija Ljubljana,Owgg,wg,x-wg,,46.0804912,14.5242148,Ljubljana,SVN
 olimpikdonetsk,Olimpik Donetsk,Ofnf,fn,h-ffn,,50.450401,30.5351007,Donetsk,UKR
-olimpkhimki,Olimp Khimki,Okrk,kr,s-wkr,,55.8908531,37.4410241,Khimki,RUS
 oliveirense,UD Oliveirense,Onrr,nr,x-nr,,40.8420463,-8.4703569,Oliveira de Azem&eacute;is,POR
 olivhospital,Oliveira do Hospital,Okyy,ky,x-ky,,40.3619783,-7.8578824,Oliveira do Hospital,POR
 olmedo,Centro Deportivo Olmedo,Ofnn,fn,e-ffn,,-1.6662987,-78.6602403,Riobamba,ECU
@@ -4388,6 +4388,7 @@ patronatodeparana,Patronato de Paran&aacute;,Pkrk,rk,s-wkr,,-31.743031,-60.50759
 pau,Pau,Pbyy,by,x-by,,43.309444,-0.316944,Pau,FRA
 paulistafc,Paulista,Prwk,wk,s-rkw,,-23.1882884,-46.8599183,Jundia&iacute;,BRA
 pavia,AC Pavia,Pwbb,wb,x-wb,,45.2052946,9.1516133,Pavia,ITA
+pavlovskayakubanholding~fckubanholding,Kuban-Holding Pavlovskaya,Kwak,ak,s-kka,,46.1349432,39.7837274,Pavlovskaya,RUS
 payasbelediyespor1975,Payas Belediyespor 1975,Pwbb,wb,x-wb,,36.7535694,36.1966469,Payas,TUR
 payasspor,Payasspor,Pbww,bw,o-bwb,,36.7795995,36.2113884,Payas,TUR
 paykan,Paykan,Pfnn,fn,e-ffn,,35.7018,51.1096,Tehran,IRN
@@ -4460,6 +4461,7 @@ petrovacrudar~rudarpetrovac,Rudar Petrovac,Rwff,wf,x-wf,,42.203591,18.945928,Pet
 petrzalka1898~fcpetrzalka1898,Petr&zcaron;alka,Pwkw,wk,s-kkw,,48.119722,17.133333,Bratislava,SVK
 pevidemsc,Pevid&eacute;m,Pwff,wf,x-wf,,41.4278986,-8.368344,Guimares,POR
 peykan,Peykan,Phbb,hb,e-hhb,,35.701902,51.1096699,Qods,IRN
+pfckuban~urozhay~urojai,Kuban,Ugyy,gy,x-gy,,45.025278,38.999444,Krasnodar,RUS
 pfcsochi,PFC Sochi,Swbb,wb,x-wb,,43.4020252,39.9553231,Krasnodar,RUS
 pforzheimcfp~1cfrpforzheim,1. CfP Pforzheim,Pbww,bw,x-bw,,48.8826464,8.6617367,Pforzheim,GER
 pfullendorf~scpfullendorf,Pfullendorf,Pwrw,wr,s-rrw,,47.9182152,9.2616158,Pfullendorf,GER
@@ -5415,6 +5417,7 @@ smedbyais,Smedby AIS,Sykk,yk,x-yk,,58.5776471,16.2312571,Smedby,SWE
 smenakomsomolsk,Smena Komsomolsk,Skhh,kh,x-kh,,50.57889,137.064314,Komsomolsk-on-Amur,RUS
 smirnisapollon~apollonsmirnis,Apollon Smyrni,Abwb,bw,h-bbw,,38.028156,23.741033,Smyrni,GRE
 smitshoek,Smitshoek,Skoo,ko,x-ko,,51.8603642,4.4852566,Barendrecht,NED
+smolensk,Smolensk,Sbwr,rw,e-brw,,54.7661625,32.0494962,Smolensk,RUS
 smolevichy~smolevichiy,Smolevichi,Sbyy,by,x-by,,54.0230875,28.0960711,Smolevichi,BLR
 smouhasc,Smouha SC,Swbb,wb,x-wb,,30.9995782,29.7293881,Smouha,EGY
 smygehukff,Smygehuk FF,Sgwg,gw,h-ggw,,55.344451,13.372233,Smygehamn,SWE
@@ -5677,6 +5680,7 @@ tacuary,Tacuary,Twkw,wk,b-wwk,,-25.2363338,-57.568609,Jara,PAR
 tadjenanet~drbtadjenanet,DRB Tadjenanet,Tbww,bw,x-bw,,36.116667,6,Tadjenanet,ALG
 tadotso,Tadotsu Club,Trww,rw,x-rw,,34.2703928,133.7526582,Tadotsu,JPN
 taffswell,Taff&#39;s Well,Tkyy,ky,x-ky,,51.5495997,-3.2680139,Taff&#39;s Well,WAL
+taganrogforte~fortetaganrog,Forte Taganrog,Fwrk,rk,s-krw,,47.2185433,38.9154402,Taganrog,RUS
 tagarpsaik,T&aring;garps Allm&auml;nna,Tkyy,ky,x-ky,,55.9243044,12.9541237,T&aring;garps,SWE
 taipeicitytatung,Taipei City Tatung,Tkoo,ko,x-ko,,25.049444,121.551111,Taipei City,TPE
 taipo,Tai Po,Twgg,wg,x-wg,,22.4556092,114.1621425,Tai Po,HKG
@@ -5818,6 +5822,7 @@ tollnes,Tollnes,Tkyk,yk,s-kky,,59.1616307,9.6284083,Skied,NOR
 tolmin,Tolmin,Trkr,kr,h-kkr,,46.1812523,13.7328609,Tolmin,SVN
 tolosacf,Tolosa,Twbb,wb,x-wb,,43.131607,-2.0801643,Tolosa,ESP
 toluca,Deportivo Toluca,Twrr,wr,x-wr,,19.2873199,-99.6666804,Toluca,MEX
+tolyattilada~ladatogliati~ladatolyatti~ladatogliatti,Lada Togliatti,Lwbb,wb,x-wb,,53.504129,49.2670728,Tolyatti,RUS
 tombensefc,Tombense,Twrr,wr,x-wr,,-20.9077573,-42.0330243,Tombos,BRA
 tomsk~tomtomsk,Tom Tomsk,Twgg,wg,x-wg,,56.4741983,84.9566935,Tomsk,RUS
 tonbridgeangels,Tonbridge Angels,Twbb,wb,x-wb,,51.211445,0.269913,Tonbridge,ENG
@@ -5918,6 +5923,7 @@ tskhinvali~fctskhinvali,Spartaki Tskhinvali,Trkr,kr,s-wkr,,41.993518,44.1051932,
 tsksimferopol,TSK Simferopol,Sbww,bw,x-bw,,44.9436571,34.0894654,Simferopol,RUS
 tsukubauniversity,Tsukuba University,Tbww,bw,x-bw,,36.1088237,140.1014633,Tsukuba,JPN
 ttmphichit~ttmchiangmaifc,TTM Chiang Mai Phichit,Cryr,ry,b-rry,,13.706226,100.783876,Bangkok,THA
+tuapse,Tuapse,Twrb,br,x-br,,44.0948218,39.0708039,Tuapse,RUS
 tubize,AFC Tubize,Tryy,ry,s-rry,,50.683889,4.200556,Tubize,BEL
 tucanesfc,Tucanes de Amazonas,Tkyy,ky,x-ky,,5.6681195,-67.618165,Puerto Ayacucho,VEN
 tucsonfc~fctucson,Tucson,Twkk,wk,x-wk,,32.1752521,-110.9351094,Tucson,USA
@@ -5949,6 +5955,7 @@ tuzlasloboda~slobodatuzla,Sloboda Tuzla,Skrk,rk,s-wkr,,44.5418275,18.661445,Tuzl
 tuzlaspor,Tuzlaspor,Twpp,wp,x-wp,,29.308395,40.845221,Tuzla,TUR
 tvaakersif,Tv&aring;&aring;kers,Tbrr,br,x-br,,57.0452637,12.4026989,Tv&aring;&aring;ker,SWE
 tved,Tved,Twbb,wb,x-wb,,55.0881622,10.6182325,Svendborg,DEN
+tverfc,Tver,Twbb,wb,x-wb,,56.8627599,35.8996071,Tver,RUS
 tvoeroyri~tbtvoeroyri,Tv&oslash;royrar,Twkw,wk,s-kkw,,61.5623,-6.8518,Trongisv&aacute;gur,FRO
 twentefc~fctwente,Twente,Twrr,wr,x-wr,x201,52.2365565,6.8379335,Enschede,NED
 tynset,Tynset,Twrr,wr,x-wr,,62.274514,10.7954383,Tynset,NOR
@@ -6043,8 +6050,6 @@ urawareddiamonds,Urawa Red Diamonds,Uwrr,wr,x-wr,x285,35.9031344,139.7175971,Sai
 urberachviktoria~viktoriaurberach,Viktoria 09 Urberach,Ubwb,bw,s-wwb,,49.9672953,8.7934205,R&ouml;dermark,GER
 urenasc,Ure&ntilde;a SC,Ubyb,by,e-bby,,7.9195222,-72.445471,Ure&ntilde;a,VEN
 urk~svurk,SV Urk,Ubww,bw,e-bbw,,52.680798,5.6153669,Urk,NED
-urojai,Urozhay Krasnodar,Ugyy,gy,x-gy,,45.025278,38.999444,Krasnodar,RUS
-urozhay,Urozhay Krasnodar,Ugyy,gy,x-gy,,45.024937,38.9992354,Krasnodar,RUS
 urquizajusto~justojosedeurquiza,ASyD Justo Jos&eacute; de Urquiza,Jkaa,ka,x-ka,,-34.570357,-58.5967924,Loma Hermosa,ARG
 ursvikik,Ursvik IK,Ukyy,ky,x-ky,,59.3818829,17.9671791,Ursvik,SWE
 uruguaydecoronado~csuruguay,CS Uruguay de Coronado,Ukyk,ky,s-kky,,9.9730139,-84.0070224,San Isidro,CRC
@@ -6194,6 +6199,7 @@ videotonfc,Videoton FC Fehervar,Vnrn,nr,s-nnr,,47.4639875,18.5866822,Felcs&uacut
 vidifc~fehervarfc,MOL Vidi Feh&eacute;rv&aacute;r,Vbrb,br,s-rrb,x291,50.7833107,7.7208859,Sz&eacute;kesfeh&eacute;rv&aacute;r,HUN
 vidimarakovski,Vidima-Rakovski Sevlievo,Vwbb,wb,x-wb,,43.0241412,25.1113121,Sevlievo,BUL
 vidir,Vi&eth;ir,Vwbb,wb,x-wb,,64.0755012,-22.6487931,Gar&eth;ur,ISL
+vidnoyemetallurg~metalurgvidnoe,Metallurg Vidnoye,Vrww,rw,x-rw,,55.5573163,37.7136211,Vidnoye,RUS
 viettel,Viettel,Vwrr,wr,x-wr,,21.020556,105.763806,H&agrave; N&ocirc;i,VIE
 vifk,Vasa IFK,Vwbb,wb,x-wb,,63.085278,21.627778,Vaasa,FIN
 vigasio,ASD Vigasio,Vkuu,ku,x-ku,,45.3238737,10.9434677,Vigasio,ITA
@@ -6489,6 +6495,7 @@ yerevanbanants~fcbanants,Banants Yerevan,Bbww,bw,x-bw,,40.171426,44.449938,Yerev
 yerevanlokomotiv~lokomotiv,Lokomotiv Yerevan,Lrwr,rw,s-wwr,,40.149873,44.475949,Yerevan,ARM
 yeroskipouatromitos~atromitosyeroskipou,Atromitos Yeroskipou,Ybrb,br,s-wbr,,34.7436894,32.4403673,Geroskipou,CYP
 yerrescrosne,Val Yerres-Crosne,Vrww,rw,x-rw,,48.7136479,2.4761296,Yerres,FRA
+yessentuki,Yessentuki,Ywrr,wr,x-wr,,44.0527754,42.85853,Yessentuki,RUS
 yfjuvzurich~scyfjuventuszurich~scyfjuventuszuerich,Young Fellows Juventus,Ywkw,kw,s-kkw,,47.3789,8.4969,Z&uuml;rich,SUI
 yinchuanhelanshan,Yinchuan Helanshan,Ywrr,wr,x-wr,,38.49769,106.149004,Ningxia,CHN
 yobedesertstars,Yobe Desert Stars,Ywbb,wb,x-wb,,11.7471453,11.9588963,Damaturu,NGA
@@ -6587,6 +6594,7 @@ zonguldakkomurspor,Zonguldak K&ouml;m&uuml;rspor,Zbrb,br,s-rrb,,41.4614082,31.79
 zookericho~zoofc,Zoo Kericho,Zkgo,go,b-kgo,,-0.360669,35.2847088,Kericho,KEN
 zorkykrasnogorsk,Zorky Krasnogorsk,Zwbb,wb,x-wb,,55.8280365,37.325911,Krasnogorsk,RUS
 zorya,Zorya Luhansk,Zkww,kw,x-kw,x134,48.5595467,39.3208508,Luhansk,UKR
+zrekhovozuyevoznamyatruda~znamyanoginsk,Znamya Truda Orekhovo-Zuyevo,Zkrr,kr,x-kr,,55.7958188,38.9868006,Orekhovo-Zuyevo,RUS
 zuerichfrauen~fczuerichfrauenw,Z&uuml;rich Frauen,Zhww,hw,x-hw,,47.4026973,8.5925016,Z&uuml;rich,SUI
 zugdidibaia~fcbaiazugdidi,Baia Zugdidi,Zwbb,wb,x-wb,,42.4264458,41.6170081,Zugdidi,GEO
 zugdidi~fczugdidi,Zugdidi,Zwbb,wb,x-wb,,42.4267553,41.6222163,Zugdidi,GEO
