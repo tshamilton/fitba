@@ -1033,7 +1033,7 @@ bucheonfc1995,Bucheon 1995,Bkrr,kr,x-kr,,37.50265,126.798989,Bucheon,KOR
 buchholztsv~tsvbuchholz,TSV Buchholz 08,Bwrr,wr,x-wr,,53.3145732,9.8641355,Buchholz in der Nordheide,GER
 buckiethistle,Buckie Thistle,Bgwg,gw,h-ggw,,57.673056,-2.96625,Buckie,SCO
 buckinghamathletic,Buckingham Athletic,Bnff,nf,x-nf,,52.002281,-0.978975,Buckingham,ENG
-budafok,Budafoki Labdar&uacute;g&oacute;,Bkrk,kr,h-kkr,,47.4190192,19.0247595,Budafoki,HUN
+budafok~budafoki,Budafoki Labdar&uacute;g&oacute;,Bkrk,kr,h-kkr,,47.4190192,19.0247595,Budafoki,HUN
 budaors,Buda&ouml;rsi,Bwnw,wn,s-nnw,,47.4574963,18.9298987,Buda&ouml;rs,HUN
 budapesthonved,Budapest Honv&eacute;d,Bkrk,kr,s-wkr,,47.443361,19.1555801,Kispest,HUN
 budapestmtk~mtkbudapest,MTK Budapest,Mhww,hw,d-hwh,,47.4909204,19.1069345,Budapest,HUN
@@ -1080,7 +1080,7 @@ caen,Caen Stade Malherbe,Cbrb,rb,s-rrb,,49.1794907,-0.3988981,Caen,FRA
 caenasptt~aspttcaen,ASPTT Caen,Abyb,yb,v-bby,,49.1923345,-0.3432915,Caen,FRA
 caenlamaladerie~lamaladrerie,Maladerie OS Caen,Mwrr,wr,o-krw,,49.1910104,-0.4047493,Caen,FRA
 caernarfon,Caernarfon Town,Cgyy,gy,x-gy,,53.1354951,-4.2678612,Caerfarnon,WAL
-cafetalerosdechiapas,Cafetaleros de Chiapas,Cuku,uk,e-uuk,,16.7628167,-93.0963766,Tuxtla Guti&eacute;rrez,MEX
+cancunfc~cafetalerosdechiapas,Canc&uacute;n,Cwhk,wh,x-whh,,21.150995,-86.838348,Canc&uacute;n,MEX
 cafetalerosdetapachula,Cafetaleros de Tapachula,Tkgk,kg,s-ggk,,14.8689769,-92.2923903,Tapachula,MEX
 cagliari,Cagliari,Cbrb,br,v-wrb,x189,39.1994218,9.1350966,Cagliari,ITA
 caicomodoro,CAI Comodoro,Cobb,ob,x-ob,,-45.8383239,-67.4854918,Comodoro Rivadavia,ARG
@@ -3410,7 +3410,7 @@ lobosupnfm,Lobos UPNFM,Lboo,bo,x-bo,,14.0984417,-87.2038754,Tegucigalpa,HON
 locarno,Locarno,Lkww,kw,x-kw,,46.1631231,8.8017775,Locarno,SUI
 lochau~svlochau,Lochau,Lwbb,wb,x-wb,,47.5323291,9.7530633,Lochau,AUT
 locheeunited,Lochee United,Lwbb,wb,x-wb,,56.4764166,-3.0229767,Lochee,SCO
-loddeif,L&ouml;dde IF,Lkyy,ky,x-ky,,55.765564,13.0157613,K&auml;vlinge,SWE
+loddeif~iflodde,L&ouml;dde IF,Lkyy,ky,x-ky,,55.765564,13.0157613,K&auml;vlinge,SWE
 logrones,UD Logro&ntilde;&eacute;s,Lkre,rw,s-krw,,42.4559144,-2.451821,Logro&ntilde;o,ESP
 logrono,EdF Logro&ntilde;o,Lwrr,wr,x-wr,,42.4586813,-2.4512535,Logro&ntilde;o,ESP
 logronow,EdF Logro&ntilde;o,Lwrr,wr,x-wr,,42.4586813,-2.4512535,Logro&ntilde;o,ESP
@@ -3514,7 +3514,7 @@ lvivfc~fclviv,Lviv,Lkww,kw,x-kw,,49.8193423,24.0481317,Lviv,UKR
 lvvlugdunum,LVV Lugdunum,Lgwg,gw,h-ggw,,52.173839,4.487174,Leiden,NED
 lyngby,Lyngby,Lwbb,wb,x-wb,,55.7811421,12.5057906,Lyngby,DEN
 lyn~lynfotball,Lyn,Lbwr,rw,b-brw,,59.9275961,10.7092385,Oslo,NOR
-lyonladuchere,AS Lyon Duch&egrave;re,Lryy,ry,x-ry,,45.7870311,4.7967415,Lyon,FRA
+lyonsc~sclyon~lyonladuchere,SC Lyon,Lryy,ry,x-ry,,45.7870311,4.7967415,Lyon,FRA
 lyontrinite~etstrinitelyon,Etoile Sportive Trinite Lyon,Tkww,kw,x-kw,,45.7305898,4.8775215,Lyon,FRA
 lyon~olympiquelyonnais~olympiquelyon,Olympique Lyon,Lbwr,br,o-bwbr,x018,45.765295,4.982029,Lyon,FRA
 lypovaalians~alians,Alians Lypova Dolyna,Akgk,kg,e-kkg,,50.9473519,34.9146572,Lypova Dolyna,UKR
@@ -5456,7 +5456,7 @@ solin,Solin,Syby,yb,e-yyb,,43.5374967,16.487375,Solin,CRO
 solingenwald,1. SV Solingen-Wald,Swrr,wr,x-wr,,51.18637,7.0572301,Solingen,GER
 sollefteagifff,Sollefte&aring; GIF,Swbw,wb,e-wwb,,63.1675743,17.2971045,Sollefte&aring;,SWE
 sollenau,1. SC Sollenau,Skww,kw,x-kw,,47.9007976,16.2417685,Sollenau,AUT
-sollentunaff,Sollentuna,Swkk,wk,x-wk,,59.436314,17.9529183,Sollentuna,SWE
+sollentunaff~sollentunafk,Sollentuna,Swkk,wk,x-wk,,59.436314,17.9529183,Sollentuna,SWE
 sollerodvedbaek,S&oslash;ller&oslash;d-Vedb&aelig;k,Skff,kf,x-kf,,55.8488473,12.558064,Vedb&aelig;k,DEN
 solomonwarriorsfc,Solomon Warriors,Swrr,wr,x-wr,,-9.436619,159.9713626,Honiara,SOL
 somaliskauf,Somaliska UF,Swbb,wb,x-wb,,55.5878659,13.0351787,&Ouml;ster,SWE
@@ -6069,7 +6069,7 @@ usterfc~fcuster,Uster,Uwrr,wr,x-wr,,47.3594197,8.7244481,Uster,SUI
 ustinadlabem,&Uacute;st&iacute; nad Labem,Uwbb,wb,x-wb,,50.6757845,14.0164136,&Uacute;st&iacute; nad Labem,CZE
 ustinadorlici,Jiskra &Uacute;st&iacute; nad Orlic&iacute;,Ukww,kw,x-kw,,49.9659864,16.3847411,&Uacute;st&iacute; nad Orlic&iacute;,CZE
 utahroyals,Utah Royals,Uyrn,nr,e-ynr,,40.581923,-111.892156,Salt Lake City,USA
-utarad~utabatranadoamna,UT Arad,Awrw,wr,b-wwr,,46.1522599,21.3177223,Arad,ROU
+utaarad~utarad~utabatranadoamna,UT Arad,Awrw,wr,b-wwr,,46.1522599,21.3177223,Arad,ROU
 utbynassk,Utbyn&auml;s,Ubyb,by,e-bby,,57.7343722,12.053688,G&ouml;teborg,SWE
 utenautenis~fkutenisutena,Utenis Utena,Uwbb,wb,x-wb,,55.501504,25.5732257,Utena,LTU
 utrecht~fcutrecht,FC Utrecht,Uwrr,wr,x-wr,,52.0783638,5.1458244,Utrecht,NED
@@ -6626,3 +6626,18 @@ zweibrucken~svn1929zweibrucken~svn1929zweibruecken,SVN 1929 Zweibr&uuml;cken,Zwb
 zwekapinunitedfc,Zwekapin United,Zyoo,yo,x-yo,,16.8872375,97.6331347,Hpa-An,MYA
 zwentendorf~svzwentendorf,SV Zwentendorf,Zwbb,wb,x-wb,,48.346486,15.9068517,Zwentendorf an der Donau,AUT
 zwickaufsv~fsvzwickau,FSV Zwickau,Zwrr,wr,x-wr,,50.7289657,12.5188993,Zwickau,GER
+
+atleticomorelia,Atl&eacute;tico Morelia,Aryb,ry,d-byr,,19.718742,-101.233622,Morelia,MEX
+calunitedstrikers,California United Strikers,Ckww,kw,x-kw,,33.6722577,-117.745489,Irvine,USA
+morelostepatitlan~cdtepatitlandemorelos,Tepatitl&aacute;n de Morelos,Twrb,wr,o-wrwb,,20.8154928,-102.7679429,Morelos,MEX
+pitestiarges~fcargespitesti,Arge&scedil; Pite&scedil;ti,Apww,pw,x-pw,,44.846675,24.866422,Pite&scedil;ti,ROU
+fcwiltz71,Wiltz 71,Wwrr,wr,x-wr,,49.9733135,5.9373435,Wiltz,LUX
+gjilani,KF Gjilani,Gwrr,wr,x-wr,,42.4668,21.4645,Gjilani,KOS
+laforce,Los Angeles Force,Fukk,uk,x-uk,,34.0667698,-118.1684392,Los Angeles,USA
+newamsterdam,New Amsterdam,Awkk,wk,x-wk,,41.2768274,-74.3016429,Warwick,USA
+oaklandroots,Oakland Roots,Owkk,wk,x-kw,,37.7950726,-122.2619815,Oakland,USA
+pumastabasco,Pumas de Tabasco,Tnww,nw,x-nw,,17.976111,-92.945556,Villahermosa,MEX
+swifthesperange,Swift Hesperange,Swrr,wr,x-wr,,49.5753342,6.1585189,Hesperange,LUX
+tlaxcalafc,Tlaxcala,Trkk,rk,x-rk,,19.3256149,-98.2303357,Tlaxcala,MEX
+trosavagnharadsk,Trosa-Vagnh&auml;rads,Tkgg,kg,x-kg,,58.9392742,17.5119027,Vagnh&auml;rads,SWE
+utaarad,Name,Pin,Minor,Major,,L1,L2,Location,ROU
