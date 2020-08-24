@@ -659,7 +659,8 @@
 			"2015-16": "benfica",
 			"2016-17": "benfica",
 			"2017-18": "porto",
-			"2018-19": "porto"
+			"2018-19": "porto",
+			"2019-20": "porto"
 		},
 		"NED~Eredivisie": {
 			"1949-50": "limburgiasv",
@@ -798,7 +799,8 @@
 			"2015-16": "realmadrid",
 			"2016-17": "realmadrid",
 			"2017-18": "realmadrid",
-			"2018-19": "liverpool"
+			"2018-19": "liverpool",
+			"2019-20": "bayernmunich"
 		},
 		"INT~Europa League": {
 			"1971-72": "tottenhamhotspur",
@@ -848,7 +850,8 @@
 			"2015-16": "sevillafc",
 			"2016-17": "manchesterunited",
 			"2017-18": "madridatletico",
-			"2018-19": "chelsea"
+			"2018-19": "chelsea",
+			"2019-20": "sevilla"
 		},
 		"INT~AFC Champions League": {
 			"2003": "alain",
@@ -867,7 +870,8 @@
 			"2016": "jeonbukfc",
 			"2017": "urawareddiamonds",
 			"2018": "kashimaantlers",
-			"2019": "alhilal"
+			"2019": "alhilal",
+			"2020": "?"
 		},
 		"INT~UEFA European Championship": {
 			"1960": "sovietunion",
@@ -966,7 +970,8 @@
 			"2016": "atleticonacional",
 			"2017": "gremio",
 			"2018": "riverplateca",
-			"2019": "flamengo"
+			"2019": "flamengo",
+			"2020": "?"
 		},
 		"INT~FIFA World Cup": {
 			"1930": "uruguay",
@@ -989,7 +994,8 @@
 			"2006": "italy",
 			"2010": "spain",
 			"2014": "germany",
-			"2018": "france"
+			"2018": "france",
+			"2022": "?"
 		}
 	},
 	"errorList": [],
