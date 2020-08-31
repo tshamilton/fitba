@@ -176,8 +176,8 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .ob	{ color: #ff9900; background-color: #0000ff;}
 .og	{ color: #ff9900; background-color: #009900;}
 .oh	{ color: #ff9900; background-color: #00aaff;}
-.oh	{ color: #ff9900; background-color: #00aaff;}
 .ok	{ color: #ff9900; background-color: #000000;}
+.on	{ color: #ff9900; background-color: #000099;}
 .op	{ color: #ff9900; background-color: #660099;}
 .os	{ color: #ff9900; background-color: #aaaaaa;}
 .ow	{ color: #ff9900; background-color: #ffffff;}
@@ -621,6 +621,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .o-wbgr	{ color: #ffffff; background: repeating-linear-gradient(to right, #0000ff, #0000ff 65%, #009900 65%, #009900 75%, #ff0000 75%, #ff0000 85%, #0000ff 85%, #0000ff);}
 .o-wbr	{ color: #ffffff; background: repeating-linear-gradient(to right, #0000ff, #0000ff 70%, #ff0000 70%, #ff0000 80%, #0000ff 80%, #0000ff); text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;}
 .o-wbw	{ color: #ffffff; background: repeating-linear-gradient(to right, #0000ff, #0000ff 70%, #ffffff 70%, #ffffff 80%, #0000ff 80%, #0000ff); text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;}
+.o-wbwg	{ color: #ffffff; background: repeating-linear-gradient(to right, #0000ff, #0000ff 65%, #ffffff 65%, #ffffff 75%, #009900 75%, #009900 85%, #0000ff 85%, #0000ff); text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;}
 .o-wgw	{ color: #ffffff; background: repeating-linear-gradient(to right, #009900, #009900 70%, #ffffff 70%, #ffffff 80%, #009900 80%, #009900); text-shadow: -1px -1px 0 #009900,1px -1px 0 #009900,-1px 1px 0 #009900,1px 1px 0 #009900;}
 .o-wkw	{ color: #ffffff; background: repeating-linear-gradient(to right, #ff0000, #ff0000 70%, #ffffff 70%, #ffffff 80%, #ff0000 80%, #ff0000); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
 .o-wkwr	{ color: #ffffff; background: repeating-linear-gradient(to right, #000000, #000000 65%, #ffffff 65%, #ffffff 75%, #ff0000 75%, #ff0000 85%, #000000 85%, #000000); text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
@@ -897,6 +898,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .x-ob	{ color: #ff9900; background-color: #0000ff;}
 .x-og	{ color: #ff9900; background-color: #009900;}
 .x-ok	{ color: #ff9900; background-color: #000000;}
+.x-on	{ color: #ff9900; background-color: #000099;}
 .x-op	{ color: #ff9900; background-color: #660099;}
 .x-os	{ color: #ff9900; background-color: #aaaaaa;}
 .x-ow	{ color: #ff9900; background-color: #ffffff;}
