@@ -200,7 +200,16 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 	global $Team;
 	global $Nations;
 	$_SESSION['T'] = $Team;
-	$ladder_header = Array("mls", "divisionprofesional", "championshipgroup", "relegationgroup", "ligamx", "2", "premierdivision", "primeraa", "3fligaenw", "1division", "\"ccode=", "liganacional", "secondstage", "grpa", "grpb", "avd1", "avd2", "northeast", "firststage", "primeradivision");
+	$ladder_header = Array(
+		"mls", "divisionprofesional", "championshipgroup", "relegationgroup", 
+		"ligamx", "2", "premierdivision", "primeraa", "3fligaenw", "1division", 
+		"\"ccode=", "liganacional", "secondstage", "grpa", "grpb", "avd1", "avd2", 
+		"northeast", "firststage", "primeradivision", "grp1", "grp2", "grp3", "grp4",
+		"ligadeexpansionmx", "qualificationgrp1", "qualificationgrp2", 
+		"qualificationgrp3", "qualificationgrp4", "qualificationgrp5",
+		"qualificationgrp6", "qualificationgrp7", "qualificationgrp8", 
+		"qualificationgrp9", "west"
+	);
 	
 	$table_body = Array();
 	$points_Lt = Array();
