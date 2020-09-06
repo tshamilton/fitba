@@ -208,7 +208,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 		"ligadeexpansionmx", "qualificationgrp1", "qualificationgrp2", 
 		"qualificationgrp3", "qualificationgrp4", "qualificationgrp5",
 		"qualificationgrp6", "qualificationgrp7", "qualificationgrp8", 
-		"qualificationgrp9", "west"
+		"qualificationgrp9", "west","southwest"
 	);
 	
 	$table_body = Array();
