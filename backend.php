@@ -253,7 +253,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 				elseif ($p[1] == "Western")										{	$p[1] = "Western Conference";		}
 				elseif ($p[1] == "SupportersShield")							{	$p[1] = "Supporter's Shield";		}
 				elseif ($p[1] == "regionalliga")								{	$p[1] = "Regionalliga Standings";	}
-				else 															{	$p[1] = "<i>".$p[1]."</i>";			}
+				else 															{	continue;			}
 				array_push($table_body, t(8)."<tr><th colspan='10' class=\"darkSlate text-center py-2\"><b>".$p[1]."</b></th></tr>\n");
 			}
 			else {
