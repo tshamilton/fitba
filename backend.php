@@ -247,13 +247,13 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 				if (in_array($p[1], $ladder_header) || $p[1] == $n)				{	continue;							}
 				elseif (preg_match("/^group(.+?)/i", $p[1], $gp))				{	$p[1] = "Group ".$gp[1];			}
 				elseif (preg_match("/^grp(.+?)/i", $p[1], $gp))					{	$p[1] = "Group ".$gp[1];			}
-				elseif (preg_match("/^qualificationgrp(.+?)/i", $p[1], $gp))	{	$p[1] = "Group ".$gp[1];	}
+				elseif (preg_match("/^qualificationgrp(.+?)/i", $p[1], $gp))	{	$p[1] = "Group ".$gp[1];			}
 				elseif ($p[1] == "uslchampionship")								{	$p[1] = "USL Championship";			}
 				elseif ($p[1] == "Eastern")										{	$p[1] = "Eastern Conference";		}
 				elseif ($p[1] == "Western")										{	$p[1] = "Western Conference";		}
 				elseif ($p[1] == "SupportersShield")							{	$p[1] = "Supporter's Shield";		}
 				elseif ($p[1] == "regionalliga")								{	$p[1] = "Regionalliga Standings";	}
-				else 															{	continue;			}
+				else 															{	continue;							}
 				array_push($table_body, t(8)."<tr><th colspan='10' class=\"darkSlate text-center py-2\"><b>".$p[1]."</b></th></tr>\n");
 			}
 			else {
