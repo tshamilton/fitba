@@ -41,6 +41,8 @@ C,cup,100,Copa Argentina,
 C,copadelasuperliga,110,Copa De La Superliga,
 C,copadelasuperligagroupa,111,Copa De La Superliga Group A,
 C,copadelasuperligagroupb,112,Copa De La Superliga Group B,
+N,ARM,Armenia,910,armenia
+L,premierleague,10,Premier League,
 N,AUS,Australia,40,australia
 L,aleague,10,A-League,
 C,aleagueplayoff,11,A-League Finals,
@@ -1054,6 +1056,8 @@ L,superleague,10,Super League,
 C,superleaguequalification,11,Super League Qualification,
 L,challengeleague,20,Challenge League,
 C,cup,100,Swiss Cup,
+N,TAN,Tanzania,920,tanzania
+L,premierleague,10,Premier League,
 N,THA,Thailand,570,thailand
 L,thaileague,10,Thai League,
 N,TUN,Tunisia,440,tunisia
