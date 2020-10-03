@@ -407,7 +407,7 @@ antequera,Antequera,Agwg,gw,s-wwg,,37.018333,-4.559722,Antequera,ESP
 antiguaguatemala,Antigua GFC,Agwg,gw,s-wwg,,14.5675,-90.738056,Antigua Guatemala,GUA
 antofagasta,Antofagasta,Abwb,bw,v-bwb,,-23.67,-70.405,Antofagasta,CHI
 antoniano~caantoniano,CA Antoniano,Arww,rw,x-rw,,36.8048616,-6.239415,Lebrija,ESP
-antwerproyal~royalantwerp,Royal Antwerp,Awrr,wr,x-wr,,51.232406,4.472086,Anterp,BEL
+antwerproyal~royalantwerp,Royal Antwerp,Awrr,wr,x-wr,x319,51.232406,4.472086,Antwerp,BEL
 anyang~fcanyang,Anyang,Awpp,wp,x-wp,,37.405304,126.946422,Anyang,KOR
 anzhijuniorzelenodolsk,Anzhi-Junior Zelenodolsk,Akww,kw,x-kw,,55.8488993,48.4916036,Zelenodolsk,RUS
 anzhimakhachkala,Anzhi Makhachkala,Agyy,gy,x-gy,,42.907901,47.618587,Kaspiysk,RUS
@@ -2268,7 +2268,7 @@ gozzano,AC Gozzano,Grnn,rn,e-rrn,,45.7574683,8.418691,Gozzano,ITA
 gpsmassachusetts,GPS Massachusetts,Mkrr,kr,x-kr,,42.37525,-71.23297,Waltham,USA
 gpso92issy,GPSO '92 Issy,Iwrr,wr,x-wr,,48.8076617,2.2223292,Meudon,FRA
 gradiskakozara~kozara,Kozara Gradi&scaron;ka,Krwr,rw,s-rrw,,45.1424721,17.2565234,Gradi&scaron;ka,BIH
-granada,Granada,Gbrw,rw,h-brw,,37.152892,-3.5956996,Granada,ESP
+granada,Granada,Gbrw,rw,h-brw,x321,37.152892,-3.5956996,Granada,ESP
 grandbodo,Grand Bod&oslash;,Bwrr,wr,x-wr,,67.276639,14.384333,Bod&oslash;,NOR
 grandemotte~fcpyramidgrandemotte,Pyramid Grande Motte,Pwbk,wb,e-wkb,,43.5648008,4.0717875,La Grande-Motte,FRA
 grandesynthe,Olympique Grande-Synthe,Obyy,by,x-by,,51.0169871,2.3003583,Grande-Synthe,FRA
@@ -4110,7 +4110,7 @@ newyorkredbulls,New York Red Bulls,Rrww,rw,x-rw,,40.7368436,-74.1502355,Harrison
 nice,OGC Nice,Nkrk,kr,s-wkr,x133,43.705059,7.192585,Nice,FRA
 nicosiaapoel~apoelnicosia,APOEL Nicosia,Abyb,by,b-bby,x055,35.114528,33.362833,Nicosia,CYP
 nicosiaolympiakos~olympiakosnicosia,Olympiakos Nicosia,Ogkg,kg,s-kkg,,35.1144171,33.3628402,Nicosia,CYP
-nicosiaomonia~omonianicosia,AC Omonia Nicosia,Owgg,wg,x-wg,,35.1124171,33.3608402,Nicosia,CYP
+nicosiaomonia~omonianicosia,AC Omonia Nicosia,Owgg,wg,x-wg,x322,35.1124171,33.3608402,Nicosia,CYP
 niedercornprogres~fcprogresniedercorn~fcprogresniederkorn,Progr&egrave;s Niederkorn,Pkyy,ky,x-ky,,49.5461127,5.90339,Niederkorn,LUX
 niendorfertsv,Niendorfer TSV,Nbww,bw,x-bw,,53.64353,9.9565725,Hamburg,GER
 nieuwbuinen,Nieuw Buinen,Nwoo,wo,x-wo,,52.966881,6.96177,Nieuw-Buinen,NED
@@ -5436,7 +5436,7 @@ sirokibrijeg,&Scaron;iroki Brijeg,Swbb,wb,x-wb,,43.3786748,17.5980427,&Scaron;ir
 sisaket~esanunited~sisaketfc,Sisaket,Skoo,ko,x-ko,,15.100956,104.3403721,Sisaket,THA
 sittardfortuna~fortunasittard,Fortuna Sittard,Fgyy,gy,x-gy,,50.9919564,5.8436505,Sittard,NED
 sivasbelediyespor,Sivas Belediye Spor,Sgww,gw,e-ggw,,39.732705,36.9565,Sivas,TUR
-sivasspor,Sivasspor,Swrr,wr,x-wr,,39.7286298,36.9840482,Sivas,TUR
+sivasspor,Sivasspor,Swrr,wr,x-wr,x323,39.7286298,36.9840482,Sivas,TUR
 sjc,SJC Noordwijk,Nwkw,kw,s-kkw,,52.2308322,4.458451,Noordwijk,NED
 sjkakatemia,SJK Akatemia,Sukk,uk,x-uk,,62.7784687,22.8155879,Sein&auml;joki,FIN
 skabersjo,Skabersj&ouml;,Sgyy,gy,x-gy,,55.5094314,13.2402452,Svedala,SWE
@@ -5499,10 +5499,10 @@ socialsol,Social Sol,Sgyy,gy,x-gy,,15.4763461,-86.5654421,Olanchito,HON
 socopoatletico~atleticosocopo,Atl&eacute;tico Socop&oacute;,Skzz,kz,x-kz,,8.2303061,-70.8251667,Socop&oacute;,VEN
 socuellamos,UD Socu&eacute;llamos,Swbb,wb,x-wb,,39.2834738,-2.7990584,Socu&eacute;llamos,ESP
 soderhamn,S&ouml;derhamn FF,Sbww,bw,x-bw,,61.288171,17.0666353,S&ouml;derhamn,SWE
-sodertaljeff~ffsodertalje,S&ouml;dertalje,Skrk,kr,s-krw,,59.18756,17.57043,S&ouml;dertalje,SWE
+sodertaljeff~ffsodertalje,S&ouml;dertalje FF,Skrk,kr,s-krw,,59.18756,17.57043,S&ouml;dertalje,SWE
 sodertaljefk,S&ouml;dert&auml;lje FK,Skrk,kr,s-wkr,,59.187629,17.5704306,S&ouml;dert&auml;lje,SWE
 sofapaka,Sofapaka,Swbb,wb,x-wb,,-1.3039579,36.8221116,Nairobi,KEN
-sofiacskacskasofia~cska1948~pfccskasofia,CSKA 1948 Sofia,Cwrr,wr,x-wr,,42.6841396,23.3397664,Sofia,BUL
+sofiacska~cskasofia~cska1948~pfccskasofia,CSKA 1948 Sofia,Cwrr,wr,x-wr,x320,42.6841396,23.3397664,Sofia,BUL
 sofiaslavia~slaviasofia,Slavia Sofia,Skww,kw,x-kw,,42.6752632,23.2716995,Sofia,BUL
 sofiatsarskoselo~fctsarskoselosofia2015,Tsarsko Selo Sofia,Trwr,rw,s-rrw,,42.633333,23.316667,Sofia,BUL
 sogndal,Sogndal,Skww,kw,x-kw,,61.2318491,7.0873329,Sogndal,NOR

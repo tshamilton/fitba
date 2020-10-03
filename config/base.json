@@ -3,18 +3,18 @@
 		"scotland": 8,
 		"australia": 8,
 		"netherlands": 14,
-		"turkey": 8,
+		"turkey": 9,
 		"unitedarabemirates": 1,
 		"saudiarabia": 2,
 		"qatar": 1,
-		"belgium": 7,
+		"belgium": 8,
 		"argentina": 8,
 		"england": 27,
 		"kazakhstan": 1,
 		"greece": 5,
 		"romania": 3,
 		"italy": 15,
-		"spain": 13,
+		"spain": 14,
 		"colombia": 2,
 		"germany": 22,
 		"france": 16,
@@ -37,10 +37,10 @@
 		"southkorea": 4,
 		"denmark": 2,
 		"russia": 8,
-		"cyprus": 4,
+		"cyprus": 5,
 		"poland": 2,
 		"austria": 5,
-		"bulgaria": 1,
+		"bulgaria": 2,
 		"slovenia": 1,
 		"norway": 3,
 		"uruguay": 2,
@@ -3448,7 +3448,7 @@
 			"septemvrisimitli",
 			"septemvrisofia",
 			"slivnishkigeroi",
-			"sofiacskacskasofia",
+			"sofiacska",
 			"sofiaslavia",
 			"sofiatsarskoselo",
 			"sozopol",
@@ -9858,6 +9858,7 @@
 		],
 		"belgium": [
 			"anderlecht",
+			"antwerproyal",
 			"bruggeclub",
 			"genk",
 			"gent",
@@ -9878,7 +9879,8 @@
 			"vasco"
 		],
 		"bulgaria": [
-			"ludogoretsrazgrad"
+			"ludogoretsrazgrad",
+			"sofiacska"
 		],
 		"chile": [
 			"colocolo"
@@ -9898,7 +9900,8 @@
 			"larnacaaek",
 			"limassolael",
 			"limassolapollon",
-			"nicosiaapoel"
+			"nicosiaapoel",
+			"nicosiaomonia"
 		],
 		"czechrepublic": [
 			"jablonecbaumit",
@@ -10132,6 +10135,7 @@
 			"celtavigo",
 			"espanyol",
 			"getafe",
+			"granada",
 			"lacorunadeportivo",
 			"madridatletico",
 			"realmadrid",
@@ -10160,6 +10164,7 @@
 			"istanbulbuyuksehir",
 			"konyaspor",
 			"osmanlispor",
+			"sivasspor",
 			"trabzonspor"
 		],
 		"ukraine": [
