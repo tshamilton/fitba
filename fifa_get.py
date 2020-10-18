@@ -499,6 +499,8 @@ def defineLeague(token, id, pl):
 						out_table[tl]["table"][count] = out_table[tl]["table"][count]+"|RELEGATED"
 						count -= 1
 				elif f[0] == 'relegation_playoff':
+					if "." in the_pos:
+						the_pos = the_pos.replace(".", ",")
 					pos = the_pos.split(",")
 					for p in pos:
 						try:
