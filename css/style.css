@@ -251,6 +251,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .yv	{ color: #fff00c; background-color: #aa5533;}
 .zg	{ color: #00ff00; background-color: #009900;}
 .zk	{ color: #00ff00; background-color: #000000;}
+.zn	{ color: #00ff00; background-color: #000099;}
 .zw	{ color: #00ff00; background-color: #ffffff;}
 
 .b-aab	{ color: #3366ff; background: repeating-linear-gradient(to right, #3366ff, #3366ff 10%, #0000ff 10%, #0000ff 90%, #3366ff 90%, #3366ff); text-shadow: -1px -1px 0 #0000ff,1px -1px 0 #0000ff,-1px 1px 0 #0000ff,1px 1px 0 #0000ff;}
@@ -959,6 +960,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .x-yr	{ color: #fff00c; background-color: #ff0000;}
 .x-zg	{ color: #00ff00; background-color: #009900;}
 .x-zk	{ color: #00ff00; background-color: #000000;}
+.x-zn	{ color: #00ff00; background-color: #000099;}
 .x-zw	{ color: #00ff00; background-color: #ffffff;}
 
 .z-bbw	{ color: #0000ff; background-color: #0000ff; background-image: linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff), linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff); background-size:26px 26px; background-position:0 0, 13px 13px; text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}

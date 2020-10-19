@@ -680,9 +680,21 @@ function MakeTeamName($t) {
 		$tIdent = $t;
 		$tName = $Team[$tIdent]["Name"];
 	}
-	elseif ((preg_match("/fcw$/", $t)) && (array_key_exists(substr($t, 0, -1), $Team)))	{
+	elseif ((preg_match("/fcw$/", $t)) && (array_key_exists(substr($t, 0, -3), $Team)))	{
 		/* women */
 		$tIdent = substr($t, 0, -3);
+		if (array_key_exists($tIdent, $Team)) { $tName = $Team[$tIdent]["Name"]." <b>&#9792;</b>"; }
+		else { $tIdent = $t; $tName = "<img src=\"image/alert.gif\"> ".$t; }
+	}
+	elseif ((preg_match("/wfcw$/", $t)) && (array_key_exists(substr($t, 0, -4), $Team)))	{
+		/* women */
+		$tIdent = substr($t, 0, -4);
+		if (array_key_exists($tIdent, $Team)) { $tName = $Team[$tIdent]["Name"]." <b>&#9792;</b>"; }
+		else { $tIdent = $t; $tName = "<img src=\"image/alert.gif\"> ".$t; }
+	}
+	elseif ((preg_match("/femenino$/", $t)) && (array_key_exists(substr($t, 0, -8), $Team))) {
+		/* women (ESP) */
+		$tIdent = substr($t, 0, -8);
 		if (array_key_exists($tIdent, $Team)) { $tName = $Team[$tIdent]["Name"]." <b>&#9792;</b>"; }
 		else { $tIdent = $t; $tName = "<img src=\"image/alert.gif\"> ".$t; }
 	}
