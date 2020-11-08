@@ -2449,6 +2449,7 @@ haningebrb~ifkhaningebrb,IFK Haninge BRB,Hykk,yk,x-yk,,59.1630556,18.1550001,Han
 hannover96,Hannover 96,Hkrr,kr,x-kr,x204,52.360017,9.7312249,Hannover,GER
 hannoverarminia~arminiahannover,Arminia Hannover,Awbb,wb,x-wb,,52.362222,9.780556,Hanover,GER
 hannoverhsc~hschannover,Hannoverscher SC,Hwgg,wg,x-wg,,52.40223,9.7668413,Hannover,GER
+hanoi~hanoitt,Hanoi,Hypp,yp,x-yp,,21.029722,105.833056,Hanoi,VIE
 hantharwadyunitedfc,Hantharwady United,Hwbb,wb,x-wb,,17.3220711,96.4663286,Bago,MYA
 hapoelafula,Hapoel Afula,Awnn,wn,x-wn,,32.627222,35.317222,Afula,ISR
 hapoelashkelon,Hapoel Ashkelon,Awbb,wb,x-wb,,31.6655531,34.569488,Ashkelon,ISR
@@ -5104,7 +5105,7 @@ sageatanavodari~afcsageatanavodari,S&abreve;geata N&abreve;vodari,Swff,wf,x-wf,,
 saguntinoatletico~atleticosaguntino,Atl&eacute;tico Saguntino,Sbrr,br,x-br,,39.676389,-0.273333,Sagunto,ESP
 sahabsc,Sahab,Swbb,wb,x-wb,,31.8568339,35.9998198,Sahab,JOR
 saida~mcsaida,MC Sa&iuml;da,Sgww,gw,x-gw,,34.8630523,0.1511807,Sa&iuml;da,ALG
-saigonfc~hanoi~hanoitt,S&agrave;i G&ograve;n,Hwmm,wm,d-wmw,,21.029834,105.8329196,H&agrave; N&ocirc;i,VIE
+saigonfc,S&agrave;i G&ograve;n,Hwmm,wm,d-wmw,,21.029834,105.8329196,H&agrave; N&ocirc;i,VIE
 saigonxuanthanh,Sai Gon Xuan Thanh,Swoo,wo,x-wo,,10.760703,106.663331,Ho Chi Minh City,VIE
 saintamand~stamandfc,St. Amand,Atkk,tk,x-tk,,50.4449004,3.4325756,Saint-Amand-les-Eaux,FRA
 saintannaamaigen~stannaamaigen~svstanna,St. Anna am Aigen,Awhh,wh,x-wh,,46.8285205,15.9749448,Aigen,AUT

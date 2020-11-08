@@ -41,6 +41,12 @@ C,cup,100,Copa Argentina,
 C,copadelasuperliga,110,Copa De La Superliga,
 C,copadelasuperligagroupa,111,Copa De La Superliga Group A,
 C,copadelasuperligagroupb,112,Copa De La Superliga Group B,
+L,copaligaprofesionalzona1,120,Copa de la Liga Profesional Zona 1,
+L,copaligaprofesionalzona2,121,Copa de la Liga Profesional Zona 2,
+L,copaligaprofesionalzona3,122,Copa de la Liga Profesional Zona 3,
+L,copaligaprofesionalzona4,123,Copa de la Liga Profesional Zona 4,
+L,copaligaprofesionalzona5,124,Copa de la Liga Profesional Zona 5,
+L,copaligaprofesionalzona6,125,Copa de la Liga Profesional Zona 6,
 N,ARM,Armenia,910,armenia
 L,premierleague,10,Premier League,
 N,AUS,Australia,40,australia
@@ -1087,7 +1093,7 @@ L,ligueigroupa,10,Ligue I Group A,
 L,ligueigroupb,11,Ligue I Group B,
 L,ligueichampionshipgroup,12,Ligue 1 Championship Group,
 L,ligueirelegationgroup,13,Ligue 1 Relegation Group,
-C,ligueiqualification,14,Ligue I Qualification,
+C,ligueiqualification~ligueiqualificationgroup,14,Ligue I Qualification,
 L,ligueiigrpa,21,Ligue II Group A
 N,TUR,Turkey,240,turkey
 C,supercup,1,S&uuml;per Kupa,
