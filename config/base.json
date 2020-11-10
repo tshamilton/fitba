@@ -800,7 +800,8 @@
 			"2016-17": "realmadrid",
 			"2017-18": "realmadrid",
 			"2018-19": "liverpool",
-			"2019-20": "bayernmunich"
+			"2019-20": "bayernmunich",
+			"2020-21": "?"
 		},
 		"INT~Europa League": {
 			"1971-72": "tottenhamhotspur",
@@ -851,7 +852,8 @@
 			"2016-17": "manchesterunited",
 			"2017-18": "madridatletico",
 			"2018-19": "chelsea",
-			"2019-20": "sevilla"
+			"2019-20": "sevilla",
+			"2020-21": "?"
 		},
 		"INT~AFC Champions League": {
 			"2003": "alain",
