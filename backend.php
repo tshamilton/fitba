@@ -217,10 +217,14 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 	$tBC_z = 7;
 	$notes = "";
 
-	if ($c != "INT") {
+	if ($c != "INT") { // If origin isn't "INT" then take the Lat/Lng of the origin country (e.g. Ligue 1 uses "FRA" co-ords for map)
 		$nat = $Nations[$c];
 		$tBC_lt = $Team[$nat]["Lat"];
 		$tBC_ln = $Team[$nat]["Long"];
+	}
+	else {
+		$tBC_lt = 0;
+		$tBC_ln = 0;
 	}
 
 	$map_link = "<a href=\"https://tshamilton.com/fitba/map_page.php?lat=".$tBC_lt."&lng=".$tBC_ln."&z=".$tBC_z."&t=t".$c."&n=".$n."\" style=\"color: inherit; text-decoration: inherit;\" target=\"_new\">Map</a>";
@@ -228,9 +232,9 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 	$table_header = t(7)."<div class=\"float-right col-6\">\n";
 	$table_header .= t(8)."<table class=\"text-center ladder\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">\n<thead>\n".t(9)."<tr>";
 	$table_header .= "<th><div class=\"rounded-tl darkSlate\">&nbsp;</div></th>"; //Team
-	$table_header .= "<th><div class=\"ldrHd\">Pl</div></th><th><div class=\"ldrHd\">W</div></th><th><div class=\"ldrHd\">D</div></th><th><div class=\"ldrHd\">L</div></th>"; //P W D L
-	$table_header .= "<th><div class=\"ldrHd\">GF</div></th><th><div class=\"ldrHd\">GA</div></th><th><div class=\"ldrHd\">GD</div></th>"; // GF GA GD
-	$table_header .= "<th><div class=\"ldrHd\">Pts</div></th><th><div class=\"rounded-tr darkSlate text-center\">".$map_link."</div></th></tr>\n"; // Pts Fate-Map
+	$table_header .= "<th> Pl </th><th> W </th><th> D </th><th> L </th>"; //P W D L
+	$table_header .= "<th> GF </th><th> GA </th><th> GD </div>"; // GF GA GD
+	$table_header .= "<th> Pts </th><th><div class=\"rounded-tr darkSlate text-center\">".$map_link."</div></th></tr>\n"; // Pts Fate-Map
 	$table_header .= t(8)."</thead>\n";
 	$table_header .= t(8)."<tbody>\n";
 
@@ -244,16 +248,16 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 		foreach ($ladder as $t) {
 			$p = explode("|", $t);
 			if ($p[0] == "group") {
-				if (in_array($p[1], $ladder_header) || $p[1] == $n)				{	continue;							}
-				elseif (preg_match("/^group(.+?)/i", $p[1], $gp))				{	$p[1] = "Group ".$gp[1];			}
-				elseif (preg_match("/^grp(.+?)/i", $p[1], $gp))					{	$p[1] = "Group ".$gp[1];			}
-				elseif (preg_match("/^qualificationgrp(.+?)/i", $p[1], $gp))	{	$p[1] = "Group ".$gp[1];			}
-				elseif ($p[1] == "uslchampionship")								{	$p[1] = "USL Championship";			}
-				elseif ($p[1] == "Eastern")										{	$p[1] = "Eastern Conference";		}
-				elseif ($p[1] == "Western")										{	$p[1] = "Western Conference";		}
-				elseif ($p[1] == "SupportersShield")							{	$p[1] = "Supporter's Shield";		}
-				elseif ($p[1] == "regionalliga")								{	$p[1] = "Regionalliga Standings";	}
-				else 															{	continue;							}
+				if (in_array($p[1], $ladder_header) || $p[1] == $n)				{	continue;								}
+				elseif (preg_match("/^group(.+?)/i", $p[1], $gp))				{	$p[1] = "Group ".strtoupper($gp[1]);	}
+				elseif (preg_match("/^grp(.+?)/i", $p[1], $gp))					{	$p[1] = "Group ".strtoupper($gp[1]);	}
+				elseif (preg_match("/^qualificationgrp(.+?)/i", $p[1], $gp))	{	$p[1] = "Group ".strtoupper($gp[1]);	}
+				elseif ($p[1] == "uslchampionship")								{	$p[1] = "USL Championship";				}
+				elseif ($p[1] == "Eastern")										{	$p[1] = "Eastern Conference";			}
+				elseif ($p[1] == "Western")										{	$p[1] = "Western Conference";			}
+				elseif ($p[1] == "SupportersShield")							{	$p[1] = "Supporter's Shield";			}
+				elseif ($p[1] == "regionalliga")								{	$p[1] = "Regionalliga Standings";		}
+				else 															{	continue;								}
 				array_push($table_body, t(8)."<tr><th colspan='10' class=\"darkSlate text-center py-2\"><b>".$p[1]."</b></th></tr>\n");
 			}
 			else {
@@ -274,7 +278,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 					case "UCLQ":		$fate = "UCL Qual.";		$style = "uclqual ldrData";		break;
 					case "COPALIBQ":	$fate = "Copa Lib Q.";		$style = "uclqual ldrData";		break;
 					case "EL":			$fate = "UEL";				$style = "eurolg ldrData";		break;
-					case "ELQ":			$fate = "UEL Qual.";		$style = "eurolgqual ldrData";	break;
+					case "ELQ":			$fate = "UEL Qual.";		$style = "eurolgqual ldrData";	break;	
 					case "COPASUD":		$fate = "Copa Sud. Qual.";	$style = "eurolg ldrData";		break;
 					case "ELQP":		$fate = "UEL Playoffs";		$style = "eurolgqual ldrData";	break;
 					case "PROMOTED":	$fate = "&uarr; ";			$style = "promotion ldrData";	break;
@@ -299,7 +303,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 				//pretty_var("<code>".$tnm."</code> = <code>".$tm."</code>");
 				array_push($points_Ln, $Team[$tnm]["Long"]);
 				array_push($points_Lt, $Team[$tnm]["Lat"]);
-				$team = "<td>".$tm."</td>";
+				$team = "<td style=\"width: 300px;\">".$tm."</td>";
 				$games = "<td><div class=\"".$style."\">".$pl."</div></td><td><div class=\"".$style."\">".$p[1]."</div></td><td><div class=\"".$style."\">".$p[2]."</div></td><td><div class=\"".$style."\">".$p[3]."</div></td>";
 				$goals = "<td><div class=\"".$style."\">".$p[4]."</div></td><td><div class=\"".$style."\">".$p[5]."</div></td><td><div class=\"".$style."\">".$gd."</div></td>";
 				$pts_fate = "<td><div class=\"".$style."\"><b>".$p[6]."</b></div></td><td><div class=\"text-center ".$style."\">".$fate."</div></td>";
@@ -498,15 +502,18 @@ function doTabs($tabs) {
 
 	foreach ($tabs as $t => $v) {
 		if ($t == "INT") {
-			print t(4)."<li class=\"nav-item slate\"><a role=\"nav-link\" class=\"nav-link\" data-toggle=\"pill\" style=\"color:inherit; text-decoration: inherit;\" href=\"#INT\"> International </a></li>\n";
+			$cssClass = "slate";
+			$tabName = "INT";
+			$title = "International";
 		}
 		else {
-			if ($t == "MKD") {
-				$t = "NMK";
-			}
+			if ($t == "MKD") {	$t = "NMK";	}
 			$n = $Nations[$t];
-			print t(4)."<li class=\"nav-item ".$Team[$n]["Mjr"]."\"><a role=\"nav-link\" class=\"nav-link\" data-toggle=\"pill\" href=\"#".$t."\">".doFlag(substr($Team[$n]["Mjr"], 2, 1), $t)." ".$Team[$n]["Name"]."</a></li>\n";
+			$cssClass = $Team[$n]["Mjr"];
+			$tabName = $t;
+			$title = doFlag(substr($Team[$n]["Mjr"], 2, 1), $t)." ".$Team[$n]["Name"];
 		}
+		print t(3)."<li class=\"nav-item ".$cssClass."\"><a role=\"nav-link\" class=\"nav-link\" data-toggle=\"pill\" style=\"color:inherit; text-decoration: inherit;\" href=\"#".$t."\"> ".$title." </a></li>\n";
 	}
 }
 function doTeam($name, $title, $c, $s = "h") { // Derived team db name and title, Competition Country (trig, used as test for INT comps), Side (home/away/ladder)

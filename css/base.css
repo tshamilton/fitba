@@ -63,7 +63,7 @@ code {  background-color: black; color: white; }
     text-shadow: none;
 	margin-bottom: 10px;
 }
-.ldrHd {
+th {
 	background-color: #888888;
     text-align: right;
     font-weight: bold;
