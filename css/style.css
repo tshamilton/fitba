@@ -461,6 +461,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .e-nrw	{ color: #000099; background: repeating-linear-gradient(to bottom, #000099, #000099 15%, #ffffff 15%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .e-nry	{ color: #000099; background: repeating-linear-gradient(to bottom, #000099, #000099 15%, #fff00c 15%, #fff00c); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
 .e-nny	{ color: #000099; background: repeating-linear-gradient(to bottom, #000099, #000099 15%, #fff00c 15%, #fff00c); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
+.e-ppy	{ color: #660099; background: repeating-linear-gradient(to bottom, #660099, #660099 15%, #fff00c 15%, #fff00c); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
 .e-ogk	{ color: #ff9900; background: repeating-linear-gradient(to bottom, #009900, #009900 15%, #000000 15%, #000000); text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
 .e-oog	{ color: #ff9900; background: repeating-linear-gradient(to bottom, #ff9900, #ff9900 15%, #009900 15%, #009900); text-shadow: -1px -1px 0 #009900,1px -1px 0 #009900,-1px 1px 0 #009900,1px 1px 0 #009900;}
 .e-oos	{ color: #ff9900; background: repeating-linear-gradient(to bottom, #ff9900, #ff9900 15%, #aaaaaa 15%, #aaaaaa); text-shadow: -1px -1px 0 #aaaaaa,1px -1px 0 #aaaaaa,-1px 1px 0 #aaaaaa,1px 1px 0 #aaaaaa;}

@@ -240,10 +240,14 @@ foreach ($the_nats as $in_t) {
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Montserrat">
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/base.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/badge.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+		<link rel="mask-icon" href="image/safari-pinned-tab.svg" color="#2d89ef">
 	</head>
 	<body>
 	<body>
