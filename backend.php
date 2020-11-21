@@ -230,7 +230,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 	$map_link = "<a href=\"https://tshamilton.com/fitba/map_page.php?lat=".$tBC_lt."&lng=".$tBC_ln."&z=".$tBC_z."&t=t".$c."&n=".$n."\" style=\"color: inherit; text-decoration: inherit;\" target=\"_new\">Map</a>";
 
 	$table_header = t(7)."<div class=\"float-right col-6\">\n";
-	$table_header .= t(8)."<table class=\"text-center ladder\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">\n<thead>\n".t(9)."<tr>";
+	$table_header .= t(8)."<table class=\"text-center ladder\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">\n".t(8)."<thead>\n".t(9)."<tr>";
 	$table_header .= "<th><div class=\"rounded-tl darkSlate\">&nbsp;</div></th>"; //Team
 	$table_header .= "<th> Pl </th><th> W </th><th> D </th><th> L </th>"; //P W D L
 	$table_header .= "<th> GF </th><th> GA </th><th> GD </div>"; // GF GA GD
