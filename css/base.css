@@ -1,64 +1,19 @@
 body {
-    background-color: #cccccc;
-    font-family: 'Montserrat', 'Segoe UI', 'Calibri', 'Verdana', 'Helvetica Neue', sans-serif;
-    font-size: 0.875rem !important;
-    color: inherit; text-decoration: inherit;
+	background-color: #cccccc;
+	font-family: 'Montserrat', 'Segoe UI', 'Calibri', 'Verdana', 'Helvetica Neue', sans-serif;
+	font-size: 0.875rem !important;
+	/*color: inherit; text-decoration: inherit;*/
 }
-h1 {	margin-bottom: 10px; text-align: center; }
-h2 {	margin-bottom: 6px; text-align: center; }
-code {  background-color: black; color: white; }
-.rounded-tl {    border-top-left-radius: 1rem; }
-.rounded-tr {    border-top-right-radius: 1rem; }
-.rounded-bl {    border-bottom-left-radius: 1rem; }
-.rounded-br {    border-bottom-right-radius: 1rem; }
+h1 {	margin-bottom: 10px; text-align: center; font-family: 'Raleway'; }
+h2 {	margin-bottom:  6px; text-align: center; font-family: 'Raleway'; }
 
-.gauze {
-	background-color: rgba(238,238,238,0.6);
-}
+.nav-pills .nav-link.active,
+.nav-pills .nav-link.hover,
+.nav-pills .nav-link { color: inherit; border: none; background: transparent; }
 
-.badge-pill {
-    color: inherit; text-decoration: inherit;
-    text-shadow: none;
-}
-.badge-danger,
-.badge-success {
-    text-shadow: none;
-    border: 1px #ffffff solid;
-}
-.badge-warning {
-    text-shadow: none;
-    border: 1px #212529 solid;
-}
+.nav-item {	 }
+.nav-link {	font-weight: bold; margin: 0px 15px 2px 15px; padding: 3px 6px 3px 6px; }
 
-
-.nationFrame > p > a {
-    color: inherit; text-decoration: inherit;
-}
-
-.matchTrivia > ul {
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-bottom: 8px;
-    padding-top: 8px;
-}
-.matchTrivia > ul > li {
-    padding-bottom: 2px;
-    padding-top: 2px;
-}
-/* This CSS makes sure the nav tabs don't change background or text-colour. */
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link { color: inherit; border: none; background: transparent; }
-.nav-item > a { color: inherit; text-decoration: inherit; }
-
-/* Navbar styling */
-.nav { margin-top: 4px; margin-bottom: 5px; }
-.nav-item {	margin: 0px 2px 2px 2px; border-radius: 0.5rem; }
-.nav-link {	font-weight: bold; margin: 0px 2px 2px 2px; padding: 3px 6px 3px 6px; }
-
-.nationFrame {
-	border-radius: 1.5rem;
-}
-
-/* Styles for ladders */
 .ladder {
     text-shadow: none;
 	margin-bottom: 10px;
@@ -109,7 +64,6 @@ th {
 	border-bottom: #00aaff solid 1px;
 }
 
-/* Styles for team displays */
 .theMatchBody {
     text-shadow: none;
 }
@@ -120,27 +74,6 @@ th {
     font-size: 0.9625rem;
     margin: 0.2rem !important;
 }
-
-.team > a {
-    color: inherit; text-decoration: inherit;
-}
-.nationFrame > div > a {
-    color: inherit; text-decoration: inherit;
-}
-
-/* Styles for matches */
-/*.badge {
-	display: inline-block;
-    padding: .25em .4em;
-    font-size: 60%;
-    font-weight: 600;
-    line-height: 0.7;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}*/
 .score {
     font-weight: bold;
     text-align: center;
@@ -149,16 +82,18 @@ th {
 }
 .homeevent {
     text-align: right;
-    /*border-top-left-radius: 0.5rem;
-	border-bottom-left-radius: 0.5rem;*/
+    border-top-left-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
 	padding-bottom: 1px;
-	padding-top: 1px;
+    padding-top: 1px;
+    font-size: 0.8rem;
 }
 .awayevent {
-    /*border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;*/
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 	padding-bottom: 1px;
 	padding-top: 1px;
+    font-size: 0.8rem;
 }
 .htimeevent {
     text-align: center;
@@ -173,4 +108,33 @@ th {
     border-bottom-left-radius: 0.5rem;
 	padding-bottom: 1px;
 	padding-top: 1px;
+}
+.matchTrivia > ul {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.matchTrivia > ul > li {
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+.badge-pill {
+    color: inherit; text-decoration: inherit;
+    text-shadow: none;
+}
+.badge-danger {
+    text-shadow: none;
+    border: 1px #ffffff solid;
+    background-color: #cc0000;
+}
+.badge-success {
+    text-shadow: none;
+    border: 1px #ffffff solid;
+    background-color: #009900;
+}
+.badge-warning {
+    text-shadow: none;
+    border: 1px #212529 solid;
+    background-color: #ffc00c;
 }

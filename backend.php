@@ -229,7 +229,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 
 	$map_link = "<a href=\"https://tshamilton.com/fitba/map_page.php?lat=".$tBC_lt."&lng=".$tBC_ln."&z=".$tBC_z."&t=t".$c."&n=".$n."\" style=\"color: inherit; text-decoration: inherit;\" target=\"_new\">Map</a>";
 
-	$table_header = t(7)."<div class=\"float-right col-6\">\n";
+	$table_header = t(7)."<div class=\"float-end col-6\">\n";
 	$table_header .= t(8)."<table class=\"text-center ladder\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">\n".t(8)."<thead>\n".t(9)."<tr>";
 	$table_header .= "<th><div class=\"rounded-tl darkSlate\">&nbsp;</div></th>"; //Team
 	$table_header .= "<th> Pl </th><th> W </th><th> D </th><th> L </th>"; //P W D L
@@ -463,7 +463,7 @@ function doMatchStatus($st, $s) { //status, style
 	return "<div class=\"pr-2 text-center matchStatus ".$s."\">".MakeStatus($st)."</div>";
 }
 function doMatchTime($mt, $s) { //match time, home team minor style
-	return "<div class=\"pl-2 text-right rounded-tl matchTime ".$s."\">".$mt."</div>";
+	return "<div class=\"pl-2 text-end rounded-tl matchTime ".$s."\">".$mt."</div>";
 }
 function doMatchVenue($v, $s) { // venue, style
 	return "<div class=\"matchVenue text-center ".$s."\">".$v."</div>";
@@ -503,17 +503,17 @@ function doTabs($tabs) {
 	foreach ($tabs as $t => $v) {
 		if ($t == "INT") {
 			$cssClass = "slate";
-			$tabName = "INT";
 			$title = "International";
+			$edge = "k";
 		}
 		else {
 			if ($t == "MKD") {	$t = "NMK";	}
 			$n = $Nations[$t];
 			$cssClass = $Team[$n]["Mjr"];
-			$tabName = $t;
-			$title = doFlag(substr($Team[$n]["Mjr"], 2, 1), $t)." ".$Team[$n]["Name"];
+			$edge = substr($cssClass, 2, 1);
+			$title = doFlag($edge, $t)." ".$Team[$n]["Name"];
 		}
-		print t(3)."<li class=\"nav-item ".$cssClass."\"><a role=\"nav-link\" class=\"nav-link\" data-toggle=\"pill\" style=\"color:inherit; text-decoration: inherit;\" href=\"#".$t."\"> ".$title." </a></li>\n";
+		print t(3)."<li class=\"nav-item rounded ".$edge." ".$cssClass."\" role=\"presentation\"><a class=\"nav-link\" data-bs-toggle=\"pill\" href=\"#".$t."\" role=\"tab\"> ".$title." </a></li>\n";
 	}
 }
 function doTeam($name, $title, $c, $s = "h") { // Derived team db name and title, Competition Country (trig, used as test for INT comps), Side (home/away/ladder)
