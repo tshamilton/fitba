@@ -2,10 +2,18 @@ body {
 	background-color: #cccccc;
 	font-family: 'Montserrat', 'Segoe UI', 'Calibri', 'Verdana', 'Helvetica Neue', sans-serif;
 	font-size: 0.875rem !important;
-	/*color: inherit; text-decoration: inherit;*/
 }
 h1 {	margin-bottom: 10px; text-align: center; font-family: 'Raleway'; }
 h2 {	margin-bottom:  6px; text-align: center; font-family: 'Raleway'; }
+code {  background-color: black; color: white; }
+.rounded-tl {    border-top-left-radius: 1rem; }
+.rounded-tr {    border-top-right-radius: 1rem; }
+.rounded-bl {    border-bottom-left-radius: 1rem; }
+.rounded-br {    border-bottom-right-radius: 1rem; }
+
+.gauze {
+	background-color: rgba(238,238,238,0.6);
+}
 
 .nav-pills .nav-link.active,
 .nav-pills .nav-link.hover,
@@ -101,6 +109,7 @@ th {
     border-bottom-right-radius: 0.5rem;
 	padding-bottom: 1px;
 	padding-top: 1px;
+    font-size: 0.8rem;
 }
 .atimeevent {
     text-align: center;
@@ -108,6 +117,7 @@ th {
     border-bottom-left-radius: 0.5rem;
 	padding-bottom: 1px;
 	padding-top: 1px;
+    font-size: 0.8rem;
 }
 .matchTrivia > ul {
     margin-bottom: 0px;
@@ -136,5 +146,6 @@ th {
 .badge-warning {
     text-shadow: none;
     border: 1px #212529 solid;
+    color: #212529;
     background-color: #ffc00c;
 }

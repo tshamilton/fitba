@@ -368,7 +368,7 @@ function doMatch($match, $c, $t) { //Match, Country, Type
 	$theHTeam = doTeam($homeName, $homeTitle, $c, 'h');
 	$theATeam = doTeam($awayName, $awayTitle, $c, 'a');
 
-	print t(7)."<div class=\"col-6 float-left px-3 pb-4 theMatchBody\">\n";
+	print t(7)."<div class=\"col-6 float-start px-3 pb-4 theMatchBody\">\n";
 	print t(8)."<table width=\"100%\" class=\"matchFrame\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n";
 
 	# Row 1 -> Time, Stage and Status
@@ -629,11 +629,11 @@ function MakeDetails($e, $h, $a, $s) { //event, hcol, acol, switch (e for event,
 	}
 	elseif ($s == "s") {
 		if ($ev[1] == "a") {
-			$aEv = "<div class=\"px-2 awayevent ".$a."\">".$ev[2]." ".$on." <div class=\"float-right\">".$off." ".$ev[3]."</div> </div>";
+			$aEv = "<div class=\"px-2 awayevent ".$a."\">".$ev[2]." ".$on." <div class=\"float-end\">".$off." ".$ev[3]."</div> </div>";
 			$rv = "<td colspan=\"9\" class=\"gz-".substr($h,1,1)."\">&nbsp;</td><td class=\"gz-".substr($h,1,1)."\" colspan=\"2\"><div class=\"atimeevent ".$a."\">".$ev[0]."</div></td><td colspan=\"9\">".$aEv."</td>";
 		}
 		elseif ($ev[1] == "h") {
-			$hEv = "<div class=\"px-2 homeevent ".$h."\"><div class=\"float-left\">".$ev[3]." ".$off."</div> ".$on." ".$ev[2]."</div>";
+			$hEv = "<div class=\"px-2 homeevent ".$h."\"><div class=\"float-start\">".$ev[3]." ".$off."</div> ".$on." ".$ev[2]."</div>";
 			$rv = "<td colspan=\"9\">".$hEv."</td><td class=\"gz-".substr($a,1,1)."\" colspan=\"2\"><div class=\"htimeevent ".$h."\">".$ev[0]."</div></td></td><td colspan=\"9\" class=\"gz-".substr($a,1,1)."\">&nbsp;</td>";
 		}
 	}
