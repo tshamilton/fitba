@@ -18,8 +18,6 @@ code {  background-color: black; color: white; }
 .nav-pills .nav-link.active,
 .nav-pills .nav-link.hover,
 .nav-pills .nav-link { color: inherit; border: none; background: transparent; }
-
-.nav-item {	 }
 .nav-link {	font-weight: bold; margin: 0px 15px 2px 15px; padding: 3px 6px 3px 6px; }
 
 .ladder {
