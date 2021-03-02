@@ -109,3 +109,4 @@ scratch/
 bash.exe.stackdump
 scratch*
 config/wfh.txt
+.vscode/
