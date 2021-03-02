@@ -125,7 +125,7 @@ function doCompetitions($c, $n) { // Country trigram, News for Country
 		$cTitle = $Comp[$c]["Comps"][$name]["Name"];
 		$cType = $Comp[$c]["Comps"][$name]["Type"];
 		print t(5)."<h2 class=\"text-center display-4\">".$cTitle."</h2> <!-- Competition container -->\n";
-		print t(5)."<div class=\"d-flex justify-content-center clearfix my-3 nationFrame\">\n";
+		print t(5)."<div class=\"d-flex justify-content-center clearfix my-3 rounded-t1 nationFrame\">\n";
 		print t(6)."<div class=\"container-fluid p-4 mb-4 grass nationFrame\">\n";
 		if ($cType == "L") {
 			$lad = doLadder($c, $name);
@@ -484,7 +484,7 @@ function doNations($n) { // news
 			$cStyle = $Team[$Comp[$c]["ID"]]["Mjr"];
 			$flag = " <img class=\"".substr($Team[$Comp[$c]["ID"]]["Mnr"], 0, 1)."\" src=\"flags/large/".$c.".png\">";
 		}
-		print t(3)."<div role=\"tabpanel\" class=\"tab-pane container-fluid fade mx-2 px-4 pt-4 nationFrame ".$cStyle."\" id=\"".$c."\" name=\"".$c."\"> <!--National container -->\n";
+		print t(3)."<div role=\"tabpanel\" class=\"tab-pane container-fluid fade rounded-t1 px-4 pt-4 nationFrame ".$cStyle."\" id=\"".$c."\" name=\"".$c."\"> <!--National container -->\n";
 		print t(4)."<div class=\"container-fluid\">\n";
 		print t(5)."<h1 class=\"display-3\">".$flag." ".$cTitle."</h1>\n";
 		doCompetitions($c, $n);
