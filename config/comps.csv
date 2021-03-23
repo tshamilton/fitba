@@ -52,6 +52,19 @@ L,copaligaprofesionalzona3,122,Copa de la Liga Profesional Zona 3,
 L,copaligaprofesionalzona4,123,Copa de la Liga Profesional Zona 4,
 L,copaligaprofesionalzona5,124,Copa de la Liga Profesional Zona 5,
 L,copaligaprofesionalzona6,125,Copa de la Liga Profesional Zona 6,
+C,copadelaligaprofesional,111,Copa De La Liga Profesional,
+C,copadiegoarmandomaradonachampionshipgroupa,0,Name, (ARG)
+C,copadiegoarmandomaradonachampionshipplayoff,0,Name, (ARG)
+C,copadiegoarmandomaradonacopasudamericanaplayoff,0,Name, (ARG)
+C,copadiegoarmandomaradonacopasudamericanaplayoffgroupb,0,Name, (ARG)
+C,federalachampionshipplayoff,0,Name, (ARG)
+C,federalafaseprimerascensozonaa,0,Name, (ARG)
+C,federalafaseprimerascensozonab,0,Name, (ARG)
+C,federalafasesegundoascensozonab,0,Name, (ARG)
+C,primerabmetropolitanafaseprimerascenso,0,Name, (ARG)
+C,primerabmetropolitanafasesegundoascensozonaa,0,Name, (ARG)
+C,primerabmetropolitanafasesegundoascensozonab,0,Name, (ARG)
+C,primerabmetropolitanainstanciaeliminatoria,0,Name, (ARG)
 L,copadiegoarmandomaradonazona1,151,Copa Diego Maradona Zona 1,
 L,copadiegoarmandomaradonazona2,152,Copa Diego Maradona Zona 2,
 L,copadiegoarmandomaradonazona3,153,Copa Diego Maradona Zona 3,
@@ -100,6 +113,7 @@ C,firstdivisionbpromotionplayoff,21,First Division B Promotion Playoff,
 L,firstdivisionbrelegationgroup,22,First Division B Relegation Group,
 C,cup,100,Belgian Cup,
 N,BOL,Bolivia,760,bolivia
+L,primeradivision,10,Liga Nacional,
 L,primeradivisionclausura,10,Liga Nacional Clausura,
 L,primeradivisionapertura,10,Liga Nacional Apertura,
 C,primeradivisionclausuraadecuacion,10,Liga Nacional Clausura Adecuaci&oacute;n,
@@ -254,15 +268,20 @@ L,premierleague,10,Premier League,
 C,cup,100,Egypt FA Cup,
 N,SLV,El Salvador,780,elsalvador
 L,primeradivisionapertura,10,Primera Divisi&oacute;n - Apertura,
-L,primeradivisionclausura,10,Primera Divisi&oacute;n - Clausura,
-L,primeradivisionclausurarelegationplayoff,11,Primera Divisi&oacute;n - Relegation Playoff,
 L,primeradivisionaperturafinalstage,12,Primera Divisi&oacute;n - Apertura Finals,
-L,primeradivisionclausurafinalstage,12,Primera Divisi&oacute;n - Clausura Finals,
 L,primeradivisionaperturafirststagegrouporiental,13,Primera Apertura 1st Stage Oriental,
 L,primeradivisionaperturafirststagegroupcentral,13,Primera Apertura 1st Stage Central,
 L,primeradivisionaperturafirststagegroupoccidental,13,Primera Apertura 1st Stage Occidental,
 L,primeradivisionaperturasecondstagegroupa,14,Primera Divisi&oacute;n - Apertura 2<sup>nd<sup> Stage Group A,
 L,primeradivisionaperturasecondstagegroupb,14,Primera Divisi&oacute;n - Apertura 2<sup>nd<sup> Stage Group B,
+L,primeradivisionclausura,10,Primera Divisi&oacute;n - Clausura,
+L,primeradivisionclausurarelegationplayoff,11,Primera Divisi&oacute;n - Relegation Playoff,
+L,primeradivisionclausurafirststagegroupcentral,11,Primera Divisi&oacute;n Clausura 1st Stage Central, (SLV)
+L,primeradivisionclausurafirststagegroupoccidental,12,Primera Divisi&oacute;n Clausura 1st Stage Occidental, (SLV)
+L,primeradivisionclausurafirststagegrouporiental,13,Primera Divisi&oacute;n Clausura 1st Stage Oriental, (SLV)
+L,primeradivisionclausurasecondstagegroupa,14,Primera Divisi&oacute;n Clausura 2nd Stage Group A, (SLV)
+L,primeradivisionclausurasecondstagegroupb,14,Primera Divisi&oacute;n Clausura 2nd Stage Group B, (SLV)
+L,primeradivisionclausurafinalstage,12,Primera Divisi&oacute;n - Clausura Finals,
 N,ENG,England,20,england
 C,communityshield,1,FA Community Shield,
 L,premierleague,10,Premier League,
@@ -409,6 +428,8 @@ L,1deild,20,1. Deild,
 C,cup,100,Icelandic FA Cup,
 N,IND,India,770,india
 L,ileague,10,I-League,
+L,ileaguechampionshipgroup,11,I-League Championship Group,
+L,ileaguerelegationgroup,12,I-League Relegation Group,
 L,indiansuperleague,10,Indian Super League,
 C,indiansuperleaguefinalstage,11,Indian Super League Finals,
 N,IDN,Indonesia,810,indonesia
@@ -681,6 +702,7 @@ L,copalibertadoresgrp8~copalibertadoresgrph,608,Copa Libertadores Group 8,
 C,copalibertadoresfinalstage,609,Copa Libertadores Finals,
 C,recopasudamericana,625,Recopa Sudamericana,
 C,copasudamericana,650,Copa Sudamericana,
+C,copasudamericanaqualification,651,Copa Sudamericana Qualification,
 C,torneodeverano,651,Torneo de Verano,
 #,,,,
 # AFC,,,,
@@ -739,6 +761,10 @@ L,cafchampionsleaguegrpa,1210,CAF Champions League Group A,
 L,cafchampionsleaguegrpb,1211,CAF Champions League Group B,
 L,cafchampionsleaguegrpc,1212,CAF Champions League Group C,
 L,cafchampionsleaguegrpd,1213,CAF Champions League Group D,
+L,cafconfederationcupgrpa,1210,CAF Confederation Cup Group A,
+L,cafconfederationcupgrpb,1211,CAF Confederation Cup Group B,
+L,cafconfederationcupgrpc,1212,CAF Confederation Cup Group C,
+L,cafconfederationcupgrpd,1213,CAF Confederation Cup Group D,
 C,cafchampionsleaguefinalstage,1214,CAF Champions League Finals,
 L,africannationschampionshipgrpa,1220,African Nations Championship Group A,
 L,africannationschampionshipgrpb,1221,African Nations Championship Group B,
@@ -952,9 +978,11 @@ N,PAR,Paraguay,470,paraguay
 L,divisionprofesional,10,Division Profesional,
 L,divisionprofesionalapertura,10,Divisi&oacute;n Profesional - Apertura,
 L,divisionprofesionalclausura,10,Divisi&oacute;n Profesional - Clausura,
+C,divisionprofesionalclausurafinalstage,11,Divisi&oacute;n Profesional - Finals,
 C,divisionprofesionalrelegationplayoff,11,Division Profesional Relegation Playoff,
 C,divisionprofesionalclausurafinalstage,12,Divisi&oacute;n Profesional - Clausura Finals,
 N,PER,Peru,630,peru
+L,liga1fase1,10,Liga 1 Phase 1,
 L,liga1apertura~primeradivisionapertura,10,Liga 1 Apertura,
 L,liga1clausura~primeradivisionclausura,10,Liga 1 Clausura,
 L,liga1clausuragroupa,10,Liga 1 Clausura Group A,
