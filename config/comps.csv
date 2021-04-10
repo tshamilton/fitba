@@ -1062,7 +1062,7 @@ L,premierleague,10,Premier League,
 C,premierleaguequalification,11,Premier League Qualification,
 C,kingscup,100,King's Cup,
 N,SCO,Scotland,30,scotland
-L,premiership,10,Scottish Premiership,
+L,premiership~premiershipchampionshipgroup~premiershiprelegationgroup,10,Scottish Premiership,
 C,premiershipplayoff,11,Premiership Playoff,
 L,championship,20,SPFL Championship,
 C,championshipplayoff,21,Championship Playoff,
