@@ -363,6 +363,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .d-byb	{ color: #0000ff; background: repeating-linear-gradient( -45deg, #fff00c, #fff00c 45%, #0000ff 45%, #0000ff 55%, #fff00c 55%, #fff00c ); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
 .d-byr	{ color: #0000ff; background: repeating-linear-gradient( -45deg, #fff00c, #fff00c 45%, #ff0000 45%, #ff0000 55%, #fff00c 55%, #fff00c ); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
 .d-fwf	{ color: #77aadd; background: repeating-linear-gradient( -45deg, #ffffff, #ffffff 45%, #77aadd 45%, #77aadd 55%, #ffffff 55%, #ffffff ); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
+.d-fkf	{ color: #77aadd; background: repeating-linear-gradient( -45deg, #000000, #000000 45%, #77aadd 45%, #77aadd 55%, #000000 55%, #000000 ); text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
 .d-gwyg	{ color: #009900; background: repeating-linear-gradient( -45deg, #ffffff, #ffffff 40%, #009900 40%, #009900 50%, #fff00c 50%, #fff00c 60%, #ffffff 60%, #ffffff ); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .d-gwg	{ color: #009900; background: repeating-linear-gradient( -45deg, #ffffff, #ffffff 45%, #009900 45%, #009900 55%, #ffffff 55%, #ffffff ); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .d-gyg	{ color: #009900; background: repeating-linear-gradient( -45deg, #fff00c, #fff00c 45%, #009900 45%, #009900 55%, #fff00c 55%, #fff00c ); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
@@ -658,7 +659,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .s-ddu	{ color: #cc0000; background: repeating-linear-gradient(to right, #cc0000, #cc0000 14%, #ffcc00 14%, #ffcc00 29%, #cc0000 29%, #cc0000 43%, #ffcc00 43%, #ffcc00 57%, #cc0000 57%, #cc0000 71%, #ffcc00 71%, #ffcc00 86%, #cc0000 86%, #cc0000 ); text-shadow: -1px -1px 0 #ffcc00,1px -1px 0 #ffcc00,-1px 1px 0 #ffcc00,1px 1px 0 #ffcc00;}
 .s-ddw	{ color: #cc0000; background: repeating-linear-gradient(to right, #cc0000, #cc0000 14%, #ffffff 14%, #ffffff 29%, #cc0000 29%, #cc0000 43%, #ffffff 43%, #ffffff 57%, #cc0000 57%, #cc0000 71%, #ffffff 71%, #ffffff 86%, #cc0000 86%, #cc0000 ); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .s-ffw	{ color: #77aadd; background: repeating-linear-gradient(to right, #77aadd, #77aadd 14%, #ffffff 14%, #ffffff 29%, #77aadd 29%, #77aadd 43%, #ffffff 43%, #ffffff 57%, #77aadd 57%, #77aadd 71%, #ffffff 71%, #ffffff 86%, #77aadd 86%, #77aadd ); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
-.s-ggi	{ color: #009900; backgorund: repeating-linear-gradient(to right, #009900, #009900 14%, #ff9f9f 14%, #ff9f9f 29%, #009900 29%, #009900 43%, #ff9f9f 43%, #ff9f9f 57%, #009900 57%, #009900 71%, #ff9f9f 71%, #ff9f9f 86%, #009900 86%, #009900 ); text-shadow: -1px -1px 0 #ff9f9f,1px -1px 0 #ff9f9f,-1px 1px 0 #ff9f9f,1px 1px 0 #ff9f9f;}
+.s-ggi	{ color: #009900; background: repeating-linear-gradient(to right, #009900, #009900 14%, #ff9f9f 14%, #ff9f9f 29%, #009900 29%, #009900 43%, #ff9f9f 43%, #ff9f9f 57%, #009900 57%, #009900 71%, #ff9f9f 71%, #ff9f9f 86%, #009900 86%, #009900 ); text-shadow: -1px -1px 0 #ff9f9f,1px -1px 0 #ff9f9f,-1px 1px 0 #ff9f9f,1px 1px 0 #ff9f9f;}
 .s-ggk	{ color: #009900; background: repeating-linear-gradient(to right, #009900, #009900 14%, #000000 14%, #000000 29%, #009900 29%, #009900 43%, #000000 43%, #000000 57%, #009900 57%, #009900 71%, #000000 71%, #000000 86%, #009900 86%, #009900 ); text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
 .s-ggo	{ color: #009900; background: repeating-linear-gradient(to right, #009900, #009900 14%, #ff9900 14%, #ff9900 29%, #009900 29%, #009900 43%, #ff9900 43%, #ff9900 57%, #009900 57%, #009900 71%, #ff9900 71%, #ff9900 86%, #009900 86%, #009900 ); text-shadow: -1px -1px 0 #ff9900,1px -1px 0 #ff9900,-1px 1px 0 #ff9900,1px 1px 0 #ff9900;}
 .s-ggw	{ color: #009900; background: repeating-linear-gradient(to right, #009900, #009900 14%, #ffffff 14%, #ffffff 29%, #009900 29%, #009900 43%, #ffffff 43%, #ffffff 57%, #009900 57%, #009900 71%, #ffffff 71%, #ffffff 86%, #009900 86%, #009900 ); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
@@ -792,6 +793,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .v-nnr	{ color: #000099; background: repeating-linear-gradient(to right, #000099, #000099 50%, #ff0000 50%, #ff0000 ); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
 .v-oko	{ color: #ff9900; background: repeating-linear-gradient(to right, #000000, #000000 50%, #ff9900 50%, #ff9900 ); text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
 .v-rbw	{ color: #ff0000; background: repeating-linear-gradient(to right, #0000ff, #0000ff 50%, #ffffff 50%, #ffffff );}
+.v-rby	{ color: #ff0000; background: repeating-linear-gradient(to right, #0000ff, #0000ff 50%, #fff00c 50%, #fff00c );}
 .v-rrk	{ color: #ff0000; background: repeating-linear-gradient(to right, #ff0000, #ff0000 50%, #000000 50%, #000000 ); text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;}
 .v-rry	{ color: #ff0000; background: repeating-linear-gradient(to right, #ff0000, #ff0000 50%, #fff00c 50%, #fff00c ); text-shadow: -1px -1px 0 #fff00c,1px -1px 0 #fff00c,-1px 1px 0 #fff00c,1px 1px 0 #fff00c;}
 .v-urb	{ color: #ffcc00; background: repeating-linear-gradient(to right, #ff0000, #ff0000 50%, #0000ff 50%, #0000ff );}
@@ -888,6 +890,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .x-kw	{ color: #000000; background-color: #ffffff;}
 .x-ky	{ color: #000000; background-color: #fff00c;}
 .x-kz	{ color: #000000; background-color: #00ff00;}
+.x-lk	{ color: #8866ee; background-color: #000000;}
 .x-mn	{ color: #ff00ff; background-color: #000099;}
 .x-mw	{ color: #ff00ff; background-color: #ffffff;}
 .x-na	{ color: #000099; background-color: #3366ff;}

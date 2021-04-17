@@ -289,6 +289,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 					case "PRPLAYOFF":	$fate = "Prom. Playoff";	$style = "promotion ldrData";	break;
 					case "RLPLAYOFF":	$fate = "Rel. Playoff";		$style = "relegation ldrData";	break;
 					case "ECQ":			$fate = "UEFA Conf. Q.";	$style = "eurolg ldrData";		break;
+					case "conf_playoff":$fate = "Playoff";			$style = "promotion ldrData";	break;
 					default:			$fate = $p[8];				$style = "unknown ldrData";		break;
 				}
 				list($tnm, $tm) = makeTeamName($p[0]);
