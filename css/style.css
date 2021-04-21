@@ -93,7 +93,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .cf	{ color: #990044; background-color: #77aadd;}
 .ck	{ color: #990044; background-color: #000000;}
 .cw	{ color: #990044; background-color: #ffffff;}
-/*.de	{ color: #cc0000; background-color: #00cc00;} */
+.de	{ color: #cc0000; background-color: #00cc00;}
 .dg	{ color: #cc0000; background-color: #009900;}
 .dk	{ color: #cc0000; background-color: #000000;}
 .dn	{ color: #cc0000; background-color: #000099;}
@@ -105,7 +105,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .ek	{ color: #00cc00; background-color: #000000;}
 .fb	{ color: #77aadd; background-color: #0000ff;}
 .fc	{ color: #77aadd; background-color: #990044;}
-/*.fk	{ color: #77aadd; background-color: #000000;} */
+.fk	{ color: #77aadd; background-color: #000000;}
 .fn	{ color: #77aadd; background-color: #000099;}
 .fw	{ color: #77aadd; background-color: #ffffff;}
 .gb	{ color: #009900; background-color: #0000ff;}
@@ -124,7 +124,6 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .gz	{ color: #009900; background-color: #00ff00;}
 .hb	{ color: #00aaff; background-color: #0000ff;}
 .hc	{ color: #00aaff; background-color: #990044;}
-.hk	{ color: #00aaff; background-color: #000000;}
 .hk	{ color: #00aaff; background-color: #000000;}
 .hn	{ color: #00aaff; background-color: #000099;}
 .hw	{ color: #00aaff; background-color: #ffffff;}
@@ -155,6 +154,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .kw	{ color: #000000; background-color: #ffffff;}
 .ky	{ color: #000000; background-color: #fff00c;}
 .kz	{ color: #000000; background-color: #00ff00;}
+.lk	{ color: #8866ee; background-color: #000000;}
 .mb	{ color: #ff00ff; background-color: #0000ff;}
 .mk	{ color: #ff00ff; background-color: #000000;}
 .mn	{ color: #ff00ff; background-color: #000099;}
@@ -226,6 +226,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .wf	{ color: #ffffff; background-color: #77aadd;}
 .wg	{ color: #ffffff; background-color: #009900;}
 .wh	{ color: #ffffff; background-color: #00aaff;}
+.wi	{ color: #ffffff; background-color: #ff9f9f;}
 .wj { color: #ffffff; background-color: #aa3388;}
 .wk	{ color: #ffffff; background-color: #000000;}
 .wl	{ color: #ffffff; background-color: #8866ee;}
@@ -457,6 +458,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .e-kwl	{ color: #000000; background: repeating-linear-gradient(to bottom, #ffffff, #ffffff 15%, #8866ee 15%, #8866ee); text-shadow: -1px -1px 0 #8866ee,1px -1px 0 #8866ee,-1px 1px 0 #8866ee,1px 1px 0 #8866ee;}
 .e-kwo	{ color: #000000; background: repeating-linear-gradient(to bottom, #ffffff, #ffffff 15%, #ff9900 15%, #ff9900); text-shadow: -1px -1px 0 #ff9900,1px -1px 0 #ff9900,-1px 1px 0 #ff9900,1px 1px 0 #ff9900;}
 .e-kwr	{ color: #000000; background: repeating-linear-gradient(to bottom, #ffffff, #ffffff 15%, #ff0000 15%, #ff0000); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
+.e-nkf	{ color: #000099; background: repeating-linear-gradient(to bottom, #000000, #000000 15%, #77aadd 15%, #77aadd); text-shadow: -1px -1px 0 #77aadd,1px -1px 0 #77aadd,-1px 1px 0 #77aadd,1px 1px 0 #77aadd;}
 .e-nnf	{ color: #000099; background: repeating-linear-gradient(to bottom, #000099, #000099 15%, #77aadd 15%, #77aadd); text-shadow: -1px -1px 0 #77aadd,1px -1px 0 #77aadd,-1px 1px 0 #77aadd,1px 1px 0 #77aadd;}
 .e-nnr	{ color: #000099; background: repeating-linear-gradient(to bottom, #000099, #000099 15%, #ff0000 15%, #ff0000); text-shadow: -1px -1px 0 #ff0000,1px -1px 0 #ff0000,-1px 1px 0 #ff0000,1px 1px 0 #ff0000;}
 .e-nnw	{ color: #000099; background: repeating-linear-gradient(to bottom, #000099, #000099 15%, #ffffff 15%, #ffffff); text-shadow: -1px -1px 0 #ffffff,1px -1px 0 #ffffff,-1px 1px 0 #ffffff,1px 1px 0 #ffffff;}
@@ -945,6 +947,7 @@ g - green	#009900		n - navy		#000099		u - gold	#ffcc00
 .x-wf	{ color: #ffffff; background-color: #77aadd;}
 .x-wg	{ color: #ffffff; background-color: #009900;}
 .x-wh	{ color: #ffffff; background-color: #00aaff;}
+.x-wi	{ color: #ffffff; background-color: #ff9f9f;}
 .x-wk	{ color: #ffffff; background-color: #000000;}
 .x-wl	{ color: #ffffff; background-color: #8866ee;}
 .x-wm	{ color: #ffffff; background-color: #ff00ff;}
