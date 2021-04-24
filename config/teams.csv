@@ -2424,7 +2424,7 @@ guairena,Guaire&ntilde;a,Gkhw,wh,s-khw,,-25.7562824,-56.4338131,Villarrica,PAR
 guangdonghuanan,Guangdong Huanan,Gwrr,wr,x-wr,,24.275271,116.078143,Meixian,CHN
 guangxibaoyun,Guangxi Baoyun,Bwrr,wr,x-wr,,22.762882,108.390654,Guangxi,CHN
 guangzhoucity~guangzhourffc~guangzhourandffc,Guangzhou City,Gbwb,wb,e-bbw,,23.135886,113.267217,Guangzhou,CHN
-guangzhoufc~guangzhouevergrande,Guangzhou,Gwrr,wr,x-wr,x280,23.1380215,113.3246753,Guangzhou,CHN
+guangzhouevergrande~guangzhoufc,Guangzhou,Gwrr,wr,x-wr,x280,23.1380215,113.3246753,Guangzhou,CHN
 guarani,Guarani,Gkyk,yk,s-kky,,-25.30345,-57.61599,Asunci&oacute;n,PAR
 guaraniantoniofranco,Guaran&iacute; Antonio Franco,Grww,rw,d-rwr,,-27.3569557,-55.8986317,Posadas,ARG
 guaranimg,Guarani,Gwrr,wr,x-wr,,-20.1432287,-44.8798176,Divinopolis,BRA

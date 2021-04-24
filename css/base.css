@@ -20,6 +20,9 @@ code {  background-color: black; color: white; }
 .nav-pills .nav-link { color: inherit; border: none; background: transparent; }
 .nav-link {	font-weight: bold; margin: 0px 15px 2px 15px; padding: 3px 6px 3px 6px; }
 
+li {
+    border: solid 1px black;
+}
 .ladder {
     text-shadow: none;
 	margin-bottom: 10px;
@@ -79,6 +82,14 @@ th {
     border-radius: 0.5rem;
     font-size: 0.9625rem;
     margin: 0.2rem !important;
+}
+.team > a{
+    text-decoration: none;
+    color: inherit;
+}
+i > .material-icons {
+    text-decoration: none;
+    color: inherit;
 }
 .score {
     font-weight: bold;
@@ -146,4 +157,19 @@ th {
     border: 1px #212529 solid;
     color: #212529;
     background-color: #ffc00c;
+}
+.showMeR {    border: 1px dashed red; }
+.showMeK {    border: 1px dashed black; }
+.showMeM {    border: 1px dashed magenta; }
+.showMeC {    border: 1px dashed cyan; }
+.showMeG {    border: 1px dashed green; }
+
+.cTabFrame {
+    width: 98%;
+    margin-left: 1%;
+    border-radius: 1.5rem;
+}
+
+.iTabFrame {
+    border-radius: 1.5rem;
 }

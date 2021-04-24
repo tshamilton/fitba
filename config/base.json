@@ -76,7 +76,8 @@
 			"2016": "melbournecity",
 			"2017": "sydneyfc",
 			"2018": "adelaideunited",
-			"2019": "adelaideunited"
+			"2019": "adelaideunited",
+			"2020": "N/A"
 		},
 		"ENG~Premier League": {
 			"1949-50": "portsmouth",
@@ -149,7 +150,8 @@
 			"2016-17": "chelsea",
 			"2017-18": "manchestercity",
 			"2018-19": "manchestercity",
-			"2019-20": "liverpool"
+			"2019-20": "liverpool",
+			"2020-21": "manchestercity"
 		},
 		"ENG~FA Cup": {
 			"1949-50": "wolverhamptonwanderers",
@@ -368,7 +370,8 @@
 			"2016-17": "munichbayern",
 			"2017-18": "munichbayern",
 			"2018-19": "munichbayern",
-			"2019-20": "munichbayern"
+			"2019-20": "munichbayern",
+			"2020-21": "munichbayern"
 		},
 		"ESP~La Liga": {
 			"1949-50": "madridatletico",
@@ -588,7 +591,8 @@
 			"2016-17": "juventus",
 			"2017-18": "juventus",
 			"2018-19": "juventus",
-			"2019-20": "juventus"
+			"2019-20": "juventus",
+			"2020-21": "inter"
 		},
 		"POR~Primeira Liga": {
 			"1949-50": "benfica",
@@ -801,7 +805,7 @@
 			"2016-17": "realmadrid",
 			"2017-18": "realmadrid",
 			"2018-19": "liverpool",
-			"2019-20": "bayernmunich",
+			"2019-20": "munichbayern",
 			"2020-21": "?"
 		},
 		"INT~Europa League": {
@@ -853,7 +857,7 @@
 			"2016-17": "manchesterunited",
 			"2017-18": "madridatletico",
 			"2018-19": "chelsea",
-			"2019-20": "sevilla",
+			"2019-20": "sevillafc",
 			"2020-21": "?"
 		},
 		"INT~AFC Champions League": {
