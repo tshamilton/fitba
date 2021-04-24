@@ -878,7 +878,7 @@ table($Stats['monNats'], 6, 'nats');
 			array_push($seen, $m);
 		}
 		else {
-//			pretty_var("Seen-> ".$m, 'cccccc');
+//			/*pretty_var("Seen-> ".$m, 'cccccc');*/
 		}
 	}
 	foreach($current_list as $d => $l) {
