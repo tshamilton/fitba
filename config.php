@@ -873,7 +873,7 @@ table($Stats['monNats'], 6, 'nats');
 				array_push($current_list[$current_date], $m);
 			}
 			else {
-				pretty_var($m, 'ffffff');
+//				pretty_var($m, 'ffffff');
 			}
 			array_push($seen, $m);
 		}
