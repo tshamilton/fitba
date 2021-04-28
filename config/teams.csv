@@ -463,6 +463,7 @@ arleseytown,Arlesey Town,Anhn,nh,b-nnh,,52.0012218,-0.2676683,Arlesey,ENG
 arlesheim~fcarlesheim,Arlesheim,Awnn,wn,x-wn,,47.4929097,7.6205117,Arlesheim,SUI
 armadale~armadalesc,Armadale,Akrk,rk,s-kkr,,-32.1489706,115.9331258,Armadale,AUS
 armangaharsirjan,Arman Gohar Sirjan,Awrr,wr,x-wr,,29.4514596,55.6785071,Sirjan,IRN
+armangoharsirjan,Arman Gohar Sirjan,Awrr,wr,x-wr,,29.4500377,55.6777914,Sirjan,IRN
 armeniodeportivo~deportivoarmenio,Deportivo Armenio,Abru,br,e-bur,,-34.3778318,-58.7322951,Ingeniero Maschwitz,ARG
 armentieres,JA Armenti&egrave;res,Abyb,by,b-bby,,47.243847,6.003274,Armenti&egrave;res,FRA
 arnabjornar,Arna-Bj&oslash;rnar,Akrr,kr,x-kr,,60.466667,5.433333,Ytre Arna,NOR
@@ -2588,8 +2589,8 @@ heartlandowerri,Heartland Owerri,Hwrr,wr,x-wr,,5.4837267,7.043792,Owerri,NGA
 hearts,Hearts of Midlothian,Hwqq,wq,x-wq,x205,55.9390401,-3.2323693,Edinburgh,SCO
 heartsofoak,Hearts Of Oak,Hryb,yr,s-bry,,5.5515251,-0.191943,Accra,GHA
 hebar,Hebar Pazardzhik,Hwgg,wg,x-wg,,42.2108109,24.322691,Pazardzhik,BUL
-hebei~hebeicffc,Hebei,Hwrr,wr,x-wr,,39.907325,119.547708,Qinhuangdao,CHN
 hebeielite,Heibei Aoli Elite,Ewbw,wb,e-wwb,,39.9454194,119.5752693,Qinhuangdao,CHN
+hebei~hebeicffc,Hebei,Hwrr,wr,x-wr,,39.907325,119.547708,Qinhuangdao,CHN
 hedensted,Hedensted,Hwgg,wg,x-wg,,55.773644,9.6885782,Hedensted,DEN
 hednesford,Hednesford Town,Hkww,kw,x-kw,,52.697353,-1.9895697,Hednesford,ENG
 heeganfc,Heegan FC,Hwbb,wb,x-wb,,2.041966,45.3567649,Mogadishu,SOM
@@ -2951,7 +2952,7 @@ jeunessecanach,Jeunesse Canach,Cwbb,wb,x-wb,,49.6101,6.3347,Canach,LUX
 jeunesseesch,Jeunesse Esch,Ekwk,kw,s-kkw,,49.4859716,5.9770208,Esch,LUX
 jevnaker,Jevnaker IF,Jwrr,wr,x-wr,,60.2426602,10.3653682,Jevnaker,NOR
 jezero,Jezero Plav,Jwbb,wb,x-wb,,42.5989097,19.9401959,Plav,MNE
-jiangsusuningfc~jiangsusainty,Jiangsu Suning,Jbff,bf,x-bf,,32.0083464,118.7172646,Nanjing,CHN
+jiangsufc~jiangsusuningfc~jiangsusainty,Jiangsu,Jybb,yb,x-yb,,32.0083464,118.7172646,Nanjing,CHN
 jiangxiliansheng,Jiangxi Lianshen,Jrbb,rb,x-rb,,29.5992769,115.8842872,Jiujiang,CHN
 jicaraladr~adrjicaral,ADR Jicaral,Jwaa,wa,x-wa,,9.9582813,-85.1193482,Jicaral,CRC
 jigawagoldenstars,Jigawa Golden Stars,Jbww,bw,x-bw,,12.473611,10.031389,Hadejia,NGA
@@ -3339,7 +3340,7 @@ lahtifc~fclahti,Lahti,Lckk,ck,x-ck,,60.9830967,25.6360921,Lahti,FIN
 lakatamiasenthoi~enthoilakatamias,ENTHOI Lakatamia,Lbyb,by,s-yyb,,35.1180551,33.2950324,Lakatamia,CYP
 lakelandtropics,Florida Tropics,Togg,og,e-oog,,28.041053,-81.963619,Tampa,USA
 lakemacquariecityfc,Lake Macquarie City,Lbyy,by,x-by,,-32.9595262,151.6156811,Speers Point,AUS
-lalafc,AC Lala,Lhwh,hw,e-hhw,,8.3126419,-62.6962556,Cuidad Guyana,VEN
+lalafc~bolivarsportclub,AC Lala,Lhwh,hw,e-hhw,,8.3126419,-62.6962556,Cuidad Guyana,VEN
 lalouviereurc~urlalouvierecentre,UR La Louviere Centre,Lwbb,wb,x-wb,,50.4783523,4.200953,La Louvi&egrave;re,BEL
 lamadrid,General Lamadrid,Gwnn,wn,d-wnw,,-34.6131691,-58.5157258,Villa Devoto,ARG
 lamaquinafc,La M&aacute;quina,Mwbb,wb,x-wb,,33.6633798,-117.6572553,Lake Forest,USA
@@ -5541,6 +5542,7 @@ sgravenzande~fcsgravenzande,FC &#39;s-Gravenzande,Gwdn,dn,d-wdn,,51.9949213,4.17
 shaanxichangan,Shaanxi Changan,Swrr,wr,x-wr,,34.232261,108.940771,Xi&#39;an,CHN
 shabail,Shabail,Swbb,wb,x-wb,,40.3321607,49.8177066,Baku,AZE
 shahin,Shahin,Skww,kw,x-kw,,35.7102871,51.4273858,Tehran,IRN
+shahinbandarameri,Shahin Bandar Ameri,Skww,kw,x-kw,,28.8764873,51.2624766,Ahram,IRN
 shahinbandaranzali,Shahin Bandar Anzali,Skww,kw,x-kw,,37.4653317,49.479175,Bandar,IRN
 shahrdari,Shahrdari Tabriz,Swrr,wr,x-wr,,38.0473721,46.3984893,Tabriz,IRN
 shahrdariastara,Shahrdari Astara,Skok,ko,v-kko,,37.4679,49.451797,Bandar Anzali,IRN
@@ -5553,9 +5555,9 @@ shakhtyorkaragandy~shakhterkaragandy,Shakhtyor Karagandy,Skok,ko,v-kko,,49.81868
 shamrockrovers,Shamrock Rovers,Sgwg,gw,h-ggw,,53.283517,-6.373744,Tallaght,IRL
 shamrockroversdarwin,Shamrock Rovers Darwin,Sgwg,gw,h-ggw,,-12.3978966,130.8799952,Darwin,AUS
 shandongluneng~shandongtaishan,Shandong Taishan,Sboo,bo,x-bo,,36.659045,117.1153,Jinan,CHN
-shanghaieastasiafc~shanghaisipgfc,Shanghai SIPG,Swrr,wr,x-wr,,31.181471,121.438378,Shanghai,CHN
 shanghaijiading,Shanghai Jiading,Jkrr,kr,x-kr,,31.3106584,121.3020995,Jiading,CHN
 shanghaijuju,Shanghai JuJu,Jbrr,br,x-br,,31.2116149,121.1224849,Shanghai,CHN
+shanghaiport~shanghaieastasiafc~shanghaisipgfc,Shanghai Port,Skrr,kr,x-kr,,31.181471,121.438378,Shanghai,CHN
 shanghaishenhua~shanghaigreenlandshenhua,Shanghai Greenland,Srbb,rb,x-rb,,31.2733,121.4762,Shanghai,CHN
 shanghaishenxin,Shanghai Shenxin,Swbb,wb,x-wb,,30.786797,121.324822,Shanghai,CHN
 shanunited,Shan United,Swrr,wr,x-wr,,20.7784505,97.0380239,Taunggyi,MYA
@@ -6084,7 +6086,7 @@ thorlakshofnaegir~aegir,&AElig;gir &THORN;orl&aacute;ksh&ouml;fn,Tnyy,ny,x-ny,,6
 thrasyvoulos,Thrasyvoulos Fylis,Twgg,wg,x-wg,,38.0962353,23.6510909,Fyli,GRE
 threaverovers,Threave Rovers,Twkw,kw,s-kkw,,54.9384332,-3.9389771,Castle Douglas,SCO
 thun~fcthun,Thun,Twrr,wr,x-wr,,46.7447059,7.6072223,Thun,SUI
-tianjinjinmentiger,Tianjin Jinmen Tiger,Tbww,bw,x-bw,,39.031846,117.724416,Tianjin,CHN
+tianjinjinmentiger~tianjintigers,Tianjin Jinmen Tiger,Tbww,bw,x-bw,,39.031846,117.724416,Tianjin,CHN
 tianjintianhai~tianjinquanjian,Tianjin Quanjian,Twrr,wr,x-wr,,39.008189,117.35789,Tianjin,CHN
 tienen,KVK Tienen,Twbb,wb,x-wb,,50.804714,4.948132,Tienen,BEL
 tigre,Tigre,Trnn,rn,e-rrn,,-34.449333,-58.542219,Victoria,ARG
@@ -6790,8 +6792,8 @@ wormerveerfortuna~fortunawormerveer,Fortuna Wormerveer,Fbwr,bw,o-bwbr,,52.493718
 worthing,Worthing,Wwrr,wr,x-wr,,50.8199706,-0.3856522,Worthing,ENG
 wrexham,Wrexham AFC,Wwrr,wr,x-wr,,53.051944,-3.003611,Wrexham,WAL
 wuhanchufengheli,Wuhan Chufeng Heli,Wrww,rw,x-rw,,30.601528,114.268222,Wuhan,CHN
+wuhanfc~wuhanzall,Wuhan,Wwow,wo,b-wwo,,30.539206,114.311481,Wuhan,CHN
 wuhanthreetowns,Wuhan Three Towns,Wwbb,wb,x-wb,,30.603945,114.264169,Wuhan,CHN
-wuhanzall,Wuhan Zall,Wwow,wo,b-wwo,,30.539206,114.311481,Wuhan,CHN
 wunstorf~fcwunstorf,1. FC Wunstorf,Wrkr,kr,s-wkr,,52.412341,9.4327818,Wunstorf,GER
 wuppertal,Wuppertaler SV Borussia,Wbrr,br,x-br,,51.239083,7.105083,Wuppertal,GER
 wurzburgerkickers~wuerzburgerkickers~wurzburger,W&uuml;rzburger Kickers,Wrww,rw,e-rrw,,49.767036,9.932892,W&uuml;rzburg,GER
