@@ -289,7 +289,7 @@ function doLadder ($c, $n) { // Country trigram, Competition Name
 					case "PRPLAYOFF":	$fate = "Prom. Playoff";	$style = "promotion ldrData";	break;
 					case "RLPLAYOFF":	$fate = "Rel. Playoff";		$style = "relegation ldrData";	break;
 					case "ECQ":			$fate = "UEFA Conf. Q.";	$style = "eurolg ldrData";		break;
-					case "conf_playoff":$fate = "Playoff";			$style = "promotion ldrData";	break;
+					case "PLAYOFF":		$fate = "Playoff";			$style = "eurolg ldrData";		break;
 					default:			$fate = $p[8];				$style = "unknown ldrData";		break;
 				}
 				list($tnm, $tm) = makeTeamName($p[0]);
@@ -691,6 +691,18 @@ function MakeTeamName($t) {
 	elseif ((preg_match("/fcw$/", $t)) && (array_key_exists(substr($t, 0, -3), $Team)))	{
 		/* women */
 		$tIdent = substr($t, 0, -3);
+		if (array_key_exists($tIdent, $Team)) { $tName = $Team[$tIdent]["Name"]." <b>&#9792;</b>"; }
+		else { $tIdent = $t; $tName = "<img src=\"image/alert.gif\"> ".$t; }
+	}
+	elseif ((preg_match("/womenw$/", $t)) && (array_key_exists(substr($t, 0, -6), $Team)))	{
+		/* women */
+		$tIdent = substr($t, 0, -6);
+		if (array_key_exists($tIdent, $Team)) { $tName = $Team[$tIdent]["Name"]." <b>&#9792;</b>"; }
+		else { $tIdent = $t; $tName = "<img src=\"image/alert.gif\"> ".$t; }
+	}
+	elseif ((preg_match("/women$/", $t)) && (array_key_exists(substr($t, 0, -5), $Team)))	{
+		/* women */
+		$tIdent = substr($t, 0, -5);
 		if (array_key_exists($tIdent, $Team)) { $tName = $Team[$tIdent]["Name"]." <b>&#9792;</b>"; }
 		else { $tIdent = $t; $tName = "<img src=\"image/alert.gif\"> ".$t; }
 	}

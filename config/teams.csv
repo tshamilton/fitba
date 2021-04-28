@@ -2588,7 +2588,7 @@ heartlandowerri,Heartland Owerri,Hwrr,wr,x-wr,,5.4837267,7.043792,Owerri,NGA
 hearts,Hearts of Midlothian,Hwqq,wq,x-wq,x205,55.9390401,-3.2323693,Edinburgh,SCO
 heartsofoak,Hearts Of Oak,Hryb,yr,s-bry,,5.5515251,-0.191943,Accra,GHA
 hebar,Hebar Pazardzhik,Hwgg,wg,x-wg,,42.2108109,24.322691,Pazardzhik,BUL
-hebeicffc,Hebei China Fortune,Hwrr,wr,x-wr,,39.907325,119.547708,Qinhuangdao,CHN
+hebei~hebeicffc,Hebei,Hwrr,wr,x-wr,,39.907325,119.547708,Qinhuangdao,CHN
 hebeielite,Heibei Aoli Elite,Ewbw,wb,e-wwb,,39.9454194,119.5752693,Qinhuangdao,CHN
 hedensted,Hedensted,Hwgg,wg,x-wg,,55.773644,9.6885782,Hedensted,DEN
 hednesford,Hednesford Town,Hkww,kw,x-kw,,52.697353,-1.9895697,Hednesford,ENG
@@ -3041,7 +3041,7 @@ kanazawazweigen~zweigenkanazawa,Zweigen Kanazawa,Zkrr,kr,x-kr,,36.575833,136.605
 kanbawzafc,Shan United,Kkww,kw,x-kw,,20.7784505,97.0380239,Taunggyi,MYA
 kanopillars,Kano Pillars,Kgyy,gy,x-gy,,11.9997995,8.5291909,Kano,NGA
 kanoyauniversity,Kanoya University,Kwaa,wa,x-wa,,31.3935117,130.7858317,Kagoshima,JPN
-kansascityfc~fckansascity~kansascitynwslw,Kansas City,Kkaa,ka,x-ka,,39.0355971,-94.5796927,Kansas City,USA
+kansascityfc~fckansascity~kansascitynwsl~kansascitynwslw,Kansas City,Kkaa,ka,x-ka,,39.0355971,-94.5796927,Kansas City,USA
 kansascitysporting~sportingkansascity,Sporting Kansas City,Knff,nf,x-nf,,39.1215929,-94.8231767,Kansas City,USA
 kapaz~fckapaz,Kapaz,Kbyy,by,x-by,,40.7061619,46.3620053,Ganja,AZE
 kapfenberg~kapfenbergersv,Kapfenberg SV,Kwrw,rw,s-rrw,,47.444727,15.3001947,Kapfenberg,AUT
@@ -6084,7 +6084,7 @@ thorlakshofnaegir~aegir,&AElig;gir &THORN;orl&aacute;ksh&ouml;fn,Tnyy,ny,x-ny,,6
 thrasyvoulos,Thrasyvoulos Fylis,Twgg,wg,x-wg,,38.0962353,23.6510909,Fyli,GRE
 threaverovers,Threave Rovers,Twkw,kw,s-kkw,,54.9384332,-3.9389771,Castle Douglas,SCO
 thun~fcthun,Thun,Twrr,wr,x-wr,,46.7447059,7.6072223,Thun,SUI
-tianjinteda,Tianjin Teda,Tbww,bw,x-bw,,39.031846,117.724416,Tianjin,CHN
+tianjinjinmentiger,Tianjin Jinmen Tiger,Tbww,bw,x-bw,,39.031846,117.724416,Tianjin,CHN
 tianjintianhai~tianjinquanjian,Tianjin Quanjian,Twrr,wr,x-wr,,39.008189,117.35789,Tianjin,CHN
 tienen,KVK Tienen,Twbb,wb,x-wb,,50.804714,4.948132,Tienen,BEL
 tigre,Tigre,Trnn,rn,e-rrn,,-34.449333,-58.542219,Victoria,ARG

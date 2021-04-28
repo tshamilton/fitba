@@ -551,6 +551,10 @@ def defineLeague(token, id, pl):
 					pos = the_pos.split(",")
 					for p in pos:
 						out_table[tl]["table"][int(p)-1] = out_table[tl]["table"][int(p)-1]+"|ECQ"
+				elif f[0] == 'conf_playoff':
+					pos = the_pos.split(",")
+					for p in pos:
+						out_table[tl]["table"][int(p)-1] = out_table[tl]["table"][int(p)-1]+"|PLAYOFF"
 				else:
 					out_table[tl]["table"].append(f[0]+"~"+the_pos)
 			debug("Fates calculated.")
