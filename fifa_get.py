@@ -18,7 +18,10 @@ def debug(message):
 		print(message)
 
 def get_data(the_url):
-	incoming = requests.get(the_url)
+	try:
+		incoming = requests.get(the_url)
+	except ConnectionError:
+		return ""
 	cinput = incoming.content
 	return cinput
 
