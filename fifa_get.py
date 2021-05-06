@@ -20,7 +20,7 @@ def debug(message):
 def get_data(the_url):
 	try:
 		incoming = requests.get(the_url)
-	except ConnectionError:
+	except (ConnectionError, ConnectionResetError):
 		return ""
 	cinput = incoming.content
 	return cinput
