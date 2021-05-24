@@ -224,7 +224,8 @@
 			"2016-17": "manchesterunited",
 			"2017-18": "arsenal",
 			"2018-19": "chelsea",
-			"2019-20": "arsenal"
+			"2019-20": "arsenal",
+			"2020-21": "leicestercity"
 		},
 		"FRA~Ligue 1": {
 			"1949-50": "bordeaux",
@@ -297,7 +298,8 @@
 			"2016-17": "monaco",
 			"2017-18": "parissaintgermain",
 			"2018-19": "parissaintgermain",
-			"2019-20": "parissaintgermain"
+			"2019-20": "parissaintgermain",
+			"2020-21": "lille"
 		},
 		"GER~Bundesliga": {
 			"1949-50": "stuttgart",
@@ -444,7 +446,8 @@
 			"2016-17": "realmadrid",
 			"2017-18": "barcelona",
 			"2018-19": "barcelona",
-			"2019-20": "realmadrid"
+			"2019-20": "realmadrid",
+			"2020-21": "madridatletico"
 		},
 		"SCO~Scottish Premier League": {
 			"1949-50": "rangers",
@@ -665,7 +668,8 @@
 			"2016-17": "benfica",
 			"2017-18": "porto",
 			"2018-19": "porto",
-			"2019-20": "porto"
+			"2019-20": "porto",
+			"2020-21": "lisbonsporting"
 		},
 		"NED~Eredivisie": {
 			"1949-50": "limburgiasv",

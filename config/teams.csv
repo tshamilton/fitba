@@ -1,4 +1,3 @@
-
 1074cankirispor,1074 &Ccedil;ank&inodot;r&inodot;spor,Cwrw,wr,s-rrw,,40.5978354,33.6095713,&Ccedil;ank&inodot;r&inodot;,TUR
 11oktomvri,11 Oktomvri,1rww,rw,x-rw,,41.343611,21.561944,Prilep,NMK
 12bingolspor,12 Bing&ouml;lspor,1gww,gw,x-gw,,38.886111,40.501667,Bing&ouml;l,TUR
@@ -223,6 +222,7 @@ algerusm~usmalger,US Medina d&#39;Alger,Ukrr,kr,b-kkr,,36.8012538,3.0479176,Algi
 algharafa,Al Gharafa,Gbyy,by,x-by,,25.3447511,51.4405428,Al Rayyan,QAT
 algounah~elgounah,El Gounah,Eoww,ow,x-ow,,27.3602155,33.6599291,El Gounah,EGY
 alhazm,Al Hazm,Hnyr,ny,e-nry,,25.860278,43.502222,Ar Rass,KSA
+alhidd,Al Hidd,Hwbb,wb,x-wb,,26.152794,50.5446453,Riffa,BHR
 alhilal,Al Hilal,Hwbb,wb,x-wb,x318,24.788206,46.839236,Riyadh,KSA
 alhilalomdurman,Al Hilal Omdurman,Hwbb,wb,x-wb,,15.647222,32.475,Omdurman,SDN
 alhoceima~chababrifalhoceima,Chabab Rif Al Hoceima,Cwbb,wb,o-wbw,,35.2467114,-3.933182,Al Hoceima,MAR
@@ -273,6 +273,7 @@ alnahdhadammam,Al Nahdha Dammam,Nwhw,wh,s-nhw,,26.427112,50.114193,Al Khobar,KSA
 alnajma,Al Najma,Nnww,nw,x-nw,,26.2234367,50.5938998,Manama,BHR
 alnasr,Al Nasr,Nnrr,nr,x-nr,,30.6296026,30.3126085,Nasr,EGY
 alnasrleltaaden~elnasrtadeen,Al Nasr Lel Taa&#39;den,Ngww,gw,x-gw,,24.0691182,32.8774484,Edfu,EGY
+alnasrsalalah,Al Nasr Salalah,Nwbb,wb,x-wb,,17.082711,54.143789,Salalah,OMA
 alnasrsc,Al Nasr Dubai SC,Nwbb,wb,x-wb,,25.24,55.313056,Dubai,UAE
 alnassrfc,Al Nassr,Nbyy,by,b-bby,,24.788106,46.839336,Riyadh,KSA
 alnejmeh,Nejmeh,Nwqq,wq,x-wq,,33.894444,35.469444,Ras Beirut,LIB
@@ -294,6 +295,7 @@ alsadd,Al Sadd,Skww,kw,x-kw,x278,25.267358,51.484251,Al Sadd,QAT
 alsailiya,Al Sailiya,Sbkb,bk,s-wbk,,25.334838,51.342279,Al Rayyan,QAT
 alsalt,Al Salt,Swbb,wb,x-wb,,32.0321701,35.6909932,Balqa,JOR
 alsareeh,Al Sareeh,Swff,wf,x-wf,,32.5375,35.860278,Irbid,JOR
+alseeb,Al-Seeb,Sgyy,gy,x-gy,,23.618716,58.2165374,Seeb,OMA
 alshaab,Al Shaab CSC,Sbrr,br,x-br,,25.374202,55.423059,Sharjah,UAE
 alshabab,Al Shabab,Skww,kw,e-kkw,,24.787206,46.838236,Riyadh,KSA
 alshababalarabi,Al Shabab Al Arabi,Swgg,wg,b-wwg,,25.290833,55.348333,Dubai,UAE
@@ -1451,7 +1453,7 @@ coloradorovers,Colorado Rovers,Rkww,kw,x-kw,,39.5469441,-105.032086,Denver,USA
 coloradorush,Colorado Rush,Rwbb,wb,x-wb,,39.5692728,-105.1280182,Denver,USA
 coloradospringsswitchbacksfc,Colorado Springs Switchbacks,Skss,ks,x-ks,,38.895826,-104.711321,Colorado Springs,USA
 colorno,ACD Colorno,Cbyb,yb,s-bby,,44.9226289,10.3697712,Colorno,ITA
-columbuscrew,Columbus Crew,Ckyy,ky,x-ky,,40.0095288,-82.9911622,Columbus,USA
+columbuscrew~columbussc,Columbus Crew,Ckyy,ky,x-ky,,40.0095288,-82.9911622,Columbus,USA
 colvillepark,Colville Park AFC,Cwbb,wb,x-wb,,55.80183,-3.982351,Motherwell,SCO
 colwynbay,Colwyn Bay,Ccfc,cf,b-ffc,,53.3123125,-3.7513328,Colwyn Bay,WAL
 comanotermefiave,ASD Comano Terme Fiave,Ckyy,ky,x-ky,,46.029649,10.866583,Comano,ITA
@@ -3241,6 +3243,7 @@ kooteepee~fcktp,KooTeePee,Kwgg,wg,x-wg,,60.4574425,26.9387258,Kotka,FIN
 koper~nkkoper,Koper,Kkzz,kz,x-kz,,45.5415877,13.7273251,Koper,SVN
 kopparbergsgoteborg,Kopparberg/G&ouml;teborg,Gakk,ak,x-ak,,57.7015,11.990306,G&ouml;teborg,SWE
 koprivnica,Koprivnica,Kwgg,wg,x-wg,,46.1660252,16.834523,Koprivnica,CRO
+kordengir,K&oacute;rdengir,Kkrr,kr,x-kr,,64.1334699,-21.8969537,Reykyavik,ISL
 korfeziskenderunspor,K&ouml;rfez &Idot;skenderunspor,Kbrb,br,s-rrb,,36.5698241,36.1375823,&Idot;skenderun,TUR
 korfezsk,K&ouml;rfez,Kwrr,wr,x-wr,,40.7705906,29.7365859,K&ouml;rfez,TUR
 korneubergmarathon~ascmarathon,ASC Marathon Korneuberg,Mkrk,kr,s-wkr,,48.354036,16.344622,Korneuberg,AUT
@@ -3828,6 +3831,7 @@ maritimo,CS Mar&iacute;timo,Mgrg,gr,h-wgr,,32.645561,-16.928331,Funchal,POR
 maritzburgunited,Maritzburg United,Mwbw,wb,s-bbw,,-29.6173158,30.3843044,Pietermaritzburg,RSA
 mariupol~fcmariupol~illitchivetsmariupol,Mariupol,Iwbb,wb,x-wb,,47.1439024,37.5584657,Mariupol,UKR
 markranstadtssv~ssvmarkranstadt,SSV Markranst&auml;dt,Mbww,bw,x-bw,,51.3019914,12.2110738,Markranst&auml;dt,GER
+markzbalata,Markaz Balata,Bwbb,wb,x-wb,,32.2203,35.2789,Nablus,PAL
 marly,SC Marly,Mkyy,ky,x-ky,,49.0631234,6.1660279,Marly,FRA
 marmande,Marmande 47,Mbwb,bw,s-wwb,,44.5068514,0.1498002,Marmande,FRA
 marmenor,Mar Menor,Mbwb,bw,s-wwb,,37.8071547,-0.8369514,San Javier,ESP
@@ -4117,6 +4121,7 @@ mtibwasugar,Mtibwa Sugar,Mwbw,wb,b-wwb,,-6.1496941,37.5987224,Turiani,TAN
 mtsamboroabeilles~ascabeillesmtsamboro,ASC Abeilles M&#39;tsamboro,Akrr,kr,x-kr,,-12.6997818,45.0632778,M&#39;tsamboro,FRA
 muangthongunited,Muang Thong United,Mkrr,kr,x-kr,,13.917989,100.547411,Muang Thong Thani,THA
 muglaspor,Mu&gbreve;laspor,Mgwg,gw,s-ggw,,37.2117771,28.3608537,Mu&gbreve;la,TUR
+muharraq,Muharraq,Mwrr,wr,x-wr,,26.153794,50.5436453,Riffa,BHR
 muhlenbachblueboys~fcmuhlenbachblueboys,Blue Boys Muhlenbach,Mwff,wf,x-wf,,49.6315894,6.1146855,Muhlenbach,LUX
 muhoroniyouthfc,Muhoroni Youth,Mkyy,ky,x-ky,,-1.304194,36.824472,Nairobi,KEN
 mulhouse,Mulhouse,Mnww,nw,x-nw,,47.7381218,7.3214849,Mulhouse,FRA
@@ -5540,6 +5545,7 @@ sfintulgheorghe~fcsfintulgheorghe,Sf&acirc;ntul Gheorghe Suruceni,Scfc,cf,b-ccf,
 sgi,S&aelig;dding/Guldager IF,Srww,rw,b-rrw,,55.500293,8.4042468,Esbjerg,DEN
 sgravenzande~fcsgravenzande,FC &#39;s-Gravenzande,Gwdn,dn,d-wdn,,51.9949213,4.1722455,&#39;s-Gravenzande,NED
 shaanxichangan,Shaanxi Changan,Swrr,wr,x-wr,,34.232261,108.940771,Xi&#39;an,CHN
+shababalamaari,Markaz Shabab Al-Am'ari,Mwgg,wg,x-wg,,33.8405755,35.4897753,Borj El Branjeh,PAL
 shabail,Shabail,Swbb,wb,x-wb,,40.3321607,49.8177066,Baku,AZE
 shahin,Shahin,Skww,kw,x-kw,,35.7102871,51.4273858,Tehran,IRN
 shahinbandarameri,Shahin Bandar Ameri,Skww,kw,x-kw,,28.8764873,51.2624766,Ahram,IRN
@@ -6099,6 +6105,7 @@ tirana~kftirana,KF Tirana,Tbwb,wb,s-wwb,,41.3190024,19.8112655,Tirana,ALB
 tiraspolsheriff~fcsheriff,Sheriff Tiraspol,Skyy,ky,x-ky,x169,46.838333,29.5575,Tiraspol,MDA
 tire1922spor~bucafk,Tire 1922,Tkrr,kr,x-kr,,37.4169465,24.4411758,Tire,TUR
 tirsense,Tirsense,Twkw,wk,e-wwk,,41.343842,-8.4841137,Santo Tirso,POR
+tishreen,Tishreen,Tryr,ry,s-rry,,35.516667,35.783333,Latakia,SYR
 tiszakecske~dunaaszfalttvse,Tiszak&eacute;cske,Tyby,yb,s-bby,,46.9376039,20.0870068,Tiszak&eacute;cske,HUN
 tiszaujvarosfc~fctiszaujvaros,Tisza&uacute;jv&aacute;ros,Tbyy,by,x-by,,47.928593,21.049375,Tisza&uacute;jv&aacute;ros,HUN
 tiverton,Tiverton Town AFC,Tkyy,ky,e-kky,,50.9092504,-3.492216,Tiverton,ENG
