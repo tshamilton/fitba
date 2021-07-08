@@ -112,11 +112,199 @@ function doCompetitions($c, $n) { // Country trigram, News for Country
 			$oComp[$cN] = $ord;
 		}
 		else {
-			$Comp[$c]["Comps"][$cN]["Type"] = "C";
-			$Comp[$c]["Comps"][$cN]["Order"] = 9999;
-			$Comp[$c]["Comps"][$cN]["Name"] = "<img src=\"image/alert.gif\"> ".$cN;
-			$ord = $Comp[$c]["Comps"][$cN]["Order"];
-			$oComp[$cN] = $ord;
+			if (preg_match("/finalstage$/", $cN)) {
+				$subCN = substr($cN, 0, -10);
+				if (array_key_exists($subCN, $Comp[$c]["Comps"])) {
+					$ord = $Comp[$c]["Comps"][$subCN]["Order"];
+					$oComp[$cN] = $ord;
+					$Comp[$c]["Comps"][$cN]["Name"] = $Comp[$c]["Comps"][$subCN]["Name"]." Finals";
+					$Comp[$c]["Comps"][$cN]["Type"] = "C";
+				}
+				else {
+					$Comp[$c]["Comps"][$cN]["Type"] = "C";
+					$Comp[$c]["Comps"][$cN]["Order"] = 9999;
+					$Comp[$c]["Comps"][$cN]["Name"] = "<img src=\"image/alert.gif\"> ".$cN;
+					$ord = $Comp[$c]["Comps"][$cN]["Order"];
+					$oComp[$cN] = $ord;
+				}
+			}
+			elseif (preg_match("/final$/", $cN)) {
+				$subCN = substr($cN, 0, -5);
+				if (array_key_exists($subCN, $Comp[$c]["Comps"])) {
+					$ord = $Comp[$c]["Comps"][$subCN]["Order"];
+					$oComp[$cN] = $ord;
+					$Comp[$c]["Comps"][$cN]["Name"] = $Comp[$c]["Comps"][$subCN]["Name"]." Finals";
+					$Comp[$c]["Comps"][$cN]["Type"] = "C";
+				}
+				else {
+					$Comp[$c]["Comps"][$cN]["Type"] = "C";
+					$Comp[$c]["Comps"][$cN]["Order"] = 9999;
+					$Comp[$c]["Comps"][$cN]["Name"] = "<img src=\"image/alert.gif\"> ".$cN;
+					$ord = $Comp[$c]["Comps"][$cN]["Order"];
+					$oComp[$cN] = $ord;
+				}
+			}
+			elseif (preg_match("/qualification$/", $cN)) {
+				$subCN = substr($cN, 0, -13);
+				if (array_key_exists($subCN, $Comp[$c]["Comps"])) {
+					$ord = $Comp[$c]["Comps"][$subCN]["Order"];
+					$oComp[$cN] = $ord;
+					$Comp[$c]["Comps"][$cN]["Name"] = $Comp[$c]["Comps"][$subCN]["Name"]." Qualifiers";
+					$Comp[$c]["Comps"][$cN]["Type"] = "C";
+				}
+				else {
+					$Comp[$c]["Comps"][$cN]["Type"] = "C";
+					$Comp[$c]["Comps"][$cN]["Order"] = 9999;
+					$Comp[$c]["Comps"][$cN]["Name"] = "<img src=\"image/alert.gif\"> ".$cN;
+					$ord = $Comp[$c]["Comps"][$cN]["Order"];
+					$oComp[$cN] = $ord;
+				}
+			}
+			elseif (preg_match("/playoff$/", $cN)) {
+				$subCN = substr($cN, 0, -7);
+				if (array_key_exists($subCN, $Comp[$c]["Comps"])) {
+					$ord = $Comp[$c]["Comps"][$subCN]["Order"];
+					$oComp[$cN] = $ord;
+					$Comp[$c]["Comps"][$cN]["Name"] = $Comp[$c]["Comps"][$subCN]["Name"]." Playoffs";
+					$Comp[$c]["Comps"][$cN]["Type"] = "C";
+				}
+				else {
+					$Comp[$c]["Comps"][$cN]["Type"] = "C";
+					$Comp[$c]["Comps"][$cN]["Order"] = 9999;
+					$Comp[$c]["Comps"][$cN]["Name"] = "<img src=\"image/alert.gif\"> ".$cN;
+					$ord = $Comp[$c]["Comps"][$cN]["Order"];
+					$oComp[$cN] = $ord;
+				}
+			}
+			elseif (preg_match("/grupooccidental$/", $cN)) {
+				$subCN = substr($cN, 0, -15);
+				if (array_key_exists($subCN, $Comp[$c]["Comps"])) {
+					$ord = $Comp[$c]["Comps"][$subCN]["Order"];
+					$oComp[$cN] = $ord;
+					$Comp[$c]["Comps"][$cN]["Name"] = $Comp[$c]["Comps"][$subCN]["Name"]." Grupo Occidental";
+					$Comp[$c]["Comps"][$cN]["Type"] = "L";
+				}
+				else {
+					$Comp[$c]["Comps"][$cN]["Type"] = "C";
+					$Comp[$c]["Comps"][$cN]["Order"] = 9999;
+					$Comp[$c]["Comps"][$cN]["Name"] = "<img src=\"image/alert.gif\"> ".$cN;
+					$ord = $Comp[$c]["Comps"][$cN]["Order"];
+					$oComp[$cN] = $ord;
+				}
+			}
+			elseif (preg_match("/grupooriental$/", $cN)) {
+				$subCN = substr($cN, 0, -13);
+				if (array_key_exists($subCN, $Comp[$c]["Comps"])) {
+					$ord = $Comp[$c]["Comps"][$subCN]["Order"];
+					$oComp[$cN] = $ord;
+					$Comp[$c]["Comps"][$cN]["Name"] = $Comp[$c]["Comps"][$subCN]["Name"]." Grupo Oriental";
+					$Comp[$c]["Comps"][$cN]["Type"] = "L";
+				}
+				else {
+					$Comp[$c]["Comps"][$cN]["Type"] = "C";
+					$Comp[$c]["Comps"][$cN]["Order"] = 9999;
+					$Comp[$c]["Comps"][$cN]["Name"] = "<img src=\"image/alert.gif\"> ".$cN;
+					$ord = $Comp[$c]["Comps"][$cN]["Order"];
+					$oComp[$cN] = $ord;
+				}
+			}
+			elseif (preg_match("/grupocentral$/", $cN)) {
+				$subCN = substr($cN, 0, -12);
+				if (array_key_exists($subCN, $Comp[$c]["Comps"])) {
+					$ord = $Comp[$c]["Comps"][$subCN]["Order"];
+					$oComp[$cN] = $ord;
+					$Comp[$c]["Comps"][$cN]["Name"] = $Comp[$c]["Comps"][$subCN]["Name"]." Grupo Central";
+					$Comp[$c]["Comps"][$cN]["Type"] = "L";
+				}
+				else {
+					$Comp[$c]["Comps"][$cN]["Type"] = "C";
+					$Comp[$c]["Comps"][$cN]["Order"] = 9999;
+					$Comp[$c]["Comps"][$cN]["Name"] = "<img src=\"image/alert.gif\"> ".$cN;
+					$ord = $Comp[$c]["Comps"][$cN]["Order"];
+					$oComp[$cN] = $ord;
+				}
+			}
+			elseif (preg_match("/apertura$/", $cN)) {
+				$subCN = substr($cN, 0, -8);
+				if (array_key_exists($subCN, $Comp[$c]["Comps"])) {
+					$ord = $Comp[$c]["Comps"][$subCN]["Order"];
+					$oComp[$cN] = $ord;
+					$Comp[$c]["Comps"][$cN]["Name"] = $Comp[$c]["Comps"][$subCN]["Name"]." Apertura";
+					$Comp[$c]["Comps"][$cN]["Type"] = "L";
+				}
+				else {
+					$Comp[$c]["Comps"][$cN]["Type"] = "C";
+					$Comp[$c]["Comps"][$cN]["Order"] = 9999;
+					$Comp[$c]["Comps"][$cN]["Name"] = "<img src=\"image/alert.gif\"> ".$cN;
+					$ord = $Comp[$c]["Comps"][$cN]["Order"];
+					$oComp[$cN] = $ord;
+				}
+			}
+			elseif (preg_match("/clausura$/", $cN)) {
+				$subCN = substr($cN, 0, -8);
+				if (array_key_exists($subCN, $Comp[$c]["Comps"])) {
+					$ord = $Comp[$c]["Comps"][$subCN]["Order"];
+					$oComp[$cN] = $ord;
+					$Comp[$c]["Comps"][$cN]["Name"] = $Comp[$c]["Comps"][$subCN]["Name"]." Clausura";
+					$Comp[$c]["Comps"][$cN]["Type"] = "L";
+				}
+				else {
+					$Comp[$c]["Comps"][$cN]["Type"] = "C";
+					$Comp[$c]["Comps"][$cN]["Order"] = 9999;
+					$Comp[$c]["Comps"][$cN]["Name"] = "<img src=\"image/alert.gif\"> ".$cN;
+					$ord = $Comp[$c]["Comps"][$cN]["Order"];
+					$oComp[$cN] = $ord;
+				}
+			}
+			elseif (preg_match("/zona(.)$/", $cN, $m)) {
+				$subCN = substr($cN, 0, -5);
+				if (array_key_exists($subCN, $Comp[$c]["Comps"])) {
+					if (ord($m[1]) >= ord('a') && ord($m[1]) <= ord('z')) {
+						$ord = $Comp[$c]["Comps"][$subCN]["Order"] + (strtolower(ord($m[1])) - ord("a"));
+						$oComp[$cN] = $ord;
+						$Comp[$c]["Comps"][$cN]["Name"] = $Comp[$c]["Comps"][$subCN]["Name"]." Zona ".(strtoupper($m[1]));
+						$Comp[$c]["Comps"][$cN]["Type"] = "L";
+					}
+					else {
+						$ord = $Comp[$c]["Comps"][$subCN]["Order"] + $m[1];
+						$oComp[$cN] = $ord;
+						$Comp[$c]["Comps"][$cN]["Name"] = $Comp[$c]["Comps"][$subCN]["Name"]." Zona ".$m[1];
+						$Comp[$c]["Comps"][$cN]["Type"] = "L";
+					}
+				}
+				else {
+					$Comp[$c]["Comps"][$cN]["Type"] = "C";
+					$Comp[$c]["Comps"][$cN]["Order"] = 9999;
+					$Comp[$c]["Comps"][$cN]["Name"] = "<img src=\"image/alert.gif\"> ".$cN;
+					$ord = $Comp[$c]["Comps"][$cN]["Order"];
+					$oComp[$cN] = $ord;
+				}
+			}
+			elseif (preg_match("/grp([a-z])$/", $cN, $m)) {
+				$subCN = substr($cN, 0, -4);
+				if (array_key_exists($subCN, $Comp[$c]["Comps"])) {
+					$ord = $Comp[$c]["Comps"][$subCN]["Order"] + (strtolower(ord($m[1])) - ord("a"));
+					$oComp[$cN] = $ord;
+					$Comp[$c]["Comps"][$cN]["Name"] = $Comp[$c]["Comps"][$subCN]["Name"]." Group ".(strtoupper($m[1]));
+					$Comp[$c]["Comps"][$cN]["Type"] = "L";
+				}
+				else {
+					$Comp[$c]["Comps"][$cN]["Type"] = "C";
+					$Comp[$c]["Comps"][$cN]["Order"] = 9999;
+					$Comp[$c]["Comps"][$cN]["Name"] = "<img src=\"image/alert.gif\"> ".$cN;
+					$ord = $Comp[$c]["Comps"][$cN]["Order"];
+					$oComp[$cN] = $ord;
+				}
+			}
+			else {
+				pretty_var("Catch all summoned for ".$cN."<br/>", '666666');
+				$Comp[$c]["Comps"][$cN]["Type"] = "C";
+				$Comp[$c]["Comps"][$cN]["Order"] = 9999;
+				$Comp[$c]["Comps"][$cN]["Name"] = "<img src=\"image/alert.gif\"> ".$cN;
+				$ord = $Comp[$c]["Comps"][$cN]["Order"];
+				$oComp[$cN] = $ord;
+				missing("C:".$c.":".$cN);
+			}
 		}
 	}
 	asort ($oComp);
@@ -655,6 +843,7 @@ function MakeStatus($s) {
 	}
 	elseif	($st[0] == "N") {
 		if 		($st[1] == 1) 	{ return "Not started"; }
+		elseif	($st[1] == 25)	{ return "Delayed"; }
 		else					{ return "Status unknown (".$s.")"; }
 	}
 	elseif	($st[0] == "P") {
@@ -936,12 +1125,7 @@ foreach ($the_world as $w) {
 				}
 			}
 		}
-		# Check that competition exists in the config
-		if (!(array_key_exists($curr_comp, $Comp[$curr_cc]["Comps"]))) {
-			#pretty_var($curr_comp);
-			#pretty_var($Comp[$curr_cc], '00aaff');
-			missing("C:".$curr_cc.":".$curr_comp);
-		}
+		# Check that competition exists in the config (moved to doCompetitions function to remove side cases (quals, playoffs, finals, etc.))
 		if (!(array_key_exists($curr_comp, $News[$curr_cc]))) {
 			$News[$curr_cc][$curr_comp] = Array();
 		}
