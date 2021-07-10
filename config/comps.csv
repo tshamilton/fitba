@@ -25,6 +25,7 @@ N,BLR,Belarus,450,belarus
 L,premierleague,10,Premier League,
 N,BEL,Belgium,80,belgium
 N,BOL,Bolivia,760,bolivia
+L,primeradivision,10,Primera Division,
 N,BIH,Bosnia-Herzogovina,540,bosniaherzogovina
 N,BRA,Brazil,360,brazil
 L,seriea,10,Serie A,
@@ -43,6 +44,7 @@ N,CYP,Cyprus,550,cyprus
 N,CZE,Czech Republic,220,czechrepublic
 N,DEN,Denmark,120,denmark
 N,ECU,Ecuador,750,ecuador
+L,seriea,10,Serie A,
 N,EGY,Egypt,790,egypt
 L,premierleague,10,Premier League,
 C,cup,100,Egypt FA Cup,
@@ -72,16 +74,26 @@ L,1deild,20,1. Deild,
 C,cup,100,Icelandic FA Cup,
 N,IND,India,770,india
 N,IDN,Indonesia,810,indonesia
+L,liga1,10,Liga 1,
 N,INT,Internationals,10,internationals
+# INT,,,,
 C,friendlies,999,International Friendlies,
 C,clubfriendlies,1000,Club Friendlies,
+# UEFA,,,,
 L,euro,426,UEFA Euro 2020,
 L,championsleague,300,UEFA Champions League,
 L,europaleague,310,UEFA Europa League,
 L,europaconferenceleague,320,UEFA Conference League,
+# CONMEBOL,,,,
 C,copaamerica,555,Copa America,
+# AFC,,,,
 C,afcchampionsleague,700,AFC Champions League,
 C,afccup,710,AFC Cup,
+# CAF,,,,
+C,cafconfederationcup,1210,CAF Confederation Cup,
+# CONCACAF,,,,
+L,concacafgoldcup,550,CONCACAF Gold Cup,
+# OFC,,,,
 N,IRN,Iran,520,iran
 L,persiangulfproleague,10,Persian Gulf Pro League,
 L,azadeganleague,20,Azadegan League,
@@ -134,9 +146,12 @@ N,POL,Poland,350,poland
 N,POR,Portugal,160,portugal
 N,QAT,Qatar,860,qatar
 N,ROU,Romania,680,romania
+C,supercup,1,Supercupa Rom&acirc;niei,
 N,RUS,Russia,200,russia
+L,footballnationalleague,20,National League,
 N,KSA,Saudi Arabia,800,saudiarabia
 N,SCO,Scotland,30,scotland
+L,leaguecup,80,League Cup,
 N,SRB,Serbia,230,serbia
 N,SIN,Singapore,650,singapore
 N,SVK,Slovakia,490,slovakia

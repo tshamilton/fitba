@@ -128,6 +128,22 @@ function doCompetitions($c, $n) { // Country trigram, News for Country
 					$oComp[$cN] = $ord;
 				}
 			}
+			if (preg_match("/firststage$/", $cN)) {
+				$subCN = substr($cN, 0, -10);
+				if (array_key_exists($subCN, $Comp[$c]["Comps"])) {
+					$ord = $Comp[$c]["Comps"][$subCN]["Order"];
+					$oComp[$cN] = $ord;
+					$Comp[$c]["Comps"][$cN]["Name"] = $Comp[$c]["Comps"][$subCN]["Name"]." First Stage";
+					$Comp[$c]["Comps"][$cN]["Type"] = "L";
+				}
+				else {
+					$Comp[$c]["Comps"][$cN]["Type"] = "C";
+					$Comp[$c]["Comps"][$cN]["Order"] = 9999;
+					$Comp[$c]["Comps"][$cN]["Name"] = "<img src=\"image/alert.gif\"> ".$cN;
+					$ord = $Comp[$c]["Comps"][$cN]["Order"];
+					$oComp[$cN] = $ord;
+				}
+			}
 			elseif (preg_match("/final$/", $cN)) {
 				$subCN = substr($cN, 0, -5);
 				if (array_key_exists($subCN, $Comp[$c]["Comps"])) {
@@ -297,7 +313,7 @@ function doCompetitions($c, $n) { // Country trigram, News for Country
 				}
 			}
 			else {
-				pretty_var("Catch all summoned for ".$cN."<br/>", '666666');
+				#pretty_var("Catch all summoned for ".$cN."<br/>", '666666');
 				$Comp[$c]["Comps"][$cN]["Type"] = "C";
 				$Comp[$c]["Comps"][$cN]["Order"] = 9999;
 				$Comp[$c]["Comps"][$cN]["Name"] = "<img src=\"image/alert.gif\"> ".$cN;
