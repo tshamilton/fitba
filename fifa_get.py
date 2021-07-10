@@ -1,7 +1,10 @@
+# -*- coding: utf-8 -*-
 import re
 import os
 import time
 import requests
+import sys
+print sys.getdefaultencoding()
 
 def pluck(re_s, source):
 	res = re.search(re_s, source, re.IGNORECASE)
